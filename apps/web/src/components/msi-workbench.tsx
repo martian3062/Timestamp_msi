@@ -5,8 +5,10 @@ import { useEffect, useMemo, useState } from "react";
 import {
   Activity,
   AlertTriangle,
+  BarChart3,
   ClipboardList,
   Database,
+  Dice5,
   FileCheck2,
   FileText,
   FlaskConical,
@@ -15,7 +17,10 @@ import {
   Play,
   RefreshCw,
   Server,
+  Shield,
+  Sigma,
   Terminal,
+  TrendingUp,
   Upload,
   UploadCloud,
 } from "lucide-react";
@@ -70,6 +75,73 @@ type IntegrationStatus = {
   env_var: string;
   configured: boolean;
   use: string;
+};
+
+type MCTrial = {
+  trial_id: string;
+  feature_extractor: string;
+  mil_model: string;
+  learning_rate: number;
+  dropout: number;
+  weight_decay: number;
+  epochs: number;
+  seed: number;
+};
+
+type MCPlan = {
+  trial_count: number;
+  random_seed: number;
+  rank_formula: string;
+  trials: MCTrial[];
+};
+
+type MCDropoutResult = {
+  ok: boolean;
+  trial_id: string;
+  forward_passes: number;
+  slide_count: number;
+  mean_uncertainty: number;
+  high_confidence_pct: number;
+  medium_confidence_pct: number;
+  low_confidence_pct: number;
+};
+
+type BootstrapCI = {
+  ok: boolean;
+  trial_id: string;
+  n_bootstrap: number;
+  ci_level: number;
+  metrics: {
+    metric: string;
+    point_estimate: number;
+    ci_lower: number;
+    ci_upper: number;
+    ci_level: number;
+    std_error: number;
+  }[];
+};
+
+type StableBestResult = {
+  ok: boolean;
+  rank_formula: string;
+  total_evaluated: number;
+  best: {
+    trial_id: string;
+    mean_auroc: number;
+    sd_auroc: number;
+    mean_auprc: number;
+    sd_auprc: number;
+    stability_score: number;
+    folds_completed: number;
+    feature_extractor: string;
+    mil_model: string;
+  } | null;
+  candidates: {
+    trial_id: string;
+    stability_score: number;
+    mean_auroc: number;
+    sd_auroc: number;
+  }[];
 };
 
 const requiredAnnotationFields = ["patient", "slide", "label", "fold"];
@@ -229,6 +301,14 @@ export function MsiWorkbench() {
     "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc",
   );
   const [vmFiles, setVmFiles] = useState<VmFileRow[]>([]);
+
+  /* Monte Carlo state */
+  const [mcPlan, setMcPlan] = useState<MCPlan>();
+  const [mcBusy, setMcBusy] = useState<string>();
+  const [mcDropout, setMcDropout] = useState<MCDropoutResult>();
+  const [mcBootstrapCI, setMcBootstrapCI] = useState<BootstrapCI>();
+  const [mcStableBest, setMcStableBest] = useState<StableBestResult>();
+  const [mcError, setMcError] = useState("");
 
   const annotationMap = useMemo(() => {
     const columns = annotations?.columns ?? [];
@@ -403,6 +483,84 @@ export function MsiWorkbench() {
       kind,
       contents: file.rawText,
     });
+  }
+
+  /* Monte Carlo actions */
+  async function generateMCPlan() {
+    setMcBusy("plan");
+    setMcError("");
+    try {
+      const response = await fetch(`${automationApiBase}/experiments/monte-carlo-plan`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ samples: 8, random_seed: 310, folds: [1], epoch_choices: [5, 10, 20] }),
+      });
+      if (!response.ok) throw new Error("Failed to generate MC plan");
+      const data = (await response.json()) as MCPlan;
+      setMcPlan(data);
+    } catch (error) {
+      setMcError(error instanceof Error ? error.message : "MC plan failed");
+    } finally {
+      setMcBusy(undefined);
+    }
+  }
+
+  async function fetchMCDropout(trialId: string) {
+    setMcBusy("dropout");
+    setMcError("");
+    try {
+      const response = await fetch(`${automationApiBase}/experiments/uncertainty/${trialId}`);
+      if (!response.ok) throw new Error("Failed to fetch MC dropout");
+      const data = (await response.json()) as MCDropoutResult;
+      setMcDropout(data);
+    } catch (error) {
+      setMcError(error instanceof Error ? error.message : "MC dropout fetch failed");
+    } finally {
+      setMcBusy(undefined);
+    }
+  }
+
+  async function fetchBootstrapCI(trialId: string) {
+    setMcBusy("bootstrap");
+    setMcError("");
+    try {
+      const response = await fetch(`${automationApiBase}/experiments/bootstrap-ci/${trialId}`);
+      if (!response.ok) throw new Error("Failed to fetch bootstrap CI");
+      const data = (await response.json()) as BootstrapCI;
+      setMcBootstrapCI(data);
+    } catch (error) {
+      setMcError(error instanceof Error ? error.message : "Bootstrap CI fetch failed");
+    } finally {
+      setMcBusy(undefined);
+    }
+  }
+
+  async function fetchStableBest() {
+    setMcBusy("stableBest");
+    setMcError("");
+    try {
+      const response = await fetch(`${automationApiBase}/experiments/best-stable?rank_formula=mean_auroc%20-%200.5%20*%20sd_auroc&min_completed_folds=1`);
+      if (!response.ok) throw new Error("Failed to fetch stable best");
+      const data = (await response.json()) as StableBestResult;
+      setMcStableBest(data);
+    } catch (error) {
+      setMcError(error instanceof Error ? error.message : "Stable best failed");
+    } finally {
+      setMcBusy(undefined);
+    }
+  }
+
+  async function bootstrapMCRunners() {
+    setMcBusy("bootstrap-runners");
+    setMcError("");
+    try {
+      const response = await fetch(`${automationApiBase}/experiments/mc-bootstrap`, { method: "POST" });
+      if (!response.ok) throw new Error("Failed to bootstrap MC runners");
+    } catch (error) {
+      setMcError(error instanceof Error ? error.message : "Bootstrap runners failed");
+    } finally {
+      setMcBusy(undefined);
+    }
   }
 
   return (
@@ -746,6 +904,191 @@ export function MsiWorkbench() {
               <TechSurface integrations={integrations} />
             </Panel>
           </section>
+
+          {/* Monte Carlo Methods Panel */}
+          <Panel>
+            <SectionTitle
+              icon={<Dice5 className="h-5 w-5" />}
+              title="Monte Carlo methods"
+              label={mcPlan ? `${mcPlan.trial_count} trials` : "hft-methods"}
+            />
+
+            {mcError ? (
+              <p className="mt-4 rounded-2xl border border-[#d95d48]/30 bg-[#d95d48]/10 p-3 text-sm leading-6 text-[#8a2c21]">
+                {mcError}
+              </p>
+            ) : null}
+
+            <div className="mt-5 grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+              <ActionButton
+                busy={mcBusy === "plan"}
+                disabled={Boolean(mcBusy)}
+                icon={<Dice5 className="h-4 w-4" />}
+                label="Generate MC plan"
+                onClick={() => generateMCPlan()}
+              />
+              <ActionButton
+                busy={mcBusy === "bootstrap-runners"}
+                disabled={Boolean(mcBusy)}
+                icon={<Upload className="h-4 w-4" />}
+                label="Bootstrap runners"
+                onClick={() => bootstrapMCRunners()}
+              />
+              <ActionButton
+                busy={mcBusy === "stableBest"}
+                disabled={Boolean(mcBusy)}
+                icon={<TrendingUp className="h-4 w-4" />}
+                label="Stable best"
+                onClick={() => fetchStableBest()}
+              />
+              <ActionButton
+                busy={mcBusy === "dropout" || mcBusy === "bootstrap"}
+                disabled={Boolean(mcBusy) || !bestExperiment?.best}
+                icon={<Sigma className="h-4 w-4" />}
+                label="Uncertainty check"
+                onClick={() => {
+                  const tid = bestExperiment?.best?.trial_id;
+                  if (tid) {
+                    void fetchMCDropout(tid);
+                    void fetchBootstrapCI(tid);
+                  }
+                }}
+              />
+            </div>
+
+            {/* MC Random search plan */}
+            {mcPlan ? (
+              <div className="mt-5">
+                <div className="mb-3 flex items-center gap-2">
+                  <BarChart3 className="h-4 w-4 text-[#9cfce0]" />
+                  <p className="text-sm font-semibold text-[#102b2b]">
+                    Random search plan
+                    <span className="ml-2 text-xs font-normal text-[#8fa9a0]">
+                      seed {mcPlan.random_seed} · {mcPlan.rank_formula}
+                    </span>
+                  </p>
+                </div>
+                <div className="max-h-64 overflow-auto rounded-2xl border border-white/60 bg-white/40">
+                  <table className="w-full text-left text-xs">
+                    <thead className="sticky top-0 bg-white/80 backdrop-blur">
+                      <tr>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">Trial</th>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">Model</th>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">Extractor</th>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">LR</th>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">Dropout</th>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">Epochs</th>
+                        <th className="px-3 py-2 font-semibold text-[#66807a]">Seed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {mcPlan.trials.map((trial) => (
+                        <tr key={trial.trial_id} className="border-t border-white/30 hover:bg-[#9cfce0]/5">
+                          <td className="px-3 py-2 font-mono text-[#168f8b]">{trial.trial_id.slice(0, 13)}</td>
+                          <td className="px-3 py-2 text-[#102b2b]">{trial.mil_model}</td>
+                          <td className="px-3 py-2 text-[#102b2b]">{trial.feature_extractor}</td>
+                          <td className="px-3 py-2 font-mono text-[#4666d9]">{trial.learning_rate.toExponential(2)}</td>
+                          <td className="px-3 py-2 font-mono text-[#7b61ff]">{trial.dropout.toFixed(3)}</td>
+                          <td className="px-3 py-2 text-[#102b2b]">{trial.epochs}</td>
+                          <td className="px-3 py-2 text-[#8fa9a0]">{trial.seed}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ) : null}
+
+            {/* Stability-weighted best model */}
+            <div className="mt-5 grid gap-4 xl:grid-cols-2">
+              {mcStableBest ? (
+                <div className="rounded-3xl border border-white/60 bg-white/45 p-4">
+                  <div className="mb-3 flex items-center gap-2">
+                    <Shield className="h-4 w-4 text-[#168f8b]" />
+                    <p className="text-sm font-semibold text-[#102b2b]">
+                      Stability-weighted best
+                      <span className="ml-2 text-xs font-normal text-[#8fa9a0]">
+                        {mcStableBest.total_evaluated} evaluated
+                      </span>
+                    </p>
+                  </div>
+                  {mcStableBest.best ? (
+                    <div className="grid gap-2">
+                      <KeyValue label="Trial" value={mcStableBest.best.trial_id} />
+                      <KeyValue label="Stability score" value={mcStableBest.best.stability_score.toFixed(4)} />
+                      <KeyValue label="Mean AUROC" value={mcStableBest.best.mean_auroc.toFixed(4)} />
+                      <KeyValue label="SD AUROC" value={mcStableBest.best.sd_auroc.toFixed(4)} />
+                      <KeyValue label="Model" value={mcStableBest.best.mil_model || "N/A"} />
+                      <KeyValue label="Extractor" value={mcStableBest.best.feature_extractor || "N/A"} />
+                    </div>
+                  ) : (
+                    <p className="text-sm text-[#8fa9a0]">No completed trials to rank yet.</p>
+                  )}
+                  <p className="mt-3 text-xs text-[#66807a]">
+                    Formula: {mcStableBest.rank_formula}
+                  </p>
+                </div>
+              ) : null}
+
+              {/* MC Dropout + Bootstrap CI results */}
+              <div className="space-y-4">
+                {mcDropout?.ok ? (
+                  <div className="rounded-3xl border border-white/60 bg-white/45 p-4">
+                    <div className="mb-3 flex items-center gap-2">
+                      <Sigma className="h-4 w-4 text-[#7b61ff]" />
+                      <p className="text-sm font-semibold text-[#102b2b]">MC Dropout uncertainty</p>
+                    </div>
+                    <div className="grid gap-2">
+                      <KeyValue label="Slides" value={String(mcDropout.slide_count)} />
+                      <KeyValue label="Passes" value={String(mcDropout.forward_passes)} />
+                      <KeyValue label="Mean uncertainty" value={mcDropout.mean_uncertainty.toFixed(4)} />
+                    </div>
+                    <div className="mt-3 grid grid-cols-3 gap-2">
+                      <div className="rounded-2xl border border-[#9cfce0]/30 bg-[#9cfce0]/10 p-2 text-center">
+                        <p className="text-lg font-semibold text-[#168f8b]">{mcDropout.high_confidence_pct}%</p>
+                        <p className="text-xs text-[#66807a]">High conf</p>
+                      </div>
+                      <div className="rounded-2xl border border-[#f5c46b]/30 bg-[#f5c46b]/10 p-2 text-center">
+                        <p className="text-lg font-semibold text-[#d99a21]">{mcDropout.medium_confidence_pct}%</p>
+                        <p className="text-xs text-[#66807a]">Medium</p>
+                      </div>
+                      <div className="rounded-2xl border border-[#d95d48]/30 bg-[#d95d48]/10 p-2 text-center">
+                        <p className="text-lg font-semibold text-[#d95d48]">{mcDropout.low_confidence_pct}%</p>
+                        <p className="text-xs text-[#66807a]">Low conf</p>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+
+                {mcBootstrapCI?.ok ? (
+                  <div className="rounded-3xl border border-white/60 bg-white/45 p-4">
+                    <div className="mb-3 flex items-center gap-2">
+                      <BarChart3 className="h-4 w-4 text-[#4666d9]" />
+                      <p className="text-sm font-semibold text-[#102b2b]">
+                        Bootstrap CI
+                        <span className="ml-2 text-xs font-normal text-[#8fa9a0]">
+                          {mcBootstrapCI.n_bootstrap} resamples · {(mcBootstrapCI.ci_level * 100).toFixed(0)}% CI
+                        </span>
+                      </p>
+                    </div>
+                    <div className="grid gap-2">
+                      {mcBootstrapCI.metrics.map((m) => (
+                        <div key={m.metric} className="flex items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/50 px-3 py-2 text-sm">
+                          <span className="font-medium uppercase text-[#66807a]">{m.metric}</span>
+                          <span className="font-semibold text-[#102b2b]">
+                            {m.point_estimate.toFixed(3)}
+                            <span className="ml-1 text-xs font-normal text-[#8fa9a0]">
+                              [{m.ci_lower.toFixed(3)} – {m.ci_upper.toFixed(3)}]
+                            </span>
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          </Panel>
 
           <Panel>
             <SectionTitle
