@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { type CSSProperties, useEffect, useMemo, useState } from "react";
 import {
   Activity,
@@ -18,19 +19,21 @@ import {
   Upload,
   UploadCloud,
 } from "lucide-react";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Cell,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
 import { WinterScene } from "@/components/winter-scene";
+import type { DistributionDatum } from "@/components/recharts-distribution";
+
+const RechartsDistribution = dynamic(
+  () =>
+    import("@/components/recharts-distribution").then(
+      (module) => module.RechartsDistribution,
+    ),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="mt-4 h-52 rounded-3xl border border-white/60 bg-white/35" />
+    ),
+  },
+);
 
 type TableRow = Record<string, string>;
 
@@ -1019,7 +1022,7 @@ function Distribution({
 }) {
   const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   const total = entries.reduce((sum, [, value]) => sum + value, 0);
-  const data = entries.map(([label, value], index) => ({
+  const data: DistributionDatum[] = entries.map(([label, value], index) => ({
     label,
     value,
     percent: total > 0 ? Math.round((value / total) * 100) : 0,
@@ -1032,63 +1035,7 @@ function Distribution({
 
   return (
     <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_150px]">
-      <div className="h-52 min-w-0">
-        <ResponsiveContainer height="100%" width="100%">
-          <BarChart data={data} layout="vertical" margin={{ left: 8, right: 8 }}>
-            <CartesianGrid horizontal={false} stroke="rgba(20,53,54,0.12)" />
-            <XAxis hide type="number" />
-            <YAxis
-              dataKey="label"
-              tick={{ fill: "#315156", fontSize: 12 }}
-              tickLine={false}
-              type="category"
-              width={92}
-            />
-            <Tooltip
-              contentStyle={{
-                background: "#f8fffb",
-                border: "1px solid rgba(20,53,54,0.12)",
-                borderRadius: 12,
-                color: "#102b2b",
-              }}
-              formatter={(value) => [formatTooltipValue(value), "Rows"]}
-            />
-            <Bar dataKey="value" minPointSize={4} radius={[0, 8, 8, 0]}>
-              {data.map((entry) => (
-                <Cell fill={entry.fill} key={entry.label} />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
-      <div className="h-40 lg:h-52">
-        <ResponsiveContainer height="100%" width="100%">
-          <PieChart>
-            <Pie
-              cx="50%"
-              cy="50%"
-              data={data}
-              dataKey="value"
-              innerRadius="58%"
-              outerRadius="86%"
-              paddingAngle={3}
-            >
-              {data.map((entry) => (
-                <Cell fill={entry.fill} key={entry.label} />
-              ))}
-            </Pie>
-            <Tooltip
-              contentStyle={{
-                background: "#f8fffb",
-                border: "1px solid rgba(20,53,54,0.12)",
-                borderRadius: 12,
-                color: "#102b2b",
-              }}
-              formatter={(value) => [formatTooltipValue(value), "Rows"]}
-            />
-          </PieChart>
-        </ResponsiveContainer>
-      </div>
+      <RechartsDistribution data={data} />
       <div className="space-y-2 lg:col-span-2">
         {data.map((entry) => (
           <div
@@ -1220,8 +1167,4 @@ function readableMetric(value: unknown) {
     return value.toLocaleString();
   }
   return "";
-}
-
-function formatTooltipValue(value: unknown) {
-  return typeof value === "number" ? value.toLocaleString() : String(value ?? "");
 }
