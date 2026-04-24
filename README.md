@@ -35,6 +35,7 @@ Timestamp_msi/
           data_batches.py
           experiments.py
           integrations.py
+          monte_carlo.py
           vm.py
         core/
           config.py
@@ -43,11 +44,13 @@ Timestamp_msi/
           data_batches.py
           experiments.py
           integrations.py
+          monte_carlo.py
           vm.py
         services/
           cohort.py
           data_batches.py
           experiments.py
+          monte_carlo.py
           vm.py
         main.py
       storage/
@@ -78,8 +81,10 @@ Timestamp_msi/
       timestamp-msi-integrations-check.json
       timestamp-msi-live-source-check.json
       timestamp-msi-modular-training.json
+      timestamp-msi-monte-carlo-pipeline.json
   configs/
     experiment_grid.example.json
+    monte_carlo_search.example.json
   .gitignore
   README.md
 ```
@@ -231,6 +236,14 @@ POST /experiments/plan
 POST /experiments/start
 GET  /experiments/status/{trial_id}
 GET  /experiments/best
+POST /experiments/monte-carlo-plan
+POST /experiments/mc-bootstrap
+POST /experiments/uncertainty/start
+GET  /experiments/uncertainty/{trial_id}
+POST /experiments/bootstrap-ci/start
+GET  /experiments/bootstrap-ci/{trial_id}
+POST /experiments/seed-stability
+GET  /experiments/best-stable
 GET  /integrations/status
 POST /data-batches/gdc/bootstrap
 POST /data-batches/gdc/start
@@ -309,7 +322,105 @@ The automation details and first small-test grid are documented in:
 automation/README.md
 ```
 
+### Monte Carlo Methods (hft-methods branch)
+
+The `hft-methods` branch adds Monte Carlo and Bayesian robustness methods to the
+training pipeline. These methods make model selection more scientific by
+accounting for uncertainty and variance, not just peak accuracy.
+
+#### 1. Monte Carlo Random Hyperparameter Search
+
+Instead of exhaustive grid search, randomly sample hyperparameters from
+continuous distributions:
+
+- learning rate: log-uniform between `1e-5` and `3e-4`
+- dropout: uniform between `0.1` and `0.5`
+- weight decay: log-uniform between `1e-6` and `1e-3`
+- epochs, seed, model, extractor: random choice from lists
+
+```text
+POST /experiments/monte-carlo-plan
+Body: configs/monte_carlo_search.example.json
+```
+
+This is more efficient than brute grid search when GPU time is limited.
+
+#### 2. MC Dropout Uncertainty Estimation
+
+Enable dropout at inference time and run the same slide through the model
+multiple times (default: 30 forward passes):
+
+```text
+POST /experiments/mc-bootstrap     (deploy runner scripts to VM)
+POST /experiments/uncertainty/start (start MC dropout inference)
+GET  /experiments/uncertainty/{id}  (read per-slide uncertainty results)
+```
+
+Output per slide:
+
+| Field | Description |
+|-------|-------------|
+| `slide_id` | WSI identifier |
+| `mean_msi_probability` | Mean of N forward passes |
+| `std_uncertainty` | Standard deviation across passes |
+| `confidence` | `high` / `medium` / `low` |
+
+This identifies slides where the model is unsure and needs clinical review.
+
+#### 3. Bootstrap Confidence Intervals
+
+For each trial, resample predictions 1000+ times to compute reliable CIs:
+
+```text
+POST /experiments/bootstrap-ci/start
+GET  /experiments/bootstrap-ci/{id}
+```
+
+Output example:
+
+```text
+AUROC: 0.82
+95% CI: 0.74 - 0.89
+AUPRC: 0.71
+95% CI: 0.62 - 0.79
+```
+
+This makes results publication-ready instead of reporting single point estimates.
+
+#### 4. Stability-Weighted Best Model Selection
+
+Standard best-metric selection picks whatever scored highest, which may be a
+lucky outlier. The stability-weighted formula penalizes high variance:
+
+```text
+stability_score = mean_auroc - 0.5 * sd_auroc
+```
+
+```text
+GET /experiments/best-stable?rank_formula=mean_auroc%20-%200.5%20*%20sd_auroc
+POST /experiments/seed-stability
+```
+
+This picks the model that performs well **and** is stable.
+
+#### Monte Carlo n8n Workflow
+
+Import the workflow:
+
+```text
+automation/n8n/timestamp-msi-monte-carlo-pipeline.json
+```
+
+Flow: bootstrap MC runners → generate random plan → find stable best → report.
+
+Example config:
+
+```text
+configs/monte_carlo_search.example.json
+```
+
 ### Safety Model
+
 
 The browser never receives the private SSH key. The key stays on the local
 machine and is used by the local Next.js API route only.
@@ -484,6 +595,13 @@ Main files:
 - `apps/api/app/services/vm.py`: backend SSH action service.
 - `apps/api/app/services/experiments.py`: n8n experiment planner, VM runner
   bootstrap, status, and best-result selection.
+- `apps/api/app/models/monte_carlo.py`: Pydantic schemas for MC random search,
+  MC dropout uncertainty, bootstrap CI, seed stability, and stable best ranking.
+- `apps/api/app/services/monte_carlo.py`: Monte Carlo service with random HP
+  sampling, MC dropout/bootstrap CI VM runners, seed stability analysis, and
+  stability-weighted best model selection.
+- `apps/api/app/api/routes/monte_carlo.py`: FastAPI endpoints for all Monte
+  Carlo operations under `/experiments/`.
 - `apps/api/app/services/data_batches.py`: GDC 10-SVS batch downloader bootstrap,
   status, and cleanup.
 - `apps/web/src/components/msi-workbench.tsx`: browser UI, file parsing,
@@ -492,7 +610,8 @@ Main files:
 - `apps/web/src/components/recharts-distribution.tsx`: client-only static
   Recharts charts for label/fold distributions.
 - `automation/n8n/*.json`: importable n8n workflows for source checks, VM/API
-  checks, integration checks, 10-SVS batches, and safe single-trial training.
+  checks, integration checks, 10-SVS batches, safe single-trial training, and
+  Monte Carlo uncertainty pipeline.
 - `apps/web/src/app/api/vm/route.ts`: Node.js SSH bridge and fixed VM actions.
 - `apps/web/src/app/page.tsx`: renders the workstation.
 - `apps/web/src/app/layout.tsx`: metadata and app shell.

@@ -1,0 +1,108 @@
+{
+  "name": "Timestamp_msi Monte Carlo uncertainty pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "mc-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [100, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/mc-bootstrap",
+        "options": {}
+      },
+      "id": "mc-bootstrap-runners",
+      "name": "Bootstrap MC Runners",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [340, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/monte-carlo-plan",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.monte_carlo_config || {\"samples\": 4, \"random_seed\": 310, \"folds\": [1], \"epoch_choices\": [5, 10], \"seed_choices\": [310, 311]}) }}",
+        "options": {}
+      },
+      "id": "mc-generate-plan",
+      "name": "Generate MC Plan",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [580, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const plan = $input.first().json;\nconst trials = plan.trials || [];\nconst summary = {\n  trial_count: plan.trial_count,\n  random_seed: plan.random_seed,\n  rank_formula: plan.rank_formula,\n  first_trial: trials[0] || null,\n  all_trial_ids: trials.map(t => t.trial_id),\n};\nreturn [{json: summary}];"
+      },
+      "id": "mc-plan-summary",
+      "name": "Plan Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [820, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=http://127.0.0.1:8001/experiments/best-stable?rank_formula=mean_auroc%20-%200.5%20*%20sd_auroc&min_completed_folds=1",
+        "options": {}
+      },
+      "id": "mc-stable-best",
+      "name": "Find Stable Best",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1060, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const best = $input.first().json;\nconst summary = {\n  best_trial: best.best ? best.best.trial_id : 'none',\n  stability_score: best.best ? best.best.stability_score : 0,\n  mean_auroc: best.best ? best.best.mean_auroc : 0,\n  sd_auroc: best.best ? best.best.sd_auroc : 0,\n  total_evaluated: best.total_evaluated,\n  rank_formula: best.rank_formula,\n};\nreturn [{json: summary}];"
+      },
+      "id": "mc-final-report",
+      "name": "Final Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1300, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [{ "node": "Bootstrap MC Runners", "type": "main", "index": 0 }]
+      ]
+    },
+    "Bootstrap MC Runners": {
+      "main": [
+        [{ "node": "Generate MC Plan", "type": "main", "index": 0 }]
+      ]
+    },
+    "Generate MC Plan": {
+      "main": [
+        [{ "node": "Plan Summary", "type": "main", "index": 0 }]
+      ]
+    },
+    "Plan Summary": {
+      "main": [
+        [{ "node": "Find Stable Best", "type": "main", "index": 0 }]
+      ]
+    },
+    "Find Stable Best": {
+      "main": [
+        [{ "node": "Final Report", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-04-24T18:00:00.000Z",
+  "versionId": "mc-pipeline-v1"
+}

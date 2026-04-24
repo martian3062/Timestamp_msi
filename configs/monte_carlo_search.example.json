@@ -1,0 +1,25 @@
+{
+  "feature_extractors": [
+    "resnet50_imagenet",
+    "uni",
+    "uni_v2"
+  ],
+  "mil_models": [
+    "attention_mil",
+    "transmil"
+  ],
+  "learning_rate_min": 1e-5,
+  "learning_rate_max": 3e-4,
+  "dropout_min": 0.1,
+  "dropout_max": 0.5,
+  "weight_decay_min": 1e-6,
+  "weight_decay_max": 1e-3,
+  "epoch_choices": [5, 10, 20],
+  "seed_choices": [310, 311, 312, 313, 314],
+  "folds": [1],
+  "samples": 8,
+  "random_seed": 310,
+  "primary_metric": "mean_auroc",
+  "metric_direction": "max",
+  "rank_formula": "mean_auroc - 0.5 * sd_auroc"
+}
