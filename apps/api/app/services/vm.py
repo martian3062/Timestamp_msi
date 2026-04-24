@@ -1,4 +1,5 @@
 import subprocess
+from pathlib import PurePosixPath
 
 from app.core.config import Settings, get_settings
 from app.models.vm import FileUploadRequest, VmActionResponse, VmFile, VmFilesResponse
@@ -78,6 +79,40 @@ class VmService:
             ),
         )
 
+    def project_path(self, relative_path: str) -> str:
+        clean = self._clean_relative_path(relative_path)
+        return f"{self.settings.vm_project_root.rstrip('/')}/{clean}"
+
+    def write_project_file(
+        self,
+        relative_path: str,
+        contents: str,
+        action: str = "writeProjectFile",
+        mode: str | None = None,
+        timeout: int = 45,
+    ) -> VmActionResponse:
+        target = self.project_path(relative_path)
+        command = (
+            f"mkdir -p {self._quote(str(PurePosixPath(target).parent))} "
+            f"&& cat > {self._quote(target)}"
+        )
+        if mode:
+            command += f" && chmod {mode} {self._quote(target)}"
+        command += f" && wc -c {self._quote(target)}"
+        return self._run(action, command, input_text=contents, timeout=timeout)
+
+    def run_project_command(
+        self,
+        action: str,
+        command: str,
+        timeout: int = 30,
+    ) -> VmActionResponse:
+        return self._run(
+            action,
+            f"cd {self._quote(self.settings.vm_project_root)} && {command}",
+            timeout=timeout,
+        )
+
     @property
     def _target(self) -> str:
         return f"{self.settings.vm_user}@{self.settings.vm_host}"
@@ -130,6 +165,16 @@ class VmService:
             if normalized == clean_root or normalized.startswith(f"{clean_root}/"):
                 return True
         return False
+
+    @staticmethod
+    def _clean_relative_path(value: str) -> str:
+        path = PurePosixPath(value)
+        if path.is_absolute() or ".." in path.parts:
+            raise ValueError("Project file path must be a safe relative path.")
+        clean = str(path).strip("/")
+        if not clean:
+            raise ValueError("Project file path cannot be empty.")
+        return clean
 
     def _upload_target(self, kind: str) -> str:
         if kind == "annotations":

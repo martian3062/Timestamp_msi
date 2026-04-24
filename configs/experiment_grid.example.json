@@ -1,0 +1,32 @@
+{
+  "feature_extractors": [
+    "resnet50_imagenet",
+    "uni",
+    "uni_v2"
+  ],
+  "mil_models": [
+    "attention_mil",
+    "transmil"
+  ],
+  "learning_rates": [
+    0.0001,
+    0.00005
+  ],
+  "epochs": [
+    10,
+    20
+  ],
+  "seeds": [
+    310
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "primary_metric": "mean_auroc",
+  "metric_direction": "max",
+  "max_trials": 24
+}

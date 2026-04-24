@@ -1,0 +1,204 @@
+{
+  "name": "Timestamp_msi modular training sweep",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/bootstrap",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "{}"
+      },
+      "id": "bootstrap-runner",
+      "name": "Bootstrap VM Runner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/plan",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "{\n  \"feature_extractors\": [\"resnet50_imagenet\", \"uni\", \"uni_v2\"],\n  \"mil_models\": [\"attention_mil\", \"transmil\"],\n  \"learning_rates\": [0.0001, 0.00005],\n  \"epochs\": [10, 20],\n  \"seeds\": [310],\n  \"folds\": [1, 2, 3, 4, 5],\n  \"primary_metric\": \"mean_auroc\",\n  \"metric_direction\": \"max\",\n  \"max_trials\": 24\n}"
+      },
+      "id": "build-plan",
+      "name": "Build Trial Grid",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        760,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "trials",
+        "options": {}
+      },
+      "id": "split-trials",
+      "name": "Split Trials",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/start",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"trial\": $json\n}"
+      },
+      "id": "start-trial",
+      "name": "Start Trial On VM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1280,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "minutes"
+      },
+      "id": "wait-for-training",
+      "name": "Wait Before Score Check",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        1540,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=http://127.0.0.1:8001/experiments/status/{{$json.trial_id}}"
+      },
+      "id": "check-status",
+      "name": "Check Trial Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1800,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:8001/experiments/best?primary_metric=mean_auroc&metric_direction=max"
+      },
+      "id": "select-best",
+      "name": "Select Best Result",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        2060,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Bootstrap VM Runner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Bootstrap VM Runner": {
+      "main": [
+        [
+          {
+            "node": "Build Trial Grid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Trial Grid": {
+      "main": [
+        [
+          {
+            "node": "Split Trials",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Trials": {
+      "main": [
+        [
+          {
+            "node": "Start Trial On VM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Start Trial On VM": {
+      "main": [
+        [
+          {
+            "node": "Wait Before Score Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait Before Score Check": {
+      "main": [
+        [
+          {
+            "node": "Check Trial Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Trial Status": {
+      "main": [
+        [
+          {
+            "node": "Select Best Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

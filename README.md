@@ -185,6 +185,11 @@ POST /vm/upload
 POST /vm/downloader/start
 POST /vm/jupyter/start
 POST /vm/tunnel/start
+POST /experiments/bootstrap
+POST /experiments/plan
+POST /experiments/start
+GET  /experiments/status/{trial_id}
+GET  /experiments/best
 ```
 
 The backend is structured by responsibility:
@@ -196,7 +201,34 @@ The backend is structured by responsibility:
   counts, and readiness checks
 - `app/services/vm.py`: SSH command construction, path allowlisting, file
   upload, process startup, and tunnel startup
+- `app/services/experiments.py`: n8n-facing model grid expansion, VM trial
+  startup, trial status parsing, and best-metric selection
 - `tests`: backend unit tests
+
+### n8n Automation
+
+The `automation` branch adds a modular n8n path for model and hyperparameter
+sweeps. n8n calls the FastAPI experiment endpoints, while the VM runs the real
+Slideflow training script. Results are selected only from completed
+`metrics.json` files written by the VM trial runner.
+
+Import this n8n workflow:
+
+```text
+automation/n8n/timestamp-msi-modular-training.json
+```
+
+The example sweep grid lives at:
+
+```text
+configs/experiment_grid.example.json
+```
+
+The automation details and first small-test grid are documented in:
+
+```text
+automation/README.md
+```
 
 ### Safety Model
 

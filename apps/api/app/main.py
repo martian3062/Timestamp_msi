@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import cohort, vm
+from app.api.routes import cohort, experiments, vm
 from app.core.config import get_settings
 
 settings = get_settings()
@@ -32,4 +32,4 @@ def health() -> dict[str, str]:
 
 app.include_router(cohort.router, prefix="/cohort", tags=["cohort"])
 app.include_router(vm.router, prefix="/vm", tags=["vm"])
-
+app.include_router(experiments.router, prefix="/experiments", tags=["experiments"])

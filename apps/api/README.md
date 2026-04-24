@@ -13,6 +13,9 @@ This service gives the project a proper backend surface for:
 - starting the GDC downloader
 - starting Jupyter on the VM
 - opening the local Jupyter SSH tunnel
+- expanding n8n model/hyperparameter grids
+- starting Slideflow experiment trials on the VM
+- reading real trial status, logs, and completed metrics
 
 The current Next.js frontend still has its own local route at
 `apps/web/src/app/api/vm/route.ts`, but this backend is the cleaner long-term
@@ -65,18 +68,23 @@ POST /vm/upload
 POST /vm/downloader/start
 POST /vm/jupyter/start
 POST /vm/tunnel/start
+POST /experiments/bootstrap
+POST /experiments/plan
+POST /experiments/start
+GET  /experiments/status/{trial_id}
+GET  /experiments/best
 ```
 
 ## Safety
 
 The backend does not expose arbitrary shell execution. VM operations are
-allowlisted and path browsing is restricted to the configured project folders.
-Run this service locally unless you add authentication, authorization, audit
-logging, and proper secret management.
+allowlisted, path browsing is restricted to the configured project folders, and
+experiment endpoints only write known project files or run the fixed
+`scripts/run_n8n_msi_trial.py` VM runner. Run this service locally unless you
+add authentication, authorization, audit logging, and proper secret management.
 
 ## Test
 
 ```powershell
 pytest
 ```
-
