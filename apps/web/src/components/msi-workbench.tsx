@@ -14,11 +14,13 @@ import {
   FlaskConical,
   FolderOpen,
   HardDrive,
+  Moon,
   Play,
   RefreshCw,
   Server,
   Shield,
   Sigma,
+  Sun,
   Terminal,
   TrendingUp,
   Upload,
@@ -302,6 +304,10 @@ export function MsiWorkbench() {
   );
   const [vmFiles, setVmFiles] = useState<VmFileRow[]>([]);
 
+  /* Theme state — dark by default */
+  const [theme, setTheme] = useState<"dark-theme" | "snow-theme">("dark-theme");
+  const isDark = theme === "dark-theme";
+
   /* Monte Carlo state */
   const [mcPlan, setMcPlan] = useState<MCPlan>();
   const [mcBusy, setMcBusy] = useState<string>();
@@ -564,7 +570,7 @@ export function MsiWorkbench() {
   }
 
   return (
-    <main className="snow-theme min-h-screen overflow-hidden bg-[#eef7fb] text-[#132520]">
+    <main className={`${theme} min-h-screen overflow-hidden`} style={{ background: "var(--background)", color: "var(--foreground)" }}>
       <video
         aria-hidden="true"
         autoPlay
@@ -574,13 +580,17 @@ export function MsiWorkbench() {
         playsInline
         src="/assets/snow-in-jinan.webm"
         style={{
-          filter: "saturate(0.55) brightness(1.2) contrast(0.82)",
-          opacity: 0.28,
+          filter: isDark ? "saturate(0.55) brightness(0.6) contrast(1.1)" : "saturate(0.55) brightness(1.2) contrast(0.82)",
+          opacity: isDark ? 0.18 : 0.28,
         }}
       />
       <div className="snow-video-veil" />
       <div className="mouse-aura" />
-      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.82),transparent_42%),linear-gradient(245deg,rgba(176,223,255,0.34),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(255,255,255,0.78),transparent_34%)]" />
+      {isDark ? (
+        <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(156,252,224,0.04),transparent_42%),linear-gradient(245deg,rgba(70,102,217,0.06),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(156,252,224,0.06),transparent_34%)]" />
+      ) : (
+        <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.82),transparent_42%),linear-gradient(245deg,rgba(176,223,255,0.34),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(255,255,255,0.78),transparent_34%)]" />
+      )}
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(30,75,82,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(30,75,82,0.055)_1px,transparent_1px)] bg-[size:72px_72px] opacity-50" />
       <section className="relative z-10 mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-4 pb-8 pt-4 sm:px-6 lg:px-8">
         <header className="flex min-h-14 items-center justify-between border-b border-white/10">
@@ -589,33 +599,48 @@ export function MsiWorkbench() {
               <FlaskConical className="h-4 w-4" />
             </span>
             <div>
-              <p className="text-sm font-semibold">Timestamp_msi</p>
-              <p className="text-xs text-[#89a79d]">MSI-H / MSS command surface</p>
+              <p className="text-sm font-semibold" style={{ color: "var(--heading)" }}>Timestamp_msi</p>
+              <p className="text-xs" style={{ color: "var(--muted)" }}>MSI-H / MSS command surface</p>
             </div>
           </div>
-          <div className="hidden items-center gap-2 md:flex">
-            <Pill>TCGA CRC</Pill>
-            <Pill>SVS: batch 10</Pill>
-            <Pill>VM L4</Pill>
+          <div className="flex items-center gap-2">
+            <div className="hidden items-center gap-2 md:flex">
+              <Pill isDark={isDark}>TCGA CRC</Pill>
+              <Pill isDark={isDark}>SVS: batch 10</Pill>
+              <Pill isDark={isDark}>VM L4</Pill>
+            </div>
+            <button
+              className="flex h-9 w-9 items-center justify-center rounded-full border transition-colors"
+              style={{
+                borderColor: isDark ? "rgba(156,252,224,0.3)" : "rgba(255,255,255,0.7)",
+                background: isDark ? "rgba(156,252,224,0.1)" : "rgba(255,255,255,0.5)",
+                color: isDark ? "#9cfce0" : "#143536",
+              }}
+              onClick={() => setTheme(isDark ? "snow-theme" : "dark-theme")}
+              type="button"
+              title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </button>
           </div>
         </header>
 
         <div className="grid flex-1 gap-6 py-6 xl:grid-cols-[minmax(0,1fr)_440px] xl:items-stretch">
-          <section className="reactive-surface flex min-h-[620px] flex-col justify-between gap-8 rounded-[2rem] border border-white/50 bg-white/55 p-5 shadow-2xl shadow-slate-400/20 backdrop-blur-2xl sm:p-8">
+          <section className="reactive-surface flex min-h-[620px] flex-col justify-between gap-8 rounded-[2rem] p-5 shadow-2xl backdrop-blur-2xl sm:p-8" style={{ background: "var(--panel-bg)", borderColor: "var(--panel-border)", boxShadow: "var(--panel-shadow)" }}>
             <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
               <div className="max-w-3xl">
                 <div className="mb-6 flex flex-wrap items-center gap-2">
-                  <span className="rounded-full border border-[#9cfce0]/30 bg-[#9cfce0]/10 px-3 py-1 text-xs font-semibold uppercase text-[#9cfce0]">
+                  <span className="rounded-full px-3 py-1 text-xs font-semibold uppercase" style={{ border: "1px solid var(--accent-border)", background: "var(--accent-dim)", color: "var(--tag-text)" }}>
                     Bio-control room
                   </span>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-[#b7cfc7]">
+                  <span className="rounded-full border px-3 py-1 text-xs" style={{ borderColor: "var(--border)", background: "var(--btn-bg)", color: "var(--muted)" }}>
                     local UI + VM pipeline
                   </span>
                 </div>
-                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] text-[#102b2b] sm:text-7xl lg:text-6xl 2xl:text-8xl">
+                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] sm:text-7xl lg:text-6xl 2xl:text-8xl" style={{ color: "var(--heading)" }}>
                   MSI slide intelligence, live from the VM.
                 </h1>
-                <p className="mt-6 max-w-2xl text-base leading-8 text-[#315156] sm:text-lg">
+                <p className="mt-6 max-w-2xl text-base leading-8 sm:text-lg" style={{ color: "var(--body)" }}>
                   Upload cohort files, check fold balance, inspect the remote
                   slide project, and launch Jupyter without leaving the browser.
                 </p>
@@ -1130,7 +1155,10 @@ export function MsiWorkbench() {
 
 function Panel({ children }: { children: React.ReactNode }) {
   return (
-    <section className="reactive-surface rounded-[1.6rem] border border-white/70 bg-white/65 p-4 shadow-xl shadow-slate-400/20 backdrop-blur-2xl sm:p-5">
+    <section
+      className="reactive-surface rounded-[1.6rem] border p-4 shadow-xl backdrop-blur-2xl sm:p-5"
+      style={{ background: "var(--panel-bg)", borderColor: "var(--panel-border)", boxShadow: "var(--panel-shadow)" }}
+    >
       {children}
     </section>
   );
@@ -1148,21 +1176,28 @@ function SectionTitle({
   return (
     <div className="flex items-center justify-between gap-4">
       <div className="flex items-center gap-3">
-        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#9cfce0]/25 bg-[#9cfce0]/10 text-[#9cfce0]">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full" style={{ border: "1px solid var(--accent-border)", background: "var(--accent-dim)", color: "var(--tag-text)" }}>
           {icon}
         </span>
-        <h2 className="text-xl font-semibold text-[#102b2b]">{title}</h2>
+        <h2 className="text-xl font-semibold" style={{ color: "var(--heading)" }}>{title}</h2>
       </div>
-      <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase text-[#8fa9a0]">
+      <span className="rounded-full border px-3 py-1 text-xs font-semibold uppercase" style={{ borderColor: "var(--border)", background: "var(--btn-bg)", color: "var(--muted)" }}>
         {label}
       </span>
     </div>
   );
 }
 
-function Pill({ children }: { children: React.ReactNode }) {
+function Pill({ children, isDark }: { children: React.ReactNode; isDark?: boolean }) {
   return (
-    <span className="rounded-full border border-white/70 bg-white/45 px-3 py-1 text-xs font-semibold text-[#36575a] shadow-sm">
+    <span
+      className="rounded-full border px-3 py-1 text-xs font-semibold shadow-sm"
+      style={{
+        borderColor: isDark ? "rgba(156,252,224,0.2)" : "rgba(255,255,255,0.7)",
+        background: isDark ? "rgba(156,252,224,0.08)" : "rgba(255,255,255,0.45)",
+        color: isDark ? "#b7cfc7" : "#36575a",
+      }}
+    >
       {children}
     </span>
   );
@@ -1179,15 +1214,18 @@ function MetricTile({
 }) {
   const color =
     tone === "teal"
-      ? "text-[#9cfce0]"
+      ? "var(--teal)"
       : tone === "blue"
-        ? "text-[#9fb6ff]"
-        : "text-[#ff9f8d]";
+        ? "var(--blue)"
+        : "var(--coral)";
 
   return (
-    <div className="reactive-surface min-h-28 rounded-[1.4rem] border border-white/70 bg-white/50 p-4">
-      <p className="text-sm text-[#8fa9a0]">{label}</p>
-      <p className={`mt-3 truncate text-3xl font-semibold ${color}`}>{value}</p>
+    <div
+      className="reactive-surface min-h-28 rounded-[1.4rem] border p-4"
+      style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
+    >
+      <p className="text-sm" style={{ color: "var(--muted)" }}>{label}</p>
+      <p className="mt-3 truncate text-3xl font-semibold" style={{ color }}>{value}</p>
     </div>
   );
 }
@@ -1206,23 +1244,29 @@ function FileDrop({
   onFile: (file?: File) => void;
 }) {
   return (
-    <section className="reactive-surface rounded-[1.6rem] border border-white/70 bg-white/65 p-4 shadow-xl shadow-slate-400/20 backdrop-blur-2xl sm:p-5">
+    <section
+      className="reactive-surface rounded-[1.6rem] border p-4 shadow-xl backdrop-blur-2xl sm:p-5"
+      style={{ background: "var(--panel-bg)", borderColor: "var(--panel-border)", boxShadow: "var(--panel-shadow)" }}
+    >
       <div className="flex items-start gap-3">
-        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#9cfce0]/25 bg-[#9cfce0]/10 text-[#9cfce0]">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full" style={{ border: "1px solid var(--accent-border)", background: "var(--accent-dim)", color: "var(--tag-text)" }}>
           {icon}
         </span>
         <div>
-          <h2 className="text-base font-semibold text-[#102b2b]">{title}</h2>
-          <p className="mt-1 text-sm leading-6 text-[#8fa9a0]">{description}</p>
+          <h2 className="text-base font-semibold" style={{ color: "var(--heading)" }}>{title}</h2>
+          <p className="mt-1 text-sm leading-6" style={{ color: "var(--muted)" }}>{description}</p>
         </div>
       </div>
 
-      <label className="mt-4 flex min-h-12 cursor-pointer items-center justify-between gap-3 rounded-full border border-dashed border-[#7fb4b9] bg-white/55 px-4 text-sm transition hover:border-[#178d91]/50 hover:bg-white/80">
-        <span className="flex min-w-0 items-center gap-2 text-[#b7cfc7]">
+      <label
+        className="mt-4 flex min-h-12 cursor-pointer items-center justify-between gap-3 rounded-full border border-dashed px-4 text-sm transition"
+        style={{ borderColor: "var(--accent-border)", background: "var(--btn-bg)" }}
+      >
+        <span className="flex min-w-0 items-center gap-2" style={{ color: "var(--muted)" }}>
           <Upload className="h-4 w-4 shrink-0" />
           <span className="truncate">{fileText}</span>
         </span>
-        <span className="shrink-0 rounded-full bg-[#dffff4] px-3 py-1 font-semibold text-[#04110f]">
+        <span className="shrink-0 rounded-full px-3 py-1 font-semibold" style={{ background: "var(--accent-dim)", color: "var(--tag-text)" }}>
           Choose
         </span>
         <input
@@ -1251,7 +1295,8 @@ function ActionButton({
 }) {
   return (
     <button
-      className="reactive-surface inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/70 bg-white/55 px-4 text-sm font-semibold text-[#143536] transition hover:border-[#178d91]/40 hover:bg-white/85 disabled:cursor-not-allowed disabled:opacity-45"
+      className="reactive-surface inline-flex min-h-11 items-center justify-center gap-2 rounded-full border px-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-45"
+      style={{ borderColor: "var(--btn-border)", background: "var(--btn-bg)", color: "var(--btn-text)" }}
       disabled={disabled}
       onClick={onClick}
       type="button"
@@ -1274,30 +1319,31 @@ function ColumnCheck({
   detected: Record<string, string | undefined>;
 }) {
   return (
-    <div className="reactive-surface rounded-3xl border border-white/70 bg-white/45 p-4">
+    <div className="reactive-surface rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
       <div className="flex items-center justify-between gap-3">
-        <h3 className="font-semibold text-[#102b2b]">{title}</h3>
-        <span className="text-sm text-[#8fa9a0]">{columns.length} columns</span>
+        <h3 className="font-semibold" style={{ color: "var(--heading)" }}>{title}</h3>
+        <span className="text-sm" style={{ color: "var(--muted)" }}>{columns.length} columns</span>
       </div>
       <div className="mt-4 grid gap-2">
         {Object.entries(detected).map(([field, column]) => (
           <div
-            className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/50 px-3 text-sm"
+            className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border px-3 text-sm"
+            style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
             key={field}
           >
-            <span className="font-medium capitalize text-[#b7cfc7]">{field}</span>
-            <span className={column ? "text-[#9cfce0]" : "text-[#ff9f8d]"}>
+            <span className="font-medium capitalize" style={{ color: "var(--muted)" }}>{field}</span>
+            <span style={{ color: column ? "var(--teal)" : "var(--coral)" }}>
               {column ?? "Missing"}
             </span>
           </div>
         ))}
       </div>
       {missing.length > 0 ? (
-        <p className="mt-3 text-sm leading-6 text-[#f5c46b]">
+        <p className="mt-3 text-sm leading-6" style={{ color: "var(--warning)" }}>
           Missing required mapping: {missing.join(", ")}.
         </p>
       ) : (
-        <p className="mt-3 text-sm leading-6 text-[#9cfce0]">
+        <p className="mt-3 text-sm leading-6" style={{ color: "var(--teal)" }}>
           Required mappings are present.
         </p>
       )}
@@ -1322,7 +1368,7 @@ function Distribution({
   }));
 
   if (entries.length === 0) {
-    return <p className="mt-4 text-sm leading-6 text-[#8fa9a0]">{emptyText}</p>;
+    return <p className="mt-4 text-sm leading-6" style={{ color: "var(--muted)" }}>{emptyText}</p>;
   }
 
   return (
@@ -1331,17 +1377,18 @@ function Distribution({
       <div className="space-y-2 lg:col-span-2">
         {data.map((entry) => (
           <div
-            className="flex items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/45 px-3 py-2 text-sm"
+            className="flex items-center justify-between gap-3 rounded-2xl border px-3 py-2 text-sm"
+            style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
             key={entry.label}
           >
-            <span className="flex min-w-0 items-center gap-2 font-semibold text-[#102b2b]">
+            <span className="flex min-w-0 items-center gap-2 font-semibold" style={{ color: "var(--heading)" }}>
               <span
                 className="h-2.5 w-2.5 shrink-0 rounded-full"
                 style={{ backgroundColor: entry.fill }}
               />
               <span className="truncate">{entry.label}</span>
             </span>
-            <span className="shrink-0 text-[#66807a]">
+            <span className="shrink-0" style={{ color: "var(--muted)" }}>
               {entry.value.toLocaleString()} ({entry.percent}%)
             </span>
           </div>
@@ -1369,7 +1416,7 @@ function ExperimentResult({
   return (
     <div className="mt-5 grid gap-4">
       {error ? (
-        <p className="rounded-2xl border border-[#d95d48]/30 bg-[#d95d48]/10 p-3 text-sm leading-6 text-[#8a2c21]">
+        <p className="rounded-2xl border border-[#d95d48]/30 bg-[#d95d48]/10 p-3 text-sm leading-6" style={{ color: "var(--danger-deep)" }}>
           {error}
         </p>
       ) : null}
@@ -1378,14 +1425,14 @@ function ExperimentResult({
         <MetricTile label="Epochs" tone="blue" value={epochs} />
         <MetricTile label="Completed" tone="coral" value={`${bestExperiment?.completed_trials ?? 0}`} />
       </div>
-      <div className="rounded-3xl border border-white/60 bg-white/45 p-4">
+      <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
         <div className="grid gap-3 sm:grid-cols-2">
           <KeyValue label="Best model" value={model} />
           <KeyValue label="Feature extractor" value={extractor} />
           <KeyValue label="Validation folds" value={folds} />
           <KeyValue label="Trial id" value={best?.trial_id ?? "Pending"} />
         </div>
-        <p className="mt-4 text-sm leading-6 text-[#66807a]">
+        <p className="mt-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
           Results are selected from VM `metrics.json` files only. If no training
           trial has completed, the dashboard stays pending instead of inventing
           accuracy.
@@ -1415,22 +1462,23 @@ function TechSurface({ integrations }: { integrations: IntegrationStatus[] }) {
       <div className="grid gap-2 sm:grid-cols-2">
         {integrations.map((integration) => (
           <div
-            className="rounded-2xl border border-white/60 bg-white/45 p-3"
+            className="rounded-2xl border p-3"
+            style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
             key={integration.name}
           >
             <div className="flex items-center justify-between gap-3">
-              <p className="font-semibold text-[#102b2b]">{integration.name}</p>
+              <p className="font-semibold" style={{ color: "var(--heading)" }}>{integration.name}</p>
               <span
-                className={`rounded-full px-2 py-1 text-xs font-semibold ${
-                  integration.configured
-                    ? "bg-[#dffff4] text-[#0a5b4e]"
-                    : "bg-[#ffe5dd] text-[#8a2c21]"
-                }`}
+                className="rounded-full px-2 py-1 text-xs font-semibold"
+                style={{
+                  background: integration.configured ? "var(--accent-dim)" : "rgba(217,93,72,0.1)",
+                  color: integration.configured ? "var(--teal)" : "var(--coral)",
+                }}
               >
                 {integration.configured ? "configured" : "missing"}
               </span>
             </div>
-            <p className="mt-2 text-xs leading-5 text-[#66807a]">
+            <p className="mt-2 text-xs leading-5" style={{ color: "var(--muted)" }}>
               {integration.use}
             </p>
           </div>
@@ -1442,9 +1490,12 @@ function TechSurface({ integrations }: { integrations: IntegrationStatus[] }) {
 
 function KeyValue({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/50 px-3 text-sm">
-      <span className="shrink-0 font-medium text-[#66807a]">{label}</span>
-      <span className="min-w-0 truncate text-right font-semibold text-[#102b2b]">
+    <div
+      className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border px-3 text-sm"
+      style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
+    >
+      <span className="shrink-0 font-medium" style={{ color: "var(--muted)" }}>{label}</span>
+      <span className="min-w-0 truncate text-right font-semibold" style={{ color: "var(--heading)" }}>
         {value}
       </span>
     </div>

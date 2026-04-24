@@ -1,8 +1,91 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------ */
+/* Design tokens — dark mode default, light mode via .snow-theme      */
+/* ------------------------------------------------------------------ */
+
 :root {
   --background: #030908;
   --foreground: #eefdf7;
+
+  /* Semantic palette */
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-hover: rgba(156, 252, 224, 0.32);
+  --muted: #8fa9a0;
+  --heading: #eefdf7;
+  --body: #b7cfc7;
+  --accent: #9cfce0;
+  --accent-dim: rgba(156, 252, 224, 0.10);
+  --accent-border: rgba(156, 252, 224, 0.25);
+  --panel-bg: rgba(255, 255, 255, 0.04);
+  --panel-border: rgba(255, 255, 255, 0.10);
+  --panel-shadow: 0 30px 90px rgba(0, 0, 0, 0.32);
+  --input-bg: #020605;
+  --input-border: #244640;
+  --input-text: #bfffe9;
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --tag-bg: rgba(156, 252, 224, 0.10);
+  --tag-border: rgba(156, 252, 224, 0.30);
+  --tag-text: #9cfce0;
+  --btn-bg: rgba(255, 255, 255, 0.05);
+  --btn-border: rgba(255, 255, 255, 0.10);
+  --btn-text: #ecfff8;
+  --btn-hover-bg: rgba(156, 252, 224, 0.10);
+  --btn-hover-border: rgba(156, 252, 224, 0.50);
+  --success: #9cfce0;
+  --warning: #f5c46b;
+  --danger: #ff9f8d;
+  --danger-deep: #d95d48;
+  --teal: #9cfce0;
+  --blue: #9fb6ff;
+  --coral: #ff9f8d;
+  --veil-bg: linear-gradient(180deg, rgba(3, 9, 8, 0.92), rgba(3, 9, 8, 0.85));
+  --video-opacity: 0.18;
+  --video-filter: saturate(0.55) brightness(0.6) contrast(1.1);
+}
+
+.snow-theme {
+  --background: #eef7fb;
+  --foreground: #132520;
+  --surface: rgba(255, 255, 255, 0.55);
+  --surface-hover: rgba(255, 255, 255, 0.80);
+  --border: rgba(255, 255, 255, 0.70);
+  --border-hover: rgba(17, 119, 122, 0.32);
+  --muted: #8fa9a0;
+  --heading: #102b2b;
+  --body: #36575a;
+  --accent: #168f8b;
+  --accent-dim: rgba(156, 252, 224, 0.10);
+  --accent-border: rgba(156, 252, 224, 0.40);
+  --panel-bg: rgba(255, 255, 255, 0.65);
+  --panel-border: rgba(255, 255, 255, 0.70);
+  --panel-shadow: 0 30px 90px rgba(79, 111, 128, 0.16);
+  --input-bg: rgba(248, 254, 255, 0.74);
+  --input-border: rgba(30, 92, 100, 0.18);
+  --input-text: #173c3d;
+  --card-bg: rgba(255, 255, 255, 0.45);
+  --card-border: rgba(255, 255, 255, 0.60);
+  --tag-bg: rgba(156, 252, 224, 0.10);
+  --tag-border: rgba(156, 252, 224, 0.30);
+  --tag-text: #9cfce0;
+  --btn-bg: rgba(255, 255, 255, 0.55);
+  --btn-border: rgba(255, 255, 255, 0.70);
+  --btn-text: #143536;
+  --btn-hover-bg: rgba(255, 255, 255, 0.85);
+  --btn-hover-border: rgba(23, 141, 145, 0.40);
+  --success: #0a5b4e;
+  --warning: #f5c46b;
+  --danger: #d95d48;
+  --danger-deep: #8a2c21;
+  --teal: #168f8b;
+  --blue: #4666d9;
+  --coral: #d95d48;
+  --veil-bg: linear-gradient(180deg, rgba(246, 252, 255, 0.74), rgba(232, 247, 249, 0.58));
+  --video-opacity: 0.28;
+  --video-filter: saturate(0.55) brightness(1.2) contrast(0.82);
 }
 
 @theme inline {
@@ -57,6 +140,10 @@ textarea::-webkit-scrollbar-track,
 div::-webkit-scrollbar-track {
   background: #06100e;
 }
+
+/* ------------------------------------------------------------------ */
+/* Reactive surface system                                            */
+/* ------------------------------------------------------------------ */
 
 .reactive-root {
   --mx: 50%;
@@ -183,7 +270,7 @@ div::-webkit-scrollbar-track {
 }
 
 .reactive-surface:hover {
-  border-color: rgba(156, 252, 224, 0.32);
+  border-color: var(--border-hover);
   box-shadow:
     0 18px 60px rgba(0, 0, 0, 0.14),
     0 0 0 1px rgba(156, 252, 224, 0.08);
@@ -192,6 +279,10 @@ div::-webkit-scrollbar-track {
 .reactive-surface:hover::before {
   opacity: 1;
 }
+
+/* ------------------------------------------------------------------ */
+/* Snow video                                                         */
+/* ------------------------------------------------------------------ */
 
 .snow-video {
   position: fixed;
@@ -210,11 +301,12 @@ div::-webkit-scrollbar-track {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(246, 252, 255, 0.74), rgba(232, 247, 249, 0.58)),
-    radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.9), transparent 38%),
-    radial-gradient(circle at 84% 20%, rgba(182, 224, 255, 0.42), transparent 42%);
+  background: var(--veil-bg);
 }
+
+/* ------------------------------------------------------------------ */
+/* Light theme overrides (.snow-theme)                                */
+/* ------------------------------------------------------------------ */
 
 .snow-theme .mouse-aura {
   background:
@@ -247,11 +339,9 @@ div::-webkit-scrollbar-track {
 }
 
 .snow-theme .reactive-surface {
-  background-color: rgba(255, 255, 255, 0.56);
-  border-color: rgba(255, 255, 255, 0.68);
-  box-shadow:
-    0 30px 90px rgba(79, 111, 128, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  background-color: var(--panel-bg);
+  border-color: var(--panel-border);
+  box-shadow: var(--panel-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
 
 .snow-theme .reactive-surface::before {
@@ -265,10 +355,17 @@ div::-webkit-scrollbar-track {
 }
 
 .snow-theme .reactive-surface:hover {
-  border-color: rgba(17, 119, 122, 0.32);
+  border-color: var(--border-hover);
   box-shadow:
     0 20px 70px rgba(67, 105, 123, 0.18),
     0 0 0 1px rgba(17, 119, 122, 0.08);
+}
+
+.snow-theme .snow-video-veil {
+  background:
+    linear-gradient(180deg, rgba(246, 252, 255, 0.74), rgba(232, 247, 249, 0.58)),
+    radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.9), transparent 38%),
+    radial-gradient(circle at 84% 20%, rgba(182, 224, 255, 0.42), transparent 42%);
 }
 
 .snow-theme h1,
@@ -286,25 +383,25 @@ div::-webkit-scrollbar-track {
 .snow-theme h1,
 .snow-theme h2,
 .snow-theme h3 {
-  color: #102b2b;
+  color: var(--heading);
 }
 
 .snow-theme p,
 .snow-theme span {
-  color: #36575a;
+  color: var(--body);
 }
 
 .snow-theme pre,
 .snow-theme textarea {
-  background: rgba(248, 254, 255, 0.74);
-  color: #173c3d;
-  border-color: rgba(30, 92, 100, 0.18);
+  background: var(--input-bg);
+  color: var(--input-text);
+  border-color: var(--input-border);
   box-shadow: inset 0 1px 30px rgba(94, 139, 154, 0.12);
 }
 
 .snow-theme button,
 .snow-theme a {
-  color: #143536;
+  color: var(--btn-text);
 }
 
 .snow-theme .interactive-igloo-wrap {
@@ -337,6 +434,53 @@ div::-webkit-scrollbar-track {
 .snow-theme h2,
 .snow-theme h3 {
   transform: none !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Dark theme igloo wrap                                              */
+/* ------------------------------------------------------------------ */
+
+.dark-theme .interactive-igloo-wrap {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border: 1px solid rgba(156, 252, 224, 0.12);
+  border-radius: 2rem;
+  background:
+    linear-gradient(180deg, rgba(10, 30, 26, 0.7), rgba(5, 18, 15, 0.5)),
+    radial-gradient(circle at 50% 35%, rgba(156, 252, 224, 0.08), transparent 58%);
+  box-shadow:
+    inset 0 1px 0 rgba(156, 252, 224, 0.06),
+    0 30px 90px rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme *,
+.dark-theme *::before,
+.dark-theme *::after {
+  animation: none !important;
+}
+
+.dark-theme .reactive-surface,
+.dark-theme .reactive-surface *,
+.dark-theme button,
+.dark-theme a,
+.dark-theme span,
+.dark-theme p,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+  transform: none !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Theme transition                                                   */
+/* ------------------------------------------------------------------ */
+
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease, box-shadow 300ms ease !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

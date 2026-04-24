@@ -4,9 +4,11 @@ from pathlib import Path
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+_ENV_FILE = str(Path(__file__).resolve().parents[2] / ".env")
+
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", env_prefix="MSI_")
+    model_config = SettingsConfigDict(env_file=_ENV_FILE, env_prefix="MSI_")
 
     environment: str = "local"
     cors_origins: list[str] = Field(
