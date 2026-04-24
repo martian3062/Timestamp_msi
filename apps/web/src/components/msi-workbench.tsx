@@ -54,25 +54,25 @@ const stageRows = [
     name: "Source cohort",
     owner: "cBioPortal + GDC",
     detail: "TCGA-COAD/READ MSI labels and diagnostic SVS slide manifest",
-    state: "Ready to validate",
+    state: "Ready",
   },
   {
     name: "Slide acquisition",
     owner: "VM storage",
-    detail: "Download SVS files to the remote slide folder, not Windows",
-    state: "Needs manifest",
+    detail: "SVS files stay on the remote slide volume.",
+    state: "60 SVS",
   },
   {
     name: "Feature extraction",
     owner: "pathology310",
-    detail: "Run the notebook against the remote kernel with CUDA checks first",
-    state: "Notebook path",
+    detail: "Notebook starts with CUDA and runtime checks.",
+    state: "Jupyter",
   },
   {
     name: "Slideflow training",
     owner: "MIL workflow",
-    detail: "Use patient-level folds to avoid leakage",
-    state: "After slides",
+    detail: "Patient-level folds protect against leakage.",
+    state: "Queued",
   },
 ];
 
@@ -321,29 +321,57 @@ export function MsiWorkbench() {
   }
 
   return (
-    <main className="min-h-screen bg-[#f7f8f5] text-[#171b18]">
-      <section className="border-b border-[#d7ded5] bg-[#fbfcf7]">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-5 py-6 sm:px-8 lg:px-10">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl">
-              <div className="mb-3 flex flex-wrap items-center gap-2 text-sm font-medium text-[#526258]">
-                <span className="inline-flex items-center gap-2 rounded border border-[#cfd9d1] bg-white px-3 py-1">
-                  <FlaskConical className="h-4 w-4 text-[#00856f]" />
-                  Approach 1
-                </span>
-                <span>TCGA CRC MSI research workstation</span>
+    <main className="min-h-screen overflow-hidden bg-[#030908] text-[#eefdf7]">
+      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(44,255,204,0.18),transparent_34%),linear-gradient(245deg,rgba(119,156,255,0.18),transparent_32%),radial-gradient(circle_at_50%_-10%,rgba(235,255,248,0.16),transparent_34%)]" />
+      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:72px_72px] opacity-35" />
+
+      <section className="relative mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-4 pb-8 pt-4 sm:px-6 lg:px-8">
+        <header className="flex min-h-14 items-center justify-between border-b border-white/10">
+          <div className="flex items-center gap-3">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#9cfce0]/40 bg-[#9cfce0]/10 text-[#9cfce0]">
+              <FlaskConical className="h-4 w-4" />
+            </span>
+            <div>
+              <p className="text-sm font-semibold">Timestamp_msi</p>
+              <p className="text-xs text-[#89a79d]">MSI-H / MSS command surface</p>
+            </div>
+          </div>
+          <div className="hidden items-center gap-2 md:flex">
+            <Pill>TCGA CRC</Pill>
+            <Pill>SVS: 60</Pill>
+            <Pill>VM L4</Pill>
+          </div>
+        </header>
+
+        <div className="grid flex-1 gap-6 py-6 xl:grid-cols-[minmax(0,1fr)_440px] xl:items-stretch">
+          <section className="flex min-h-[620px] flex-col justify-between gap-8 rounded-[2rem] border border-white/10 bg-[#07110f]/70 p-5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8">
+            <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
+              <div className="max-w-3xl">
+                <div className="mb-6 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-[#9cfce0]/30 bg-[#9cfce0]/10 px-3 py-1 text-xs font-semibold uppercase text-[#9cfce0]">
+                    Bio-control room
+                  </span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-[#b7cfc7]">
+                    local UI + VM pipeline
+                  </span>
+                </div>
+                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] text-[#f5fffb] sm:text-7xl lg:text-6xl 2xl:text-8xl">
+                  MSI slide intelligence, live from the VM.
+                </h1>
+                <p className="mt-6 max-w-2xl text-base leading-8 text-[#b7cfc7] sm:text-lg">
+                  Upload cohort files, check fold balance, inspect the remote
+                  slide project, and launch Jupyter without leaving the browser.
+                </p>
               </div>
-              <h1 className="text-3xl font-semibold leading-tight sm:text-5xl">
-                MSI-H vs MSS slide pipeline control room
-              </h1>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-[#526258]">
-                Validate annotation and GDC manifest files locally, check fold
-                balance before training, and keep the heavy SVS download path on
-                the pathology VM.
-              </p>
+
+              <BioField
+                annotationRows={usableAnnotationRows}
+                manifestRows={usableManifestRows}
+                ready={readyChecks}
+              />
             </div>
 
-            <div className="grid min-w-full grid-cols-2 gap-3 sm:min-w-[420px]">
+            <div className="grid gap-3 sm:grid-cols-3">
               <MetricTile
                 label="Annotation rows"
                 value={usableAnnotationRows.toLocaleString()}
@@ -352,83 +380,98 @@ export function MsiWorkbench() {
               <MetricTile
                 label="Manifest rows"
                 value={usableManifestRows.toLocaleString()}
-                tone="amber"
+                tone="blue"
+              />
+              <MetricTile
+                label="VM state"
+                value={vmBusy ? "Running" : readyChecks ? "Ready" : "Standby"}
+                tone="coral"
               />
             </div>
-          </div>
+          </section>
+
+          <aside className="grid gap-4 xl:auto-rows-min">
+            <FileDrop
+              icon={<ClipboardList className="h-5 w-5" />}
+              title="Annotations"
+              description="Patient, slide, MSI label, and fold fields."
+              fileText={fileLabel(annotations)}
+              onFile={(file) => handleFile("annotations", file)}
+            />
+
+            <FileDrop
+              icon={<Database className="h-5 w-5" />}
+              title="GDC manifest"
+              description="Diagnostic SVS manifest for the VM downloader."
+              fileText={fileLabel(manifest)}
+              onFile={(file) => handleFile("manifest", file)}
+            />
+
+            <Panel>
+              <SectionTitle
+                icon={<UploadCloud className="h-5 w-5" />}
+                title="Send files"
+                label="VM"
+              />
+              <div className="mt-4 grid gap-2">
+                <ActionButton
+                  busy={vmBusy === "uploadFile"}
+                  disabled={!annotations || vmBusy === "uploadFile"}
+                  icon={<ClipboardList className="h-4 w-4" />}
+                  label="Upload annotations"
+                  onClick={() => uploadToVm("annotations")}
+                />
+                <ActionButton
+                  busy={vmBusy === "uploadFile"}
+                  disabled={!manifest || vmBusy === "uploadFile"}
+                  icon={<Database className="h-4 w-4" />}
+                  label="Upload manifest"
+                  onClick={() => uploadToVm("manifest")}
+                />
+              </div>
+            </Panel>
+          </aside>
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-7xl gap-5 px-5 py-6 sm:px-8 lg:grid-cols-[380px_minmax(0,1fr)] lg:px-10">
+      <section className="relative mx-auto grid w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 xl:grid-cols-[420px_minmax(0,1fr)]">
         <aside className="space-y-5">
-          <FileDrop
-            icon={<ClipboardList className="h-5 w-5" />}
-            title="Annotations"
-            description="Upload the MSI label CSV with patient, slide, label, and fold fields."
-            fileText={fileLabel(annotations)}
-            onFile={(file) => handleFile("annotations", file)}
-          />
-
-          <FileDrop
-            icon={<Database className="h-5 w-5" />}
-            title="GDC manifest"
-            description="Upload the diagnostic SVS manifest TSV or CSV used by the VM downloader."
-            fileText={fileLabel(manifest)}
-            onFile={(file) => handleFile("manifest", file)}
-          />
-
-          <section className="rounded-lg border border-[#d7ded5] bg-white p-4">
-            <div className="mb-4 flex items-center gap-2">
-              <Server className="h-5 w-5 text-[#3751a3]" />
-              <h2 className="text-base font-semibold">VM run block</h2>
-            </div>
+          <Panel>
+            <SectionTitle
+              icon={<Server className="h-5 w-5" />}
+              title="VM run block"
+              label="editable"
+            />
             <textarea
-              className="min-h-56 w-full resize-y rounded border border-[#cfd9d1] bg-[#101511] p-3 font-mono text-xs leading-5 text-[#d7f5dc] outline-none focus:border-[#00856f]"
+              className="mt-4 min-h-64 w-full resize-y rounded-2xl border border-[#244640] bg-[#020605] p-4 font-mono text-xs leading-5 text-[#bfffe9] outline-none ring-0 transition focus:border-[#9cfce0]/60"
               value={activeCommand}
               onChange={(event) => setActiveCommand(event.target.value)}
               spellCheck={false}
             />
-          </section>
+          </Panel>
 
-          <section className="rounded-lg border border-[#d7ded5] bg-white p-4">
-            <div className="mb-4 flex items-center gap-2">
-              <UploadCloud className="h-5 w-5 text-[#00856f]" />
-              <h2 className="text-base font-semibold">Send files to VM</h2>
-            </div>
-            <div className="grid gap-2">
-              <ActionButton
-                busy={vmBusy === "uploadFile"}
-                disabled={!annotations || vmBusy === "uploadFile"}
-                icon={<ClipboardList className="h-4 w-4" />}
-                label="Upload annotations"
-                onClick={() => uploadToVm("annotations")}
-              />
-              <ActionButton
-                busy={vmBusy === "uploadFile"}
-                disabled={!manifest || vmBusy === "uploadFile"}
-                icon={<Database className="h-4 w-4" />}
-                label="Upload manifest"
-                onClick={() => uploadToVm("manifest")}
-              />
-            </div>
-          </section>
+          <Panel>
+            <SectionTitle
+              icon={<Play className="h-5 w-5" />}
+              title="Fold balance"
+              label="split"
+            />
+            <Distribution
+              counts={foldCounts}
+              emptyText="Fold counts appear after annotations load."
+            />
+          </Panel>
         </aside>
 
         <div className="space-y-5">
-          <section className="rounded-lg border border-[#d7ded5] bg-white p-5">
-            <div className="mb-5 flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
-              <div>
-                <div className="mb-2 flex items-center gap-2">
-                  <Terminal className="h-5 w-5 text-[#3751a3]" />
-                  <h2 className="text-xl font-semibold">VM control panel</h2>
-                </div>
-                <p className="text-sm leading-6 text-[#526258]">
-                  Buttons run fixed SSH actions through the local Next server
-                  using your `evolet_rsa` key. The key never enters browser
-                  JavaScript.
-                </p>
-              </div>
-              <div className="grid gap-2 sm:grid-cols-2 xl:min-w-[520px]">
+          <Panel>
+            <div className="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
+              <SectionTitle
+                icon={<Terminal className="h-5 w-5" />}
+                title="VM control panel"
+                label={vmBusy ? `running ${vmBusy}` : "ssh"}
+              />
+              <div className="grid gap-2 sm:grid-cols-2 xl:min-w-[540px]">
                 <ActionButton
                   busy={vmBusy === "status"}
                   disabled={Boolean(vmBusy)}
@@ -465,7 +508,7 @@ export function MsiWorkbench() {
                   onClick={() => runVmAction("startTunnel")}
                 />
                 <a
-                  className="inline-flex min-h-10 items-center justify-center gap-2 rounded border border-[#cfd9d1] bg-[#fbfcf7] px-3 text-sm font-medium text-[#171b18] transition hover:border-[#00856f] hover:bg-[#f0f8f3]"
+                  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-semibold text-[#ecfff8] transition hover:border-[#9cfce0]/50 hover:bg-[#9cfce0]/10"
                   href="http://127.0.0.1:8888"
                   target="_blank"
                   rel="noreferrer"
@@ -476,32 +519,25 @@ export function MsiWorkbench() {
               </div>
             </div>
 
-            <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
+            <div className="mt-5 grid gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
               <div>
-                <div className="mb-2 flex items-center justify-between gap-3">
-                  <p className="text-sm font-medium text-[#526258]">
-                    SSH output
-                  </p>
-                  {vmBusy ? (
-                    <span className="text-sm text-[#87610b]">
-                      Running {vmBusy}...
-                    </span>
-                  ) : null}
-                </div>
-                <pre className="max-h-80 min-h-44 overflow-auto rounded border border-[#cfd9d1] bg-[#101511] p-3 text-xs leading-5 text-[#d7f5dc]">
+                <p className="mb-2 text-sm font-medium text-[#8fa9a0]">
+                  SSH output
+                </p>
+                <pre className="max-h-80 min-h-52 overflow-auto rounded-3xl border border-[#244640] bg-[#020605] p-4 text-xs leading-5 text-[#c9ffe8] shadow-inner shadow-black/70">
                   {vmError || vmOutput}
                 </pre>
               </div>
 
               <div>
-                <p className="mb-2 text-sm font-medium text-[#526258]">
+                <p className="mb-2 text-sm font-medium text-[#8fa9a0]">
                   VM files
                 </p>
-                <div className="max-h-80 overflow-auto rounded border border-[#d7ded5]">
+                <div className="max-h-80 overflow-auto rounded-3xl border border-[#244640] bg-[#06100e]">
                   {vmFiles.length > 0 ? (
                     vmFiles.map((file) => (
                       <button
-                        className="flex w-full items-center justify-between gap-3 border-b border-[#eef2ec] bg-[#fbfcf7] px-3 py-2 text-left text-sm last:border-b-0 hover:bg-[#f0f8f3]"
+                        className="flex w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 text-left text-sm transition last:border-b-0 hover:bg-[#9cfce0]/8"
                         key={`${file.type}-${file.name}`}
                         onClick={() => {
                           if (file.type === "d" && file.name !== ".") {
@@ -512,43 +548,41 @@ export function MsiWorkbench() {
                         type="button"
                       >
                         <span className="min-w-0">
-                          <span className="block truncate font-medium">
+                          <span className="block truncate font-medium text-[#eefdf7]">
                             {file.name}
                           </span>
-                          <span className="text-xs text-[#708077]">
+                          <span className="text-xs text-[#8fa9a0]">
                             {file.modified}
                           </span>
                         </span>
-                        <span className="shrink-0 text-xs text-[#526258]">
+                        <span className="shrink-0 rounded-full border border-white/10 px-2 py-1 text-xs text-[#b7cfc7]">
                           {file.type === "d" ? "dir" : file.size}
                         </span>
                       </button>
                     ))
                   ) : (
-                    <p className="p-3 text-sm leading-6 text-[#526258]">
+                    <p className="p-4 text-sm leading-6 text-[#8fa9a0]">
                       Click Browse project after the VM check.
                     </p>
                   )}
                 </div>
               </div>
             </div>
-          </section>
+          </Panel>
 
-          <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_330px]">
-            <div className="rounded-lg border border-[#d7ded5] bg-white p-5">
-              <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <h2 className="text-xl font-semibold">Cohort quality gate</h2>
-                  <p className="mt-1 text-sm leading-6 text-[#526258]">
-                    The app only reports what exists in the uploaded files.
-                    Missing fields stay visible until fixed.
-                  </p>
-                </div>
+          <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_340px]">
+            <Panel>
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <SectionTitle
+                  icon={<FileCheck2 className="h-5 w-5" />}
+                  title="Cohort quality gate"
+                  label={readyChecks ? "passed" : "waiting"}
+                />
                 <span
-                  className={`inline-flex items-center gap-2 rounded border px-3 py-1 text-sm font-medium ${
+                  className={`inline-flex min-h-9 items-center justify-center gap-2 rounded-full border px-3 text-sm font-semibold ${
                     readyChecks
-                      ? "border-[#a4cdbb] bg-[#e9f8f1] text-[#006c5a]"
-                      : "border-[#e5c68c] bg-[#fff7e2] text-[#87610b]"
+                      ? "border-[#9cfce0]/40 bg-[#9cfce0]/10 text-[#9cfce0]"
+                      : "border-[#f5c46b]/40 bg-[#f5c46b]/10 text-[#f5c46b]"
                   }`}
                 >
                   {readyChecks ? (
@@ -556,11 +590,11 @@ export function MsiWorkbench() {
                   ) : (
                     <AlertTriangle className="h-4 w-4" />
                   )}
-                  {readyChecks ? "Ready for VM run" : "Needs file checks"}
+                  {readyChecks ? "Ready for VM" : "Needs files"}
                 </span>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
                 <ColumnCheck
                   title="Annotation fields"
                   columns={annotations?.columns ?? []}
@@ -574,65 +608,150 @@ export function MsiWorkbench() {
                   detected={manifestMap}
                 />
               </div>
-            </div>
+            </Panel>
 
-            <div className="rounded-lg border border-[#d7ded5] bg-white p-5">
-              <div className="mb-5 flex items-center gap-2">
-                <Activity className="h-5 w-5 text-[#a1443c]" />
-                <h2 className="text-xl font-semibold">Label mix</h2>
-              </div>
+            <Panel>
+              <SectionTitle
+                icon={<Activity className="h-5 w-5" />}
+                title="Label mix"
+                label="MSI"
+              />
               <Distribution
                 counts={labelCounts}
                 emptyText="Upload annotations to see MSI-H/MSS counts."
               />
-            </div>
+            </Panel>
           </section>
 
-          <section className="grid gap-5 xl:grid-cols-[330px_minmax(0,1fr)]">
-            <div className="rounded-lg border border-[#d7ded5] bg-white p-5">
-              <div className="mb-5 flex items-center gap-2">
-                <Play className="h-5 w-5 text-[#00856f]" />
-                <h2 className="text-xl font-semibold">Fold balance</h2>
-              </div>
-              <Distribution
-                counts={foldCounts}
-                emptyText="Fold counts appear after an annotation file is loaded."
-              />
-            </div>
-
-            <div className="rounded-lg border border-[#d7ded5] bg-white p-5">
-              <div className="mb-5 flex items-center gap-2">
-                <FileText className="h-5 w-5 text-[#3751a3]" />
-                <h2 className="text-xl font-semibold">Workflow stages</h2>
-              </div>
-              <div className="grid gap-3 md:grid-cols-2">
-                {stageRows.map((stage) => (
-                  <div
-                    className="rounded border border-[#d7ded5] bg-[#fbfcf7] p-4"
-                    key={stage.name}
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h3 className="font-semibold">{stage.name}</h3>
-                        <p className="mt-1 text-xs font-medium uppercase text-[#708077]">
-                          {stage.owner}
-                        </p>
-                      </div>
-                      <span className="rounded border border-[#cfd9d1] bg-white px-2 py-1 text-xs text-[#526258]">
-                        {stage.state}
-                      </span>
+          <Panel>
+            <SectionTitle
+              icon={<FileText className="h-5 w-5" />}
+              title="Workflow stages"
+              label="pipeline"
+            />
+            <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+              {stageRows.map((stage) => (
+                <div
+                  className="min-h-40 rounded-3xl border border-white/10 bg-white/[0.04] p-4"
+                  key={stage.name}
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 className="font-semibold text-[#f5fffb]">
+                        {stage.name}
+                      </h3>
+                      <p className="mt-1 text-xs font-semibold uppercase text-[#72f2cc]">
+                        {stage.owner}
+                      </p>
                     </div>
-                    <p className="mt-3 text-sm leading-6 text-[#526258]">
-                      {stage.detail}
-                    </p>
+                    <span className="rounded-full border border-white/10 px-2 py-1 text-xs text-[#b7cfc7]">
+                      {stage.state}
+                    </span>
                   </div>
-                ))}
-              </div>
+                  <p className="mt-4 text-sm leading-6 text-[#a7c2b9]">
+                    {stage.detail}
+                  </p>
+                </div>
+              ))}
             </div>
-          </section>
+          </Panel>
         </div>
       </section>
     </main>
+  );
+}
+
+function Panel({ children }: { children: React.ReactNode }) {
+  return (
+    <section className="rounded-[1.6rem] border border-white/10 bg-[#07110f]/75 p-4 shadow-xl shadow-black/25 backdrop-blur-xl sm:p-5">
+      {children}
+    </section>
+  );
+}
+
+function SectionTitle({
+  icon,
+  title,
+  label,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  label: string;
+}) {
+  return (
+    <div className="flex items-center justify-between gap-4">
+      <div className="flex items-center gap-3">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#9cfce0]/25 bg-[#9cfce0]/10 text-[#9cfce0]">
+          {icon}
+        </span>
+        <h2 className="text-xl font-semibold text-[#f5fffb]">{title}</h2>
+      </div>
+      <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase text-[#8fa9a0]">
+        {label}
+      </span>
+    </div>
+  );
+}
+
+function Pill({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-[#b7cfc7]">
+      {children}
+    </span>
+  );
+}
+
+function BioField({
+  annotationRows,
+  manifestRows,
+  ready,
+}: {
+  annotationRows: number;
+  manifestRows: number;
+  ready: boolean;
+}) {
+  return (
+    <div className="relative mx-auto aspect-square w-full max-w-[380px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#071513] shadow-2xl shadow-black/40">
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(156,252,224,0.2),transparent_38%),linear-gradient(300deg,rgba(133,165,255,0.18),transparent_36%)]" />
+      <div className="absolute inset-8 rounded-[1.6rem] border border-[#9cfce0]/20 bg-[#020605]/55" />
+      <div className="absolute left-10 right-10 top-16 h-px bg-[#9cfce0]/30" />
+      <div className="absolute bottom-16 left-10 right-10 h-px bg-[#9cfce0]/30" />
+      <div className="absolute left-16 top-10 bottom-10 w-px bg-[#9cfce0]/30" />
+      <div className="absolute right-16 top-10 bottom-10 w-px bg-[#9cfce0]/30" />
+      <div className="absolute inset-0">
+        {Array.from({ length: 15 }).map((_, index) => (
+          <span
+            className="absolute h-2 w-8 rounded-full bg-[#9cfce0]/60 shadow-[0_0_22px_rgba(156,252,224,0.42)]"
+            key={index}
+            style={{
+              left: `${18 + (index % 5) * 15}%`,
+              top: `${18 + Math.floor(index / 5) * 22}%`,
+              transform: `rotate(${index % 2 === 0 ? -24 : 24}deg)`,
+              opacity: 0.35 + (index % 4) * 0.12,
+            }}
+          />
+        ))}
+      </div>
+      <div className="absolute left-8 top-8 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-[#d9fff3]">
+        WSI / MSI
+      </div>
+      <div className="absolute bottom-8 left-8 right-8 grid grid-cols-3 gap-2">
+        <BioStat label="ANN" value={annotationRows} />
+        <BioStat label="GDC" value={manifestRows} />
+        <BioStat label="VM" value={ready ? "OK" : "IDLE"} />
+      </div>
+    </div>
+  );
+}
+
+function BioStat({ label, value }: { label: string; value: number | string }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-[#020605]/70 p-3">
+      <p className="text-[10px] font-semibold text-[#72f2cc]">{label}</p>
+      <p className="mt-1 truncate text-lg font-semibold text-[#f5fffb]">
+        {value}
+      </p>
+    </div>
   );
 }
 
@@ -643,14 +762,19 @@ function MetricTile({
 }: {
   label: string;
   value: string;
-  tone: "teal" | "amber";
+  tone: "teal" | "blue" | "coral";
 }) {
-  const color = tone === "teal" ? "text-[#00856f]" : "text-[#a66a00]";
+  const color =
+    tone === "teal"
+      ? "text-[#9cfce0]"
+      : tone === "blue"
+        ? "text-[#9fb6ff]"
+        : "text-[#ff9f8d]";
 
   return (
-    <div className="rounded-lg border border-[#d7ded5] bg-white p-4">
-      <p className="text-sm text-[#526258]">{label}</p>
-      <p className={`mt-2 text-3xl font-semibold ${color}`}>{value}</p>
+    <div className="min-h-28 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4">
+      <p className="text-sm text-[#8fa9a0]">{label}</p>
+      <p className={`mt-3 truncate text-3xl font-semibold ${color}`}>{value}</p>
     </div>
   );
 }
@@ -669,25 +793,23 @@ function FileDrop({
   onFile: (file?: File) => void;
 }) {
   return (
-    <section className="rounded-lg border border-[#d7ded5] bg-white p-4">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[#07110f]/75 p-4 shadow-xl shadow-black/25 backdrop-blur-xl sm:p-5">
       <div className="flex items-start gap-3">
-        <span className="rounded border border-[#cfd9d1] bg-[#f7f8f5] p-2 text-[#00856f]">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#9cfce0]/25 bg-[#9cfce0]/10 text-[#9cfce0]">
           {icon}
         </span>
         <div>
-          <h2 className="text-base font-semibold">{title}</h2>
-          <p className="mt-1 text-sm leading-6 text-[#526258]">
-            {description}
-          </p>
+          <h2 className="text-base font-semibold text-[#f5fffb]">{title}</h2>
+          <p className="mt-1 text-sm leading-6 text-[#8fa9a0]">{description}</p>
         </div>
       </div>
 
-      <label className="mt-4 flex cursor-pointer items-center justify-between gap-3 rounded border border-dashed border-[#b8c6bb] bg-[#fbfcf7] px-3 py-3 text-sm transition hover:border-[#00856f] hover:bg-[#f0f8f3]">
-        <span className="flex min-w-0 items-center gap-2 text-[#526258]">
+      <label className="mt-4 flex min-h-12 cursor-pointer items-center justify-between gap-3 rounded-full border border-dashed border-[#45655d] bg-white/[0.04] px-4 text-sm transition hover:border-[#9cfce0]/60 hover:bg-[#9cfce0]/10">
+        <span className="flex min-w-0 items-center gap-2 text-[#b7cfc7]">
           <Upload className="h-4 w-4 shrink-0" />
           <span className="truncate">{fileText}</span>
         </span>
-        <span className="shrink-0 rounded bg-[#171b18] px-3 py-1 font-medium text-white">
+        <span className="shrink-0 rounded-full bg-[#dffff4] px-3 py-1 font-semibold text-[#04110f]">
           Choose
         </span>
         <input
@@ -716,7 +838,7 @@ function ActionButton({
 }) {
   return (
     <button
-      className="inline-flex min-h-10 items-center justify-center gap-2 rounded border border-[#cfd9d1] bg-[#fbfcf7] px-3 text-sm font-medium text-[#171b18] transition hover:border-[#00856f] hover:bg-[#f0f8f3] disabled:cursor-not-allowed disabled:opacity-50"
+      className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-semibold text-[#ecfff8] transition hover:border-[#9cfce0]/50 hover:bg-[#9cfce0]/10 disabled:cursor-not-allowed disabled:opacity-45"
       disabled={disabled}
       onClick={onClick}
       type="button"
@@ -739,30 +861,30 @@ function ColumnCheck({
   detected: Record<string, string | undefined>;
 }) {
   return (
-    <div className="rounded border border-[#d7ded5] bg-[#fbfcf7] p-4">
+    <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-4">
       <div className="flex items-center justify-between gap-3">
-        <h3 className="font-semibold">{title}</h3>
-        <span className="text-sm text-[#526258]">{columns.length} columns</span>
+        <h3 className="font-semibold text-[#f5fffb]">{title}</h3>
+        <span className="text-sm text-[#8fa9a0]">{columns.length} columns</span>
       </div>
       <div className="mt-4 grid gap-2">
         {Object.entries(detected).map(([field, column]) => (
           <div
-            className="flex items-center justify-between gap-3 rounded bg-white px-3 py-2 text-sm"
+            className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border border-white/5 bg-[#020605]/45 px-3 text-sm"
             key={field}
           >
-            <span className="font-medium capitalize">{field}</span>
-            <span className={column ? "text-[#006c5a]" : "text-[#a1443c]"}>
+            <span className="font-medium capitalize text-[#b7cfc7]">{field}</span>
+            <span className={column ? "text-[#9cfce0]" : "text-[#ff9f8d]"}>
               {column ?? "Missing"}
             </span>
           </div>
         ))}
       </div>
       {missing.length > 0 ? (
-        <p className="mt-3 text-sm leading-6 text-[#87610b]">
+        <p className="mt-3 text-sm leading-6 text-[#f5c46b]">
           Missing required mapping: {missing.join(", ")}.
         </p>
       ) : (
-        <p className="mt-3 text-sm leading-6 text-[#006c5a]">
+        <p className="mt-3 text-sm leading-6 text-[#9cfce0]">
           Required mappings are present.
         </p>
       )}
@@ -781,31 +903,31 @@ function Distribution({
   const total = entries.reduce((sum, [, value]) => sum + value, 0);
 
   if (entries.length === 0) {
-    return <p className="text-sm leading-6 text-[#526258]">{emptyText}</p>;
+    return <p className="mt-4 text-sm leading-6 text-[#8fa9a0]">{emptyText}</p>;
   }
 
   return (
-    <div className="space-y-3">
+    <div className="mt-4 space-y-4">
       {entries.map(([label, value], index) => {
         const percent = total > 0 ? Math.round((value / total) * 100) : 0;
         const bar =
           index % 3 === 0
-            ? "bg-[#00856f]"
+            ? "bg-[#9cfce0]"
             : index % 3 === 1
-              ? "bg-[#a66a00]"
-              : "bg-[#3751a3]";
+              ? "bg-[#9fb6ff]"
+              : "bg-[#ff9f8d]";
 
         return (
           <div key={label}>
-            <div className="mb-1 flex items-center justify-between gap-3 text-sm">
-              <span className="font-medium">{label}</span>
-              <span className="text-[#526258]">
+            <div className="mb-2 flex items-center justify-between gap-3 text-sm">
+              <span className="font-semibold text-[#eefdf7]">{label}</span>
+              <span className="text-[#8fa9a0]">
                 {value.toLocaleString()} ({percent}%)
               </span>
             </div>
-            <div className="h-2 rounded bg-[#e7ece6]">
+            <div className="h-2 rounded-full bg-white/10">
               <div
-                className={`h-2 rounded ${bar}`}
+                className={`h-2 rounded-full ${bar}`}
                 style={{ width: `${Math.max(percent, 2)}%` }}
               />
             </div>

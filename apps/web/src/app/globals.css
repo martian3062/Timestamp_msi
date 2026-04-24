@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f8f5;
-  --foreground: #171b18;
+  --background: #030908;
+  --foreground: #eefdf7;
 }
 
 @theme inline {
@@ -25,6 +25,35 @@ select {
 }
 
 ::selection {
-  background: #bfe8dd;
-  color: #10201b;
+  background: #9cfce0;
+  color: #04110f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+pre,
+textarea {
+  scrollbar-color: #41665d #06100e;
+}
+
+pre::-webkit-scrollbar,
+textarea::-webkit-scrollbar,
+div::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+pre::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+  background: #41665d;
+  border-radius: 999px;
+}
+
+pre::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+  background: #06100e;
 }
