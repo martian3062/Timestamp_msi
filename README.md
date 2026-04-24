@@ -28,8 +28,22 @@ Timestamp_msi/
   apps/
     api/
       app/
+        api/routes/
+          cohort.py
+          vm.py
+        core/
+          config.py
+        models/
+          cohort.py
+          vm.py
+        services/
+          cohort.py
+          vm.py
+        main.py
       storage/
       tests/
+      pyproject.toml
+      README.md
     web/
       src/
         app/
@@ -49,8 +63,9 @@ Timestamp_msi/
   README.md
 ```
 
-`apps/web` is the working application today. `apps/api` and `configs` are
-reserved scaffold folders for later backend or experiment configuration work.
+`apps/web` is the browser workstation. `apps/api` is the FastAPI backend for
+cohort validation and VM orchestration. `configs` is reserved for later shared
+experiment/runtime configuration.
 
 ## What Was Used
 
@@ -69,6 +84,14 @@ Local server bridge:
 - Node.js `child_process` for SSH execution
 - Windows OpenSSH using the existing private key path
 - Fixed action allowlist instead of arbitrary shell execution from the browser
+
+Backend stack:
+
+- FastAPI application at `apps/api/app/main.py`
+- Pydantic request/response models
+- `pydantic-settings` environment configuration
+- Python `subprocess` SSH execution behind a fixed action allowlist
+- Pytest coverage for the cohort parser and validation service
 
 Remote pathology VM:
 
@@ -148,6 +171,33 @@ The GUI provides buttons for common VM work:
 - `Open tunnel`: opens the local SSH tunnel from `http://127.0.0.1:8888` to
   the VM Jupyter port.
 
+### FastAPI Backend
+
+The backend in `apps/api` mirrors the workstation's core operations behind a
+clean API boundary:
+
+```text
+GET  /health
+POST /cohort/validate
+GET  /vm/status
+GET  /vm/files?path=<allowed-vm-path>
+POST /vm/upload
+POST /vm/downloader/start
+POST /vm/jupyter/start
+POST /vm/tunnel/start
+```
+
+The backend is structured by responsibility:
+
+- `app/api/routes`: HTTP endpoints
+- `app/core`: settings and shared configuration
+- `app/models`: Pydantic schemas
+- `app/services/cohort.py`: CSV/TSV parsing, field mapping, label counts, fold
+  counts, and readiness checks
+- `app/services/vm.py`: SSH command construction, path allowlisting, file
+  upload, process startup, and tunnel startup
+- `tests`: backend unit tests
+
 ### Safety Model
 
 The browser never receives the private SSH key. The key stays on the local
@@ -201,6 +251,22 @@ http://127.0.0.1:3000
 
 The development server can also appear as `http://localhost:3000`.
 
+From the backend folder:
+
+```powershell
+cd apps\api
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e ".[dev]"
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
 ## Validation Commands
 
 Run these from `apps/web`:
@@ -211,6 +277,15 @@ npm.cmd run build
 ```
 
 Both were passing after the VM GUI integration.
+
+Run these from `apps/api`:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m compileall app
+```
+
+The backend parser tests were passing after the FastAPI backend was added.
 
 ## VM Environment Overrides
 
@@ -244,6 +319,14 @@ truth whenever you resume work.
 
 Main files:
 
+- `apps/api/app/main.py`: FastAPI application factory, CORS, health endpoint,
+  and route registration.
+- `apps/api/app/api/routes/cohort.py`: cohort validation endpoint.
+- `apps/api/app/api/routes/vm.py`: VM status, browsing, upload, downloader,
+  Jupyter, and tunnel endpoints.
+- `apps/api/app/services/cohort.py`: backend CSV/TSV parser and validation
+  logic.
+- `apps/api/app/services/vm.py`: backend SSH action service.
 - `apps/web/src/components/msi-workbench.tsx`: browser UI, file parsing,
   cohort validation, VM action buttons, and output panels.
 - `apps/web/src/app/api/vm/route.ts`: Node.js SSH bridge and fixed VM actions.

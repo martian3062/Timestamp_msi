@@ -4,7 +4,8 @@ Browser-side workstation for Approach 1 of the TCGA colorectal MSI project.
 The app validates local annotation and GDC manifest files before the heavy WSI
 steps move to the pathology VM.
 
-For the full project-level guide, see the root `README.md`.
+For the full project-level guide and backend API details, see the root
+`README.md`.
 
 ## What It Does
 
