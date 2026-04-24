@@ -19,6 +19,12 @@ cd apps\api
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
 ```
 
+Open API docs:
+
+```text
+http://127.0.0.1:8001/docs
+```
+
 Start n8n with the pinned local launcher. The latest `npx n8n` package can fail
 on this Windows/Node setup, so this script uses `1.114.4`:
 
@@ -71,6 +77,25 @@ disabled by default; enable it only after output files from the batch are saved.
 `Timestamp_msi live source check` calls live public GDC and cBioPortal health
 endpoints. Use it to confirm n8n can reach external data sources, not just local
 project APIs.
+
+## Workflow Safety
+
+These workflows do not start GPU training:
+
+- `Timestamp_msi live source check`
+- `Timestamp_msi SAFE connection check`
+- `Timestamp_msi integrations check`
+
+This workflow downloads data to the VM:
+
+- `Timestamp_msi GDC 10 SVS batch`
+
+This workflow starts a real GPU training trial:
+
+- `Timestamp_msi SAFE single trial launcher`
+
+Avoid the older imported workflows without `SAFE` in the name. They may contain
+broader grids from earlier iterations.
 
 Or import from PowerShell:
 
@@ -166,3 +191,19 @@ Start small before launching the full grid:
 
 After that succeeds, increase folds to `[1, 2, 3, 4, 5]`, then widen models,
 feature extractors, learning rates, and epochs.
+
+## 10-SVS Batch Loop
+
+The intended storage-safe loop is:
+
+1. Run `Timestamp_msi GDC 10 SVS batch`.
+2. Wait until `/data-batches/gdc/status` reports downloaded slides.
+3. Run feature extraction or training for that batch.
+4. Confirm batch outputs are saved under the VM project `output/` or
+   `automation/results/` folders.
+5. Enable/run cleanup to delete temporary `.svs` and `.part` files.
+6. Repeat for the next 10 slides.
+
+The source of truth for real WSI files is GDC open TCGA-COAD/READ diagnostic
+SVS data. The source of truth for MSI labels is cBioPortal
+`coadread_tcga_pan_can_atlas_2018`.
