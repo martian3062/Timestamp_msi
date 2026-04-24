@@ -33,11 +33,25 @@ Open:
 http://127.0.0.1:5678
 ```
 
-Import:
+Import and run this workflow first:
+
+```text
+automation/n8n/timestamp-msi-connection-check.json
+```
+
+It appears in n8n as `Timestamp_msi SAFE connection check`. This checks the
+API, VM SSH status, VM runner bootstrap, trial-plan creation, and current best
+result without starting GPU training.
+
+Then import the single-trial launcher:
 
 ```text
 automation/n8n/timestamp-msi-modular-training.json
 ```
+
+It appears in n8n as `Timestamp_msi SAFE single trial launcher`. This starts
+only one small trial: `resnet50_imagenet`, `attention_mil`, `lr=0.0001`,
+`epochs=5`, and `fold=1`.
 
 Or import from PowerShell:
 

@@ -18,6 +18,7 @@ pnpm-debug.log*
 *.tsbuildinfo
 .turbo/
 .cache/
+.codex-run/
 
 # Local environment and credentials
 .env

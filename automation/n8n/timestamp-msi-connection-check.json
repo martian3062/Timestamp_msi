@@ -1,0 +1,152 @@
+{
+  "name": "Timestamp_msi SAFE connection check",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:8001/health"
+      },
+      "id": "api-health",
+      "name": "Check FastAPI Health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:8001/vm/status"
+      },
+      "id": "vm-status",
+      "name": "Check VM Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        760,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/bootstrap",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}"
+      },
+      "id": "bootstrap-runner",
+      "name": "Bootstrap VM Runner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1020,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/plan",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"feature_extractors\": [\"resnet50_imagenet\"],\n  \"mil_models\": [\"attention_mil\"],\n  \"learning_rates\": [0.0001],\n  \"epochs\": [5],\n  \"seeds\": [310],\n  \"folds\": [1],\n  \"primary_metric\": \"mean_auroc\",\n  \"metric_direction\": \"max\",\n  \"max_trials\": 1\n}"
+      },
+      "id": "build-smoke-plan",
+      "name": "Build Smoke Trial Plan",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1280,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:8001/experiments/best?primary_metric=mean_auroc&metric_direction=max"
+      },
+      "id": "current-best",
+      "name": "Read Current Best Result",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1540,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Check FastAPI Health",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check FastAPI Health": {
+      "main": [
+        [
+          {
+            "node": "Check VM Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check VM Status": {
+      "main": [
+        [
+          {
+            "node": "Bootstrap VM Runner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Bootstrap VM Runner": {
+      "main": [
+        [
+          {
+            "node": "Build Smoke Trial Plan",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Smoke Trial Plan": {
+      "main": [
+        [
+          {
+            "node": "Read Current Best Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
