@@ -1,0 +1,70 @@
+{
+  "name": "Timestamp_msi live source check",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.gdc.cancer.gov/status"
+      },
+      "id": "gdc-status",
+      "name": "Check GDC Live Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.cbioportal.org/api/health"
+      },
+      "id": "cbioportal-health",
+      "name": "Check cBioPortal Health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        760,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Check GDC Live Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check GDC Live Status": {
+      "main": [
+        [
+          {
+            "node": "Check cBioPortal Health",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

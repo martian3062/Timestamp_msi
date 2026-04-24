@@ -58,6 +58,7 @@ Additional workflows:
 ```text
 automation/n8n/timestamp-msi-integrations-check.json
 automation/n8n/timestamp-msi-gdc-10-svs-batch.json
+automation/n8n/timestamp-msi-live-source-check.json
 ```
 
 `Timestamp_msi integrations check` reports whether Hugging Face, Zerve AI,
@@ -67,12 +68,17 @@ Firecrawl, and Tinyfish keys are configured without printing the key values.
 next 10 open TCGA-COAD/READ diagnostic SVS downloads. Its cleanup node is
 disabled by default; enable it only after output files from the batch are saved.
 
+`Timestamp_msi live source check` calls live public GDC and cBioPortal health
+endpoints. Use it to confirm n8n can reach external data sources, not just local
+project APIs.
+
 Or import from PowerShell:
 
 ```powershell
 npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-modular-training.json
 npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-integrations-check.json
 npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-gdc-10-svs-batch.json
+npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-live-source-check.json
 ```
 
 ## API Flow Used By n8n

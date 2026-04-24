@@ -1,6 +1,6 @@
 "use client";
 
-import { type CSSProperties, useMemo, useState } from "react";
+import { type CSSProperties, useEffect, useMemo, useState } from "react";
 import {
   Activity,
   AlertTriangle,
@@ -18,6 +18,18 @@ import {
   Upload,
   UploadCloud,
 } from "lucide-react";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { WinterScene } from "@/components/winter-scene";
 
 type TableRow = Record<string, string>;
@@ -38,8 +50,30 @@ type VmFileRow = {
   modified: string;
 };
 
+type BestExperiment = {
+  primary_metric: string;
+  metric_direction: "max" | "min";
+  completed_trials: number;
+  best: {
+    trial_id: string;
+    metric: string;
+    value: number;
+    metrics: Record<string, unknown>;
+  } | null;
+};
+
+type IntegrationStatus = {
+  name: string;
+  env_var: string;
+  configured: boolean;
+  use: string;
+};
+
 const requiredAnnotationFields = ["patient", "slide", "label", "fold"];
 const requiredManifestFields = ["id", "filename"];
+const automationApiBase =
+  process.env.NEXT_PUBLIC_MSI_API_URL ?? "http://127.0.0.1:8001";
+const chartPalette = ["#168f8b", "#4666d9", "#d95d48", "#7b61ff", "#d99a21"];
 
 const commandBlock = `# Linux VM shell
 cd /home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
@@ -181,6 +215,9 @@ function parseVmFiles(output: string): VmFileRow[] {
 export function MsiWorkbench() {
   const [annotations, setAnnotations] = useState<UploadedTable>();
   const [manifest, setManifest] = useState<UploadedTable>();
+  const [bestExperiment, setBestExperiment] = useState<BestExperiment>();
+  const [integrations, setIntegrations] = useState<IntegrationStatus[]>([]);
+  const [automationError, setAutomationError] = useState("");
   const [activeCommand, setActiveCommand] = useState(commandBlock);
   const [vmBusy, setVmBusy] = useState<string>();
   const [vmOutput, setVmOutput] = useState("Run a VM check to see live status.");
@@ -220,6 +257,50 @@ export function MsiWorkbench() {
     () => countBy(annotations?.rows ?? [], annotationMap.fold),
     [annotations, annotationMap.fold],
   );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function refreshAutomation() {
+      try {
+        const [bestResponse, integrationsResponse] = await Promise.all([
+          fetch(
+            `${automationApiBase}/experiments/best?primary_metric=mean_auroc&metric_direction=max`,
+          ),
+          fetch(`${automationApiBase}/integrations/status`),
+        ]);
+
+        if (!bestResponse.ok || !integrationsResponse.ok) {
+          throw new Error("Automation API is not ready.");
+        }
+
+        const bestData = (await bestResponse.json()) as BestExperiment;
+        const integrationData = (await integrationsResponse.json()) as {
+          integrations: IntegrationStatus[];
+        };
+
+        if (!cancelled) {
+          setBestExperiment(bestData);
+          setIntegrations(integrationData.integrations);
+          setAutomationError("");
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setAutomationError(
+            error instanceof Error
+              ? error.message
+              : "Automation API is not reachable.",
+          );
+        }
+      }
+    }
+
+    void refreshAutomation();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const missingAnnotationFields = requiredAnnotationFields.filter(
     (field) => !annotationMap[field as keyof typeof annotationMap],
@@ -376,7 +457,7 @@ export function MsiWorkbench() {
           </div>
           <div className="hidden items-center gap-2 md:flex">
             <Pill>TCGA CRC</Pill>
-            <Pill>SVS: 60</Pill>
+            <Pill>SVS: batch 10</Pill>
             <Pill>VM L4</Pill>
           </div>
         </header>
@@ -662,6 +743,33 @@ export function MsiWorkbench() {
             </Panel>
           </section>
 
+          <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_420px]">
+            <Panel>
+              <SectionTitle
+                icon={<Activity className="h-5 w-5" />}
+                title="Experiment result"
+                label={
+                  bestExperiment?.completed_trials
+                    ? `${bestExperiment.completed_trials} done`
+                    : "pending"
+                }
+              />
+              <ExperimentResult
+                bestExperiment={bestExperiment}
+                error={automationError}
+              />
+            </Panel>
+
+            <Panel>
+              <SectionTitle
+                icon={<Database className="h-5 w-5" />}
+                title="Tech surface"
+                label="stack"
+              />
+              <TechSurface integrations={integrations} />
+            </Panel>
+          </section>
+
           <Panel>
             <SectionTitle
               icon={<FileText className="h-5 w-5" />}
@@ -911,39 +1019,209 @@ function Distribution({
 }) {
   const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   const total = entries.reduce((sum, [, value]) => sum + value, 0);
+  const data = entries.map(([label, value], index) => ({
+    label,
+    value,
+    percent: total > 0 ? Math.round((value / total) * 100) : 0,
+    fill: chartPalette[index % chartPalette.length],
+  }));
 
   if (entries.length === 0) {
     return <p className="mt-4 text-sm leading-6 text-[#8fa9a0]">{emptyText}</p>;
   }
 
   return (
-    <div className="mt-4 space-y-4">
-      {entries.map(([label, value], index) => {
-        const percent = total > 0 ? Math.round((value / total) * 100) : 0;
-        const bar =
-          index % 3 === 0
-            ? "bg-[#9cfce0]"
-            : index % 3 === 1
-              ? "bg-[#9fb6ff]"
-              : "bg-[#ff9f8d]";
-
-        return (
-          <div key={label}>
-            <div className="mb-2 flex items-center justify-between gap-3 text-sm">
-              <span className="font-semibold text-[#102b2b]">{label}</span>
-              <span className="text-[#8fa9a0]">
-                {value.toLocaleString()} ({percent}%)
-              </span>
-            </div>
-            <div className="h-2 rounded-full bg-white/10">
-              <div
-                className={`h-2 rounded-full ${bar}`}
-                style={{ width: `${Math.max(percent, 2)}%` }}
+    <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_150px]">
+      <div className="h-52 min-w-0">
+        <ResponsiveContainer height="100%" width="100%">
+          <BarChart data={data} layout="vertical" margin={{ left: 8, right: 8 }}>
+            <CartesianGrid horizontal={false} stroke="rgba(20,53,54,0.12)" />
+            <XAxis hide type="number" />
+            <YAxis
+              dataKey="label"
+              tick={{ fill: "#315156", fontSize: 12 }}
+              tickLine={false}
+              type="category"
+              width={92}
+            />
+            <Tooltip
+              contentStyle={{
+                background: "#f8fffb",
+                border: "1px solid rgba(20,53,54,0.12)",
+                borderRadius: 12,
+                color: "#102b2b",
+              }}
+              formatter={(value) => [formatTooltipValue(value), "Rows"]}
+            />
+            <Bar dataKey="value" minPointSize={4} radius={[0, 8, 8, 0]}>
+              {data.map((entry) => (
+                <Cell fill={entry.fill} key={entry.label} />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+      <div className="h-40 lg:h-52">
+        <ResponsiveContainer height="100%" width="100%">
+          <PieChart>
+            <Pie
+              cx="50%"
+              cy="50%"
+              data={data}
+              dataKey="value"
+              innerRadius="58%"
+              outerRadius="86%"
+              paddingAngle={3}
+            >
+              {data.map((entry) => (
+                <Cell fill={entry.fill} key={entry.label} />
+              ))}
+            </Pie>
+            <Tooltip
+              contentStyle={{
+                background: "#f8fffb",
+                border: "1px solid rgba(20,53,54,0.12)",
+                borderRadius: 12,
+                color: "#102b2b",
+              }}
+              formatter={(value) => [formatTooltipValue(value), "Rows"]}
+            />
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
+      <div className="space-y-2 lg:col-span-2">
+        {data.map((entry) => (
+          <div
+            className="flex items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/45 px-3 py-2 text-sm"
+            key={entry.label}
+          >
+            <span className="flex min-w-0 items-center gap-2 font-semibold text-[#102b2b]">
+              <span
+                className="h-2.5 w-2.5 shrink-0 rounded-full"
+                style={{ backgroundColor: entry.fill }}
               />
-            </div>
+              <span className="truncate">{entry.label}</span>
+            </span>
+            <span className="shrink-0 text-[#66807a]">
+              {entry.value.toLocaleString()} ({entry.percent}%)
+            </span>
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
+}
+
+function ExperimentResult({
+  bestExperiment,
+  error,
+}: {
+  bestExperiment?: BestExperiment;
+  error: string;
+}) {
+  const best = bestExperiment?.best;
+  const metrics = best?.metrics ?? {};
+  const model = readableMetric(metrics.mil_model) || "Waiting for completed run";
+  const extractor = readableMetric(metrics.feature_extractor) || "No result yet";
+  const epochs = readableMetric(metrics.epochs) || "Pending";
+  const folds = Array.isArray(metrics.folds) ? metrics.folds.join(", ") : "Pending";
+  const score = best ? best.value.toFixed(4) : "No score";
+
+  return (
+    <div className="mt-5 grid gap-4">
+      {error ? (
+        <p className="rounded-2xl border border-[#d95d48]/30 bg-[#d95d48]/10 p-3 text-sm leading-6 text-[#8a2c21]">
+          {error}
+        </p>
+      ) : null}
+      <div className="grid gap-3 sm:grid-cols-3">
+        <MetricTile label="Best AUROC" tone="teal" value={score} />
+        <MetricTile label="Epochs" tone="blue" value={epochs} />
+        <MetricTile label="Completed" tone="coral" value={`${bestExperiment?.completed_trials ?? 0}`} />
+      </div>
+      <div className="rounded-3xl border border-white/60 bg-white/45 p-4">
+        <div className="grid gap-3 sm:grid-cols-2">
+          <KeyValue label="Best model" value={model} />
+          <KeyValue label="Feature extractor" value={extractor} />
+          <KeyValue label="Validation folds" value={folds} />
+          <KeyValue label="Trial id" value={best?.trial_id ?? "Pending"} />
+        </div>
+        <p className="mt-4 text-sm leading-6 text-[#66807a]">
+          Results are selected from VM `metrics.json` files only. If no training
+          trial has completed, the dashboard stays pending instead of inventing
+          accuracy.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function TechSurface({ integrations }: { integrations: IntegrationStatus[] }) {
+  const stack = [
+    ["UI", "Next.js, React, Tailwind, Three.js, Recharts"],
+    ["Charts", "Recharts with D3 data-visualization primitives"],
+    ["Automation", "n8n workflows calling FastAPI endpoints"],
+    ["Backend", "FastAPI, Pydantic, SSH allowlisted VM actions"],
+    ["Training", "Slideflow MIL on pathology310 with NVIDIA L4"],
+    ["Data", "GDC TCGA-COAD/READ SVS + cBioPortal MSI labels"],
+  ];
+
+  return (
+    <div className="mt-5 space-y-4">
+      <div className="grid gap-2">
+        {stack.map(([label, value]) => (
+          <KeyValue key={label} label={label} value={value} />
+        ))}
+      </div>
+      <div className="grid gap-2 sm:grid-cols-2">
+        {integrations.map((integration) => (
+          <div
+            className="rounded-2xl border border-white/60 bg-white/45 p-3"
+            key={integration.name}
+          >
+            <div className="flex items-center justify-between gap-3">
+              <p className="font-semibold text-[#102b2b]">{integration.name}</p>
+              <span
+                className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                  integration.configured
+                    ? "bg-[#dffff4] text-[#0a5b4e]"
+                    : "bg-[#ffe5dd] text-[#8a2c21]"
+                }`}
+              >
+                {integration.configured ? "configured" : "missing"}
+              </span>
+            </div>
+            <p className="mt-2 text-xs leading-5 text-[#66807a]">
+              {integration.use}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function KeyValue({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/50 px-3 text-sm">
+      <span className="shrink-0 font-medium text-[#66807a]">{label}</span>
+      <span className="min-w-0 truncate text-right font-semibold text-[#102b2b]">
+        {value}
+      </span>
+    </div>
+  );
+}
+
+function readableMetric(value: unknown) {
+  if (typeof value === "string") {
+    return value;
+  }
+  if (typeof value === "number") {
+    return value.toLocaleString();
+  }
+  return "";
+}
+
+function formatTooltipValue(value: unknown) {
+  return typeof value === "number" ? value.toLocaleString() : String(value ?? "");
 }
