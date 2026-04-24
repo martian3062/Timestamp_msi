@@ -23,6 +23,7 @@ pnpm-debug.log*
 # Local environment and credentials
 .env
 .env.*
+!apps/api/.env.example
 *.pem
 *.key
 *.crt

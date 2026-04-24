@@ -190,6 +190,11 @@ POST /experiments/plan
 POST /experiments/start
 GET  /experiments/status/{trial_id}
 GET  /experiments/best
+GET  /integrations/status
+POST /data-batches/gdc/bootstrap
+POST /data-batches/gdc/start
+GET  /data-batches/gdc/status
+POST /data-batches/gdc/cleanup
 ```
 
 The backend is structured by responsibility:
@@ -203,6 +208,10 @@ The backend is structured by responsibility:
   upload, process startup, and tunnel startup
 - `app/services/experiments.py`: n8n-facing model grid expansion, VM trial
   startup, trial status parsing, and best-metric selection
+- `app/services/data_batches.py`: VM-side GDC TCGA-CRC `.svs` batch download,
+  status, manifest tracking, and slide cleanup hooks
+- `app/api/routes/integrations.py`: secret-safe status checks for Hugging Face,
+  Zerve AI, Firecrawl, and Tinyfish environment keys
 - `tests`: backend unit tests
 
 ### n8n Automation

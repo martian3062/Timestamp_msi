@@ -16,6 +16,8 @@ This service gives the project a proper backend surface for:
 - expanding n8n model/hyperparameter grids
 - starting Slideflow experiment trials on the VM
 - reading real trial status, logs, and completed metrics
+- checking optional integration secrets without exposing values
+- bootstrapping and running small GDC `.svs` batches on the VM
 
 The current Next.js frontend still has its own local route at
 `apps/web/src/app/api/vm/route.ts`, but this backend is the cleaner long-term
@@ -57,6 +59,17 @@ $env:MSI_VM_PROJECT_ROOT = "/home/pardeep/pathology310_projects/single_slide_mor
 
 The private key is never returned by the API. It is used server-side only.
 
+Optional integration keys are read from local `.env` values:
+
+```powershell
+MSI_HF_TOKEN=<your-hugging-face-token>
+MSI_ZERVE_API_KEY=<your-zerve-key>
+MSI_FIRECRAWL_API_KEY=<your-firecrawl-key>
+MSI_TINYFISH_API_KEY=<your-tinyfish-key>
+```
+
+Use `apps/api/.env.example` as the template. Never commit real tokens.
+
 ## Endpoints
 
 ```text
@@ -73,15 +86,21 @@ POST /experiments/plan
 POST /experiments/start
 GET  /experiments/status/{trial_id}
 GET  /experiments/best
+GET  /integrations/status
+POST /data-batches/gdc/bootstrap
+POST /data-batches/gdc/start
+GET  /data-batches/gdc/status
+POST /data-batches/gdc/cleanup
 ```
 
 ## Safety
 
 The backend does not expose arbitrary shell execution. VM operations are
 allowlisted, path browsing is restricted to the configured project folders, and
-experiment endpoints only write known project files or run the fixed
-`scripts/run_n8n_msi_trial.py` VM runner. Run this service locally unless you
-add authentication, authorization, audit logging, and proper secret management.
+experiment endpoints only write known project files or run fixed VM runners
+such as `scripts/run_n8n_msi_trial.py` and `scripts/run_gdc_svs_batch.py`. Run
+this service locally unless you add authentication, authorization, audit
+logging, and proper secret management.
 
 ## Test
 

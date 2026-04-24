@@ -25,6 +25,10 @@ class Settings(BaseSettings):
     )
     vm_jupyter_port: int = 8888
     local_jupyter_port: int = 8888
+    hf_token: str | None = None
+    zerve_api_key: str | None = None
+    firecrawl_api_key: str | None = None
+    tinyfish_api_key: str | None = None
 
     @property
     def allowed_browse_roots(self) -> list[str]:
@@ -42,4 +46,3 @@ class Settings(BaseSettings):
 @lru_cache
 def get_settings() -> Settings:
     return Settings()
-

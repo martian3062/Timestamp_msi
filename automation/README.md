@@ -53,10 +53,26 @@ It appears in n8n as `Timestamp_msi SAFE single trial launcher`. This starts
 only one small trial: `resnet50_imagenet`, `attention_mil`, `lr=0.0001`,
 `epochs=5`, and `fold=1`.
 
+Additional workflows:
+
+```text
+automation/n8n/timestamp-msi-integrations-check.json
+automation/n8n/timestamp-msi-gdc-10-svs-batch.json
+```
+
+`Timestamp_msi integrations check` reports whether Hugging Face, Zerve AI,
+Firecrawl, and Tinyfish keys are configured without printing the key values.
+
+`Timestamp_msi GDC 10 SVS batch` bootstraps a VM batch downloader and starts the
+next 10 open TCGA-COAD/READ diagnostic SVS downloads. Its cleanup node is
+disabled by default; enable it only after output files from the batch are saved.
+
 Or import from PowerShell:
 
 ```powershell
 npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-modular-training.json
+npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-integrations-check.json
+npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-gdc-10-svs-batch.json
 ```
 
 ## API Flow Used By n8n
