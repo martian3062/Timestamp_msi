@@ -66,6 +66,7 @@ div::-webkit-scrollbar-track {
 }
 
 .mouse-aura {
+  display: none;
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -160,14 +161,11 @@ div::-webkit-scrollbar-track {
   position: relative;
   isolation: isolate;
   transform: none;
-  transition:
-    border-color 180ms ease-out,
-    background-color 180ms ease-out,
-    box-shadow 180ms ease-out;
+  transition: none;
 }
 
 .reactive-surface::before {
-  content: "";
+  content: none;
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -181,7 +179,7 @@ div::-webkit-scrollbar-track {
     ),
     linear-gradient(135deg, rgba(255, 255, 255, 0.045), transparent 40%);
   opacity: 0.75;
-  transition: opacity 180ms ease-out;
+  transition: none;
 }
 
 .reactive-surface:hover {
@@ -317,10 +315,28 @@ div::-webkit-scrollbar-track {
   border-radius: 2rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(212, 238, 246, 0.28)),
-    radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.85), transparent 58%);
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.85), transparent 58%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     0 30px 90px rgba(73, 108, 123, 0.18);
+}
+
+.snow-theme *,
+.snow-theme *::before,
+.snow-theme *::after {
+  animation: none !important;
+}
+
+.snow-theme .reactive-surface,
+.snow-theme .reactive-surface *,
+.snow-theme button,
+.snow-theme a,
+.snow-theme span,
+.snow-theme p,
+.snow-theme h1,
+.snow-theme h2,
+.snow-theme h3 {
+  transform: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

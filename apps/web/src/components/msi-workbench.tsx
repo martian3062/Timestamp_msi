@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { type CSSProperties, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   Activity,
   AlertTriangle,
@@ -229,7 +229,6 @@ export function MsiWorkbench() {
     "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc",
   );
   const [vmFiles, setVmFiles] = useState<VmFileRow[]>([]);
-  const [pointer, setPointer] = useState({ x: 50, y: 35 });
 
   const annotationMap = useMemo(() => {
     const columns = annotations?.columns ?? [];
@@ -406,28 +405,8 @@ export function MsiWorkbench() {
     });
   }
 
-  function handlePointerMove(event: React.PointerEvent<HTMLElement>) {
-    const bounds = event.currentTarget.getBoundingClientRect();
-    setPointer({
-      x: ((event.clientX - bounds.left) / bounds.width) * 100,
-      y: ((event.clientY - bounds.top) / bounds.height) * 100,
-    });
-  }
-
-  const reactiveStyle = {
-    "--mx": `${pointer.x}%`,
-    "--my": `${pointer.y}%`,
-    "--dx": `${(pointer.x - 50) / 50}`,
-    "--dy": `${(pointer.y - 50) / 50}`,
-  } as CSSProperties;
-
   return (
-    <main
-      className="reactive-root snow-theme min-h-screen overflow-hidden bg-[#eef7fb] text-[#132520]"
-      onPointerLeave={() => setPointer({ x: 50, y: 35 })}
-      onPointerMove={handlePointerMove}
-      style={reactiveStyle}
-    >
+    <main className="snow-theme min-h-screen overflow-hidden bg-[#eef7fb] text-[#132520]">
       <video
         aria-hidden="true"
         autoPlay
@@ -485,10 +464,7 @@ export function MsiWorkbench() {
               </div>
 
               <div className="interactive-igloo-wrap">
-                <WinterScene
-                  dx={(pointer.x - 50) / 50}
-                  dy={(pointer.y - 50) / 50}
-                />
+                <WinterScene dx={0} dy={0} />
               </div>
             </div>
 

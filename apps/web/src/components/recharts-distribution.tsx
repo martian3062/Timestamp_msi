@@ -44,7 +44,12 @@ export function RechartsDistribution({ data }: { data: DistributionDatum[] }) {
               }}
               formatter={(value) => [formatTooltipValue(value), "Rows"]}
             />
-            <Bar dataKey="value" minPointSize={4} radius={[0, 8, 8, 0]}>
+            <Bar
+              dataKey="value"
+              isAnimationActive={false}
+              minPointSize={4}
+              radius={[0, 8, 8, 0]}
+            >
               {data.map((entry) => (
                 <Cell fill={entry.fill} key={entry.label} />
               ))}
@@ -61,6 +66,7 @@ export function RechartsDistribution({ data }: { data: DistributionDatum[] }) {
               data={data}
               dataKey="value"
               innerRadius="58%"
+              isAnimationActive={false}
               outerRadius="86%"
               paddingAngle={3}
             >
