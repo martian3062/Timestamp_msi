@@ -445,8 +445,6 @@ export function MsiWorkbench() {
       <div className="mouse-aura" />
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.82),transparent_42%),linear-gradient(245deg,rgba(176,223,255,0.34),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(255,255,255,0.78),transparent_34%)]" />
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(30,75,82,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(30,75,82,0.055)_1px,transparent_1px)] bg-[size:72px_72px] opacity-50" />
-      <ReactiveBackplane />
-
       <section className="relative z-10 mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-4 pb-8 pt-4 sm:px-6 lg:px-8">
         <header className="flex min-h-14 items-center justify-between border-b border-white/10">
           <div className="flex items-center gap-3">
@@ -816,31 +814,6 @@ function Panel({ children }: { children: React.ReactNode }) {
     <section className="reactive-surface rounded-[1.6rem] border border-white/70 bg-white/65 p-4 shadow-xl shadow-slate-400/20 backdrop-blur-2xl sm:p-5">
       {children}
     </section>
-  );
-}
-
-function ReactiveBackplane() {
-  return (
-    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-      <div className="reactive-arc reactive-arc-one" />
-      <div className="reactive-arc reactive-arc-two" />
-      <div className="reactive-block-field">
-        {Array.from({ length: 28 }).map((_, index) => (
-          <span
-            className="reactive-block"
-            key={index}
-            style={
-              {
-                "--i": index,
-                "--row": Math.floor(index / 7),
-                "--col": index % 7,
-                "--block-opacity": 0.12 + (index % 5) * 0.035,
-              } as CSSProperties
-            }
-          />
-        ))}
-      </div>
-    </div>
   );
 }
 

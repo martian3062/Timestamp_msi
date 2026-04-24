@@ -87,6 +87,7 @@ div::-webkit-scrollbar-track {
 }
 
 .reactive-arc {
+  display: none;
   position: absolute;
   width: 52vw;
   aspect-ratio: 1;
@@ -120,6 +121,7 @@ div::-webkit-scrollbar-track {
 }
 
 .reactive-block-field {
+  display: none;
   position: absolute;
   inset: 0;
   opacity: 0.9;
@@ -157,12 +159,8 @@ div::-webkit-scrollbar-track {
 .reactive-surface {
   position: relative;
   isolation: isolate;
-  transform:
-    perspective(1200px)
-    rotateX(calc(var(--dy) * -0.35deg))
-    rotateY(calc(var(--dx) * 0.45deg));
+  transform: none;
   transition:
-    transform 180ms ease-out,
     border-color 180ms ease-out,
     background-color 180ms ease-out,
     box-shadow 180ms ease-out;
@@ -189,7 +187,7 @@ div::-webkit-scrollbar-track {
 .reactive-surface:hover {
   border-color: rgba(156, 252, 224, 0.32);
   box-shadow:
-    0 22px 90px rgba(0, 0, 0, 0.35),
+    0 18px 60px rgba(0, 0, 0, 0.14),
     0 0 0 1px rgba(156, 252, 224, 0.08);
 }
 
@@ -271,7 +269,7 @@ div::-webkit-scrollbar-track {
 .snow-theme .reactive-surface:hover {
   border-color: rgba(17, 119, 122, 0.32);
   box-shadow:
-    0 34px 110px rgba(67, 105, 123, 0.22),
+    0 20px 70px rgba(67, 105, 123, 0.18),
     0 0 0 1px rgba(17, 119, 122, 0.08);
 }
 
