@@ -18,6 +18,7 @@ import {
   Upload,
   UploadCloud,
 } from "lucide-react";
+import { WinterScene } from "@/components/winter-scene";
 
 type TableRow = Record<string, string>;
 
@@ -338,17 +339,31 @@ export function MsiWorkbench() {
 
   return (
     <main
-      className="reactive-root min-h-screen overflow-hidden bg-[#030908] text-[#eefdf7]"
+      className="reactive-root snow-theme min-h-screen overflow-hidden bg-[#eef7fb] text-[#132520]"
       onPointerLeave={() => setPointer({ x: 50, y: 35 })}
       onPointerMove={handlePointerMove}
       style={reactiveStyle}
     >
+      <video
+        aria-hidden="true"
+        autoPlay
+        className="pointer-events-none fixed inset-0 z-0 h-full w-full object-cover"
+        loop
+        muted
+        playsInline
+        src="/assets/snow-in-jinan.webm"
+        style={{
+          filter: "saturate(0.55) brightness(1.2) contrast(0.82)",
+          opacity: 0.28,
+        }}
+      />
+      <div className="snow-video-veil" />
       <div className="mouse-aura" />
-      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(44,255,204,0.18),transparent_34%),linear-gradient(245deg,rgba(119,156,255,0.18),transparent_32%),radial-gradient(circle_at_50%_-10%,rgba(235,255,248,0.16),transparent_34%)]" />
-      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:72px_72px] opacity-35" />
+      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.82),transparent_42%),linear-gradient(245deg,rgba(176,223,255,0.34),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(255,255,255,0.78),transparent_34%)]" />
+      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(30,75,82,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(30,75,82,0.055)_1px,transparent_1px)] bg-[size:72px_72px] opacity-50" />
       <ReactiveBackplane />
 
-      <section className="relative mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-4 pb-8 pt-4 sm:px-6 lg:px-8">
+      <section className="relative z-10 mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-4 pb-8 pt-4 sm:px-6 lg:px-8">
         <header className="flex min-h-14 items-center justify-between border-b border-white/10">
           <div className="flex items-center gap-3">
             <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#9cfce0]/40 bg-[#9cfce0]/10 text-[#9cfce0]">
@@ -367,7 +382,7 @@ export function MsiWorkbench() {
         </header>
 
         <div className="grid flex-1 gap-6 py-6 xl:grid-cols-[minmax(0,1fr)_440px] xl:items-stretch">
-          <section className="reactive-surface flex min-h-[620px] flex-col justify-between gap-8 rounded-[2rem] border border-white/10 bg-[#07110f]/70 p-5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8">
+          <section className="reactive-surface flex min-h-[620px] flex-col justify-between gap-8 rounded-[2rem] border border-white/50 bg-white/55 p-5 shadow-2xl shadow-slate-400/20 backdrop-blur-2xl sm:p-8">
             <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
               <div className="max-w-3xl">
                 <div className="mb-6 flex flex-wrap items-center gap-2">
@@ -378,20 +393,21 @@ export function MsiWorkbench() {
                     local UI + VM pipeline
                   </span>
                 </div>
-                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] text-[#f5fffb] sm:text-7xl lg:text-6xl 2xl:text-8xl">
+                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] text-[#102b2b] sm:text-7xl lg:text-6xl 2xl:text-8xl">
                   MSI slide intelligence, live from the VM.
                 </h1>
-                <p className="mt-6 max-w-2xl text-base leading-8 text-[#b7cfc7] sm:text-lg">
+                <p className="mt-6 max-w-2xl text-base leading-8 text-[#315156] sm:text-lg">
                   Upload cohort files, check fold balance, inspect the remote
                   slide project, and launch Jupyter without leaving the browser.
                 </p>
               </div>
 
-              <BioField
-                annotationRows={usableAnnotationRows}
-                manifestRows={usableManifestRows}
-                ready={readyChecks}
-              />
+              <div className="interactive-igloo-wrap">
+                <WinterScene
+                  dx={(pointer.x - 50) / 50}
+                  dy={(pointer.y - 50) / 50}
+                />
+              </div>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-3">
@@ -457,7 +473,7 @@ export function MsiWorkbench() {
         </div>
       </section>
 
-      <section className="relative mx-auto grid w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 xl:grid-cols-[420px_minmax(0,1fr)]">
+      <section className="relative z-10 mx-auto grid w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 xl:grid-cols-[420px_minmax(0,1fr)]">
         <aside className="space-y-5">
           <Panel>
             <SectionTitle
@@ -686,7 +702,7 @@ export function MsiWorkbench() {
 
 function Panel({ children }: { children: React.ReactNode }) {
   return (
-    <section className="reactive-surface rounded-[1.6rem] border border-white/10 bg-[#07110f]/75 p-4 shadow-xl shadow-black/25 backdrop-blur-xl sm:p-5">
+    <section className="reactive-surface rounded-[1.6rem] border border-white/70 bg-white/65 p-4 shadow-xl shadow-slate-400/20 backdrop-blur-2xl sm:p-5">
       {children}
     </section>
   );
@@ -732,7 +748,7 @@ function SectionTitle({
         <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#9cfce0]/25 bg-[#9cfce0]/10 text-[#9cfce0]">
           {icon}
         </span>
-        <h2 className="text-xl font-semibold text-[#f5fffb]">{title}</h2>
+        <h2 className="text-xl font-semibold text-[#102b2b]">{title}</h2>
       </div>
       <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase text-[#8fa9a0]">
         {label}
@@ -743,63 +759,9 @@ function SectionTitle({
 
 function Pill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-[#b7cfc7]">
+    <span className="rounded-full border border-white/70 bg-white/45 px-3 py-1 text-xs font-semibold text-[#36575a] shadow-sm">
       {children}
     </span>
-  );
-}
-
-function BioField({
-  annotationRows,
-  manifestRows,
-  ready,
-}: {
-  annotationRows: number;
-  manifestRows: number;
-  ready: boolean;
-}) {
-  return (
-    <div className="reactive-surface relative mx-auto aspect-square w-full max-w-[380px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#071513] shadow-2xl shadow-black/40">
-      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(156,252,224,0.2),transparent_38%),linear-gradient(300deg,rgba(133,165,255,0.18),transparent_36%)]" />
-      <div className="absolute inset-8 rounded-[1.6rem] border border-[#9cfce0]/20 bg-[#020605]/55" />
-      <div className="absolute left-10 right-10 top-16 h-px bg-[#9cfce0]/30" />
-      <div className="absolute bottom-16 left-10 right-10 h-px bg-[#9cfce0]/30" />
-      <div className="absolute left-16 top-10 bottom-10 w-px bg-[#9cfce0]/30" />
-      <div className="absolute right-16 top-10 bottom-10 w-px bg-[#9cfce0]/30" />
-      <div className="absolute inset-0">
-        {Array.from({ length: 15 }).map((_, index) => (
-          <span
-            className="absolute h-2 w-8 rounded-full bg-[#9cfce0]/60 shadow-[0_0_22px_rgba(156,252,224,0.42)]"
-            key={index}
-            style={{
-              left: `${18 + (index % 5) * 15}%`,
-              top: `${18 + Math.floor(index / 5) * 22}%`,
-              transform: `rotate(${index % 2 === 0 ? -24 : 24}deg)`,
-              opacity: 0.35 + (index % 4) * 0.12,
-            }}
-          />
-        ))}
-      </div>
-      <div className="absolute left-8 top-8 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-[#d9fff3]">
-        WSI / MSI
-      </div>
-      <div className="absolute bottom-8 left-8 right-8 grid grid-cols-3 gap-2">
-        <BioStat label="ANN" value={annotationRows} />
-        <BioStat label="GDC" value={manifestRows} />
-        <BioStat label="VM" value={ready ? "OK" : "IDLE"} />
-      </div>
-    </div>
-  );
-}
-
-function BioStat({ label, value }: { label: string; value: number | string }) {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-[#020605]/70 p-3">
-      <p className="text-[10px] font-semibold text-[#72f2cc]">{label}</p>
-      <p className="mt-1 truncate text-lg font-semibold text-[#f5fffb]">
-        {value}
-      </p>
-    </div>
   );
 }
 
@@ -820,7 +782,7 @@ function MetricTile({
         : "text-[#ff9f8d]";
 
   return (
-    <div className="reactive-surface min-h-28 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4">
+    <div className="reactive-surface min-h-28 rounded-[1.4rem] border border-white/70 bg-white/50 p-4">
       <p className="text-sm text-[#8fa9a0]">{label}</p>
       <p className={`mt-3 truncate text-3xl font-semibold ${color}`}>{value}</p>
     </div>
@@ -841,18 +803,18 @@ function FileDrop({
   onFile: (file?: File) => void;
 }) {
   return (
-    <section className="reactive-surface rounded-[1.6rem] border border-white/10 bg-[#07110f]/75 p-4 shadow-xl shadow-black/25 backdrop-blur-xl sm:p-5">
+    <section className="reactive-surface rounded-[1.6rem] border border-white/70 bg-white/65 p-4 shadow-xl shadow-slate-400/20 backdrop-blur-2xl sm:p-5">
       <div className="flex items-start gap-3">
         <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#9cfce0]/25 bg-[#9cfce0]/10 text-[#9cfce0]">
           {icon}
         </span>
         <div>
-          <h2 className="text-base font-semibold text-[#f5fffb]">{title}</h2>
+          <h2 className="text-base font-semibold text-[#102b2b]">{title}</h2>
           <p className="mt-1 text-sm leading-6 text-[#8fa9a0]">{description}</p>
         </div>
       </div>
 
-      <label className="mt-4 flex min-h-12 cursor-pointer items-center justify-between gap-3 rounded-full border border-dashed border-[#45655d] bg-white/[0.04] px-4 text-sm transition hover:border-[#9cfce0]/60 hover:bg-[#9cfce0]/10">
+      <label className="mt-4 flex min-h-12 cursor-pointer items-center justify-between gap-3 rounded-full border border-dashed border-[#7fb4b9] bg-white/55 px-4 text-sm transition hover:border-[#178d91]/50 hover:bg-white/80">
         <span className="flex min-w-0 items-center gap-2 text-[#b7cfc7]">
           <Upload className="h-4 w-4 shrink-0" />
           <span className="truncate">{fileText}</span>
@@ -886,7 +848,7 @@ function ActionButton({
 }) {
   return (
     <button
-      className="reactive-surface inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-semibold text-[#ecfff8] transition hover:border-[#9cfce0]/50 hover:bg-[#9cfce0]/10 disabled:cursor-not-allowed disabled:opacity-45"
+      className="reactive-surface inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/70 bg-white/55 px-4 text-sm font-semibold text-[#143536] transition hover:border-[#178d91]/40 hover:bg-white/85 disabled:cursor-not-allowed disabled:opacity-45"
       disabled={disabled}
       onClick={onClick}
       type="button"
@@ -909,15 +871,15 @@ function ColumnCheck({
   detected: Record<string, string | undefined>;
 }) {
   return (
-    <div className="reactive-surface rounded-3xl border border-white/10 bg-white/[0.035] p-4">
+    <div className="reactive-surface rounded-3xl border border-white/70 bg-white/45 p-4">
       <div className="flex items-center justify-between gap-3">
-        <h3 className="font-semibold text-[#f5fffb]">{title}</h3>
+        <h3 className="font-semibold text-[#102b2b]">{title}</h3>
         <span className="text-sm text-[#8fa9a0]">{columns.length} columns</span>
       </div>
       <div className="mt-4 grid gap-2">
         {Object.entries(detected).map(([field, column]) => (
           <div
-            className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border border-white/5 bg-[#020605]/45 px-3 text-sm"
+            className="flex min-h-10 items-center justify-between gap-3 rounded-2xl border border-white/60 bg-white/50 px-3 text-sm"
             key={field}
           >
             <span className="font-medium capitalize text-[#b7cfc7]">{field}</span>
@@ -968,7 +930,7 @@ function Distribution({
         return (
           <div key={label}>
             <div className="mb-2 flex items-center justify-between gap-3 text-sm">
-              <span className="font-semibold text-[#eefdf7]">{label}</span>
+              <span className="font-semibold text-[#102b2b]">{label}</span>
               <span className="text-[#8fa9a0]">
                 {value.toLocaleString()} ({percent}%)
               </span>

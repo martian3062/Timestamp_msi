@@ -197,6 +197,134 @@ div::-webkit-scrollbar-track {
   opacity: 1;
 }
 
+.snow-video {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.6) brightness(1.22) contrast(0.82);
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.snow-video-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(246, 252, 255, 0.74), rgba(232, 247, 249, 0.58)),
+    radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.9), transparent 38%),
+    radial-gradient(circle at 84% 20%, rgba(182, 224, 255, 0.42), transparent 42%);
+}
+
+.snow-theme .mouse-aura {
+  background:
+    radial-gradient(
+      720px circle at var(--mx) var(--my),
+      rgba(255, 255, 255, 0.88),
+      rgba(145, 221, 241, 0.22) 34%,
+      transparent 64%
+    ),
+    radial-gradient(
+      420px circle at calc(100% - var(--mx)) calc(100% - var(--my)),
+      rgba(156, 252, 224, 0.18),
+      transparent 70%
+    );
+  mix-blend-mode: soft-light;
+}
+
+.snow-theme .reactive-block {
+  border-color: rgba(74, 126, 137, 0.12);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.66), transparent 58%),
+    rgba(173, 219, 228, 0.15);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 20px 60px rgba(96, 139, 150, 0.16);
+}
+
+.snow-theme .reactive-arc {
+  border-color: rgba(62, 111, 122, 0.12);
+}
+
+.snow-theme .reactive-surface {
+  background-color: rgba(255, 255, 255, 0.56);
+  border-color: rgba(255, 255, 255, 0.68);
+  box-shadow:
+    0 30px 90px rgba(79, 111, 128, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.snow-theme .reactive-surface::before {
+  background:
+    radial-gradient(
+      420px circle at var(--mx) var(--my),
+      rgba(255, 255, 255, 0.82),
+      transparent 58%
+    ),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.52), transparent 48%);
+}
+
+.snow-theme .reactive-surface:hover {
+  border-color: rgba(17, 119, 122, 0.32);
+  box-shadow:
+    0 34px 110px rgba(67, 105, 123, 0.22),
+    0 0 0 1px rgba(17, 119, 122, 0.08);
+}
+
+.snow-theme h1,
+.snow-theme h2,
+.snow-theme h3,
+.snow-theme p,
+.snow-theme span,
+.snow-theme pre,
+.snow-theme textarea,
+.snow-theme button,
+.snow-theme a {
+  text-shadow: none;
+}
+
+.snow-theme h1,
+.snow-theme h2,
+.snow-theme h3 {
+  color: #102b2b;
+}
+
+.snow-theme p,
+.snow-theme span {
+  color: #36575a;
+}
+
+.snow-theme pre,
+.snow-theme textarea {
+  background: rgba(248, 254, 255, 0.74);
+  color: #173c3d;
+  border-color: rgba(30, 92, 100, 0.18);
+  box-shadow: inset 0 1px 30px rgba(94, 139, 154, 0.12);
+}
+
+.snow-theme button,
+.snow-theme a {
+  color: #143536;
+}
+
+.snow-theme .interactive-igloo-wrap {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 2rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(212, 238, 246, 0.28)),
+    radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.85), transparent 58%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 30px 90px rgba(73, 108, 123, 0.18);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mouse-aura,
   .reactive-arc,
