@@ -1,8 +1,9 @@
 # 4basecare MSI Workbench
 
-Browser-side workstation for Approach 1 of the TCGA colorectal MSI project.
-The app validates local annotation and GDC manifest files before the heavy WSI
-steps move to the pathology VM.
+Browser-side workstation for the TCGA colorectal MSI project. The app now has a
+three-way switch for Approach 1, Approach 2, and Monte Carlo so the user can
+move between manual VM orchestration, the imported platform backend, and
+stochastic validation without leaving the main screen.
 
 For the full project-level guide and backend API details, see the root
 `README.md`.
@@ -15,6 +16,13 @@ For the full project-level guide and backend API details, see the root
 - Check the pathology VM over SSH from the local Next API.
 - Browse the VM project folder, upload selected annotation/manifest files to it,
   start the GDC downloader, start Jupyter, and open the local tunnel.
+- Use Approach 2 controls for preprocessing, feature extraction, MIL training,
+  prediction, and experiment syncing through the FastAPI backend.
+- Use Monte Carlo controls to prepare VM model-cache folders, generate random
+  trial plans, bootstrap runners, rank stable-best models, and fetch uncertainty
+  outputs.
+- Show Hugging Face, Groq AI, Zerve AI, Firecrawl, and Tinyfish configured
+  state without printing secret values.
 - Keep VM/Jupyter commands visible and editable for the remote Slideflow flow.
 
 The frontend does not invent model scores. It only reports values parsed from
@@ -29,6 +37,15 @@ npm.cmd run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+The frontend expects the FastAPI backend at:
+
+```bash
+NEXT_PUBLIC_MSI_API_URL=http://127.0.0.1:8001
+```
+
+If the variable is not set, the workstation defaults to
+`http://127.0.0.1:8001`.
 
 ## VM Control
 
@@ -60,6 +77,19 @@ GUI actions:
 - `Start downloader` runs the GDC manifest downloader on the VM.
 - `Start Jupyter` starts Jupyter on VM port `8888`.
 - `Open tunnel` forwards local `http://127.0.0.1:8888` to the VM Jupyter port.
+- `Prep VM cache` in the Monte Carlo approach creates Hugging Face and Monte
+  Carlo model folders on the VM through the backend route
+  `/vm/monte-carlo/workspace`.
+
+## Approach Modes
+
+- `Approach 1`: cohort/manifest validation, VM browsing, file upload,
+  downloader, Jupyter, tunnel, experiment result, and tech surface.
+- `Approach 2`: mounted platform workflow using `/approach-2/pipeline/*` and
+  `/approach-2/experiments/*`.
+- `Monte Carlo`: dedicated random-search and uncertainty workflow using
+  `/experiments/monte-carlo-plan`, `/experiments/best-stable`, and VM model
+  cache preparation.
 
 ## Expected Files
 
@@ -87,7 +117,8 @@ npm.cmd run build
 - `src/app/page.tsx` renders the workstation.
 - `src/app/api/vm/route.ts` contains the local SSH bridge for VM actions.
 - `src/components/msi-workbench.tsx` contains the upload parser, field mapping,
-  validation, distributions, VM controls, and command block.
+  validation, distributions, three-approach switch, VM controls, Approach 2
+  controls, Monte Carlo controls, and command block.
 - `src/app/globals.css` keeps the global theme small and app-focused.
 
 ## Safety Note

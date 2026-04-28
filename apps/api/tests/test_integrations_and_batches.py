@@ -12,7 +12,7 @@ def test_integrations_status_does_not_expose_secret_values() -> None:
     assert response.status_code == 200
     payload = response.json()
     names = {item["name"] for item in payload["integrations"]}
-    assert names == {"Hugging Face", "Zerve AI", "Firecrawl", "Tinyfish"}
+    assert names == {"Hugging Face", "Groq AI", "Zerve AI", "Firecrawl", "Tinyfish"}
     assert "hf_" not in response.text
     assert "fc-" not in response.text
     assert "sk-" not in response.text

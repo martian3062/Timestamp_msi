@@ -14,6 +14,7 @@ import {
   FlaskConical,
   FolderOpen,
   HardDrive,
+  Layers3,
   Moon,
   Play,
   RefreshCw,
@@ -26,7 +27,6 @@ import {
   Upload,
   UploadCloud,
 } from "lucide-react";
-import { WinterScene } from "@/components/winter-scene";
 import type { DistributionDatum } from "@/components/recharts-distribution";
 
 const RechartsDistribution = dynamic(
@@ -52,6 +52,7 @@ type UploadedTable = {
 };
 
 type UploadKind = "annotations" | "manifest";
+type ApproachMode = "approach-1" | "approach-2" | "monte-carlo";
 
 type VmFileRow = {
   type: string;
@@ -146,11 +147,21 @@ type StableBestResult = {
   }[];
 };
 
+type Approach2Experiment = {
+  id: number;
+  experiment_id: string;
+  name: string;
+  status: string;
+  model_type: string;
+  metrics?: Record<string, unknown> | null;
+  created_at: string;
+};
+
 const requiredAnnotationFields = ["patient", "slide", "label", "fold"];
 const requiredManifestFields = ["id", "filename"];
 const automationApiBase =
   process.env.NEXT_PUBLIC_MSI_API_URL ?? "http://127.0.0.1:8001";
-const chartPalette = ["#168f8b", "#4666d9", "#d95d48", "#7b61ff", "#d99a21"];
+const chartPalette = ["#cbd5e1", "#4666d9", "#d95d48", "#7b61ff", "#d99a21"];
 
 const commandBlock = `# Linux VM shell
 cd /home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
@@ -290,6 +301,7 @@ function parseVmFiles(output: string): VmFileRow[] {
 }
 
 export function MsiWorkbench() {
+  const [approachMode, setApproachMode] = useState<ApproachMode>("approach-1");
   const [annotations, setAnnotations] = useState<UploadedTable>();
   const [manifest, setManifest] = useState<UploadedTable>();
   const [bestExperiment, setBestExperiment] = useState<BestExperiment>();
@@ -315,6 +327,11 @@ export function MsiWorkbench() {
   const [mcBootstrapCI, setMcBootstrapCI] = useState<BootstrapCI>();
   const [mcStableBest, setMcStableBest] = useState<StableBestResult>();
   const [mcError, setMcError] = useState("");
+  const [mcVmPrep, setMcVmPrep] = useState("");
+  const [approach2Experiments, setApproach2Experiments] = useState<Approach2Experiment[]>([]);
+  const [approach2Busy, setApproach2Busy] = useState<string>();
+  const [approach2Error, setApproach2Error] = useState("");
+  const [approach2Message, setApproach2Message] = useState("Approach 2 is ready to register slides or start a pipeline action.");
 
   const annotationMap = useMemo(() => {
     const columns = annotations?.columns ?? [];
@@ -569,6 +586,94 @@ export function MsiWorkbench() {
     }
   }
 
+  async function prepareMCVmWorkspace() {
+    setMcBusy("vm-workspace");
+    setMcError("");
+    setMcVmPrep("");
+    try {
+      const response = await fetch(`${automationApiBase}/vm/monte-carlo/workspace`, {
+        method: "POST",
+      });
+      const data = (await response.json()) as {
+        ok: boolean;
+        stdout?: string;
+        stderr?: string;
+        error?: string;
+      };
+
+      if (!response.ok || !data.ok) {
+        throw new Error(data.error || data.stderr || "VM Monte Carlo prep failed.");
+      }
+
+      setMcVmPrep([data.stdout, data.stderr].filter(Boolean).join("\n\n") || "VM workspace prepared.");
+    } catch (error) {
+      setMcError(error instanceof Error ? error.message : "VM Monte Carlo prep failed.");
+    } finally {
+      setMcBusy(undefined);
+    }
+  }
+
+  async function runApproach2Action(
+    action: "preprocess" | "features" | "train" | "predict" | "experiments",
+  ) {
+    setApproach2Busy(action);
+    setApproach2Error("");
+
+    const requests: Record<typeof action, { path: string; body?: Record<string, unknown> }> = {
+      preprocess: {
+        path: "/approach-2/pipeline/preprocess",
+        body: { cohort: "default", tile_size: 256, tile_um: 256 },
+      },
+      features: {
+        path: "/approach-2/pipeline/extract_features",
+        body: { cohort: "default", feature_extractor: "resnet50" },
+      },
+      train: {
+        path: "/approach-2/pipeline/train",
+        body: {
+          experiment_name: "attention_mil_switch_run",
+          model_type: "attention_mil",
+          epochs: 10,
+          batch_size: 32,
+          learning_rate: 0.0001,
+        },
+      },
+      predict: {
+        path: "/approach-2/pipeline/predict",
+        body: { slide_id: "sample_slide", model_version: "latest" },
+      },
+      experiments: { path: "/approach-2/experiments/" },
+    };
+
+    try {
+      const request = requests[action];
+      const response = await fetch(`${automationApiBase}${request.path}`, {
+        method: request.body ? "POST" : "GET",
+        headers: request.body ? { "Content-Type": "application/json" } : undefined,
+        body: request.body ? JSON.stringify(request.body) : undefined,
+      });
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data?.detail || "Approach 2 request failed.");
+      }
+
+      if (action === "experiments") {
+        setApproach2Experiments(Array.isArray(data) ? data : []);
+        setApproach2Message(`Loaded ${Array.isArray(data) ? data.length : 0} Approach 2 experiments.`);
+      } else if (action === "train") {
+        setApproach2Message(`Started Approach 2 training run ${data.experiment_id ?? ""}.`);
+        void runApproach2Action("experiments");
+      } else {
+        setApproach2Message(JSON.stringify(data, null, 2));
+      }
+    } catch (error) {
+      setApproach2Error(error instanceof Error ? error.message : "Approach 2 request failed.");
+    } finally {
+      setApproach2Busy(undefined);
+    }
+  }
+
   return (
     <main className={`${theme} min-h-screen overflow-hidden`} style={{ background: "var(--background)", color: "var(--foreground)" }}>
       <video
@@ -580,22 +685,22 @@ export function MsiWorkbench() {
         playsInline
         src="/assets/snow-in-jinan.webm"
         style={{
-          filter: isDark ? "saturate(0.55) brightness(0.6) contrast(1.1)" : "saturate(0.55) brightness(1.2) contrast(0.82)",
-          opacity: isDark ? 0.18 : 0.28,
+          filter: isDark ? "grayscale(0.72) saturate(0.42) brightness(0.55) contrast(1.12)" : "saturate(0.55) brightness(1.2) contrast(0.82)",
+          opacity: isDark ? 0.12 : 0.28,
         }}
       />
       <div className="snow-video-veil" />
       <div className="mouse-aura" />
       {isDark ? (
-        <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(156,252,224,0.04),transparent_42%),linear-gradient(245deg,rgba(70,102,217,0.06),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(156,252,224,0.06),transparent_34%)]" />
+        <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.055),transparent_42%),linear-gradient(245deg,rgba(148,163,184,0.095),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(226,232,240,0.08),transparent_34%)]" />
       ) : (
         <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.82),transparent_42%),linear-gradient(245deg,rgba(176,223,255,0.34),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(255,255,255,0.78),transparent_34%)]" />
       )}
-      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(30,75,82,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(30,75,82,0.055)_1px,transparent_1px)] bg-[size:72px_72px] opacity-50" />
+      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(148,163,184,0.065)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.065)_1px,transparent_1px)] bg-[size:72px_72px] opacity-45" />
       <section className="relative z-10 mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-4 pb-8 pt-4 sm:px-6 lg:px-8">
         <header className="flex min-h-14 items-center justify-between border-b border-white/10">
           <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#9cfce0]/40 bg-[#9cfce0]/10 text-[#9cfce0]">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full border" style={{ borderColor: "var(--accent-border)", background: "var(--accent-dim)", color: "var(--tag-text)" }}>
               <FlaskConical className="h-4 w-4" />
             </span>
             <div>
@@ -604,6 +709,22 @@ export function MsiWorkbench() {
             </div>
           </div>
           <div className="flex items-center gap-2">
+            <div className="hidden rounded-full border p-1 sm:flex" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
+              {(["approach-1", "approach-2", "monte-carlo"] as ApproachMode[]).map((mode) => (
+                <button
+                  className="rounded-full px-3 py-1.5 text-xs font-semibold transition"
+                  key={mode}
+                  onClick={() => setApproachMode(mode)}
+                  style={{
+                    background: approachMode === mode ? "var(--accent-dim)" : "transparent",
+                    color: approachMode === mode ? "var(--tag-text)" : "var(--muted)",
+                  }}
+                  type="button"
+                >
+                  {mode === "approach-1" ? "Approach 1" : mode === "approach-2" ? "Approach 2" : "Monte Carlo"}
+                </button>
+              ))}
+            </div>
             <div className="hidden items-center gap-2 md:flex">
               <Pill isDark={isDark}>TCGA CRC</Pill>
               <Pill isDark={isDark}>SVS: batch 10</Pill>
@@ -612,9 +733,9 @@ export function MsiWorkbench() {
             <button
               className="flex h-9 w-9 items-center justify-center rounded-full border transition-colors"
               style={{
-                borderColor: isDark ? "rgba(156,252,224,0.3)" : "rgba(255,255,255,0.7)",
-                background: isDark ? "rgba(156,252,224,0.1)" : "rgba(255,255,255,0.5)",
-                color: isDark ? "#9cfce0" : "#143536",
+                borderColor: isDark ? "rgba(226,232,240,0.34)" : "rgba(255,255,255,0.7)",
+                background: isDark ? "rgba(226,232,240,0.11)" : "rgba(255,255,255,0.5)",
+                color: isDark ? "#f1f5f9" : "#143536",
               }}
               onClick={() => setTheme(isDark ? "snow-theme" : "dark-theme")}
               type="button"
@@ -627,44 +748,62 @@ export function MsiWorkbench() {
 
         <div className="grid flex-1 gap-6 py-6 xl:grid-cols-[minmax(0,1fr)_440px] xl:items-stretch">
           <section className="reactive-surface flex min-h-[620px] flex-col justify-between gap-8 rounded-[2rem] p-5 shadow-2xl backdrop-blur-2xl sm:p-8" style={{ background: "var(--panel-bg)", borderColor: "var(--panel-border)", boxShadow: "var(--panel-shadow)" }}>
-            <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
+            <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(320px,460px)] lg:items-center">
               <div className="max-w-3xl">
                 <div className="mb-6 flex flex-wrap items-center gap-2">
                   <span className="rounded-full px-3 py-1 text-xs font-semibold uppercase" style={{ border: "1px solid var(--accent-border)", background: "var(--accent-dim)", color: "var(--tag-text)" }}>
                     Bio-control room
                   </span>
                   <span className="rounded-full border px-3 py-1 text-xs" style={{ borderColor: "var(--border)", background: "var(--btn-bg)", color: "var(--muted)" }}>
-                    local UI + VM pipeline
+                    {approachMode === "approach-1"
+                      ? "local UI + VM pipeline"
+                      : approachMode === "approach-2"
+                        ? "Slideflow platform API"
+                        : "VM Monte Carlo + AI providers"}
                   </span>
                 </div>
                 <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] sm:text-7xl lg:text-6xl 2xl:text-8xl" style={{ color: "var(--heading)" }}>
-                  MSI slide intelligence, live from the VM.
+                  {approachMode === "approach-1"
+                    ? "MSI slide intelligence, live from the VM."
+                    : approachMode === "approach-2"
+                      ? "Switchable MSI platform, from cohort to model registry."
+                      : "Monte Carlo as a dedicated validation approach."}
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 sm:text-lg" style={{ color: "var(--body)" }}>
-                  Upload cohort files, check fold balance, inspect the remote
-                  slide project, and launch Jupyter without leaving the browser.
+                  {approachMode === "approach-1"
+                    ? "Upload cohort files, check fold balance, inspect the remote slide project, and launch Jupyter without leaving the browser."
+                    : approachMode === "approach-2"
+                      ? "Register slides, trigger preprocessing, extract features, train Attention MIL, and review Approach 2 experiments from the same control room."
+                      : "Generate stochastic trial plans, prepare the VM model cache, use HF model storage, and check Groq, Firecrawl, Zerve, and Tinyfish readiness."}
                 </p>
               </div>
 
-              <div className="interactive-igloo-wrap">
-                <WinterScene dx={0} dy={0} />
+              <div className="research-video-wrap">
+                <video
+                  autoPlay
+                  className="h-full w-full object-cover"
+                  loop
+                  muted
+                  playsInline
+                  src="/assets/researching-cancer-msi-h.mp4"
+                />
               </div>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-3">
               <MetricTile
-                label="Annotation rows"
-                value={usableAnnotationRows.toLocaleString()}
+                label={approachMode === "approach-1" ? "Annotation rows" : approachMode === "approach-2" ? "Approach 2 runs" : "MC trials"}
+                value={approachMode === "approach-1" ? usableAnnotationRows.toLocaleString() : approachMode === "approach-2" ? approach2Experiments.length.toLocaleString() : String(mcPlan?.trial_count ?? 0)}
                 tone="teal"
               />
               <MetricTile
-                label="Manifest rows"
-                value={usableManifestRows.toLocaleString()}
+                label={approachMode === "approach-1" ? "Manifest rows" : approachMode === "approach-2" ? "Pipeline API" : "VM cache"}
+                value={approachMode === "approach-1" ? usableManifestRows.toLocaleString() : approachMode === "approach-2" ? (approach2Busy ? "Running" : "Ready") : mcVmPrep ? "Prepared" : "Pending"}
                 tone="blue"
               />
               <MetricTile
-                label="VM state"
-                value={vmBusy ? "Running" : readyChecks ? "Ready" : "Standby"}
+                label={approachMode === "approach-1" ? "VM state" : approachMode === "approach-2" ? "Monte Carlo" : "AI links"}
+                value={approachMode === "approach-1" ? (vmBusy ? "Running" : readyChecks ? "Ready" : "Standby") : approachMode === "approach-2" ? (mcPlan ? `${mcPlan.trial_count} trials` : "Integrated") : `${integrations.filter((item) => item.configured).length}/${integrations.length}`}
                 tone="coral"
               />
             </div>
@@ -714,7 +853,7 @@ export function MsiWorkbench() {
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto grid w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 xl:grid-cols-[420px_minmax(0,1fr)]">
+      <section className={`relative z-10 mx-auto w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 xl:grid-cols-[420px_minmax(0,1fr)] ${approachMode === "approach-1" ? "grid" : "hidden"}`}>
         <aside className="space-y-5">
           <Panel>
             <SectionTitle
@@ -723,7 +862,7 @@ export function MsiWorkbench() {
               label="editable"
             />
             <textarea
-              className="mt-4 min-h-64 w-full resize-y rounded-2xl border border-[#244640] bg-[#020605] p-4 font-mono text-xs leading-5 text-[#bfffe9] outline-none ring-0 transition focus:border-[#9cfce0]/60"
+              className="mt-4 min-h-64 w-full resize-y rounded-2xl border border-[#3a404a] bg-[#0b0d10] p-4 font-mono text-xs leading-5 text-[#edf1f7] outline-none ring-0 transition focus:border-[#e5e7eb]/60"
               value={activeCommand}
               onChange={(event) => setActiveCommand(event.target.value)}
               spellCheck={false}
@@ -788,7 +927,7 @@ export function MsiWorkbench() {
                   onClick={() => runVmAction("startTunnel")}
                 />
                 <a
-                  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-semibold text-[#ecfff8] transition hover:border-[#9cfce0]/50 hover:bg-[#9cfce0]/10"
+                  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-semibold text-[#ecfff8] transition hover:border-[#e5e7eb]/50 hover:bg-[#e5e7eb]/10"
                   href="http://127.0.0.1:8888"
                   target="_blank"
                   rel="noreferrer"
@@ -804,7 +943,7 @@ export function MsiWorkbench() {
                 <p className="mb-2 text-sm font-medium text-[#8fa9a0]">
                   SSH output
                 </p>
-                <pre className="max-h-80 min-h-52 overflow-auto rounded-3xl border border-[#244640] bg-[#020605] p-4 text-xs leading-5 text-[#c9ffe8] shadow-inner shadow-black/70">
+                <pre className="max-h-80 min-h-52 overflow-auto rounded-3xl border border-[#3a404a] bg-[#0b0d10] p-4 text-xs leading-5 text-[#edf1f7] shadow-inner shadow-black/70">
                   {vmError || vmOutput}
                 </pre>
               </div>
@@ -813,11 +952,11 @@ export function MsiWorkbench() {
                 <p className="mb-2 text-sm font-medium text-[#8fa9a0]">
                   VM files
                 </p>
-                <div className="max-h-80 overflow-auto rounded-3xl border border-[#244640] bg-[#06100e]">
+                <div className="max-h-80 overflow-auto rounded-3xl border border-[#3a404a] bg-[#111318]">
                   {vmFiles.length > 0 ? (
                     vmFiles.map((file) => (
                       <button
-                        className="flex w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 text-left text-sm transition last:border-b-0 hover:bg-[#9cfce0]/8"
+                        className="flex w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 text-left text-sm transition last:border-b-0 hover:bg-[#e5e7eb]/8"
                         key={`${file.type}-${file.name}`}
                         onClick={() => {
                           if (file.type === "d" && file.name !== ".") {
@@ -828,14 +967,14 @@ export function MsiWorkbench() {
                         type="button"
                       >
                         <span className="min-w-0">
-                          <span className="block truncate font-medium text-[#eefdf7]">
+                          <span className="block truncate font-medium text-[#f3f5f8]">
                             {file.name}
                           </span>
                           <span className="text-xs text-[#8fa9a0]">
                             {file.modified}
                           </span>
                         </span>
-                        <span className="shrink-0 rounded-full border border-white/10 px-2 py-1 text-xs text-[#b7cfc7]">
+                        <span className="shrink-0 rounded-full border border-white/10 px-2 py-1 text-xs text-[#c6ccd5]">
                           {file.type === "d" ? "dir" : file.size}
                         </span>
                       </button>
@@ -861,7 +1000,7 @@ export function MsiWorkbench() {
                 <span
                   className={`inline-flex min-h-9 items-center justify-center gap-2 rounded-full border px-3 text-sm font-semibold ${
                     readyChecks
-                      ? "border-[#9cfce0]/40 bg-[#9cfce0]/10 text-[#9cfce0]"
+                      ? "border-[#e5e7eb]/40 bg-[#e5e7eb]/10 text-[#e5e7eb]"
                       : "border-[#f5c46b]/40 bg-[#f5c46b]/10 text-[#f5c46b]"
                   }`}
                 >
@@ -930,6 +1069,7 @@ export function MsiWorkbench() {
             </Panel>
           </section>
 
+          <div className="hidden">
           {/* Monte Carlo Methods Panel */}
           <Panel>
             <SectionTitle
@@ -985,7 +1125,7 @@ export function MsiWorkbench() {
             {mcPlan ? (
               <div className="mt-5">
                 <div className="mb-3 flex items-center gap-2">
-                  <BarChart3 className="h-4 w-4 text-[#9cfce0]" />
+                  <BarChart3 className="h-4 w-4 text-[#e5e7eb]" />
                   <p className="text-sm font-semibold text-[#102b2b]">
                     Random search plan
                     <span className="ml-2 text-xs font-normal text-[#8fa9a0]">
@@ -1008,8 +1148,8 @@ export function MsiWorkbench() {
                     </thead>
                     <tbody>
                       {mcPlan.trials.map((trial) => (
-                        <tr key={trial.trial_id} className="border-t border-white/30 hover:bg-[#9cfce0]/5">
-                          <td className="px-3 py-2 font-mono text-[#168f8b]">{trial.trial_id.slice(0, 13)}</td>
+                        <tr key={trial.trial_id} className="border-t border-white/30 hover:bg-[#e5e7eb]/5">
+                          <td className="px-3 py-2 font-mono text-[#cbd5e1]">{trial.trial_id.slice(0, 13)}</td>
                           <td className="px-3 py-2 text-[#102b2b]">{trial.mil_model}</td>
                           <td className="px-3 py-2 text-[#102b2b]">{trial.feature_extractor}</td>
                           <td className="px-3 py-2 font-mono text-[#4666d9]">{trial.learning_rate.toExponential(2)}</td>
@@ -1029,7 +1169,7 @@ export function MsiWorkbench() {
               {mcStableBest ? (
                 <div className="rounded-3xl border border-white/60 bg-white/45 p-4">
                   <div className="mb-3 flex items-center gap-2">
-                    <Shield className="h-4 w-4 text-[#168f8b]" />
+                    <Shield className="h-4 w-4 text-[#cbd5e1]" />
                     <p className="text-sm font-semibold text-[#102b2b]">
                       Stability-weighted best
                       <span className="ml-2 text-xs font-normal text-[#8fa9a0]">
@@ -1069,8 +1209,8 @@ export function MsiWorkbench() {
                       <KeyValue label="Mean uncertainty" value={mcDropout.mean_uncertainty.toFixed(4)} />
                     </div>
                     <div className="mt-3 grid grid-cols-3 gap-2">
-                      <div className="rounded-2xl border border-[#9cfce0]/30 bg-[#9cfce0]/10 p-2 text-center">
-                        <p className="text-lg font-semibold text-[#168f8b]">{mcDropout.high_confidence_pct}%</p>
+                      <div className="rounded-2xl border border-[#e5e7eb]/30 bg-[#e5e7eb]/10 p-2 text-center">
+                        <p className="text-lg font-semibold text-[#cbd5e1]">{mcDropout.high_confidence_pct}%</p>
                         <p className="text-xs text-[#66807a]">High conf</p>
                       </div>
                       <div className="rounded-2xl border border-[#f5c46b]/30 bg-[#f5c46b]/10 p-2 text-center">
@@ -1114,6 +1254,7 @@ export function MsiWorkbench() {
               </div>
             </div>
           </Panel>
+          </div>
 
           <Panel>
             <SectionTitle
@@ -1132,11 +1273,11 @@ export function MsiWorkbench() {
                       <h3 className="font-semibold text-[#f5fffb]">
                         {stage.name}
                       </h3>
-                      <p className="mt-1 text-xs font-semibold uppercase text-[#72f2cc]">
+                      <p className="mt-1 text-xs font-semibold uppercase text-[#d1d5db]">
                         {stage.owner}
                       </p>
                     </div>
-                    <span className="rounded-full border border-white/10 px-2 py-1 text-xs text-[#b7cfc7]">
+                    <span className="rounded-full border border-white/10 px-2 py-1 text-xs text-[#c6ccd5]">
                       {stage.state}
                     </span>
                   </div>
@@ -1148,6 +1289,271 @@ export function MsiWorkbench() {
             </div>
           </Panel>
         </div>
+      </section>
+
+      <section className={`relative z-10 mx-auto w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 ${approachMode === "approach-2" ? "grid" : "hidden"}`}>
+        <Panel>
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <SectionTitle
+              icon={<Layers3 className="h-5 w-5" />}
+              title="Approach 2 pipeline"
+              label={approach2Busy ? `running ${approach2Busy}` : "mounted"}
+            />
+            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[620px] xl:grid-cols-5">
+              <ActionButton
+                busy={approach2Busy === "preprocess"}
+                disabled={Boolean(approach2Busy)}
+                icon={<HardDrive className="h-4 w-4" />}
+                label="Preprocess"
+                onClick={() => runApproach2Action("preprocess")}
+              />
+              <ActionButton
+                busy={approach2Busy === "features"}
+                disabled={Boolean(approach2Busy)}
+                icon={<Database className="h-4 w-4" />}
+                label="Features"
+                onClick={() => runApproach2Action("features")}
+              />
+              <ActionButton
+                busy={approach2Busy === "train"}
+                disabled={Boolean(approach2Busy)}
+                icon={<Play className="h-4 w-4" />}
+                label="Train MIL"
+                onClick={() => runApproach2Action("train")}
+              />
+              <ActionButton
+                busy={approach2Busy === "predict"}
+                disabled={Boolean(approach2Busy)}
+                icon={<Sigma className="h-4 w-4" />}
+                label="Predict"
+                onClick={() => runApproach2Action("predict")}
+              />
+              <ActionButton
+                busy={approach2Busy === "experiments"}
+                disabled={Boolean(approach2Busy)}
+                icon={<RefreshCw className="h-4 w-4" />}
+                label="Sync runs"
+                onClick={() => runApproach2Action("experiments")}
+              />
+            </div>
+          </div>
+
+          <div className="mt-5 grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+            <pre className="min-h-52 overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: approach2Error ? "var(--danger)" : "var(--input-text)" }}>
+              {approach2Error || approach2Message}
+            </pre>
+            <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Integrated endpoints</h3>
+              <div className="mt-4 grid gap-2">
+                <KeyValue label="Slides" value="/approach-2/slides" />
+                <KeyValue label="Pipeline" value="/approach-2/pipeline" />
+                <KeyValue label="Experiments" value="/approach-2/experiments" />
+                <KeyValue label="Monte Carlo" value="/experiments/monte-carlo-plan" />
+              </div>
+            </div>
+          </div>
+        </Panel>
+
+        <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_420px]">
+          <Panel>
+            <SectionTitle
+              icon={<Activity className="h-5 w-5" />}
+              title="Approach 2 experiments"
+              label={`${approach2Experiments.length} runs`}
+            />
+            <div className="mt-5 max-h-96 overflow-auto rounded-3xl border" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              {approach2Experiments.length > 0 ? (
+                approach2Experiments.map((experiment) => (
+                  <div className="grid gap-2 border-b p-4 last:border-b-0 sm:grid-cols-4" style={{ borderColor: "var(--border)" }} key={experiment.experiment_id}>
+                    <span className="font-mono text-xs" style={{ color: "var(--teal)" }}>{experiment.experiment_id}</span>
+                    <span className="text-sm font-semibold" style={{ color: "var(--heading)" }}>{experiment.name}</span>
+                    <span className="text-sm" style={{ color: "var(--body)" }}>{experiment.model_type}</span>
+                    <span className="text-sm" style={{ color: experiment.status === "completed" ? "var(--teal)" : "var(--warning)" }}>{experiment.status}</span>
+                  </div>
+                ))
+              ) : (
+                <p className="p-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                  Click Sync runs, or start Train MIL to create the first Approach 2 experiment.
+                </p>
+              )}
+            </div>
+          </Panel>
+
+          <Panel>
+            <SectionTitle
+              icon={<Dice5 className="h-5 w-5" />}
+              title="Monte Carlo link"
+              label={mcPlan ? `${mcPlan.trial_count} trials` : "ready"}
+            />
+            <p className="mt-4 text-sm leading-6" style={{ color: "var(--body)" }}>
+              Monte Carlo remains mounted from the hft-methods API while Approach 2 runs through its own platform routes.
+            </p>
+            <div className="mt-4 grid gap-2">
+              <ActionButton
+                busy={mcBusy === "plan"}
+                disabled={Boolean(mcBusy)}
+                icon={<Dice5 className="h-4 w-4" />}
+                label="Generate MC plan"
+                onClick={() => generateMCPlan()}
+              />
+              <ActionButton
+                busy={mcBusy === "stableBest"}
+                disabled={Boolean(mcBusy)}
+                icon={<TrendingUp className="h-4 w-4" />}
+                label="Stable best"
+                onClick={() => fetchStableBest()}
+              />
+            </div>
+          </Panel>
+        </section>
+      </section>
+
+      <section className={`relative z-10 mx-auto w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 ${approachMode === "monte-carlo" ? "grid" : "hidden"}`}>
+        <Panel>
+          <div className="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
+            <SectionTitle
+              icon={<Dice5 className="h-5 w-5" />}
+              title="Monte Carlo approach"
+              label={mcPlan ? `${mcPlan.trial_count} trials` : "stochastic validation"}
+            />
+            <div className="grid gap-2 sm:grid-cols-2 xl:min-w-[720px] xl:grid-cols-5">
+              <ActionButton
+                busy={mcBusy === "vm-workspace"}
+                disabled={Boolean(mcBusy)}
+                icon={<Server className="h-4 w-4" />}
+                label="Prep VM cache"
+                onClick={() => prepareMCVmWorkspace()}
+              />
+              <ActionButton
+                busy={mcBusy === "plan"}
+                disabled={Boolean(mcBusy)}
+                icon={<Dice5 className="h-4 w-4" />}
+                label="Generate plan"
+                onClick={() => generateMCPlan()}
+              />
+              <ActionButton
+                busy={mcBusy === "bootstrap-runners"}
+                disabled={Boolean(mcBusy)}
+                icon={<Upload className="h-4 w-4" />}
+                label="Bootstrap"
+                onClick={() => bootstrapMCRunners()}
+              />
+              <ActionButton
+                busy={mcBusy === "stableBest"}
+                disabled={Boolean(mcBusy)}
+                icon={<TrendingUp className="h-4 w-4" />}
+                label="Stable best"
+                onClick={() => fetchStableBest()}
+              />
+              <ActionButton
+                busy={mcBusy === "dropout" || mcBusy === "bootstrap"}
+                disabled={Boolean(mcBusy) || !bestExperiment?.best}
+                icon={<Sigma className="h-4 w-4" />}
+                label="Uncertainty"
+                onClick={() => {
+                  const tid = bestExperiment?.best?.trial_id;
+                  if (tid) {
+                    void fetchMCDropout(tid);
+                    void fetchBootstrapCI(tid);
+                  }
+                }}
+              />
+            </div>
+          </div>
+
+          {mcError ? (
+            <p className="mt-4 rounded-2xl border p-3 text-sm leading-6" style={{ borderColor: "rgba(217,93,72,0.3)", background: "rgba(217,93,72,0.1)", color: "var(--danger-deep)" }}>
+              {mcError}
+            </p>
+          ) : null}
+
+          <div className="mt-5 grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+            <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>VM and model storage</h3>
+              <p className="mt-2 text-sm leading-6" style={{ color: "var(--body)" }}>
+                The VM prep action creates `models/huggingface_cache`, `models/monte_carlo`, and an AI integration env template inside the remote project.
+              </p>
+              <pre className="mt-4 max-h-72 overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: "var(--input-text)" }}>
+                {mcVmPrep || "Click Prep VM cache to create the Monte Carlo and Hugging Face model folders on the VM."}
+              </pre>
+            </div>
+
+            <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>AI providers</h3>
+              <div className="mt-4 grid gap-2">
+                {integrations.map((integration) => (
+                  <KeyValue
+                    key={integration.name}
+                    label={integration.name}
+                    value={integration.configured ? "configured" : integration.env_var}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </Panel>
+
+        <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_420px]">
+          <Panel>
+            <SectionTitle
+              icon={<BarChart3 className="h-5 w-5" />}
+              title="Random trial plan"
+              label={mcPlan ? `seed ${mcPlan.random_seed}` : "not generated"}
+            />
+            <div className="mt-5 max-h-96 overflow-auto rounded-3xl border" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              {mcPlan ? (
+                <table className="w-full text-left text-xs">
+                  <thead className="sticky top-0 backdrop-blur" style={{ background: "var(--panel-bg)" }}>
+                    <tr>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Trial</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Model</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Extractor</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>LR</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Epochs</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {mcPlan.trials.map((trial) => (
+                      <tr key={trial.trial_id} className="border-t" style={{ borderColor: "var(--border)" }}>
+                        <td className="px-3 py-2 font-mono" style={{ color: "var(--teal)" }}>{trial.trial_id.slice(0, 13)}</td>
+                        <td className="px-3 py-2" style={{ color: "var(--heading)" }}>{trial.mil_model}</td>
+                        <td className="px-3 py-2" style={{ color: "var(--body)" }}>{trial.feature_extractor}</td>
+                        <td className="px-3 py-2 font-mono" style={{ color: "var(--blue)" }}>{trial.learning_rate.toExponential(2)}</td>
+                        <td className="px-3 py-2" style={{ color: "var(--muted)" }}>{trial.epochs}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <p className="p-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                  Generate a plan to sample model, extractor, learning rate, dropout, weight decay, epoch, and seed combinations.
+                </p>
+              )}
+            </div>
+          </Panel>
+
+          <Panel>
+            <SectionTitle
+              icon={<Shield className="h-5 w-5" />}
+              title="Stable ranking"
+              label={mcStableBest ? `${mcStableBest.total_evaluated} evaluated` : "pending"}
+            />
+            <div className="mt-5 grid gap-2">
+              {mcStableBest?.best ? (
+                <>
+                  <KeyValue label="Trial" value={mcStableBest.best.trial_id} />
+                  <KeyValue label="Score" value={mcStableBest.best.stability_score.toFixed(4)} />
+                  <KeyValue label="Mean AUROC" value={mcStableBest.best.mean_auroc.toFixed(4)} />
+                  <KeyValue label="SD AUROC" value={mcStableBest.best.sd_auroc.toFixed(4)} />
+                </>
+              ) : (
+                <p className="text-sm leading-6" style={{ color: "var(--muted)" }}>
+                  Run Stable best after completed VM metrics exist.
+                </p>
+              )}
+            </div>
+          </Panel>
+        </section>
       </section>
     </main>
   );
@@ -1193,9 +1599,9 @@ function Pill({ children, isDark }: { children: React.ReactNode; isDark?: boolea
     <span
       className="rounded-full border px-3 py-1 text-xs font-semibold shadow-sm"
       style={{
-        borderColor: isDark ? "rgba(156,252,224,0.2)" : "rgba(255,255,255,0.7)",
-        background: isDark ? "rgba(156,252,224,0.08)" : "rgba(255,255,255,0.45)",
-        color: isDark ? "#b7cfc7" : "#36575a",
+        borderColor: isDark ? "rgba(226,232,240,0.22)" : "rgba(255,255,255,0.7)",
+        background: isDark ? "rgba(226,232,240,0.09)" : "rgba(255,255,255,0.45)",
+        color: isDark ? "#c6ccd5" : "#36575a",
       }}
     >
       {children}
@@ -1511,3 +1917,4 @@ function readableMetric(value: unknown) {
   }
   return "";
 }
+

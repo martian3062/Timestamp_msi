@@ -1,27 +1,84 @@
 # Timestamp_msi
 
-Timestamp_msi is a local-first MSI-H vs MSS colorectal WSI workstation for the
-4basecare Approach 1 project. It combines a Next.js frontend, a local Node API
-bridge, and an SSH-connected pathology VM so the whole slide workflow can be
-controlled from a simple browser GUI instead of repeatedly typing SSH commands.
+Timestamp_msi is a local-first MSI-H vs MSS colorectal whole-slide-image
+workstation for the 4basecare MSI experiments. It combines a premium Next.js
+frontend, a FastAPI orchestration backend, a local SSH bridge, n8n automation,
+and a remote pathology VM workflow.
 
-The current app focuses on the TCGA colorectal cancer MSI workflow:
+The app is built around one practical rule: the browser should control the
+workflow, but heavy pathology compute and large `.svs` files should stay on the
+VM.
 
-- validate MSI annotation files in the browser
-- validate GDC diagnostic slide manifests in the browser
-- inspect label and fold balance with static Recharts/D3 visualizations before
-  model work
-- connect to the pathology VM over SSH through a local API route
-- browse the remote project folder
-- upload selected annotation and manifest files to the VM project
-- start or inspect the GDC slide downloader
-- start Jupyter on the VM
-- open a local SSH tunnel to Jupyter
-- run n8n-driven automation checks, 10-SVS GDC batches, and small model trials
+## Current State
 
-The frontend is intentionally honest: it does not invent model scores or fake
-clinical outputs. It only displays values parsed from uploaded files or returned
-by the live VM.
+The current branch exposes three separate workflow approaches from one UI:
+
+- `Approach 1`: cohort/manifest validation, VM file upload, VM browsing, GDC
+  downloader startup, Jupyter startup, SSH tunnel, and experiment-result view.
+- `Approach 2`: imported platform backend from
+  `E:\4basecare-MSI\Approach-2\backend\app`, mounted inside this FastAPI app
+  under `/approach-2/*`.
+- `Monte Carlo`: stochastic validation workflow for random search, MC dropout,
+  bootstrap confidence intervals, stable model selection, and VM model-cache
+  preparation.
+
+The frontend is running on:
+
+```text
+http://127.0.0.1:3000
+```
+
+The FastAPI backend is expected on:
+
+```text
+http://127.0.0.1:8001
+```
+
+The app never invents clinical metrics. It shows values parsed from uploaded
+files, returned by the backend, or read from VM-side artifacts.
+
+## What This App Solves
+
+MSI-H vs MSS WSI work has a lot of moving parts: open data, labels, manifests,
+gigantic slide files, GPU feature extraction, MIL training, uncertainty
+estimation, and repeatable experiment bookkeeping. This repo turns that into a
+controlled local workstation:
+
+- validate annotation and manifest files before GPU work starts
+- keep `.svs` slides and model artifacts on the VM
+- use fixed, allowlisted VM actions instead of arbitrary browser shell commands
+- keep secrets in local `.env` files only
+- run small batches first, then clean up raw slide storage when needed
+- expose real backend routes that n8n and the frontend can both call
+- support three experiment approaches without switching repos manually
+
+## Architecture At A Glance
+
+```text
+Windows workstation
+  |
+  |  Browser UI
+  v
+apps/web  Next.js 16 / React 19 / Tailwind
+  |
+  |  HTTP to http://127.0.0.1:8001
+  v
+apps/api  FastAPI / Pydantic / SQLAlchemy / subprocess SSH
+  |
+  |  fixed SSH actions only
+  v
+Remote pathology VM
+  |
+  |  pathology310-run, Slideflow, Jupyter, GDC downloads
+  v
+TCGA CRC WSI pipeline artifacts
+```
+
+n8n is optional but supported:
+
+```text
+automation/n8n/start-local.ps1 -> http://127.0.0.1:5678
+```
 
 ## Repository Layout
 
@@ -37,6 +94,24 @@ Timestamp_msi/
           integrations.py
           monte_carlo.py
           vm.py
+        approach_2/
+          api/
+            experiments.py
+            pipeline.py
+            slides.py
+            webhook.py
+          database/
+            models.py
+            setup.py
+            supabase_client.py
+          pipelines/
+            feature_extractor.py
+            inference.py
+            mil_trainer.py
+            project_setup.py
+          schemas/
+            schemas.py
+          main.py
         core/
           config.py
         models/
@@ -55,9 +130,14 @@ Timestamp_msi/
         main.py
       storage/
       tests/
+      .env.example
       pyproject.toml
       README.md
     web/
+      public/
+        assets/
+          researching-cancer-msi-h.mp4
+          snow-in-jinan.webm
       src/
         app/
           api/vm/route.ts
@@ -68,13 +148,11 @@ Timestamp_msi/
           msi-workbench.tsx
           recharts-distribution.tsx
           winter-scene.tsx
-      public/
       package.json
-      package-lock.json
       README.md
-      tsconfig.json
   automation/
     n8n/
+      docker-compose.yml
       start-local.ps1
       timestamp-msi-connection-check.json
       timestamp-msi-gdc-10-svs-batch.json
@@ -82,160 +160,191 @@ Timestamp_msi/
       timestamp-msi-live-source-check.json
       timestamp-msi-modular-training.json
       timestamp-msi-monte-carlo-pipeline.json
+    README.md
   configs/
     experiment_grid.example.json
     monte_carlo_search.example.json
-  .gitignore
   README.md
 ```
 
-`apps/web` is the browser workstation. `apps/api` is the FastAPI backend for
-cohort validation, VM orchestration, n8n experiment endpoints, integration
-checks, and GDC SVS batch control. `automation/n8n` contains importable n8n
-workflows. `configs` stores shared experiment/runtime examples.
+## Frontend Architecture
 
-## What Was Used
+The frontend is a single workstation surface rendered by:
+
+```text
+apps/web/src/app/page.tsx
+apps/web/src/components/msi-workbench.tsx
+```
+
+Main responsibilities:
+
+- parse local CSV/TSV files in the browser
+- detect required annotation and manifest fields
+- show label and fold distributions
+- switch between `Approach 1`, `Approach 2`, and `Monte Carlo`
+- call the FastAPI backend on `http://127.0.0.1:8001`
+- show optional integration status without revealing secret values
+- expose practical VM controls for local development
+- play the MSI-H/cancer research video in the hero media area
 
 Frontend stack:
 
-- Next.js 16.2.4 with the App Router
-- React 19.2.4
-- TypeScript 5
-- Tailwind CSS 4 through `@tailwindcss/postcss`
+- Next.js `16.2.4`
+- React `19.2.4`
+- TypeScript `5`
+- Tailwind CSS `4`
 - Lucide React icons
-- Recharts 3 and D3 7 for static charted outputs
-- Three.js for the hero scene, with pointer-reactive motion disabled for layout
-  stability
-- Local browser file parsing for CSV and TSV files
+- Recharts and D3 for static distributions
+- Three.js dependencies are still installed, but the old hero visual has been
+  replaced with `public/assets/researching-cancer-msi-h.mp4`
 
-Local server bridge:
+## Backend Architecture
 
-- Next.js Route Handler at `apps/web/src/app/api/vm/route.ts`
-- Node.js `child_process` for SSH execution
-- Windows OpenSSH using the existing private key path
-- Fixed action allowlist instead of arbitrary shell execution from the browser
+The backend entrypoint is:
+
+```text
+apps/api/app/main.py
+```
+
+It registers:
+
+- core cohort validation routes
+- VM SSH action routes
+- n8n experiment routes
+- Monte Carlo routes
+- GDC batch routes
+- integration status routes
+- Approach 2 platform routes under `/approach-2/*`
+- static Approach 2 artifact serving under `/approach-2/artifacts`
 
 Backend stack:
 
-- FastAPI application at `apps/api/app/main.py`
-- Pydantic request/response models
-- `pydantic-settings` environment configuration
-- Python `subprocess` SSH execution behind a fixed action allowlist
-- Pytest coverage for the cohort parser and validation service
-- n8n-facing endpoints for experiment planning, best-result lookup, integration
-  status, and GDC 10-slide batch orchestration
+- FastAPI
+- Pydantic and Pydantic Settings
+- SQLAlchemy for Approach 2 local experiment registry
+- pandas and python-multipart for CSV upload handling
+- Python subprocess SSH calls for VM operations
+- pytest for backend tests
 
-Automation stack:
+## Approach 1
 
-- n8n `1.114.4` launched through `automation/n8n/start-local.ps1`
-- Safe connection, live-source, integration, GDC batch, and single-trial
-  workflows
-- GDC API for open TCGA-COAD/READ diagnostic `.svs` batches
-- cBioPortal `coadread_tcga_pan_can_atlas_2018` as the MSI label source
-- Optional Hugging Face, Zerve AI, Firecrawl, and Tinyfish keys via local
-  `.env` only
+Approach 1 is the local-first VM orchestration workflow. It is best when you
+want to inspect and control TCGA CRC MSI data movement before training.
 
-Remote pathology VM:
+Key functions:
 
-- SSH command shape:
+- load annotation CSV
+- load GDC manifest CSV/TSV
+- detect patient, slide, label, and fold fields
+- detect GDC file id and filename fields
+- count MSI-H/MSS label balance
+- count fold balance
+- upload selected files to the VM
+- browse allowlisted VM project folders
+- start the GDC downloader
+- start VM Jupyter
+- open a local Jupyter tunnel
+- read best completed experiment metadata
 
-```powershell
-ssh -i "%USERPROFILE%\.ssh\evolet_rsa" pardeep@34.55.157.128
-```
+Important frontend controls:
 
-- Project root on the VM:
+- `Check VM`
+- `Browse project`
+- `Upload annotations`
+- `Upload manifest`
+- `Start downloader`
+- `Start Jupyter`
+- `Open tunnel`
 
-```text
-/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
-```
-
-- Python/Jupyter wrapper used on the VM:
-
-```text
-pathology310-run
-```
-
-- Jupyter target:
-
-```text
-127.0.0.1:8888 on the VM, forwarded locally to http://127.0.0.1:8888
-```
-
-Dataset/workflow sources:
-
-- TCGA-COAD/READ diagnostic whole-slide images from GDC
-- MSI labels from cBioPortal study `coadread_tcga_pan_can_atlas_2018`
-- GDC manifest-driven `.svs` download
-- Patient-level fold validation for MSI-H vs MSS experiments
-
-## Application Features
-
-### Cohort File Validation
-
-The GUI accepts an annotation CSV and a GDC manifest CSV/TSV.
-
-Annotation detection looks for:
-
-- patient / case / submitter id
-- slide / filename / file / image
-- MSI / label / class / status
-- fold / split
-
-Manifest detection looks for:
-
-- id / UUID / file id
-- filename / file / name
-
-After upload, the app shows:
-
-- selected filename
-- parsed row count
-- detected columns
-- missing required mappings
-- MSI label distribution
-- fold distribution
-- best completed experiment result, model, feature extractor, and epoch count
-  when VM metrics exist
-- configured/missing state for optional integration keys without printing secret
-  values
-
-### VM Control Panel
-
-The GUI provides buttons for common VM work:
-
-- `Check VM`: shows hostname, user, GPU, disk, slide count, partial download
-  count, slide folder size, and Jupyter/downloader processes.
-- `Browse project`: lists files and folders in allowed VM project locations.
-- `Upload annotations`: writes the selected annotation file to
-  `annotations/tcga_crc_msi_annotations.csv` on the VM.
-- `Upload manifest`: writes the selected manifest to
-  `annotations/gdc_manifest_tcga_crc_msi.tsv` on the VM.
-- `Start downloader`: starts `scripts/download_gdc_manifest.py` through
-  `pathology310-run` and writes output to `logs/gdc_download.log`.
-- `Start Jupyter`: starts Jupyter Lab on VM port `8888` through
-  `pathology310-run`.
-- `Open tunnel`: opens the local SSH tunnel from `http://127.0.0.1:8888` to
-  the VM Jupyter port.
-
-### FastAPI Backend
-
-The backend in `apps/api` mirrors the workstation's core operations behind a
-clean API boundary:
+Important backend routes:
 
 ```text
-GET  /health
 POST /cohort/validate
 GET  /vm/status
-GET  /vm/files?path=<allowed-vm-path>
+GET  /vm/files
 POST /vm/upload
 POST /vm/downloader/start
 POST /vm/jupyter/start
 POST /vm/tunnel/start
-POST /experiments/bootstrap
-POST /experiments/plan
-POST /experiments/start
-GET  /experiments/status/{trial_id}
 GET  /experiments/best
+```
+
+## Approach 2
+
+Approach 2 is a platform-style backend imported from:
+
+```text
+E:\4basecare-MSI\Approach-2\backend\app
+```
+
+Inside this repo it lives at:
+
+```text
+apps/api/app/approach_2
+```
+
+It is mounted under:
+
+```text
+/approach-2/*
+```
+
+Approach 2 is useful when you want a more conventional platform API:
+
+- register slides
+- upload slide label CSV files
+- trigger preprocessing
+- trigger feature extraction
+- start Attention MIL training
+- run prediction
+- sync and inspect experiment records
+- trigger n8n/Optuna-style trial callbacks
+
+Important routes:
+
+```text
+POST /approach-2/slides/register
+GET  /approach-2/slides/
+POST /approach-2/slides/upload_csv
+POST /approach-2/pipeline/preprocess
+POST /approach-2/pipeline/extract_features
+POST /approach-2/pipeline/train
+POST /approach-2/pipeline/predict
+GET  /approach-2/experiments/
+GET  /approach-2/experiments/{experiment_id}
+POST /approach-2/webhook/start-automation
+POST /approach-2/webhook/optuna/trial
+```
+
+Approach 2 stores local experiment metadata through SQLAlchemy. SQLite is used
+by default unless `DATABASE_URL` points to another database.
+
+## Monte Carlo Approach
+
+Monte Carlo is now its own GUI mode. In this repo, "Monte Carlo" means
+pathology experiment robustness methods: random hyperparameter search,
+repeated-seed stability, MC dropout uncertainty, bootstrap confidence
+intervals, and stable-best ranking.
+
+It does not mean trading or HFT execution. The branch name `hft-methods` is only
+the historical branch name for this experiment track.
+
+Main Monte Carlo functions:
+
+- create a random hyperparameter search plan
+- bootstrap VM runner scripts for uncertainty jobs
+- start MC dropout inference jobs
+- fetch MC dropout uncertainty summaries
+- start bootstrap confidence interval jobs
+- fetch bootstrap CI summaries
+- analyze seed stability
+- select the stability-weighted best model
+- prepare VM-side model storage folders
+
+Important routes:
+
+```text
+POST /vm/monte-carlo/workspace
 POST /experiments/monte-carlo-plan
 POST /experiments/mc-bootstrap
 POST /experiments/uncertainty/start
@@ -244,395 +353,455 @@ POST /experiments/bootstrap-ci/start
 GET  /experiments/bootstrap-ci/{trial_id}
 POST /experiments/seed-stability
 GET  /experiments/best-stable
-GET  /integrations/status
-POST /data-batches/gdc/bootstrap
-POST /data-batches/gdc/start
-GET  /data-batches/gdc/status
-POST /data-batches/gdc/cleanup
 ```
 
-The backend is structured by responsibility:
+The VM workspace prep route creates:
 
-- `app/api/routes`: HTTP endpoints
-- `app/core`: settings and shared configuration
-- `app/models`: Pydantic schemas
-- `app/services/cohort.py`: CSV/TSV parsing, field mapping, label counts, fold
-  counts, and readiness checks
-- `app/services/vm.py`: SSH command construction, path allowlisting, file
-  upload, process startup, and tunnel startup
-- `app/services/experiments.py`: n8n-facing model grid expansion, VM trial
-  startup, trial status parsing, and best-metric selection
-- `app/services/data_batches.py`: VM-side GDC TCGA-CRC `.svs` batch download,
-  status, manifest tracking, and slide cleanup hooks
-- `app/api/routes/integrations.py`: secret-safe status checks for Hugging Face,
-  Zerve AI, Firecrawl, and Tinyfish environment keys
-- `tests`: backend unit tests
+```text
+models/huggingface_cache
+models/monte_carlo
+logs
+configs
+configs/ai_integrations.env.example
+```
 
-### n8n Automation
+The stable-best formula defaults to:
 
-The `automation` branch adds a modular n8n path for model and hyperparameter
-sweeps. n8n calls the FastAPI experiment endpoints, while the VM runs the real
-Slideflow training script. Results are selected only from completed
-`metrics.json` files written by the VM trial runner.
+```text
+mean_auroc - 0.5 * sd_auroc
+```
 
-Start n8n locally:
+This is safer than choosing the highest single metric when the result may be a
+lucky fold or seed.
+
+## Data Flow
+
+The intended pipeline is:
+
+```text
+GDC + cBioPortal
+  -> annotation and manifest validation
+  -> small VM batch download
+  -> preprocessing / tiling
+  -> feature extraction
+  -> MIL training or inference
+  -> metric persistence
+  -> Monte Carlo uncertainty and stability checks
+  -> cleanup of raw slide batches when storage is tight
+```
+
+The storage-aware rule is:
+
+```text
+download -> validate -> preprocess -> extract features -> train/infer -> persist outputs -> cleanup
+```
+
+Prefer keeping features, metrics, model outputs, and manifests. Raw `.svs`
+slides are expensive and should be processed in small batches when VM storage is
+limited.
+
+## External Data Sources
+
+Primary sources:
+
+- GDC diagnostic TCGA-COAD/READ `.svs` whole-slide images
+- cBioPortal `coadread_tcga_pan_can_atlas_2018` MSI labels
+
+The repo includes GDC batch automation and manifest-based VM downloading.
+Patch-level or Kaggle datasets are not treated as replacements for real `.svs`
+MIL work unless the experiment explicitly pivots to quick patch-level testing.
+
+## AI And Integration Keys
+
+Optional integrations are read from `apps/api/.env` using the `MSI_` prefix.
+The status endpoint reports whether keys are configured, but never returns the
+secret values.
+
+Expected local keys:
+
+```text
+MSI_HF_TOKEN=<hugging-face-token>
+MSI_GROQ_API_KEY=<groq-key>
+MSI_ZERVE_API_KEY=<zerve-key>
+MSI_FIRECRAWL_API_KEY=<firecrawl-key>
+MSI_TINYFISH_API_KEY=<tinyfish-key>
+```
+
+Current integration status route:
+
+```text
+GET /integrations/status
+```
+
+Provider roles:
+
+- Hugging Face: gated pathology models and model-cache storage
+- Groq AI: fast LLM planning or experiment-summary generation
+- Zerve AI: optional notebook/job orchestration bridge
+- Firecrawl: optional research-source crawling and metadata extraction
+- Tinyfish: optional browser/API automation for external checks
+
+Important: keep real keys only in ignored local `.env` files or proper secret
+stores. If keys were pasted into chat or logs, rotate them before production
+use.
+
+## VM Configuration
+
+Default VM target:
+
+```text
+pardeep@34.55.157.128
+```
+
+Default SSH command:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1
-.\automation\n8n\start-local.ps1
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.55.157.128
 ```
 
-Then open:
+Default project root on the VM:
 
 ```text
-http://127.0.0.1:5678
+/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
 ```
 
-Import these workflows:
+Default VM wrapper:
 
 ```text
-automation/n8n/timestamp-msi-connection-check.json
-automation/n8n/timestamp-msi-integrations-check.json
-automation/n8n/timestamp-msi-live-source-check.json
-automation/n8n/timestamp-msi-gdc-10-svs-batch.json
-automation/n8n/timestamp-msi-modular-training.json
+pathology310-run
 ```
 
-Recommended order:
-
-1. Run `Timestamp_msi live source check` to confirm GDC and cBioPortal are
-   reachable.
-2. Run `Timestamp_msi SAFE connection check` to confirm local API, VM SSH,
-   runner bootstrap, and one-trial planning work.
-3. Run `Timestamp_msi integrations check` after adding local secret values.
-4. Run `Timestamp_msi GDC 10 SVS batch` when you want the next 10 open GDC
-   diagnostic slides downloaded to the VM.
-5. Run `Timestamp_msi SAFE single trial launcher` only when you are ready to
-   start GPU training.
-
-The example sweep grid lives at:
-
-```text
-configs/experiment_grid.example.json
-```
-
-The automation details and first small-test grid are documented in:
-
-```text
-automation/README.md
-```
-
-### Monte Carlo Methods (hft-methods branch)
-
-The `hft-methods` branch adds Monte Carlo and Bayesian robustness methods to the
-training pipeline. These methods make model selection more scientific by
-accounting for uncertainty and variance, not just peak accuracy.
-
-#### 1. Monte Carlo Random Hyperparameter Search
-
-Instead of exhaustive grid search, randomly sample hyperparameters from
-continuous distributions:
-
-- learning rate: log-uniform between `1e-5` and `3e-4`
-- dropout: uniform between `0.1` and `0.5`
-- weight decay: log-uniform between `1e-6` and `1e-3`
-- epochs, seed, model, extractor: random choice from lists
-
-```text
-POST /experiments/monte-carlo-plan
-Body: configs/monte_carlo_search.example.json
-```
-
-This is more efficient than brute grid search when GPU time is limited.
-
-#### 2. MC Dropout Uncertainty Estimation
-
-Enable dropout at inference time and run the same slide through the model
-multiple times (default: 30 forward passes):
-
-```text
-POST /experiments/mc-bootstrap     (deploy runner scripts to VM)
-POST /experiments/uncertainty/start (start MC dropout inference)
-GET  /experiments/uncertainty/{id}  (read per-slide uncertainty results)
-```
-
-Output per slide:
-
-| Field | Description |
-|-------|-------------|
-| `slide_id` | WSI identifier |
-| `mean_msi_probability` | Mean of N forward passes |
-| `std_uncertainty` | Standard deviation across passes |
-| `confidence` | `high` / `medium` / `low` |
-
-This identifies slides where the model is unsure and needs clinical review.
-
-#### 3. Bootstrap Confidence Intervals
-
-For each trial, resample predictions 1000+ times to compute reliable CIs:
-
-```text
-POST /experiments/bootstrap-ci/start
-GET  /experiments/bootstrap-ci/{id}
-```
-
-Output example:
-
-```text
-AUROC: 0.82
-95% CI: 0.74 - 0.89
-AUPRC: 0.71
-95% CI: 0.62 - 0.79
-```
-
-This makes results publication-ready instead of reporting single point estimates.
-
-#### 4. Stability-Weighted Best Model Selection
-
-Standard best-metric selection picks whatever scored highest, which may be a
-lucky outlier. The stability-weighted formula penalizes high variance:
-
-```text
-stability_score = mean_auroc - 0.5 * sd_auroc
-```
-
-```text
-GET /experiments/best-stable?rank_formula=mean_auroc%20-%200.5%20*%20sd_auroc
-POST /experiments/seed-stability
-```
-
-This picks the model that performs well **and** is stable.
-
-#### Monte Carlo n8n Workflow
-
-Import the workflow:
-
-```text
-automation/n8n/timestamp-msi-monte-carlo-pipeline.json
-```
-
-Flow: bootstrap MC runners → generate random plan → find stable best → report.
-
-Example config:
-
-```text
-configs/monte_carlo_search.example.json
-```
-
-### Safety Model
-
-
-The browser never receives the private SSH key. The key stays on the local
-machine and is used by the local Next.js API route only.
-
-The API route does not expose a free-form command box. It supports only a small
-set of fixed actions:
-
-- `status`
-- `listFiles`
-- `uploadFile`
-- `startDownloader`
-- `startJupyter`
-- `startTunnel`
-
-Project browsing is restricted to the configured VM project roots. This keeps
-the GUI useful without turning it into a remote shell exposed to the browser.
-
-Important: this app is meant to run locally on your Windows machine. Do not
-deploy the VM SSH bridge route to a public hosting platform unless it is first
-reworked with proper authentication, authorization, auditing, and secret
-management.
-
-## Runtime Flow
-
-1. Start the local Next.js app.
-2. Start the FastAPI automation backend on port `8001`.
-3. Start n8n with the pinned local launcher.
-4. Open the GUI in the browser.
-5. Upload annotation and manifest files locally, or run the GDC 10-SVS n8n
-   batch workflow.
-6. Let the browser validate labels, folds, and required columns.
-7. Use `Upload annotations` and `Upload manifest` to copy selected files to the
-   VM when using manual files.
-8. Use `Check VM` to confirm GPU, disk, slide count, and process status.
-9. Use `Start Jupyter` and `Open tunnel`.
-10. Run only small n8n trial plans first; broaden model, extractor, epoch, and
-    fold grids after real metrics are written.
-
-## Local Setup
-
-From the web app folder:
-
-```powershell
-cd apps\web
-npm.cmd install
-npm.cmd run dev
-```
-
-Then open:
-
-```text
-http://127.0.0.1:3000
-```
-
-The development server can also appear as `http://localhost:3000`.
-
-From the backend folder:
-
-```powershell
-cd apps\api
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -e ".[dev]"
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
-```
-
-Then open:
-
-```text
-http://127.0.0.1:8001/docs
-```
-
-From the repo root, start n8n:
-
-```powershell
-.\automation\n8n\start-local.ps1
-```
-
-Then open:
-
-```text
-http://127.0.0.1:5678
-```
-
-## Validation Commands
-
-Run these from `apps/web`:
-
-```powershell
-npm.cmd run lint
-npm.cmd run build
-```
-
-Both were passing after the VM GUI integration.
-
-Run these from `apps/api`:
-
-```powershell
-.\.venv\Scripts\python.exe -m pytest
-.\.venv\Scripts\python.exe -m compileall app
-```
-
-The backend parser tests were passing after the FastAPI backend was added.
-
-## VM Environment Overrides
-
-The API route has defaults for the current VM, but each setting can be
-overridden through environment variables before starting Next.js:
+Backend environment values:
 
 ```powershell
 $env:MSI_VM_USER = "pardeep"
 $env:MSI_VM_HOST = "34.55.157.128"
 $env:MSI_VM_KEY = "$env:USERPROFILE\.ssh\evolet_rsa"
 $env:MSI_VM_PROJECT_ROOT = "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc"
-npm.cmd run dev
 ```
 
-Optional backend integration keys are read from `apps/api/.env` using the
-`MSI_` prefix. Keep real values local and rotate any key that was pasted into
-chat or logs.
-
-```powershell
-MSI_HF_TOKEN=<fresh-hugging-face-token>
-MSI_ZERVE_API_KEY=<fresh-zerve-key>
-MSI_FIRECRAWL_API_KEY=<fresh-firecrawl-key>
-MSI_TINYFISH_API_KEY=<fresh-tinyfish-key>
-```
-
-## Verified VM State
-
-The latest live VM checks confirmed:
-
-- host: `wsi-tca-experiments-3`
-- GPU: NVIDIA L4
-- slide folder: `slideflow_project/data/slides`
-- completed slides: `0 .svs`
-- partial downloads: `0 .part`
-- slide folder size: about `24K`
-- root disk: `484G` total, about `368G` used, about `116G` available
-- local Jupyter tunnel: `http://127.0.0.1:8888`
-
-These values are runtime state, so the GUI should be used as the source of
-truth whenever you resume work.
-
-## Frontend Stability Notes
-
-The dashboard is intentionally static. Earlier pointer-reactive panels and
-animated chart rendering made text/cards appear to slide or fall while loading.
-Current behavior:
-
-- no pointer-driven panel transforms
-- no moving background block layer
-- no Recharts animation
-- static text and cards
-- Three.js hero scene kept visually contained and no longer driven by pointer
-  movement
-
-If the browser still looks broken after pulling this branch, hard refresh the
-page or restart the web dev server so old Turbopack/client chunks are not reused.
-
-## Development Notes
-
-Main files:
-
-- `apps/api/app/main.py`: FastAPI application factory, CORS, health endpoint,
-  and route registration.
-- `apps/api/app/api/routes/cohort.py`: cohort validation endpoint.
-- `apps/api/app/api/routes/vm.py`: VM status, browsing, upload, downloader,
-  Jupyter, and tunnel endpoints.
-- `apps/api/app/services/cohort.py`: backend CSV/TSV parser and validation
-  logic.
-- `apps/api/app/services/vm.py`: backend SSH action service.
-- `apps/api/app/services/experiments.py`: n8n experiment planner, VM runner
-  bootstrap, status, and best-result selection.
-- `apps/api/app/models/monte_carlo.py`: Pydantic schemas for MC random search,
-  MC dropout uncertainty, bootstrap CI, seed stability, and stable best ranking.
-- `apps/api/app/services/monte_carlo.py`: Monte Carlo service with random HP
-  sampling, MC dropout/bootstrap CI VM runners, seed stability analysis, and
-  stability-weighted best model selection.
-- `apps/api/app/api/routes/monte_carlo.py`: FastAPI endpoints for all Monte
-  Carlo operations under `/experiments/`.
-- `apps/api/app/services/data_batches.py`: GDC 10-SVS batch downloader bootstrap,
-  status, and cleanup.
-- `apps/web/src/components/msi-workbench.tsx`: browser UI, file parsing,
-  cohort validation, VM action buttons, charted output panels, and automation
-  status display.
-- `apps/web/src/components/recharts-distribution.tsx`: client-only static
-  Recharts charts for label/fold distributions.
-- `automation/n8n/*.json`: importable n8n workflows for source checks, VM/API
-  checks, integration checks, 10-SVS batches, safe single-trial training, and
-  Monte Carlo uncertainty pipeline.
-- `apps/web/src/app/api/vm/route.ts`: Node.js SSH bridge and fixed VM actions.
-- `apps/web/src/app/page.tsx`: renders the workstation.
-- `apps/web/src/app/layout.tsx`: metadata and app shell.
-- `apps/web/src/app/globals.css`: global theme and base styling.
-- `apps/web/README.md`: frontend-specific operating notes.
-
-## GitHub Publish Commands
-
-The repository target requested for this project is:
+Jupyter runs on the VM at:
 
 ```text
-https://github.com/martian3062/Timestamp_msi.git
+127.0.0.1:8888
 ```
 
-Initial publish flow:
+The local tunnel opens:
+
+```text
+http://127.0.0.1:8888
+```
+
+Latest local SSH check from this workstation timed out on port `22`. That means
+VM routes are implemented, but remote operations need network/firewall/VPN
+access before they can complete.
+
+## Complete Backend Route Map
+
+```text
+GET  /health
+POST /cohort/validate
+
+GET  /vm/status
+GET  /vm/files
+POST /vm/upload
+POST /vm/downloader/start
+POST /vm/jupyter/start
+POST /vm/tunnel/start
+POST /vm/monte-carlo/workspace
+
+POST /experiments/plan
+POST /experiments/bootstrap
+POST /experiments/start
+GET  /experiments/status/{trial_id}
+GET  /experiments/best
+
+POST /experiments/monte-carlo-plan
+POST /experiments/mc-bootstrap
+POST /experiments/uncertainty/start
+GET  /experiments/uncertainty/{trial_id}
+POST /experiments/bootstrap-ci/start
+GET  /experiments/bootstrap-ci/{trial_id}
+POST /experiments/seed-stability
+GET  /experiments/best-stable
+
+GET  /integrations/status
+
+POST /data-batches/gdc/bootstrap
+POST /data-batches/gdc/start
+GET  /data-batches/gdc/status
+POST /data-batches/gdc/cleanup
+
+POST /approach-2/slides/register
+GET  /approach-2/slides/
+POST /approach-2/slides/upload_csv
+POST /approach-2/pipeline/preprocess
+POST /approach-2/pipeline/extract_features
+POST /approach-2/pipeline/train
+POST /approach-2/pipeline/predict
+GET  /approach-2/experiments/
+GET  /approach-2/experiments/{experiment_id}
+POST /approach-2/webhook/start-automation
+POST /approach-2/webhook/optuna/trial
+```
+
+OpenAPI docs:
+
+```text
+http://127.0.0.1:8001/docs
+```
+
+## Local Setup
+
+### 1. Backend
+
+Run in Windows PowerShell:
 
 ```powershell
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/martian3062/Timestamp_msi.git
-git push -u origin main
+cd E:\4basecare-MSI\Approach_1\apps\api
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e ".[dev]"
+```
+
+Start the API:
+
+```powershell
+cd E:\4basecare-MSI\Approach_1\apps\api
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8001
+```
+
+### 2. Frontend
+
+Run in Windows PowerShell:
+
+```powershell
+cd E:\4basecare-MSI\Approach_1\apps\web
+npm.cmd install
+npm.cmd run dev -- --hostname 127.0.0.1 --port 3000
+```
+
+Open:
+
+```text
+http://127.0.0.1:3000
+```
+
+### 3. n8n
+
+Run in Windows PowerShell:
+
+```powershell
+cd E:\4basecare-MSI\Approach_1
+.\automation\n8n\start-local.ps1
+```
+
+Open:
+
+```text
+http://127.0.0.1:5678
+```
+
+Import workflows from:
+
+```text
+automation/n8n/
+```
+
+Recommended workflow order:
+
+1. `Timestamp_msi live source check`
+2. `Timestamp_msi SAFE connection check`
+3. `Timestamp_msi integrations check`
+4. `Timestamp_msi GDC 10 SVS batch`
+5. `Timestamp_msi SAFE single trial launcher`
+6. `Timestamp_msi Monte Carlo uncertainty pipeline`
+
+## Validation Commands
+
+Backend:
+
+```powershell
+cd E:\4basecare-MSI\Approach_1\apps\api
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m compileall app
+```
+
+Frontend:
+
+```powershell
+cd E:\4basecare-MSI\Approach_1\apps\web
+npm.cmd run lint
+npm.cmd run build
+```
+
+Quick API checks:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8001/health
+Invoke-RestMethod http://127.0.0.1:8001/integrations/status
+```
+
+Quick Monte Carlo plan check:
+
+```powershell
+Invoke-RestMethod `
+  -Method Post `
+  -Uri http://127.0.0.1:8001/experiments/monte-carlo-plan `
+  -ContentType "application/json" `
+  -Body '{"samples":2,"random_seed":310,"folds":[1],"epoch_choices":[5],"seed_choices":[310]}'
+```
+
+## Safety Model
+
+The browser must not become an open shell into the VM. VM actions are
+allowlisted and implemented in backend services.
+
+Allowlisted VM action families:
+
+- status check
+- limited project browsing
+- annotation/manifest upload
+- downloader startup
+- Jupyter startup
+- local tunnel startup
+- Monte Carlo workspace preparation
+
+Path browsing is restricted to configured project roots. Secrets are kept in
+local `.env` files and are not returned by API responses.
+
+Do not expose this local backend publicly without adding authentication,
+authorization, request auditing, rate limits, and proper secret management.
+
+## Important Files
+
+Backend:
+
+- `apps/api/app/main.py`: FastAPI app, CORS, health, route registration,
+  Approach 2 mounting, artifact serving.
+- `apps/api/app/core/config.py`: local `.env` settings and VM defaults.
+- `apps/api/app/api/routes/vm.py`: VM action endpoints.
+- `apps/api/app/services/vm.py`: SSH command construction and VM action logic.
+- `apps/api/app/api/routes/experiments.py`: n8n experiment route surface.
+- `apps/api/app/services/experiments.py`: experiment plan/bootstrap/start/status
+  and best-result service logic.
+- `apps/api/app/api/routes/monte_carlo.py`: Monte Carlo endpoints.
+- `apps/api/app/services/monte_carlo.py`: random search, uncertainty, bootstrap
+  CI, seed stability, stable-best logic.
+- `apps/api/app/api/routes/integrations.py`: secret-safe integration status.
+- `apps/api/app/services/data_batches.py`: GDC batch download/status/cleanup.
+- `apps/api/app/approach_2`: imported Approach 2 backend package.
+
+Frontend:
+
+- `apps/web/src/components/msi-workbench.tsx`: main workstation UI.
+- `apps/web/src/app/globals.css`: theme tokens and layout styling.
+- `apps/web/public/assets/researching-cancer-msi-h.mp4`: hero media asset.
+- `apps/web/src/components/recharts-distribution.tsx`: static chart wrapper.
+- `apps/web/src/app/api/vm/route.ts`: legacy/local Next.js VM bridge.
+
+Automation:
+
+- `automation/n8n/start-local.ps1`: local n8n launcher.
+- `automation/n8n/timestamp-msi-connection-check.json`: API/VM check.
+- `automation/n8n/timestamp-msi-integrations-check.json`: provider status.
+- `automation/n8n/timestamp-msi-gdc-10-svs-batch.json`: small GDC batch.
+- `automation/n8n/timestamp-msi-modular-training.json`: training workflow.
+- `automation/n8n/timestamp-msi-monte-carlo-pipeline.json`: MC workflow.
+
+Configs:
+
+- `configs/experiment_grid.example.json`: standard experiment grid example.
+- `configs/monte_carlo_search.example.json`: random-search config example.
+
+## Troubleshooting
+
+### Frontend cannot reach backend
+
+Check that the API is running:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8001/health
+```
+
+If the API runs on another port, set:
+
+```powershell
+$env:NEXT_PUBLIC_MSI_API_URL = "http://127.0.0.1:8001"
+```
+
+Then restart `npm.cmd run dev`.
+
+### VM actions time out
+
+Test SSH directly:
+
+```powershell
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.55.157.128
+```
+
+If port `22` times out, fix VM network/firewall/VPN access first. The app
+cannot create remote folders or start remote jobs until SSH works.
+
+### Jupyter does not open
+
+Start Jupyter from the app or backend route first, then open the tunnel:
+
+```text
+Start Jupyter -> Open tunnel -> http://127.0.0.1:8888
+```
+
+### Integration shows missing
+
+Add the key to `apps/api/.env`, restart FastAPI, then call:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8001/integrations/status
+```
+
+### SQLite database appears locally
+
+Approach 2 uses SQLite by default when `DATABASE_URL` is not set. Local `.db`
+files are ignored by git.
+
+## Git And Publishing Notes
+
+Current branch work has been happening on `hft-methods`.
+
+Before publishing, inspect:
+
+```powershell
+git status --short --branch
+git diff --stat
+```
+
+Do not commit:
+
+- `.env`
+- real API keys
+- local SQLite databases
+- node_modules
+- `.venv`
+- generated logs
+
+## Current Local Verification Snapshot
+
+Recent local checks passed:
+
+```text
+npm.cmd run lint
+npm.cmd run build
+.\.venv\Scripts\python.exe -m pytest
+```
+
+The frontend dev server is currently expected at:
+
+```text
+http://127.0.0.1:3000
+```
+
+The backend server is currently expected at:
+
+```text
+http://127.0.0.1:8001
 ```

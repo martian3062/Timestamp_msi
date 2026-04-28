@@ -28,6 +28,7 @@ class Settings(BaseSettings):
     vm_jupyter_port: int = 8888
     local_jupyter_port: int = 8888
     hf_token: str | None = None
+    groq_api_key: str | None = None
     zerve_api_key: str | None = None
     firecrawl_api_key: str | None = None
     tinyfish_api_key: str | None = None

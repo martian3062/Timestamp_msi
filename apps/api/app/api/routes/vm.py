@@ -37,3 +37,8 @@ def start_jupyter() -> VmActionResponse:
 @router.post("/tunnel/start", response_model=VmActionResponse)
 def start_tunnel() -> VmActionResponse:
     return VmService().start_tunnel()
+
+
+@router.post("/monte-carlo/workspace", response_model=VmActionResponse)
+def prepare_monte_carlo_workspace() -> VmActionResponse:
+    return VmService().prepare_monte_carlo_workspace()

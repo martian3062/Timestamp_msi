@@ -67,8 +67,9 @@ automation/n8n/timestamp-msi-gdc-10-svs-batch.json
 automation/n8n/timestamp-msi-live-source-check.json
 ```
 
-`Timestamp_msi integrations check` reports whether Hugging Face, Zerve AI,
-Firecrawl, and Tinyfish keys are configured without printing the key values.
+`Timestamp_msi integrations check` reports whether Hugging Face, Groq AI,
+Zerve AI, Firecrawl, and Tinyfish keys are configured without printing the key
+values.
 
 `Timestamp_msi GDC 10 SVS batch` bootstraps a VM batch downloader and starts the
 next 10 open TCGA-COAD/READ diagnostic SVS downloads. Its cleanup node is

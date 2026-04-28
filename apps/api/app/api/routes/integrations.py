@@ -18,6 +18,12 @@ def status() -> IntegrationsStatusResponse:
                 use="Access gated HF pathology models and feature extractors.",
             ),
             IntegrationStatus(
+                name="Groq AI",
+                env_var="MSI_GROQ_API_KEY",
+                configured=bool(settings.groq_api_key),
+                use="Optional fast LLM planning and experiment-summary generation.",
+            ),
+            IntegrationStatus(
                 name="Zerve AI",
                 env_var="MSI_ZERVE_API_KEY",
                 configured=bool(settings.zerve_api_key),

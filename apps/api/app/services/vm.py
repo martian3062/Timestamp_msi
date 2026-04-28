@@ -79,6 +79,9 @@ class VmService:
             ),
         )
 
+    def prepare_monte_carlo_workspace(self) -> VmActionResponse:
+        return self._run("prepareMonteCarloWorkspace", self._monte_carlo_workspace_command(), timeout=45)
+
     def project_path(self, relative_path: str) -> str:
         clean = self._clean_relative_path(relative_path)
         return f"{self.settings.vm_project_root.rstrip('/')}/{clean}"
@@ -244,6 +247,28 @@ fi
 sleep 2
 ps -eo pid,args | awk '/jupyter-lab/ && /{port}/ && !/awk/ {{print}}' || true
 grep -Eo 'http://127.0.0.1:{port}/[^ ]+' logs/jupyter.log 2>/dev/null | tail -n 1 || true
+"""
+
+    def _monte_carlo_workspace_command(self) -> str:
+        root = self.settings.vm_project_root
+        return f"""
+set -e
+cd {self._quote(root)}
+mkdir -p models/huggingface_cache models/monte_carlo logs configs
+cat > configs/ai_integrations.env.example <<'EOF'
+MSI_HF_TOKEN=
+MSI_GROQ_API_KEY=
+MSI_ZERVE_API_KEY=
+MSI_FIRECRAWL_API_KEY=
+MSI_TINYFISH_API_KEY=
+HF_HOME=$PWD/models/huggingface_cache
+TRANSFORMERS_CACHE=$PWD/models/huggingface_cache
+EOF
+echo "Monte Carlo workspace prepared"
+echo "Project: {root}"
+echo "HF cache: {root}/models/huggingface_cache"
+echo "MC models: {root}/models/monte_carlo"
+find models -maxdepth 2 -type d | sort
 """
 
     @staticmethod
