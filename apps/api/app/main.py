@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.api.routes import cohort, data_batches, experiments, integrations, monte_carlo, vm
+from app.api.routes import cohort, data_batches, experiments, integrations, monte_carlo, vm, parallel_pipeline
 from app.approach_2.api import (
     experiments as approach_2_experiments,
     pipeline as approach_2_pipeline,
@@ -53,4 +53,5 @@ app.include_router(approach_2_slides.router, prefix="/approach-2/slides", tags=[
 app.include_router(approach_2_pipeline.router, prefix="/approach-2/pipeline", tags=["approach-2-pipeline"])
 app.include_router(approach_2_experiments.router, prefix="/approach-2/experiments", tags=["approach-2-experiments"])
 app.include_router(approach_2_webhook.router, prefix="/approach-2/webhook", tags=["approach-2-webhook"])
+app.include_router(parallel_pipeline.router, prefix="/parallel-pipeline", tags=["parallel-pipeline"])
 app.mount("/approach-2/artifacts", StaticFiles(directory="/data"), name="approach-2-artifacts")

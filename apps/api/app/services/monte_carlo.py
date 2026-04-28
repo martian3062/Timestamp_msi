@@ -316,19 +316,27 @@ class MonteCarloService:
         rng = random.Random(request.random_seed)
         trials: list[MonteCarloTrial] = []
 
-        log_lr_min = math.log(request.learning_rate_min)
-        log_lr_max = math.log(request.learning_rate_max)
-        log_wd_min = math.log(request.weight_decay_min)
-        log_wd_max = math.log(request.weight_decay_max)
+        log_lr_min = math.log(request.optimizer.learning_rate_min)
+        log_lr_max = math.log(request.optimizer.learning_rate_max)
+        log_wd_min = math.log(request.optimizer.weight_decay_min)
+        log_wd_max = math.log(request.optimizer.weight_decay_max)
 
         for _ in range(request.samples):
             lr = math.exp(rng.uniform(log_lr_min, log_lr_max))
-            dropout = round(rng.uniform(request.dropout_min, request.dropout_max), 4)
+            dropout = rng.choice(request.model.dropout)
             weight_decay = math.exp(rng.uniform(log_wd_min, log_wd_max))
-            epochs = rng.choice(request.epoch_choices)
-            seed = rng.choice(request.seed_choices)
-            extractor = rng.choice(request.feature_extractors)
-            model = rng.choice(request.mil_models)
+            epochs = rng.choice(request.trainer.max_epochs)
+            seed = rng.choice(request.trainer.seed_choices)
+            extractor = rng.choice(request.feature_extraction.encoder_name)
+            model = rng.choice(request.model.mil_type)
+            bag_size = rng.choice(request.bagging.bag_size)
+            bags_per_slide = rng.choice(request.bagging.bags_per_slide)
+            hidden_dim = rng.choice(request.model.hidden_dim)
+            attention_dim = rng.choice(request.model.attention_dim)
+            class_weight_msi_h = rng.choice(request.loss.class_weight_msi_h)
+            scheduler = rng.choice(request.scheduler.name)
+            warmup_epochs = rng.choice(request.scheduler.warmup_epochs)
+            loss_name = rng.choice(request.loss.name)
 
             trial_key = json.dumps(
                 {
@@ -339,7 +347,15 @@ class MonteCarloService:
                     "weight_decay": weight_decay,
                     "epochs": epochs,
                     "seed": seed,
-                    "folds": request.folds,
+                    "folds": request.data.num_folds,
+                    "bag_size": bag_size,
+                    "bags_per_slide": bags_per_slide,
+                    "hidden_dim": hidden_dim,
+                    "attention_dim": attention_dim,
+                    "class_weight_msi_h": class_weight_msi_h,
+                    "scheduler": scheduler,
+                    "warmup_epochs": warmup_epochs,
+                    "loss_name": loss_name,
                 },
                 sort_keys=True,
             )
@@ -355,7 +371,15 @@ class MonteCarloService:
                     weight_decay=round(weight_decay, 8),
                     epochs=epochs,
                     seed=seed,
-                    folds=request.folds,
+                    folds=request.data.num_folds,
+                    bag_size=bag_size,
+                    bags_per_slide=bags_per_slide,
+                    hidden_dim=hidden_dim,
+                    attention_dim=attention_dim,
+                    class_weight_msi_h=class_weight_msi_h,
+                    scheduler=scheduler,
+                    warmup_epochs=warmup_epochs,
+                    loss_name=loss_name,
                     primary_metric=request.primary_metric,
                     metric_direction=request.metric_direction,
                 )
@@ -567,8 +591,32 @@ PY
 python3 - <<'PY'
 import json, os
 from pathlib import Path
+import numpy as np
+
+# First, calculate seed_std for all sets of hyperparameters
+trial_groups = {{}}
+results_dir = Path("automation/results")
+for path in results_dir.glob("*/metrics.json"):
+    try:
+        data = json.loads(path.read_text())
+        if "mean_auroc" not in data: continue
+        # Group by hyperparameters to compute seed_std
+        group_key = (
+            data.get("feature_extractor"), data.get("mil_model"), data.get("learning_rate"),
+            data.get("dropout"), data.get("weight_decay"), data.get("epochs")
+        )
+        if group_key not in trial_groups:
+            trial_groups[group_key] = []
+        trial_groups[group_key].append(float(data.get("mean_auroc")))
+    except Exception:
+        pass
+
+group_seed_std = {{}}
+for k, v in trial_groups.items():
+    group_seed_std[k] = float(np.std(v, ddof=1)) if len(v) > 1 else 0.0
+
 rows = []
-for path in Path("automation/results").glob("*/metrics.json"):
+for path in results_dir.glob("*/metrics.json"):
     try:
         data = json.loads(path.read_text())
     except Exception:
@@ -577,13 +625,33 @@ for path in Path("automation/results").glob("*/metrics.json"):
     sd_auroc = data.get("sd_auroc", 0)
     mean_auprc = data.get("mean_auprc", 0)
     sd_auprc = data.get("sd_auprc", 0)
+    balanced_accuracy = data.get("balanced_accuracy", 0)
+    msi_h_sensitivity = data.get("msi_h_sensitivity", 0)
+    calibration_score = data.get("calibration_score", 0)
     folds = data.get("folds_completed", 0)
     if mean_auroc is None or folds < {min_folds}:
         continue
+        
+    group_key = (
+        data.get("feature_extractor"), data.get("mil_model"), data.get("learning_rate"),
+        data.get("dropout"), data.get("weight_decay"), data.get("epochs")
+    )
+    seed_std = group_seed_std.get(group_key, 0.0)
+
     # Compute stability score
     try:
         score = {formula!r}
-        score = eval(score, {{"mean_auroc": float(mean_auroc), "sd_auroc": float(sd_auroc), "mean_auprc": float(mean_auprc), "sd_auprc": float(sd_auprc)}})
+        eval_dict = {{
+            "mean_auroc": float(mean_auroc), 
+            "sd_auroc": float(sd_auroc), 
+            "mean_auprc": float(mean_auprc), 
+            "sd_auprc": float(sd_auprc),
+            "balanced_accuracy": float(balanced_accuracy),
+            "msi_h_sensitivity": float(msi_h_sensitivity),
+            "calibration_score": float(calibration_score),
+            "seed_std": float(seed_std)
+        }}
+        score = eval(score, {{"__builtins__": {{}}}}, eval_dict)
     except Exception:
         score = float(mean_auroc)
     rows.append({{
@@ -592,6 +660,10 @@ for path in Path("automation/results").glob("*/metrics.json"):
         "sd_auroc": float(sd_auroc),
         "mean_auprc": float(mean_auprc),
         "sd_auprc": float(sd_auprc),
+        "balanced_accuracy": float(balanced_accuracy),
+        "msi_h_sensitivity": float(msi_h_sensitivity),
+        "calibration_score": float(calibration_score),
+        "seed_std": float(seed_std),
         "stability_score": float(score),
         "folds_completed": folds,
         "feature_extractor": data.get("feature_extractor", ""),

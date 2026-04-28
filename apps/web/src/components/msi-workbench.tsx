@@ -28,6 +28,7 @@ import {
   UploadCloud,
 } from "lucide-react";
 import type { DistributionDatum } from "@/components/recharts-distribution";
+import { ParallelResults, type ParallelMetric } from "@/components/parallel-results";
 
 const RechartsDistribution = dynamic(
   () =>
@@ -52,7 +53,7 @@ type UploadedTable = {
 };
 
 type UploadKind = "annotations" | "manifest";
-type ApproachMode = "approach-1" | "approach-2" | "monte-carlo";
+type ApproachMode = "approach-1" | "approach-2" | "monte-carlo" | "parallel";
 
 type VmFileRow = {
   type: string;
@@ -332,6 +333,12 @@ export function MsiWorkbench() {
   const [approach2Busy, setApproach2Busy] = useState<string>();
   const [approach2Error, setApproach2Error] = useState("");
   const [approach2Message, setApproach2Message] = useState("Approach 2 is ready to register slides or start a pipeline action.");
+
+  /* Parallel state */
+  const [parallelMetrics, setParallelMetrics] = useState<ParallelMetric[]>([]);
+  const [parallelBusy, setParallelBusy] = useState(false);
+  const [parallelError, setParallelError] = useState("");
+  const [parallelMessage, setParallelMessage] = useState("Parallel Metrics is ready.");
 
   const annotationMap = useMemo(() => {
     const columns = annotations?.columns ?? [];
@@ -674,16 +681,63 @@ export function MsiWorkbench() {
     }
   }
 
+  async function runParallelPipeline() {
+    setParallelBusy(true);
+    setParallelError("");
+    setParallelMetrics([]);
+    setParallelMessage("Starting real metrics snapshot...");
+    try {
+      const response = await fetch(`${automationApiBase}/parallel-pipeline/start`, { method: "POST" });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data?.detail || "Parallel metrics snapshot failed to start.");
+      }
+      setParallelMessage(data.message || `Snapshot queued with ID: ${data.execution_id}`);
+
+      const pollMetrics = async (attempt = 0) => {
+        const metricsRes = await fetch(`${automationApiBase}/parallel-pipeline/metrics/${data.execution_id}`);
+        const metricsData = await metricsRes.json();
+        if (!metricsRes.ok) {
+          throw new Error(metricsData?.detail || "Unable to read parallel metrics.");
+        }
+
+        setParallelMetrics(metricsData.metrics || []);
+        const sourceSummary = Array.isArray(metricsData.sources)
+          ? metricsData.sources
+              .map((source: { name: string; ok: boolean; records_found: number; message?: string }) =>
+                `${source.name}: ${source.ok ? source.records_found : "error"}`
+              )
+              .join(" | ")
+          : "";
+        setParallelMessage([metricsData.message, sourceSummary].filter(Boolean).join("\n"));
+
+        if ((metricsData.status === "pending" || metricsData.status === "running") && attempt < 20) {
+          window.setTimeout(() => {
+            void pollMetrics(attempt + 1).catch((error) => {
+              setParallelError(error instanceof Error ? error.message : "Parallel metrics polling failed.");
+              setParallelBusy(false);
+            });
+          }, 1500);
+          return;
+        }
+
+        setParallelBusy(false);
+      };
+
+      await pollMetrics();
+    } catch (error) {
+      setParallelError(error instanceof Error ? error.message : "Parallel metrics snapshot failed.");
+      setParallelBusy(false);
+    }
+  }
+
   return (
     <main className={`${theme} min-h-screen overflow-hidden`} style={{ background: "var(--background)", color: "var(--foreground)" }}>
-      <video
+      <img
         aria-hidden="true"
-        autoPlay
         className="pointer-events-none fixed inset-0 z-0 h-full w-full object-cover"
-        loop
-        muted
-        playsInline
-        src="/assets/snow-in-jinan.webm"
+        src="/assets/4basecare-mars.png"
+        alt=""
         style={{
           filter: isDark ? "grayscale(0.72) saturate(0.42) brightness(0.55) contrast(1.12)" : "saturate(0.55) brightness(1.2) contrast(0.82)",
           opacity: isDark ? 0.12 : 0.28,
@@ -710,7 +764,7 @@ export function MsiWorkbench() {
           </div>
           <div className="flex items-center gap-2">
             <div className="hidden rounded-full border p-1 sm:flex" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
-              {(["approach-1", "approach-2", "monte-carlo"] as ApproachMode[]).map((mode) => (
+              {(["approach-1", "approach-2", "monte-carlo", "parallel"] as ApproachMode[]).map((mode) => (
                 <button
                   className="rounded-full px-3 py-1.5 text-xs font-semibold transition"
                   key={mode}
@@ -721,7 +775,7 @@ export function MsiWorkbench() {
                   }}
                   type="button"
                 >
-                  {mode === "approach-1" ? "Approach 1" : mode === "approach-2" ? "Approach 2" : "Monte Carlo"}
+                  {mode === "approach-1" ? "Approach 1" : mode === "approach-2" ? "Approach 2" : mode === "monte-carlo" ? "Monte Carlo" : "Parallel Metrics"}
                 </button>
               ))}
             </div>
@@ -759,7 +813,9 @@ export function MsiWorkbench() {
                       ? "local UI + VM pipeline"
                       : approachMode === "approach-2"
                         ? "Slideflow platform API"
-                        : "VM Monte Carlo + AI providers"}
+                        : approachMode === "monte-carlo"
+                          ? "VM Monte Carlo + AI providers"
+                          : "Artifact metrics"}
                   </span>
                 </div>
                 <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] sm:text-7xl lg:text-6xl 2xl:text-8xl" style={{ color: "var(--heading)" }}>
@@ -767,25 +823,27 @@ export function MsiWorkbench() {
                     ? "MSI slide intelligence, live from the VM."
                     : approachMode === "approach-2"
                       ? "Switchable MSI platform, from cohort to model registry."
-                      : "Monte Carlo as a dedicated validation approach."}
+                      : approachMode === "monte-carlo"
+                        ? "Monte Carlo as a dedicated validation approach."
+                        : "Parallel artifact metrics, only when runs exist."}
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 sm:text-lg" style={{ color: "var(--body)" }}>
                   {approachMode === "approach-1"
                     ? "Upload cohort files, check fold balance, inspect the remote slide project, and launch Jupyter without leaving the browser."
                     : approachMode === "approach-2"
                       ? "Register slides, trigger preprocessing, extract features, train Attention MIL, and review Approach 2 experiments from the same control room."
-                      : "Generate stochastic trial plans, prepare the VM model cache, use HF model storage, and check Groq, Firecrawl, Zerve, and Tinyfish readiness."}
+                      : approachMode === "monte-carlo"
+                        ? "Generate stochastic trial plans, prepare the VM model cache, use HF model storage, and check Groq, Firecrawl, Zerve, and Tinyfish readiness."
+                        : "Read completed Approach 1, Approach 2, and Monte Carlo artifacts, then compare only the metrics the backend actually finds."}
                 </p>
               </div>
 
               <div className="research-video-wrap">
-                <video
-                  autoPlay
+                <img
+                  aria-label="Researching cancer MSI-H image"
                   className="h-full w-full object-cover"
-                  loop
-                  muted
-                  playsInline
-                  src="/assets/researching-cancer-msi-h.mp4"
+                  src="/assets/4basecare-mars.png"
+                  alt="4basecare mars"
                 />
               </div>
             </div>
@@ -1554,6 +1612,49 @@ export function MsiWorkbench() {
             </div>
           </Panel>
         </section>
+      </section>
+
+      <section className={`relative z-10 mx-auto w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 ${approachMode === "parallel" ? "grid" : "hidden"}`}>
+        <Panel>
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <SectionTitle
+              icon={<Layers3 className="h-5 w-5" />}
+              title="Parallel Metrics Snapshot"
+              label={parallelBusy ? "running" : "ready"}
+            />
+            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[420px] xl:grid-cols-2">
+              <ActionButton
+                busy={parallelBusy}
+                disabled={parallelBusy}
+                icon={<Play className="h-4 w-4" />}
+                label="Fetch Metrics Snapshot"
+                onClick={() => runParallelPipeline()}
+              />
+            </div>
+          </div>
+          <div className="mt-5">
+             <pre className="min-h-[60px] overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: parallelError ? "var(--danger)" : "var(--input-text)" }}>
+                {parallelError || parallelMessage}
+             </pre>
+          </div>
+          
+          <div className="mt-8">
+             <SectionTitle
+               icon={<BarChart3 className="h-5 w-5" />}
+               title="Parallel Results Visualization"
+               label={parallelMetrics.length > 0 ? "rendered" : "waiting"}
+             />
+             {parallelMetrics.length > 0 ? (
+               <div className="mt-5">
+                 <ParallelResults data={parallelMetrics} />
+               </div>
+             ) : (
+               <p className="mt-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                 Run the snapshot after completed VM or platform metrics exist. The chart stays empty until real artifacts are found.
+               </p>
+             )}
+          </div>
+        </Panel>
       </section>
     </main>
   );

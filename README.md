@@ -11,7 +11,7 @@ VM.
 
 ## Current State
 
-The current branch exposes three separate workflow approaches from one UI:
+The current branch exposes four workflow modes from one UI:
 
 - `Approach 1`: cohort/manifest validation, VM file upload, VM browsing, GDC
   downloader startup, Jupyter startup, SSH tunnel, and experiment-result view.
@@ -21,6 +21,22 @@ The current branch exposes three separate workflow approaches from one UI:
 - `Monte Carlo`: stochastic validation workflow for random search, MC dropout,
   bootstrap confidence intervals, stable model selection, and VM model-cache
   preparation.
+- `Parallel Metrics`: a unified comparison mode that reads completed Approach
+  1, Approach 2, and Monte Carlo metric artifacts. It does not generate demo
+  clinical values; D3.js and Recharts render only metrics found in real outputs.
+
+## Final Combo Stack
+The target VM architecture utilizes:
+- **WSI processing**: Slideflow + OpenSlide + TIAToolbox
+- **Training**: PyTorch Lightning + MONAI + TorchMetrics
+- **Models**: Hugging Face + timm + transformers
+- **Validation**: scikit-learn + scipy + statsmodels (MC dropout + bootstrap CI + seed stability)
+- **Experiment management**: Hydra + Optuna + MLflow
+- **Storage**: h5py + zarr + DuckDB + Polars
+- **Automation**: n8n -> FastAPI routes only
+- **Frontend**: Next.js workstation (D3.js & Recharts for artifact metrics)
+
+*Note: For Hugging Face gated models, set your `HF_TOKEN` in `.env` (e.g. `HF_TOKEN=hf_...`).*
 
 The frontend is running on:
 
@@ -50,7 +66,7 @@ controlled local workstation:
 - keep secrets in local `.env` files only
 - run small batches first, then clean up raw slide storage when needed
 - expose real backend routes that n8n and the frontend can both call
-- support three experiment approaches without switching repos manually
+- support multiple experiment approaches without switching repos manually
 
 ## Architecture At A Glance
 
@@ -93,6 +109,7 @@ Timestamp_msi/
           experiments.py
           integrations.py
           monte_carlo.py
+          parallel_pipeline.py
           vm.py
         approach_2/
           api/
@@ -136,6 +153,9 @@ Timestamp_msi/
     web/
       public/
         assets/
+          4basecare-mars.png
+          ATTRIBUTION.md
+          igloo-poly-google.glb
           researching-cancer-msi-h.mp4
           snow-in-jinan.webm
       src/
@@ -146,6 +166,7 @@ Timestamp_msi/
           page.tsx
         components/
           msi-workbench.tsx
+          parallel-results.tsx
           recharts-distribution.tsx
           winter-scene.tsx
       package.json
@@ -156,6 +177,9 @@ Timestamp_msi/
       start-local.ps1
       timestamp-msi-connection-check.json
       timestamp-msi-gdc-10-svs-batch.json
+      timestamp-msi-advanced-preflight-gate.json
+      timestamp-msi-advanced-gdc-batch-loop.json
+      timestamp-msi-advanced-experiment-quality-loop.json
       timestamp-msi-integrations-check.json
       timestamp-msi-live-source-check.json
       timestamp-msi-modular-training.json
@@ -181,11 +205,11 @@ Main responsibilities:
 - parse local CSV/TSV files in the browser
 - detect required annotation and manifest fields
 - show label and fold distributions
-- switch between `Approach 1`, `Approach 2`, and `Monte Carlo`
+- switch between `Approach 1`, `Approach 2`, `Monte Carlo`, and `Parallel Metrics`
 - call the FastAPI backend on `http://127.0.0.1:8001`
 - show optional integration status without revealing secret values
 - expose practical VM controls for local development
-- play the MSI-H/cancer research video in the hero media area
+- render the current hero/background media from `public/assets/4basecare-mars.png`
 
 Frontend stack:
 
@@ -196,7 +220,7 @@ Frontend stack:
 - Lucide React icons
 - Recharts and D3 for static distributions
 - Three.js dependencies are still installed, but the old hero visual has been
-  replaced with `public/assets/researching-cancer-msi-h.mp4`
+  replaced by the current local art/background asset set under `public/assets/`
 
 ## Backend Architecture
 
@@ -212,6 +236,7 @@ It registers:
 - VM SSH action routes
 - n8n experiment routes
 - Monte Carlo routes
+- Parallel metric snapshot routes
 - GDC batch routes
 - integration status routes
 - Approach 2 platform routes under `/approach-2/*`
@@ -368,7 +393,8 @@ configs/ai_integrations.env.example
 The stable-best formula defaults to:
 
 ```text
-mean_auroc - 0.5 * sd_auroc
+0.40 * mean_auroc + 0.25 * mean_auprc + 0.15 * balanced_accuracy
++ 0.10 * msi_h_sensitivity + 0.10 * calibration_score - 0.20 * seed_std
 ```
 
 This is safer than choosing the highest single metric when the result may be a
@@ -450,13 +476,13 @@ use.
 Default VM target:
 
 ```text
-pardeep@34.55.157.128
+pardeep@34.59.145.240
 ```
 
 Default SSH command:
 
 ```powershell
-ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.55.157.128
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.59.145.240
 ```
 
 Default project root on the VM:
@@ -475,7 +501,7 @@ Backend environment values:
 
 ```powershell
 $env:MSI_VM_USER = "pardeep"
-$env:MSI_VM_HOST = "34.55.157.128"
+$env:MSI_VM_HOST = "34.59.145.240"
 $env:MSI_VM_KEY = "$env:USERPROFILE\.ssh\evolet_rsa"
 $env:MSI_VM_PROJECT_ROOT = "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc"
 ```
@@ -492,9 +518,10 @@ The local tunnel opens:
 http://127.0.0.1:8888
 ```
 
-Latest local SSH check from this workstation timed out on port `22`. That means
-VM routes are implemented, but remote operations need network/firewall/VPN
-access before they can complete.
+Latest local SSH check from this workstation succeeded against
+`pardeep@34.59.145.240` on April 28, 2026. The VM currently reports root
+storage at `484G` total, `472G` used, and `13G` free, so small-batch processing
+and cleanup are still important.
 
 ## Complete Backend Route Map
 
@@ -526,6 +553,9 @@ POST /experiments/seed-stability
 GET  /experiments/best-stable
 
 GET  /integrations/status
+
+POST /parallel-pipeline/start
+GET  /parallel-pipeline/metrics/{execution_id}
 
 POST /data-batches/gdc/bootstrap
 POST /data-batches/gdc/start
@@ -613,9 +643,18 @@ Recommended workflow order:
 1. `Timestamp_msi live source check`
 2. `Timestamp_msi SAFE connection check`
 3. `Timestamp_msi integrations check`
-4. `Timestamp_msi GDC 10 SVS batch`
+4. `Timestamp_msi ADV preflight storage gate`
 5. `Timestamp_msi SAFE single trial launcher`
-6. `Timestamp_msi Monte Carlo uncertainty pipeline`
+6. `Timestamp_msi ADV experiment quality loop`
+7. `Timestamp_msi GDC 10 SVS batch`
+8. `Timestamp_msi ADV storage-safe GDC batch loop`
+9. `Timestamp_msi Monte Carlo uncertainty pipeline`
+
+The practical rule is:
+
+- use `SAFE` and `ADV preflight` workflows before any download or training run
+- use the `ADV storage-safe GDC batch loop` when VM free space is tight
+- enable cleanup only after features, metrics, or other outputs are already persisted
 
 ## Validation Commands
 
@@ -649,7 +688,7 @@ Invoke-RestMethod `
   -Method Post `
   -Uri http://127.0.0.1:8001/experiments/monte-carlo-plan `
   -ContentType "application/json" `
-  -Body '{"samples":2,"random_seed":310,"folds":[1],"epoch_choices":[5],"seed_choices":[310]}'
+  -Body '{"samples":2,"random_seed":310,"data":{"num_folds":[1]},"trainer":{"max_epochs":[5],"seed_choices":[310]}}'
 ```
 
 ## Safety Model
@@ -688,6 +727,8 @@ Backend:
 - `apps/api/app/api/routes/monte_carlo.py`: Monte Carlo endpoints.
 - `apps/api/app/services/monte_carlo.py`: random search, uncertainty, bootstrap
   CI, seed stability, stable-best logic.
+- `apps/api/app/api/routes/parallel_pipeline.py`: real artifact comparison
+  endpoint for Approach 1, Approach 2, and Monte Carlo metrics.
 - `apps/api/app/api/routes/integrations.py`: secret-safe integration status.
 - `apps/api/app/services/data_batches.py`: GDC batch download/status/cleanup.
 - `apps/api/app/approach_2`: imported Approach 2 backend package.
@@ -696,7 +737,7 @@ Frontend:
 
 - `apps/web/src/components/msi-workbench.tsx`: main workstation UI.
 - `apps/web/src/app/globals.css`: theme tokens and layout styling.
-- `apps/web/public/assets/researching-cancer-msi-h.mp4`: hero media asset.
+- `apps/web/public/assets/4basecare-mars.png`: current hero/background asset used by the workstation shell.
 - `apps/web/src/components/recharts-distribution.tsx`: static chart wrapper.
 - `apps/web/src/app/api/vm/route.ts`: legacy/local Next.js VM bridge.
 
@@ -706,6 +747,9 @@ Automation:
 - `automation/n8n/timestamp-msi-connection-check.json`: API/VM check.
 - `automation/n8n/timestamp-msi-integrations-check.json`: provider status.
 - `automation/n8n/timestamp-msi-gdc-10-svs-batch.json`: small GDC batch.
+- `automation/n8n/timestamp-msi-advanced-preflight-gate.json`: storage and service gate before risky actions.
+- `automation/n8n/timestamp-msi-advanced-gdc-batch-loop.json`: storage-aware 5-SVS batch loop with cleanup left disabled.
+- `automation/n8n/timestamp-msi-advanced-experiment-quality-loop.json`: one-trial baseline plus Monte Carlo planning, stable-best, and parallel metrics snapshot.
 - `automation/n8n/timestamp-msi-modular-training.json`: training workflow.
 - `automation/n8n/timestamp-msi-monte-carlo-pipeline.json`: MC workflow.
 
@@ -737,7 +781,7 @@ Then restart `npm.cmd run dev`.
 Test SSH directly:
 
 ```powershell
-ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.55.157.128
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.59.145.240
 ```
 
 If port `22` times out, fix VM network/firewall/VPN access first. The app

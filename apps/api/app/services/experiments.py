@@ -36,8 +36,11 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import (
     average_precision_score,
+    balanced_accuracy_score,
+    brier_score_loss,
     confusion_matrix,
     precision_recall_curve,
+    recall_score,
     roc_auc_score,
     roc_curve,
 )
@@ -239,6 +242,12 @@ def aggregate_trial(trial: dict) -> dict:
         fpr, tpr, _ = roc_curve(y_true, y_score)
         precision, recall, _ = precision_recall_curve(y_true, y_score)
         y_pred = (y_score >= 0.5).astype(int)
+        
+        balanced_accuracy = float(balanced_accuracy_score(y_true, y_pred))
+        msi_h_sensitivity = float(recall_score(y_true, y_pred))
+        brier = float(brier_score_loss(y_true, y_score))
+        calibration_score = 1.0 - brier
+        
         rows.append(
             {
                 "trial_id": trial_id,
@@ -247,6 +256,9 @@ def aggregate_trial(trial: dict) -> dict:
                 "score_column": score_col,
                 "auroc": float(roc_auc_score(y_true, y_score)),
                 "auprc": float(average_precision_score(y_true, y_score)),
+                "balanced_accuracy": balanced_accuracy,
+                "msi_h_sensitivity": msi_h_sensitivity,
+                "calibration_score": calibration_score,
                 "file": str(path),
             }
         )
@@ -267,9 +279,12 @@ def aggregate_trial(trial: dict) -> dict:
     metrics = {
         **trial,
         "mean_auroc": float(table["auroc"].mean()),
-        "sd_auroc": float(table["auroc"].std(ddof=1)),
+        "sd_auroc": float(table["auroc"].std(ddof=1)) if len(table) > 1 else 0.0,
         "mean_auprc": float(table["auprc"].mean()),
-        "sd_auprc": float(table["auprc"].std(ddof=1)),
+        "sd_auprc": float(table["auprc"].std(ddof=1)) if len(table) > 1 else 0.0,
+        "balanced_accuracy": float(table["balanced_accuracy"].mean()),
+        "msi_h_sensitivity": float(table["msi_h_sensitivity"].mean()),
+        "calibration_score": float(table["calibration_score"].mean()),
         "folds_completed": int(len(table)),
         "total_samples": int(table["n"].sum()),
         "confusion_matrices": confusion,

@@ -1,0 +1,25 @@
+{
+  "name": "Workflow 5 — MIL training and testing",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/approach-2/pipeline/train",
+        "options": {}
+      },
+      "name": "POST /approach-2/pipeline/train",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {},
+  "settings": {}
+}

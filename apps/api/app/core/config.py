@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     )
 
     vm_user: str = "pardeep"
-    vm_host: str = "34.55.157.128"
+    vm_host: str = "34.59.145.240"
     vm_key: Path = Field(default_factory=lambda: Path.home() / ".ssh" / "evolet_rsa")
     vm_project_root: str = (
         "/home/pardeep/pathology310_projects/single_slide_morphology/"

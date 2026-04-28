@@ -1,9 +1,10 @@
 # 4basecare MSI Workbench
 
-Browser-side workstation for the TCGA colorectal MSI project. The app now has a
-three-way switch for Approach 1, Approach 2, and Monte Carlo so the user can
-move between manual VM orchestration, the imported platform backend, and
-stochastic validation without leaving the main screen.
+Browser-side workstation for the TCGA colorectal MSI project. The app now has
+workflow modes for Approach 1, Approach 2, Monte Carlo, and Parallel Metrics so
+the user can move between manual VM orchestration, the imported platform
+backend, stochastic validation, and artifact comparison without leaving the main
+screen.
 
 For the full project-level guide and backend API details, see the root
 `README.md`.
@@ -21,12 +22,14 @@ For the full project-level guide and backend API details, see the root
 - Use Monte Carlo controls to prepare VM model-cache folders, generate random
   trial plans, bootstrap runners, rank stable-best models, and fetch uncertainty
   outputs.
+- Fetch parallel metric snapshots from completed Approach 1, Approach 2, and
+  Monte Carlo artifacts through the FastAPI backend.
 - Show Hugging Face, Groq AI, Zerve AI, Firecrawl, and Tinyfish configured
   state without printing secret values.
 - Keep VM/Jupyter commands visible and editable for the remote Slideflow flow.
 
 The frontend does not invent model scores. It only reports values parsed from
-the files you load in the browser.
+loaded browser files, backend responses, or completed VM/platform artifacts.
 
 ## Getting Started
 
@@ -56,14 +59,14 @@ browser JavaScript.
 Default connection:
 
 ```bash
-ssh -i "%USERPROFILE%\.ssh\evolet_rsa" pardeep@34.55.157.128
+ssh -i "%USERPROFILE%\.ssh\evolet_rsa" pardeep@34.59.145.240
 ```
 
 Optional overrides:
 
 ```bash
 MSI_VM_USER=pardeep
-MSI_VM_HOST=34.55.157.128
+MSI_VM_HOST=34.59.145.240
 MSI_VM_KEY=C:\Users\<you>\.ssh\evolet_rsa
 MSI_VM_PROJECT_ROOT=/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
 ```
@@ -90,6 +93,8 @@ GUI actions:
 - `Monte Carlo`: dedicated random-search and uncertainty workflow using
   `/experiments/monte-carlo-plan`, `/experiments/best-stable`, and VM model
   cache preparation.
+- `Parallel Metrics`: D3/Recharts comparison from `/parallel-pipeline/*`; charts
+  stay empty until real completed metrics exist.
 
 ## Expected Files
 
@@ -117,8 +122,10 @@ npm.cmd run build
 - `src/app/page.tsx` renders the workstation.
 - `src/app/api/vm/route.ts` contains the local SSH bridge for VM actions.
 - `src/components/msi-workbench.tsx` contains the upload parser, field mapping,
-  validation, distributions, three-approach switch, VM controls, Approach 2
-  controls, Monte Carlo controls, and command block.
+  validation, distributions, workflow switch, VM controls, Approach 2 controls,
+  Monte Carlo controls, parallel metric snapshot controls, and command block.
+- `src/components/parallel-results.tsx` renders real artifact metrics with D3
+  and Recharts when the backend finds them.
 - `src/app/globals.css` keeps the global theme small and app-focused.
 
 ## Safety Note

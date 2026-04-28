@@ -1,0 +1,341 @@
+{
+  "name": "Timestamp_msi ADV experiment quality loop",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [120, 360]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { apiBase: 'http://127.0.0.1:8001', maxBaselineTrials: 1, folds: [1], epochs: [5], seeds: [310], monteCarloSamples: 4, startedAt: new Date().toISOString() } }];"
+      },
+      "id": "quality-config",
+      "name": "Build Quality Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [340, 360]
+    },
+    {
+      "parameters": {
+        "url": "={{$json.apiBase}}/health",
+        "options": {}
+      },
+      "id": "health",
+      "name": "Check FastAPI Health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [580, 220]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/vm/status",
+        "options": {}
+      },
+      "id": "vm-status",
+      "name": "Check VM Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [580, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/bootstrap",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {}
+      },
+      "id": "bootstrap-baseline",
+      "name": "Bootstrap Baseline Runner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [820, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/plan",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"feature_extractors\": [\"resnet50_imagenet\"],\n  \"mil_models\": [\"attention_mil\"],\n  \"learning_rates\": [0.0001],\n  \"epochs\": [5],\n  \"seeds\": [310],\n  \"folds\": [1],\n  \"primary_metric\": \"mean_auroc\",\n  \"metric_direction\": \"max\",\n  \"max_trials\": 1\n}",
+        "options": {}
+      },
+      "id": "baseline-plan",
+      "name": "Build Baseline Plan",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1060, 360]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Build Quality Config').item.json;\nconst plan = $('Build Baseline Plan').item.json;\nif (!Array.isArray(plan.trials) || plan.trials.length === 0) {\n  throw new Error('Baseline plan returned no trials.');\n}\nreturn [{ json: { apiBase: config.apiBase, trial: plan.trials[0], trialCount: plan.trial_count, startedAt: config.startedAt } }];"
+      },
+      "id": "select-trial",
+      "name": "Select First Baseline Trial",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1300, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$json.apiBase}}/experiments/start",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ trial: $json.trial }) }}",
+        "options": {}
+      },
+      "id": "start-trial",
+      "name": "Start Baseline Trial",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1540, 360],
+      "notes": "This starts a real VM training run. It is intentionally limited to one small fold."
+    },
+    {
+      "parameters": {
+        "amount": 10,
+        "unit": "minutes"
+      },
+      "id": "wait-training",
+      "name": "Wait For Training Window",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [1780, 360],
+      "notes": "Increase this wait for real full-size runs. The next node reads status/logs and does not invent metrics."
+    },
+    {
+      "parameters": {
+        "url": "={{$('Select First Baseline Trial').item.json.apiBase}}/experiments/status/{{$('Select First Baseline Trial').item.json.trial.trial_id}}",
+        "options": {}
+      },
+      "id": "trial-status",
+      "name": "Read Trial Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2020, 360]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Select First Baseline Trial').item.json.apiBase}}/experiments/best?primary_metric=mean_auroc&metric_direction=max",
+        "options": {}
+      },
+      "id": "best-baseline",
+      "name": "Read Baseline Best",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2260, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/vm/monte-carlo/workspace",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {}
+      },
+      "id": "mc-workspace",
+      "name": "Prepare MC Workspace",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2500, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/mc-bootstrap",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {}
+      },
+      "id": "mc-bootstrap",
+      "name": "Bootstrap MC Runners",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2500, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/monte-carlo-plan",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"samples\": 4,\n  \"random_seed\": 310,\n  \"data\": { \"num_folds\": [1] },\n  \"trainer\": { \"max_epochs\": [5, 10], \"seed_choices\": [310, 42] },\n  \"feature_extraction\": { \"encoder_name\": [\"UNI\", \"CTransPath\"], \"batch_size\": [16, 32] },\n  \"model\": { \"mil_type\": [\"attention_mil\", \"gated_attention_mil\"], \"dropout\": [0.10, 0.20, 0.30], \"hidden_dim\": [256, 512], \"attention_dim\": [128, 256] },\n  \"bagging\": { \"bag_size\": [256, 512], \"bags_per_slide\": [1, 2] },\n  \"loss\": { \"name\": [\"weighted_cross_entropy\", \"focal_loss\"], \"class_weight_msi_h\": [1.5, 2.0, 3.0] },\n  \"scheduler\": { \"name\": [\"cosine\", \"reduce_on_plateau\"], \"warmup_epochs\": [1, 3] }\n}",
+        "options": {}
+      },
+      "id": "mc-plan",
+      "name": "Build Monte Carlo Plan",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2740, 360]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/best-stable?min_completed_folds=1",
+        "options": {}
+      },
+      "id": "stable-best",
+      "name": "Read Stable Best",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2980, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/parallel-pipeline/start",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {}
+      },
+      "id": "parallel-start",
+      "name": "Start Parallel Metrics Snapshot",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [3220, 360]
+    },
+    {
+      "parameters": {
+        "amount": 10,
+        "unit": "seconds"
+      },
+      "id": "wait-parallel",
+      "name": "Wait For Snapshot",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [3460, 360]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/parallel-pipeline/metrics/{{$('Start Parallel Metrics Snapshot').item.json.execution_id}}",
+        "options": {}
+      },
+      "id": "parallel-metrics",
+      "name": "Read Parallel Metrics",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [3700, 360]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Build Quality Config').item.json;\nconst trial = $('Select First Baseline Trial').item.json.trial;\nconst status = $('Read Trial Status').item.json;\nconst baselineBest = $('Read Baseline Best').item.json;\nconst mcPlan = $('Build Monte Carlo Plan').item.json;\nconst stableBest = $('Read Stable Best').item.json;\nconst parallel = $('Read Parallel Metrics').item.json;\nreturn [{ json: { ok: true, workflow: 'Timestamp_msi ADV experiment quality loop', startedAt: config.startedAt, completedAt: new Date().toISOString(), baselineTrial: trial.trial_id, trialRunning: status.running, trialStatus: status.status_json || null, baselineBest: baselineBest.best || null, monteCarloTrialCount: mcPlan.trial_count || 0, stableBest: stableBest.best || null, parallelMetricCount: Array.isArray(parallel.metrics) ? parallel.metrics.length : 0, parallelSources: parallel.sources || [], next: 'If baseline trial completed, run uncertainty/bootstrap CI for the best trial or widen the Monte Carlo samples.' } }];"
+      },
+      "id": "quality-report",
+      "name": "Build Quality Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3940, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/uncertainty/start",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ trial_id: $('Read Baseline Best').item.json.best?.trial_id || $('Select First Baseline Trial').item.json.trial.trial_id, forward_passes: 30, dropout_rate: 0.25 }) }}",
+        "options": {}
+      },
+      "id": "uncertainty-disabled",
+      "name": "Start MC Dropout - Disabled Until Trial Completes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2980, 520],
+      "disabled": true,
+      "notes": "Enable after the baseline or stable-best trial has completed and metrics exist."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Quality Config').item.json.apiBase}}/experiments/bootstrap-ci/start",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ trial_id: $('Read Baseline Best').item.json.best?.trial_id || $('Select First Baseline Trial').item.json.trial.trial_id, n_bootstrap: 1000, ci_level: 0.95 }) }}",
+        "options": {}
+      },
+      "id": "bootstrap-ci-disabled",
+      "name": "Start Bootstrap CI - Disabled Until Trial Completes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [3220, 520],
+      "disabled": true,
+      "notes": "Enable after completed prediction artifacts exist for the chosen trial."
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{"node": "Build Quality Config", "type": "main", "index": 0}]]
+    },
+    "Build Quality Config": {
+      "main": [[{"node": "Check FastAPI Health", "type": "main", "index": 0}]]
+    },
+    "Check FastAPI Health": {
+      "main": [[{"node": "Check VM Status", "type": "main", "index": 0}]]
+    },
+    "Check VM Status": {
+      "main": [[{"node": "Bootstrap Baseline Runner", "type": "main", "index": 0}]]
+    },
+    "Bootstrap Baseline Runner": {
+      "main": [[{"node": "Build Baseline Plan", "type": "main", "index": 0}]]
+    },
+    "Build Baseline Plan": {
+      "main": [[{"node": "Select First Baseline Trial", "type": "main", "index": 0}]]
+    },
+    "Select First Baseline Trial": {
+      "main": [[{"node": "Start Baseline Trial", "type": "main", "index": 0}]]
+    },
+    "Start Baseline Trial": {
+      "main": [[{"node": "Wait For Training Window", "type": "main", "index": 0}]]
+    },
+    "Wait For Training Window": {
+      "main": [[{"node": "Read Trial Status", "type": "main", "index": 0}]]
+    },
+    "Read Trial Status": {
+      "main": [[{"node": "Read Baseline Best", "type": "main", "index": 0}]]
+    },
+    "Read Baseline Best": {
+      "main": [[{"node": "Prepare MC Workspace", "type": "main", "index": 0}]]
+    },
+    "Prepare MC Workspace": {
+      "main": [[{"node": "Bootstrap MC Runners", "type": "main", "index": 0}]]
+    },
+    "Bootstrap MC Runners": {
+      "main": [[{"node": "Build Monte Carlo Plan", "type": "main", "index": 0}]]
+    },
+    "Build Monte Carlo Plan": {
+      "main": [[{"node": "Read Stable Best", "type": "main", "index": 0}]]
+    },
+    "Read Stable Best": {
+      "main": [[{"node": "Start Parallel Metrics Snapshot", "type": "main", "index": 0}]]
+    },
+    "Start Parallel Metrics Snapshot": {
+      "main": [[{"node": "Wait For Snapshot", "type": "main", "index": 0}]]
+    },
+    "Wait For Snapshot": {
+      "main": [[{"node": "Read Parallel Metrics", "type": "main", "index": 0}]]
+    },
+    "Read Parallel Metrics": {
+      "main": [[{"node": "Build Quality Report", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

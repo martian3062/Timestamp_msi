@@ -1,20 +1,21 @@
 """Monte Carlo experiment API routes.
 
 Endpoints:
-  POST /experiments/monte-carlo-plan     — random hyperparameter search plan
-  POST /experiments/mc-bootstrap         — deploy MC scripts to VM
-  POST /experiments/uncertainty/start    — start MC dropout inference
-  GET  /experiments/uncertainty/{id}     — get MC dropout results
-  POST /experiments/bootstrap-ci/start   — start bootstrap CI
-  GET  /experiments/bootstrap-ci/{id}    — get bootstrap CI results
-  POST /experiments/seed-stability       — seed stability analysis
-  GET  /experiments/best-stable          — stability-weighted ranking
+  POST /experiments/monte-carlo-plan   - random hyperparameter search plan
+  POST /experiments/mc-bootstrap       - deploy MC scripts to VM
+  POST /experiments/uncertainty/start  - start MC dropout inference
+  GET  /experiments/uncertainty/{id}   - get MC dropout results
+  POST /experiments/bootstrap-ci/start - start bootstrap CI
+  GET  /experiments/bootstrap-ci/{id}  - get bootstrap CI results
+  POST /experiments/seed-stability     - seed stability analysis
+  GET  /experiments/best-stable        - stability-weighted ranking
 """
 from fastapi import APIRouter, HTTPException
 
 from app.models.monte_carlo import (
     BootstrapCIRequest,
     BootstrapCIResponse,
+    DEFAULT_STABLE_RANK_FORMULA,
     MCDropoutRequest,
     MCDropoutResponse,
     MonteCarloActionResponse,
@@ -86,7 +87,7 @@ def seed_stability(request: SeedStabilityRequest) -> SeedStabilityResponse:
 
 @router.get("/best-stable", response_model=StableBestResponse)
 def best_stable(
-    rank_formula: str = "mean_auroc - 0.5 * sd_auroc",
+    rank_formula: str = DEFAULT_STABLE_RANK_FORMULA,
     min_completed_folds: int = 1,
 ) -> StableBestResponse:
     """Find the best model using stability-weighted scoring."""

@@ -65,6 +65,9 @@ Additional workflows:
 automation/n8n/timestamp-msi-integrations-check.json
 automation/n8n/timestamp-msi-gdc-10-svs-batch.json
 automation/n8n/timestamp-msi-live-source-check.json
+automation/n8n/timestamp-msi-advanced-preflight-gate.json
+automation/n8n/timestamp-msi-advanced-gdc-batch-loop.json
+automation/n8n/timestamp-msi-advanced-experiment-quality-loop.json
 ```
 
 `Timestamp_msi integrations check` reports whether Hugging Face, Groq AI,
@@ -79,6 +82,46 @@ disabled by default; enable it only after output files from the batch are saved.
 endpoints. Use it to confirm n8n can reach external data sources, not just local
 project APIs.
 
+## Advanced Workflow Set
+
+The advanced workflows are built for the current split architecture: local n8n
+calls FastAPI on `8001`, FastAPI performs allowlisted VM actions over SSH, and
+the VM holds raw slides and model artifacts.
+
+Import order:
+
+```powershell
+npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-advanced-preflight-gate.json
+npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-advanced-gdc-batch-loop.json
+npx --yes n8n@1.114.4 import:workflow --input=automation\n8n\timestamp-msi-advanced-experiment-quality-loop.json
+```
+
+Recommended run order:
+
+1. `Timestamp_msi SAFE connection check`
+2. `Timestamp_msi integrations check`
+3. `Timestamp_msi ADV preflight storage gate`
+4. `Timestamp_msi SAFE single trial launcher` or `Timestamp_msi ADV experiment quality loop`
+5. `Timestamp_msi GDC 10 SVS batch` or `Timestamp_msi ADV storage-safe GDC batch loop`
+
+`Timestamp_msi ADV preflight storage gate` is safe to run first. It checks:
+
+- FastAPI `/health`
+- integration key status
+- VM SSH status
+- root disk free space
+- whether free storage is above the `25 GB` gate
+
+`Timestamp_msi ADV storage-safe GDC batch loop` starts a real small GDC batch.
+It uses `limit=5` by default, checks VM storage before and after the batch, and
+leaves cleanup disabled until outputs are saved.
+
+`Timestamp_msi ADV experiment quality loop` starts one small real baseline
+training trial, waits for status, prepares Monte Carlo storage, builds a Monte
+Carlo search plan, reads stable-best, and then reads the parallel metrics
+snapshot. MC dropout and bootstrap CI nodes are included but disabled until a
+trial has completed prediction artifacts.
+
 ## Workflow Safety
 
 These workflows do not start GPU training:
@@ -86,14 +129,17 @@ These workflows do not start GPU training:
 - `Timestamp_msi live source check`
 - `Timestamp_msi SAFE connection check`
 - `Timestamp_msi integrations check`
+- `Timestamp_msi ADV preflight storage gate`
 
 This workflow downloads data to the VM:
 
 - `Timestamp_msi GDC 10 SVS batch`
+- `Timestamp_msi ADV storage-safe GDC batch loop`
 
 This workflow starts a real GPU training trial:
 
 - `Timestamp_msi SAFE single trial launcher`
+- `Timestamp_msi ADV experiment quality loop`
 
 Avoid the older imported workflows without `SAFE` in the name. They may contain
 broader grids from earlier iterations.

@@ -20,6 +20,8 @@ This service gives the project a proper backend surface for:
 - checking optional integration secrets without exposing values
 - bootstrapping and running small GDC `.svs` batches on the VM
 - serving the imported Approach 2 platform routes under `/approach-2/*`
+- comparing completed Approach 1, Approach 2, and Monte Carlo metric artifacts
+  without generating demo scores
 
 The current Next.js frontend still has its own local route at
 `apps/web/src/app/api/vm/route.ts`, but this backend is the cleaner long-term
@@ -54,7 +56,7 @@ Defaults match the local workstation flow:
 
 ```powershell
 $env:MSI_VM_USER = "pardeep"
-$env:MSI_VM_HOST = "34.55.157.128"
+$env:MSI_VM_HOST = "34.59.145.240"
 $env:MSI_VM_KEY = "$env:USERPROFILE\.ssh\evolet_rsa"
 $env:MSI_VM_PROJECT_ROOT = "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc"
 ```
@@ -99,6 +101,8 @@ GET  /experiments/bootstrap-ci/{trial_id}
 POST /experiments/seed-stability
 GET  /experiments/best-stable
 GET  /integrations/status
+POST /parallel-pipeline/start
+GET  /parallel-pipeline/metrics/{execution_id}
 POST /data-batches/gdc/bootstrap
 POST /data-batches/gdc/start
 GET  /data-batches/gdc/status
@@ -124,6 +128,8 @@ POST /approach-2/webhook/optuna/trial
   and mounted under `/approach-2/*`.
 - Monte Carlo is a distinct workflow exposed through `/experiments/*` plus
   `/vm/monte-carlo/workspace` for VM-side model cache setup.
+- Parallel metrics are exposed through `/parallel-pipeline/*`; they report only
+  completed VM and database artifacts.
 - Integration status checks Hugging Face, Groq AI, Zerve AI, Firecrawl, and
   Tinyfish without returning secret values.
 

@@ -1,0 +1,25 @@
+{
+  "name": "Workflow 6 — Monte Carlo validation",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8001/experiments/monte-carlo-plan",
+        "options": {}
+      },
+      "name": "POST /experiments/monte-carlo-plan",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {},
+  "settings": {}
+}

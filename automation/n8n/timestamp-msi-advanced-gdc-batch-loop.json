@@ -1,0 +1,174 @@
+{
+  "name": "Timestamp_msi ADV storage-safe GDC batch loop",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [160, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { apiBase: 'http://127.0.0.1:8001', batchLimit: 5, preferDx: true, minimumFreeGb: 25, runId: `gdc_${Date.now()}` } }];"
+      },
+      "id": "batch-config",
+      "name": "Build Batch Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [380, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{$json.apiBase}}/vm/status",
+        "options": {}
+      },
+      "id": "vm-before",
+      "name": "VM Status Before",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [620, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Build Batch Config').item.json;\nconst vm = $('VM Status Before').item.json;\nconst stdout = vm.stdout || '';\nconst diskLine = stdout.split('\\n').find((line) => line.includes('/dev/root')) || '';\nconst diskMatch = diskLine.match(/\\s(\\d+)G\\s+\\d+G\\s+(\\d+)G\\s+(\\d+)%/);\nconst freeGb = diskMatch ? Number(diskMatch[2]) : null;\nif (!vm.ok || freeGb === null || freeGb < config.minimumFreeGb) {\n  throw new Error(`Storage gate failed before GDC batch. freeGb=${freeGb}, minimum=${config.minimumFreeGb}`);\n}\nreturn [{ json: { ...config, freeGbBefore: freeGb, storageGate: 'passed' } }];"
+      },
+      "id": "storage-gate",
+      "name": "Require Storage Gate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [860, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$json.apiBase}}/data-batches/gdc/bootstrap",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {}
+      },
+      "id": "bootstrap-gdc",
+      "name": "Bootstrap GDC Runner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1100, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Batch Config').item.json.apiBase}}/data-batches/gdc/start",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\"limit\":5,\"prefer_dx\":true}",
+        "options": {}
+      },
+      "id": "start-gdc",
+      "name": "Start 5-SVS GDC Batch",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "minutes"
+      },
+      "id": "wait-two-min",
+      "name": "Wait Before Status",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [1580, 300],
+      "notes": "Increase this wait for real GDC downloads. The loop is intentionally small because VM storage is tight."
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Batch Config').item.json.apiBase}}/data-batches/gdc/status",
+        "options": {}
+      },
+      "id": "batch-status",
+      "name": "Read Batch Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1820, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Batch Config').item.json.apiBase}}/vm/status",
+        "options": {}
+      },
+      "id": "vm-after",
+      "name": "VM Status After",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2060, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Build Batch Config').item.json;\nconst before = $('VM Status Before').item.json;\nconst after = $('VM Status After').item.json;\nconst status = $('Read Batch Status').item.json;\nfunction parseFreeGb(stdout) {\n  const line = String(stdout || '').split('\\n').find((value) => value.includes('/dev/root')) || '';\n  const match = line.match(/\\s(\\d+)G\\s+\\d+G\\s+(\\d+)G\\s+(\\d+)%/);\n  return match ? Number(match[2]) : null;\n}\nconst freeGbBefore = parseFreeGb(before.stdout);\nconst freeGbAfter = parseFreeGb(after.stdout);\nconst stdout = String(status.stdout || '');\nconst downloadedMatch = stdout.match(/svs=(\\d+)/i) || stdout.match(/downloaded[^0-9]*(\\d+)/i);\nconst partialMatch = stdout.match(/partial=(\\d+)/i) || stdout.match(/part[^0-9]*(\\d+)/i);\nconst downloaded = downloadedMatch ? Number(downloadedMatch[1]) : null;\nconst partial = partialMatch ? Number(partialMatch[1]) : null;\nconst cleanupRecommended = freeGbAfter !== null && freeGbAfter < config.minimumFreeGb;\nreturn [{ json: { ok: status.ok !== false && after.ok !== false, runId: config.runId, limit: config.batchLimit, freeGbBefore, freeGbAfter, downloaded, partial, cleanupRecommended, cleanupEndpoint: `${config.apiBase}/data-batches/gdc/cleanup`, note: cleanupRecommended ? 'Run cleanup only after features/outputs are persisted.' : 'Keep raw slides until preprocess/extract completes.' } }];"
+      },
+      "id": "batch-summary",
+      "name": "Summarize Batch Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2300, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$('Build Batch Config').item.json.apiBase}}/data-batches/gdc/cleanup",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {}
+      },
+      "id": "cleanup-disabled",
+      "name": "Cleanup Raw SVS - Disabled Until Outputs Saved",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2540, 420],
+      "disabled": true,
+      "notes": "Enable only after preprocessing/features/training outputs are saved. This deletes temporary raw slide files."
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{"node": "Build Batch Config", "type": "main", "index": 0}]]
+    },
+    "Build Batch Config": {
+      "main": [[{"node": "VM Status Before", "type": "main", "index": 0}]]
+    },
+    "VM Status Before": {
+      "main": [[{"node": "Require Storage Gate", "type": "main", "index": 0}]]
+    },
+    "Require Storage Gate": {
+      "main": [[{"node": "Bootstrap GDC Runner", "type": "main", "index": 0}]]
+    },
+    "Bootstrap GDC Runner": {
+      "main": [[{"node": "Start 5-SVS GDC Batch", "type": "main", "index": 0}]]
+    },
+    "Start 5-SVS GDC Batch": {
+      "main": [[{"node": "Wait Before Status", "type": "main", "index": 0}]]
+    },
+    "Wait Before Status": {
+      "main": [[{"node": "Read Batch Status", "type": "main", "index": 0}]]
+    },
+    "Read Batch Status": {
+      "main": [[{"node": "VM Status After", "type": "main", "index": 0}]]
+    },
+    "VM Status After": {
+      "main": [[{"node": "Summarize Batch Result", "type": "main", "index": 0}]]
+    },
+    "Summarize Batch Result": {
+      "main": [[{"node": "Cleanup Raw SVS - Disabled Until Outputs Saved", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

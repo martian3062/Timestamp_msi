@@ -1,0 +1,127 @@
+{
+  "name": "Timestamp_msi ADV preflight storage gate",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [160, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { apiBase: 'http://127.0.0.1:8001', minimumFreeGb: 25, vmUser: 'pardeep', vmHost: '34.59.145.240', checkedAt: new Date().toISOString() } }];"
+      },
+      "id": "run-config",
+      "name": "Build Run Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [380, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{$json.apiBase}}/health",
+        "options": {}
+      },
+      "id": "health",
+      "name": "Check FastAPI Health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [620, 160]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Run Config').item.json.apiBase}}/integrations/status",
+        "options": {}
+      },
+      "id": "integrations",
+      "name": "Check Integration Keys",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [620, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Run Config').item.json.apiBase}}/vm/status",
+        "options": {}
+      },
+      "id": "vm-status",
+      "name": "Check VM Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [620, 440]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Build Run Config').item.json;\nconst health = $('Check FastAPI Health').item.json;\nconst integrations = $('Check Integration Keys').item.json;\nconst vm = $('Check VM Status').item.json;\nconst stdout = vm.stdout || '';\nconst diskLine = stdout.split('\\n').find((line) => line.includes('/dev/root')) || '';\nconst diskMatch = diskLine.match(/\\s(\\d+)G\\s+\\d+G\\s+(\\d+)G\\s+(\\d+)%/);\nconst freeGb = diskMatch ? Number(diskMatch[2]) : null;\nconst usedPct = diskMatch ? Number(diskMatch[3]) : null;\nconst providerRows = Array.isArray(integrations.integrations) ? integrations.integrations : [];\nconst configuredIntegrations = providerRows.filter((item) => item.configured).map((item) => item.name);\nconst issues = [];\nif (health.ok !== 'true' && health.ok !== true) issues.push('FastAPI health did not return ok=true.');\nif (!vm.ok) issues.push('VM status endpoint returned ok=false.');\nif (freeGb !== null && freeGb < config.minimumFreeGb) issues.push(`VM free storage ${freeGb}GB is below ${config.minimumFreeGb}GB gate.`);\nif (freeGb === null) issues.push('Could not parse VM disk free storage from /vm/status.');\nreturn [{\n  json: {\n    ok: issues.length === 0,\n    decision: issues.length === 0 ? 'READY_FOR_SMALL_BATCH' : 'STOP_AND_FIX',\n    checkedAt: config.checkedAt,\n    vm: { user: config.vmUser, host: config.vmHost, freeGb, usedPct, diskLine },\n    configuredIntegrations,\n    issues,\n    next: issues.length === 0 ? 'Import/run Timestamp_msi ADV storage-safe GDC batch loop.' : 'Free VM storage or fix failed service checks before download/training.'\n  }\n}];"
+      },
+      "id": "evaluate-gate",
+      "name": "Evaluate Storage Gate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Build Run Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Run Config": {
+      "main": [
+        [
+          {
+            "node": "Check FastAPI Health",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check FastAPI Health": {
+      "main": [
+        [
+          {
+            "node": "Check Integration Keys",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Integration Keys": {
+      "main": [
+        [
+          {
+            "node": "Check VM Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check VM Status": {
+      "main": [
+        [
+          {
+            "node": "Evaluate Storage Gate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

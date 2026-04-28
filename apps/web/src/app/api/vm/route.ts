@@ -11,7 +11,7 @@ const execFileAsync = promisify(execFile);
 
 const vmConfig = {
   user: process.env.MSI_VM_USER ?? "pardeep",
-  host: process.env.MSI_VM_HOST ?? "34.55.157.128",
+  host: process.env.MSI_VM_HOST ?? "34.59.145.240",
   keyPath:
     process.env.MSI_VM_KEY ??
     path.join(homedir(), ".ssh", "evolet_rsa"),
