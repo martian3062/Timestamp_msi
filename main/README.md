@@ -655,7 +655,7 @@ http://127.0.0.1:8001/docs
 Run in Windows PowerShell:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1\apps\api
+cd E:\4basecare-MSI\main\apps\api
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -e ".[dev]"
@@ -664,7 +664,7 @@ python -m pip install -e ".[dev]"
 Start the API:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1\apps\api
+cd E:\4basecare-MSI\main\apps\api
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8001
 ```
 
@@ -673,7 +673,7 @@ cd E:\4basecare-MSI\Approach_1\apps\api
 Run in Windows PowerShell:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1\apps\web
+cd E:\4basecare-MSI\main\apps\web
 npm.cmd install
 npm.cmd run dev -- --hostname 127.0.0.1 --port 3000
 ```
@@ -689,7 +689,7 @@ http://127.0.0.1:3000
 Run in Windows PowerShell:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1
+cd E:\4basecare-MSI\main
 .\automation\n8n\start-local.ps1
 ```
 
@@ -728,7 +728,7 @@ The practical rule is:
 Backend:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1\apps\api
+cd E:\4basecare-MSI\main\apps\api
 .\.venv\Scripts\python.exe -m pytest
 .\.venv\Scripts\python.exe -m compileall app
 ```
@@ -736,7 +736,7 @@ cd E:\4basecare-MSI\Approach_1\apps\api
 Frontend:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1\apps\web
+cd E:\4basecare-MSI\main\apps\web
 npm.cmd run lint
 npm.cmd run build
 ```

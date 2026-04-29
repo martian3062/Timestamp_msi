@@ -10,7 +10,7 @@ Thumbs.db
 # Local credentials and env
 .env
 .env.*
-!Approach_1/apps/api/.env.example
+!main/apps/api/.env.example
 *.pem
 *.key
 *.crt

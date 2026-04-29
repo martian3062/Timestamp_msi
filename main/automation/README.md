@@ -29,7 +29,7 @@ Start n8n with the pinned local launcher. The latest `npx n8n` package can fail
 on this Windows/Node setup, so this script uses `1.114.4`:
 
 ```powershell
-cd E:\4basecare-MSI\Approach_1
+cd E:\4basecare-MSI\main
 .\automation\n8n\start-local.ps1
 ```
 

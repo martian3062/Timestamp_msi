@@ -6,7 +6,7 @@ This branch uses `E:\4basecare-MSI` as the main workspace root and keeps the MSI
 
 ```text
 4basecare-MSI/
-  Approach_1/     Timestamp_msi workstation and orchestration app
+  main/           Timestamp_msi workstation and orchestration app
   Monte_Carlo/    dedicated index for Monte Carlo flow, configs, and workflow entry points
   extras/         lazyslide and slideflow basic notebooks / starter experiments
   datasets/       local-only datasets and raw archives (not pushed to GitHub)
@@ -15,7 +15,7 @@ This branch uses `E:\4basecare-MSI` as the main workspace root and keeps the MSI
 
 ## Final Structure
 
-### 1. Approach_1
+### 1. main
 
 The active `Timestamp_msi` workstation on the `complex-triad` branch. This is the main product in the repo and contains the integrated workflow modes for:
 
@@ -26,13 +26,13 @@ The active `Timestamp_msi` workstation on the `complex-triad` branch. This is th
 
 Primary code lives in:
 
-- `Approach_1/apps/api`
-- `Approach_1/apps/web`
-- `Approach_1/automation`
+- `main/apps/api`
+- `main/apps/web`
+- `main/automation`
 
 ### 2. Monte_Carlo
 
-This folder is the clean entry point for the Monte Carlo approach so it is easy to find without digging through the integrated app. It documents the exact files that power the Monte Carlo mode inside `Approach_1`.
+This folder is the clean entry point for the Monte Carlo approach so it is easy to find without digging through the integrated app. It documents the exact files that power the Monte Carlo mode inside `main`.
 
 ## About Approach 2
 
@@ -40,8 +40,8 @@ There is no longer a separate top-level `Approach_2` folder in the final repo.
 
 Approach 2 still exists as a working mode, but its real code now lives inside the main app:
 
-- `Approach_1/apps/api/app/approach_2`
-- `Approach_1/apps/web/src/components/msi-workbench.tsx`
+- `main/apps/api/app/approach_2`
+- `main/apps/web/src/components/msi-workbench.tsx`
 
 That keeps the repo final and cleaner while preserving the Approach 2 API/UI flow.
 
