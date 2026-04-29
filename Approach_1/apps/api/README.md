@@ -19,7 +19,7 @@ This service gives the project a proper backend surface for:
 - reading real trial status, logs, and completed metrics
 - checking optional integration secrets without exposing values
 - bootstrapping and running small GDC `.svs` batches on the VM
-- serving the imported Approach 2 platform routes under `/approach-2/*`
+- serving the integrated Approach 2 platform routes under `/approach-2/*`
 - comparing completed Approach 1, Approach 2, and Monte Carlo metric artifacts
   without generating demo scores
 
@@ -124,7 +124,7 @@ POST /approach-2/webhook/optuna/trial
 
 - Approach 1 routes handle cohort validation, VM actions, GDC batches, and n8n
   training orchestration.
-- Approach 2 routes are imported from `E:\4basecare-MSI\Approach_2\backend\app`
+- Approach 2 routes are served from the integrated `app/approach_2` package
   and mounted under `/approach-2/*`.
 - Monte Carlo is a distinct workflow exposed through `/experiments/*` plus
   `/vm/monte-carlo/workspace` for VM-side model cache setup.

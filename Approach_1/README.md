@@ -16,8 +16,7 @@ The current branch exposes four workflow modes from one UI:
 - `Approach 1`: cohort/manifest validation, VM file upload, VM browsing, GDC
   downloader startup, Jupyter startup, SSH tunnel, experiment-result view, and
   the first CRC triad baseline lane.
-- `Approach 2`: imported platform backend from
-  `E:\4basecare-MSI\Approach_2\backend\app`, mounted inside this FastAPI app
+- `Approach 2`: integrated platform backend mounted inside this FastAPI app
   under `/approach-2/*`, now also used as the live CRC triad runner surface.
 - `Monte Carlo`: stochastic validation workflow for random search, MC dropout,
   bootstrap confidence intervals, stable model selection, VM model-cache
@@ -302,13 +301,9 @@ GET  /experiments/best
 
 ## Approach 2
 
-Approach 2 is a platform-style backend imported from:
+Approach 2 is a platform-style backend integrated directly into this repo.
 
-```text
-E:\4basecare-MSI\Approach_2\backend\app
-```
-
-Inside this repo it lives at:
+Its working code lives at:
 
 ```text
 apps/api/app/approach_2
@@ -805,7 +800,7 @@ Backend:
   launcher, metrics sync, and uploaded patch prediction helper.
 - `apps/api/app/api/routes/integrations.py`: secret-safe integration status.
 - `apps/api/app/services/data_batches.py`: GDC batch download/status/cleanup.
-- `apps/api/app/approach_2`: imported Approach 2 backend package.
+- `apps/api/app/approach_2`: integrated Approach 2 backend package.
 
 Frontend:
 

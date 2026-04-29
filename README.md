@@ -7,21 +7,20 @@ This branch uses `E:\4basecare-MSI` as the main workspace root and keeps the MSI
 ```text
 4basecare-MSI/
   Approach_1/     Timestamp_msi workstation and orchestration app
-  Approach_2/     standalone end-to-end MSI platform scaffold
   Monte_Carlo/    dedicated index for Monte Carlo flow, configs, and workflow entry points
   extras/         lazyslide and slideflow basic notebooks / starter experiments
   datasets/       local-only datasets and raw archives (not pushed to GitHub)
   shared_assets/  diagrams and architecture visuals
 ```
 
-## Three Defined Approaches
+## Final Structure
 
 ### 1. Approach_1
 
-The active `Timestamp_msi` workstation on the `complex-triad` branch. This is the premium local UI plus FastAPI orchestration surface and still contains the integrated workflow modes for:
+The active `Timestamp_msi` workstation on the `complex-triad` branch. This is the main product in the repo and contains the integrated workflow modes for:
 
 - Approach 1 baseline orchestration
-- Approach 2 route mounting / triad runner support
+- Approach 2 internal platform mode and triad runner support
 - Monte Carlo validation and experiment analysis
 - Parallel metrics comparison
 
@@ -31,19 +30,20 @@ Primary code lives in:
 - `Approach_1/apps/web`
 - `Approach_1/automation`
 
-### 2. Approach_2
-
-The separate end-to-end MSI prediction platform scaffold with its own backend, frontend, and studio runtime:
-
-- `Approach_2/backend`
-- `Approach_2/frontend`
-- `Approach_2/studio`
-
-Use this when you want to work directly on the standalone platform structure instead of the integrated `Timestamp_msi` workstation.
-
-### 3. Monte_Carlo
+### 2. Monte_Carlo
 
 This folder is the clean entry point for the Monte Carlo approach so it is easy to find without digging through the integrated app. It documents the exact files that power the Monte Carlo mode inside `Approach_1`.
+
+## About Approach 2
+
+There is no longer a separate top-level `Approach_2` folder in the final repo.
+
+Approach 2 still exists as a working mode, but its real code now lives inside the main app:
+
+- `Approach_1/apps/api/app/approach_2`
+- `Approach_1/apps/web/src/components/msi-workbench.tsx`
+
+That keeps the repo final and cleaner while preserving the Approach 2 API/UI flow.
 
 ## Extras
 
