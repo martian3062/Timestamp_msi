@@ -26,7 +26,9 @@ It does not synthesize scores when prediction files are missing.
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
+import os
 import random
 import re
 import traceback
@@ -97,6 +99,11 @@ def require_inputs() -> pd.DataFrame:
         raise FileNotFoundError(f"Missing annotations: {ANNOTATIONS}")
     if not SLIDES_DIR.exists():
         raise FileNotFoundError(f"Missing slides directory: {SLIDES_DIR}")
+    slide_files = list(SLIDES_DIR.glob("*.svs")) + list(SLIDES_DIR.glob("*.ndpi"))
+    if not slide_files:
+        raise FileNotFoundError(
+            f"No slide files found in {SLIDES_DIR}. Download a GDC batch first."
+        )
     df = pd.read_csv(ANNOTATIONS)
     required = {"slide", "patient", OUTCOME, "fold"}
     missing = required.difference(df.columns)
@@ -109,15 +116,37 @@ def require_inputs() -> pd.DataFrame:
 
 
 def import_slideflow():
+    os.environ.setdefault("SF_BACKEND", "torch")
+    os.environ.setdefault("SF_SLIDE_BACKEND", "cucim")
     import slideflow as sf
 
-    for backend in ("cucim", "opencv"):
-        try:
-            sf.set_backend(backend)
-            print(f"Using Slideflow backend: {backend}", flush=True)
-            break
-        except Exception as exc:
-            print(f"Could not set backend {backend}: {exc}", flush=True)
+    original_build_generator = sf.WSI.build_generator
+    allowed_generator_kwargs = set(inspect.signature(original_build_generator).parameters)
+
+    def compat_build_generator(self, *args, **kwargs):
+        filtered_kwargs = {
+            key: value for key, value in kwargs.items() if key in allowed_generator_kwargs
+        }
+        dropped = sorted(set(kwargs) - set(filtered_kwargs))
+        if dropped:
+            print(
+                f"Dropping unsupported build_generator kwargs: {', '.join(dropped)}",
+                flush=True,
+            )
+        return original_build_generator(self, *args, **filtered_kwargs)
+
+    sf.WSI.build_generator = compat_build_generator
+
+    backend = sf.backend() if hasattr(sf, "backend") else os.environ.get("SF_BACKEND", "unknown")
+    slide_backend = (
+        sf.slide_backend()
+        if hasattr(sf, "slide_backend")
+        else os.environ.get("SF_SLIDE_BACKEND", "unknown")
+    )
+    print(
+        f"Using Slideflow backend={backend} slide_backend={slide_backend}",
+        flush=True,
+    )
     return sf
 
 
@@ -176,14 +205,11 @@ def split_dataset(dataset, fold: int):
     params = {
         "model_type": "classification",
         "labels": OUTCOME,
-        "val_strategy": "k-fold-manual",
+        "val_strategy": "k-fold",
         "k_fold_iter": fold,
         "splits": str(SF_ROOT / "splits.json"),
     }
-    try:
-        return dataset.split(**params, k_fold_header="fold")
-    except TypeError:
-        return dataset.split(**params, val_k_fold_header="fold")
+    return dataset.split(**params, val_k_fold=fold)
 
 
 def read_table(path: Path) -> pd.DataFrame:
@@ -314,8 +340,16 @@ def run_trial(config_path: Path) -> None:
     dataset = make_dataset(project)
     extractor_name = trial["feature_extractor"]
     bags_dir = SF_ROOT / "bags" / f"{safe_name(extractor_name)}_{TILE_PX}px_{TILE_UM}um"
+    tfrecord_dir = SF_ROOT / "tfrecords" / f"{TILE_PX}px_{TILE_UM}um"
 
     if not bags_dir.exists() or not any(bags_dir.iterdir()):
+        if not tfrecord_dir.exists() or not any(tfrecord_dir.glob("*.tfrecords")):
+            update_status(trial, "running", step="extracting_tiles")
+            dataset.extract_tiles(
+                qc="both",
+                normalizer="macenko",
+                num_threads=1,
+            )
         update_status(trial, "running", step="generating_feature_bags")
         extractor = build_extractor(sf, extractor_name)
         bags_dir.mkdir(parents=True, exist_ok=True)
@@ -453,12 +487,15 @@ class ExperimentService:
 
         command = (
             "mkdir -p automation/logs automation/status automation/results "
-            f"&& nohup pathology310-run python scripts/run_n8n_msi_trial.py "
+            "&& source /opt/miniforge3/etc/profile.d/conda.sh "
+            "&& conda activate pathology310 "
+            "&& export PYTHONNOUSERSITE=1 SF_BACKEND=torch SF_SLIDE_BACKEND=cucim "
+            f"&& nohup python scripts/run_n8n_msi_trial.py "
             f"--trial-json {self.vm.project_path(config_path)!r} "
             f"> automation/logs/{trial.trial_id}.log 2>&1 & "
             f"echo started {trial.trial_id}"
         )
-        result = self.vm.run_project_command("startExperimentTrial", command)
+        result = self.vm.run_project_command("startExperimentTrial", command, timeout=90)
         return ExperimentActionResponse(
             ok=result.ok,
             action=result.action,

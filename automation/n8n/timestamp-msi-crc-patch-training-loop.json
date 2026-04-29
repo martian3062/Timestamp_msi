@@ -1,0 +1,92 @@
+{
+  "name": "Timestamp_msi CRC patch training loop",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [180, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { apiBase: 'http://127.0.0.1:8001', datasetPath: 'E:\\\\4basecare-MSI\\\\CRC-VAL-HE-7K', experimentName: `crc-val-he-7k-${Date.now()}`, backbone: 'resnet18', epochs: 10, batchSize: 32, learningRate: 0.0001, imageSize: 224, valSplit: 0.2, numWorkers: 0, startedAt: new Date().toISOString() } }];"
+      },
+      "id": "build-run-config",
+      "name": "Build CRC Patch Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [420, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$json.apiBase}}/approach-2/pipeline/train",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ experiment_name: $json.experimentName, training_mode: 'patch_classification', dataset_path: $json.datasetPath, backbone: $json.backbone, epochs: $json.epochs, batch_size: $json.batchSize, learning_rate: $json.learningRate, image_size: $json.imageSize, val_split: $json.valSplit, num_workers: $json.numWorkers, seed: 310, use_pretrained: true }) }}",
+        "options": {}
+      },
+      "id": "start-patch-training",
+      "name": "Start Patch Training",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "amount": 20,
+        "unit": "seconds"
+      },
+      "id": "wait-before-refresh",
+      "name": "Wait Before Refresh",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [980, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build CRC Patch Config').item.json.apiBase}}/approach-2/experiments/",
+        "options": {}
+      },
+      "id": "load-experiments",
+      "name": "Load Experiment Feed",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1240, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const experiments = $('Load Experiment Feed').item.json;\nconst started = $('Start Patch Training').item.json;\nconst config = $('Build CRC Patch Config').item.json;\nconst latest = Array.isArray(experiments) ? experiments.find((item) => item.experiment_id === started.experiment_id) || experiments[0] : null;\nconst metrics = latest?.metrics || {};\nconst history = Array.isArray(metrics.history) ? metrics.history : [];\nreturn [{ json: { ok: true, workflow: 'Timestamp_msi CRC patch training loop', startedAt: config.startedAt, experimentId: started.experiment_id, experimentName: latest?.name || config.experimentName, status: latest?.status || 'unknown', datasetPath: config.datasetPath, backbone: metrics.backbone || config.backbone, accuracy: metrics.best_val_accuracy ?? null, macroF1: metrics.final_val_f1_macro ?? null, auroc: metrics.val_auroc_ovr_macro ?? null, epochsTracked: history.length, latestEpoch: history.length ? history[history.length - 1] : null, modelPath: metrics.artifacts?.model_path || null, next: latest?.status === 'running' ? 'Keep this workflow active on a schedule or repeat the refresh block until the status becomes completed.' : 'Run again with a new backbone or epoch count to compare patch models.' } }];"
+      },
+      "id": "build-run-summary",
+      "name": "Build Run Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1500, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Build CRC Patch Config", "type": "main", "index": 0 }]]
+    },
+    "Build CRC Patch Config": {
+      "main": [[{ "node": "Start Patch Training", "type": "main", "index": 0 }]]
+    },
+    "Start Patch Training": {
+      "main": [[{ "node": "Wait Before Refresh", "type": "main", "index": 0 }]]
+    },
+    "Wait Before Refresh": {
+      "main": [[{ "node": "Load Experiment Feed", "type": "main", "index": 0 }]]
+    },
+    "Load Experiment Feed": {
+      "main": [[{ "node": "Build Run Summary", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

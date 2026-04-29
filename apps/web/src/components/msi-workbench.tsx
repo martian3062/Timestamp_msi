@@ -27,6 +27,11 @@ import {
   Upload,
   UploadCloud,
 } from "lucide-react";
+import {
+  Approach1ArtifactCharts,
+  Approach2AdvancedCharts,
+  MonteCarloAdvancedCharts,
+} from "@/components/approach-analytics";
 import type { DistributionDatum } from "@/components/recharts-distribution";
 import { ParallelResults, type ParallelMetric } from "@/components/parallel-results";
 
@@ -148,14 +153,92 @@ type StableBestResult = {
   }[];
 };
 
+type ParallelSourceStatus = {
+  name: "Approach1" | "Approach2" | "MonteCarlo";
+  ok: boolean;
+  source: string;
+  message?: string;
+  records_found: number;
+};
+
+type Approach1Analytics = {
+  trial_id: string;
+  status: string;
+  step: string;
+  running: boolean;
+  slide_backend: string;
+  error: string;
+  slides_total: number;
+  tfrecord_files: number;
+  unfinished_files: number;
+  bag_files: number;
+  tfrecord_bytes: number;
+  bag_bytes: number;
+  log_excerpt: string;
+};
+
+type Approach2Analytics = {
+  runs_total: number;
+  completed_runs: number;
+  latest_experiment_id: string;
+  latest_name: string;
+  latest_status: string;
+  latest_metrics: Record<string, unknown>;
+  history: Array<Record<string, number>>;
+  class_distribution: Record<string, number>;
+};
+
+type MonteCarloAnalytics = {
+  stable_best: StableBestResult["best"] | null;
+  total_candidates: number;
+  mc_result_trials: number;
+  dropout_ready: number;
+  bootstrap_ready: number;
+};
+
+type DashboardAnalytics = {
+  approach1: Approach1Analytics;
+  approach2: Approach2Analytics;
+  monte_carlo: MonteCarloAnalytics;
+  comparison_metrics: ParallelMetric[];
+  comparison_sources: ParallelSourceStatus[];
+};
+
 type Approach2Experiment = {
   id: number;
   experiment_id: string;
   name: string;
   status: string;
   model_type: string;
+  parameters?: Record<string, unknown> | null;
   metrics?: Record<string, unknown> | null;
   created_at: string;
+};
+
+type PatchTrainingForm = {
+  experimentName: string;
+  approachLabel: "Approach1" | "Approach2" | "MonteCarlo";
+  datasetSource: "workspace_root" | "custom_path" | "google_bucket";
+  workspaceRoot: string;
+  datasetPath: string;
+  googleBucketUri: string;
+  backbone: string;
+  epochs: number;
+  batchSize: number;
+  learningRate: number;
+  imageSize: number;
+  valSplit: number;
+  numWorkers: number;
+  selectedExperimentId: string;
+};
+
+type UploadPredictionResult = {
+  experiment_id: string;
+  approach_label: string;
+  prediction: string;
+  probability: number;
+  probabilities: Record<string, number>;
+  model_path?: string | null;
 };
 
 const requiredAnnotationFields = ["patient", "slide", "label", "fold"];
@@ -163,6 +246,22 @@ const requiredManifestFields = ["id", "filename"];
 const automationApiBase =
   process.env.NEXT_PUBLIC_MSI_API_URL ?? "http://127.0.0.1:8001";
 const chartPalette = ["#cbd5e1", "#4666d9", "#d95d48", "#7b61ff", "#d99a21"];
+const defaultPatchTrainingForm: PatchTrainingForm = {
+  experimentName: "crc-val-he-7k-baseline",
+  approachLabel: "Approach2",
+  datasetSource: "workspace_root",
+  workspaceRoot: "E:\\4basecare-MSI",
+  datasetPath: "E:\\4basecare-MSI\\CRC-VAL-HE-7K",
+  googleBucketUri: "",
+  backbone: "resnet18",
+  epochs: 10,
+  batchSize: 32,
+  learningRate: 0.0001,
+  imageSize: 224,
+  valSplit: 0.2,
+  numWorkers: 0,
+  selectedExperimentId: "",
+};
 
 const commandBlock = `# Linux VM shell
 cd /home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
@@ -318,7 +417,7 @@ export function MsiWorkbench() {
   const [vmFiles, setVmFiles] = useState<VmFileRow[]>([]);
 
   /* Theme state — dark by default */
-  const [theme, setTheme] = useState<"dark-theme" | "snow-theme">("dark-theme");
+  const [theme, setTheme] = useState<"dark-theme" | "snow-theme">("snow-theme");
   const isDark = theme === "dark-theme";
 
   /* Monte Carlo state */
@@ -333,12 +432,20 @@ export function MsiWorkbench() {
   const [approach2Busy, setApproach2Busy] = useState<string>();
   const [approach2Error, setApproach2Error] = useState("");
   const [approach2Message, setApproach2Message] = useState("Approach 2 is ready to register slides or start a pipeline action.");
+  const [patchTrainingForm, setPatchTrainingForm] = useState<PatchTrainingForm>(
+    defaultPatchTrainingForm,
+  );
+  const [predictionFile, setPredictionFile] = useState<File>();
+  const [predictionResult, setPredictionResult] = useState<UploadPredictionResult>();
 
   /* Parallel state */
   const [parallelMetrics, setParallelMetrics] = useState<ParallelMetric[]>([]);
+  const [parallelSources, setParallelSources] = useState<ParallelSourceStatus[]>([]);
   const [parallelBusy, setParallelBusy] = useState(false);
   const [parallelError, setParallelError] = useState("");
   const [parallelMessage, setParallelMessage] = useState("Parallel Metrics is ready.");
+  const [dashboardAnalytics, setDashboardAnalytics] = useState<DashboardAnalytics>();
+  const [analyticsError, setAnalyticsError] = useState("");
 
   const annotationMap = useMemo(() => {
     const columns = annotations?.columns ?? [];
@@ -369,6 +476,25 @@ export function MsiWorkbench() {
     () => countBy(annotations?.rows ?? [], annotationMap.fold),
     [annotations, annotationMap.fold],
   );
+
+  const latestApproach2Experiment = approach2Experiments[0];
+  const latestApproach2Metrics = latestApproach2Experiment?.metrics ?? null;
+  const latestApproach2History = Array.isArray(latestApproach2Metrics?.history)
+    ? latestApproach2Metrics.history
+    : [];
+  const hasRunningApproach2Experiment = approach2Experiments.some(
+    (experiment) => experiment.status === "running",
+  );
+  const approach1Analytics = dashboardAnalytics?.approach1;
+  const approach2Analytics = dashboardAnalytics?.approach2;
+  const monteCarloAnalytics = dashboardAnalytics?.monte_carlo;
+  const approachExperimentCounts = useMemo(() => {
+    return approach2Experiments.reduce<Record<string, number>>((acc, experiment) => {
+      const label = experimentApproachLabel(experiment);
+      acc[label] = (acc[label] ?? 0) + 1;
+      return acc;
+    }, {});
+  }, [approach2Experiments]);
 
   useEffect(() => {
     let cancelled = false;
@@ -413,6 +539,104 @@ export function MsiWorkbench() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function refreshAnalytics() {
+      try {
+        const response = await fetch(`${automationApiBase}/analytics/dashboard`);
+        if (!response.ok) {
+          throw new Error("Analytics snapshot is not ready.");
+        }
+        const data = (await response.json()) as DashboardAnalytics;
+        if (!cancelled) {
+          setDashboardAnalytics(data);
+          setAnalyticsError("");
+          if (data.comparison_metrics.length > 0) {
+            setParallelMetrics(data.comparison_metrics);
+          }
+          if (data.comparison_sources.length > 0) {
+            setParallelSources(data.comparison_sources);
+          }
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setAnalyticsError(
+            error instanceof Error ? error.message : "Unable to load analytics snapshot.",
+          );
+        }
+      }
+    }
+
+    void refreshAnalytics();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!approach1Analytics?.running && !hasRunningApproach2Experiment) {
+      return;
+    }
+
+    const intervalId = window.setInterval(() => {
+      void fetch(`${automationApiBase}/analytics/dashboard`)
+        .then(async (response) => {
+          if (!response.ok) {
+            throw new Error("Analytics refresh failed.");
+          }
+          const data = (await response.json()) as DashboardAnalytics;
+          setDashboardAnalytics(data);
+          setParallelMetrics(data.comparison_metrics ?? []);
+          setParallelSources(data.comparison_sources ?? []);
+        })
+        .catch((error) => {
+          setAnalyticsError(
+            error instanceof Error ? error.message : "Analytics refresh failed.",
+          );
+        });
+    }, 12000);
+
+    return () => window.clearInterval(intervalId);
+  }, [approach1Analytics?.running, hasRunningApproach2Experiment]);
+
+  useEffect(() => {
+    if (approachMode !== "approach-2") {
+      return;
+    }
+
+    void runApproach2Action("experiments", { silent: approach2Experiments.length > 0 });
+  }, [approachMode]);
+
+  useEffect(() => {
+    if (approachMode !== "approach-2" || !hasRunningApproach2Experiment) {
+      return;
+    }
+
+    const intervalId = window.setInterval(() => {
+      void runApproach2Action("experiments", { silent: true });
+    }, 5000);
+
+    return () => window.clearInterval(intervalId);
+  }, [approachMode, hasRunningApproach2Experiment]);
+
+  useEffect(() => {
+    if (approachMode !== "monte-carlo" || mcStableBest || mcBusy) {
+      return;
+    }
+
+    void fetchStableBest();
+  }, [approachMode, mcStableBest, mcBusy]);
+
+  useEffect(() => {
+    if (approachMode !== "parallel" || parallelBusy || parallelMetrics.length > 0 || parallelSources.length > 0) {
+      return;
+    }
+
+    void runParallelPipeline();
+  }, [approachMode, parallelBusy, parallelMetrics.length, parallelSources.length]);
 
   const missingAnnotationFields = requiredAnnotationFields.filter(
     (field) => !annotationMap[field as keyof typeof annotationMap],
@@ -620,11 +844,89 @@ export function MsiWorkbench() {
     }
   }
 
+  function buildPatchPayload(overrides: Partial<Record<string, unknown>> = {}) {
+    return {
+      experiment_name: patchTrainingForm.experimentName,
+      training_mode: "patch_classification",
+      approach_label: patchTrainingForm.approachLabel,
+      dataset_source: patchTrainingForm.datasetSource,
+      workspace_root: patchTrainingForm.workspaceRoot,
+      dataset_path: patchTrainingForm.datasetPath,
+      google_bucket_uri: patchTrainingForm.googleBucketUri || null,
+      backbone: patchTrainingForm.backbone,
+      epochs: patchTrainingForm.epochs,
+      batch_size: patchTrainingForm.batchSize,
+      learning_rate: patchTrainingForm.learningRate,
+      image_size: patchTrainingForm.imageSize,
+      val_split: patchTrainingForm.valSplit,
+      num_workers: patchTrainingForm.numWorkers,
+      seed: 310,
+      use_pretrained: true,
+      ...overrides,
+    };
+  }
+
+  function applyTriadPreset(label: "Approach1" | "Approach2" | "MonteCarlo") {
+    const presets: Record<typeof label, Partial<PatchTrainingForm>> = {
+      Approach1: {
+        approachLabel: "Approach1",
+        experimentName: "crc-triad-approach1",
+        backbone: "resnet34",
+        epochs: 5,
+      },
+      Approach2: {
+        approachLabel: "Approach2",
+        experimentName: "crc-triad-approach2",
+        backbone: "resnet18",
+        epochs: 10,
+      },
+      MonteCarlo: {
+        approachLabel: "MonteCarlo",
+        experimentName: "crc-triad-approach3",
+        backbone: "resnet18",
+        epochs: 4,
+      },
+    };
+    setPatchTrainingForm((current) => ({
+      ...current,
+      ...presets[label],
+    }));
+  }
+
+  async function runPresetTraining(label: "Approach1" | "Approach2" | "MonteCarlo") {
+    const presets: Record<typeof label, Partial<Record<string, unknown>>> = {
+      Approach1: {
+        experiment_name: "crc-triad-approach1",
+        approach_label: "Approach1",
+        backbone: "resnet34",
+        epochs: 5,
+      },
+      Approach2: {
+        experiment_name: "crc-triad-approach2",
+        approach_label: "Approach2",
+        backbone: "resnet18",
+        epochs: 10,
+      },
+      MonteCarlo: {
+        experiment_name: "crc-triad-approach3",
+        approach_label: "MonteCarlo",
+        backbone: "resnet18",
+        epochs: 4,
+      },
+    };
+    applyTriadPreset(label);
+    await runApproach2Action("train", undefined, presets[label]);
+  }
+
   async function runApproach2Action(
-    action: "preprocess" | "features" | "train" | "predict" | "experiments",
+    action: "preprocess" | "features" | "train" | "triad" | "experiments",
+    options?: { silent?: boolean },
+    payloadOverrides?: Partial<Record<string, unknown>>,
   ) {
     setApproach2Busy(action);
-    setApproach2Error("");
+    if (!options?.silent) {
+      setApproach2Error("");
+    }
 
     const requests: Record<typeof action, { path: string; body?: Record<string, unknown> }> = {
       preprocess: {
@@ -637,17 +939,14 @@ export function MsiWorkbench() {
       },
       train: {
         path: "/approach-2/pipeline/train",
-        body: {
-          experiment_name: "attention_mil_switch_run",
-          model_type: "attention_mil",
-          epochs: 10,
-          batch_size: 32,
-          learning_rate: 0.0001,
-        },
+        body: buildPatchPayload(payloadOverrides),
       },
-      predict: {
-        path: "/approach-2/pipeline/predict",
-        body: { slide_id: "sample_slide", model_version: "latest" },
+      triad: {
+        path: "/approach-2/pipeline/train-triad",
+        body: buildPatchPayload({
+          experiment_name: patchTrainingForm.experimentName || "crc-complex-triad",
+          ...payloadOverrides,
+        }),
       },
       experiments: { path: "/approach-2/experiments/" },
     };
@@ -666,16 +965,87 @@ export function MsiWorkbench() {
       }
 
       if (action === "experiments") {
-        setApproach2Experiments(Array.isArray(data) ? data : []);
-        setApproach2Message(`Loaded ${Array.isArray(data) ? data.length : 0} Approach 2 experiments.`);
+        const experiments = Array.isArray(data) ? (data as Approach2Experiment[]) : [];
+        setApproach2Experiments(experiments);
+        const counts = experiments.reduce<Record<string, number>>((acc, experiment) => {
+          const label = experimentApproachLabel(experiment);
+          acc[label] = (acc[label] ?? 0) + 1;
+          return acc;
+        }, {});
+
+        const runningCount = experiments.filter(
+          (experiment) => experiment.status === "running",
+        ).length;
+        const latest = experiments[0];
+        const accuracy = readableMetric(latest?.metrics?.best_val_accuracy);
+        const epochCount = Array.isArray(latest?.metrics?.history)
+          ? latest.metrics.history.length
+          : 0;
+        setApproach2Message(
+          [
+            `Loaded ${experiments.length} triad experiment records.`,
+            `Approach1=${counts.Approach1 ?? 0} | Approach2=${counts.Approach2 ?? 0} | Approach3=${counts.MonteCarlo ?? 0}`,
+            runningCount > 0 ? `${runningCount} run(s) still training.` : "",
+            latest
+              ? `Latest: ${latest.name} | status=${latest.status} | accuracy=${accuracy || "pending"} | epochs=${epochCount || "pending"}`
+              : "",
+          ]
+            .filter(Boolean)
+            .join("\n"),
+        );
       } else if (action === "train") {
-        setApproach2Message(`Started Approach 2 training run ${data.experiment_id ?? ""}.`);
-        void runApproach2Action("experiments");
+        setApproach2Message(
+          `Started ${patchTrainingForm.approachLabel} patch run ${data.experiment_id ?? ""} using ${patchTrainingForm.datasetSource === "workspace_root" ? patchTrainingForm.workspaceRoot : patchTrainingForm.datasetPath}.`,
+        );
+        void runApproach2Action("experiments", { silent: true });
+      } else if (action === "triad") {
+        setApproach2Message(
+          `Queued full complex triad on the VM. Experiments: ${(data.experiment_ids ?? []).join(", ")}`,
+        );
+        void runApproach2Action("experiments", { silent: true });
       } else {
         setApproach2Message(JSON.stringify(data, null, 2));
       }
     } catch (error) {
-      setApproach2Error(error instanceof Error ? error.message : "Approach 2 request failed.");
+      if (!options?.silent) {
+        setApproach2Error(error instanceof Error ? error.message : "Approach 2 request failed.");
+      }
+    } finally {
+      setApproach2Busy(undefined);
+    }
+  }
+
+  async function runUploadedPrediction() {
+    if (!predictionFile) {
+      setApproach2Error("Choose a patch image to predict first.");
+      return;
+    }
+
+    setApproach2Busy("predict-upload");
+    setApproach2Error("");
+    setPredictionResult(undefined);
+    try {
+      const formData = new FormData();
+      formData.append("file", predictionFile);
+      formData.append("approach_label", patchTrainingForm.approachLabel);
+      if (patchTrainingForm.selectedExperimentId) {
+        formData.append("experiment_id", patchTrainingForm.selectedExperimentId);
+      }
+
+      const response = await fetch(`${automationApiBase}/approach-2/pipeline/predict-upload`, {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data?.detail || "Prediction upload failed.");
+      }
+      setPredictionResult(data as UploadPredictionResult);
+      setApproach2Message(
+        `Prediction complete for ${predictionFile.name}: ${data.prediction} (${readableMetric(data.probability)})`,
+      );
+    } catch (error) {
+      setApproach2Error(error instanceof Error ? error.message : "Prediction upload failed.");
     } finally {
       setApproach2Busy(undefined);
     }
@@ -685,6 +1055,7 @@ export function MsiWorkbench() {
     setParallelBusy(true);
     setParallelError("");
     setParallelMetrics([]);
+    setParallelSources([]);
     setParallelMessage("Starting real metrics snapshot...");
     try {
       const response = await fetch(`${automationApiBase}/parallel-pipeline/start`, { method: "POST" });
@@ -702,6 +1073,7 @@ export function MsiWorkbench() {
         }
 
         setParallelMetrics(metricsData.metrics || []);
+        setParallelSources(metricsData.sources || []);
         const sourceSummary = Array.isArray(metricsData.sources)
           ? metricsData.sources
               .map((source: { name: string; ok: boolean; records_found: number; message?: string }) =>
@@ -1127,6 +1499,51 @@ export function MsiWorkbench() {
             </Panel>
           </section>
 
+          <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_380px]">
+            <Panel>
+              <SectionTitle
+                icon={<BarChart3 className="h-5 w-5" />}
+                title="Approach 1 analytics"
+                label={approach1Analytics?.running ? "live" : approach1Analytics?.status ?? "idle"}
+              />
+              <div className="mt-5 grid gap-3 sm:grid-cols-4">
+                <MetricTile label="Slides" tone="teal" value={String(approach1Analytics?.slides_total ?? 0)} />
+                <MetricTile label="TFRecords" tone="blue" value={String(approach1Analytics?.tfrecord_files ?? 0)} />
+                <MetricTile label="Unfinished" tone="coral" value={String(approach1Analytics?.unfinished_files ?? 0)} />
+                <MetricTile label="Bags" tone="blue" value={String(approach1Analytics?.bag_files ?? 0)} />
+              </div>
+              <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                <KeyValue label="Trial" value={approach1Analytics?.trial_id || "pending"} />
+                <KeyValue label="Status" value={approach1Analytics?.status || "idle"} />
+                <KeyValue label="Step" value={approach1Analytics?.step || "pending"} />
+                <KeyValue label="Slide backend" value={approach1Analytics?.slide_backend || "unknown"} />
+              </div>
+              <div className="mt-5">
+                <Approach1ArtifactCharts
+                  snapshot={{
+                    slides_total: approach1Analytics?.slides_total ?? 0,
+                    tfrecord_files: approach1Analytics?.tfrecord_files ?? 0,
+                    unfinished_files: approach1Analytics?.unfinished_files ?? 0,
+                    bag_files: approach1Analytics?.bag_files ?? 0,
+                    tfrecord_bytes: approach1Analytics?.tfrecord_bytes ?? 0,
+                    bag_bytes: approach1Analytics?.bag_bytes ?? 0,
+                  }}
+                />
+              </div>
+            </Panel>
+
+            <Panel>
+              <SectionTitle
+                icon={<ClipboardList className="h-5 w-5" />}
+                title="Extraction log"
+                label={approach1Analytics?.error ? "warning" : "tail"}
+              />
+              <pre className="mt-5 min-h-80 overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: approach1Analytics?.error ? "var(--danger)" : "var(--input-text)" }}>
+                {approach1Analytics?.error || approach1Analytics?.log_excerpt || analyticsError || "Approach 1 log will appear here once the VM snapshot is available."}
+              </pre>
+            </Panel>
+          </section>
+
           <div className="hidden">
           {/* Monte Carlo Methods Panel */}
           <Panel>
@@ -1354,59 +1771,249 @@ export function MsiWorkbench() {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <SectionTitle
               icon={<Layers3 className="h-5 w-5" />}
-              title="Approach 2 pipeline"
-              label={approach2Busy ? `running ${approach2Busy}` : "mounted"}
+              title="Complex triad live runner"
+              label={approach2Busy ? `running ${approach2Busy}` : hasRunningApproach2Experiment ? "live polling" : "mounted"}
             />
-            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[620px] xl:grid-cols-5">
+            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[760px] xl:grid-cols-5">
               <ActionButton
-                busy={approach2Busy === "preprocess"}
+                busy={approach2Busy === "train"}
                 disabled={Boolean(approach2Busy)}
-                icon={<HardDrive className="h-4 w-4" />}
-                label="Preprocess"
-                onClick={() => runApproach2Action("preprocess")}
-              />
-              <ActionButton
-                busy={approach2Busy === "features"}
-                disabled={Boolean(approach2Busy)}
-                icon={<Database className="h-4 w-4" />}
-                label="Features"
-                onClick={() => runApproach2Action("features")}
+                icon={<Play className="h-4 w-4" />}
+                label="Run Approach 1"
+                onClick={() => void runPresetTraining("Approach1")}
               />
               <ActionButton
                 busy={approach2Busy === "train"}
                 disabled={Boolean(approach2Busy)}
                 icon={<Play className="h-4 w-4" />}
-                label="Train MIL"
-                onClick={() => runApproach2Action("train")}
+                label="Run Approach 2"
+                onClick={() => void runPresetTraining("Approach2")}
               />
               <ActionButton
-                busy={approach2Busy === "predict"}
+                busy={approach2Busy === "train"}
                 disabled={Boolean(approach2Busy)}
-                icon={<Sigma className="h-4 w-4" />}
-                label="Predict"
-                onClick={() => runApproach2Action("predict")}
+                icon={<Dice5 className="h-4 w-4" />}
+                label="Run Approach 3"
+                onClick={() => void runPresetTraining("MonteCarlo")}
+              />
+              <ActionButton
+                busy={approach2Busy === "triad"}
+                disabled={Boolean(approach2Busy)}
+                icon={<Layers3 className="h-4 w-4" />}
+                label="Run Full Triad"
+                onClick={() => runApproach2Action("triad")}
               />
               <ActionButton
                 busy={approach2Busy === "experiments"}
                 disabled={Boolean(approach2Busy)}
                 icon={<RefreshCw className="h-4 w-4" />}
-                label="Sync runs"
+                label="Refresh scores"
                 onClick={() => runApproach2Action("experiments")}
               />
             </div>
           </div>
 
           <div className="mt-5 grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
-            <pre className="min-h-52 overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: approach2Error ? "var(--danger)" : "var(--input-text)" }}>
-              {approach2Error || approach2Message}
-            </pre>
             <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
-              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Integrated endpoints</h3>
-              <div className="mt-4 grid gap-2">
-                <KeyValue label="Slides" value="/approach-2/slides" />
-                <KeyValue label="Pipeline" value="/approach-2/pipeline" />
-                <KeyValue label="Experiments" value="/approach-2/experiments" />
-                <KeyValue label="Monte Carlo" value="/experiments/monte-carlo-plan" />
+              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Live run inputs</h3>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                <FormField
+                  label="Approach label"
+                  value={patchTrainingForm.approachLabel}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      approachLabel: (value || "Approach2") as PatchTrainingForm["approachLabel"],
+                    }))
+                  }
+                />
+                <FormField
+                  label="Experiment"
+                  value={patchTrainingForm.experimentName}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      experimentName: value,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Backbone"
+                  value={patchTrainingForm.backbone}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      backbone: value,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Dataset source"
+                  value={patchTrainingForm.datasetSource}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      datasetSource: (value || "workspace_root") as PatchTrainingForm["datasetSource"],
+                    }))
+                  }
+                />
+                <FormField
+                  label="Workspace root"
+                  value={patchTrainingForm.workspaceRoot}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      workspaceRoot: value,
+                    }))
+                  }
+                  className="sm:col-span-2"
+                />
+                <FormField
+                  label="Dataset path"
+                  value={patchTrainingForm.datasetPath}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      datasetPath: value,
+                    }))
+                  }
+                  className="sm:col-span-2"
+                />
+                <FormField
+                  label="Google bucket"
+                  value={patchTrainingForm.googleBucketUri}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      googleBucketUri: value,
+                    }))
+                  }
+                  className="sm:col-span-2"
+                />
+                <FormField
+                  label="Epochs"
+                  inputMode="numeric"
+                  value={String(patchTrainingForm.epochs)}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      epochs: Number(value) || 0,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Batch size"
+                  inputMode="numeric"
+                  value={String(patchTrainingForm.batchSize)}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      batchSize: Number(value) || 0,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Learning rate"
+                  value={String(patchTrainingForm.learningRate)}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      learningRate: Number(value) || 0,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Validation split"
+                  value={String(patchTrainingForm.valSplit)}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      valSplit: Number(value) || 0,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Image size"
+                  inputMode="numeric"
+                  value={String(patchTrainingForm.imageSize)}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      imageSize: Number(value) || 0,
+                    }))
+                  }
+                />
+                <FormField
+                  label="Workers"
+                  inputMode="numeric"
+                  value={String(patchTrainingForm.numWorkers)}
+                  onChange={(value) =>
+                    setPatchTrainingForm((current) => ({
+                      ...current,
+                      numWorkers: Number(value) || 0,
+                    }))
+                  }
+                />
+              </div>
+              <p className="mt-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                This triad runner treats `E:\4basecare-MSI` as the workspace root and uses the full nine-folder CRC patch tree under `CRC-VAL-HE-7K`. If you switch to `google_bucket`, the VM will try to stage a `gs://...` dataset before training.
+              </p>
+            </div>
+
+            <div className="grid gap-4">
+              <pre className="min-h-52 overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: approach2Error ? "var(--danger)" : "var(--input-text)" }}>
+                {approach2Error || approach2Message}
+              </pre>
+              <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+                <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Predict uploaded patch</h3>
+                <p className="mt-2 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                  Upload one `.tif`, `.png`, or `.jpg` patch and run inference with the latest completed model for the selected approach, or choose a specific experiment id below.
+                </p>
+                <label
+                  className="mt-4 flex min-h-12 cursor-pointer items-center justify-between gap-3 rounded-full border border-dashed px-4 text-sm transition"
+                  style={{ borderColor: "var(--accent-border)", background: "var(--btn-bg)" }}
+                >
+                  <span className="flex min-w-0 items-center gap-2" style={{ color: "var(--muted)" }}>
+                    <Upload className="h-4 w-4 shrink-0" />
+                    <span className="truncate">{predictionFile ? predictionFile.name : "No patch selected"}</span>
+                  </span>
+                  <span className="shrink-0 rounded-full px-3 py-1 font-semibold" style={{ background: "var(--accent-dim)", color: "var(--tag-text)" }}>
+                    Choose
+                  </span>
+                  <input
+                    accept=".tif,.tiff,.png,.jpg,.jpeg"
+                    className="sr-only"
+                    type="file"
+                    onChange={(event) => setPredictionFile(event.target.files?.[0])}
+                  />
+                </label>
+                <div className="mt-4 grid gap-3">
+                  <FormField
+                    label="Specific experiment id"
+                    value={patchTrainingForm.selectedExperimentId}
+                    onChange={(value) =>
+                      setPatchTrainingForm((current) => ({
+                        ...current,
+                        selectedExperimentId: value,
+                      }))
+                    }
+                  />
+                  <ActionButton
+                    busy={approach2Busy === "predict-upload"}
+                    disabled={Boolean(approach2Busy) || !predictionFile}
+                    icon={<Sigma className="h-4 w-4" />}
+                    label="Predict uploaded patch"
+                    onClick={() => runUploadedPrediction()}
+                  />
+                </div>
+                {predictionResult ? (
+                  <div className="mt-4 grid gap-2">
+                    <KeyValue label="Experiment" value={predictionResult.experiment_id} />
+                    <KeyValue label="Approach" value={predictionResult.approach_label} />
+                    <KeyValue label="Prediction" value={predictionResult.prediction} />
+                    <KeyValue label="Probability" value={readableMetric(predictionResult.probability) || "Pending"} />
+                  </div>
+                ) : null}
               </div>
             </div>
           </div>
@@ -1416,22 +2023,53 @@ export function MsiWorkbench() {
           <Panel>
             <SectionTitle
               icon={<Activity className="h-5 w-5" />}
-              title="Approach 2 experiments"
+              title="Live experiment scores"
               label={`${approach2Experiments.length} runs`}
             />
+            <div className="mt-5 grid gap-3 sm:grid-cols-4">
+              <MetricTile
+                label="Accuracy"
+                tone="teal"
+                value={readableMetric(latestApproach2Metrics?.best_val_accuracy) || "Pending"}
+              />
+              <MetricTile
+                label="Macro F1"
+                tone="blue"
+                value={readableMetric(latestApproach2Metrics?.final_val_f1_macro) || "Pending"}
+              />
+              <MetricTile
+                label="AUROC"
+                tone="coral"
+                value={readableMetric(latestApproach2Metrics?.val_auroc_ovr_macro) || "Pending"}
+              />
+              <MetricTile
+                label="Epochs"
+                tone="blue"
+                value={latestApproach2History.length > 0 ? String(latestApproach2History.length) : "Pending"}
+              />
+            </div>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+              <KeyValue label="Approach counts" value={`A1 ${approachExperimentCounts.Approach1 ?? 0} | A2 ${approachExperimentCounts.Approach2 ?? 0} | A3 ${approachExperimentCounts.MonteCarlo ?? 0}`} />
+              <KeyValue label="Latest run" value={latestApproach2Experiment?.name ?? "No run yet"} />
+              <KeyValue label="Status" value={latestApproach2Experiment?.status ?? "idle"} />
+              <KeyValue label="Backbone" value={readableMetric(latestApproach2Metrics?.backbone) || "Pending"} />
+              <KeyValue label="Train / val images" value={latestApproach2Metrics ? `${readableMetric(latestApproach2Metrics.train_images)} / ${readableMetric(latestApproach2Metrics.val_images)}` : "Pending"} />
+            </div>
             <div className="mt-5 max-h-96 overflow-auto rounded-3xl border" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
               {approach2Experiments.length > 0 ? (
                 approach2Experiments.map((experiment) => (
-                  <div className="grid gap-2 border-b p-4 last:border-b-0 sm:grid-cols-4" style={{ borderColor: "var(--border)" }} key={experiment.experiment_id}>
+                  <div className="grid gap-2 border-b p-4 last:border-b-0 sm:grid-cols-6" style={{ borderColor: "var(--border)" }} key={experiment.experiment_id}>
                     <span className="font-mono text-xs" style={{ color: "var(--teal)" }}>{experiment.experiment_id}</span>
                     <span className="text-sm font-semibold" style={{ color: "var(--heading)" }}>{experiment.name}</span>
-                    <span className="text-sm" style={{ color: "var(--body)" }}>{experiment.model_type}</span>
+                    <span className="text-sm" style={{ color: "var(--body)" }}>{experimentApproachLabel(experiment)}</span>
                     <span className="text-sm" style={{ color: experiment.status === "completed" ? "var(--teal)" : "var(--warning)" }}>{experiment.status}</span>
+                    <span className="text-sm" style={{ color: "var(--body)" }}>{readableMetric(experiment.metrics?.best_val_accuracy) || "pending"}</span>
+                    <span className="text-sm" style={{ color: "var(--muted)" }}>{Array.isArray(experiment.metrics?.history) ? `${experiment.metrics.history.length} epochs` : "epochs pending"}</span>
                   </div>
                 ))
               ) : (
                 <p className="p-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
-                  Click Sync runs, or start Train MIL to create the first Approach 2 experiment.
+                  Run one preset or the full triad to create CRC comparison experiments, then this panel will auto-refresh while the VM bundle is training.
                 </p>
               )}
             </div>
@@ -1440,30 +2078,68 @@ export function MsiWorkbench() {
           <Panel>
             <SectionTitle
               icon={<Dice5 className="h-5 w-5" />}
-              title="Monte Carlo link"
-              label={mcPlan ? `${mcPlan.trial_count} trials` : "ready"}
+              title="Epoch history"
+              label={latestApproach2History.length > 0 ? `${latestApproach2History.length} rows` : "waiting"}
             />
-            <p className="mt-4 text-sm leading-6" style={{ color: "var(--body)" }}>
-              Monte Carlo remains mounted from the hft-methods API while Approach 2 runs through its own platform routes.
-            </p>
+            <div className="mt-4 max-h-96 overflow-auto rounded-3xl border" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              {latestApproach2History.length > 0 ? (
+                <table className="w-full text-left text-xs">
+                  <thead className="sticky top-0 backdrop-blur" style={{ background: "var(--panel-bg)" }}>
+                    <tr>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Epoch</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Train loss</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Val loss</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Accuracy</th>
+                      <th className="px-3 py-2 font-semibold" style={{ color: "var(--muted)" }}>Macro F1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {latestApproach2History.map((entry, index) => (
+                      <tr key={`${index}-${readableMetric(entry.epoch)}`} className="border-t" style={{ borderColor: "var(--border)" }}>
+                        <td className="px-3 py-2" style={{ color: "var(--heading)" }}>{readableMetric(entry.epoch)}</td>
+                        <td className="px-3 py-2 font-mono" style={{ color: "var(--body)" }}>{readableMetric(entry.train_loss)}</td>
+                        <td className="px-3 py-2 font-mono" style={{ color: "var(--body)" }}>{readableMetric(entry.val_loss)}</td>
+                        <td className="px-3 py-2 font-mono" style={{ color: "var(--teal)" }}>{readableMetric(entry.val_accuracy)}</td>
+                        <td className="px-3 py-2 font-mono" style={{ color: "var(--blue)" }}>{readableMetric(entry.val_f1_macro)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <p className="p-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                  When a run finishes, epoch-wise loss, accuracy, and F1 will show here.
+                </p>
+              )}
+            </div>
             <div className="mt-4 grid gap-2">
-              <ActionButton
-                busy={mcBusy === "plan"}
-                disabled={Boolean(mcBusy)}
-                icon={<Dice5 className="h-4 w-4" />}
-                label="Generate MC plan"
-                onClick={() => generateMCPlan()}
-              />
-              <ActionButton
-                busy={mcBusy === "stableBest"}
-                disabled={Boolean(mcBusy)}
-                icon={<TrendingUp className="h-4 w-4" />}
-                label="Stable best"
-                onClick={() => fetchStableBest()}
-              />
+              <KeyValue label="Dataset" value={readableMetric(latestApproach2Metrics?.dataset_path) || patchTrainingForm.datasetPath} />
+              <KeyValue label="Classes" value={Array.isArray(latestApproach2Metrics?.class_names) ? latestApproach2Metrics.class_names.join(", ") : "ADI, BACK, DEB, LYM, MUC, MUS, NORM, STR, TUM"} />
+              <KeyValue label="Model artifact" value={readableMetric((latestApproach2Metrics?.artifacts as Record<string, unknown> | undefined)?.model_path) || "Pending"} />
             </div>
           </Panel>
         </section>
+
+        <Panel>
+          <SectionTitle
+            icon={<BarChart3 className="h-5 w-5" />}
+            title="Approach 2 advanced charts"
+            label={approach2Analytics?.completed_runs ? `${approach2Analytics.completed_runs} completed` : "waiting"}
+          />
+          <div className="mt-5">
+            <Approach2AdvancedCharts
+              history={
+                (approach2Analytics?.history as Array<{
+                  epoch?: number;
+                  train_loss?: number;
+                  val_loss?: number;
+                  val_accuracy?: number;
+                  val_f1_macro?: number;
+                }>) ?? []
+              }
+              classDistribution={approach2Analytics?.class_distribution ?? {}}
+            />
+          </div>
+        </Panel>
       </section>
 
       <section className={`relative z-10 mx-auto w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 ${approachMode === "monte-carlo" ? "grid" : "hidden"}`}>
@@ -1612,6 +2288,26 @@ export function MsiWorkbench() {
             </div>
           </Panel>
         </section>
+
+        <Panel>
+          <SectionTitle
+            icon={<BarChart3 className="h-5 w-5" />}
+            title="Monte Carlo analytics"
+            label={monteCarloAnalytics?.total_candidates ? `${monteCarloAnalytics.total_candidates} candidates` : "stochastic view"}
+          />
+          <div className="mt-5">
+            <MonteCarloAdvancedCharts
+              plan={mcPlan}
+              stableBest={mcStableBest}
+              summary={{
+                mc_result_trials: monteCarloAnalytics?.mc_result_trials ?? 0,
+                dropout_ready: monteCarloAnalytics?.dropout_ready ?? 0,
+                bootstrap_ready: monteCarloAnalytics?.bootstrap_ready ?? 0,
+                total_candidates: monteCarloAnalytics?.total_candidates ?? 0,
+              }}
+            />
+          </div>
+        </Panel>
       </section>
 
       <section className={`relative z-10 mx-auto w-full max-w-[1500px] gap-5 px-4 pb-10 sm:px-6 lg:px-8 ${approachMode === "parallel" ? "grid" : "hidden"}`}>
@@ -1636,6 +2332,45 @@ export function MsiWorkbench() {
              <pre className="min-h-[60px] overflow-auto rounded-3xl border p-4 text-xs leading-5" style={{ borderColor: "var(--input-border)", background: "var(--input-bg)", color: parallelError ? "var(--danger)" : "var(--input-text)" }}>
                 {parallelError || parallelMessage}
              </pre>
+          </div>
+
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            {parallelSources.length > 0 ? (
+              parallelSources.map((source) => (
+                <div
+                  key={source.name}
+                  className="rounded-3xl border p-4"
+                  style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="text-sm font-semibold" style={{ color: "var(--heading)" }}>
+                      {source.name}
+                    </p>
+                    <span
+                      className="rounded-full px-2 py-1 text-xs font-semibold"
+                      style={{
+                        background: source.ok ? "var(--accent-dim)" : "rgba(217,93,72,0.12)",
+                        color: source.ok ? "var(--teal)" : "var(--coral)",
+                      }}
+                    >
+                      {source.ok ? "available" : "error"}
+                    </span>
+                  </div>
+                  <p className="mt-3 text-2xl font-semibold" style={{ color: "var(--blue)" }}>
+                    {source.records_found}
+                  </p>
+                  <p className="mt-1 text-xs leading-5" style={{ color: "var(--muted)" }}>
+                    {source.records_found > 0
+                      ? `${source.records_found} real result artifact(s) found.`
+                      : source.message || "No completed result artifact found yet."}
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p className="text-sm leading-6" style={{ color: "var(--muted)" }}>
+                Source availability will appear here after the metrics snapshot completes.
+              </p>
+            )}
           </div>
           
           <div className="mt-8">
@@ -2014,8 +2749,57 @@ function readableMetric(value: unknown) {
     return value;
   }
   if (typeof value === "number") {
-    return value.toLocaleString();
+    if (Number.isInteger(value)) {
+      return value.toLocaleString();
+    }
+    return value.toFixed(4);
   }
   return "";
+}
+
+function experimentApproachLabel(experiment: Approach2Experiment) {
+  const metricLabel = experiment.metrics?.approach_label;
+  if (typeof metricLabel === "string" && metricLabel.length > 0) {
+    return metricLabel;
+  }
+  const parameterLabel = experiment.parameters?.approach_label;
+  if (typeof parameterLabel === "string" && parameterLabel.length > 0) {
+    return parameterLabel;
+  }
+  return "Approach2";
+}
+
+function FormField({
+  label,
+  value,
+  onChange,
+  inputMode,
+  className,
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  inputMode?: React.HTMLAttributes<HTMLInputElement>["inputMode"];
+  className?: string;
+}) {
+  return (
+    <label className={`grid gap-2 ${className ?? ""}`}>
+      <span className="text-sm font-medium" style={{ color: "var(--muted)" }}>
+        {label}
+      </span>
+      <input
+        className="min-h-11 rounded-2xl border px-3 text-sm outline-none"
+        style={{
+          borderColor: "var(--input-border)",
+          background: "var(--input-bg)",
+          color: "var(--input-text)",
+        }}
+        inputMode={inputMode}
+        onChange={(event) => onChange(event.target.value)}
+        type="text"
+        value={value}
+      />
+    </label>
+  );
 }
 

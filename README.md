@@ -14,16 +14,22 @@ VM.
 The current branch exposes four workflow modes from one UI:
 
 - `Approach 1`: cohort/manifest validation, VM file upload, VM browsing, GDC
-  downloader startup, Jupyter startup, SSH tunnel, and experiment-result view.
+  downloader startup, Jupyter startup, SSH tunnel, experiment-result view, and
+  the first CRC triad baseline lane.
 - `Approach 2`: imported platform backend from
   `E:\4basecare-MSI\Approach-2\backend\app`, mounted inside this FastAPI app
-  under `/approach-2/*`.
+  under `/approach-2/*`, now also used as the live CRC triad runner surface.
 - `Monte Carlo`: stochastic validation workflow for random search, MC dropout,
-  bootstrap confidence intervals, stable model selection, and VM model-cache
-  preparation.
+  bootstrap confidence intervals, stable model selection, VM model-cache
+  preparation, and repeated-seed CRC patch runs on the same dataset.
 - `Parallel Metrics`: a unified comparison mode that reads completed Approach
   1, Approach 2, and Monte Carlo metric artifacts. It does not generate demo
   clinical values; D3.js and Recharts render only metrics found in real outputs.
+
+The branch now treats the uploaded workspace root `E:\4basecare-MSI` as the
+main source surface. The triad runner resolves the shared patch dataset from
+`E:\4basecare-MSI\CRC-VAL-HE-7K` and uses all nine class folders:
+`ADI`, `BACK`, `DEB`, `LYM`, `MUC`, `MUS`, `NORM`, `STR`, and `TUM`.
 
 ## Final Combo Stack
 The target VM architecture utilizes:
@@ -334,7 +340,9 @@ POST /approach-2/slides/upload_csv
 POST /approach-2/pipeline/preprocess
 POST /approach-2/pipeline/extract_features
 POST /approach-2/pipeline/train
+POST /approach-2/pipeline/train-triad
 POST /approach-2/pipeline/predict
+POST /approach-2/pipeline/predict-upload
 GET  /approach-2/experiments/
 GET  /approach-2/experiments/{experiment_id}
 POST /approach-2/webhook/start-automation
@@ -425,6 +433,70 @@ download -> validate -> preprocess -> extract features -> train/infer -> persist
 Prefer keeping features, metrics, model outputs, and manifests. Raw `.svs`
 slides are expensive and should be processed in small batches when VM storage is
 limited.
+
+## CRC-VAL-HE-7K Training
+
+`E:\4basecare-MSI\CRC-VAL-HE-7K` is not a whole-slide dataset. It is a
+folder-per-class patch dataset with 9 tissue classes:
+
+```text
+ADI, BACK, DEB, LYM, MUC, MUS, NORM, STR, TUM
+```
+
+That means it should use a supervised patch-classification trainer, not the
+Slideflow MIL path used for `.svs` workflows.
+
+The repo now includes a dataset-specific baseline config:
+
+```text
+configs/crc_val_he_7k_patch_classifier.yaml
+```
+
+and an n8n loop you can import for start -> wait -> refresh -> summarize:
+
+```text
+automation/n8n/timestamp-msi-crc-patch-training-loop.json
+```
+
+Use the existing Approach 2 training endpoint with `training_mode` set to
+`patch_classification`:
+
+```powershell
+$body = @{
+  experiment_name = "crc-val-he-7k-baseline"
+  training_mode = "patch_classification"
+  dataset_path = "E:\\4basecare-MSI\\CRC-VAL-HE-7K"
+  backbone = "resnet18"
+  epochs = 10
+  batch_size = 32
+  learning_rate = 1e-4
+  image_size = 224
+  val_split = 0.2
+  seed = 310
+  use_pretrained = $true
+} | ConvertTo-Json
+
+Invoke-RestMethod `
+  -Method Post `
+  -Uri http://127.0.0.1:8001/approach-2/pipeline/train `
+  -ContentType "application/json" `
+  -Body $body
+```
+
+Completed runs write artifacts under:
+
+```text
+/data/patch_models/<experiment_id>/
+```
+
+including:
+
+- `best_model.pt`
+- `metrics.json`
+
+The experiment record under `/approach-2/experiments/{experiment_id}` now stores
+real patch-classification metrics such as validation accuracy, macro F1, class
+distribution, and the saved artifact paths.
 
 ## External Data Sources
 
@@ -729,6 +801,8 @@ Backend:
   CI, seed stability, stable-best logic.
 - `apps/api/app/api/routes/parallel_pipeline.py`: real artifact comparison
   endpoint for Approach 1, Approach 2, and Monte Carlo metrics.
+- `apps/api/app/approach_2/services/triad_runtime.py`: VM-backed complex triad
+  launcher, metrics sync, and uploaded patch prediction helper.
 - `apps/api/app/api/routes/integrations.py`: secret-safe integration status.
 - `apps/api/app/services/data_batches.py`: GDC batch download/status/cleanup.
 - `apps/api/app/approach_2`: imported Approach 2 backend package.
@@ -752,6 +826,27 @@ Automation:
 - `automation/n8n/timestamp-msi-advanced-experiment-quality-loop.json`: one-trial baseline plus Monte Carlo planning, stable-best, and parallel metrics snapshot.
 - `automation/n8n/timestamp-msi-modular-training.json`: training workflow.
 - `automation/n8n/timestamp-msi-monte-carlo-pipeline.json`: MC workflow.
+- `automation/n8n/timestamp-msi-complex-triad-loop.json`: import-ready full
+  triad workflow that queues the VM run and then fetches the comparison
+  snapshot.
+
+## Complex Triad
+
+The `complex-triad` branch defines the three CRC patch approaches like this:
+
+- `Approach 1`: `resnet34`, `5` epochs, seed `310`.
+- `Approach 2`: `resnet18`, `10` epochs, seed `310`.
+- `Approach 3 / Monte Carlo`: repeated-seed patch suite, currently
+  `resnet18` seed `42`, `resnet18` seed `2026`, and `resnet34` seed `777`,
+  each for `4` epochs.
+
+All three use the same CRC dataset. The workstation live runner now supports:
+
+- workspace-root dataset selection
+- custom dataset path entry
+- Google bucket URI entry for VM staging
+- uploaded patch prediction against the latest completed approach model or a
+  specific experiment id
 
 Configs:
 

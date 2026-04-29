@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.api.routes import cohort, data_batches, experiments, integrations, monte_carlo, vm, parallel_pipeline
+from app.api.routes import analytics, cohort, data_batches, experiments, integrations, monte_carlo, vm, parallel_pipeline
 from app.approach_2.api import (
     experiments as approach_2_experiments,
     pipeline as approach_2_pipeline,
@@ -48,6 +48,7 @@ app.include_router(vm.router, prefix="/vm", tags=["vm"])
 app.include_router(experiments.router, prefix="/experiments", tags=["experiments"])
 app.include_router(monte_carlo.router, prefix="/experiments", tags=["monte-carlo"])
 app.include_router(integrations.router, prefix="/integrations", tags=["integrations"])
+app.include_router(analytics.router, prefix="/analytics", tags=["analytics"])
 app.include_router(data_batches.router, prefix="/data-batches", tags=["data-batches"])
 app.include_router(approach_2_slides.router, prefix="/approach-2/slides", tags=["approach-2-slides"])
 app.include_router(approach_2_pipeline.router, prefix="/approach-2/pipeline", tags=["approach-2-pipeline"])

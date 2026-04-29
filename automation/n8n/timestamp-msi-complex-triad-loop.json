@@ -1,0 +1,120 @@
+{
+  "name": "Timestamp_msi complex triad loop",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [180, 260]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { apiBase: 'http://127.0.0.1:8001', experimentName: `crc-complex-triad-${Date.now()}`, datasetSource: 'workspace_root', workspaceRoot: 'E:\\\\4basecare-MSI', datasetPath: 'E:\\\\4basecare-MSI\\\\CRC-VAL-HE-7K', googleBucketUri: '', batchSize: 32, learningRate: 0.0001, imageSize: 224, valSplit: 0.2, numWorkers: 0, startedAt: new Date().toISOString() } }];"
+      },
+      "id": "build-triad-config",
+      "name": "Build Triad Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [420, 260]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$json.apiBase}}/approach-2/pipeline/train-triad",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ experiment_name: $json.experimentName, training_mode: 'patch_classification', approach_label: 'Approach2', dataset_source: $json.datasetSource, workspace_root: $json.workspaceRoot, dataset_path: $json.datasetPath, google_bucket_uri: $json.googleBucketUri || null, batch_size: $json.batchSize, learning_rate: $json.learningRate, image_size: $json.imageSize, val_split: $json.valSplit, num_workers: $json.numWorkers, use_pretrained: true }) }}",
+        "options": {}
+      },
+      "id": "start-triad",
+      "name": "Start Complex Triad",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [700, 260]
+    },
+    {
+      "parameters": {
+        "amount": 25,
+        "unit": "seconds"
+      },
+      "id": "wait-refresh",
+      "name": "Wait Before Refresh",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [940, 260]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Triad Config').item.json.apiBase}}/parallel-pipeline/start",
+        "options": {}
+      },
+      "id": "trigger-snapshot",
+      "name": "Trigger Comparison Snapshot",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1180, 260]
+    },
+    {
+      "parameters": {
+        "amount": 4,
+        "unit": "seconds"
+      },
+      "id": "wait-snapshot",
+      "name": "Wait Snapshot",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [1420, 260]
+    },
+    {
+      "parameters": {
+        "url": "={{$('Build Triad Config').item.json.apiBase}}/parallel-pipeline/metrics/{{$('Trigger Comparison Snapshot').item.json.execution_id}}",
+        "options": {}
+      },
+      "id": "load-snapshot",
+      "name": "Load Comparison Snapshot",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1660, 260]
+    },
+    {
+      "parameters": {
+        "jsCode": "const triad = $('Start Complex Triad').item.json;\nconst snapshot = $('Load Comparison Snapshot').item.json;\nreturn [{ json: { ok: true, workflow: 'Timestamp_msi complex triad loop', experimentIds: triad.experiment_ids || [], status: snapshot.status, message: snapshot.message, metrics: snapshot.metrics || [], sources: snapshot.sources || [] } }];"
+      },
+      "id": "build-summary",
+      "name": "Build Triad Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1900, 260]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Build Triad Config", "type": "main", "index": 0 }]]
+    },
+    "Build Triad Config": {
+      "main": [[{ "node": "Start Complex Triad", "type": "main", "index": 0 }]]
+    },
+    "Start Complex Triad": {
+      "main": [[{ "node": "Wait Before Refresh", "type": "main", "index": 0 }]]
+    },
+    "Wait Before Refresh": {
+      "main": [[{ "node": "Trigger Comparison Snapshot", "type": "main", "index": 0 }]]
+    },
+    "Trigger Comparison Snapshot": {
+      "main": [[{ "node": "Wait Snapshot", "type": "main", "index": 0 }]]
+    },
+    "Wait Snapshot": {
+      "main": [[{ "node": "Load Comparison Snapshot", "type": "main", "index": 0 }]]
+    },
+    "Load Comparison Snapshot": {
+      "main": [[{ "node": "Build Triad Summary", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import statistics
 import uuid
 from typing import Any, Literal
 
@@ -10,15 +11,17 @@ from pydantic import BaseModel
 
 from app.approach_2.database import models
 from app.approach_2.database.setup import SessionLocal
+from app.approach_2.services.experiment_labels import classify_experiment
 from app.services.vm import VmService
 
 router = APIRouter()
 
 
 METRIC_ALIASES: tuple[tuple[str, tuple[str, ...]], ...] = (
-    ("AUROC", ("mean_auroc", "auroc", "auc", "roc_auc", "val_auroc")),
+    ("Accuracy", ("best_val_accuracy", "val_accuracy", "accuracy")),
+    ("AUROC", ("val_auroc_ovr_macro", "mean_auroc", "auroc", "auc", "roc_auc", "val_auroc")),
     ("AUPRC", ("mean_auprc", "auprc", "average_precision", "val_auprc")),
-    ("F1 Score", ("f1", "f1_score", "mean_f1", "val_f1")),
+    ("F1 Score", ("final_val_f1_macro", "f1", "f1_score", "mean_f1", "val_f1", "val_f1_macro")),
     ("Sensitivity", ("msi_h_sensitivity", "sensitivity", "recall", "val_recall")),
     ("Specificity", ("specificity", "val_specificity")),
     ("Balanced Accuracy", ("balanced_accuracy", "balanced_acc", "val_balanced_accuracy")),
@@ -27,7 +30,8 @@ METRIC_ALIASES: tuple[tuple[str, tuple[str, ...]], ...] = (
 
 SCORE_ALIASES: tuple[tuple[str, ...], ...] = (
     ("stability_score", "stable_score"),
-    ("mean_auroc", "auroc", "auc", "roc_auc", "val_auroc"),
+    ("val_auroc_ovr_macro", "mean_auroc", "auroc", "auc", "roc_auc", "val_auroc"),
+    ("best_val_accuracy", "val_accuracy", "accuracy"),
     ("mean_auprc", "auprc", "average_precision", "val_auprc"),
 )
 
@@ -134,6 +138,23 @@ def collect_parallel_records() -> tuple[dict[str, list[dict[str, Any]]], list[Pa
     }
     sources: list[ParallelSourceStatus] = []
 
+    sql_rows, sql_counts = _collect_sql_metric_rows()
+    for row in sql_rows:
+        label = row.get("approach_label", "Approach2")
+        if label in records:
+            records[label].append(row)
+
+    if all(sql_counts.get(label, 0) > 0 for label in records):
+        return records, [
+            ParallelSourceStatus(
+                name=label,
+                ok=True,
+                source="SQL experiments.metrics",
+                records_found=sql_counts.get(label, 0),
+            )
+            for label in ("Approach1", "Approach2", "MonteCarlo")
+        ]
+
     vm_rows, vm_status = _collect_vm_metric_rows()
     sources.extend(vm_status)
     for row in vm_rows:
@@ -144,16 +165,23 @@ def collect_parallel_records() -> tuple[dict[str, list[dict[str, Any]]], list[Pa
         else:
             records["Approach1"].append(row)
 
-    approach2_rows, approach2_status = _collect_approach2_metric_rows()
-    records["Approach2"].extend(approach2_rows)
-    sources.append(approach2_status)
+    vm_counts = {source.name: source.records_found for source in sources}
+    sources = [
+        ParallelSourceStatus(
+            name=label,
+            ok=True,
+            source="VM automation/results + SQL experiments.metrics",
+            records_found=vm_counts.get(label, 0) + sql_counts.get(label, 0),
+        )
+        for label in ("Approach1", "Approach2", "MonteCarlo")
+    ]
 
     return records, sources
 
 
 def build_parallel_metrics(records: dict[str, list[dict[str, Any]]]) -> list[ParallelMetric]:
     selected = {
-        name: _select_best_record(rows)
+        name: _select_record_for_label(name, rows)
         for name, rows in records.items()
     }
 
@@ -238,7 +266,7 @@ PY
     ]
 
 
-def _collect_approach2_metric_rows() -> tuple[list[dict[str, Any]], ParallelSourceStatus]:
+def _collect_sql_metric_rows() -> tuple[list[dict[str, Any]], dict[str, int]]:
     session = SessionLocal()
     try:
         experiments = (
@@ -246,24 +274,31 @@ def _collect_approach2_metric_rows() -> tuple[list[dict[str, Any]], ParallelSour
             .filter(models.Experiment.status == "completed")
             .all()
         )
-        rows = [
-            {
-                "trial_id": experiment.experiment_id,
-                "path": "approach_2.experiments.metrics",
-                "metrics": experiment.metrics or {},
-            }
-            for experiment in experiments
-            if isinstance(experiment.metrics, dict) and experiment.metrics
-        ]
+        rows = []
+        counts = {"Approach1": 0, "Approach2": 0, "MonteCarlo": 0}
+        for experiment in experiments:
+            if not isinstance(experiment.metrics, dict) or not experiment.metrics:
+                continue
+            label = classify_experiment(
+                name=experiment.name,
+                model_type=experiment.model_type,
+                parameters=experiment.parameters if isinstance(experiment.parameters, dict) else None,
+                metrics=experiment.metrics,
+            )
+            rows.append(
+                {
+                    "trial_id": experiment.experiment_id,
+                    "path": "approach_2.experiments.metrics",
+                    "metrics": experiment.metrics,
+                    "approach_label": label,
+                    "created_at": experiment.created_at.isoformat() if experiment.created_at else "",
+                }
+            )
+            counts[label] += 1
     finally:
         session.close()
 
-    return rows, ParallelSourceStatus(
-        name="Approach2",
-        ok=True,
-        source="Approach 2 SQLAlchemy experiments.metrics",
-        records_found=len(rows),
-    )
+    return rows, counts
 
 
 def _parse_vm_rows(stdout: str) -> list[dict[str, Any]]:
@@ -295,6 +330,50 @@ def _select_best_record(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
     return rows[0]
 
 
+def _select_record_for_label(label: str, rows: list[dict[str, Any]]) -> dict[str, Any] | None:
+    if label != "MonteCarlo":
+        return _select_latest_record(rows) or _select_best_record(rows)
+    if not rows:
+        return None
+
+    existing = [row for row in rows if _metric_value(_record_metrics(row), ("stability_score", "stable_score")) is not None]
+    if existing:
+        return _select_latest_record(existing) or _select_best_record(existing)
+
+    accuracies = _collect_numbers(rows, ("best_val_accuracy", "val_accuracy", "accuracy"))
+    aurocs = _collect_numbers(rows, ("val_auroc_ovr_macro", "mean_auroc", "auroc", "auc", "roc_auc", "val_auroc"))
+    f1_scores = _collect_numbers(rows, ("final_val_f1_macro", "f1", "f1_score", "mean_f1", "val_f1", "val_f1_macro"))
+
+    metrics: dict[str, Any] = {
+        "approach_label": "MonteCarlo",
+        "completed_trials": len(rows),
+    }
+    if accuracies:
+        metrics["best_val_accuracy"] = max(accuracies)
+        metrics["mean_accuracy"] = statistics.fmean(accuracies)
+        metrics["stability_score"] = statistics.fmean(accuracies) - 0.5 * _safe_std(accuracies)
+    if aurocs:
+        metrics["val_auroc_ovr_macro"] = max(aurocs)
+        metrics["mean_auroc"] = statistics.fmean(aurocs)
+        metrics["sd_auroc"] = _safe_std(aurocs)
+    if f1_scores:
+        metrics["final_val_f1_macro"] = max(f1_scores)
+        metrics["mean_f1"] = statistics.fmean(f1_scores)
+
+    return {
+        "trial_id": "monte_carlo_suite",
+        "path": "approach_2.experiments.metrics",
+        "metrics": metrics,
+        "approach_label": "MonteCarlo",
+    }
+
+
+def _select_latest_record(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
+    if not rows:
+        return None
+    return max(rows, key=lambda row: str(row.get("created_at", "")))
+
+
 def _score_record(row: dict[str, Any]) -> float | None:
     metrics = _record_metrics(row)
     for aliases in SCORE_ALIASES:
@@ -318,6 +397,21 @@ def _metric_value(metrics: dict[str, Any], aliases: tuple[str, ...]) -> float | 
             if value is not None:
                 return value
     return None
+
+
+def _collect_numbers(rows: list[dict[str, Any]], aliases: tuple[str, ...]) -> list[float]:
+    values: list[float] = []
+    for row in rows:
+        value = _metric_value(_record_metrics(row), aliases)
+        if value is not None:
+            values.append(value)
+    return values
+
+
+def _safe_std(values: list[float]) -> float:
+    if len(values) < 2:
+        return 0.0
+    return statistics.stdev(values)
 
 
 def _as_number(value: Any) -> float | None:

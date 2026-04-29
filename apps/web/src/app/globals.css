@@ -86,6 +86,9 @@
   --veil-bg: linear-gradient(180deg, rgba(246, 252, 255, 0.74), rgba(232, 247, 249, 0.58));
   --video-opacity: 0.28;
   --video-filter: saturate(0.55) brightness(1.2) contrast(0.82);
+  --sky-glow-soft: rgba(183, 235, 255, 0.42);
+  --sky-glow-mid: rgba(117, 205, 255, 0.42);
+  --sky-glow-strong: rgba(70, 180, 255, 0.46);
 }
 
 @theme inline {
@@ -313,7 +316,8 @@ div::-webkit-scrollbar-track {
     radial-gradient(
       720px circle at var(--mx) var(--my),
       rgba(255, 255, 255, 0.88),
-      rgba(145, 221, 241, 0.22) 34%,
+      rgba(145, 221, 241, 0.34) 28%,
+      rgba(118, 211, 255, 0.22) 42%,
       transparent 64%
     ),
     radial-gradient(
@@ -321,7 +325,7 @@ div::-webkit-scrollbar-track {
       rgba(156, 252, 224, 0.18),
       transparent 70%
     );
-  mix-blend-mode: soft-light;
+  mix-blend-mode: screen;
 }
 
 .snow-theme .reactive-block {
@@ -377,7 +381,12 @@ div::-webkit-scrollbar-track {
 .snow-theme textarea,
 .snow-theme button,
 .snow-theme a {
-  text-shadow: none;
+  transition:
+    color 220ms ease,
+    text-shadow 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
 }
 
 .snow-theme h1,
@@ -402,6 +411,30 @@ div::-webkit-scrollbar-track {
 .snow-theme button,
 .snow-theme a {
   color: var(--btn-text);
+}
+
+.snow-theme h1:hover,
+.snow-theme h2:hover,
+.snow-theme h3:hover,
+.snow-theme p:hover,
+.snow-theme span:hover,
+.snow-theme button:hover,
+.snow-theme a:hover {
+  color: #0b2f47;
+  text-shadow:
+    0 0 10px var(--sky-glow-soft),
+    0 0 18px var(--sky-glow-mid),
+    0 0 28px var(--sky-glow-strong);
+}
+
+.snow-theme .reactive-surface:hover h1,
+.snow-theme .reactive-surface:hover h2,
+.snow-theme .reactive-surface:hover h3,
+.snow-theme .reactive-surface:hover p,
+.snow-theme .reactive-surface:hover span {
+  text-shadow:
+    0 0 10px rgba(183, 235, 255, 0.32),
+    0 0 22px rgba(117, 205, 255, 0.3);
 }
 
 .snow-theme .research-video-wrap {

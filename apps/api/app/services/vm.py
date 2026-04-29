@@ -1,3 +1,4 @@
+import base64
 import subprocess
 from pathlib import PurePosixPath
 
@@ -103,6 +104,22 @@ class VmService:
             command += f" && chmod {mode} {self._quote(target)}"
         command += f" && wc -c {self._quote(target)}"
         return self._run(action, command, input_text=contents, timeout=timeout)
+
+    def write_project_binary_file(
+        self,
+        relative_path: str,
+        data: bytes,
+        action: str = "writeProjectBinaryFile",
+        timeout: int = 45,
+    ) -> VmActionResponse:
+        target = self.project_path(relative_path)
+        encoded = base64.b64encode(data).decode("ascii")
+        command = (
+            f"mkdir -p {self._quote(str(PurePosixPath(target).parent))} "
+            f"&& base64 -d > {self._quote(target)} "
+            f"&& wc -c {self._quote(target)}"
+        )
+        return self._run(action, command, input_text=encoded, timeout=timeout)
 
     def run_project_command(
         self,
