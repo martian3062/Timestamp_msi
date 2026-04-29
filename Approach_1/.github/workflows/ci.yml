@@ -1,27 +1,25 @@
-name: Timestamp_msi Root CI
+name: Timestamp_msi CI
 
 on:
   push:
     branches:
       - main
       - automation
-      - complex-triad
   pull_request:
     branches:
       - main
-      - complex-triad
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: timestamp-msi-root-ci-${{ github.ref }}
+  group: timestamp-msi-ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   api:
-    name: Approach_1 API tests
+    name: API tests
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -36,21 +34,21 @@ jobs:
           cache: pip
 
       - name: Install API dependencies
-        working-directory: Approach_1/apps/api
+        working-directory: apps/api
         run: |
           python -m pip install --upgrade pip
           python -m pip install -e ".[dev]"
 
       - name: Run API tests
-        working-directory: Approach_1/apps/api
+        working-directory: apps/api
         run: python -m pytest
 
       - name: Compile API package
-        working-directory: Approach_1/apps/api
+        working-directory: apps/api
         run: python -m compileall app
 
   web:
-    name: Approach_1 web lint and build
+    name: Web lint and build
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -63,16 +61,16 @@ jobs:
         with:
           node-version: "24"
           cache: npm
-          cache-dependency-path: Approach_1/apps/web/package-lock.json
+          cache-dependency-path: apps/web/package-lock.json
 
       - name: Install web dependencies
-        working-directory: Approach_1/apps/web
+        working-directory: apps/web
         run: npm ci
 
       - name: Lint web app
-        working-directory: Approach_1/apps/web
+        working-directory: apps/web
         run: npm run lint
 
       - name: Build web app
-        working-directory: Approach_1/apps/web
+        working-directory: apps/web
         run: npm run build

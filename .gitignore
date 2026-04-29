@@ -1,43 +1,53 @@
-# Dependencies
-node_modules/
-apps/web/node_modules/
-.pnp/
-.pnp.*
-
-# Next.js build output
-.next/
-apps/web/.next/
-out/
-build/
-
-# Logs and caches
+# Core repo hygiene
+.repo-history/
+.kilocode/
 *.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-*.tsbuildinfo
 *.db
-.turbo/
-.cache/
-.codex-run/
+*.tsbuildinfo
+Thumbs.db
+.DS_Store
 
-# Local environment and credentials
+# Local credentials and env
 .env
 .env.*
-!apps/api/.env.example
+!Approach_1/apps/api/.env.example
 *.pem
 *.key
 *.crt
 
-# OS/editor noise
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
+# Node / Next.js
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+build/
+.turbo/
+.cache/
 
-# Python/cache folders that may appear in the empty API scaffold
+# Python
 __pycache__/
+**/__pycache__/
 .pytest_cache/
+**/.pytest_cache/
 .venv/
+**/.venv/
 venv/
 *.egg-info/
+**/*.egg-info/
+
+# Local run artifacts
+.codex-run/
+**/.codex-run/
+
+# Large local-only datasets and archives
+datasets/CRC-VAL-HE-7K/
+datasets/raw_archives/
+extras/slideflow_basics/project_1_slideflow_msi_tcga_crc/slideflow_project/bags/
+extras/slideflow_basics/project_1_slideflow_msi_tcga_crc/slideflow_project/data/slides/
+extras/slideflow_basics/project_1_slideflow_msi_tcga_crc/output/heatmaps/
+extras/slideflow_basics/project_1_slideflow_msi_tcga_crc/output/models/
+extras/slideflow_basics/project_1_slideflow_msi_tcga_crc/output/results/
+
+# Misc local binaries
+geekbench-5-6.5.0-installer.exe

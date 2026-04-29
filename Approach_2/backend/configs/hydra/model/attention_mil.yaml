@@ -1,0 +1,6 @@
+name: "attention_mil"
+params:
+  lr: 1e-4
+  wd: 1e-5
+  hidden_dim: 256
+  dropout: 0.25

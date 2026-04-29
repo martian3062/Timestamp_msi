@@ -1,0 +1,29 @@
+{
+  "total_figures": 6,
+  "figures": [
+    {
+      "name": "01_cohort_overview",
+      "file": "01_cohort_overview.png"
+    },
+    {
+      "name": "02_fold_distribution",
+      "file": "02_fold_distribution.png"
+    },
+    {
+      "name": "03_site_distribution",
+      "file": "03_site_distribution.png"
+    },
+    {
+      "name": "04_msi_score_distributions",
+      "file": "04_msi_score_distributions.png"
+    },
+    {
+      "name": "05_project_distribution",
+      "file": "05_project_distribution.png"
+    },
+    {
+      "name": "15_summary_dashboard",
+      "file": "15_summary_dashboard.png"
+    }
+  ]
+}

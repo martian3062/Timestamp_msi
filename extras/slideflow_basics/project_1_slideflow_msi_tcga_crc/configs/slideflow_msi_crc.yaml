@@ -1,0 +1,44 @@
+project_name: TCGA_CRC_MSI_Slideflow
+outcome: msi_status
+positive_label: MSI-H
+negative_label: MSS
+
+paths:
+  slideflow_root: project_1_slideflow_msi_tcga_crc/slideflow_project
+  annotations_csv: project_1_slideflow_msi_tcga_crc/annotations/tcga_crc_msi_annotations.csv
+  slides_dir: project_1_slideflow_msi_tcga_crc/slideflow_project/data/slides
+  bags_dir: project_1_slideflow_msi_tcga_crc/slideflow_project/bags/uni_v2_256px_128um
+  results_dir: project_1_slideflow_msi_tcga_crc/slideflow_project/results
+
+tiling:
+  tile_px: 256
+  tile_um: 128
+  qc: both
+  normalizer: macenko
+
+features:
+  extractor: uni_v2
+  fallback_extractor: uni
+  resize: true
+  mixed_precision: true
+
+cross_validation:
+  folds: 5
+  split_column: fold
+  seed: 310
+  patient_column: patient
+  label_column: msi_status
+
+mil:
+  model: transmil
+  fallback_model: attention_mil
+  epochs: 20
+  lr: 0.0001
+  fit_one_cycle: true
+  attention_heatmaps: true
+  cmap: magma
+  interpolation: null
+
+uncertainty:
+  enabled: true
+  repeated_seeds: [310, 311, 312, 313, 314]

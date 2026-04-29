@@ -1,0 +1,6 @@
+*.svs
+*.svs.part
+project_1_slideflow_msi_tcga_crc/slideflow_project/data/slides/*
+project_1_slideflow_msi_tcga_crc/slideflow_project/tfrecords/*
+project_1_slideflow_msi_tcga_crc/slideflow_project/tiles/*
+project_1_slideflow_msi_tcga_crc/output/models/*
