@@ -35,7 +35,8 @@ type VmAction =
   | "uploadFile"
   | "startDownloader"
   | "startJupyter"
-  | "startTunnel";
+  | "startTunnel"
+  | "studioGuide";
 
 type UploadKind = "annotations" | "manifest";
 
@@ -224,6 +225,53 @@ grep -Eo 'http://127.0.0.1:8888/[^ ]+' logs/jupyter.log 2>/dev/null | tail -n 1 
 `;
 }
 
+function studioGuideCommand() {
+  return `
+set -e
+cd ${shellQuote(vmConfig.projectRoot)}
+source /opt/miniforge3/etc/profile.d/conda.sh
+conda activate /opt/miniforge3/envs/pathology310
+echo "[Studio availability]"
+if command -v slideflow-studio >/dev/null 2>&1; then
+  echo "slideflow-studio: available"
+else
+  echo "slideflow-studio: not found"
+fi
+if python -c "import slideflow" >/dev/null 2>&1; then
+  echo "python -m slideflow.studio: available"
+else
+  echo "python -m slideflow.studio: import failed"
+fi
+echo
+echo "[Project paths]"
+echo "project_root=${vmConfig.projectRoot}"
+echo "slideflow_project=${vmConfig.projectRoot}/slideflow_project"
+echo "slides_dir=${vmConfig.projectRoot}/slideflow_project/data/slides"
+echo
+echo "[Method 1: on VM with X11 forwarding]"
+echo "ssh -Y -i \\"%USERPROFILE%\\\\.ssh\\\\evolet_rsa\\" ${vmConfig.user}@${vmConfig.host}"
+echo "source /opt/miniforge3/etc/profile.d/conda.sh"
+echo "conda activate /opt/miniforge3/envs/pathology310"
+echo "slideflow-studio"
+echo "# fallback"
+echo "python -m slideflow.studio"
+echo
+echo "[Method 2: open project from Python]"
+echo "python - <<'PY'"
+echo "import slideflow as sf"
+echo "project = sf.Project('${vmConfig.projectRoot}/slideflow_project')"
+echo "project"
+echo "PY"
+echo
+echo "[Method 3: open a WSI directly]"
+echo "python - <<'PY'"
+echo "import slideflow as sf"
+echo "wsi = sf.WSI('${vmConfig.projectRoot}/slideflow_project/data/slides/<slide>.svs', tile_px=299, tile_um=302)"
+echo "wsi.view()"
+echo "PY"
+`;
+}
+
 export async function GET() {
   return NextResponse.json({
     ok: true,
@@ -233,7 +281,7 @@ export async function GET() {
       projectRoot: vmConfig.projectRoot,
       keyPath: vmConfig.keyPath,
     },
-    actions: ["status", "listFiles", "startDownloader", "startJupyter", "startTunnel"],
+    actions: ["status", "listFiles", "startDownloader", "startJupyter", "startTunnel", "studioGuide"],
   });
 }
 
@@ -303,6 +351,11 @@ export async function POST(request: Request) {
 
     if (action === "startTunnel") {
       const result = await startLocalTunnel();
+      return NextResponse.json({ ok: true, action, ...result });
+    }
+
+    if (action === "studioGuide") {
+      const result = await runSsh(studioGuideCommand(), 45000);
       return NextResponse.json({ ok: true, action, ...result });
     }
 

@@ -54,9 +54,9 @@ def resolve_remote_dataset_path(config: dict[str, Any], experiment_id: str) -> t
             f"mkdir -p '{target_dir}'",
             (
                 "if command -v gcloud >/dev/null 2>&1; then "
-                f"gcloud storage cp --recursive '{bucket_uri.rstrip('/')}' '{target_dir}'; "
+                f"gcloud storage rsync --recursive '{bucket_uri.rstrip('/')}' '{target_dir}'; "
                 "elif command -v gsutil >/dev/null 2>&1; then "
-                f"gsutil -m cp -r '{bucket_uri.rstrip('/')}'/* '{target_dir}/'; "
+                f"gsutil -m rsync -r '{bucket_uri.rstrip('/')}' '{target_dir}'; "
                 "else echo 'Neither gcloud nor gsutil is installed on the VM.' >&2; exit 1; fi"
             ),
         ]

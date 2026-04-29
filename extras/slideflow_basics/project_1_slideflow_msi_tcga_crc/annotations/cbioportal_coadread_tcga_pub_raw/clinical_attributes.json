@@ -1,0 +1,236 @@
+[
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Copy Number",
+    "description": "Copy Number",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "COPY_NUMBER",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Gene Expression Subtype",
+    "description": "Gene Expression Subtype",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "EXPRESSION_SUBTYPE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Tumor Other Histologic Subtype",
+    "description": "Text to describe a tumor's histologic subtype or mixed diagnosis that is different from previously specified options.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "HISTOLOGICAL_SUBTYPE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Hyper-mutated",
+    "description": "Hyper-mutated.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "HYPERMUTATED",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "iCluster",
+    "description": "ICluster.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ICLUSTER",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Methylation Status",
+    "description": "Yes/No indicator for methylation data",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METHYLATION_STATUS",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Methylation Subtype",
+    "description": "Methylation subtype.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METHYLATION_SUBTYPE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "MLH1 Silencing",
+    "description": "Epigenetic silencing status of MLH1.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MLH1_SILENCING",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "MRNA Data",
+    "description": "MRNA data.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MRNA_DATA",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "MSI Status",
+    "description": "MSI status.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_STATUS",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival in months since initial diagonosis.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "9",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Primary Tumor Pathologic Spread",
+    "description": "Primary tumor pathologic spread.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_TUMOR_PATHOLOGIC_SPREAD",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type of sample (i.e., normal, primary, met, recurrence).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "9",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Sequenced",
+    "description": "Sequenced.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SEQUENCED",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "coadread_tcga_pub"
+  },
+  {
+    "displayName": "Tumor Stage 2009",
+    "description": "Tumor stage 2009.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_STAGE_2009",
+    "studyId": "coadread_tcga_pub"
+  }
+]

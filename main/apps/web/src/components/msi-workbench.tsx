@@ -15,6 +15,7 @@ import {
   FolderOpen,
   HardDrive,
   Layers3,
+  Monitor,
   Moon,
   Play,
   RefreshCw,
@@ -263,6 +264,20 @@ const defaultPatchTrainingForm: PatchTrainingForm = {
   selectedExperimentId: "",
 };
 
+function isGoogleBucketUri(value: string) {
+  return value.trim().startsWith("gs://");
+}
+
+function patchDatasetSourceSummary(form: PatchTrainingForm) {
+  if (form.datasetSource === "google_bucket") {
+    return form.googleBucketUri.trim() || "gs://your-bucket/path/to/patch-dataset";
+  }
+  if (form.datasetSource === "workspace_root") {
+    return `${form.workspaceRoot}\\datasets\\CRC-VAL-HE-7K`;
+  }
+  return form.datasetPath.trim() || "Custom local dataset path";
+}
+
 const commandBlock = `# Linux VM shell
 cd /home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
 pathology310-run python scripts/download_gdc_manifest.py \\
@@ -270,7 +285,12 @@ pathology310-run python scripts/download_gdc_manifest.py \\
   --out slideflow_project/data/slides
 
 # Jupyter / Antigravity kernel
-pathology310-run jupyter lab --ip 127.0.0.1 --port 8888 --no-browser`;
+pathology310-run jupyter lab --ip 127.0.0.1 --port 8888 --no-browser
+
+# Slideflow Studio on VM with X11 forwarding
+slideflow-studio
+# fallback
+python -m slideflow.studio`;
 
 const stageRows = [
   {
@@ -638,6 +658,60 @@ export function MsiWorkbench() {
     void runParallelPipeline();
   }, [approachMode, parallelBusy, parallelMetrics.length, parallelSources.length]);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    let frameId = 0;
+    let targetX = window.innerWidth * 0.5;
+    let targetY = window.innerHeight * 0.35;
+    let cursorX = targetX;
+    let cursorY = targetY;
+    let trailX = targetX;
+    let trailY = targetY;
+
+    const updateVars = () => {
+      cursorX += (targetX - cursorX) * 0.18;
+      cursorY += (targetY - cursorY) * 0.18;
+      trailX += (cursorX - trailX) * 0.08;
+      trailY += (cursorY - trailY) * 0.08;
+
+      const mx = `${(cursorX / window.innerWidth) * 100}%`;
+      const my = `${(cursorY / window.innerHeight) * 100}%`;
+      const trailMx = `${(trailX / window.innerWidth) * 100}%`;
+      const trailMy = `${(trailY / window.innerHeight) * 100}%`;
+      const dx = ((cursorX - window.innerWidth / 2) / window.innerWidth) * 2;
+      const dy = ((cursorY - window.innerHeight / 2) / window.innerHeight) * 2;
+
+      root.style.setProperty("--mx", mx);
+      root.style.setProperty("--my", my);
+      root.style.setProperty("--trail-mx", trailMx);
+      root.style.setProperty("--trail-my", trailMy);
+      root.style.setProperty("--dx", dx.toFixed(4));
+      root.style.setProperty("--dy", dy.toFixed(4));
+
+      frameId = window.requestAnimationFrame(updateVars);
+    };
+
+    const handlePointerMove = (event: PointerEvent) => {
+      targetX = event.clientX;
+      targetY = event.clientY;
+    };
+
+    const handleResize = () => {
+      targetX = window.innerWidth * 0.5;
+      targetY = window.innerHeight * 0.35;
+    };
+
+    frameId = window.requestAnimationFrame(updateVars);
+    window.addEventListener("pointermove", handlePointerMove, { passive: true });
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const missingAnnotationFields = requiredAnnotationFields.filter(
     (field) => !annotationMap[field as keyof typeof annotationMap],
   );
@@ -682,7 +756,8 @@ export function MsiWorkbench() {
       | "uploadFile"
       | "startDownloader"
       | "startJupyter"
-      | "startTunnel",
+      | "startTunnel"
+      | "studioGuide",
     payload: Record<string, string> = {},
   ) {
     setVmBusy(action);
@@ -923,6 +998,15 @@ export function MsiWorkbench() {
     options?: { silent?: boolean },
     payloadOverrides?: Partial<Record<string, unknown>>,
   ) {
+    if (
+      (action === "train" || action === "triad") &&
+      patchTrainingForm.datasetSource === "google_bucket" &&
+      !isGoogleBucketUri(patchTrainingForm.googleBucketUri)
+    ) {
+      setApproach2Error("Enter a valid Google bucket URI like gs://my-bucket/path before starting training.");
+      return;
+    }
+
     setApproach2Busy(action);
     if (!options?.silent) {
       setApproach2Error("");
@@ -995,12 +1079,16 @@ export function MsiWorkbench() {
         );
       } else if (action === "train") {
         setApproach2Message(
-          `Started ${patchTrainingForm.approachLabel} patch run ${data.experiment_id ?? ""} using ${patchTrainingForm.datasetSource === "workspace_root" ? patchTrainingForm.workspaceRoot : patchTrainingForm.datasetPath}.`,
+          patchTrainingForm.datasetSource === "google_bucket"
+            ? `Started ${patchTrainingForm.approachLabel} VM patch run ${data.experiment_id ?? ""} from ${patchTrainingForm.googleBucketUri}. The VM will stage the bucket dataset into a per-run folder and train from there.`
+            : `Started ${patchTrainingForm.approachLabel} patch run ${data.experiment_id ?? ""} using ${patchDatasetSourceSummary(patchTrainingForm)}.`,
         );
         void runApproach2Action("experiments", { silent: true });
       } else if (action === "triad") {
         setApproach2Message(
-          `Queued full complex triad on the VM. Experiments: ${(data.experiment_ids ?? []).join(", ")}`,
+          patchTrainingForm.datasetSource === "google_bucket"
+            ? `Queued full complex triad on the VM from ${patchTrainingForm.googleBucketUri}. Experiments: ${(data.experiment_ids ?? []).join(", ")}`
+            : `Queued full complex triad on the VM. Experiments: ${(data.experiment_ids ?? []).join(", ")}`,
         );
         void runApproach2Action("experiments", { silent: true });
       } else {
@@ -1117,6 +1205,7 @@ export function MsiWorkbench() {
       />
       <div className="snow-video-veil" />
       <div className="mouse-aura" />
+      <div className="sky-sparkle-field" />
       {isDark ? (
         <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.055),transparent_42%),linear-gradient(245deg,rgba(148,163,184,0.095),transparent_36%),radial-gradient(circle_at_50%_-10%,rgba(226,232,240,0.08),transparent_34%)]" />
       ) : (
@@ -1190,7 +1279,7 @@ export function MsiWorkbench() {
                           : "Artifact metrics"}
                   </span>
                 </div>
-                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] sm:text-7xl lg:text-6xl 2xl:text-8xl" style={{ color: "var(--heading)" }}>
+                <h1 className="hover-sentence max-w-4xl text-5xl font-semibold leading-[0.94] sm:text-7xl lg:text-6xl 2xl:text-8xl" style={{ color: "var(--heading)" }}>
                   {approachMode === "approach-1"
                     ? "MSI slide intelligence, live from the VM."
                     : approachMode === "approach-2"
@@ -1199,7 +1288,7 @@ export function MsiWorkbench() {
                         ? "Monte Carlo as a dedicated validation approach."
                         : "Parallel artifact metrics, only when runs exist."}
                 </h1>
-                <p className="mt-6 max-w-2xl text-base leading-8 sm:text-lg" style={{ color: "var(--body)" }}>
+                <p className="hover-sentence mt-6 max-w-2xl text-base leading-8 sm:text-lg" style={{ color: "var(--body)" }}>
                   {approachMode === "approach-1"
                     ? "Upload cohort files, check fold balance, inspect the remote slide project, and launch Jupyter without leaving the browser."
                     : approachMode === "approach-2"
@@ -1356,6 +1445,13 @@ export function MsiWorkbench() {
                   label="Open tunnel"
                   onClick={() => runVmAction("startTunnel")}
                 />
+                <ActionButton
+                  busy={vmBusy === "studioGuide"}
+                  disabled={Boolean(vmBusy)}
+                  icon={<Monitor className="h-4 w-4" />}
+                  label="Studio guide"
+                  onClick={() => runVmAction("studioGuide")}
+                />
                 <a
                   className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-semibold text-[#ecfff8] transition hover:border-[#e5e7eb]/50 hover:bg-[#e5e7eb]/10"
                   href="http://127.0.0.1:8888"
@@ -1376,6 +1472,10 @@ export function MsiWorkbench() {
                 <pre className="max-h-80 min-h-52 overflow-auto rounded-3xl border border-[#3a404a] bg-[#0b0d10] p-4 text-xs leading-5 text-[#edf1f7] shadow-inner shadow-black/70">
                   {vmError || vmOutput}
                 </pre>
+                <p className="mt-3 text-sm leading-6" style={{ color: "var(--muted)" }}>
+                  Slideflow Studio is integrated here as a launch guide because it is a desktop GUI. Use the
+                  `Studio guide` button to print the exact VM/X11 commands and project paths for this repo.
+                </p>
               </div>
 
               <div>
@@ -1857,39 +1957,45 @@ export function MsiWorkbench() {
                     }))
                   }
                 />
-                <FormField
-                  label="Workspace root"
-                  value={patchTrainingForm.workspaceRoot}
-                  onChange={(value) =>
-                    setPatchTrainingForm((current) => ({
-                      ...current,
-                      workspaceRoot: value,
-                    }))
-                  }
-                  className="sm:col-span-2"
-                />
-                <FormField
-                  label="Dataset path"
-                  value={patchTrainingForm.datasetPath}
-                  onChange={(value) =>
-                    setPatchTrainingForm((current) => ({
-                      ...current,
-                      datasetPath: value,
-                    }))
-                  }
-                  className="sm:col-span-2"
-                />
-                <FormField
-                  label="Google bucket"
-                  value={patchTrainingForm.googleBucketUri}
-                  onChange={(value) =>
-                    setPatchTrainingForm((current) => ({
-                      ...current,
-                      googleBucketUri: value,
-                    }))
-                  }
-                  className="sm:col-span-2"
-                />
+                {patchTrainingForm.datasetSource === "workspace_root" ? (
+                  <FormField
+                    label="Workspace root"
+                    value={patchTrainingForm.workspaceRoot}
+                    onChange={(value) =>
+                      setPatchTrainingForm((current) => ({
+                        ...current,
+                        workspaceRoot: value,
+                      }))
+                    }
+                    className="sm:col-span-2"
+                  />
+                ) : null}
+                {patchTrainingForm.datasetSource !== "google_bucket" ? (
+                  <FormField
+                    label="Dataset path"
+                    value={patchTrainingForm.datasetPath}
+                    onChange={(value) =>
+                      setPatchTrainingForm((current) => ({
+                        ...current,
+                        datasetPath: value,
+                      }))
+                    }
+                    className="sm:col-span-2"
+                  />
+                ) : null}
+                {patchTrainingForm.datasetSource === "google_bucket" ? (
+                  <FormField
+                    label="Google bucket"
+                    value={patchTrainingForm.googleBucketUri}
+                    onChange={(value) =>
+                      setPatchTrainingForm((current) => ({
+                        ...current,
+                        googleBucketUri: value,
+                      }))
+                    }
+                    className="sm:col-span-2"
+                  />
+                ) : null}
                 <FormField
                   label="Epochs"
                   inputMode="numeric"
@@ -1955,9 +2061,20 @@ export function MsiWorkbench() {
                   }
                 />
               </div>
-              <p className="mt-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
-                This triad runner treats `E:\4basecare-MSI` as the workspace root and uses the full nine-folder CRC patch tree under `CRC-VAL-HE-7K`. If you switch to `google_bucket`, the VM will try to stage a `gs://...` dataset before training.
-              </p>
+              <div className="mt-4 rounded-3xl border p-4 text-sm leading-6" style={{ borderColor: "var(--card-border)", background: "var(--btn-bg)", color: "var(--muted)" }}>
+                <p>
+                  Active dataset source: `{patchTrainingForm.datasetSource}` {"->"} `{patchDatasetSourceSummary(patchTrainingForm)}`.
+                </p>
+                {patchTrainingForm.datasetSource === "google_bucket" ? (
+                  <p className="mt-2">
+                    Paste a bucket URI like `gs://my-bucket/msi/CRC-VAL-HE-7K`, then use `Run selected preset`, `Run patch training`, or `Run full triad`. Bucket-backed patch runs are executed on the VM and staged into `datasets/staged_&lt;experiment_id&gt;` before training starts.
+                  </p>
+                ) : (
+                  <p className="mt-2">
+                    This runner defaults to the nine-folder CRC patch tree under `E:\4basecare-MSI\datasets\CRC-VAL-HE-7K`. Use `custom_path` if your patch dataset lives somewhere else on the local workstation.
+                  </p>
+                )}
+              </div>
             </div>
 
             <div className="grid gap-4">

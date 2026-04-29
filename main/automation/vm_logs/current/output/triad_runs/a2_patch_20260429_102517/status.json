@@ -1,0 +1,184 @@
+{
+  "status": "completed",
+  "dataset_path": "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc/datasets/CRC-VAL-HE-7K",
+  "device": "cuda",
+  "class_names": [
+    "ADI",
+    "BACK",
+    "DEB",
+    "LYM",
+    "MUC",
+    "MUS",
+    "NORM",
+    "STR",
+    "TUM"
+  ],
+  "class_distribution": {
+    "ADI": 1338,
+    "BACK": 847,
+    "DEB": 339,
+    "LYM": 634,
+    "MUC": 1035,
+    "MUS": 592,
+    "NORM": 741,
+    "STR": 421,
+    "TUM": 1233
+  },
+  "total_images": 7180,
+  "train_images": 5744,
+  "val_images": 1436,
+  "epochs": 10,
+  "batch_size": 32,
+  "backbone": "resnet18",
+  "image_size": 224,
+  "learning_rate": 0.0001,
+  "best_val_accuracy": 0.9979108635097493,
+  "final_val_f1_macro": 0.9954512126046998,
+  "val_auroc_ovr_macro": 0.9999968280797257,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.18962723603031098,
+      "val_loss": 0.05219172230275727,
+      "val_accuracy": 0.9853760445682451,
+      "val_f1_macro": 0.9768389337402065
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.040530942315572985,
+      "val_loss": 0.020773906705636416,
+      "val_accuracy": 0.9944289693593314,
+      "val_f1_macro": 0.9939483684856574
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0312501038878658,
+      "val_loss": 0.03142559929416206,
+      "val_accuracy": 0.9888579387186629,
+      "val_f1_macro": 0.9841630854888272
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.023730739344087814,
+      "val_loss": 0.008825617921499739,
+      "val_accuracy": 0.9979108635097493,
+      "val_f1_macro": 0.9968576776120681
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.025460436887660358,
+      "val_loss": 0.020456548350860564,
+      "val_accuracy": 0.9930362116991643,
+      "val_f1_macro": 0.9921087565235519
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.01142841517992712,
+      "val_loss": 0.005685430079760824,
+      "val_accuracy": 0.9979108635097493,
+      "val_f1_macro": 0.9971940453841709
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.020875067394249488,
+      "val_loss": 0.01884281810653243,
+      "val_accuracy": 0.9923398328690808,
+      "val_f1_macro": 0.991189814197925
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.02864157934112132,
+      "val_loss": 0.02206592890758244,
+      "val_accuracy": 0.9937325905292479,
+      "val_f1_macro": 0.9903091811815806
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.01758487879419907,
+      "val_loss": 0.017275231301331826,
+      "val_accuracy": 0.9944289693593314,
+      "val_f1_macro": 0.9911180962769461
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.013356912935776559,
+      "val_loss": 0.0089565483948234,
+      "val_accuracy": 0.9972144846796658,
+      "val_f1_macro": 0.9954512126046998
+    }
+  ],
+  "classification_report": {
+    "ADI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 233.0
+    },
+    "BACK": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 184.0
+    },
+    "DEB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 79.0
+    },
+    "LYM": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 141.0
+    },
+    "MUC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 223.0
+    },
+    "MUS": {
+      "precision": 0.9838709677419355,
+      "recall": 1.0,
+      "f1-score": 0.991869918699187,
+      "support": 122.0
+    },
+    "NORM": {
+      "precision": 0.9925373134328358,
+      "recall": 1.0,
+      "f1-score": 0.9962546816479401,
+      "support": 133.0
+    },
+    "STR": {
+      "precision": 1.0,
+      "recall": 0.9473684210526315,
+      "f1-score": 0.972972972972973,
+      "support": 76.0
+    },
+    "TUM": {
+      "precision": 0.9959349593495935,
+      "recall": 1.0,
+      "f1-score": 0.9979633401221996,
+      "support": 245.0
+    },
+    "accuracy": 0.9972144846796658,
+    "macro avg": {
+      "precision": 0.9969270267249295,
+      "recall": 0.9941520467836258,
+      "f1-score": 0.9954512126046998,
+      "support": 1436.0
+    },
+    "weighted avg": {
+      "precision": 0.9972449761780875,
+      "recall": 0.9972144846796658,
+      "f1-score": 0.9971845174208647,
+      "support": 1436.0
+    }
+  },
+  "artifacts": {
+    "model_path": "output/triad_runs/a2_patch_20260429_102517/best_model.pt",
+    "metrics_path": "output/triad_runs/a2_patch_20260429_102517/metrics.json",
+    "status_path": "output/triad_runs/a2_patch_20260429_102517/status.json"
+  }
+}

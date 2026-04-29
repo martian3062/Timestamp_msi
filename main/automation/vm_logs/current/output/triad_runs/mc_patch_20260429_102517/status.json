@@ -1,0 +1,142 @@
+{
+  "status": "completed",
+  "dataset_path": "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc/datasets/CRC-VAL-HE-7K",
+  "device": "cuda",
+  "class_names": [
+    "ADI",
+    "BACK",
+    "DEB",
+    "LYM",
+    "MUC",
+    "MUS",
+    "NORM",
+    "STR",
+    "TUM"
+  ],
+  "class_distribution": {
+    "ADI": 1338,
+    "BACK": 847,
+    "DEB": 339,
+    "LYM": 634,
+    "MUC": 1035,
+    "MUS": 592,
+    "NORM": 741,
+    "STR": 421,
+    "TUM": 1233
+  },
+  "total_images": 7180,
+  "train_images": 5744,
+  "val_images": 1436,
+  "epochs": 4,
+  "batch_size": 32,
+  "backbone": "resnet34",
+  "image_size": 224,
+  "learning_rate": 0.0001,
+  "best_val_accuracy": 0.9916434540389972,
+  "final_val_f1_macro": 0.9892939489593273,
+  "val_auroc_ovr_macro": 0.9999626804653821,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.17130295283739613,
+      "val_loss": 0.05609736832320524,
+      "val_accuracy": 0.9805013927576601,
+      "val_f1_macro": 0.9704794712870662
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.06219866779998651,
+      "val_loss": 0.05160165240619757,
+      "val_accuracy": 0.9853760445682451,
+      "val_f1_macro": 0.9795932563588354
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04369319954427857,
+      "val_loss": 0.02077513889598979,
+      "val_accuracy": 0.9909470752089137,
+      "val_f1_macro": 0.9880471430136664
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.03820983856666086,
+      "val_loss": 0.01938553765924611,
+      "val_accuracy": 0.9916434540389972,
+      "val_f1_macro": 0.9892939489593273
+    }
+  ],
+  "classification_report": {
+    "ADI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 270.0
+    },
+    "BACK": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 153.0
+    },
+    "DEB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 64.0
+    },
+    "LYM": {
+      "precision": 0.9833333333333333,
+      "recall": 1.0,
+      "f1-score": 0.9915966386554622,
+      "support": 118.0
+    },
+    "MUC": {
+      "precision": 0.9953488372093023,
+      "recall": 1.0,
+      "f1-score": 0.9976689976689976,
+      "support": 214.0
+    },
+    "MUS": {
+      "precision": 0.9924242424242424,
+      "recall": 0.9703703703703703,
+      "f1-score": 0.9812734082397003,
+      "support": 135.0
+    },
+    "NORM": {
+      "precision": 0.9785714285714285,
+      "recall": 0.9927536231884058,
+      "f1-score": 0.9856115107913669,
+      "support": 138.0
+    },
+    "STR": {
+      "precision": 0.9397590361445783,
+      "recall": 0.975,
+      "f1-score": 0.9570552147239264,
+      "support": 80.0
+    },
+    "TUM": {
+      "precision": 1.0,
+      "recall": 0.9810606060606061,
+      "f1-score": 0.9904397705544933,
+      "support": 264.0
+    },
+    "accuracy": 0.9916434540389972,
+    "macro avg": {
+      "precision": 0.9877152086314318,
+      "recall": 0.9910205110688202,
+      "f1-score": 0.9892939489593273,
+      "support": 1436.0
+    },
+    "weighted avg": {
+      "precision": 0.9918097752491785,
+      "recall": 0.9916434540389972,
+      "f1-score": 0.9916687911339683,
+      "support": 1436.0
+    }
+  },
+  "artifacts": {
+    "model_path": "output/triad_runs/mc_patch_20260429_102517/best_model.pt",
+    "metrics_path": "output/triad_runs/mc_patch_20260429_102517/metrics.json",
+    "status_path": "output/triad_runs/mc_patch_20260429_102517/status.json"
+  }
+}

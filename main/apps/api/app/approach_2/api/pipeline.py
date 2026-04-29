@@ -39,7 +39,11 @@ def trigger_mil_training(req: schemas.TrainMilRequest, background_tasks: Backgro
     db.refresh(new_exp)
     
     if req.training_mode == "patch_classification":
-        background_tasks.add_task(patch_trainer.run_patch_training, exp_id, req.model_dump())
+        if req.dataset_source == "google_bucket":
+            spec = triad_runtime.build_single_patch_spec(req.model_dump(), exp_id)
+            background_tasks.add_task(triad_runtime.run_single_vm_patch_experiment, spec)
+        else:
+            background_tasks.add_task(patch_trainer.run_patch_training, exp_id, req.model_dump())
     else:
         background_tasks.add_task(mil_trainer.run_mil_training, exp_id, req.model_dump())
     

@@ -158,19 +158,15 @@ def collect_parallel_records() -> tuple[dict[str, list[dict[str, Any]]], list[Pa
     vm_rows, vm_status = _collect_vm_metric_rows()
     sources.extend(vm_status)
     for row in vm_rows:
-        trial_id = str(row.get("trial_id", ""))
-        metrics = _record_metrics(row)
-        if trial_id.startswith("mc_") or _metric_value(metrics, ("stability_score", "stable_score")) is not None:
-            records["MonteCarlo"].append(row)
-        else:
-            records["Approach1"].append(row)
+        label = _classify_vm_record(row)
+        records[label].append(row)
 
     vm_counts = {source.name: source.records_found for source in sources}
     sources = [
         ParallelSourceStatus(
             name=label,
             ok=True,
-            source="VM automation/results + SQL experiments.metrics",
+            source="VM automation/results + output/triad_runs + SQL experiments.metrics",
             records_found=vm_counts.get(label, 0) + sql_counts.get(label, 0),
         )
         for label in ("Approach1", "Approach2", "MonteCarlo")
@@ -206,16 +202,23 @@ import json
 from pathlib import Path
 
 rows = []
-for path in sorted(Path("automation/results").glob("*/metrics.json")):
-    try:
-        data = json.loads(path.read_text())
-    except Exception:
-        continue
-    rows.append({
-        "trial_id": data.get("trial_id", path.parent.name),
-        "path": str(path),
-        "metrics": data,
-    })
+roots = [
+    Path("automation/results"),
+    Path("output/triad_runs"),
+]
+
+for root in roots:
+    for path in sorted(root.glob("*/metrics.json")):
+        try:
+            data = json.loads(path.read_text())
+        except Exception:
+            continue
+        rows.append({
+            "trial_id": data.get("trial_id", path.parent.name),
+            "path": str(path),
+            "metrics": data,
+            "created_at": path.stat().st_mtime,
+        })
 
 print(json.dumps({"rows": rows}))
 PY
@@ -227,41 +230,47 @@ PY
             ParallelSourceStatus(
                 name="Approach1",
                 ok=False,
-                source="VM automation/results/*/metrics.json",
+                source="VM automation/results/*/metrics.json + output/triad_runs/*/metrics.json",
+                message=message,
+            ),
+            ParallelSourceStatus(
+                name="Approach2",
+                ok=False,
+                source="VM automation/results/*/metrics.json + output/triad_runs/*/metrics.json",
                 message=message,
             ),
             ParallelSourceStatus(
                 name="MonteCarlo",
                 ok=False,
-                source="VM automation/results/*/metrics.json",
+                source="VM automation/results/*/metrics.json + output/triad_runs/*/metrics.json",
                 message=message,
             ),
         ]
         return [], status
 
     rows = _parse_vm_rows(result.stdout)
-    approach1_count = 0
-    monte_carlo_count = 0
+    counts = {"Approach1": 0, "Approach2": 0, "MonteCarlo": 0}
     for row in rows:
-        metrics = _record_metrics(row)
-        trial_id = str(row.get("trial_id", ""))
-        if trial_id.startswith("mc_") or _metric_value(metrics, ("stability_score", "stable_score")) is not None:
-            monte_carlo_count += 1
-        else:
-            approach1_count += 1
+        counts[_classify_vm_record(row)] += 1
 
     return rows, [
         ParallelSourceStatus(
             name="Approach1",
             ok=True,
-            source="VM automation/results/*/metrics.json",
-            records_found=approach1_count,
+            source="VM automation/results/*/metrics.json + output/triad_runs/*/metrics.json",
+            records_found=counts["Approach1"],
+        ),
+        ParallelSourceStatus(
+            name="Approach2",
+            ok=True,
+            source="VM automation/results/*/metrics.json + output/triad_runs/*/metrics.json",
+            records_found=counts["Approach2"],
         ),
         ParallelSourceStatus(
             name="MonteCarlo",
             ok=True,
-            source="VM automation/results/*/metrics.json",
-            records_found=monte_carlo_count,
+            source="VM automation/results/*/metrics.json + output/triad_runs/*/metrics.json",
+            records_found=counts["MonteCarlo"],
         ),
     ]
 
@@ -313,6 +322,36 @@ def _parse_vm_rows(stdout: str) -> list[dict[str, Any]]:
     if not isinstance(rows, list):
         return []
     return [row for row in rows if isinstance(row, dict)]
+
+
+def _classify_vm_record(row: dict[str, Any]) -> str:
+    metrics = _record_metrics(row)
+    trial_id = str(row.get("trial_id", "")).lower()
+    path = str(row.get("path", "")).lower()
+    approach_label = str(metrics.get("approach_label", "")).lower()
+
+    if (
+        trial_id.startswith("mc_")
+        or "mc_" in trial_id
+        or "mc_" in path
+        or "monte" in trial_id
+        or "monte" in path
+        or "monte" in approach_label
+        or _metric_value(metrics, ("stability_score", "stable_score")) is not None
+    ):
+        return "MonteCarlo"
+
+    if (
+        trial_id.startswith("a2_")
+        or "/a2_" in path
+        or "\\a2_" in path
+        or "approach2" in approach_label
+        or "approach_2" in approach_label
+        or str(row.get("approach_label", "")) == "Approach2"
+    ):
+        return "Approach2"
+
+    return "Approach1"
 
 
 def _select_best_record(rows: list[dict[str, Any]]) -> dict[str, Any] | None:

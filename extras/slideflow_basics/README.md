@@ -8,6 +8,7 @@ This README documents my personal `pathology310` environment on the pathology VM
 | --- | --- | --- |
 | Single-slide morphology clustering | `single_slide_morphology_clustering.ipynb` | Beginner WSI tiling, feature extraction, UMAP, and clustering. |
 | Project 1 - Slideflow MSI TCGA-CRC | `slideflow_msi_tcga_crc_pipeline.ipynb` | Weakly supervised MSI-H vs MSS classifier with open TCGA/GDC cohort creation, patient-level CV, and attention heatmaps. |
+| Slideflow Studio Learning | `mini_project_single_svs_learning/README.md` | Beginner-friendly one-slide workflow for SVS preview improvement, tissue QC, and Slideflow-ready inspection. |
 
 ## VM Access
 

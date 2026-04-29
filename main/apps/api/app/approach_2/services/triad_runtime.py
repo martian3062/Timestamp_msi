@@ -74,6 +74,19 @@ def build_triad_specs(request: dict[str, Any]) -> list[dict[str, Any]]:
     return specs
 
 
+def build_single_patch_spec(request: dict[str, Any], experiment_id: str) -> dict[str, Any]:
+    spec = dict(request)
+    spec.update(
+        {
+            "experiment_id": experiment_id,
+            "training_mode": "patch_classification",
+            "dataset_path": str(request.get("dataset_path") or DEFAULT_LOCAL_DATASET_PATH),
+            "workspace_root": str(request.get("workspace_root") or DEFAULT_WORKSPACE_ROOT),
+        }
+    )
+    return spec
+
+
 def enqueue_triad_experiments(specs: list[dict[str, Any]]) -> list[models.Experiment]:
     session = SessionLocal()
     try:
@@ -100,6 +113,10 @@ def run_crc_triad_bundle(specs: list[dict[str, Any]]) -> None:
     for spec in specs:
         run_vm_patch_experiment(spec)
     _upsert_monte_carlo_summary(specs)
+
+
+def run_single_vm_patch_experiment(spec: dict[str, Any]) -> None:
+    run_vm_patch_experiment(spec)
 
 
 def run_vm_patch_experiment(spec: dict[str, Any]) -> None:

@@ -1,0 +1,142 @@
+{
+  "status": "completed",
+  "dataset_path": "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc/datasets/CRC-VAL-HE-7K",
+  "device": "cuda",
+  "class_names": [
+    "ADI",
+    "BACK",
+    "DEB",
+    "LYM",
+    "MUC",
+    "MUS",
+    "NORM",
+    "STR",
+    "TUM"
+  ],
+  "class_distribution": {
+    "ADI": 1338,
+    "BACK": 847,
+    "DEB": 339,
+    "LYM": 634,
+    "MUC": 1035,
+    "MUS": 592,
+    "NORM": 741,
+    "STR": 421,
+    "TUM": 1233
+  },
+  "total_images": 7180,
+  "train_images": 5744,
+  "val_images": 1436,
+  "epochs": 4,
+  "batch_size": 32,
+  "backbone": "resnet18",
+  "image_size": 224,
+  "learning_rate": 0.0001,
+  "best_val_accuracy": 0.9923398328690808,
+  "final_val_f1_macro": 0.9873302974236875,
+  "val_auroc_ovr_macro": 0.9999192475004066,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.19734013246626575,
+      "val_loss": 0.022426694315082516,
+      "val_accuracy": 0.9923398328690808,
+      "val_f1_macro": 0.9899899887901713
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.051974224694550535,
+      "val_loss": 0.03630211928854165,
+      "val_accuracy": 0.9923398328690808,
+      "val_f1_macro": 0.9888875331311113
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.03933273629845745,
+      "val_loss": 0.05378275008192467,
+      "val_accuracy": 0.9756267409470752,
+      "val_f1_macro": 0.9714248517518573
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.03272542171082965,
+      "val_loss": 0.023026205847055385,
+      "val_accuracy": 0.9909470752089137,
+      "val_f1_macro": 0.9873302974236875
+    }
+  ],
+  "classification_report": {
+    "ADI": {
+      "precision": 0.996309963099631,
+      "recall": 1.0,
+      "f1-score": 0.9981515711645101,
+      "support": 270.0
+    },
+    "BACK": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 153.0
+    },
+    "DEB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 64.0
+    },
+    "LYM": {
+      "precision": 0.9915966386554622,
+      "recall": 1.0,
+      "f1-score": 0.9957805907172996,
+      "support": 118.0
+    },
+    "MUC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 214.0
+    },
+    "MUS": {
+      "precision": 0.9571428571428572,
+      "recall": 0.9925925925925926,
+      "f1-score": 0.9745454545454545,
+      "support": 135.0
+    },
+    "NORM": {
+      "precision": 1.0,
+      "recall": 0.9855072463768116,
+      "f1-score": 0.9927007299270073,
+      "support": 138.0
+    },
+    "STR": {
+      "precision": 0.9861111111111112,
+      "recall": 0.8875,
+      "f1-score": 0.9342105263157895,
+      "support": 80.0
+    },
+    "TUM": {
+      "precision": 0.9850187265917603,
+      "recall": 0.9962121212121212,
+      "f1-score": 0.9905838041431262,
+      "support": 264.0
+    },
+    "accuracy": 0.9909470752089137,
+    "macro avg": {
+      "precision": 0.9906865885112026,
+      "recall": 0.9846457733535028,
+      "f1-score": 0.9873302974236875,
+      "support": 1436.0
+    },
+    "weighted avg": {
+      "precision": 0.9910586433298358,
+      "recall": 0.9909470752089137,
+      "f1-score": 0.9908149981975424,
+      "support": 1436.0
+    }
+  },
+  "artifacts": {
+    "model_path": "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc/output/triad_runs/1be1cf85/best_model.pt",
+    "metrics_path": "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc/output/triad_runs/1be1cf85/metrics.json",
+    "status_path": "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc/output/triad_runs/1be1cf85/status.json"
+  }
+}
