@@ -1,4 +1,4 @@
-# Slideflow Studio Learning
+# Project 9 - Slideflow Studio Learning Companion
 
 This mini project is for learning with one open-source `.svs` whole-slide image before jumping into the larger MSI training pipeline.
 
@@ -22,7 +22,7 @@ Use this when you want to:
 ## Folder Layout
 
 ```text
-mini_project_single_svs_learning/
+project_9_slideflow_studio_learning_companion/
   README.md
   slideflow_studio_learning.ipynb
   scripts/
@@ -49,6 +49,21 @@ That notebook now combines the core learning flow in one place:
 - `import slideflow as sf`
 - `sf.WSI(...).view()` example code
 - exact Slideflow Studio launch commands
+
+## VM SSH
+
+From Windows Command Prompt:
+
+```cmd
+ssh -i "%USERPROFILE%\.ssh\evolet_rsa" pardeep@34.59.145.240
+```
+
+After login:
+
+```bash
+source /opt/miniforge3/etc/profile.d/conda.sh
+conda activate /opt/miniforge3/envs/pathology310
+```
 
 ## Step 1 - Prepare A Slide
 

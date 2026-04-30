@@ -8,7 +8,10 @@ This README documents my personal `pathology310` environment on the pathology VM
 | --- | --- | --- |
 | Single-slide morphology clustering | `single_slide_morphology_clustering.ipynb` | Beginner WSI tiling, feature extraction, UMAP, and clustering. |
 | Project 1 - Slideflow MSI TCGA-CRC | `slideflow_msi_tcga_crc_pipeline.ipynb` | Weakly supervised MSI-H vs MSS classifier with open TCGA/GDC cohort creation, patient-level CV, and attention heatmaps. |
-| Slideflow Studio Learning | `mini_project_single_svs_learning/README.md` | Beginner-friendly one-slide workflow for SVS preview improvement, tissue QC, and Slideflow-ready inspection. |
+| Project 1 - Tissue QC To Patch Classification | `project_1_tissue_qc_to_patch_classification/README.md` | Use LazySlide for tissue QC first, then Slideflow for patch extraction and classification. |
+| Project 2 - Smart ROI Mining Before Training | `project_2_smart_roi_mining_before_training/README.md` | Mine tissue-rich ROIs with LazySlide before feeding data into Slideflow training. |
+| Project 6 - Explainable MSI Mini Pipeline | `project_6_explainable_msi_mini_pipeline/README.md` | Connect LazySlide tissue understanding with Slideflow MSI prediction and heatmap interpretation. |
+| Project 9 - Slideflow Studio Learning Companion | `project_9_slideflow_studio_learning_companion/README.md` | Beginner-friendly one-slide workflow for SVS preview improvement, Slideflow Studio exploration, and `sf.WSI(...).view()` learning. |
 
 ## VM Access
 

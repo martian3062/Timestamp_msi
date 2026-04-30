@@ -88,7 +88,7 @@ jupyter lab --no-browser --ip=0.0.0.0 --port=8888
 On your local Windows machine, open another PowerShell window and run:
 
 ```powershell
-ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" -L 8888:localhost:8888 pardeep@34.55.157.128
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" -L 8888:localhost:8888 pardeep@34.59.145.240
 ```
 
 Then open this in your browser:
@@ -112,7 +112,7 @@ streamlit run app.py --server.address 0.0.0.0 --server.port 8501
 On your local Windows machine:
 
 ```powershell
-ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" -L 8501:localhost:8501 pardeep@34.55.157.128
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" -L 8501:localhost:8501 pardeep@34.59.145.240
 ```
 
 Open:
@@ -140,7 +140,7 @@ python app.py
 On your local Windows machine:
 
 ```powershell
-ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" -L 7860:localhost:7860 pardeep@34.55.157.128
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" -L 7860:localhost:7860 pardeep@34.59.145.240
 ```
 
 Open:
@@ -255,7 +255,7 @@ conda activate /opt/miniforge3/envs/pathology310
 ## 13. Quick Start
 
 ```bash
-ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.55.157.128
+ssh -i "$env:USERPROFILE\.ssh\evolet_rsa" pardeep@34.59.145.240
 
 source /opt/miniforge3/etc/profile.d/conda.sh
 conda activate /opt/miniforge3/envs/pathology310
