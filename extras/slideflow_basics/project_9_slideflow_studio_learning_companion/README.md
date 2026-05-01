@@ -67,6 +67,22 @@ conda activate /opt/miniforge3/envs/pathology310
 
 ## Step 1 - Prepare A Slide
 
+The notebook can now start from an open-source direct slide URL instead of only a local manual path.
+
+Inside `slideflow_studio_learning.ipynb`, set:
+
+```python
+SAMPLE_SVS_URL = "https://.../your_open_slide.svs"
+```
+
+Then the notebook downloads the slide into:
+
+```text
+./data/demo_slide.svs
+```
+
+If you already have a local slide, leave `SAMPLE_SVS_URL = ""` and place the file there, or change `LOCAL_SLIDE_NAME`.
+
 Run:
 
 ```bash

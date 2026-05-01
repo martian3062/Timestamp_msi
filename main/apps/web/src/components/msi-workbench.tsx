@@ -242,6 +242,28 @@ type UploadPredictionResult = {
   model_path?: string | null;
 };
 
+type TCGASlideTriadLaunchResponse = {
+  ok: boolean;
+  message: string;
+  bundle_id: string;
+  experiment_ids: string[];
+  remote_status_path: string;
+};
+
+type TCGASlideTriadStatusPayload = {
+  ok: boolean;
+  bundle_id: string;
+  remote_status_path: string;
+  status: Record<string, unknown>;
+};
+
+type LatestTCGASlideTriadStatusPayload = {
+  ok: boolean;
+  bundle_id: string;
+  remote_status_path: string;
+  status: Record<string, unknown>;
+};
+
 const requiredAnnotationFields = ["patient", "slide", "label", "fold"];
 const requiredManifestFields = ["id", "filename"];
 const automationApiBase =
@@ -263,6 +285,23 @@ const defaultPatchTrainingForm: PatchTrainingForm = {
   numWorkers: 0,
   selectedExperimentId: "",
 };
+
+const tcgaSlideTriadDefaults = {
+  experiment_name: "tcga-coad-20-slide-triad",
+  bucket_uri: "gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD",
+  slide_limit: 18,
+  n_folds: 3,
+  preferred_slide_pattern: "DX",
+  preferred_exact_suffix: "DX1",
+  annotations_csv: "annotations/tcga_coad_bucket_annotations_pub.csv",
+  feature_extractor: "virchow,uni_v2,uni,phikon,ctranspath,resnet50_imagenet",
+  tile_px: 256,
+  tile_um: 128,
+  max_parallel_approaches: 3,
+} as const;
+
+const tcgaBundleStorageKey = "timestamp-msi-latest-tcga-bundle";
+const tcgaBundleRefreshSeconds = 30;
 
 function isGoogleBucketUri(value: string) {
   return value.trim().startsWith("gs://");
@@ -457,6 +496,10 @@ export function MsiWorkbench() {
   );
   const [predictionFile, setPredictionFile] = useState<File>();
   const [predictionResult, setPredictionResult] = useState<UploadPredictionResult>();
+  const [tcgaSlideBundleId, setTcgaSlideBundleId] = useState("");
+  const [tcgaSlideBundleStatus, setTcgaSlideBundleStatus] = useState<Record<string, unknown>>();
+  const [tcgaSlideBundlePath, setTcgaSlideBundlePath] = useState("");
+  const [tcgaBundleRefreshIn, setTcgaBundleRefreshIn] = useState(tcgaBundleRefreshSeconds);
 
   /* Parallel state */
   const [parallelMetrics, setParallelMetrics] = useState<ParallelMetric[]>([]);
@@ -515,6 +558,64 @@ export function MsiWorkbench() {
       return acc;
     }, {});
   }, [approach2Experiments]);
+  const tcgaBundleState = String(tcgaSlideBundleStatus?.state ?? "");
+  const tcgaBundleMatchedSlides = numericMetric(tcgaSlideBundleStatus?.matched_slide_count);
+  const tcgaBundleSelectedSlides = numericMetric(tcgaSlideBundleStatus?.selected_slide_count);
+  const tcgaBundleDownloadedSlides = numericMetric(tcgaSlideBundleStatus?.downloaded_slide_count);
+  const tcgaBundleTfrecordFiles = numericMetric(tcgaSlideBundleStatus?.tfrecord_files);
+  const tcgaBundleTfrecordBytes = numericMetric(tcgaSlideBundleStatus?.tfrecord_bytes);
+  const tcgaBundleFeatureExtractor = readableMetric(tcgaSlideBundleStatus?.feature_extractor_used) || tcgaSlideTriadDefaults.feature_extractor;
+  const tcgaBundleSelectedNames = readStringArray(tcgaSlideBundleStatus?.selected_slides);
+  const tcgaBundleRunningApproaches = readStringArray(tcgaSlideBundleStatus?.running_approaches);
+  const tcgaBundleCompletedApproaches = readStringArray(tcgaSlideBundleStatus?.completed_approaches);
+  const tcgaBundleLabelCounts = (tcgaSlideBundleStatus?.label_counts as Record<string, number> | undefined) ?? {};
+  const tcgaBundleApproachSummary = (tcgaSlideBundleStatus?.summary as { approaches?: Record<string, Record<string, unknown>> } | undefined)?.approaches ?? {};
+  const tcgaBundleUpdatedAt = numericMetric(tcgaSlideBundleStatus?.updated_at_epoch);
+  const tcgaBundleStage = tcgaStageMeta(
+    tcgaBundleState,
+    tcgaBundleDownloadedSlides,
+    tcgaBundleSelectedSlides,
+    tcgaBundleCompletedApproaches.length,
+    tcgaBundleTfrecordFiles,
+  );
+  const tcgaBundleStageChart = tcgaStageChart(tcgaBundleState);
+  const hasRunningTcgaBundle = Boolean(
+    tcgaSlideBundleId &&
+      !["", "completed", "failed", "missing", "invalid"].includes(tcgaBundleState),
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const savedBundleId = window.localStorage.getItem(tcgaBundleStorageKey);
+    const savedBundlePath = window.localStorage.getItem(`${tcgaBundleStorageKey}:path`);
+    if (savedBundleId) {
+      setTcgaSlideBundleId(savedBundleId);
+    }
+    if (savedBundlePath) {
+      setTcgaSlideBundlePath(savedBundlePath);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    if (tcgaSlideBundleId) {
+      window.localStorage.setItem(tcgaBundleStorageKey, tcgaSlideBundleId);
+    } else {
+      window.localStorage.removeItem(tcgaBundleStorageKey);
+    }
+
+    if (tcgaSlideBundlePath) {
+      window.localStorage.setItem(`${tcgaBundleStorageKey}:path`, tcgaSlideBundlePath);
+    } else {
+      window.localStorage.removeItem(`${tcgaBundleStorageKey}:path`);
+    }
+  }, [tcgaSlideBundleId, tcgaSlideBundlePath]);
 
   useEffect(() => {
     let cancelled = false;
@@ -628,6 +729,7 @@ export function MsiWorkbench() {
     }
 
     void runApproach2Action("experiments", { silent: approach2Experiments.length > 0 });
+    void fetchLatestTcgaSlideTriadStatus({ silent: true });
   }, [approachMode]);
 
   useEffect(() => {
@@ -641,6 +743,30 @@ export function MsiWorkbench() {
 
     return () => window.clearInterval(intervalId);
   }, [approachMode, hasRunningApproach2Experiment]);
+
+  useEffect(() => {
+    if (approachMode !== "approach-2" || !tcgaSlideBundleId) {
+      return;
+    }
+
+    setTcgaBundleRefreshIn(tcgaBundleRefreshSeconds);
+
+    const refreshIntervalId = window.setInterval(() => {
+      setTcgaBundleRefreshIn(tcgaBundleRefreshSeconds);
+      void fetchTcgaSlideTriadStatus(tcgaSlideBundleId, { silent: true });
+    }, tcgaBundleRefreshSeconds * 1000);
+
+    const countdownIntervalId = window.setInterval(() => {
+      setTcgaBundleRefreshIn((current) =>
+        current <= 1 ? tcgaBundleRefreshSeconds : current - 1,
+      );
+    }, 1000);
+
+    return () => {
+      window.clearInterval(refreshIntervalId);
+      window.clearInterval(countdownIntervalId);
+    };
+  }, [approachMode, tcgaSlideBundleId]);
 
   useEffect(() => {
     if (approachMode !== "monte-carlo" || mcStableBest || mcBusy) {
@@ -1098,6 +1224,127 @@ export function MsiWorkbench() {
       if (!options?.silent) {
         setApproach2Error(error instanceof Error ? error.message : "Approach 2 request failed.");
       }
+    } finally {
+      setApproach2Busy(undefined);
+    }
+  }
+
+  async function fetchTcgaSlideTriadStatus(
+    bundleId: string,
+    options?: { silent?: boolean },
+  ) {
+    try {
+      const response = await fetch(
+        `${automationApiBase}/approach-2/pipeline/train-tcga-slide-triad/${bundleId}`,
+      );
+      const data = (await response.json()) as TCGASlideTriadStatusPayload;
+      if (!response.ok) {
+        throw new Error("Unable to read TCGA slide triad status.");
+      }
+      const state = String(data.status?.state ?? "queued");
+      if (state === "missing" || state === "invalid") {
+        return await fetchLatestTcgaSlideTriadStatus({
+          silent: options?.silent,
+          preferredBundleId: bundleId,
+        });
+      }
+      setTcgaSlideBundleId(bundleId);
+      setTcgaSlideBundleStatus(data.status ?? {});
+      setTcgaSlideBundlePath(data.remote_status_path ?? "");
+      setTcgaBundleRefreshIn(tcgaBundleRefreshSeconds);
+      if (!options?.silent) {
+        setApproach2Message(
+          `TCGA slide triad ${bundleId} is ${state}. Status file: ${data.remote_status_path}`,
+        );
+      }
+      return data;
+    } catch (error) {
+      if (!options?.silent) {
+        setApproach2Error(
+          error instanceof Error ? error.message : "Unable to read TCGA slide triad status.",
+        );
+      }
+      return undefined;
+    }
+  }
+
+  async function fetchLatestTcgaSlideTriadStatus(
+    options?: { silent?: boolean; preferredBundleId?: string },
+  ) {
+    try {
+      const response = await fetch(
+        `${automationApiBase}/approach-2/pipeline/train-tcga-slide-triad-latest`,
+      );
+      const data = (await response.json()) as LatestTCGASlideTriadStatusPayload;
+      if (!response.ok) {
+        throw new Error("Unable to read the latest TCGA slide triad status.");
+      }
+
+      const latestBundleId = String(data.bundle_id ?? "");
+      const latestState = String(data.status?.state ?? "");
+      if (!latestBundleId) {
+        if (!options?.silent) {
+          setApproach2Message("No TCGA slide triad bundle is available on the VM yet.");
+        }
+        return data;
+      }
+
+      setTcgaSlideBundleId(latestBundleId);
+      setTcgaSlideBundleStatus(data.status ?? {});
+      setTcgaSlideBundlePath(data.remote_status_path ?? "");
+      setTcgaBundleRefreshIn(tcgaBundleRefreshSeconds);
+      if (!options?.silent) {
+        const sourceNote =
+          options?.preferredBundleId && options.preferredBundleId !== latestBundleId
+            ? ` Switched from stale bundle ${options.preferredBundleId} to latest bundle ${latestBundleId}.`
+            : "";
+        setApproach2Message(
+          `Latest TCGA slide triad ${latestBundleId} is ${latestState || "queued"}.${sourceNote} Status file: ${data.remote_status_path}`,
+        );
+      }
+      return data;
+    } catch (error) {
+      if (!options?.silent) {
+        setApproach2Error(
+          error instanceof Error
+            ? error.message
+            : "Unable to read the latest TCGA slide triad status.",
+        );
+      }
+      return undefined;
+    }
+  }
+
+  async function runTcgaSlideTriad() {
+    setApproach2Busy("tcga-triad");
+    setApproach2Error("");
+    setTcgaSlideBundleStatus(undefined);
+    try {
+      const response = await fetch(
+        `${automationApiBase}/approach-2/pipeline/train-tcga-slide-triad`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(tcgaSlideTriadDefaults),
+        },
+      );
+      const data = (await response.json()) as TCGASlideTriadLaunchResponse;
+      if (!response.ok) {
+        throw new Error(data?.message || "Unable to launch TCGA slide triad.");
+      }
+
+      setTcgaSlideBundleId(data.bundle_id);
+      setTcgaSlideBundlePath(data.remote_status_path);
+      setTcgaBundleRefreshIn(tcgaBundleRefreshSeconds);
+      setApproach2Message(
+        `${data.message} Bundle ${data.bundle_id} | Experiments: ${data.experiment_ids.join(", ")}`,
+      );
+      await fetchTcgaSlideTriadStatus(data.bundle_id, { silent: true });
+      void runApproach2Action("experiments", { silent: true });
+    } catch (error) {
+      setApproach2Error(
+        error instanceof Error ? error.message : "Unable to launch TCGA slide triad.",
+      );
     } finally {
       setApproach2Busy(undefined);
     }
@@ -1870,11 +2117,159 @@ export function MsiWorkbench() {
         <Panel>
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <SectionTitle
+              icon={<Activity className="h-5 w-5" />}
+              title="TCGA background runner"
+              label={tcgaBundleStage.label}
+            />
+            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[420px]">
+              <ActionButton
+                busy={approach2Busy === "tcga-triad"}
+                disabled={Boolean(approach2Busy)}
+                icon={<Database className="h-4 w-4" />}
+                label="Run TCGA Adaptive"
+                onClick={() => void runTcgaSlideTriad()}
+              />
+              <ActionButton
+                busy={approach2Busy === "experiments"}
+                disabled={Boolean(approach2Busy) || !tcgaSlideBundleId}
+                icon={<RefreshCw className="h-4 w-4" />}
+                label="Refresh bundle"
+                onClick={() => {
+                  if (tcgaSlideBundleId) {
+                    void fetchTcgaSlideTriadStatus(tcgaSlideBundleId);
+                  }
+                }}
+              />
+            </div>
+          </div>
+
+          <div className="mt-5 overflow-hidden rounded-[28px] border" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+            <div className="h-3 w-full" style={{ background: "var(--btn-bg)" }}>
+              <div
+                className="h-full rounded-r-full transition-all duration-500"
+                style={{
+                  width: `${tcgaBundleStage.percent}%`,
+                  background:
+                    tcgaBundleState === "failed"
+                      ? "linear-gradient(90deg, rgba(217,93,72,0.95), rgba(217,93,72,0.55))"
+                      : "linear-gradient(90deg, rgba(70,102,217,0.95), rgba(122,215,255,0.88))",
+                }}
+              />
+            </div>
+            <div className="grid gap-4 p-5 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+              <div>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="rounded-full border px-3 py-1 text-xs font-semibold" style={{ borderColor: "var(--accent-border)", background: "var(--accent-dim)", color: "var(--tag-text)" }}>
+                    {tcgaBundleStage.percent}% complete
+                  </span>
+                  <span className="rounded-full border px-3 py-1 text-xs font-semibold" style={{ borderColor: "var(--border)", background: "var(--btn-bg)", color: "var(--heading)" }}>
+                    Auto-refresh every 30s
+                  </span>
+                  <span className="text-sm font-semibold" style={{ color: "var(--heading)" }}>
+                    {tcgaBundleStage.title}
+                  </span>
+                  <span className="text-sm" style={{ color: "var(--muted)" }}>
+                    {tcgaBundleState ? `State: ${tcgaBundleState}` : "No active bundle yet"}
+                  </span>
+                </div>
+                <p className="mt-3 text-sm leading-6" style={{ color: "var(--body)" }}>
+                  {tcgaBundleStage.detail}
+                </p>
+                <div className="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+                  <KeyValue label="Bundle ID" value={tcgaSlideBundleId || "Not started"} />
+                  <KeyValue label="Selected" value={tcgaBundleSelectedSlides !== undefined ? String(tcgaBundleSelectedSlides) : "Pending"} />
+                  <KeyValue label="Downloaded" value={tcgaBundleDownloadedSlides !== undefined ? String(tcgaBundleDownloadedSlides) : "Pending"} />
+                  <KeyValue label="TFRecords" value={tcgaBundleTfrecordFiles !== undefined ? String(tcgaBundleTfrecordFiles) : "Pending"} />
+                  <KeyValue label="TFRecord size" value={tcgaBundleTfrecordBytes !== undefined ? formatBytes(tcgaBundleTfrecordBytes) : "Pending"} />
+                  <KeyValue label="Next refresh" value={tcgaSlideBundleId ? `${tcgaBundleRefreshIn}s` : "Waiting"} />
+                  <KeyValue label="Updated" value={tcgaBundleUpdatedAt ? formatEpochTime(tcgaBundleUpdatedAt) : "Waiting"} />
+                </div>
+                <div className="mt-5 rounded-3xl border p-4" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
+                  <div className="mb-3 flex items-center justify-between gap-3">
+                    <h3 className="text-sm font-semibold" style={{ color: "var(--heading)" }}>Stage chart</h3>
+                    <span className="text-xs" style={{ color: "var(--muted)" }}>
+                      Live pipeline checkpoints
+                    </span>
+                  </div>
+                  <div className="grid gap-3 md:grid-cols-6">
+                    {tcgaBundleStageChart.map((stage) => (
+                      <div key={stage.key} className="relative">
+                        <div
+                          className="rounded-3xl border px-3 py-3"
+                          style={{
+                            borderColor: stage.isCurrent
+                              ? "var(--accent-border)"
+                              : stage.isDone
+                                ? "rgba(44,182,125,0.35)"
+                                : "var(--border)",
+                            background: stage.isCurrent
+                              ? "var(--accent-dim)"
+                              : stage.isDone
+                                ? "rgba(44,182,125,0.08)"
+                                : "var(--card-bg)",
+                          }}
+                        >
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="text-xs font-semibold uppercase tracking-[0.16em]" style={{ color: stage.isCurrent ? "var(--tag-text)" : stage.isDone ? "var(--teal)" : "var(--muted)" }}>
+                              {stage.short}
+                            </span>
+                            <span
+                              className="h-2.5 w-2.5 rounded-full"
+                              style={{
+                                background: stage.isCurrent
+                                  ? "var(--tag-text)"
+                                  : stage.isDone
+                                    ? "var(--teal)"
+                                    : "rgba(148,163,184,0.45)",
+                              }}
+                            />
+                          </div>
+                          <p className="mt-2 text-sm font-semibold" style={{ color: "var(--heading)" }}>
+                            {stage.title}
+                          </p>
+                          <p className="mt-1 text-xs" style={{ color: "var(--muted)" }}>
+                            {stage.isCurrent ? "Running now" : stage.isDone ? "Done" : "Waiting"}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-3xl border p-4" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
+                <h3 className="text-sm font-semibold" style={{ color: "var(--heading)" }}>Dedicated live summary</h3>
+                <div className="mt-3 grid gap-2">
+                  <KeyValue label="Extractor" value={tcgaBundleFeatureExtractor || "Pending"} />
+                  <KeyValue
+                    label="Labels"
+                    value={
+                      Object.keys(tcgaBundleLabelCounts).length > 0
+                        ? Object.entries(tcgaBundleLabelCounts).map(([key, value]) => `${key} ${value}`).join(" | ")
+                        : "Pending"
+                    }
+                  />
+                  <KeyValue
+                    label="Running"
+                    value={tcgaBundleRunningApproaches.length > 0 ? tcgaBundleRunningApproaches.join(", ") : "Background preprocessing"}
+                  />
+                  <KeyValue
+                    label="Completed"
+                    value={tcgaBundleCompletedApproaches.length > 0 ? tcgaBundleCompletedApproaches.join(", ") : "None yet"}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Panel>
+
+        <Panel>
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <SectionTitle
               icon={<Layers3 className="h-5 w-5" />}
               title="Complex triad live runner"
               label={approach2Busy ? `running ${approach2Busy}` : hasRunningApproach2Experiment ? "live polling" : "mounted"}
             />
-            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[760px] xl:grid-cols-5">
+            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[760px] xl:grid-cols-6">
               <ActionButton
                 busy={approach2Busy === "train"}
                 disabled={Boolean(approach2Busy)}
@@ -1904,11 +2299,23 @@ export function MsiWorkbench() {
                 onClick={() => runApproach2Action("triad")}
               />
               <ActionButton
+                busy={approach2Busy === "tcga-triad"}
+                disabled={Boolean(approach2Busy)}
+                icon={<Database className="h-4 w-4" />}
+                label="Run TCGA Adaptive"
+                onClick={() => void runTcgaSlideTriad()}
+              />
+              <ActionButton
                 busy={approach2Busy === "experiments"}
                 disabled={Boolean(approach2Busy)}
                 icon={<RefreshCw className="h-4 w-4" />}
-                label="Refresh scores"
-                onClick={() => runApproach2Action("experiments")}
+                label="Refresh live"
+                onClick={() => {
+                  void runApproach2Action("experiments");
+                  if (tcgaSlideBundleId) {
+                    void fetchTcgaSlideTriadStatus(tcgaSlideBundleId, { silent: true });
+                  }
+                }}
               />
             </div>
           </div>
@@ -2065,6 +2472,9 @@ export function MsiWorkbench() {
                 <p>
                   Active dataset source: `{patchTrainingForm.datasetSource}` {"->"} `{patchDatasetSourceSummary(patchTrainingForm)}`.
                 </p>
+                <p className="mt-2">
+                  `Run TCGA Adaptive` uses the VM bucket `gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD`, matches it against `annotations/tcga_coad_bucket_annotations_pub.csv`, keeps an 18-slide balanced subset by default, uses 3-fold validation, and automatically shrinks slide count or folds if the matched cohort is smaller than requested.
+                </p>
                 {patchTrainingForm.datasetSource === "google_bucket" ? (
                   <p className="mt-2">
                     Paste a bucket URI like `gs://my-bucket/msi/CRC-VAL-HE-7K`, then use `Run selected preset`, `Run patch training`, or `Run full triad`. Bucket-backed patch runs are executed on the VM and staged into `datasets/staged_&lt;experiment_id&gt;` before training starts.
@@ -2137,10 +2547,102 @@ export function MsiWorkbench() {
         </Panel>
 
         <section className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_420px]">
-          <Panel>
-            <SectionTitle
-              icon={<Activity className="h-5 w-5" />}
-              title="Live experiment scores"
+        <Panel>
+          <SectionTitle
+            icon={<Database className="h-5 w-5" />}
+            title="TCGA adaptive live bundle"
+            label={tcgaBundleState || (tcgaSlideBundleId ? "queued" : "ready")}
+          />
+          <div className="mt-5 grid gap-3 sm:grid-cols-4">
+            <MetricTile
+              label="Matched"
+              tone="blue"
+              value={tcgaBundleMatchedSlides !== undefined ? String(tcgaBundleMatchedSlides) : "Pending"}
+            />
+            <MetricTile
+              label="Selected"
+              tone="teal"
+              value={tcgaBundleSelectedSlides !== undefined ? String(tcgaBundleSelectedSlides) : "Pending"}
+            />
+            <MetricTile
+              label="Downloaded"
+              tone="coral"
+              value={tcgaBundleDownloadedSlides !== undefined ? String(tcgaBundleDownloadedSlides) : "Pending"}
+            />
+            <MetricTile
+              label="Extractor"
+              tone="blue"
+              value={tcgaBundleFeatureExtractor || "Pending"}
+            />
+          </div>
+          <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <KeyValue label="Bundle ID" value={tcgaSlideBundleId || "Not started"} />
+            <KeyValue label="State" value={tcgaBundleState || "idle"} />
+            <KeyValue
+              label="Labels"
+              value={
+                Object.keys(tcgaBundleLabelCounts).length > 0
+                  ? Object.entries(tcgaBundleLabelCounts)
+                      .map(([key, value]) => `${key} ${value}`)
+                      .join(" | ")
+                  : "Pending"
+              }
+            />
+            <KeyValue
+              label="Running"
+              value={tcgaBundleRunningApproaches.length > 0 ? tcgaBundleRunningApproaches.join(", ") : "None"}
+            />
+            <KeyValue
+              label="Completed"
+              value={tcgaBundleCompletedApproaches.length > 0 ? tcgaBundleCompletedApproaches.join(", ") : "None"}
+            />
+            <KeyValue label="Remote status" value={tcgaSlideBundlePath || "Will appear after launch"} />
+          </div>
+          <div className="mt-5 grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+            <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Selected slides</h3>
+              <div className="mt-3 max-h-64 overflow-auto rounded-3xl border p-3 text-sm leading-6" style={{ borderColor: "var(--border)", background: "var(--btn-bg)", color: "var(--body)" }}>
+                {tcgaBundleSelectedNames.length > 0 ? (
+                  tcgaBundleSelectedNames.map((slideName) => (
+                    <div key={slideName} className="border-b py-2 last:border-b-0" style={{ borderColor: "var(--border)" }}>
+                      {slideName}
+                    </div>
+                  ))
+                ) : (
+                  <p>No slide subset materialized yet. Launch `Run TCGA Adaptive` to build the bundle from the bucket and annotations.</p>
+                )}
+              </div>
+            </div>
+            <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
+              <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Approach bundle output</h3>
+              <div className="mt-3 grid gap-3">
+                {(["Approach1", "Approach2", "MonteCarlo"] as const).map((label) => {
+                  const payload = tcgaBundleApproachSummary[label] ?? {};
+                  return (
+                    <div key={label} className="rounded-3xl border p-3" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="text-sm font-semibold" style={{ color: "var(--heading)" }}>{label}</span>
+                        <span className="text-xs" style={{ color: "var(--muted)" }}>
+                          {readableMetric(payload.mil_model) || "MIL"}
+                        </span>
+                      </div>
+                      <div className="mt-2 grid gap-1 text-xs" style={{ color: "var(--body)" }}>
+                        <span>AUROC: {readableMetric(payload.mean_auroc) || "Pending"}</span>
+                        <span>Macro F1: {readableMetric(payload.mean_f1_macro) || "Pending"}</span>
+                        <span>Folds: {readableMetric(payload.folds) || "Pending"}</span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </Panel>
+
+        <Panel>
+          <SectionTitle
+            icon={<Activity className="h-5 w-5" />}
+            title="Live experiment scores"
               label={`${approach2Experiments.length} runs`}
             />
             <div className="mt-5 grid gap-3 sm:grid-cols-4">
@@ -2861,6 +3363,172 @@ function KeyValue({ label, value }: { label: string; value: string }) {
   );
 }
 
+function formatEpochTime(epochSeconds: number) {
+  if (!Number.isFinite(epochSeconds)) {
+    return "";
+  }
+  return new Date(epochSeconds * 1000).toLocaleTimeString();
+}
+
+function formatBytes(bytes: number) {
+  if (!Number.isFinite(bytes) || bytes <= 0) {
+    return "0 B";
+  }
+  const units = ["B", "KB", "MB", "GB", "TB"];
+  let value = bytes;
+  let index = 0;
+  while (value >= 1024 && index < units.length - 1) {
+    value /= 1024;
+    index += 1;
+  }
+  return `${value.toFixed(value >= 10 || index === 0 ? 0 : 1)} ${units[index]}`;
+}
+
+function tcgaStageMeta(
+  state: string,
+  downloadedSlides?: number,
+  selectedSlides?: number,
+  completedApproaches = 0,
+  tfrecordFiles?: number,
+) {
+  const safeSelected = Math.max(selectedSlides ?? 0, 0);
+  const safeDownloaded = Math.max(downloadedSlides ?? 0, 0);
+  const downloadProgress = safeSelected > 0 ? Math.min(safeDownloaded / safeSelected, 1) : 0;
+  const trainingProgress = Math.min(completedApproaches / 3, 1);
+  const extractionProgress = safeSelected > 0 ? Math.min((tfrecordFiles ?? 0) / safeSelected, 1) : 0;
+
+  switch (state) {
+    case "matching_annotations":
+      return {
+        percent: 10,
+        label: "matching",
+        title: "Matching annotations against bucket slides",
+        detail: "The VM is lining up the TCGA bucket files with the MSI annotation table before any slide download starts.",
+      };
+    case "downloading_slides":
+      return {
+        percent: Math.round(18 + downloadProgress * 24),
+        label: "downloading",
+        title: "Downloading selected SVS slides in the background",
+        detail: "This run is active on the VM and pulling the chosen whole-slide images into the triad bundle workspace.",
+      };
+    case "extracting_tiles":
+      return {
+        percent: Math.max(42, Math.round(42 + extractionProgress * 22)),
+        label: "tiling",
+        title: "Extracting pathology tiles from the downloaded slides",
+        detail: `The VM is preprocessing the selected slides with Slideflow and cucim. TFRecords ready: ${tfrecordFiles ?? 0}/${safeSelected || "?"}. This stage can take the longest before GPU-heavy feature generation starts.`,
+      };
+    case "retrying_tiles":
+      return {
+        percent: 58,
+        label: "retrying",
+        title: "Retrying tile extraction with lighter settings",
+        detail: "The stricter QC path came up empty, so the runner is retrying extraction with a more permissive fallback instead of stopping the bundle.",
+      };
+    case "generating_features":
+      return {
+        percent: 70,
+        label: "features",
+        title: "Generating pathology feature bags",
+        detail: "The selected feature extractor is building slide-level bags that the MIL approaches will train on next.",
+      };
+    case "prepared":
+      return {
+        percent: 78,
+        label: "prepared",
+        title: "Bundle prepared and ready to train",
+        detail: "Slides, tiles, and feature bags are ready. The VM is about to fan out the three MIL approaches in parallel.",
+      };
+    case "training_parallel":
+      return {
+        percent: Math.round(80 + trainingProgress * 18),
+        label: "training",
+        title: "Training all MIL approaches in parallel",
+        detail: "The background runner is now executing Approach 1, Approach 2, and Monte Carlo variants in parallel on the prepared bundle.",
+      };
+    case "completed":
+      return {
+        percent: 100,
+        label: "completed",
+        title: "Bundle completed",
+        detail: "The TCGA adaptive bundle has finished and the per-approach metrics are available below.",
+      };
+    case "failed":
+      return {
+        percent: 100,
+        label: "failed",
+        title: "Bundle failed",
+        detail: "The background runner stopped with an error. The bundle card below and the remote status path contain the failure details.",
+      };
+    default:
+      return {
+        percent: 4,
+        label: state || "ready",
+        title: "Ready to launch the next TCGA adaptive run",
+        detail: "No active background bundle is being tracked yet. Launch a run or refresh the latest saved bundle id.",
+      };
+  }
+}
+
+function tcgaStageChart(state: string) {
+  const stages = [
+    {
+      key: "matching_annotations",
+      short: "Match",
+      title: "Annotation match",
+    },
+    {
+      key: "downloading_slides",
+      short: "Download",
+      title: "Slide download",
+    },
+    {
+      key: "extracting_tiles",
+      short: "Tiles",
+      title: "Tile extraction",
+    },
+    {
+      key: "generating_features",
+      short: "Features",
+      title: "Feature bags",
+    },
+    {
+      key: "training_parallel",
+      short: "Train",
+      title: "Parallel MIL training",
+    },
+    {
+      key: "completed",
+      short: "Done",
+      title: "Completed",
+    },
+  ] as const;
+
+  const normalizedState =
+    state === "retrying_tiles"
+      ? "extracting_tiles"
+      : state === "prepared"
+        ? "training_parallel"
+        : state;
+  const currentIndex = stages.findIndex((stage) => stage.key === normalizedState);
+
+  return stages.map((stage, index) => {
+    const isCurrent = currentIndex === index;
+    const isDone =
+      currentIndex > index ||
+      normalizedState === "completed" ||
+      (normalizedState === "failed" && index < stages.length - 1);
+    const isPending = !isCurrent && !isDone;
+    return {
+      ...stage,
+      isCurrent,
+      isDone,
+      isPending,
+    };
+  });
+}
+
 function readableMetric(value: unknown) {
   if (typeof value === "string") {
     return value;
@@ -2872,6 +3540,14 @@ function readableMetric(value: unknown) {
     return value.toFixed(4);
   }
   return "";
+}
+
+function numericMetric(value: unknown) {
+  return typeof value === "number" && Number.isFinite(value) ? value : undefined;
+}
+
+function readStringArray(value: unknown) {
+  return Array.isArray(value) ? value.map((item) => String(item)) : [];
 }
 
 function experimentApproachLabel(experiment: Approach2Experiment) {

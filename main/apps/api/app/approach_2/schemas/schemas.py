@@ -72,6 +72,42 @@ class TriadRunResponse(BaseModel):
     experiment_ids: List[str]
 
 
+class TCGASlideTriadRequest(BaseModel):
+    experiment_name: str = "tcga-coad-20-slide-triad"
+    bucket_uri: str = "gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD"
+    slide_limit: int = 18
+    n_folds: int = 3
+    preferred_slide_pattern: str = "DX"
+    preferred_exact_suffix: str = "DX1"
+    annotations_csv: Optional[str] = "annotations/tcga_coad_bucket_annotations_pub.csv"
+    feature_extractor: str = "virchow,uni_v2,uni,phikon,ctranspath,resnet50_imagenet"
+    tile_px: int = 256
+    tile_um: int = 128
+    max_parallel_approaches: int = 3
+
+
+class TCGASlideTriadRunResponse(BaseModel):
+    ok: bool = True
+    message: str
+    bundle_id: str
+    experiment_ids: List[str]
+    remote_status_path: str
+
+
+class TCGASlideTriadStatusResponse(BaseModel):
+    ok: bool = True
+    bundle_id: str
+    remote_status_path: str
+    status: Dict[str, Any]
+
+
+class LatestTCGASlideTriadStatusResponse(BaseModel):
+    ok: bool = True
+    bundle_id: str
+    remote_status_path: str
+    status: Dict[str, Any]
+
+
 class UploadPredictResponse(BaseModel):
     experiment_id: str
     approach_label: str

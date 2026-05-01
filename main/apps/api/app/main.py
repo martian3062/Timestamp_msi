@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -17,7 +17,8 @@ from app.core.config import get_settings
 
 settings = get_settings()
 Approach2Base.metadata.create_all(bind=approach_2_engine)
-os.makedirs("/data", exist_ok=True)
+ARTIFACT_DIR = Path(__file__).resolve().parents[2] / "storage"
+ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(
     title="Timestamp_msi API",
@@ -55,4 +56,4 @@ app.include_router(approach_2_pipeline.router, prefix="/approach-2/pipeline", ta
 app.include_router(approach_2_experiments.router, prefix="/approach-2/experiments", tags=["approach-2-experiments"])
 app.include_router(approach_2_webhook.router, prefix="/approach-2/webhook", tags=["approach-2-webhook"])
 app.include_router(parallel_pipeline.router, prefix="/parallel-pipeline", tags=["parallel-pipeline"])
-app.mount("/approach-2/artifacts", StaticFiles(directory="/data"), name="approach-2-artifacts")
+app.mount("/approach-2/artifacts", StaticFiles(directory=str(ARTIFACT_DIR)), name="approach-2-artifacts")

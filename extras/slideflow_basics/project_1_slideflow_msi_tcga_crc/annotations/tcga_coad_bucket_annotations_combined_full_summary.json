@@ -1,0 +1,16 @@
+{
+  "bucket_total_files": 200,
+  "bucket_total_annotated_files": 185,
+  "bucket_unique_annotated_patients": 113,
+  "bucket_msi_h_files": 27,
+  "bucket_mss_files": 158,
+  "bucket_dx_files": 65,
+  "bucket_ts_files": 59,
+  "bucket_bs_files": 55,
+  "bucket_ms_files": 2,
+  "bucket_other_suffix_files": {
+    "BSA": 1,
+    "TSA": 2,
+    "TSB": 1
+  }
+}

@@ -24,6 +24,9 @@ tail -f ~/pathology310_projects/single_slide_morphology/pipeline_output.log
 - **`scripts/`**: Core logic for the pipeline stages.
   - `run_complete_pipeline.py`: The main controller.
   - `generate_advanced_visualizations.py`: Creates high-quality ROC/PR curves and heatmaps.
+ - **`notebooks/`**: Interactive notebook workflows.
+   - `slideflow_msi_pipeline.ipynb`: Main end-to-end workflow.
+   - `slideflow_results_explorer.ipynb`: Open-source inbuilt detailed results viewer using pandas plus Plotly/Matplotlib.
 - **`output/`**: (Generated) Final results, figures, and models are stored here.
   - `figures/`: Publication-quality plots (AUC, PR, Heatmaps).
   - `results/`: CSV summaries of metrics across folds.

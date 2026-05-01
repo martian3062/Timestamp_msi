@@ -1,0 +1,13 @@
+{
+  "base_annotation_rows": 60,
+  "combined_annotation_rows": 60,
+  "pancan_patient_overlap": 60,
+  "legacy_patient_overlap": 60,
+  "both_patient_overlap": 60,
+  "bucket_total_files": 200,
+  "bucket_matched_annotation_rows": 11,
+  "bucket_unique_patients_with_annotations": 11,
+  "bucket_exact_gdc_filename_matches": 8,
+  "bucket_msi_h_rows": 4,
+  "bucket_mss_rows": 7
+}

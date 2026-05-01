@@ -39,6 +39,7 @@ venv/
 # Local run artifacts
 .codex-run/
 **/.codex-run/
+.tmp/
 
 # Large local-only datasets and archives
 datasets/CRC-VAL-HE-7K/

@@ -6,7 +6,6 @@ from sqlalchemy.orm import Session
 from ..database.setup import get_db
 from ..database import models
 from ..schemas import schemas
-from ..pipelines import feature_extractor, mil_trainer, patch_trainer, project_setup
 from ..services import triad_runtime
 
 router = APIRouter()
@@ -14,17 +13,23 @@ router = APIRouter()
 @router.post("/preprocess")
 def trigger_preprocessing(req: schemas.PipelinePreprocessRequest, background_tasks: BackgroundTasks, db: Session = Depends(get_db)):
     """Background task to setup slideflow project and extract tiles."""
+    from ..pipelines import project_setup
+
     background_tasks.add_task(project_setup.run_preprocessing, req.cohort, req.tile_size, req.tile_um)
     return {"message": "Preprocessing started in background", "cohort": req.cohort}
 
 @router.post("/extract_features")
 def trigger_feature_extraction(req: schemas.PipelineFeaturesRequest, background_tasks: BackgroundTasks, db: Session = Depends(get_db)):
     """Background task to extract features from tiles using a given feature extractor."""
+    from ..pipelines import feature_extractor
+
     background_tasks.add_task(feature_extractor.run_feature_extraction, req.cohort, req.feature_extractor)
     return {"message": f"Feature extraction using {req.feature_extractor} started in background"}
 
 @router.post("/train", response_model=schemas.ExperimentResponse)
 def trigger_mil_training(req: schemas.TrainMilRequest, background_tasks: BackgroundTasks, db: Session = Depends(get_db)):
+    from ..pipelines import mil_trainer, patch_trainer
+
     exp_id = str(uuid.uuid4())[:8]
     
     new_exp = models.Experiment(
@@ -60,6 +65,41 @@ def trigger_crc_triad(req: schemas.TrainMilRequest, background_tasks: Background
     return schemas.TriadRunResponse(
         message="CRC complex triad queued on the VM using the full CRC-VAL-HE-7K class tree.",
         experiment_ids=[str(spec["experiment_id"]) for spec in triad_specs],
+    )
+
+
+@router.post("/train-tcga-slide-triad", response_model=schemas.TCGASlideTriadRunResponse)
+def trigger_tcga_slide_triad(
+    req: schemas.TCGASlideTriadRequest,
+    background_tasks: BackgroundTasks,
+) -> schemas.TCGASlideTriadRunResponse:
+    bundle_id, triad_specs = triad_runtime.build_tcga_slide_triad_specs(req.model_dump())
+    triad_runtime.enqueue_triad_experiments(triad_specs)
+    background_tasks.add_task(triad_runtime.run_tcga_slide_triad_bundle, bundle_id, req.model_dump(), triad_specs)
+    return schemas.TCGASlideTriadRunResponse(
+        message="TCGA COAD adaptive triad queued on the VM. Matching annotations, downloading slides, preprocessing, pathology-first feature fallback, and three-approach training will run automatically.",
+        bundle_id=bundle_id,
+        experiment_ids=[str(spec["experiment_id"]) for spec in triad_specs],
+        remote_status_path=triad_runtime.tcga_slide_triad_status_path(bundle_id),
+    )
+
+
+@router.get("/train-tcga-slide-triad-latest", response_model=schemas.LatestTCGASlideTriadStatusResponse)
+def get_latest_tcga_slide_triad_status() -> schemas.LatestTCGASlideTriadStatusResponse:
+    payload = triad_runtime.read_latest_tcga_slide_triad_status()
+    return schemas.LatestTCGASlideTriadStatusResponse(
+        bundle_id=str(payload.get("bundle_id") or ""),
+        remote_status_path=str(payload.get("remote_status_path") or ""),
+        status=payload.get("status") if isinstance(payload.get("status"), dict) else {},
+    )
+
+
+@router.get("/train-tcga-slide-triad/{bundle_id}", response_model=schemas.TCGASlideTriadStatusResponse)
+def get_tcga_slide_triad_status(bundle_id: str) -> schemas.TCGASlideTriadStatusResponse:
+    return schemas.TCGASlideTriadStatusResponse(
+        bundle_id=bundle_id,
+        remote_status_path=triad_runtime.tcga_slide_triad_status_path(bundle_id),
+        status=triad_runtime.read_tcga_slide_triad_status(bundle_id),
     )
 
 @router.post("/predict", response_model=schemas.PredictResponse)
