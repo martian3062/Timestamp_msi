@@ -1,0 +1,36 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age,Age at diagnosis,NUMBER,True,1,AGE,coadread_cass_2020
+Tumor Site Detailed,Tumor atomic site detailed,STRING,True,1,ATOMIC_SITE_DETAIL,coadread_cass_2020
+CA19-9 Antigen,Carbohydrate antigen (u/ml),NUMBER,True,1,CA19_9,coadread_cass_2020
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,coadread_cass_2020
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_cass_2020
+CEA Biomarker,Carcinoembryonic antigen (ng/ml),NUMBER,True,1,CEA,coadread_cass_2020
+Distant Liver Metastatic Tissues,Distant liver metastatic tissues,STRING,True,1,DISTANT_LM,coadread_cass_2020
+Follow Up Time (Days),Patient follow-up time in days,NUMBER,True,1,FOLLOW_UP,coadread_cass_2020
+Histopathological Type,Histopathological type,STRING,False,1,HISTOPATHOLOGY,coadread_cass_2020
+Intravascular Tumor Thrombus,Indicates tumor progression into vessels,STRING,True,1,INTRAVASCULAR_TUMOR_THROMBUS,coadread_cass_2020
+Metastatic Tumor Necrosis (%),Precent tissue necrosis in metastatic tumor cells,NUMBER,False,1,METASTATIC_NECROSIS,coadread_cass_2020
+Metastatic Tumor Purity (%),Precent metastatic tumor cell purity,NUMBER,False,1,METASTATIC_PURITY,coadread_cass_2020
+Metastatic Site,Metastatic sites before operation,STRING,False,1,METASTATIC_SITE,coadread_cass_2020
+Metastatic Status,Metastatic status,STRING,False,1,METASTATIC_STATUS,coadread_cass_2020
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_cass_2020
+Neurological Invasion,Indicates invasion of cancer cells into nerves,STRING,True,1,NEUROLOGICAL_INVASION,coadread_cass_2020
+Oncotree Code,Oncotree code,STRING,False,1,ONCOTREE_CODE,coadread_cass_2020
+Overall Survival (Months),Overall survival in months since initial diagnosis,NUMBER,True,1,OS_MONTHS,coadread_cass_2020
+Overall Survival Status,Overall patient survival status,STRING,True,1,OS_STATUS,coadread_cass_2020
+Primary Tumor Paired Status,Paired primary tumor samples that underwent whole exome sequencing,STRING,False,1,PAIRED_STATUS,coadread_cass_2020
+Post-Operative Therapy With Targeted Agents,Indicates whether the patient received post-operative therapy,STRING,True,0,POSTOPERATIVE_THERAPY_WITH_TARGETED_AGENTS,coadread_cass_2020
+Preoperative Treatment Effect,Preoperative treatment effect,STRING,True,0,PREOPERATIVE_TREATMENT_EFFECT,coadread_cass_2020
+Pre-Therapy,Indicates whether the patient received therapy before sequencing,STRING,True,0,PRETHERAPY,coadread_cass_2020
+Pre-Therapy With Targeted Agents,Indicates whether the patient received pre-tharapy with targeted agents,STRING,True,0,PRETHERAPY_WITH_TARGETED_AGENTS,coadread_cass_2020
+Primary Tumor Necrosis (%),Precent tissue necrosis in primary tumor cells,NUMBER,False,1,PRIMARY_NECROSIS,coadread_cass_2020
+Primary Tumor Purity (%),Precent primary tumor cell purity,NUMBER,False,1,PRIMARY_PURITY,coadread_cass_2020
+Tumor Progression,Tumor progression,STRING,True,1,PROGRESSION,coadread_cass_2020
+Progression Site,Progression site,STRING,True,1,PROGRESSION_SITE,coadread_cass_2020
+Progression Time (Days),Progression time (days),NUMBER,True,1,PROGRESSION_TIME,coadread_cass_2020
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_cass_2020
+Sex,Sex,STRING,True,1,SEX,coadread_cass_2020
+Tumor Stage,Tumor stage,STRING,True,1,STAGE,coadread_cass_2020
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_cass_2020
+TNM Stage,TNM staging system,STRING,True,1,TNM,coadread_cass_2020
+Tumor Site,Tumor atomic site,STRING,True,1,TUMOR_SITE,coadread_cass_2020

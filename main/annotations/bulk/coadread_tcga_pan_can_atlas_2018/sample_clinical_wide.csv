@@ -1,0 +1,595 @@
+patientId,sampleId,ANEUPLOIDY_SCORE,CANCER_TYPE,CANCER_TYPE_DETAILED,FRACTION_GENOME_ALTERED,MSI_SCORE_MANTIS,MSI_SENSOR_SCORE,MUTATION_COUNT,ONCOTREE_CODE,SAMPLE_TYPE,SOMATIC_STATUS,TBL_SCORE,TISSUE_PROSPECTIVE_COLLECTION_INDICATOR,TISSUE_RETROSPECTIVE_COLLECTION_INDICATOR,TISSUE_SOURCE_SITE,TISSUE_SOURCE_SITE_CODE,TMB_NONSYNONYMOUS,TUMOR_TISSUE_SITE,TUMOR_TYPE
+TCGA-3L-AA1B,TCGA-3L-AA1B-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.1127,0.3057,0.05,120,COAD,Primary,Matched,19,Yes,No,Indivumed,3L,4.033333333,Colon,Colon Adenocarcinoma
+TCGA-4N-A93T,TCGA-4N-A93T-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3130,0.3317,0.69,85,COAD,Primary,Matched,30,Yes,No,Indivumed,4N,2.9,Colon,Colon Adenocarcinoma
+TCGA-4T-AA8H,TCGA-4T-AA8H-01,18,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2816,0.3144,0.17,120,MACR,Primary,Matched,14,No,Yes,Indivumed,4T,4,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-5M-AAT4,TCGA-5M-AAT4-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4095,0.3232,0.55,176,COAD,Primary,Matched,82,No,Yes,Indivumed,5M,5.833333333,Colon,Colon Adenocarcinoma
+TCGA-5M-AAT5,TCGA-5M-AAT5-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.3435,0.3131,0.35,79,COAD,Primary,Matched,27,,,Molecular Response,5M,2.633333333,,Colon Adenocarcinoma
+TCGA-5M-AAT6,TCGA-5M-AAT6-01,3,Colorectal Cancer,Colon Adenocarcinoma,0.0500,0.66,20.58,1860,COAD,Primary,Matched,1,No,Yes,Indivumed,5M,62.16666667,Colon,Colon Adenocarcinoma
+TCGA-5M-AATA,TCGA-5M-AATA-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.1744,0.3123,0.08,71,COAD,Primary,Matched,56,,,University of Kansas,5M,2.366666667,,Colon Adenocarcinoma
+TCGA-5M-AATE,TCGA-5M-AATE-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.4018,0.3252,0.47,113,COAD,Primary,Matched,27,No,Yes,Indivumed,5M,3.8,Colon,Colon Adenocarcinoma
+TCGA-A6-2671,TCGA-A6-2671-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.4881,0.35,0.37,64,COAD,Primary,Matched,78.5,Yes,No,Indivumed,A6,4.066666667,Colon,Colon Adenocarcinoma
+TCGA-A6-2672,TCGA-A6-2672-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0357,0.9618,31.87,,COAD,Primary,Matched,39.7,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-2674,TCGA-A6-2674-01,24,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0611,0.4577,0.02,127,MACR,Primary,Matched,49,Yes,No,Indivumed,A6,7.666666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-A6-2675,TCGA-A6-2675-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.2208,0.363,0.05,88,COAD,Primary,Matched,116,Yes,No,Indivumed,A6,5.833333333,Colon,Colon Adenocarcinoma
+TCGA-A6-2676,TCGA-A6-2676-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0434,,17.34,,COAD,Primary,Matched,101,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-2677,TCGA-A6-2677-01,8,Colorectal Cancer,Colon Adenocarcinoma,,0.319,0,116,COAD,Primary,Matched,97,Yes,No,Indivumed,A6,7.766666667,Colon,Colon Adenocarcinoma
+TCGA-A6-2678,TCGA-A6-2678-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.2501,0.36,0.64,26,COAD,Primary,Matched,79.5,Yes,No,Indivumed,A6,1.733333333,Colon,Colon Adenocarcinoma
+TCGA-A6-2679,TCGA-A6-2679-01,23,Colorectal Cancer,Colon Adenocarcinoma,0.3265,0.3403,0.19,,COAD,Primary,Matched,69.5,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-2680,TCGA-A6-2680-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.3938,0.3468,,,COAD,Primary,Matched,7.5,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-2681,TCGA-A6-2681-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3353,0.3456,0.13,130,COAD,Primary,Matched,87.5,Yes,No,Indivumed,A6,8.666666667,Colon,Colon Adenocarcinoma
+TCGA-A6-2682,TCGA-A6-2682-01,,Colorectal Cancer,Colon Adenocarcinoma,0.0603,0.3444,,,COAD,Primary,Matched,15,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-2683,TCGA-A6-2683-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.4112,0.3644,1.46,33,COAD,Primary,Matched,81,Yes,No,Indivumed,A6,2.133333333,Colon,Colon Adenocarcinoma
+TCGA-A6-2684,TCGA-A6-2684-01,7,Colorectal Cancer,Colon Adenocarcinoma,,0.4665,14.49,99,COAD,Primary,Matched,11.8,Yes,No,Indivumed,A6,6.566666667,Colon,Colon Adenocarcinoma
+TCGA-A6-2685,TCGA-A6-2685-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.1206,0.3571,0,46,COAD,Primary,Matched,53.5,Yes,No,Indivumed,A6,2.966666667,Colon,Colon Adenocarcinoma
+TCGA-A6-2686,TCGA-A6-2686-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.3306,1.2375,41.35,2139,COAD,Primary,Matched,129.5,Yes,No,Indivumed,A6,135.7666667,Colon,Colon Adenocarcinoma
+TCGA-A6-3807,TCGA-A6-3807-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3442,0.4215,1.24,90,COAD,Primary,Matched,184,Yes,No,Indivumed,A6,3,Colon,Colon Adenocarcinoma
+TCGA-A6-3808,TCGA-A6-3808-01,,Colorectal Cancer,Colon Adenocarcinoma,,0.406,0.62,142,COAD,Primary,Matched,,Yes,No,Indivumed,A6,4.8,Colon,Colon Adenocarcinoma
+TCGA-A6-3809,TCGA-A6-3809-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,,0.9595,36.48,1165,MACR,Primary,Matched,7,Yes,No,Indivumed,A6,39.1,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-A6-3810,TCGA-A6-3810-01,22,Colorectal Cancer,Colon Adenocarcinoma,,0.3137,1.08,166,COAD,Primary,Matched,98.3,Yes,No,Indivumed,A6,5.533333333,Colon,Colon Adenocarcinoma
+TCGA-A6-4105,TCGA-A6-4105-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.3692,0.3528,0.3,145,COAD,Primary,Matched,50,Yes,No,Indivumed,A6,4.866666667,Colon,Colon Adenocarcinoma
+TCGA-A6-4107,TCGA-A6-4107-01,27,Colorectal Cancer,Colon Adenocarcinoma,0.2565,0.3809,0.01,169,COAD,Primary,Matched,61,Yes,No,Indivumed,A6,11.13333333,Colon,Colon Adenocarcinoma
+TCGA-A6-5656,TCGA-A6-5656-01,10,Colorectal Cancer,Colon Adenocarcinoma,,0.3197,15.42,107,COAD,Primary,Matched,60.3,Yes,No,Indivumed,A6,3.6,Colon,Colon Adenocarcinoma
+TCGA-A6-5657,TCGA-A6-5657-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.0871,0.3201,0.13,101,COAD,Primary,Matched,23,Yes,No,Indivumed,A6,6.633333333,Colon,Colon Adenocarcinoma
+TCGA-A6-5659,TCGA-A6-5659-01,12,Colorectal Cancer,Colon Adenocarcinoma,,0.4614,1,201,COAD,Primary,Matched,17,Yes,No,Indivumed,A6,13.5,Colon,Colon Adenocarcinoma
+TCGA-A6-5660,TCGA-A6-5660-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3504,0.3322,0.73,117,COAD,Primary,Matched,70,Yes,No,Indivumed,A6,7.533333333,Colon,Colon Adenocarcinoma
+TCGA-A6-5661,TCGA-A6-5661-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0323,,33.38,1269,COAD,Primary,Matched,47,Yes,No,Indivumed,A6,81.33333333,Colon,Colon Adenocarcinoma
+TCGA-A6-5662,TCGA-A6-5662-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.2434,,1,64,COAD,Primary,Matched,48,Yes,No,Indivumed,A6,4.2,Colon,Colon Adenocarcinoma
+TCGA-A6-5664,TCGA-A6-5664-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0607,0.4019,0,60,COAD,Primary,Matched,20,Yes,No,Indivumed,A6,2.066666667,Colon,Colon Adenocarcinoma
+TCGA-A6-5665,TCGA-A6-5665-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0133,1.1824,46.78,1859,COAD,Primary,Matched,27.5,Yes,No,Indivumed,A6,117.7666667,Colon,Colon Adenocarcinoma
+TCGA-A6-5666,TCGA-A6-5666-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2756,0.3139,1,91,COAD,Primary,Matched,38,Yes,No,Indivumed,A6,5.933333333,Colon,Colon Adenocarcinoma
+TCGA-A6-5667,TCGA-A6-5667-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.5465,0.3604,1.11,58,COAD,Primary,Matched,56,Yes,No,Indivumed,A6,3.766666667,Colon,Colon Adenocarcinoma
+TCGA-A6-6137,TCGA-A6-6137-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1679,0.3386,0.08,115,COAD,Primary,Matched,85,Yes,No,Indivumed,A6,3.733333333,Colon,Colon Adenocarcinoma
+TCGA-A6-6138,TCGA-A6-6138-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2186,0.3495,0.22,100,COAD,Primary,Matched,46,Yes,No,Indivumed,A6,3.333333333,Colon,Colon Adenocarcinoma
+TCGA-A6-6140,TCGA-A6-6140-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.2804,0.3659,,,COAD,Primary,Matched,37,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-6141,TCGA-A6-6141-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0002,0.3495,0.01,,COAD,Primary,Matched,3,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-A6-6142,TCGA-A6-6142-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.2569,0.3596,0.07,79,COAD,Primary,Matched,49,Yes,No,Indivumed,A6,2.633333333,Colon,Colon Adenocarcinoma
+TCGA-A6-6648,TCGA-A6-6648-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.3655,0.3926,0.52,88,COAD,Primary,Matched,96,Yes,No,Indivumed,A6,2.966666667,Colon,Colon Adenocarcinoma
+TCGA-A6-6649,TCGA-A6-6649-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.1689,0.4012,0.19,119,COAD,Primary,Matched,78,Yes,No,Indivumed,A6,3.966666667,Colon,Colon Adenocarcinoma
+TCGA-A6-6650,TCGA-A6-6650-01,19,Colorectal Cancer,Colon Adenocarcinoma,,0.466,2.26,,COAD,Primary,Matched,59.7,Yes,No,Indivumed,A6,0,Colon,Colon Adenocarcinoma
+TCGA-A6-6651,TCGA-A6-6651-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.0914,0.3785,0.08,84,COAD,Primary,Matched,25,Yes,No,Indivumed,A6,2.8,Colon,Colon Adenocarcinoma
+TCGA-A6-6652,TCGA-A6-6652-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3395,0.3866,0.3,76,COAD,Primary,Matched,36,Yes,No,Indivumed,A6,2.533333333,Colon,Colon Adenocarcinoma
+TCGA-A6-6653,TCGA-A6-6653-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0132,1.0708,33.02,1067,COAD,Primary,Matched,36,Yes,No,Indivumed,A6,35.63333333,Colon,Colon Adenocarcinoma
+TCGA-A6-6654,TCGA-A6-6654-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.1377,0.3351,0.07,170,COAD,Primary,Matched,100,Yes,No,Indivumed,A6,5.666666667,Colon,Colon Adenocarcinoma
+TCGA-A6-6780,TCGA-A6-6780-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,,1.1071,37.25,1179,MACR,Primary,Matched,19,Yes,No,Indivumed,A6,39.43333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-A6-6781,TCGA-A6-6781-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,,0.771,25.58,1916,MACR,Primary,Matched,9.7,Yes,No,Indivumed,A6,64.2,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-A6-6782,TCGA-A6-6782-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2152,0.3922,0,126,COAD,Primary,Matched,85,Yes,No,Indivumed,A6,4.133333333,Colon,Colon Adenocarcinoma
+TCGA-A6-A565,TCGA-A6-A565-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0001,0.3972,0.41,364,MACR,Primary,Matched,0,No,Yes,Indivumed,A6,12.2,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-A6-A566,TCGA-A6-A566-01,4,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1209,0.2956,0,151,MACR,Primary,Matched,14,No,Yes,Indivumed,A6,5.133333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-A6-A567,TCGA-A6-A567-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.3080,0.2929,0.07,52,COAD,Primary,Matched,48,No,Yes,Indivumed,A6,1.7,Colon,Colon Adenocarcinoma
+TCGA-A6-A56B,TCGA-A6-A56B-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.4576,0.3073,0.22,84,COAD,Primary,Matched,145,No,Yes,Indivumed,A6,2.8,Colon,Colon Adenocarcinoma
+TCGA-A6-A5ZU,TCGA-A6-A5ZU-01,,Colorectal Cancer,Colon Adenocarcinoma,0.4935,,2.59,,COAD,Primary,Matched,35,Yes,No,Indivumed,A6,,Colon,Colon Adenocarcinoma
+TCGA-AA-3488,TCGA-AA-3488-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.5933,0.3711,,,COAD,Primary,Matched,97,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3489,TCGA-AA-3489-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.0910,0.3996,0,111,COAD,Primary,Matched,35,No,Yes,Indivumed,AA,3.7,Colon,Colon Adenocarcinoma
+TCGA-AA-3492,TCGA-AA-3492-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0047,1.2602,35.82,2009,COAD,Primary,Matched,25,No,Yes,Indivumed,AA,67.43333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3494,TCGA-AA-3494-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4035,0.3581,,,COAD,Primary,Matched,36,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3495,TCGA-AA-3495-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2107,0.3588,,,COAD,Primary,Matched,89,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3496,TCGA-AA-3496-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.3153,0.4517,0.4,146,COAD,Primary,Matched,50,No,Yes,International Genomics Consortium,AA,4.9,Colon,Colon Adenocarcinoma
+TCGA-AA-3502,TCGA-AA-3502-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1218,0.3387,0.19,168,COAD,Primary,Matched,15,No,Yes,International Genomics Consortium,AA,5.666666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3506,TCGA-AA-3506-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1853,0.3453,0.03,138,COAD,Primary,Matched,35,No,Yes,International Genomics Consortium,AA,4.6,Colon,Colon Adenocarcinoma
+TCGA-AA-3510,TCGA-AA-3510-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0002,0.341,0,3070,COAD,Primary,Matched,12,No,Yes,International Genomics Consortium,AA,102.9333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3511,TCGA-AA-3511-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.3049,0.391,0.06,122,COAD,Primary,Matched,51,No,Yes,International Genomics Consortium,AA,4.033333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3514,TCGA-AA-3514-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.0782,0.3123,1.1,31,COAD,Primary,Matched,12,No,Yes,International Genomics Consortium,AA,1.933333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3517,TCGA-AA-3517-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.3710,0.3204,0.26,11,COAD,Primary,Matched,82,No,Yes,International Genomics Consortium,AA,0.733333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3518,TCGA-AA-3518-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0026,,4.34,,COAD,Primary,Matched,37,No,Yes,International Genomics Consortium,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3519,TCGA-AA-3519-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3694,0.3647,0.69,21,COAD,Primary,Matched,51.5,No,Yes,International Genomics Consortium,AA,1.333333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3520,TCGA-AA-3520-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1899,0.3835,1.72,20,COAD,Primary,Matched,58.5,No,Yes,International Genomics Consortium,AA,0.666666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3521,TCGA-AA-3521-01,30,Colorectal Cancer,Colon Adenocarcinoma,0.2428,0.3496,2.03,17,COAD,Primary,Matched,50,No,Yes,International Genomics Consortium,AA,0.566666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3522,TCGA-AA-3522-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2992,0.3234,0.05,16,COAD,Primary,Matched,47,No,Yes,International Genomics Consortium,AA,1.033333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3524,TCGA-AA-3524-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1879,0.3154,0.1,18,COAD,Primary,Matched,54.5,No,Yes,International Genomics Consortium,AA,0.6,Colon,Colon Adenocarcinoma
+TCGA-AA-3525,TCGA-AA-3525-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0018,,11.72,,COAD,Primary,Matched,23,No,Yes,Christiana Healthcare,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3526,TCGA-AA-3526-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1245,0.3851,1.33,25,COAD,Primary,Matched,12,No,Yes,Christiana Healthcare,AA,0.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3527,TCGA-AA-3527-01,3,Colorectal Cancer,Colon Adenocarcinoma,0.0639,0.3161,2.03,22,COAD,Primary,Matched,7,No,Yes,Christiana Healthcare,AA,1.4,Colon,Colon Adenocarcinoma
+TCGA-AA-3529,TCGA-AA-3529-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1815,0.4301,0.66,10,COAD,Primary,Matched,104.5,No,Yes,Christiana Healthcare,AA,0.333333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3530,TCGA-AA-3530-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.1065,0.3164,0.4,86,COAD,Primary,Matched,5,No,Yes,Christiana Healthcare,AA,2.866666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3531,TCGA-AA-3531-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.2786,0.3268,0.86,18,COAD,Primary,Matched,31.5,No,Yes,Christiana Healthcare,AA,1.166666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3532,TCGA-AA-3532-01,30,Colorectal Cancer,Colon Adenocarcinoma,0.3778,0.3244,1.6,21,COAD,Primary,Matched,65,No,Yes,Christiana Healthcare,AA,0.7,Colon,Colon Adenocarcinoma
+TCGA-AA-3534,TCGA-AA-3534-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.7359,0.3252,0.16,20,COAD,Primary,Matched,4,No,Yes,Christiana Healthcare,AA,0.666666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3538,TCGA-AA-3538-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.3380,0.3368,0,15,COAD,Primary,Matched,33,No,Yes,Christiana Healthcare,AA,0.5,Colon,Colon Adenocarcinoma
+TCGA-AA-3542,TCGA-AA-3542-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.5186,,0,,COAD,Primary,Matched,172,No,Yes,Christiana Healthcare,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3543,TCGA-AA-3543-01,1,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0474,,4.56,,MACR,Primary,Matched,48,No,Yes,Christiana Healthcare,AA,,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3544,TCGA-AA-3544-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.3123,0.3291,0,19,COAD,Primary,Matched,69,No,Yes,Christiana Healthcare,AA,0.633333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3548,TCGA-AA-3548-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.2886,0.3218,0.04,18,COAD,Primary,Matched,37,No,Yes,Christiana Healthcare,AA,0.6,Colon,Colon Adenocarcinoma
+TCGA-AA-3549,TCGA-AA-3549-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.2247,0.2966,0,18,COAD,Primary,Matched,98,No,Yes,Christiana Healthcare,AA,0.6,Colon,Colon Adenocarcinoma
+TCGA-AA-3552,TCGA-AA-3552-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.4467,,0.04,,COAD,Primary,Matched,78,No,Yes,Christiana Healthcare,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3553,TCGA-AA-3553-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.4086,,0,,COAD,Primary,Matched,17,No,Yes,Christiana Healthcare,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3555,TCGA-AA-3555-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0004,,0.05,,MACR,Primary,Matched,4,No,Yes,Indivumed,AA,,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3558,TCGA-AA-3558-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1554,0.3523,0.11,16,COAD,Primary,Matched,10,No,Yes,Indivumed,AA,0.533333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3560,TCGA-AA-3560-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.4374,0.3648,0.03,19,COAD,Primary,Matched,45,No,Yes,Indivumed,AA,0.633333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3561,TCGA-AA-3561-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2301,0.3413,0.27,17,COAD,Primary,Matched,55,No,Yes,Indivumed,AA,0.566666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3655,TCGA-AA-3655-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1393,0.3473,0.2,75,COAD,Primary,Matched,31,No,Yes,Indivumed,AA,2.566666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3660,TCGA-AA-3660-01,15,Colorectal Cancer,Colon Adenocarcinoma,0.3384,0.3366,0.3,130,COAD,Primary,Matched,143,No,Yes,Indivumed,AA,4.366666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3663,TCGA-AA-3663-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.0983,1.2565,41.51,1937,COAD,Primary,Matched,11,No,Yes,Indivumed,AA,64.86666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3664,TCGA-AA-3664-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.2556,0.2631,0.79,145,COAD,Primary,Matched,99,No,Yes,Indivumed,AA,4.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3666,TCGA-AA-3666-01,24,Colorectal Cancer,Colon Adenocarcinoma,0.5738,0.2807,1.17,170,COAD,Primary,Matched,136,No,Yes,Indivumed,AA,5.666666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3667,TCGA-AA-3667-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.2932,0.2649,0.71,71,COAD,Primary,Matched,24,No,Yes,Indivumed,AA,2.366666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3673,TCGA-AA-3673-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2291,0.284,0.51,71,COAD,Primary,Matched,18,No,Yes,Indivumed,AA,2.366666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3675,TCGA-AA-3675-01,3,Colorectal Cancer,Colon Adenocarcinoma,0.0556,0.2618,0.31,77,COAD,Primary,Matched,1,No,Yes,Indivumed,AA,2.566666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3678,TCGA-AA-3678-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2924,0.2741,0.65,66,COAD,Primary,Matched,25,No,Yes,Indivumed,AA,2.2,Colon,Colon Adenocarcinoma
+TCGA-AA-3679,TCGA-AA-3679-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.5643,0.2575,0.41,59,COAD,Primary,Matched,86,No,Yes,Indivumed,AA,2.033333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3680,TCGA-AA-3680-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.1345,0.2615,0.33,104,COAD,Primary,Matched,53,No,Yes,Indivumed,AA,3.5,Colon,Colon Adenocarcinoma
+TCGA-AA-3681,TCGA-AA-3681-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3097,0.263,0.52,100,COAD,Primary,Matched,65,No,Yes,Indivumed,AA,3.366666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3684,TCGA-AA-3684-01,15,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0160,0.2513,0.09,128,MACR,Primary,Matched,27,No,Yes,Indivumed,AA,4.3,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3685,TCGA-AA-3685-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.5316,0.2703,0.49,83,COAD,Primary,Matched,147,No,Yes,Indivumed,AA,2.766666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3688,TCGA-AA-3688-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3690,0.3017,1.27,64,COAD,Primary,Matched,35,No,Yes,Indivumed,AA,2.133333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3692,TCGA-AA-3692-01,8,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2305,0.2721,0.31,67,MACR,Primary,Matched,14,No,Yes,Indivumed,AA,2.233333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3693,TCGA-AA-3693-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3546,0.2829,1.09,133,COAD,Primary,Matched,51,No,Yes,Indivumed,AA,4.433333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3695,TCGA-AA-3695-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.4547,0.2817,0.65,148,COAD,Primary,Matched,26,No,Yes,Indivumed,AA,4.9,Colon,Colon Adenocarcinoma
+TCGA-AA-3696,TCGA-AA-3696-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.2657,0.2665,0.4,81,COAD,Primary,Matched,14,No,Yes,Indivumed,AA,2.7,Colon,Colon Adenocarcinoma
+TCGA-AA-3710,TCGA-AA-3710-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0505,0.8652,31.62,,COAD,Primary,Matched,23,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3712,TCGA-AA-3712-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.5642,0.3407,0.53,115,COAD,Primary,Matched,68,No,Yes,Indivumed,AA,3.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3713,TCGA-AA-3713-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0517,0.8168,26.26,1018,COAD,Primary,Matched,14,No,Yes,Indivumed,AA,34,Colon,Colon Adenocarcinoma
+TCGA-AA-3715,TCGA-AA-3715-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.0470,1.092,44.26,2119,COAD,Primary,Matched,64,No,Yes,Indivumed,AA,70.83333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3811,TCGA-AA-3811-01,,Colorectal Cancer,Colon Adenocarcinoma,0.2961,1.1337,38.84,1916,COAD,Primary,Matched,66,No,Yes,Indivumed,AA,64.1,Colon,Colon Adenocarcinoma
+TCGA-AA-3812,TCGA-AA-3812-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.0678,0.2659,0.18,107,COAD,Primary,Matched,50,No,Yes,Indivumed,AA,3.6,Colon,Colon Adenocarcinoma
+TCGA-AA-3814,TCGA-AA-3814-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.1068,0.2754,0.35,91,COAD,Primary,Matched,21,No,Yes,Indivumed,AA,3.033333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3818,TCGA-AA-3818-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1748,0.268,0.57,138,COAD,Primary,Matched,22,No,Yes,Indivumed,AA,4.6,Colon,Colon Adenocarcinoma
+TCGA-AA-3819,TCGA-AA-3819-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.1242,0.261,0.25,177,COAD,Primary,Matched,47,No,Yes,Indivumed,AA,6.033333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3821,TCGA-AA-3821-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0002,0.942,30.92,791,MACR,Primary,Matched,34,No,Yes,Indivumed,AA,26.5,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3831,TCGA-AA-3831-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0012,0.276,1.61,104,COAD,Primary,Matched,23,No,Yes,Indivumed,AA,3.5,Colon,Colon Adenocarcinoma
+TCGA-AA-3833,TCGA-AA-3833-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0002,0.9553,27.18,578,COAD,Primary,Matched,7,No,Yes,Indivumed,AA,19.13333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3837,TCGA-AA-3837-01,16,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2128,0.2784,0.82,118,MACR,Primary,Matched,18,No,Yes,Indivumed,AA,3.933333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3841,TCGA-AA-3841-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4617,0.2896,0.79,67,COAD,Primary,Matched,36,No,Yes,Indivumed,AA,2.233333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3842,TCGA-AA-3842-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4471,0.3246,0.68,87,COAD,Primary,Matched,52,No,Yes,Indivumed,AA,2.933333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3844,TCGA-AA-3844-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3323,0.3264,0.87,112,COAD,Primary,Matched,25,No,Yes,Indivumed,AA,3.8,Colon,Colon Adenocarcinoma
+TCGA-AA-3845,TCGA-AA-3845-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.0892,0.9169,30.53,908,COAD,Primary,Matched,15,No,Yes,Indivumed,AA,30.4,Colon,Colon Adenocarcinoma
+TCGA-AA-3846,TCGA-AA-3846-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.3878,0.3293,0.67,101,COAD,Primary,Matched,26,No,Yes,Indivumed,AA,3.333333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3848,TCGA-AA-3848-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.1757,0.2571,0.66,133,COAD,Primary,Matched,85,No,Yes,Indivumed,AA,4.433333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3850,TCGA-AA-3850-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.0010,0.3018,0.07,105,COAD,Primary,Matched,120,No,Yes,Indivumed,AA,3.533333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3851,TCGA-AA-3851-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.4916,0.3204,0.43,89,COAD,Primary,Matched,28,No,Yes,Indivumed,AA,2.966666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3852,TCGA-AA-3852-01,9,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2282,0.2731,0.32,144,MACR,Primary,Matched,5,No,Yes,Indivumed,AA,4.8,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3854,TCGA-AA-3854-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1273,0.2733,0.89,139,MACR,Primary,Matched,45,No,Yes,Indivumed,AA,4.666666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3855,TCGA-AA-3855-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.3279,0.3187,0.11,147,COAD,Primary,Matched,11,No,Yes,Indivumed,AA,4.9,Colon,Colon Adenocarcinoma
+TCGA-AA-3856,TCGA-AA-3856-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.3329,0.2645,0.3,57,COAD,Primary,Matched,19,No,Yes,Indivumed,AA,1.9,Colon,Colon Adenocarcinoma
+TCGA-AA-3858,TCGA-AA-3858-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.2739,0.2586,0.37,60,COAD,Primary,Matched,48,No,Yes,Indivumed,AA,2,Colon,Colon Adenocarcinoma
+TCGA-AA-3864,TCGA-AA-3864-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0008,0.8915,23.86,2440,COAD,Primary,Matched,18,No,Yes,Indivumed,AA,81.76666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3866,TCGA-AA-3866-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.3460,0.3267,0.43,100,COAD,Primary,Matched,98,No,Yes,Indivumed,AA,3.4,Colon,Colon Adenocarcinoma
+TCGA-AA-3867,TCGA-AA-3867-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.2456,0.3148,0.42,91,COAD,Primary,Matched,129,No,Yes,Indivumed,AA,3.066666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3869,TCGA-AA-3869-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4115,0.4048,0.67,,COAD,Primary,Matched,83,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3870,TCGA-AA-3870-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.3140,0.3807,0.6,,COAD,Primary,Matched,127,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3872,TCGA-AA-3872-01,24,Colorectal Cancer,Colon Adenocarcinoma,0.4529,0.3976,1.08,,COAD,Primary,Matched,53,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3875,TCGA-AA-3875-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.0867,0.2689,0.14,118,COAD,Primary,Matched,111,No,Yes,Indivumed,AA,3.9,Colon,Colon Adenocarcinoma
+TCGA-AA-3877,TCGA-AA-3877-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0559,0.8655,32.33,1083,MACR,Primary,Matched,28,No,Yes,Indivumed,AA,36.16666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3930,TCGA-AA-3930-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.3057,0.3672,0.43,,COAD,Primary,Matched,32,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3939,TCGA-AA-3939-01,,Colorectal Cancer,Colon Adenocarcinoma,0.6133,0.36,1.02,,COAD,Primary,Matched,37,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3941,TCGA-AA-3941-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4169,0.3682,1.05,,COAD,Primary,Matched,110,No,Yes,Indivumed,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-3947,TCGA-AA-3947-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0014,1.2515,40,2292,MACR,Primary,Matched,24,No,Yes,Indivumed,AA,76.8,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3949,TCGA-AA-3949-01,3,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0004,0.751,24.11,1164,MACR,Primary,Matched,10,No,Yes,Indivumed,AA,39,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3950,TCGA-AA-3950-01,5,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1008,0.75,25.38,127,MACR,Primary,Matched,14,No,Yes,Indivumed,AA,4.233333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3952,TCGA-AA-3952-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.3808,0.3274,0.43,98,COAD,Primary,Matched,129,No,Yes,Indivumed,AA,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3955,TCGA-AA-3955-01,15,Colorectal Cancer,Colon Adenocarcinoma,0.3101,0.3279,0.16,131,COAD,Primary,Matched,47,No,Yes,Indivumed,AA,4.466666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3956,TCGA-AA-3956-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.1821,0.3246,0.16,135,COAD,Primary,Matched,34,No,Yes,Indivumed,AA,4.533333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3966,TCGA-AA-3966-01,18,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2030,1.296,43.67,1093,MACR,Primary,Matched,70,No,Yes,Indivumed,AA,36.43333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-3968,TCGA-AA-3968-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.5075,0.331,0.22,134,COAD,Primary,Matched,137,No,Yes,Indivumed,AA,4.533333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3971,TCGA-AA-3971-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.4059,0.3362,0.49,79,COAD,Primary,Matched,47,No,Yes,Indivumed,AA,2.633333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3973,TCGA-AA-3973-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1952,0.3291,0.47,83,COAD,Primary,Matched,15,No,Yes,Indivumed,AA,2.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3975,TCGA-AA-3975-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2591,0.3404,0.21,145,COAD,Primary,Matched,46,No,Yes,Indivumed,AA,4.9,Colon,Colon Adenocarcinoma
+TCGA-AA-3976,TCGA-AA-3976-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.4991,0.3308,0.3,84,COAD,Primary,Matched,22,No,Yes,International Genomics Consortium,AA,2.8,Colon,Colon Adenocarcinoma
+TCGA-AA-3977,TCGA-AA-3977-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0008,0.3545,0.37,3444,COAD,Primary,Matched,9,No,Yes,International Genomics Consortium,AA,115.3,Colon,Colon Adenocarcinoma
+TCGA-AA-3979,TCGA-AA-3979-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.2946,0.3186,1.51,129,COAD,Primary,Matched,123,No,Yes,International Genomics Consortium,AA,4.333333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3980,TCGA-AA-3980-01,,Colorectal Cancer,Colon Adenocarcinoma,,0.3103,0.38,96,COAD,Primary,Matched,,No,Yes,International Genomics Consortium,AA,3.2,Colon,Colon Adenocarcinoma
+TCGA-AA-3982,TCGA-AA-3982-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.1341,0.3356,0.06,127,COAD,Primary,Matched,116,No,Yes,International Genomics Consortium,AA,4.2,Colon,Colon Adenocarcinoma
+TCGA-AA-3984,TCGA-AA-3984-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1573,0.3334,0.14,5113,COAD,Primary,Matched,24,No,Yes,International Genomics Consortium,AA,171.4,Colon,Colon Adenocarcinoma
+TCGA-AA-3986,TCGA-AA-3986-01,3,Colorectal Cancer,Colon Adenocarcinoma,0.0551,0.3248,0.09,85,COAD,Primary,Matched,4,No,Yes,Cureline,AA,2.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-3989,TCGA-AA-3989-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.2031,0.3311,0.19,117,COAD,Primary,Matched,141,No,Yes,Cureline,AA,3.866666667,Colon,Colon Adenocarcinoma
+TCGA-AA-3994,TCGA-AA-3994-01,7,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2117,0.2838,0.99,178,MACR,Primary,Matched,44,No,Yes,St. Joseph's Medical Center-(MD),AA,5.9,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A004,TCGA-AA-A004-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.3077,0.2846,0.84,68,COAD,Primary,Matched,66,No,Yes,St. Joseph's Medical Center-(MD),AA,2.2,Colon,Colon Adenocarcinoma
+TCGA-AA-A00A,TCGA-AA-A00A-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0122,,7.51,,COAD,Primary,Matched,19,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00D,TCGA-AA-A00D-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1967,,0,,COAD,Primary,Matched,42,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00E,TCGA-AA-A00E-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0216,,14.23,,COAD,Primary,Matched,57,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00F,TCGA-AA-A00F-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.5739,,0.07,,COAD,Primary,Matched,79,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00J,TCGA-AA-A00J-01,1,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0444,,11.59,,MACR,Primary,Matched,35,No,Yes,UNC,AA,,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A00K,TCGA-AA-A00K-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1388,,0.41,,COAD,Primary,Matched,17,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00L,TCGA-AA-A00L-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1802,,0,,COAD,Primary,Matched,148,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00N,TCGA-AA-A00N-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0007,0.3279,32.47,4875,MACR,Primary,Matched,6,No,Yes,UNC,AA,163.3,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A00O,TCGA-AA-A00O-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1944,0.2697,1.05,,COAD,Primary,Matched,127,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00Q,TCGA-AA-A00Q-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.2482,,0,,COAD,Primary,Matched,19,No,Yes,UNC,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00R,TCGA-AA-A00R-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0712,,12.68,,COAD,Primary,Matched,39,No,Yes,University of Pittsburgh,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00U,TCGA-AA-A00U-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1412,,0.03,,COAD,Primary,Matched,59,No,Yes,University of Pittsburgh,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00W,TCGA-AA-A00W-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1540,,0,,COAD,Primary,Matched,17,No,Yes,University of Pittsburgh,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A00Z,TCGA-AA-A00Z-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.1737,0.3206,0,14,COAD,Primary,Matched,116,No,Yes,University of Pittsburgh,AA,0.466666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A010,TCGA-AA-A010-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0056,0.3765,4.19,7492,COAD,Primary,Matched,9,No,Yes,University of Pittsburgh,AA,250.7,Colon,Colon Adenocarcinoma
+TCGA-AA-A017,TCGA-AA-A017-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2310,0.28,1.19,54,COAD,Primary,Matched,28,No,Yes,University of Pittsburgh,AA,1.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A01C,TCGA-AA-A01C-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.4230,0.2539,0.1,86,COAD,Primary,Matched,30,No,Yes,University of Pittsburgh,AA,2.833333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A01D,TCGA-AA-A01D-01,20,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2620,0.2695,0.71,,MACR,Primary,Matched,67,No,Yes,University of Pittsburgh,AA,,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A01F,TCGA-AA-A01F-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.5492,,0.03,,COAD,Primary,Matched,26,No,Yes,University of Pittsburgh,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A01G,TCGA-AA-A01G-01,12,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1787,,0,,MACR,Primary,Matched,34,No,Yes,University of Pittsburgh,AA,,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A01I,TCGA-AA-A01I-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2417,0.2695,0.87,103,COAD,Primary,Matched,7,No,Yes,University of Pittsburgh,AA,3.433333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A01K,TCGA-AA-A01K-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.3157,0.2795,1.3,,COAD,Primary,Matched,78,No,Yes,University of Pittsburgh,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A01P,TCGA-AA-A01P-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0003,0.6789,20.7,846,COAD,Primary,Matched,12,No,Yes,University of Pittsburgh,AA,28.36666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A01Q,TCGA-AA-A01Q-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0462,,5.43,,COAD,Primary,Matched,62,No,Yes,University of Pittsburgh,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A01R,TCGA-AA-A01R-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0832,0.7418,22.57,1621,MACR,Primary,Matched,42,No,Yes,University of Pittsburgh,AA,54.26666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A01S,TCGA-AA-A01S-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.2205,0.325,0.6,51,COAD,Primary,Matched,142,No,Yes,University of Pittsburgh,AA,1.7,Colon,Colon Adenocarcinoma
+TCGA-AA-A01T,TCGA-AA-A01T-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.3861,0.3369,1.26,91,COAD,Primary,Matched,88,No,Yes,University of Pittsburgh,AA,3.033333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A01V,TCGA-AA-A01V-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0001,0.3163,0.31,108,COAD,Primary,Matched,8,No,Yes,University of Pittsburgh,AA,3.666666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A01X,TCGA-AA-A01X-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.5220,0.3184,0.38,65,COAD,Primary,Matched,3,No,Yes,University of Pittsburgh,AA,2.166666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A01Z,TCGA-AA-A01Z-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1752,0.3259,0.42,95,COAD,Primary,Matched,138,No,Yes,ILSBio,AA,3.2,Colon,Colon Adenocarcinoma
+TCGA-AA-A022,TCGA-AA-A022-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1452,1.1662,43,1471,COAD,Primary,Matched,34,No,Yes,ILSBio,AA,49.33333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A024,TCGA-AA-A024-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0006,0.2567,0.75,79,MACR,Primary,Matched,6,No,Yes,ILSBio,AA,2.666666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A029,TCGA-AA-A029-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.2676,0.2837,2.01,,COAD,Primary,Matched,10,No,Yes,ILSBio,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A02E,TCGA-AA-A02E-01,23,Colorectal Cancer,Colon Adenocarcinoma,0.5898,0.2544,1.66,148,COAD,Primary,Matched,83,No,Yes,ILSBio,AA,4.933333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A02F,TCGA-AA-A02F-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.5801,0.2783,1.83,51,COAD,Primary,Matched,88,No,Yes,ILSBio,AA,1.733333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A02H,TCGA-AA-A02H-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.4195,0.2874,2.03,74,COAD,Primary,Matched,65,No,Yes,ILSBio,AA,2.466666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A02J,TCGA-AA-A02J-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1843,0.2836,0.54,,COAD,Primary,Matched,45,No,Yes,ILSBio,AA,,Colon,Colon Adenocarcinoma
+TCGA-AA-A02O,TCGA-AA-A02O-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.2498,0.3293,0.48,160,COAD,Primary,Matched,50,No,Yes,ILSBio,AA,5.333333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A02R,TCGA-AA-A02R-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0464,1.2923,32.62,1089,COAD,Primary,Matched,33,No,Yes,ILSBio,AA,36.36666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A02W,TCGA-AA-A02W-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.4626,0.2652,0.77,92,COAD,Primary,Matched,65,No,Yes,University of Pittsburgh,AA,3.066666667,Colon,Colon Adenocarcinoma
+TCGA-AA-A02Y,TCGA-AA-A02Y-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1905,0.3389,0.38,110,COAD,Primary,Matched,10,No,Yes,University of Pittsburgh,AA,3.633333333,Colon,Colon Adenocarcinoma
+TCGA-AA-A03F,TCGA-AA-A03F-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0000,0.3075,0.22,125,MACR,Primary,Matched,0,No,Yes,University of Pittsburgh,AA,4.2,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AA-A03J,TCGA-AA-A03J-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.4677,0.3238,0.22,81,COAD,Primary,Matched,83,No,Yes,University of Pittsburgh,AA,2.666666667,Colon,Colon Adenocarcinoma
+TCGA-AD-5900,TCGA-AD-5900-01,6,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1197,0.9101,36.46,1474,MACR,Primary,Matched,10,No,Yes,University of Pittsburgh,AD,49.26666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AD-6548,TCGA-AD-6548-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.0752,0.4334,0.02,119,COAD,Primary,Matched,63,Yes,No,University of Pittsburgh,AD,4.033333333,Colon,Colon Adenocarcinoma
+TCGA-AD-6888,TCGA-AD-6888-01,30,Colorectal Cancer,Colon Adenocarcinoma,0.1853,0.3466,0.13,104,COAD,Primary,Matched,76,No,Yes,Harvard,AD,3.5,Colon,Colon Adenocarcinoma
+TCGA-AD-6889,TCGA-AD-6889-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0008,1.3414,40.44,1704,COAD,Primary,Matched,14,No,Yes,Harvard,AD,57.4,Colon,Colon Adenocarcinoma
+TCGA-AD-6890,TCGA-AD-6890-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1853,0.3483,0.03,100,COAD,Primary,Matched,36,Yes,No,Harvard,AD,3.333333333,Colon,Colon Adenocarcinoma
+TCGA-AD-6895,TCGA-AD-6895-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0019,0.8416,23.11,1538,COAD,Primary,Matched,39,Yes,No,Harvard,AD,51.56666667,Colon,Colon Adenocarcinoma
+TCGA-AD-6899,TCGA-AD-6899-01,20,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2038,0.355,0.07,136,MACR,Primary,Matched,92,Yes,No,Harvard,AD,4.566666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AD-6901,TCGA-AD-6901-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.2971,0.3533,0.18,223,COAD,Primary,Matched,93,Yes,No,Harvard,AD,7.466666667,Colon,Colon Adenocarcinoma
+TCGA-AD-6963,TCGA-AD-6963-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.1973,0.3442,0.02,75,COAD,Primary,Matched,37,Yes,No,Harvard,AD,2.433333333,Colon,Colon Adenocarcinoma
+TCGA-AD-6964,TCGA-AD-6964-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0111,0.7365,18.65,1410,COAD,Primary,Matched,23,Yes,No,Harvard,AD,47.3,Colon,Colon Adenocarcinoma
+TCGA-AD-6965,TCGA-AD-6965-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.3464,0.3643,0.33,109,COAD,Primary,Matched,57,Yes,No,Harvard,AD,3.633333333,Colon,Colon Adenocarcinoma
+TCGA-AD-A5EJ,TCGA-AD-A5EJ-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0114,1.0934,22.4,1445,COAD,Primary,Matched,8,Yes,No,Harvard,AD,48.2,Colon,Colon Adenocarcinoma
+TCGA-AD-A5EK,TCGA-AD-A5EK-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.9127,0.2808,0.32,73,COAD,Primary,Matched,103,Yes,No,Harvard,AD,2.433333333,Colon,Colon Adenocarcinoma
+TCGA-AF-2687,TCGA-AF-2687-01,24,Colorectal Cancer,Rectal Adenocarcinoma,0.2505,0.3529,0.08,98,READ,Primary,Matched,46,Yes,No,Albert Einstein Medical Center,AF,3.266666667,Rectum,Rectal Adenocarcinoma
+TCGA-AF-2689,TCGA-AF-2689-01,18,Colorectal Cancer,Rectal Adenocarcinoma,0.4330,0.3486,1.28,26,READ,Primary,Matched,76.5,Yes,No,Mary Bird Perkins Cancer Center - Our Lady of the Lake,AF,1.733333333,Rectum,Rectal Adenocarcinoma
+TCGA-AF-2690,TCGA-AF-2690-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.4372,0.3412,0.03,72,READ,Primary,Matched,55,Yes,No,Duke University,AF,2.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-AF-2691,TCGA-AF-2691-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.1282,0.3267,1.16,34,READ,Primary,Matched,19.5,Yes,No,University of Sao Paulo,AF,2.233333333,Rectum,Rectal Adenocarcinoma
+TCGA-AF-2692,TCGA-AF-2692-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.4873,0.3259,1.32,12,READ,Primary,Matched,49,Yes,No,University of Sao Paulo,AF,0.733333333,,Rectum Adenocarcinoma
+TCGA-AF-2693,TCGA-AF-2693-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.2996,0.339,0.02,83,READ,Primary,Matched,172,Yes,No,University of Sao Paulo,AF,2.766666667,,Rectum Adenocarcinoma
+TCGA-AF-3400,TCGA-AF-3400-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.0601,0.3156,0.93,20,READ,Primary,Matched,93,Yes,No,University of Sao Paulo,AF,1.2,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AF-3911,TCGA-AF-3911-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.4700,0.3559,0.15,82,READ,Primary,Matched,77,Yes,No,University of Sao Paulo,AF,2.733333333,Rectum,Rectal Adenocarcinoma
+TCGA-AF-4110,TCGA-AF-4110-01,23,Colorectal Cancer,Rectal Adenocarcinoma,0.2599,0.3522,0.06,86,READ,Primary,Matched,94,Yes,No,Christiana Healthcare,AF,2.866666667,,Rectum Adenocarcinoma
+TCGA-AF-5654,TCGA-AF-5654-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.2065,0.3231,0.19,121,READ,Primary,Matched,74,Yes,No,Christiana Healthcare,AF,8.033333333,Rectum,Rectal Adenocarcinoma
+TCGA-AF-6136,TCGA-AF-6136-01,27,Colorectal Cancer,Rectal Adenocarcinoma,0.4803,0.3329,0.16,110,READ,Primary,Matched,66,Yes,No,Christiana Healthcare,AF,3.666666667,Rectum,Rectal Adenocarcinoma
+TCGA-AF-6655,TCGA-AF-6655-01,19,Colorectal Cancer,Rectal Adenocarcinoma,0.3195,0.3465,0.16,64,READ,Primary,Matched,31,Yes,No,Christiana Healthcare,AF,2.166666667,Rectum,Rectal Adenocarcinoma
+TCGA-AF-6672,TCGA-AF-6672-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.5116,0.3345,0.02,76,READ,Primary,Matched,71,Yes,No,Christiana Healthcare,AF,2.566666667,Rectum,Rectal Adenocarcinoma
+TCGA-AF-A56K,TCGA-AF-A56K-01,14,Colorectal Cancer,Rectal Adenocarcinoma,0.2761,0.3197,0.29,88,READ,Primary,Matched,46,No,Yes,Christiana Healthcare,AF,2.933333333,Rectum,Rectal Adenocarcinoma
+TCGA-AF-A56L,TCGA-AF-A56L-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.1725,0.3287,0.22,116,READ,Primary,Matched,54,No,Yes,Christiana Healthcare,AF,3.866666667,Rectum,Rectal Adenocarcinoma
+TCGA-AF-A56N,TCGA-AF-A56N-01,6,Colorectal Cancer,Rectal Adenocarcinoma,0.1391,0.3275,0.54,131,READ,Primary,Matched,30,Yes,No,Christiana Healthcare,AF,4.3,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3574,TCGA-AG-3574-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2278,0.3356,0,11,READ,Primary,Matched,17,No,Yes,Christiana Healthcare,AG,0.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3575,TCGA-AG-3575-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.1788,0.3841,0,17,READ,Primary,Matched,22,No,Yes,Christiana Healthcare,AG,0.566666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3578,TCGA-AG-3578-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.4708,,0,,READ,Primary,Matched,29,No,Yes,Christiana Healthcare,AG,,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-3580,TCGA-AG-3580-01,2,Colorectal Cancer,Rectal Adenocarcinoma,0.0353,0.3094,0.04,15,READ,Primary,Matched,6,No,Yes,Christiana Healthcare,AG,0.5,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3581,TCGA-AG-3581-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.2427,0.3144,0,15,READ,Primary,Matched,26,No,Yes,Christiana Healthcare,AG,0.533333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3582,TCGA-AG-3582-01,15,Colorectal Cancer,Rectal Adenocarcinoma,0.4110,,0.04,,READ,Primary,Matched,107,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3583,TCGA-AG-3583-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.2426,0.3724,0.12,21,READ,Primary,Matched,19,No,Yes,Christiana Healthcare,AG,0.733333333,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-3584,TCGA-AG-3584-01,13,Colorectal Cancer,Rectal Adenocarcinoma,0.4099,0.3271,0.35,20,READ,Primary,Matched,40,No,Yes,Christiana Healthcare,AG,0.666666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3586,TCGA-AG-3586-01,5,Colorectal Cancer,Rectal Adenocarcinoma,0.1330,,0.15,,READ,Primary,Matched,160,No,Yes,Christiana Healthcare,AG,,Rectum,Rectum Adenocarcinoma
+TCGA-AG-3587,TCGA-AG-3587-01,22,Colorectal Cancer,Rectal Adenocarcinoma,0.3226,,0.23,,READ,Primary,Matched,156,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3591,TCGA-AG-3591-01,22,Colorectal Cancer,Rectal Adenocarcinoma,0.4369,0.3455,0.09,72,READ,Primary,Matched,109,No,Yes,Christiana Healthcare,AG,2.4,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3592,TCGA-AG-3592-01,26,Colorectal Cancer,Rectal Adenocarcinoma,0.4741,0.3478,0.37,249,READ,Primary,Matched,107,No,Yes,Christiana Healthcare,AG,8.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3593,TCGA-AG-3593-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.4804,,0,,READ,Primary,Matched,88,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3594,TCGA-AG-3594-01,9,Colorectal Cancer,Rectal Adenocarcinoma,0.2990,0.3367,0.05,12,READ,Primary,Matched,80,No,Yes,Christiana Healthcare,AG,0.4,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-3598,TCGA-AG-3598-01,7,Colorectal Cancer,Rectal Adenocarcinoma,0.1909,0.3443,0,22,READ,Primary,Matched,38,No,Yes,Christiana Healthcare,AG,0.733333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3599,TCGA-AG-3599-01,3,Colorectal Cancer,Rectal Adenocarcinoma,0.0382,0.3477,0.39,22,READ,Primary,Matched,22,No,Yes,Christiana Healthcare,AG,0.733333333,Rectum,Rectum Adenocarcinoma
+TCGA-AG-3600,TCGA-AG-3600-01,18,Colorectal Cancer,Rectal Adenocarcinoma,0.6084,,0.1,,READ,Primary,Matched,133,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3601,TCGA-AG-3601-01,19,Colorectal Cancer,Rectal Adenocarcinoma,0.4585,,1.17,,READ,Primary,Matched,252,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3602,TCGA-AG-3602-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.2499,0.341,0,15,READ,Primary,Matched,22,No,Yes,Christiana Healthcare,AG,0.5,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3605,TCGA-AG-3605-01,9,Colorectal Cancer,Rectal Adenocarcinoma,0.1912,0.33,0.24,9,READ,Primary,Matched,49,No,Yes,Christiana Healthcare,AG,0.3,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3608,TCGA-AG-3608-01,7,Colorectal Cancer,Rectal Adenocarcinoma,0.1306,,0.3,,READ,Primary,Matched,17,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3609,TCGA-AG-3609-01,24,Colorectal Cancer,Rectal Adenocarcinoma,0.7741,,0.03,,READ,Primary,Matched,194,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3725,TCGA-AG-3725-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.4077,0.3507,1.05,90,READ,Primary,Matched,33,No,Yes,Christiana Healthcare,AG,3.033333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3726,TCGA-AG-3726-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.2224,0.293,0.97,143,READ,Primary,Matched,97,No,Yes,Christiana Healthcare,AG,4.766666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3727,TCGA-AG-3727-01,6,Colorectal Cancer,Rectal Adenocarcinoma,0.1934,0.2939,1.55,84,READ,Primary,Matched,50,No,Yes,Christiana Healthcare,AG,2.833333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3728,TCGA-AG-3728-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.4891,0.3413,0.43,,READ,Primary,Matched,68,No,Yes,Christiana Healthcare,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3731,TCGA-AG-3731-01,15,Colorectal Cancer,Rectal Adenocarcinoma,0.1624,0.3516,0.01,134,READ,Primary,Matched,232,No,Yes,Christiana Healthcare,AG,4.533333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3732,TCGA-AG-3732-01,13,Colorectal Cancer,Rectal Adenocarcinoma,0.3005,0.3066,0.34,78,READ,Primary,Matched,60,No,Yes,Christiana Healthcare,AG,2.6,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3742,TCGA-AG-3742-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2730,0.3199,0.24,138,READ,Primary,Matched,63,No,Yes,Christiana Healthcare,AG,4.566666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3878,TCGA-AG-3878-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.0000,0.2791,0.06,97,READ,Primary,Matched,1,No,Yes,Christiana Healthcare,AG,3.233333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3881,TCGA-AG-3881-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.3911,0.2842,0.79,110,READ,Primary,Matched,96,No,Yes,Christiana Healthcare,AG,3.7,Rectum,Rectum Adenocarcinoma
+TCGA-AG-3882,TCGA-AG-3882-01,15,Colorectal Cancer,Rectal Adenocarcinoma,0.3860,0.2963,0.5,76,READ,Primary,Matched,117,No,Yes,Christiana Healthcare,AG,2.6,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3883,TCGA-AG-3883-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.4700,0.2889,0.29,114,READ,Primary,Matched,218,No,Yes,Christiana Healthcare,AG,3.866666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3885,TCGA-AG-3885-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.3742,0.3285,0.66,89,READ,Primary,Matched,61,No,Yes,Christiana Healthcare,AG,2.966666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3887,TCGA-AG-3887-01,9,Colorectal Cancer,Rectal Adenocarcinoma,0.1855,0.2587,0.34,66,READ,Primary,Matched,11,No,Yes,Christiana Healthcare,AG,2.233333333,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-3890,TCGA-AG-3890-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2781,0.2774,0.59,96,READ,Primary,Matched,114,No,Yes,Christiana Healthcare,AG,3.133333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3892,TCGA-AG-3892-01,0,Colorectal Cancer,Rectal Adenocarcinoma,0.0003,0.5876,0.08,2489,READ,Primary,Matched,4,No,Yes,Christiana Healthcare,AG,83.36666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3893,TCGA-AG-3893-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2903,0.2849,0.56,116,READ,Primary,Matched,87,No,Yes,Christiana Healthcare,AG,3.9,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3894,TCGA-AG-3894-01,3,Colorectal Cancer,Rectal Adenocarcinoma,0.0548,0.2675,0.09,89,READ,Primary,Matched,18,No,Yes,Christiana Healthcare,AG,3.066666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3896,TCGA-AG-3896-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.1588,0.2715,0.68,110,READ,Primary,Matched,66,No,Yes,Christiana Healthcare,AG,3.666666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3898,TCGA-AG-3898-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.3854,0.2685,0.24,100,READ,Primary,Matched,103,No,Yes,Christiana Healthcare,AG,3.333333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3901,TCGA-AG-3901-01,3,Colorectal Cancer,Rectal Adenocarcinoma,0.0817,0.2547,0.03,57,READ,Primary,Matched,8,No,Yes,Christiana Healthcare,AG,1.9,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-3902,TCGA-AG-3902-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.2552,0.2705,0.24,119,READ,Primary,Matched,51,No,Yes,Christiana Healthcare,AG,3.966666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3909,TCGA-AG-3909-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.3082,0.2612,0.72,71,READ,Primary,Matched,33,No,Yes,Indivumed,AG,2.4,Rectum,Rectal Adenocarcinoma
+TCGA-AG-3999,TCGA-AG-3999-01,15,Colorectal Cancer,Rectal Adenocarcinoma,0.5863,0.3504,8.8,,READ,Primary,Matched,141,No,Yes,Indivumed,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4001,TCGA-AG-4001-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.2458,0.2809,5.69,102,READ,Primary,Matched,131,No,Yes,Indivumed,AG,3.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4005,TCGA-AG-4005-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.4102,0.3323,7.84,,READ,Primary,Matched,106,No,Yes,Indivumed,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4007,TCGA-AG-4007-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.2265,0.3394,6.54,,READ,Primary,Matched,122,No,Yes,Indivumed,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4008,TCGA-AG-4008-01,14,Colorectal Cancer,Rectal Adenocarcinoma,0.2393,0.2652,0.37,85,READ,Primary,Matched,73,No,Yes,Indivumed,AG,2.8,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4015,TCGA-AG-4015-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.5071,0.2981,0.7,88,READ,Primary,Matched,241,No,Yes,Indivumed,AG,2.933333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4021,TCGA-AG-4021-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.2814,0.346,0.21,134,READ,Primary,Matched,73,No,Yes,Indivumed,AG,4.5,Rectum,Rectal Adenocarcinoma
+TCGA-AG-4022,TCGA-AG-4022-01,31,Colorectal Cancer,Rectal Adenocarcinoma,0.1848,0.3436,0.25,84,READ,Primary,Matched,23,No,Yes,Indivumed,AG,2.8,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A002,TCGA-AG-A002-01,0,Colorectal Cancer,Rectal Adenocarcinoma,0.0005,0.3178,0.46,11414,READ,Primary,Matched,9,No,Yes,Indivumed,AG,382.6333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A008,TCGA-AG-A008-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.7260,0.6176,27.36,66,READ,Primary,Matched,16,No,Yes,Indivumed,AG,2.2,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-A00C,TCGA-AG-A00C-01,7,Colorectal Cancer,Rectal Adenocarcinoma,0.1200,0.5582,0.91,127,READ,Primary,Matched,54,No,Yes,Indivumed,AG,4.3,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A00Y,TCGA-AG-A00Y-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.2973,0.2637,0.85,326,READ,Primary,Matched,182,No,Yes,Indivumed,AG,10.96666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A011,TCGA-AG-A011-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.3248,0.2669,0,101,READ,Primary,Matched,122,No,Yes,Indivumed,AG,3.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A015,TCGA-AG-A015-01,14,Colorectal Cancer,Rectal Adenocarcinoma,0.9472,0.5815,14.94,92,READ,Primary,Matched,19,No,Yes,Indivumed,AG,3.033333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A016,TCGA-AG-A016-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.7687,0.282,28.84,74,READ,Primary,Matched,55,No,Yes,Indivumed,AG,2.5,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A01J,TCGA-AG-A01J-01,9,Colorectal Cancer,Rectal Adenocarcinoma,0.1856,0.2531,0.36,89,READ,Primary,Matched,19,No,Yes,Indivumed,AG,3.033333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A01L,TCGA-AG-A01L-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.3084,0.2594,0.09,61,READ,Primary,Matched,45,No,Yes,Indivumed,AG,2.033333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A01N,TCGA-AG-A01N-01,26,Colorectal Cancer,Rectal Adenocarcinoma,0.3290,0.2832,0.75,101,READ,Primary,Matched,43,No,Yes,Indivumed,AG,3.433333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A01W,TCGA-AG-A01W-01,15,Colorectal Cancer,Rectal Adenocarcinoma,0.5073,0.2895,0.37,128,READ,Primary,Matched,138,No,Yes,Indivumed,AG,4.3,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A01Y,TCGA-AG-A01Y-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.3297,0.3053,0.97,78,READ,Primary,Matched,89,No,Yes,Indivumed,AG,2.566666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A020,TCGA-AG-A020-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.1809,0.3111,0.39,82,READ,Primary,Matched,62,No,Yes,Indivumed,AG,2.733333333,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AG-A025,TCGA-AG-A025-01,1,Colorectal Cancer,Rectal Adenocarcinoma,0.0333,0.2593,0.66,,READ,Primary,Matched,4,No,Yes,Indivumed,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A026,TCGA-AG-A026-01,19,Colorectal Cancer,Rectal Adenocarcinoma,0.4292,0.3214,1.92,202,READ,Primary,Matched,130,No,Yes,Indivumed,AG,6.766666667,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A02G,TCGA-AG-A02G-01,19,Colorectal Cancer,Rectal Adenocarcinoma,0.4973,0.2752,1.51,,READ,Primary,Matched,78,No,Yes,Indivumed,AG,,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A02N,TCGA-AG-A02N-01,4,Colorectal Cancer,Rectal Adenocarcinoma,0.0980,1.2673,39.69,1079,READ,Primary,Matched,32,No,Yes,Indivumed,AG,36.3,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A02X,TCGA-AG-A02X-01,18,Colorectal Cancer,Rectal Adenocarcinoma,0.9653,0.2853,1.74,126,READ,Primary,Matched,96,No,Yes,Indivumed,AG,4.133333333,Rectum,Rectal Adenocarcinoma
+TCGA-AG-A032,TCGA-AG-A032-01,24,Colorectal Cancer,Rectal Adenocarcinoma,0.4336,0.2539,0.57,77,READ,Primary,Matched,59,No,Yes,Indivumed,AG,2.533333333,Rectum,Rectal Adenocarcinoma
+TCGA-AH-6544,TCGA-AH-6544-01,18,Colorectal Cancer,Rectal Adenocarcinoma,0.4187,0.3308,0.07,132,READ,Primary,Matched,69,No,Yes,Indivumed,AH,4.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-AH-6547,TCGA-AH-6547-01,2,Colorectal Cancer,Rectal Adenocarcinoma,0.0000,0.3524,0,12,READ,Primary,Matched,2,No,Yes,Indivumed,AH,0.4,Rectum,Rectal Adenocarcinoma
+TCGA-AH-6643,TCGA-AH-6643-01,19,Colorectal Cancer,Rectal Adenocarcinoma,0.4515,0.3494,0.57,99,READ,Primary,Matched,76,No,Yes,Indivumed,AH,3.333333333,Rectum,Rectal Adenocarcinoma
+TCGA-AH-6644,TCGA-AH-6644-01,31,Colorectal Cancer,Rectal Adenocarcinoma,0.3061,0.3448,0.17,103,READ,Primary,Matched,23,No,Yes,Indivumed,AH,3.5,Rectum,Rectal Adenocarcinoma
+TCGA-AH-6897,TCGA-AH-6897-01,13,Colorectal Cancer,Rectal Adenocarcinoma,0.3045,0.344,0.22,97,READ,Primary,Matched,60,No,Yes,Indivumed,AH,3.333333333,Rectum,Rectal Adenocarcinoma
+TCGA-AH-6903,TCGA-AH-6903-01,2,Colorectal Cancer,Rectal Adenocarcinoma,0.0329,0.3374,0.01,68,READ,Primary,Matched,18,Yes,No,Indivumed,AH,2.3,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-AM-5820,TCGA-AM-5820-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.2068,0.3465,1.64,72,COAD,Primary,Matched,335,No,Yes,Harvard,AM,2.366666667,Colon,Colon Adenocarcinoma
+TCGA-AM-5821,TCGA-AM-5821-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.1050,0.8795,30.25,1204,COAD,Primary,Matched,56,No,Yes,Harvard,AM,40.5,Colon,Colon Adenocarcinoma
+TCGA-AU-3779,TCGA-AU-3779-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.3253,0.3365,0.29,94,COAD,Primary,Matched,88,Yes,No,Harvard,AU,3.133333333,Colon,Colon Adenocarcinoma
+TCGA-AU-6004,TCGA-AU-6004-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0505,0.8424,27.82,965,COAD,Primary,Matched,19,Yes,No,Harvard,AU,32.26666667,Colon,Colon Adenocarcinoma
+TCGA-AY-4070,TCGA-AY-4070-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.3407,0.2687,0.78,150,COAD,Primary,Matched,194,No,Yes,Harvard,AY,5.033333333,Colon,Colon Adenocarcinoma
+TCGA-AY-4071,TCGA-AY-4071-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.3320,0.2716,1.3,115,COAD,Primary,Matched,38,No,Yes,Harvard,AY,3.833333333,,Colon Adenocarcinoma
+TCGA-AY-5543,TCGA-AY-5543-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.3122,0.3374,0.61,97,COAD,Primary,Matched,50,Yes,No,MSKCC,AY,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-AY-6196,TCGA-AY-6196-01,17,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.3042,0.3602,0.23,213,MACR,Primary,Matched,306,Yes,No,MSKCC,AY,7.133333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-AY-6197,TCGA-AY-6197-01,3,Colorectal Cancer,Colon Adenocarcinoma,0.0897,0.965,31.61,1058,COAD,Primary,Matched,15,Yes,No,MSKCC,AY,35.26666667,Colon,Colon Adenocarcinoma
+TCGA-AY-6386,TCGA-AY-6386-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0544,0.327,0.27,99,COAD,Primary,Matched,7,Yes,No,MSKCC,AY,3.333333333,Colon,Colon Adenocarcinoma
+TCGA-AY-A54L,TCGA-AY-A54L-01,27,Colorectal Cancer,Colon Adenocarcinoma,0.1997,0.2932,0.39,139,COAD,Primary,Matched,99,Yes,No,MSKCC,AY,4.733333333,Colon,Colon Adenocarcinoma
+TCGA-AY-A69D,TCGA-AY-A69D-01,23,Colorectal Cancer,Colon Adenocarcinoma,0.5080,0.3161,0.21,186,COAD,Primary,Matched,49,Yes,No,MSKCC,AY,6.233333333,Colon,Colon Adenocarcinoma
+TCGA-AY-A71X,TCGA-AY-A71X-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0607,0.3062,0.22,90,COAD,Primary,Matched,51,Yes,No,MSKCC,AY,3,Colon,Colon Adenocarcinoma
+TCGA-AY-A8YK,TCGA-AY-A8YK-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.2674,0.3268,0.32,61,COAD,Primary,Matched,106,Yes,No,MSKCC,AY,2.033333333,Colon,Colon Adenocarcinoma
+TCGA-AZ-4308,TCGA-AZ-4308-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1974,0.363,0.11,73,COAD,Primary,Matched,145,No,Yes,MSKCC,AZ,2.466666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-4313,TCGA-AZ-4313-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1381,0.7225,,,COAD,Primary,Matched,8,No,Yes,MSKCC,AZ,,Colon,Colon Adenocarcinoma
+TCGA-AZ-4315,TCGA-AZ-4315-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0013,0.3429,0.67,6313,COAD,Primary,Matched,27,No,Yes,MSKCC,AZ,211.3666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-4323,TCGA-AZ-4323-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.0208,0.426,0.05,51,COAD,Primary,Matched,61,No,Yes,MSKCC,AZ,1.7,Colon,Colon Adenocarcinoma
+TCGA-AZ-4614,TCGA-AZ-4614-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.3669,0.3773,0.94,178,COAD,Primary,Matched,124,No,Yes,MSKCC,AZ,6,Colon,Colon Adenocarcinoma
+TCGA-AZ-4615,TCGA-AZ-4615-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0587,1.0327,33.79,837,COAD,Primary,Matched,23,No,Yes,MSKCC,AZ,27.83333333,Colon,Colon Adenocarcinoma
+TCGA-AZ-4616,TCGA-AZ-4616-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.2654,0.3171,0.79,91,COAD,Primary,Matched,39,No,Yes,MSKCC,AZ,3.033333333,Colon,Colon Adenocarcinoma
+TCGA-AZ-4681,TCGA-AZ-4681-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2380,0.3537,0.02,79,COAD,Primary,Matched,51,No,Yes,MSKCC,AZ,2.666666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-4682,TCGA-AZ-4682-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.3540,0.367,0.13,71,COAD,Primary,Matched,42,No,Yes,MSKCC,AZ,2.366666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-4684,TCGA-AZ-4684-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.2936,0.3572,,,COAD,Primary,Matched,70,No,Yes,MSKCC,AZ,0,Colon,Colon Adenocarcinoma
+TCGA-AZ-5403,TCGA-AZ-5403-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.3092,0.3101,0.27,76,COAD,Primary,Matched,45,No,Yes,MSKCC,AZ,2.566666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-5407,TCGA-AZ-5407-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1871,0.3611,0.46,89,COAD,Primary,Matched,20,No,Yes,MSKCC,AZ,3,Colon,Colon Adenocarcinoma
+TCGA-AZ-6598,TCGA-AZ-6598-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2696,1.3777,43.27,2309,COAD,Primary,Matched,25,No,Yes,MSKCC,AZ,77.83333333,Colon,Colon Adenocarcinoma
+TCGA-AZ-6599,TCGA-AZ-6599-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0060,0.3766,0.14,226,COAD,Primary,Matched,10,No,Yes,MSKCC,AZ,7.733333333,Colon,Colon Adenocarcinoma
+TCGA-AZ-6600,TCGA-AZ-6600-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.4215,0.3613,0.46,124,COAD,Primary,Matched,46,No,Yes,MSKCC,AZ,4.166666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-6603,TCGA-AZ-6603-01,27,Colorectal Cancer,Colon Adenocarcinoma,0.4096,0.3686,0.35,77,COAD,Primary,Matched,30,No,Yes,MSKCC,AZ,2.566666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-6605,TCGA-AZ-6605-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.1834,0.3467,0.02,105,COAD,Primary,Matched,100,No,Yes,MSKCC,AZ,3.466666667,Colon,Colon Adenocarcinoma
+TCGA-AZ-6606,TCGA-AZ-6606-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.2344,0.3623,0.2,129,COAD,Primary,Matched,57,No,Yes,MSKCC,AZ,4.333333333,Colon,Colon Adenocarcinoma
+TCGA-AZ-6607,TCGA-AZ-6607-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.4338,0.354,0,68,COAD,Primary,Matched,57,No,Yes,MSKCC,AZ,2.266666667,Colon,Colon Adenocarcinoma
+TCGA-CA-5254,TCGA-CA-5254-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.4650,0.3896,0.53,181,COAD,Primary,Matched,299,Yes,No,MSKCC,CA,6.033333333,Colon,Colon Adenocarcinoma
+TCGA-CA-5255,TCGA-CA-5255-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.1646,0.3805,0.07,52,COAD,Primary,Matched,5,Yes,No,MSKCC,CA,1.733333333,Colon,Colon Adenocarcinoma
+TCGA-CA-5256,TCGA-CA-5256-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.4695,0.3522,0.07,72,COAD,Primary,Matched,23,Yes,No,MSKCC,CA,2.433333333,Colon,Colon Adenocarcinoma
+TCGA-CA-5796,TCGA-CA-5796-01,4,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1135,0.3604,0.15,60,MACR,Primary,Matched,7,Yes,No,MSKCC,CA,2.033333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CA-5797,TCGA-CA-5797-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.4150,0.3554,0.61,59,COAD,Primary,Matched,105,Yes,No,MSKCC,CA,2,Colon,Colon Adenocarcinoma
+TCGA-CA-6715,TCGA-CA-6715-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2808,0.3669,0.11,96,COAD,Primary,Matched,61,Yes,No,MSKCC,CA,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-CA-6716,TCGA-CA-6716-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.2082,0.3773,0.56,135,COAD,Primary,Matched,43,Yes,No,MSKCC,CA,4.566666667,Colon,Colon Adenocarcinoma
+TCGA-CA-6717,TCGA-CA-6717-01,,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0000,0.3653,0.01,9586,MACR,Primary,Matched,0,Yes,No,MSKCC,CA,320.7666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CA-6718,TCGA-CA-6718-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.1047,0.3722,0,3205,COAD,Primary,Matched,12,Yes,No,MSKCC,CA,107.0666667,Colon,Colon Adenocarcinoma
+TCGA-CA-6719,TCGA-CA-6719-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.4638,0.3645,0.24,115,COAD,Primary,Matched,74,Yes,No,MSKCC,CA,3.833333333,Colon,Colon Adenocarcinoma
+TCGA-CI-6619,TCGA-CI-6619-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.1629,0.3407,0.03,71,READ,Primary,Matched,42,No,Yes,Indivumed,CI,2.4,Rectum,Rectal Adenocarcinoma
+TCGA-CI-6620,TCGA-CI-6620-01,9,Colorectal Cancer,Rectal Adenocarcinoma,0.1593,0.3445,0.07,54,READ,Primary,Matched,24,No,Yes,Indivumed,CI,1.766666667,Rectum,Rectal Adenocarcinoma
+TCGA-CI-6621,TCGA-CI-6621-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.2403,0.3389,0.03,109,READ,Primary,Matched,99,No,Yes,Indivumed,CI,3.633333333,Rectum,Rectal Adenocarcinoma
+TCGA-CI-6622,TCGA-CI-6622-01,7,Colorectal Cancer,Rectal Adenocarcinoma,0.1275,0.3223,0,93,READ,Primary,Matched,25,No,Yes,Indivumed,CI,3.133333333,Rectum,Rectal Adenocarcinoma
+TCGA-CI-6623,TCGA-CI-6623-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.3018,0.3617,0.1,70,READ,Primary,Matched,44,No,Yes,Indivumed,CI,2.333333333,Rectum,Rectal Adenocarcinoma
+TCGA-CI-6624,TCGA-CI-6624-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.1069,0.3402,0.02,252,READ,Primary,Matched,148,No,Yes,Indivumed,CI,8.5,Rectum,Rectal Adenocarcinoma
+TCGA-CK-4947,TCGA-CK-4947-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.0665,0.3269,0.07,88,COAD,Primary,Matched,18,,,Greater Poland Cancer Center,CK,2.933333333,Colon,Colon Adenocarcinoma
+TCGA-CK-4948,TCGA-CK-4948-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.1586,0.3486,0.22,98,COAD,Primary,Matched,57,,,Greater Poland Cancer Center,CK,3.3,Colon,Colon Adenocarcinoma
+TCGA-CK-4950,TCGA-CK-4950-01,8,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2115,0.3697,0.31,154,MACR,Primary,Matched,0,,,Greater Poland Cancer Center,CK,5.1,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CK-4951,TCGA-CK-4951-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0026,0.7849,21.62,4191,MACR,Primary,Matched,38,,,Greater Poland Cancer Center,CK,140.4666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CK-4952,TCGA-CK-4952-01,4,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1547,0.3926,0.29,140,MACR,Primary,Matched,25,,,Greater Poland Cancer Center,CK,4.766666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CK-5912,TCGA-CK-5912-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.4202,0.3783,1.79,62,COAD,Primary,Matched,39,,,Greater Poland Cancer Center,CK,2.066666667,Colon,Colon Adenocarcinoma
+TCGA-CK-5913,TCGA-CK-5913-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0595,0.9213,32.98,806,COAD,Primary,Matched,26,,,Greater Poland Cancer Center,CK,27.03333333,Colon,Colon Adenocarcinoma
+TCGA-CK-5914,TCGA-CK-5914-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.1255,0.3446,1.56,130,COAD,Primary,Matched,52,,,Greater Poland Cancer Center,CK,4.366666667,Colon,Colon Adenocarcinoma
+TCGA-CK-5915,TCGA-CK-5915-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.1043,0.3162,0.29,82,COAD,Primary,Matched,13,,,Greater Poland Cancer Center,CK,2.733333333,Colon,Colon Adenocarcinoma
+TCGA-CK-5916,TCGA-CK-5916-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0002,0.9208,35.2,1405,COAD,Primary,Matched,8,,,Greater Poland Cancer Center,CK,47.1,Colon,Colon Adenocarcinoma
+TCGA-CK-6746,TCGA-CK-6746-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0504,1.1685,36.05,1198,COAD,Primary,Matched,22,,,Greater Poland Cancer Center,CK,40.13333333,Colon,Colon Adenocarcinoma
+TCGA-CK-6747,TCGA-CK-6747-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0004,0.3727,0.64,171,COAD,Primary,Matched,2,,,Greater Poland Cancer Center,CK,5.8,Colon,Colon Adenocarcinoma
+TCGA-CK-6748,TCGA-CK-6748-01,16,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.3754,0.3564,0.22,57,MACR,Primary,Matched,43,,,Greater Poland Cancer Center,CK,1.9,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CK-6751,TCGA-CK-6751-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0042,0.3583,0.05,167,MACR,Primary,Matched,5,,,Greater Poland Cancer Center,CK,5.566666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CL-4957,TCGA-CL-4957-01,13,Colorectal Cancer,Rectal Adenocarcinoma,0.3134,0.3362,0.05,78,READ,Primary,Matched,149,,,Indivumed,CL,2.633333333,Rectum,Rectal Adenocarcinoma
+TCGA-CL-5917,TCGA-CL-5917-01,31,Colorectal Cancer,Rectal Adenocarcinoma,0.3502,0.359,1.58,70,READ,Primary,Matched,50,,,Indivumed,CL,2.333333333,Rectum,Rectal Adenocarcinoma
+TCGA-CL-5918,TCGA-CL-5918-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.2572,0.3446,0.61,117,READ,Primary,Matched,32,,,Indivumed,CL,3.9,Rectum,Rectal Adenocarcinoma
+TCGA-CM-4743,TCGA-CM-4743-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0047,0.8182,23.82,1103,COAD,Primary,Matched,23,No,Yes,Greater Poland Cancer Center,CM,36.86666667,Colon,Colon Adenocarcinoma
+TCGA-CM-4744,TCGA-CM-4744-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.1898,0.3613,0.03,142,COAD,Primary,Matched,14,No,Yes,Greater Poland Cancer Center,CM,4.7,Colon,Colon Adenocarcinoma
+TCGA-CM-4746,TCGA-CM-4746-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1196,0.8512,21.49,715,COAD,Primary,Matched,23,No,Yes,Greater Poland Cancer Center,CM,24.13333333,Colon,Colon Adenocarcinoma
+TCGA-CM-4747,TCGA-CM-4747-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.4449,0.3787,0.01,83,COAD,Primary,Matched,41,No,Yes,Greater Poland Cancer Center,CM,2.766666667,Colon,Colon Adenocarcinoma
+TCGA-CM-4748,TCGA-CM-4748-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0119,0.365,0.04,66,MACR,Primary,Matched,6,No,Yes,Greater Poland Cancer Center,CM,2.233333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CM-4750,TCGA-CM-4750-01,22,Colorectal Cancer,Colon Adenocarcinoma,0.2858,0.3583,0.18,83,COAD,Primary,Matched,46,No,Yes,Greater Poland Cancer Center,CM,2.766666667,Colon,Colon Adenocarcinoma
+TCGA-CM-4751,TCGA-CM-4751-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1867,0.3606,0,90,COAD,Primary,Matched,13,No,Yes,Greater Poland Cancer Center,CM,3.033333333,Colon,Colon Adenocarcinoma
+TCGA-CM-4752,TCGA-CM-4752-01,28,Colorectal Cancer,Colon Adenocarcinoma,0.4029,0.3498,0.02,121,COAD,Primary,Matched,152,No,Yes,Greater Poland Cancer Center,CM,4.033333333,Colon,Colon Adenocarcinoma
+TCGA-CM-5341,TCGA-CM-5341-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.2701,0.3524,0,145,COAD,Primary,Matched,65,Yes,No,Greater Poland Cancer Center,CM,4.866666667,Colon,Colon Adenocarcinoma
+TCGA-CM-5344,TCGA-CM-5344-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.3266,0.3396,0.47,59,COAD,Primary,Matched,34,Yes,No,Greater Poland Cancer Center,CM,1.966666667,Colon,Colon Adenocarcinoma
+TCGA-CM-5348,TCGA-CM-5348-01,24,Colorectal Cancer,Colon Adenocarcinoma,0.2869,0.3321,0.56,168,COAD,Primary,Matched,101,No,Yes,Greater Poland Cancer Center,CM,5.633333333,Colon,Colon Adenocarcinoma
+TCGA-CM-5349,TCGA-CM-5349-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2780,0.3249,0,96,COAD,Primary,Matched,41,Yes,No,Greater Poland Cancer Center,CM,3.133333333,Colon,Colon Adenocarcinoma
+TCGA-CM-5860,TCGA-CM-5860-01,28,Colorectal Cancer,Colon Adenocarcinoma,0.1713,0.3393,0.54,103,COAD,Primary,Matched,48,Yes,No,Greater Poland Cancer Center,CM,3.5,Colon,Colon Adenocarcinoma
+TCGA-CM-5861,TCGA-CM-5861-01,3,Colorectal Cancer,Colon Adenocarcinoma,0.0847,0.9692,34.37,1362,COAD,Primary,Matched,14,Yes,No,Greater Poland Cancer Center,CM,45.76666667,Colon,Colon Adenocarcinoma
+TCGA-CM-5862,TCGA-CM-5862-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.6764,0.3545,1.45,85,COAD,Primary,Matched,114,Yes,No,Greater Poland Cancer Center,CM,2.866666667,Colon,Colon Adenocarcinoma
+TCGA-CM-5863,TCGA-CM-5863-01,,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0736,0.3973,0,60,MACR,Primary,Matched,19,Yes,No,Greater Poland Cancer Center,CM,2.033333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CM-5864,TCGA-CM-5864-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.3226,0.3329,0.53,172,COAD,Primary,Matched,28,Yes,No,Greater Poland Cancer Center,CM,5.733333333,Colon,Colon Adenocarcinoma
+TCGA-CM-5868,TCGA-CM-5868-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.2237,0.3403,0.89,81,COAD,Primary,Matched,78,Yes,No,MSKCC,CM,2.7,Colon,Colon Adenocarcinoma
+TCGA-CM-6161,TCGA-CM-6161-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.0216,0.3145,0.25,78,COAD,Primary,Matched,14,Yes,No,MSKCC,CM,2.633333333,Colon,Colon Adenocarcinoma
+TCGA-CM-6162,TCGA-CM-6162-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0005,0.8773,29.11,1001,MACR,Primary,Matched,3,Yes,No,MSKCC,CM,33.63333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-CM-6163,TCGA-CM-6163-01,27,Colorectal Cancer,Colon Adenocarcinoma,0.5061,0.3345,0.07,93,COAD,Primary,Matched,24,Yes,No,MSKCC,CM,3.166666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6164,TCGA-CM-6164-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.1404,0.3277,0.05,66,COAD,Primary,Matched,25,No,Yes,MSKCC,CM,2.266666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6165,TCGA-CM-6165-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.1076,0.3145,0.1,102,COAD,Primary,Matched,4,Yes,No,MSKCC,CM,3.5,Colon,Colon Adenocarcinoma
+TCGA-CM-6166,TCGA-CM-6166-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3279,0.3171,0.33,81,COAD,Primary,Matched,30,No,Yes,MSKCC,CM,2.666666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6167,TCGA-CM-6167-01,27,Colorectal Cancer,Colon Adenocarcinoma,0.0986,0.3157,0.06,79,COAD,Primary,Matched,32,Yes,No,MSKCC,CM,2.7,Colon,Colon Adenocarcinoma
+TCGA-CM-6168,TCGA-CM-6168-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1088,0.4083,1.02,204,COAD,Primary,Matched,11,Yes,No,MSKCC,CM,6.866666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6169,TCGA-CM-6169-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1635,0.3404,0.78,102,COAD,Primary,Matched,24,Yes,No,MSKCC,CM,3.366666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6170,TCGA-CM-6170-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.3913,0.3219,0.21,84,COAD,Primary,Matched,51,Yes,No,MSKCC,CM,2.8,Colon,Colon Adenocarcinoma
+TCGA-CM-6171,TCGA-CM-6171-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0463,1.1813,43,1149,COAD,Primary,Matched,16,Yes,No,MSKCC,CM,38.53333333,Colon,Colon Adenocarcinoma
+TCGA-CM-6172,TCGA-CM-6172-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.2643,0.3388,0.16,82,COAD,Primary,Matched,72,Yes,No,MSKCC,CM,2.8,Colon,Colon Adenocarcinoma
+TCGA-CM-6674,TCGA-CM-6674-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0001,0.7398,21.08,837,COAD,Primary,Matched,0,Yes,No,University Of Michigan,CM,28.13333333,Colon,Colon Adenocarcinoma
+TCGA-CM-6675,TCGA-CM-6675-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.3954,0.357,0.38,79,COAD,Primary,Matched,71,Yes,No,University Of Michigan,CM,2.733333333,Colon,Colon Adenocarcinoma
+TCGA-CM-6676,TCGA-CM-6676-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.2052,0.353,0.05,97,COAD,Primary,Matched,22,Yes,No,University Of Michigan,CM,3.266666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6677,TCGA-CM-6677-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.3427,0.3529,0.48,136,COAD,Primary,Matched,90,Yes,No,University Of Michigan,CM,4.533333333,Colon,Colon Adenocarcinoma
+TCGA-CM-6678,TCGA-CM-6678-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.1951,0.349,0.13,119,COAD,Primary,Matched,18,Yes,No,University Of Michigan,CM,4.133333333,Colon,Colon Adenocarcinoma
+TCGA-CM-6679,TCGA-CM-6679-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.2426,0.3381,0.16,71,COAD,Primary,Matched,37,Yes,No,University Of Michigan,CM,2.366666667,Colon,Colon Adenocarcinoma
+TCGA-CM-6680,TCGA-CM-6680-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0354,0.4575,1.17,81,COAD,Primary,Matched,4,Yes,No,University Of Michigan,CM,2.8,Colon,Colon Adenocarcinoma
+TCGA-D5-5537,TCGA-D5-5537-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.4083,0.3494,0.42,94,COAD,Primary,Matched,7,Yes,No,University Of Michigan,D5,3.166666667,Colon,Colon Adenocarcinoma
+TCGA-D5-5538,TCGA-D5-5538-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1980,0.3546,0.4,102,COAD,Primary,Matched,83,Yes,No,University Of Michigan,D5,3.5,Colon,Colon Adenocarcinoma
+TCGA-D5-5539,TCGA-D5-5539-01,21,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1660,0.3573,0.38,91,MACR,Primary,Matched,73,Yes,No,University Of Michigan,D5,3.066666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-D5-5540,TCGA-D5-5540-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.2999,0.3281,0.88,110,COAD,Primary,Matched,68,Yes,No,University Of Michigan,D5,3.7,Colon,Colon Adenocarcinoma
+TCGA-D5-5541,TCGA-D5-5541-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.3206,0.328,0.51,59,COAD,Primary,Matched,42,Yes,No,University Of Michigan,D5,2,Colon,Colon Adenocarcinoma
+TCGA-D5-6529,TCGA-D5-6529-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.1168,0.3658,0.18,97,COAD,Primary,Matched,24,Yes,No,University Of Michigan,D5,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-D5-6530,TCGA-D5-6530-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0078,1.0856,41.17,1046,COAD,Primary,Matched,17,Yes,No,University Of Michigan,D5,35.16666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6531,TCGA-D5-6531-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.6453,0.347,0.81,169,COAD,Primary,Matched,49,Yes,No,University Of Michigan,D5,5.7,Colon,Colon Adenocarcinoma
+TCGA-D5-6532,TCGA-D5-6532-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1541,0.3466,0.62,93,COAD,Primary,Matched,46,Yes,No,University Of Michigan,D5,3.133333333,Colon,Colon Adenocarcinoma
+TCGA-D5-6533,TCGA-D5-6533-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.5398,0.3337,0.52,143,COAD,Primary,Matched,104,Yes,No,University Of Michigan,D5,4.866666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6534,TCGA-D5-6534-01,13,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2042,0.3343,0.04,152,MACR,Primary,Matched,57,Yes,No,University Of Michigan,D5,5.066666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-D5-6535,TCGA-D5-6535-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.5387,0.343,0.28,157,COAD,Primary,Matched,116,Yes,No,University Of Michigan,D5,5.233333333,Colon,Colon Adenocarcinoma
+TCGA-D5-6536,TCGA-D5-6536-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2667,0.3522,0.23,108,COAD,Primary,Matched,73,Yes,No,University Of Michigan,D5,3.566666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6537,TCGA-D5-6537-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.3193,0.3503,0.37,101,COAD,Primary,Matched,23,Yes,No,University Of Michigan,D5,3.4,Colon,Colon Adenocarcinoma
+TCGA-D5-6538,TCGA-D5-6538-01,31,Colorectal Cancer,Colon Adenocarcinoma,0.4326,0.3432,0.75,116,COAD,Primary,Matched,46,Yes,No,University Of Michigan,D5,3.9,Colon,Colon Adenocarcinoma
+TCGA-D5-6539,TCGA-D5-6539-01,27,Colorectal Cancer,Colon Adenocarcinoma,0.2188,0.3265,0,96,COAD,Primary,Matched,78,Yes,No,University Of Michigan,D5,3.166666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6540,TCGA-D5-6540-01,4,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0765,0.9984,32.59,1189,MACR,Primary,Matched,4,Yes,No,University Of Michigan,D5,40.03333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-D5-6541,TCGA-D5-6541-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.0831,0.3319,0.11,84,COAD,Primary,Matched,37,Yes,No,University Of Michigan,D5,2.8,Colon,Colon Adenocarcinoma
+TCGA-D5-6898,TCGA-D5-6898-01,15,Colorectal Cancer,Colon Adenocarcinoma,0.3116,0.3407,0.17,70,COAD,Primary,Matched,45,Yes,No,ILSBio,D5,2.366666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6920,TCGA-D5-6920-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0217,0.3434,0.01,107,COAD,Primary,Matched,9,Yes,No,University Of Michigan,D5,3.566666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6922,TCGA-D5-6922-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.4461,0.3579,0.07,94,COAD,Primary,Matched,61,Yes,No,University Of Michigan,D5,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-D5-6923,TCGA-D5-6923-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2199,0.3476,0.2,,COAD,Primary,Matched,103,Yes,No,University Of Michigan,D5,0,Colon,Colon Adenocarcinoma
+TCGA-D5-6924,TCGA-D5-6924-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.1867,0.3409,0.06,144,COAD,Primary,Matched,42,Yes,No,University Of Michigan,D5,4.9,Colon,Colon Adenocarcinoma
+TCGA-D5-6926,TCGA-D5-6926-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.2269,0.3496,0.18,99,COAD,Primary,Matched,69,Yes,No,University Of Michigan,D5,3.366666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6927,TCGA-D5-6927-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0004,0.7283,17.61,661,COAD,Primary,Matched,6,Yes,No,University Of Michigan,D5,22.16666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6928,TCGA-D5-6928-01,9,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0111,0.6559,14.76,1605,MACR,Primary,Matched,12,Yes,No,University Of Michigan,D5,53.83333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-D5-6929,TCGA-D5-6929-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.1669,0.3524,0.09,105,COAD,Primary,Matched,207,Yes,No,Cureline,D5,3.6,Colon,Colon Adenocarcinoma
+TCGA-D5-6930,TCGA-D5-6930-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0012,0.6864,15.2,1216,MACR,Primary,Matched,18,Yes,No,Cureline,D5,40.63333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-D5-6931,TCGA-D5-6931-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.1751,0.3574,0.12,281,COAD,Primary,Matched,39,Yes,No,Greater Poland Cancer Center,D5,9.366666667,Colon,Colon Adenocarcinoma
+TCGA-D5-6932,TCGA-D5-6932-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.2230,0.3444,0.19,121,COAD,Primary,Matched,110,Yes,No,Greater Poland Cancer Center,D5,4.1,Colon,Colon Adenocarcinoma
+TCGA-D5-7000,TCGA-D5-7000-01,9,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2052,0.3496,0.06,103,MACR,Primary,Matched,20,Yes,No,Greater Poland Cancer Center,D5,3.4,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-DC-4745,TCGA-DC-4745-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.4040,0.3391,0.66,66,READ,Primary,Matched,170,No,Yes,Indivumed,DC,2.233333333,Rectum,Rectal Adenocarcinoma
+TCGA-DC-4749,TCGA-DC-4749-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.4852,0.3406,0.31,67,READ,Primary,Matched,63,No,Yes,Indivumed,DC,2.3,Rectum,Rectal Adenocarcinoma
+TCGA-DC-5337,TCGA-DC-5337-01,2,Colorectal Cancer,Rectal Adenocarcinoma,0.0280,0.3191,0.15,93,READ,Primary,Matched,11,Yes,No,Indivumed,DC,3.133333333,Rectum,Rectal Adenocarcinoma
+TCGA-DC-5869,TCGA-DC-5869-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.4085,0.3785,0.42,74,READ,Primary,Matched,11,Yes,No,Indivumed,DC,2.466666667,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6154,TCGA-DC-6154-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.3525,0.331,1.57,94,READ,Primary,Matched,59,Yes,No,Indivumed,DC,3.133333333,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6155,TCGA-DC-6155-01,20,Colorectal Cancer,Rectal Adenocarcinoma,0.4458,0.3493,0.16,52,READ,Primary,Matched,107,Yes,No,Indivumed,DC,1.766666667,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6156,TCGA-DC-6156-01,29,Colorectal Cancer,Rectal Adenocarcinoma,0.3763,,,,READ,Primary,Matched,100,Yes,No,Indivumed,DC,0,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6157,TCGA-DC-6157-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.4915,0.331,0.33,85,READ,Primary,Matched,43,No,Yes,Indivumed,DC,2.833333333,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6158,TCGA-DC-6158-01,22,Colorectal Cancer,Rectal Adenocarcinoma,0.4611,0.339,0.34,84,READ,Primary,Matched,93,Yes,No,Indivumed,DC,2.766666667,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6160,TCGA-DC-6160-01,9,Colorectal Cancer,Rectal Adenocarcinoma,0.2459,0.321,0.17,80,READ,Primary,Matched,59,No,Yes,Indivumed,DC,2.7,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6681,TCGA-DC-6681-01,4,Colorectal Cancer,Rectal Adenocarcinoma,0.0580,0.3433,0,67,READ,Primary,Matched,9,Yes,No,Indivumed,DC,2.2,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6682,TCGA-DC-6682-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.2024,0.3334,0.09,118,READ,Primary,Matched,174,Yes,No,Indivumed,DC,3.933333333,Rectum,Rectal Adenocarcinoma
+TCGA-DC-6683,TCGA-DC-6683-01,19,Colorectal Cancer,Rectal Adenocarcinoma,0.3538,0.3459,0.19,71,READ,Primary,Matched,25,Yes,No,Indivumed,DC,2.4,Rectum,Rectal Adenocarcinoma
+TCGA-DM-A0X9,TCGA-DM-A0X9-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.1966,0.3503,0.2,170,COAD,Primary,Matched,42,No,Yes,Greater Poland Cancer Center,DM,5.666666667,Colon,Colon Adenocarcinoma
+TCGA-DM-A0XD,TCGA-DM-A0XD-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.1362,0.3301,0.15,154,COAD,Primary,Matched,106,No,Yes,Greater Poland Cancer Center,DM,5.133333333,Colon,Colon Adenocarcinoma
+TCGA-DM-A0XF,TCGA-DM-A0XF-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.2678,0.3334,0.1,112,COAD,Primary,Matched,93,No,Yes,Greater Poland Cancer Center,DM,3.7,Colon,Colon Adenocarcinoma
+TCGA-DM-A1D0,TCGA-DM-A1D0-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2443,0.3358,0.67,98,COAD,Primary,Matched,79,No,Yes,Greater Poland Cancer Center,DM,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-DM-A1D4,TCGA-DM-A1D4-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2455,0.3544,0.35,164,COAD,Primary,Matched,36,No,Yes,Greater Poland Cancer Center,DM,5.466666667,Colon,Colon Adenocarcinoma
+TCGA-DM-A1D6,TCGA-DM-A1D6-01,10,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2642,0.3534,0.53,95,MACR,Primary,Matched,61,No,Yes,Greater Poland Cancer Center,DM,3.133333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-DM-A1D7,TCGA-DM-A1D7-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1597,0.3316,0.01,126,COAD,Primary,Matched,124,No,Yes,Greater Poland Cancer Center,DM,4.2,Colon,Colon Adenocarcinoma
+TCGA-DM-A1D8,TCGA-DM-A1D8-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.3676,0.3468,0.47,144,COAD,Primary,Matched,74,No,Yes,Greater Poland Cancer Center,DM,4.8,Colon,Colon Adenocarcinoma
+TCGA-DM-A1D9,TCGA-DM-A1D9-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2667,0.335,0.33,121,COAD,Primary,Matched,56,No,Yes,Greater Poland Cancer Center,DM,4,Colon,Colon Adenocarcinoma
+TCGA-DM-A1DA,TCGA-DM-A1DA-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.7719,0.3952,2.42,251,COAD,Primary,Matched,85,No,Yes,Greater Poland Cancer Center,DM,8.466666667,Colon,Colon Adenocarcinoma
+TCGA-DM-A1DB,TCGA-DM-A1DB-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.3363,0.3441,0.25,65,COAD,Primary,Matched,92,No,Yes,Greater Poland Cancer Center,DM,2.2,Colon,Colon Adenocarcinoma
+TCGA-DM-A1HA,TCGA-DM-A1HA-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.3085,0.3507,1.46,133,COAD,Primary,Matched,109,No,Yes,Greater Poland Cancer Center,DM,4.5,Colon,Colon Adenocarcinoma
+TCGA-DM-A1HB,TCGA-DM-A1HB-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0004,1.0166,27.61,1117,COAD,Primary,Matched,11,No,Yes,Greater Poland Cancer Center,DM,37.1,Colon,Colon Adenocarcinoma
+TCGA-DM-A280,TCGA-DM-A280-01,3,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0942,0.3888,0.01,120,MACR,Primary,Matched,6,No,Yes,Greater Poland Cancer Center,DM,4.1,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-DM-A282,TCGA-DM-A282-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.0625,0.3739,0.03,95,COAD,Primary,Matched,11,No,Yes,Asterand,DM,3.166666667,Colon,Colon Adenocarcinoma
+TCGA-DM-A285,TCGA-DM-A285-01,16,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.4602,0.3761,0.13,170,MACR,Primary,Matched,86,No,Yes,Asterand,DM,5.766666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-DM-A288,TCGA-DM-A288-01,16,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.4907,0.3948,0.31,74,MACR,Primary,Matched,80,No,Yes,Asterand,DM,2.466666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-DM-A28A,TCGA-DM-A28A-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.2699,0.3995,0.25,129,COAD,Primary,Matched,118,No,Yes,Asterand,DM,4.3,Colon,Colon Adenocarcinoma
+TCGA-DM-A28C,TCGA-DM-A28C-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0342,0.3712,0.08,99,COAD,Primary,Matched,5,No,Yes,Asterand,DM,3.333333333,Colon,Colon Adenocarcinoma
+TCGA-DM-A28E,TCGA-DM-A28E-01,6,Colorectal Cancer,Colon Adenocarcinoma,0.1164,0.379,0.04,87,COAD,Primary,Matched,66,No,Yes,Asterand,DM,2.9,Colon,Colon Adenocarcinoma
+TCGA-DM-A28F,TCGA-DM-A28F-01,16,Colorectal Cancer,Colon Adenocarcinoma,0.3062,0.3791,0.24,229,COAD,Primary,Matched,162,No,Yes,Asterand,DM,7.633333333,Colon,Colon Adenocarcinoma
+TCGA-DM-A28G,TCGA-DM-A28G-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0516,0.3656,0.01,108,COAD,Primary,Matched,10,No,Yes,Asterand,DM,3.666666667,Colon,Colon Adenocarcinoma
+TCGA-DM-A28H,TCGA-DM-A28H-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.2122,0.3898,0.15,123,COAD,Primary,Matched,157,No,Yes,Asterand,DM,4.166666667,Colon,Colon Adenocarcinoma
+TCGA-DM-A28K,TCGA-DM-A28K-01,8,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.2298,0.397,0.05,101,MACR,Primary,Matched,27,No,Yes,Asterand,DM,3.4,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-DM-A28M,TCGA-DM-A28M-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.0692,0.3983,0.13,99,COAD,Primary,Matched,2,No,Yes,Asterand,DM,3.3,Colon,Colon Adenocarcinoma
+TCGA-DT-5265,TCGA-DT-5265-01,7,Colorectal Cancer,Rectal Adenocarcinoma,0.2911,0.3389,0.13,81,READ,Primary,Matched,79,Yes,No,Indivumed,DT,2.766666667,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-DY-A0XA,TCGA-DY-A0XA-01,13,Colorectal Cancer,Rectal Adenocarcinoma,0.3140,0.3458,0.29,128,READ,Primary,Matched,84,No,Yes,Indivumed,DY,4.366666667,Rectum,Rectal Adenocarcinoma
+TCGA-DY-A1DC,TCGA-DY-A1DC-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.2741,0.3327,0.18,138,READ,Primary,Matched,44,No,Yes,Indivumed,DY,4.666666667,Rectum,Rectal Adenocarcinoma
+TCGA-DY-A1DD,TCGA-DY-A1DD-01,13,Colorectal Cancer,Rectal Adenocarcinoma,0.3114,0.3611,1,116,READ,Primary,Matched,45,No,Yes,Indivumed,DY,3.9,Rectum,Rectal Adenocarcinoma
+TCGA-DY-A1DE,TCGA-DY-A1DE-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.6012,,,,READ,Primary,Matched,140,No,Yes,Indivumed,DY,0,Rectum,Rectal Adenocarcinoma
+TCGA-DY-A1DF,TCGA-DY-A1DF-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.5784,0.3545,0.72,123,READ,Primary,Matched,149,No,Yes,Indivumed,DY,4.166666667,Rectum,Rectal Adenocarcinoma
+TCGA-DY-A1DG,TCGA-DY-A1DG-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.4299,0.363,0.8,151,READ,Primary,Matched,126,No,Yes,Indivumed,DY,5.1,Rectum,Rectal Adenocarcinoma
+TCGA-DY-A1H8,TCGA-DY-A1H8-01,7,Colorectal Cancer,Rectal Adenocarcinoma,0.2282,0.3551,0.39,86,READ,Primary,Matched,72,No,Yes,Indivumed,DY,2.966666667,Rectum,Rectal Adenocarcinoma
+TCGA-EF-5830,TCGA-EF-5830-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2437,0.3447,0.63,65,READ,Primary,Matched,78,No,Yes,Indivumed,EF,2.233333333,Rectum,Rectal Adenocarcinoma
+TCGA-EF-5831,TCGA-EF-5831-01,15,Colorectal Cancer,Rectal Adenocarcinoma,0.4306,,0.5,,READ,Primary,Matched,96,No,Yes,Indivumed,EF,0,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6506,TCGA-EI-6506-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.1474,0.3332,0.05,123,READ,Primary,Matched,72,Yes,No,Indivumed,EI,4.1,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6507,TCGA-EI-6507-01,2,Colorectal Cancer,Rectal Adenocarcinoma,0.0475,0.6711,15.99,923,READ,Primary,Matched,10,Yes,No,Indivumed,EI,31.03333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6508,TCGA-EI-6508-01,5,Colorectal Cancer,Rectal Adenocarcinoma,0.1940,0.3488,0.24,101,READ,Primary,Matched,146,Yes,No,Indivumed,EI,3.433333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6509,TCGA-EI-6509-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.2606,0.3555,0.5,52,READ,Primary,Matched,44,Yes,No,Indivumed,EI,1.733333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6510,TCGA-EI-6510-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2942,0.3574,0.05,101,READ,Primary,Matched,15,Yes,No,Indivumed,EI,3.4,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6511,TCGA-EI-6511-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.3252,0.3537,0.15,78,READ,Primary,Matched,38,Yes,No,Indivumed,EI,2.566666667,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6512,TCGA-EI-6512-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.2885,0.3602,0.71,114,READ,Primary,Matched,36,Yes,No,Indivumed,EI,3.833333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6513,TCGA-EI-6513-01,12,Colorectal Cancer,Rectal Adenocarcinoma,0.2863,0.3553,0.48,139,READ,Primary,Matched,84,Yes,No,Indivumed,EI,4.633333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6514,TCGA-EI-6514-01,25,Colorectal Cancer,Rectal Adenocarcinoma,0.3525,0.3382,0.38,105,READ,Primary,Matched,39,Yes,No,Indivumed,EI,3.5,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6881,TCGA-EI-6881-01,18,Colorectal Cancer,Rectal Adenocarcinoma,0.1479,0.3444,0.21,102,READ,Primary,Matched,18,Yes,No,Indivumed,EI,3.4,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6882,TCGA-EI-6882-01,1,Colorectal Cancer,Rectal Adenocarcinoma,0.0419,0.9044,25.05,1214,READ,Primary,Matched,16,Yes,No,Indivumed,EI,40.73333333,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-EI-6883,TCGA-EI-6883-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.4144,0.3433,0.27,90,READ,Primary,Matched,125,Yes,No,Indivumed,EI,3.033333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6884,TCGA-EI-6884-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.1951,0.3424,0,105,READ,Primary,Matched,32,Yes,No,Indivumed,EI,3.533333333,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6885,TCGA-EI-6885-01,28,Colorectal Cancer,Rectal Adenocarcinoma,0.2335,0.3401,0.11,95,READ,Primary,Matched,101,Yes,No,Indivumed,EI,3.166666667,Rectum,Rectal Adenocarcinoma
+TCGA-EI-6917,TCGA-EI-6917-01,0,Colorectal Cancer,Rectal Adenocarcinoma,0.0009,0.3457,0.03,4937,READ,Primary,Matched,33,Yes,No,Indivumed,EI,165.5666667,Rectum,Rectal Adenocarcinoma
+TCGA-EI-7002,TCGA-EI-7002-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.5407,0.3622,0.54,156,READ,Primary,Matched,71,Yes,No,Indivumed,EI,5.2,Rectum,Rectal Adenocarcinoma
+TCGA-EI-7004,TCGA-EI-7004-01,8,Colorectal Cancer,Rectal Adenocarcinoma,0.3180,0.345,0.06,85,READ,Primary,Matched,123,Yes,No,Indivumed,EI,2.8,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-F4-6459,TCGA-F4-6459-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.3075,0.3642,0.31,126,COAD,Primary,Matched,120,Yes,No,Asterand,F4,4.233333333,Colon,Colon Adenocarcinoma
+TCGA-F4-6460,TCGA-F4-6460-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.5944,0.3437,0.24,127,COAD,Primary,Matched,183,Yes,No,Asterand,F4,4.3,Colon,Colon Adenocarcinoma
+TCGA-F4-6461,TCGA-F4-6461-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0581,0.3699,0.23,138,COAD,Primary,Matched,144,Yes,No,Asterand,F4,4.6,Colon,Colon Adenocarcinoma
+TCGA-F4-6463,TCGA-F4-6463-01,4,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1206,0.3302,0.14,69,MACR,Primary,Matched,17,Yes,No,Asterand,F4,2.333333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-F4-6569,TCGA-F4-6569-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.1586,0.3647,0.06,117,COAD,Primary,Matched,34,Yes,No,Asterand,F4,3.966666667,Colon,Colon Adenocarcinoma
+TCGA-F4-6570,TCGA-F4-6570-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0510,0.9787,31.81,1640,COAD,Primary,Matched,29,Yes,No,Asterand,F4,55.03333333,Colon,Colon Adenocarcinoma
+TCGA-F4-6703,TCGA-F4-6703-01,4,Colorectal Cancer,Colon Adenocarcinoma,0.0000,0.4396,1,530,COAD,Primary,Matched,5,Yes,No,Asterand,F4,17.83333333,Colon,Colon Adenocarcinoma
+TCGA-F4-6704,TCGA-F4-6704-01,20,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.3791,0.3596,0.06,78,MACR,Primary,Matched,102,Yes,No,Asterand,F4,2.6,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-F4-6805,TCGA-F4-6805-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1049,0.3882,0.03,68,COAD,Primary,Matched,17,Yes,No,Asterand,F4,2.266666667,Colon,Colon Adenocarcinoma
+TCGA-F4-6806,TCGA-F4-6806-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.1242,0.3957,0.1,103,COAD,Primary,Matched,5,Yes,No,Asterand,F4,3.433333333,Colon,Colon Adenocarcinoma
+TCGA-F4-6807,TCGA-F4-6807-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2021,0.3514,0,155,COAD,Primary,Matched,75,Yes,No,Asterand,F4,5.166666667,Colon,Colon Adenocarcinoma
+TCGA-F4-6808,TCGA-F4-6808-01,14,Colorectal Cancer,Colon Adenocarcinoma,0.2891,0.3566,0.12,121,COAD,Primary,Matched,76,Yes,No,Asterand,F4,4.1,Colon,Colon Adenocarcinoma
+TCGA-F4-6809,TCGA-F4-6809-01,8,Colorectal Cancer,Colon Adenocarcinoma,0.1669,0.3476,0.02,148,COAD,Primary,Matched,108,Yes,No,Asterand,F4,5.033333333,Colon,Colon Adenocarcinoma
+TCGA-F4-6854,TCGA-F4-6854-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.2267,0.3387,0.1,110,COAD,Primary,Matched,83,Yes,No,Asterand,F4,3.8,Colon,Colon Adenocarcinoma
+TCGA-F4-6855,TCGA-F4-6855-01,15,Colorectal Cancer,Colon Adenocarcinoma,0.3419,0.3419,0.03,99,COAD,Primary,Matched,15,Yes,No,Asterand,F4,3.3,Colon,Colon Adenocarcinoma
+TCGA-F4-6856,TCGA-F4-6856-01,0,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0146,0.8729,27.56,963,MACR,Primary,Matched,17,Yes,No,Asterand,F4,32.46666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-F5-6464,TCGA-F5-6464-01,28,Colorectal Cancer,Rectal Adenocarcinoma,0.2378,0.3424,0.04,86,READ,Primary,Matched,56,Yes,No,Indivumed,F5,2.8,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6465,TCGA-F5-6465-01,14,Colorectal Cancer,Rectal Adenocarcinoma,0.3351,0.3415,0,98,READ,Primary,Matched,83,Yes,No,Indivumed,F5,3.3,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6571,TCGA-F5-6571-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.2455,0.3388,0.35,83,READ,Primary,Matched,81,Yes,No,Indivumed,F5,2.766666667,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6702,TCGA-F5-6702-01,28,Colorectal Cancer,Rectal Adenocarcinoma,0.3903,0.328,0.02,63,READ,Primary,Matched,29,Yes,No,Indivumed,F5,2.1,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6810,TCGA-F5-6810-01,21,Colorectal Cancer,Rectal Adenocarcinoma,0.3152,0.3292,0.13,112,READ,Primary,Matched,54,Yes,No,Indivumed,F5,3.733333333,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6811,TCGA-F5-6811-01,18,Colorectal Cancer,Rectal Adenocarcinoma,0.3801,0.3549,0.35,84,READ,Primary,Matched,47,Yes,No,Indivumed,F5,2.833333333,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6812,TCGA-F5-6812-01,11,Colorectal Cancer,Rectal Adenocarcinoma,0.3174,0.3556,0.01,88,READ,Primary,Matched,29,Yes,No,Indivumed,F5,2.9,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6813,TCGA-F5-6813-01,16,Colorectal Cancer,Rectal Adenocarcinoma,0.4134,0.3558,0.45,123,READ,Primary,Matched,80,Yes,No,Indivumed,F5,4.133333333,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6814,TCGA-F5-6814-01,0,Colorectal Cancer,Rectal Adenocarcinoma,0.0284,0.3409,0.34,9459,READ,Primary,Matched,121,Yes,No,Indivumed,F5,316.7666667,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6861,TCGA-F5-6861-01,4,Colorectal Cancer,Rectal Adenocarcinoma,0.0696,0.3338,0,95,READ,Primary,Matched,2,Yes,No,Indivumed,F5,3.2,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6863,TCGA-F5-6863-01,17,Colorectal Cancer,Rectal Adenocarcinoma,0.4128,0.3566,0.08,69,READ,Primary,Matched,45,Yes,No,Indivumed,F5,2.3,Rectum,Rectal Adenocarcinoma
+TCGA-F5-6864,TCGA-F5-6864-01,10,Colorectal Cancer,Rectal Adenocarcinoma,0.2658,0.3486,0.19,136,READ,Primary,Matched,86,Yes,No,Indivumed,F5,4.533333333,Rectum,Rectal Adenocarcinoma
+TCGA-G4-6293,TCGA-G4-6293-01,5,Colorectal Cancer,Colon Adenocarcinoma,0.1090,0.3277,0.28,105,COAD,Primary,Matched,3,No,Yes,Asterand,G4,3.5,Colon,Colon Adenocarcinoma
+TCGA-G4-6294,TCGA-G4-6294-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1888,0.3774,1.01,149,COAD,Primary,Matched,52,No,Yes,Roswell Park,G4,5.033333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6295,TCGA-G4-6295-01,25,Colorectal Cancer,Colon Adenocarcinoma,0.5968,0.3241,0.24,135,COAD,Primary,Matched,40,No,Yes,Roswell Park,G4,6.466666667,Colon,Colon Adenocarcinoma
+TCGA-G4-6297,TCGA-G4-6297-01,29,Colorectal Cancer,Colon Adenocarcinoma,0.2799,0.3325,0.14,85,COAD,Primary,Matched,47,No,Yes,Roswell Park,G4,5.4,Colon,Colon Adenocarcinoma
+TCGA-G4-6298,TCGA-G4-6298-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3193,0.3334,0.31,82,COAD,Primary,Matched,16,No,Yes,Roswell Park,G4,5.266666667,Colon,Colon Adenocarcinoma
+TCGA-G4-6299,TCGA-G4-6299-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.2049,0.3963,0.88,160,COAD,Primary,Matched,148,No,Yes,Roswell Park,G4,5.333333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6302,TCGA-G4-6302-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0000,0.4592,3.04,939,MACR,Primary,Matched,2,No,Yes,Roswell Park,G4,59.73333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-G4-6303,TCGA-G4-6303-01,17,Colorectal Cancer,Colon Adenocarcinoma,0.3983,0.359,0.5,83,COAD,Primary,Matched,95,No,Yes,Roswell Park,G4,2.833333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6304,TCGA-G4-6304-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0002,0.5676,7.18,927,COAD,Primary,Matched,8,No,Yes,Roswell Park,G4,31,Colon,Colon Adenocarcinoma
+TCGA-G4-6306,TCGA-G4-6306-01,12,Colorectal Cancer,Colon Adenocarcinoma,0.2501,0.3415,0.25,106,COAD,Primary,Matched,35,No,Yes,Roswell Park,G4,3.6,Colon,Colon Adenocarcinoma
+TCGA-G4-6307,TCGA-G4-6307-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.2746,0.316,0.41,74,COAD,Primary,Matched,34,No,Yes,Roswell Park,G4,2.433333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6309,TCGA-G4-6309-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0008,0.9341,26.62,811,COAD,Primary,Matched,24,No,Yes,Roswell Park,G4,27.2,Colon,Colon Adenocarcinoma
+TCGA-G4-6311,TCGA-G4-6311-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.1236,0.3185,0.19,124,COAD,Primary,Matched,126,No,Yes,Roswell Park,G4,8.066666667,Colon,Colon Adenocarcinoma
+TCGA-G4-6315,TCGA-G4-6315-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.0857,0.3321,0.25,132,COAD,Primary,Matched,28,No,Yes,Roswell Park,G4,4.433333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6317,TCGA-G4-6317-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.4029,0.3455,0.89,87,COAD,Primary,Matched,61,No,Yes,Roswell Park,G4,2.9,Colon,Colon Adenocarcinoma
+TCGA-G4-6320,TCGA-G4-6320-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.1286,0.5674,14.97,1014,COAD,Primary,Matched,20,No,Yes,Roswell Park,G4,65.7,Colon,Colon Adenocarcinoma
+TCGA-G4-6321,TCGA-G4-6321-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0003,0.3258,0.18,73,COAD,Primary,Matched,4,No,Yes,Roswell Park,G4,2.433333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6322,TCGA-G4-6322-01,2,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.1146,0.3214,0.14,83,MACR,Primary,Matched,166,No,Yes,Roswell Park,G4,5.466666667,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-G4-6323,TCGA-G4-6323-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0096,0.3512,0.42,91,COAD,Primary,Matched,13,No,Yes,Roswell Park,G4,3.033333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6586,TCGA-G4-6586-01,1,Colorectal Cancer,Colon Adenocarcinoma,0.0450,1.0607,33.57,1108,COAD,Primary,Matched,16,No,Yes,Roswell Park,G4,37.03333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6588,TCGA-G4-6588-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0033,1.0066,34.69,1964,COAD,Primary,Matched,9,No,Yes,Roswell Park,G4,65.56666667,Colon,Colon Adenocarcinoma
+TCGA-G4-6626,TCGA-G4-6626-01,20,Colorectal Cancer,Colon Adenocarcinoma,0.4974,0.349,0.39,118,COAD,Primary,Matched,189,No,Yes,Roswell Park,G4,3.966666667,Colon,Colon Adenocarcinoma
+TCGA-G4-6627,TCGA-G4-6627-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.0213,0.3582,0.02,98,COAD,Primary,Matched,2,No,Yes,Roswell Park,G4,3.233333333,Colon,Colon Adenocarcinoma
+TCGA-G4-6628,TCGA-G4-6628-01,2,Colorectal Cancer,Colon Adenocarcinoma,0.0885,0.7863,19.28,1875,COAD,Primary,Matched,12,No,Yes,Roswell Park,G4,62.86666667,Colon,Colon Adenocarcinoma
+TCGA-G5-6641,TCGA-G5-6641-01,6,Colorectal Cancer,Rectal Adenocarcinoma,0.2193,0.3305,0.02,93,READ,Primary,Matched,73,No,Yes,Indivumed,G5,3.133333333,Rectum,"Rectal Adenocarcinoma, Mucinous Type"
+TCGA-NH-A50T,TCGA-NH-A50T-01,19,Colorectal Cancer,Colon Adenocarcinoma,0.4128,0.2912,0.31,120,COAD,Primary,Matched,36,Yes,No,Roswell Park,NH,4.033333333,Colon,Colon Adenocarcinoma
+TCGA-NH-A50U,TCGA-NH-A50U-01,23,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.5291,0.3425,0.5,87,MACR,Primary,Matched,40,Yes,No,Roswell Park,NH,2.9,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-NH-A50V,TCGA-NH-A50V-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.1895,0.2879,0.32,146,COAD,Primary,Matched,50,Yes,No,Candler,NH,4.866666667,Colon,Colon Adenocarcinoma
+TCGA-NH-A5IV,TCGA-NH-A5IV-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0008,1.2012,41.02,2380,COAD,Primary,Matched,23,Yes,No,Candler,NH,79.83333333,Colon,Colon Adenocarcinoma
+TCGA-NH-A6GA,TCGA-NH-A6GA-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3715,0.3295,1.07,84,COAD,Primary,Matched,30,Yes,No,Candler,NH,2.833333333,Colon,Colon Adenocarcinoma
+TCGA-NH-A6GB,TCGA-NH-A6GB-01,7,Colorectal Cancer,Colon Adenocarcinoma,0.1527,0.3185,0.31,150,COAD,Primary,Matched,49,Yes,No,Candler,NH,5,Colon,Colon Adenocarcinoma
+TCGA-NH-A6GC,TCGA-NH-A6GC-01,23,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.5911,0.3241,0.73,114,MACR,Primary,Matched,53,Yes,No,Candler,NH,3.8,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-NH-A8F7,TCGA-NH-A8F7-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4050,0.3241,0.36,118,COAD,Primary,Matched,26,Yes,No,Candler,NH,3.966666667,Colon,Colon Adenocarcinoma
+TCGA-NH-A8F8,TCGA-NH-A8F8-01,13,Colorectal Cancer,Colon Adenocarcinoma,0.3075,0.3144,0.23,105,COAD,Primary,Matched,23,Yes,No,Candler,NH,3.5,Colon,Colon Adenocarcinoma
+TCGA-QG-A5YV,TCGA-QG-A5YV-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.4264,0.2586,0,162,COAD,Primary,Matched,33,No,Yes,Candler,QG,5.466666667,Colon,Colon Adenocarcinoma
+TCGA-QG-A5YW,TCGA-QG-A5YW-01,21,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.4458,0.2723,0.47,148,MACR,Primary,Matched,26,No,Yes,Candler,QG,4.933333333,Colon,"Colon Adenocarcinoma, Mucinous Type"
+TCGA-QG-A5YX,TCGA-QG-A5YX-01,10,Colorectal Cancer,Colon Adenocarcinoma,0.2323,0.304,0.18,80,COAD,Primary,Matched,25,No,Yes,BLN - Baylor,QG,2.733333333,Colon,Colon Adenocarcinoma
+TCGA-QG-A5Z1,TCGA-QG-A5Z1-01,9,Colorectal Cancer,Colon Adenocarcinoma,0.2720,0.2924,0.03,95,COAD,Primary,Matched,78,No,Yes,BLN - Baylor,QG,3.166666667,Colon,Colon Adenocarcinoma
+TCGA-QG-A5Z2,TCGA-QG-A5Z2-01,0,Colorectal Cancer,Colon Adenocarcinoma,0.0002,0.86,19.29,1023,COAD,Primary,Matched,4,No,Yes,BLN - Baylor,QG,34.46666667,Colon,Colon Adenocarcinoma
+TCGA-QL-A97D,TCGA-QL-A97D-01,21,Colorectal Cancer,Colon Adenocarcinoma,0.2828,0.3204,0.56,211,COAD,Primary,Matched,101,No,Yes,BLN - Baylor,QL,7.1,Colon,Colon Adenocarcinoma
+TCGA-RU-A8FL,TCGA-RU-A8FL-01,26,Colorectal Cancer,Colon Adenocarcinoma,0.2344,0.3417,0.47,126,COAD,Primary,Matched,102,No,Yes,BLN - Baylor,RU,4.2,Colon,Colon Adenocarcinoma
+TCGA-SS-A7HO,TCGA-SS-A7HO-01,18,Colorectal Cancer,Colon Adenocarcinoma,0.3774,0.3318,1.19,145,COAD,Primary,Matched,80,No,Yes,University of Chicago,SS,4.833333333,Colon,Colon Adenocarcinoma
+TCGA-T9-A92H,TCGA-T9-A92H-01,11,Colorectal Cancer,Colon Adenocarcinoma,0.1742,0.317,0.4,159,COAD,Primary,Matched,111,Yes,No,Northwestern University,T9,5.333333333,Colon,Colon Adenocarcinoma
+TCGA-WS-AB45,TCGA-WS-AB45-01,7,Colorectal Cancer,Mucinous Adenocarcinoma of the Colon and Rectum,0.0053,0.6782,24.48,2513,MACR,Primary,Matched,25,No,Yes,Medical College of Georgia,WS,84.33333333,Colon,"Colon Adenocarcinoma, Mucinous Type"

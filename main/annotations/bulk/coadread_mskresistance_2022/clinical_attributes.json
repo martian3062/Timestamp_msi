@@ -1,0 +1,236 @@
+[
+  {
+    "displayName": "Age at Which Sequencing was Reported (Years)",
+    "description": "Age (in years) at which sequencing was reported",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_SEQ_REPORTED_YEARS",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Ethnicity Category",
+    "description": "The text for reporting information about ethnicity.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "ETHNICITY",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Gene Panel",
+    "description": "Gene panel.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GENE_PANEL",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Genome Doubled",
+    "description": "Genome Doubled",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GENOME_DOUBLED",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Institute Source",
+    "description": "Institute Source",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "INSTITUTE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "The anatomic location to which the cancer has spread.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "MSI Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "MSI Type",
+    "description": "MSI Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_TYPE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival in months since initial diagonosis.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "9",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Race Category",
+    "description": "The text for reporting information about race.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RACE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Religion",
+    "description": "Religion",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RELIGION",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Sample Class",
+    "description": "The sample classification (i.e., tumor, cellline, xenograph).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_CLASS",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type of sample (i.e., normal, primary, met, recurrence).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "9",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Specimen Preservation Type",
+    "description": "The method used for preparing the tissue for examination and study.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SPECIMEN_PRESERVATION_TYPE",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "coadread_mskresistance_2022"
+  },
+  {
+    "displayName": "Tumor Purity",
+    "description": "Tumor Purity",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "coadread_mskresistance_2022"
+  }
+]

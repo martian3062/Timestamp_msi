@@ -1,0 +1,23 @@
+patientId,sampleId,AGE_AT_SEQ_REPORTED_YEARS,CANCER_TYPE,CANCER_TYPE_DETAILED,FRACTION_GENOME_ALTERED,GENE_PANEL,GENOME_DOUBLED,INSTITUTE,METASTATIC_SITE,MSI_SCORE,MSI_TYPE,MUTATION_COUNT,ONCOTREE_CODE,PRIMARY_SITE,SAMPLE_CLASS,SAMPLE_TYPE,SOMATIC_STATUS,SPECIMEN_PRESERVATION_TYPE,TMB_NONSYNONYMOUS,TUMOR_PURITY
+C-E2UFRP,s_C_E2UFRP_X007_d,,Colorectal Cancer,Colorectal Adenocarcinoma,0.7959,IMPACT505,TRUE,,,20.19,Instable,25,COADREAD,,PDX,Metastasis,,Frozen,20.50868091,
+C-E2UFRP,s_C_E2UFRP_X008_d,,Colorectal Cancer,Colon Adenocarcinoma,0.6099,IMPACT505,FALSE,,,28.71,Instable,41,COADREAD,,PDX,Metastasis,,Frozen,32.81388946,
+C-FFDWJM,s_RW7213_R_D1_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.5385,IMPACT505,FALSE,,,27.13,Instable,1681,COAD,,CellLine,CellLine/PDX,,Frozen,1375.722316,
+C-FFDWJM,s_RW7213_R_D2_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.6704,IMPACT505,FALSE,,,28.28,Instable,1146,COAD,,CellLine,CellLine/PDX,,Frozen,937.6568914,
+C-FFDWJM,s_RW7213_R_D3_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.6027,IMPACT505,FALSE,,,29.62,Instable,646,COAD,,CellLine,CellLine/PDX,,Frozen,528.3036204,
+C-FFDWJM,s_RW7213_R_D4_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.5300,IMPACT505,FALSE,,,31.21,Instable,1682,COAD,,CellLine,CellLine/PDX,,Frozen,1376.542663,
+C-FFDWJM,s_RW7213_R_V1_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.6433,IMPACT505,FALSE,,,29.24,Instable,521,COAD,,CellLine,CellLine/PDX,,Frozen,424.9398685,
+C-FFDWJM,s_RW7213_R_V2_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.5549,IMPACT505,FALSE,,,28.37,Instable,891,COAD,,CellLine,CellLine/PDX,,Frozen,728.4683461,
+C-FFDWJM,s_RW7213_R_V3_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.5636,IMPACT505,FALSE,,,28.01,Instable,1605,COAD,,CellLine,CellLine/PDX,,Frozen,1314.196273,
+C-FFDWJM,s_RW7213_R_V4_04609AI,,Colorectal Cancer,Colon Adenocarcinoma,0.7264,IMPACT505,FALSE,,,28.09,Instable,704,COAD,,CellLine,CellLine/PDX,,Frozen,573.4227184,
+C-FFDWJM,s_RW7213_parental_04609AB,,Colorectal Cancer,Colorectal Adenocarcinoma,0.6839,IMPACT505,TRUE,,,24.72,Instable,39,COADREAD,,CellLine,Metastasis,,Frozen,31.99354223,
+C-FFDWJM,s_RW7213_resistant_04609AB,,Colorectal Cancer,Colorectal Adenocarcinoma,0.5938,IMPACT505,FALSE,,,25.16,Instable,41,COADREAD,,CellLine,Metastasis,,Frozen,33.6342367,
+C-NX6F4H,s_C106_parental_04609AB,,Colorectal Cancer,Colorectal Adenocarcinoma,0.4882,IMPACT505,FALSE,,,24.9,Instable,37,COADREAD,,CellLine,Metastasis,,Frozen,31.17319499,
+C-NX6F4H,s_C106_resistant_04609AB,,Colorectal Cancer,Colorectal Adenocarcinoma,0.2941,IMPACT505,FALSE,,,24.77,Instable,35,COADREAD,,CellLine,Metastasis,,Frozen,28.71215328,
+P-0018488,P-0018488-T01-IM6,59,Colorectal Cancer,Colon Adenocarcinoma,0.4011,IMPACT468,,MSKCC,Lung,0.43,Stable,8,COAD,Colon,Tumor,Metastasis,Matched,,6.91758476,40
+P-0018488,P-0018488-T07-IM7,64,Colorectal Cancer,Rectal Adenocarcinoma,0.5597,IMPACT505,,MSKCC,Liver,2.48,Stable,10,READ,Rectum,Tumor,Metastasis,Matched,,8.203472366,60
+P-0032505,P-0032505-T01-IM6,68,Colorectal Cancer,Rectal Adenocarcinoma,0.0333,IMPACT468,,MSKCC,,0.06,Stable,6,READ,Rectum,Tumor,Primary,Matched,,5.18818857,30
+P-0038647,P-0038647-T01-IM6,50,Colorectal Cancer,Rectal Adenocarcinoma,0.4144,IMPACT468,,MSKCC,Liver,2.04,Stable,7,READ,Rectum,Tumor,Metastasis,Matched,,6.052886665,70
+P-0063407,P-0063407-T01-IM7,60,Colorectal Cancer,Colorectal Adenocarcinoma,0.5859,IMPACT505,,MSKCC,Liver,1.48,Stable,6,COADREAD,Colon,Tumor,Metastasis,Matched,,4.922083419,30
+P-0064340,P-0064340-T01-IM7,47,Colorectal Cancer,Colon Adenocarcinoma,0.1444,IMPACT505,,MSKCC,Retroperitoneum,1.61,Stable,10,COAD,Colon,Tumor,Metastasis,Matched,,8.203472366,70
+P-0069572,P-0069572-T02-IM7,,Colorectal Cancer,Colorectal Adenocarcinoma,0.4661,IMPACT505,,Other Institute,hernia sac,3.69,Indeterminate,9,COADREAD,Colon,Tumor,Metastasis,Matched,,7.383125129,80
+P-0070822,P-0070822-T01-IM7,66,Colorectal Cancer,Rectal Adenocarcinoma,0.2602,IMPACT505,,Other Institute,Vulva,1.08,Stable,9,READ,Rectum,Tumor,Metastasis,Matched,,7.383125129,30

@@ -1,0 +1,27 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Which Sequencing was Reported (Years),Age (in years) at which sequencing was reported,NUMBER,False,1,AGE_AT_SEQ_REPORTED_YEARS,coadread_mskresistance_2022
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,coadread_mskresistance_2022
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_mskresistance_2022
+Ethnicity Category,The text for reporting information about ethnicity.,STRING,True,1,ETHNICITY,coadread_mskresistance_2022
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,coadread_mskresistance_2022
+Gene Panel,Gene panel.,STRING,False,1,GENE_PANEL,coadread_mskresistance_2022
+Genome Doubled,Genome Doubled,STRING,False,1,GENOME_DOUBLED,coadread_mskresistance_2022
+Institute Source,Institute Source,STRING,False,1,INSTITUTE,coadread_mskresistance_2022
+Metastatic Site,The anatomic location to which the cancer has spread.,STRING,False,1,METASTATIC_SITE,coadread_mskresistance_2022
+MSI Score,MSI Score,NUMBER,False,1,MSI_SCORE,coadread_mskresistance_2022
+MSI Type,MSI Type,STRING,False,1,MSI_TYPE,coadread_mskresistance_2022
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_mskresistance_2022
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,coadread_mskresistance_2022
+Overall Survival (Months),Overall survival in months since initial diagonosis.,NUMBER,True,1,OS_MONTHS,coadread_mskresistance_2022
+Overall Survival Status,Overall patient survival status.,STRING,True,9,OS_STATUS,coadread_mskresistance_2022
+Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,1,PRIMARY_SITE,coadread_mskresistance_2022
+Race Category,The text for reporting information about race.,STRING,True,1,RACE,coadread_mskresistance_2022
+Religion,Religion,STRING,True,1,RELIGION,coadread_mskresistance_2022
+Sample Class,"The sample classification (i.e., tumor, cellline, xenograph).",STRING,False,1,SAMPLE_CLASS,coadread_mskresistance_2022
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_mskresistance_2022
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,9,SAMPLE_TYPE,coadread_mskresistance_2022
+Sex,Sex,STRING,True,1,SEX,coadread_mskresistance_2022
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,coadread_mskresistance_2022
+Specimen Preservation Type,The method used for preparing the tissue for examination and study.,STRING,False,1,SPECIMEN_PRESERVATION_TYPE,coadread_mskresistance_2022
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_mskresistance_2022
+Tumor Purity,Tumor Purity,STRING,False,1,TUMOR_PURITY,coadread_mskresistance_2022

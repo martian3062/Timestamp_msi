@@ -1,0 +1,20 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Diagnosis Age,Age at which a condition or disease was first diagnosed.,NUMBER,True,1,AGE,crc_nigerian_2020
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_nigerian_2020
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_nigerian_2020
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,crc_nigerian_2020
+Gene Panel,Gene panel.,STRING,False,1,GENE_PANEL,crc_nigerian_2020
+Initial Stage,Initial Stage,STRING,True,1,INITIAL_STAGE,crc_nigerian_2020
+Molecular Subtype,Molecular Subtype,STRING,False,1,MOLECULAR_SUBTYPE,crc_nigerian_2020
+MSI Prediction Score,MSI Prediction Score,NUMBER,False,1,MSI_PREDICTION_SCORE,crc_nigerian_2020
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_nigerian_2020
+Mutation Rate,Mutation Rate,NUMBER,False,1,MUTATION_RATE,crc_nigerian_2020
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,crc_nigerian_2020
+Race Category,The text for reporting information about race.,STRING,True,1,RACE,crc_nigerian_2020
+Sample Class,"The sample classification (i.e., tumor, cellline, xenograph).",STRING,False,1,SAMPLE_CLASS,crc_nigerian_2020
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_nigerian_2020
+Sex,Sex,STRING,True,1,SEX,crc_nigerian_2020
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,crc_nigerian_2020
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,crc_nigerian_2020
+Tumor Differentiation,Tumor Differentiation,STRING,False,1,TUMOR_DIFFERENTIATION,crc_nigerian_2020
+Tumor Site,Tumor Site,STRING,True,1,TUMOR_SITE,crc_nigerian_2020

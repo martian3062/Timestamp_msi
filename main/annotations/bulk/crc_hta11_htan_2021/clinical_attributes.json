@@ -1,0 +1,227 @@
+[
+  {
+    "displayName": "Acquisition Method Type",
+    "description": "Acquisition Method Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ACQUISITION_METHOD",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Advanced",
+    "description": "Developed or Progressed State",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "5",
+    "clinicalAttributeId": "ADVANCED",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Age",
+    "description": "Patient Age",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "5",
+    "clinicalAttributeId": "AGE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Atlas Name",
+    "description": "Atlas Name",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "6",
+    "clinicalAttributeId": "ATLAS_NAME",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Atypia",
+    "description": "Atypia",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "5",
+    "clinicalAttributeId": "ATYPIA",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Cohort",
+    "description": "Cohort",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "COHORT",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Hyperplastic Type",
+    "description": "Hyperplastic Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "5",
+    "clinicalAttributeId": "HPTYPE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Percent Adenoma",
+    "description": "Proportion of Adenoma within the polyp",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "3",
+    "clinicalAttributeId": "PCAD",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Percent Normal Cells",
+    "description": "Proportion of Normal cells within the polyp",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "3",
+    "clinicalAttributeId": "PCNORMAL",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Percent Villous Component",
+    "description": "Villous Component within the polyp",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "3",
+    "clinicalAttributeId": "PCVILLOUS",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Polyp Dimension",
+    "description": "Polyp Dimension",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "3",
+    "clinicalAttributeId": "PDIM",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Polyps of the Colon or Rectum?",
+    "description": "Have you ever been told by a Doctor that you have polyps of the Colon or Rectum?",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "POLYP_OF_COLON_OR_RECTUM",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Polyp Subtype",
+    "description": "Polyp Subtype",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "6",
+    "clinicalAttributeId": "POLYP_SUBTYPE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Polyp Type",
+    "description": "Polyp Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "6",
+    "clinicalAttributeId": "POLYP_TYPE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Preservation Method",
+    "description": "Preservation Method",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRESERVATION_METHOD",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Polyp Shape",
+    "description": "Polyp Shape",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "3",
+    "clinicalAttributeId": "PSHAPE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Race Category",
+    "description": "The text for reporting information about race.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "3",
+    "clinicalAttributeId": "RACE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Sample Size Invivo (cm)",
+    "description": "Sample Size Invivo (cm)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "3",
+    "clinicalAttributeId": "SAMPLE_SIZEINVIVO_CM",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Segment",
+    "description": "Location of polyp",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "4",
+    "clinicalAttributeId": "SEGMENT",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "5",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Side",
+    "description": "Location of polyp",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "4",
+    "clinicalAttributeId": "SIDE",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_hta11_htan_2021"
+  },
+  {
+    "displayName": "Tumor Tissue Type",
+    "description": "Tumor Tissue Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "6",
+    "clinicalAttributeId": "TISSUE_TYPE",
+    "studyId": "crc_hta11_htan_2021"
+  }
+]

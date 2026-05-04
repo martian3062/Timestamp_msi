@@ -1,0 +1,416 @@
+[
+  {
+    "displayName": "Age at Diagnosis (years)",
+    "description": "Age at Diagnosis (years)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_DX",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "HTAN Atlas Name",
+    "description": "HTAN Atlas Name",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "ATLAS_NAME",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Site of Resection or Biopsy",
+    "description": "Site of Resection or Biopsy",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "BIOPSY_SITE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "BMI",
+    "description": "BMI",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "BMI",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "The main cancer type as defined by the Oncotree cancer classification system for precision oncology. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "3000",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "The cancer subtype as defined by the Oncotree cancer classification system for precision oncology. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "2000",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Ethnicity",
+    "description": "Ethnicity",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "ETHNICITY",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Family History Cancer",
+    "description": "Family History Cancer",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "FAM_HX_CANCER",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Tumor Grade",
+    "description": "Tumor Grade",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "GRADE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "H5AD Patient ID",
+    "description": "H5AD Patient ID",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "H5AD_PATIENT_ID",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "H5AD Sample ID",
+    "description": "H5AD Sample ID",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "H5AD_SAMPLE_ID",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Histologic Morphology Code",
+    "description": "Histologic Morphology Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "HISTOLOGY_CODE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Met Sites at Dx",
+    "description": "Met Sites at Dx",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "MET_SITES_DX",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Met Sites Ever",
+    "description": "Met Sites Ever",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "MET_SITES_EVER",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Morphology",
+    "description": "Morphology",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "MORPHOLOGY",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Multiple Cancers Patient",
+    "description": "Multiple Cancers Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "MUL_CANCERS_PAT",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Nodes Removed Factor",
+    "description": "Nodes Removed Factor",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "NODES_REM_FACTOR",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "The assigned Oncotree code of the sample as defined by the Oncotree cancer classification system for precision oncology.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival from date of diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Overall Survival from Surgery (Months)",
+    "description": "Overall survival from date of Surgery",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "OS_MONTHS_SURGERY",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "The patient's survival status; is the patient alive or deceased",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1000",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Patient Display Name",
+    "description": "Patient Display Name",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PATIENT_DISPLAY_NAME",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Progress Free Survival (Months)",
+    "description": "Progress Free Survival (Months)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PFS_MONTHS",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Progression Free Status",
+    "description": "Progression Free Status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PFS_STATUS",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Preservation Method",
+    "description": "Preservation Method",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "PRESERVATION_METHOD",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Pre Op Tx",
+    "description": "Pre Op Tx",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRE_OP_TX",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Primary Diagnosis",
+    "description": "Primary Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRIMARY_DX",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Primary Site",
+    "description": "Primary Site",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRIMARY_SITE_PAT",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Primary Site Binary",
+    "description": "Primary Site Binary",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRI_SITE_BINARY",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Primary Tumor Budding",
+    "description": "Primary Tumor Budding",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRI_TUM_BUDDING",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Race",
+    "description": "Race",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "RACE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Progression or Recurrence Type",
+    "description": "Progression or Recurrence Type",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "RECURRENCE_TYPE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Acquisition Method Type",
+    "description": "Acquisition Method Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SAMPLE_ACQUISITION_METHOD",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Sample Class",
+    "description": "The sample classification (i.e., tumor, cellline, xenograph).Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "850",
+    "clinicalAttributeId": "SAMPLE_CLASS",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Sample Display Name",
+    "description": "Sample Display Name",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SAMPLE_DISPLAY_NAME",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "Sample Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "990",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Stage_Dx",
+    "description": "Stage_Dx",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "STAGE_DX",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Storage Method",
+    "description": "Storage Method",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "STORAGE_METHOD",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Timepoint Label",
+    "description": "Timepoint Label",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "TIMEPOINT_LABEL",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Tissue or Organ of Origin",
+    "description": "Tissue or Organ of Origin",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "TISSUE_OF_ORIGIN",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Treatment Lines",
+    "description": "Treatment Lines",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "TX_LINES",
+    "studyId": "crc_hta8_htan_2024"
+  },
+  {
+    "displayName": "Treatment Response Category",
+    "description": "Treatment Response Category",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "TX_RES_CAT",
+    "studyId": "crc_hta8_htan_2024"
+  }
+]

@@ -1,0 +1,42 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Diagnosis,Age at Diagnosis,NUMBER,True,1,AGE_AT_DX,crc_eo_2020
+Age Groups,Age Groups,STRING,True,1,AGE_GROUPS,crc_eo_2020
+Age Subgroups,Age Subgroups,STRING,True,1,AGE_SUBGROUPS,crc_eo_2020
+BMI,BMI,NUMBER,True,1,BMI,crc_eo_2020
+BMI categories,BMI categories,STRING,True,1,BMI_CATEGORIES,crc_eo_2020
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_eo_2020
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_eo_2020
+Impact TMB Score,Calculated TMB score,NUMBER,False,1,CVR_TMB_SCORE,crc_eo_2020
+Diabetes Mellitus History,Diabetes mellitus history,STRING,True,1,DIABETES_MELLITUS,crc_eo_2020
+First Symptoms at Diagnosis,First symptoms at diagnosis,STRING,True,1,FIRST_SYMPTOMS_AT_DX,crc_eo_2020
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,crc_eo_2020
+Gene Panel,Gene panel.,STRING,False,1,GENE_PANEL,crc_eo_2020
+Hypertension History,Hypertension history,STRING,True,1,HYPERTENSION,crc_eo_2020
+Metastasectomy,Metastasectomy,STRING,True,1,METASTASECTOMY,crc_eo_2020
+Metastatic Site,The anatomic location to which the cancer has spread.,STRING,False,0,METASTATIC_SITE,crc_eo_2020
+Molecular Subtype,Molecular Subtype,STRING,False,1,MOLECULAR_SUBTYPE,crc_eo_2020
+MSI Score,MSI Score,NUMBER,False,1,MSI_SCORE,crc_eo_2020
+MSI Type,MSI Type,STRING,False,1,MSI_TYPE,crc_eo_2020
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_eo_2020
+Oncotree Code,Oncotree Code,STRING,False,0,ONCOTREE_CODE,crc_eo_2020
+Overall Survival (Months) from Dx of Met,Overall survival in months since metastasis diagnosis.,NUMBER,True,1,OS_MET_MONTHS,crc_eo_2020
+Overall Survival Status,Overall patient survival status.,STRING,True,9,OS_MET_STATUS,crc_eo_2020
+Primary Tumor Location,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,0,PRIMARY_TUMOR_LOCATION,crc_eo_2020
+PUMP,PUMP,STRING,True,1,PUMP,crc_eo_2020
+Race Category,The text for reporting information about race.,STRING,True,1,RACE,crc_eo_2020
+Sample Class," The sample classification (i.e., tumor, cellline, xenograph). ",STRING,False,0,SAMPLE_CLASS,crc_eo_2020
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_eo_2020
+Sample coverage,Sample coverage,NUMBER,False,1,SAMPLE_COVERAGE,crc_eo_2020
+Sample Type," The type of sample (i.e., normal, primary, met, recurrence). ",STRING,False,1,SAMPLE_TYPE,crc_eo_2020
+Sex,Sex,STRING,True,1,SEX,crc_eo_2020
+Smoker Status,Smoker Status,STRING,True,1,SMOKER_STATUS,crc_eo_2020
+Smoking history,Smoking history,STRING,True,1,SMOKING_HISTORY,crc_eo_2020
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,crc_eo_2020
+Stage at Diagnosis,Stage at Diagnosis,STRING,True,1,STAGE_AT_DX,crc_eo_2020
+First Line Treatment at Metastasis,First line treatment at time of metastasis,STRING,True,1,TREATMENT_AT_METASTASIS,crc_eo_2020
+Tumor Grade,Tumor Grade,STRING,False,1,TUMOR_GRADE,crc_eo_2020
+Tumor Purity,Tumor Purity,NUMBER,False,1,TUMOR_PURITY,crc_eo_2020
+Used for Response,Used for Response,NUMBER,False,1,USED_FOR_RESPONSE,crc_eo_2020
+Used in Clinical Analysis,Used in Clinical Analysis,NUMBER,False,1,USED_IN_CLINICAL_ANALYSIS,crc_eo_2020
+Used in Genomic MSS Analysis,Used in Genomic MSS Analysis,NUMBER,False,1,USED_IN_GENOMIC_MSS_ANALYSIS,crc_eo_2020
+Used in Genomic MSS Met Survival Analysis,Used in Genomic MSS Met Survival Analysis,NUMBER,False,1,USED_IN_GENOMIC_MSS_MET_SURVIVAL_ANALYSIS,crc_eo_2020

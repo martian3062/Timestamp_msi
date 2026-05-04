@@ -1,0 +1,44 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Diagnosis,Age at Diagnosis,NUMBER,True,1,AGE_AT_DIAGNOSIS,crc_dd_2022
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_dd_2022
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_dd_2022
+Impact TMB Score,Calculated TMB score,NUMBER,False,1,CVR_TMB_SCORE,crc_dd_2022
+Driver1 Allelic Imbalance,Driver1 Allelic Imbalance,STRING,False,0,DRIVER1_AI,crc_dd_2022
+Driver1 CCF,Driver1 CCF,NUMBER,False,0,DRIVER1_CCF,crc_dd_2022
+Driver1 Cellular Fraction,Driver1 Cellular Fraction,NUMBER,False,0,DRIVER1_CELLULAR_FRACTION,crc_dd_2022
+Driver1 Clonal Call,Driver1 Clonal Call,STRING,False,0,DRIVER1_CLONAL_CALL,crc_dd_2022
+Driver1 Expected Mutant Copies,Driver1 Expected Mutant Copies,NUMBER,False,0,DRIVER1_EXPECTED_MUTANT_COPIES,crc_dd_2022
+Driver1 Facets Ploidy Call,Driver1 Facets Ploidy Call,STRING,False,0,DRIVER1_FACETS_PLOIDY_CALL,crc_dd_2022
+Driver1 LCN,Driver1 LCN,STRING,False,0,DRIVER1_LCN,crc_dd_2022
+Driver1 Mutation,Driver1 Mutation,STRING,False,0,DRIVER1_MUTATION,crc_dd_2022
+Driver1 TCN,Driver1 TCN,STRING,False,0,DRIVER1_TCN,crc_dd_2022
+Driver2 Allelic Imbalance,Driver2 Allelic Imbalance,STRING,False,0,DRIVER2_AI,crc_dd_2022
+Driver2 CCF,Driver2 CCF,NUMBER,False,0,DRIVER2_CCF,crc_dd_2022
+Driver2 Cellular Fraction,Driver2 Cellular Fraction,NUMBER,False,0,DRIVER2_CELLULAR_FRACTION,crc_dd_2022
+Driver2 Clonal Call,Driver2 Clonal Call,STRING,False,0,DRIVER2_CLONAL_CALL,crc_dd_2022
+Driver2 Expected Mutant Copies,Driver2 Expected Mutant Copies,NUMBER,False,0,DRIVER2_EXPECTED_MUTANT_COPIES,crc_dd_2022
+Driver2 Facets Ploidy Call,Driver2 Facets Ploidy Call,STRING,False,0,DRIVER2_FACETS_PLOIDY_CALL,crc_dd_2022
+Driver2 LCN,Driver2 LCN,STRING,False,0,DRIVER2_LCN,crc_dd_2022
+Driver2 Mutation,Driver2 Mutation,STRING,False,0,DRIVER2_MUTATION,crc_dd_2022
+Driver2 TCN,Driver2 TCN,STRING,False,0,DRIVER2_TCN,crc_dd_2022
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,crc_dd_2022
+Genomic QC,Genomic QC,STRING,False,0,GENOMIC_QC,crc_dd_2022
+Group,Group,STRING,False,1,GROUP,crc_dd_2022
+Highest Level OncoKB,Highest Level OncoKB,STRING,False,1,HIGHEST_LEVEL_ONCOKB,crc_dd_2022
+Metastatic Status,Indicates whether the patient had metastatic cancer or not,STRING,True,1,METASTATIC,crc_dd_2022
+Metastasis at Diagnosis,Indicates whether the patient had metastatic cancer when first diagnosed,STRING,True,1,METASTATIC_AT_DX,crc_dd_2022
+Metastatic Site,The anatomic location to which the cancer has spread.,STRING,False,1,METASTATIC_SITE,crc_dd_2022
+MSI Score,MSI Score,NUMBER,False,1,MSI_SCORE,crc_dd_2022
+MSI Type,MSI Type,STRING,False,1,MSI_TYPE,crc_dd_2022
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_dd_2022
+Oncotree Code,Oncotree Code,STRING,False,0,ONCOTREE_CODE,crc_dd_2022
+Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,1,PRIMARY_SITE,crc_dd_2022
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_dd_2022
+Sample coverage,Sample coverage,NUMBER,False,0,SAMPLE_COVERAGE,crc_dd_2022
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,1,SAMPLE_TYPE,crc_dd_2022
+Sex,Sex,STRING,True,1,SEX,crc_dd_2022
+Stage at Diagnosis,Stage at Diagnosis,STRING,True,1,STAGE_AT_DIAGNOSIS,crc_dd_2022
+Survival Status,Survival Status,STRING,True,1,SURVIVAL_STATUS,crc_dd_2022
+Tumor Location (Proximal vs. Distal),Tumor Location (Proximal vs. Distal),STRING,False,1,TUMOR_LOCATION,crc_dd_2022
+Tumor Purity,Tumor Purity,NUMBER,False,1,TUMOR_PURITY,crc_dd_2022
+WGD,WGD,STRING,False,1,WGD,crc_dd_2022

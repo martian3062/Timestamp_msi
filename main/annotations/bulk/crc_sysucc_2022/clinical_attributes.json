@@ -1,0 +1,254 @@
+[
+  {
+    "displayName": "Adjuvant Chemotherapy",
+    "description": "Adjuvant Chemotherapy",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ADJUVANT_CHEMOTHERAPY",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Diagnosis Age",
+    "description": "Age at which a condition or disease was first diagnosed.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Cluster",
+    "description": "Cluster",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CLUSTER",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "CRC Family History",
+    "description": "Family history of CRC",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CRC_FAMILY_HISTORY",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Disease Free Survival (Months)",
+    "description": "Disease Free Survival (Months)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DFS_MONTHS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Disease Free Survival Status",
+    "description": "Disease Free Survival Status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DFS_STATUS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Family Cancer History",
+    "description": "Family history of cancer",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "FAMILY_HISTORY",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Hypermutation",
+    "description": "Hypermutation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "IS_HYPER",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Metastasis At Diagnosis",
+    "description": "Metastasis At Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASIS_AT_DIAGNOSIS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "MMR Status",
+    "description": "Mismatch repair status: proficient (pMMR) vs deficient (dMMR)",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MMR",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "MSI Status",
+    "description": "Microsatellite instability SI Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_STATUS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Nerve Invasion",
+    "description": "Nerve Invasion",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "NERVE_INVASION",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status defined from date of disease diagnosis to date of death or last available follow-up",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "9",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Pathological Grade",
+    "description": "Pathological Grade",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PATHOLOGICAL_GRADE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Pathological Stage",
+    "description": "Pathological Stage",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PATHOLOGICAL_STAGE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Primary Tumor Location",
+    "description": "Primary Tumor Location",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_TUMOR_LOCATION",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Race",
+    "description": "Race",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "RACE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Smoking History",
+    "description": "Smoking History",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SMOKING_HISTORY",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Detailed Tumor Site",
+    "description": "Tumor Site",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_SITE",
+    "studyId": "crc_sysucc_2022"
+  },
+  {
+    "displayName": "Vessel Invasion",
+    "description": "Vessel Invasion",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "VESSEL_INVASION",
+    "studyId": "crc_sysucc_2022"
+  }
+]

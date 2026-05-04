@@ -1,0 +1,998 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG11N
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG20N
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG66N
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG66P
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG66M
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG66M2
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6006,HTA8_6006_004101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG70N
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG74N
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG79N
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG103N
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG136N
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG146N
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG150N
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG151N
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG156N
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG181N
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG182N
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG183N
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG184N
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG188N
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG190N
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG194N
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG203N
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG283N
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,SAMPLE_CLASS,Sample Class,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,SAMPLE_TYPE,Sample Type,STRING,False,Normal
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG11M
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG20M
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG35P
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG60M
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG71P
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG71M
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6008,HTA8_6008_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG74M
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG75P2
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG75M
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG75M2
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_004101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG79M
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG82P
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG82M2
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG103M
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG105M
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG119M
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG136M
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG146M
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG146M2
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_004101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG150M
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG151M
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG156M
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG182M
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG183M
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG183M2
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_004101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG184M
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG188M
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG190M
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG194P
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG203P
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6029,HTA8_6029_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG283M
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0709
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG188P
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,14
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0027662-T01-IM6
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6025,HTA8_6025_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1821
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG183P
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0033958-T01-IM6
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6023,HTA8_6023_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0000
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG184P
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0034466-T01-IM6
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6024,HTA8_6024_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3542
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG182P
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0036450-T01-IM6
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4034
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG182M2
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0036450-T02-IM7
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6022,HTA8_6022_004101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0981
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG70M
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0043364-T02-IM6
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4360
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG70P
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0043364-T04-IM7
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6007,HTA8_6007_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3685
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG39M
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0043620-T01-IM6
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6004,HTA8_6004_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2092
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG11P
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0045362-T01-IM6
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6001,HTA8_6001_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0812
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG20P
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0051649-T01-IM6
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6002,HTA8_6002_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5084
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG75P
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0057846-T01-IM6
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6010,HTA8_6010_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1267
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG74P
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0058766-T01-IM7
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6009,HTA8_6009_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1647
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG79P
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0058976-T01-IM7
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6011,HTA8_6011_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0349
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG119P
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0059291-T01-IM7
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6015,HTA8_6015_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0650
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG82M
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0059362-T01-IM7
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6012,HTA8_6012_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0288
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG60P
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0059584-T01-IM7
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6005,HTA8_6005_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4429
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG103P
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0060950-T01-IM7
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6013,HTA8_6013_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0281
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG181P
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0064786-T01-IM7
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6021,HTA8_6021_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2120
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG136P
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0065730-T01-IM7
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6016,HTA8_6016_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1695
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG150P
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0066167-T01-IM7
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6018,HTA8_6018_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0215
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG151P
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0066701-T01-IM7
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6019,HTA8_6019_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0484
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG283P
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0068476-T01-IM7
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6028,HTA8_6028_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4994
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG190P
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0068754-T01-IM7
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6026,HTA8_6026_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1860
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG146P
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0070615-T01-IM7
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6017,HTA8_6017_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5964
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG105P
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0071086-T01-IM7
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6014,HTA8_6014_001101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,Baseline
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2163
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG194M
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0073688-T01-IM7
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6027,HTA8_6027_003101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1141
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG156P
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0073691-T01-IM7
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6020,HTA8_6020_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3315
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,H5AD_SAMPLE_ID,H5AD Sample ID,STRING,False,KG35M
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,HISTOLOGY_CODE,Histologic Morphology Code,STRING,False,8140/3
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,PRESERVATION_METHOD,Preservation Method,STRING,False,Fresh dissociated and single cell sorted
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,SAMPLE_ACQUISITION_METHOD,Acquisition Method Type,STRING,False,Surgical Resection
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,P-0096630-T01-IM7
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,STORAGE_METHOD,Storage Method,STRING,False,Fresh
+crc_hta8_htan_2024,HTA8_6003,HTA8_6003_002101,TIMEPOINT_LABEL,Timepoint Label,STRING,False,On treatment

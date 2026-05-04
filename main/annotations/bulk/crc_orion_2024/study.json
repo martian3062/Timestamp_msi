@@ -1,0 +1,69 @@
+{
+  "name": "Colorectal Adenocarcinoma (DFCI/Orion, BioRxiv 2024)",
+  "description": "Combined spatial and targeted genomic analysis of 74 colon and rectal cancers.",
+  "publicStudy": true,
+  "pmid": "39386479",
+  "citation": "Wala, Jeremiah et al. bioRxiv 2024",
+  "groups": "",
+  "status": 0,
+  "importDate": "2026-01-19 20:48:54",
+  "allSampleCount": 1,
+  "sequencedSampleCount": 74,
+  "cnaSampleCount": 74,
+  "mrnaRnaSeqSampleCount": 0,
+  "mrnaRnaSeqV2SampleCount": 0,
+  "mrnaMicroarraySampleCount": 0,
+  "miRnaSampleCount": 0,
+  "methylationHm27SampleCount": 0,
+  "rppaSampleCount": 0,
+  "massSpectrometrySampleCount": 0,
+  "completeSampleCount": 0,
+  "readPermission": true,
+  "treatmentCount": 0,
+  "structuralVariantCount": 14,
+  "resourceCounts": [
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "SAMPLE",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 40,
+      "patientCount": 40,
+      "studyId": "crc_orion_2024"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "PATIENT",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 40,
+      "patientCount": 40,
+      "studyId": "crc_orion_2024"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "SAMPLE",
+      "priority": "2",
+      "openByDefault": true,
+      "sampleCount": 40,
+      "patientCount": 40,
+      "studyId": "crc_orion_2024"
+    }
+  ],
+  "studyId": "crc_orion_2024",
+  "cancerTypeId": "bowel",
+  "cancerType": {
+    "name": "Bowel",
+    "dedicatedColor": "SaddleBrown",
+    "shortName": "BOWEL",
+    "parent": "tissue",
+    "cancerTypeId": "bowel"
+  },
+  "referenceGenome": "hg19"
+}

@@ -1,0 +1,371 @@
+[
+  {
+    "displayName": "Age at Diagnosis",
+    "description": "Age at Diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_DX",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Age Groups",
+    "description": "Age Groups",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_GROUPS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Age Subgroups",
+    "description": "Age Subgroups",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_SUBGROUPS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "BMI",
+    "description": "BMI",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "BMI",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "BMI categories",
+    "description": "BMI categories",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "BMI_CATEGORIES",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Impact TMB Score",
+    "description": "Calculated TMB score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CVR_TMB_SCORE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Diabetes Mellitus History",
+    "description": "Diabetes mellitus history",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DIABETES_MELLITUS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "First Symptoms at Diagnosis",
+    "description": "First symptoms at diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "FIRST_SYMPTOMS_AT_DX",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Gene Panel",
+    "description": "Gene panel.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GENE_PANEL",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Hypertension History",
+    "description": "Hypertension history",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "HYPERTENSION",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Metastasectomy",
+    "description": "Metastasectomy",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASECTOMY",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "The anatomic location to which the cancer has spread.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Molecular Subtype",
+    "description": "Molecular Subtype",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MOLECULAR_SUBTYPE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "MSI Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "MSI Type",
+    "description": "MSI Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_TYPE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Overall Survival (Months) from Dx of Met",
+    "description": "Overall survival in months since metastasis diagnosis.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MET_MONTHS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "9",
+    "clinicalAttributeId": "OS_MET_STATUS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Primary Tumor Location",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "PRIMARY_TUMOR_LOCATION",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "PUMP",
+    "description": "PUMP",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PUMP",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Race Category",
+    "description": "The text for reporting information about race.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RACE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Sample Class",
+    "description": " The sample classification (i.e., tumor, cellline, xenograph). ",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SAMPLE_CLASS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Sample coverage",
+    "description": "Sample coverage",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COVERAGE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": " The type of sample (i.e., normal, primary, met, recurrence). ",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Smoker Status",
+    "description": "Smoker Status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SMOKER_STATUS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Smoking history",
+    "description": "Smoking history",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SMOKING_HISTORY",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Stage at Diagnosis",
+    "description": "Stage at Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE_AT_DX",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "First Line Treatment at Metastasis",
+    "description": "First line treatment at time of metastasis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TREATMENT_AT_METASTASIS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Tumor Grade",
+    "description": "Tumor Grade",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_GRADE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Tumor Purity",
+    "description": "Tumor Purity",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Used for Response",
+    "description": "Used for Response",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "USED_FOR_RESPONSE",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Used in Clinical Analysis",
+    "description": "Used in Clinical Analysis",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "USED_IN_CLINICAL_ANALYSIS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Used in Genomic MSS Analysis",
+    "description": "Used in Genomic MSS Analysis",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "USED_IN_GENOMIC_MSS_ANALYSIS",
+    "studyId": "crc_eo_2020"
+  },
+  {
+    "displayName": "Used in Genomic MSS Met Survival Analysis",
+    "description": "Used in Genomic MSS Met Survival Analysis",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "USED_IN_GENOMIC_MSS_MET_SURVIVAL_ANALYSIS",
+    "studyId": "crc_eo_2020"
+  }
+]

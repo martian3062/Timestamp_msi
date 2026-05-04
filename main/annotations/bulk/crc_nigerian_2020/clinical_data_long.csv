@@ -1,0 +1,832 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2956
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.49
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,MUTATION_RATE,Mutation Rate,NUMBER,False,6.741573034
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.654931804
+crc_nigerian_2020,p_PK_crc_021,s_PK_crc_021_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0046
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,46.13
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,MUTATION_COUNT,Mutation Count,NUMBER,False,85
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,MUTATION_RATE,Mutation Rate,NUMBER,False,91.01123596
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,96.49651115
+crc_nigerian_2020,p_PK_crc_023,s_PK_crc_023_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0000
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,22.86
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,MUTATION_COUNT,Mutation Count,NUMBER,False,54
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,MUTATION_RATE,Mutation Rate,NUMBER,False,56.17977528
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,59.89438623
+crc_nigerian_2020,p_PK_crc_024,s_PK_crc_024_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0018
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,34.83
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,MUTATION_COUNT,Mutation Count,NUMBER,False,53
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,MUTATION_RATE,Mutation Rate,NUMBER,False,58.42696629
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,58.78523093
+crc_nigerian_2020,p_PK_crc_025,s_PK_crc_025_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0708
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.14
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,MUTATION_RATE,Mutation Rate,NUMBER,False,7.865168539
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.873242405
+crc_nigerian_2020,p_PK_crc_026,s_PK_crc_026_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,High
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0000
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,17.74
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,MUTATION_COUNT,Mutation Count,NUMBER,False,38
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,MUTATION_RATE,Mutation Rate,NUMBER,False,40.4494382
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,42.14790142
+crc_nigerian_2020,p_PK_crc_027,s_PK_crc_027_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0019
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,MUTATION_RATE,Mutation Rate,NUMBER,False,7.865168539
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.764087104
+crc_nigerian_2020,p_PK_crc_028,s_PK_crc_028_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3239
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,4.92
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,MUTATION_RATE,Mutation Rate,NUMBER,False,3.370786517
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.327465902
+crc_nigerian_2020,p_PK_crc_029,s_PK_crc_029_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3013
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.45
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,MUTATION_RATE,Mutation Rate,NUMBER,False,10.11235955
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,9.982397705
+crc_nigerian_2020,p_PK_crc_030,s_PK_crc_030_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0544
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.56
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,MUTATION_RATE,Mutation Rate,NUMBER,False,3.96039604
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.91487879
+crc_nigerian_2020,p_PK_crc_075,s_PK_crc_075_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3109
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.27
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,MUTATION_RATE,Mutation Rate,NUMBER,False,6.930693069
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.851037883
+crc_nigerian_2020,p_PK_crc_076,s_PK_crc_076_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1797
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.88
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.893598488
+crc_nigerian_2020,p_PK_crc_077,s_PK_crc_077_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,High
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1486
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.62
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,MUTATION_RATE,Mutation Rate,NUMBER,False,8.910891089
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.808477279
+crc_nigerian_2020,p_PK_crc_078,s_PK_crc_078_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2032
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.48
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,MUTATION_RATE,Mutation Rate,NUMBER,False,7.920792079
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.829757581
+crc_nigerian_2020,p_PK_crc_079,s_PK_crc_079_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not_Reported
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0342
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.58
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,MUTATION_RATE,Mutation Rate,NUMBER,False,5.940594059
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_080,s_PK_crc_080_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Unknown
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2519
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.85
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,MUTATION_RATE,Mutation Rate,NUMBER,False,5.940594059
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_081,s_PK_crc_081_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1110
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.73
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,MUTATION_RATE,Mutation Rate,NUMBER,False,6.930693069
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.829757581
+crc_nigerian_2020,p_PK_crc_082,s_PK_crc_082_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1443
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.69
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,MUTATION_RATE,Mutation Rate,NUMBER,False,9.900990099
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,9.787196976
+crc_nigerian_2020,p_PK_crc_083,s_PK_crc_083_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,17.21
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,MUTATION_COUNT,Mutation Count,NUMBER,False,89
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,MUTATION_RATE,Mutation Rate,NUMBER,False,84.15841584
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,89.06349248
+crc_nigerian_2020,p_PK_crc_084,s_PK_crc_084_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,High
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3212
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.08
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,MUTATION_RATE,Mutation Rate,NUMBER,False,8.910891089
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,9.787196976
+crc_nigerian_2020,p_PK_crc_085,s_PK_crc_085_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0278
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,39.81
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,MUTATION_COUNT,Mutation Count,NUMBER,False,171
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,MUTATION_RATE,Mutation Rate,NUMBER,False,163.3663366
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,170.2972274
+crc_nigerian_2020,p_PK_crc_086,s_PK_crc_086_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2830
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.75
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,MUTATION_RATE,Mutation Rate,NUMBER,False,7.920792079
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.829757581
+crc_nigerian_2020,p_PK_crc_087,s_PK_crc_087_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0000
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,15.06
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,MUTATION_COUNT,Mutation Count,NUMBER,False,59
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,MUTATION_RATE,Mutation Rate,NUMBER,False,59.40594059
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,59.70190155
+crc_nigerian_2020,p_PK_crc_088,s_PK_crc_088_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not_Reported
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3487
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.75
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,MUTATION_RATE,Mutation Rate,NUMBER,False,2.97029703
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.936159093
+crc_nigerian_2020,p_PK_crc_089,s_PK_crc_089_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not_Reported
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1418
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.91
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,MUTATION_RATE,Mutation Rate,NUMBER,False,2.97029703
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.936159093
+crc_nigerian_2020,p_PK_crc_090,s_PK_crc_090_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0373
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.54
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.893598488
+crc_nigerian_2020,p_PK_crc_091,s_PK_crc_091_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low Grade
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0934
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,36.43
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,MUTATION_COUNT,Mutation Count,NUMBER,False,47
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,MUTATION_RATE,Mutation Rate,NUMBER,False,46.53465347
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,48.93598488
+crc_nigerian_2020,p_PK_crc_092,s_PK_crc_092_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0729
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,42.14
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,MUTATION_COUNT,Mutation Count,NUMBER,False,57
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,MUTATION_RATE,Mutation Rate,NUMBER,False,56.43564356
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,58.72318186
+crc_nigerian_2020,p_PK_crc_093,s_PK_crc_093_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1263
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.5
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.893598488
+crc_nigerian_2020,p_PK_crc_095,s_PK_crc_095_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0895
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,35.74
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,MUTATION_COUNT,Mutation Count,NUMBER,False,80
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,MUTATION_RATE,Mutation Rate,NUMBER,False,75.24752475
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,78.29757581
+crc_nigerian_2020,p_PK_crc_096,s_PK_crc_096_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0368
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,36.44
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,MUTATION_COUNT,Mutation Count,NUMBER,False,86
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,MUTATION_RATE,Mutation Rate,NUMBER,False,84.15841584
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,86.12733339
+crc_nigerian_2020,p_PK_crc_097,s_PK_crc_097_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0574
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.34
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,MUTATION_RATE,Mutation Rate,NUMBER,False,11.88118812
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.74463637
+crc_nigerian_2020,p_PK_crc_099,s_PK_crc_099_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0040
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,37.91
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,MUTATION_COUNT,Mutation Count,NUMBER,False,113
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,MUTATION_RATE,Mutation Rate,NUMBER,False,110.8910891
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,113.5314849
+crc_nigerian_2020,p_PK_crc_100,s_PK_crc_100_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2573
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,5.34
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,MUTATION_RATE,Mutation Rate,NUMBER,False,0.99009901
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.978719698
+crc_nigerian_2020,p_PK_crc_101,s_PK_crc_101_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2476
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.64
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.893598488
+crc_nigerian_2020,p_PK_crc_102,s_PK_crc_102_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2692
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,35.18
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,MUTATION_COUNT,Mutation Count,NUMBER,False,44
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,MUTATION_RATE,Mutation Rate,NUMBER,False,43.56435644
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,46.97854549
+crc_nigerian_2020,p_PK_crc_103,s_PK_crc_103_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0192
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.49
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,MUTATION_RATE,Mutation Rate,NUMBER,False,6.930693069
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.851037883
+crc_nigerian_2020,p_PK_crc_104,s_PK_crc_104_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0000
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,8.5
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,MUTATION_COUNT,Mutation Count,NUMBER,False,35
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,MUTATION_RATE,Mutation Rate,NUMBER,False,34.65346535
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,35.23390911
+crc_nigerian_2020,p_PK_crc_105,s_PK_crc_105_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0002
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,27.7
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,MUTATION_COUNT,Mutation Count,NUMBER,False,62
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,MUTATION_RATE,Mutation Rate,NUMBER,False,59.40594059
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,60.68062125
+crc_nigerian_2020,p_PK_crc_106,s_PK_crc_106_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2805
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.1
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,MUTATION_RATE,Mutation Rate,NUMBER,False,7.920792079
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.808477279
+crc_nigerian_2020,p_PK_crc_107,s_PK_crc_107_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1207
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.49
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,MUTATION_RATE,Mutation Rate,NUMBER,False,3.96039604
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.91487879
+crc_nigerian_2020,p_PK_crc_108,s_PK_crc_108_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,High
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2992
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.07
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,MUTATION_RATE,Mutation Rate,NUMBER,False,6.930693069
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.851037883
+crc_nigerian_2020,p_PK_crc_111,s_PK_crc_111_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0216
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,17.99
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,MUTATION_COUNT,Mutation Count,NUMBER,False,67
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,MUTATION_RATE,Mutation Rate,NUMBER,False,62.37623762
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,65.57421974
+crc_nigerian_2020,p_PK_crc_112,s_PK_crc_112_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0014
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.16
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,MUTATION_RATE,Mutation Rate,NUMBER,False,0.99009901
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.978719698
+crc_nigerian_2020,p_PK_crc_113,s_PK_crc_113_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0218
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.79
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,MUTATION_RATE,Mutation Rate,NUMBER,False,5.940594059
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_114,s_PK_crc_114_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1143
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.88
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,MUTATION_RATE,Mutation Rate,NUMBER,False,9.900990099
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.74463637
+crc_nigerian_2020,p_PK_crc_115,s_PK_crc_115_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1075
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.71
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.893598488
+crc_nigerian_2020,p_PK_crc_116,s_PK_crc_116_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0000
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.29
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,MUTATION_RATE,Mutation Rate,NUMBER,False,8.910891089
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.808477279
+crc_nigerian_2020,p_PK_crc_117,s_PK_crc_117_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0929
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.54
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,MUTATION_RATE,Mutation Rate,NUMBER,False,5.940594059
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_119,s_PK_crc_119_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1319
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.83
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,MUTATION_COUNT,Mutation Count,NUMBER,False,11
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,MUTATION_RATE,Mutation Rate,NUMBER,False,10.89108911
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,10.76591667
+crc_nigerian_2020,p_PK_crc_120,s_PK_crc_120_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2154
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,2.5
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.893598488
+crc_nigerian_2020,p_PK_crc_121,s_PK_crc_121_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2156
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.51
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,MUTATION_RATE,Mutation Rate,NUMBER,False,5.940594059
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_123,s_PK_crc_123_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1123
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.34
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,MUTATION_RATE,Mutation Rate,NUMBER,False,2.97029703
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.936159093
+crc_nigerian_2020,p_PK_crc_124,s_PK_crc_124_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2767
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.24
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,MUTATION_COUNT,Mutation Count,NUMBER,False,2
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,MUTATION_RATE,Mutation Rate,NUMBER,False,1.98019802
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_125,s_PK_crc_125_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.957439395
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0075
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.7
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,MUTATION_RATE,Mutation Rate,NUMBER,False,4.95049505
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_126,s_PK_crc_126_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1082
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.1
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,MUTATION_COUNT,Mutation Count,NUMBER,False,13
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,MUTATION_RATE,Mutation Rate,NUMBER,False,12.87128713
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,12.72335607
+crc_nigerian_2020,p_PK_crc_127,s_PK_crc_127_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1940
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,3.21
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,MUTATION_RATE,Mutation Rate,NUMBER,False,2.97029703
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.936159093
+crc_nigerian_2020,p_PK_crc_128,s_PK_crc_128_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,High
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3325
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.57
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,MUTATION_COUNT,Mutation Count,NUMBER,False,2
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,MUTATION_RATE,Mutation Rate,NUMBER,False,1.98019802
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.957439395
+crc_nigerian_2020,p_PK_crc_132,s_PK_crc_132_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1659
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.46
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,MUTATION_RATE,Mutation Rate,NUMBER,False,5.940594059
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.872318186
+crc_nigerian_2020,p_PK_crc_133,s_PK_crc_133_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Not Reported
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0500
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,16.19
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,MUTATION_COUNT,Mutation Count,NUMBER,False,39
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,MUTATION_RATE,Mutation Rate,NUMBER,False,36.63366337
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,40.1275076
+crc_nigerian_2020,p_PK_crc_134,s_PK_crc_134_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,High
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1786
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSI
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,36.78
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,MUTATION_COUNT,Mutation Count,NUMBER,False,65
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,MUTATION_RATE,Mutation Rate,NUMBER,False,61.38613861
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,65.57421974
+crc_nigerian_2020,p_PK_crc_135,s_PK_crc_135_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1433
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.31
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,MUTATION_RATE,Mutation Rate,NUMBER,False,3.96039604
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.91487879
+crc_nigerian_2020,p_PK_crc_136,s_PK_crc_136_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2425
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,1.64
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,MUTATION_RATE,Mutation Rate,NUMBER,False,9.900990099
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,9.787196976
+crc_nigerian_2020,p_PK_crc_137,s_PK_crc_137_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Low
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1543
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,MOLECULAR_SUBTYPE,Molecular Subtype,STRING,False,MSS
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,MSI_PREDICTION_SCORE,MSI Prediction Score,NUMBER,False,0.59
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,MUTATION_RATE,Mutation Rate,NUMBER,False,6.930693069
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.851037883
+crc_nigerian_2020,p_PK_crc_138,s_PK_crc_138_T,TUMOR_DIFFERENTIATION,Tumor Differentiation,STRING,False,Intermediate

@@ -1,0 +1,317 @@
+[
+  {
+    "displayName": "Age",
+    "description": "Age at diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Tumor Site Detailed",
+    "description": "Tumor atomic site detailed",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "ATOMIC_SITE_DETAIL",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "CA19-9 Antigen",
+    "description": "Carbohydrate antigen (u/ml)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "CA19_9",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "CEA Biomarker",
+    "description": "Carcinoembryonic antigen (ng/ml)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "CEA",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Distant Liver Metastatic Tissues",
+    "description": "Distant liver metastatic tissues",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DISTANT_LM",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Follow Up Time (Days)",
+    "description": "Patient follow-up time in days",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "FOLLOW_UP",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Histopathological Type",
+    "description": "Histopathological type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "HISTOPATHOLOGY",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Intravascular Tumor Thrombus",
+    "description": "Indicates tumor progression into vessels",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "INTRAVASCULAR_TUMOR_THROMBUS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Metastatic Tumor Necrosis (%)",
+    "description": "Precent tissue necrosis in metastatic tumor cells",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_NECROSIS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Metastatic Tumor Purity (%)",
+    "description": "Precent metastatic tumor cell purity",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_PURITY",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "Metastatic sites before operation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Metastatic Status",
+    "description": "Metastatic status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_STATUS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Neurological Invasion",
+    "description": "Indicates invasion of cancer cells into nerves",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "NEUROLOGICAL_INVASION",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival in months since initial diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Primary Tumor Paired Status",
+    "description": "Paired primary tumor samples that underwent whole exome sequencing",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PAIRED_STATUS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Post-Operative Therapy With Targeted Agents",
+    "description": "Indicates whether the patient received post-operative therapy",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "POSTOPERATIVE_THERAPY_WITH_TARGETED_AGENTS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Preoperative Treatment Effect",
+    "description": "Preoperative treatment effect",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PREOPERATIVE_TREATMENT_EFFECT",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Pre-Therapy",
+    "description": "Indicates whether the patient received therapy before sequencing",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRETHERAPY",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Pre-Therapy With Targeted Agents",
+    "description": "Indicates whether the patient received pre-tharapy with targeted agents",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "PRETHERAPY_WITH_TARGETED_AGENTS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Primary Tumor Necrosis (%)",
+    "description": "Precent tissue necrosis in primary tumor cells",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_NECROSIS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Primary Tumor Purity (%)",
+    "description": "Precent primary tumor cell purity",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_PURITY",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Tumor Progression",
+    "description": "Tumor progression",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PROGRESSION",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Progression Site",
+    "description": "Progression site",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PROGRESSION_SITE",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Progression Time (Days)",
+    "description": "Progression time (days)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PROGRESSION_TIME",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Tumor Stage",
+    "description": "Tumor stage",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "TNM Stage",
+    "description": "TNM staging system",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TNM",
+    "studyId": "coadread_cass_2020"
+  },
+  {
+    "displayName": "Tumor Site",
+    "description": "Tumor atomic site",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_SITE",
+    "studyId": "coadread_cass_2020"
+  }
+]

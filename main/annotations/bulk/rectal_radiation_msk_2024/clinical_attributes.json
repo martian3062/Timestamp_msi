@@ -1,0 +1,272 @@
+[
+  {
+    "displayName": "Age at Rectal Cancer Diagnosis",
+    "description": "Age at Rectal Cancer Diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "880",
+    "clinicalAttributeId": "AGE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Anterior Tumor Location",
+    "description": "Anterior Tumor Location",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "ANTERIOR_TUMOR_LOCATION",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "The main cancer type as defined by the Oncotree cancer classification system for precision oncology. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "3000",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "The cancer subtype as defined by the Oncotree cancer classification system for precision oncology. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "2000",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "cTNM Staging",
+    "description": "cTNM Staging",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "C_TNM_STAGING",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Distal Tumor Location",
+    "description": "Distal Tumor Location",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "DISTAL_TUMOR_LOCATION",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Ethnicity",
+    "description": "Ethnicity",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "950",
+    "clinicalAttributeId": "ETHNICITY",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Facets FGA",
+    "description": "Facets FGA",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "FACETS_FGA",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Gene Panel",
+    "description": "The gene panel or assay used used to perform targeted NGS on the sample. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "900",
+    "clinicalAttributeId": "GENE_PANEL",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "Location of profiled metastatic site",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "MSI Comment",
+    "description": "MSI interpretation. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "MSI_COMMENT",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "Microsatellite Instability (MSI) score. Source: MPath",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "MSI Type",
+    "description": "Directly related to MSI Score; Possible values include Stable, Instable, Indeterminate, or Do not report. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "910",
+    "clinicalAttributeId": "MSI_TYPE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "The assigned Oncotree code of the sample as defined by the Oncotree cancer classification system for precision oncology.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "The organ sub-division term assigned to the primary tumor location of the sample. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Race",
+    "description": "Race",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "980",
+    "clinicalAttributeId": "RACE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Sample Class",
+    "description": "The sample classification (i.e., tumor, cellline, xenograph).Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "850",
+    "clinicalAttributeId": "SAMPLE_CLASS",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Sample Coverage",
+    "description": "Sequencing coverage. Source: MPath",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SAMPLE_COVERAGE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Sample Display Name",
+    "description": "Sample Display Name",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SAMPLE_DISPLAY_NAME",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type assigned to a sample (i.e., normal, primary, met, recurrence). Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "990",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Sequencing Platform",
+    "description": "Sequencing Platform",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SEQUENCING_PLATFORM",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "970",
+    "clinicalAttributeId": "SEX",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Indicates if there exists a matched normal used for tumor sample analysis. Source: MPath",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "860",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Tumor Purity",
+    "description": "Proportion of cancer cells in tumor sample. Source: MPath",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "Tumor Size <4cm",
+    "description": "Tumor Size <4cm",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "0",
+    "clinicalAttributeId": "TUMOR_SIZE_LESS_THAN_4CM",
+    "studyId": "rectal_radiation_msk_2024"
+  },
+  {
+    "displayName": "WGD",
+    "description": "WGD",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "WGD",
+    "studyId": "rectal_radiation_msk_2024"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "name": "Pre-cancer Colorectal Polyps (HTAN Vanderbilt, Cell 2021)",
+  "description": "Whole-exome sequencing and single-cell transcriptomics analysis of 61 pre-malignant colorectal polyps (discovery and validation sets) and their matched normal colon tissues.",
+  "publicStudy": true,
+  "pmid": "34910928",
+  "citation": "Chen et al. Cell 2021",
+  "groups": "",
+  "status": 0,
+  "importDate": "2026-01-16 18:51:39",
+  "allSampleCount": 1,
+  "sequencedSampleCount": 30,
+  "cnaSampleCount": 0,
+  "mrnaRnaSeqSampleCount": 55,
+  "mrnaRnaSeqV2SampleCount": 0,
+  "mrnaMicroarraySampleCount": 0,
+  "miRnaSampleCount": 0,
+  "methylationHm27SampleCount": 0,
+  "rppaSampleCount": 0,
+  "massSpectrometrySampleCount": 0,
+  "completeSampleCount": 0,
+  "readPermission": true,
+  "treatmentCount": 0,
+  "structuralVariantCount": 0,
+  "resourceCounts": [
+    {
+      "resourceId": "HE",
+      "displayName": "H&E Slide",
+      "description": "H&E Slide",
+      "resourceType": "SAMPLE",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 26,
+      "patientCount": 26,
+      "studyId": "crc_hta11_htan_2021"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "PATIENT",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 25,
+      "patientCount": 25,
+      "studyId": "crc_hta11_htan_2021"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "SAMPLE",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 25,
+      "patientCount": 25,
+      "studyId": "crc_hta11_htan_2021"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "SAMPLE",
+      "priority": "2",
+      "openByDefault": true,
+      "sampleCount": 25,
+      "patientCount": 25,
+      "studyId": "crc_hta11_htan_2021"
+    }
+  ],
+  "studyId": "crc_hta11_htan_2021",
+  "cancerTypeId": "coadread",
+  "cancerType": {
+    "name": "Colorectal Adenocarcinoma",
+    "dedicatedColor": "SaddleBrown",
+    "shortName": "COADREAD",
+    "parent": "bowel",
+    "cancerTypeId": "coadread"
+  },
+  "referenceGenome": "hg19"
+}

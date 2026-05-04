@@ -1,0 +1,317 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,59
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4011
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,INSTITUTE,Institute Source,STRING,False,MSKCC
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,METASTATIC_SITE,Metastatic Site,STRING,False,Lung
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.43
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Colon
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.91758476
+coadread_mskresistance_2022,P-0018488,P-0018488-T01-IM6,TUMOR_PURITY,Tumor Purity,STRING,False,40
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,64
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5597
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,INSTITUTE,Institute Source,STRING,False,MSKCC
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,MSI_SCORE,MSI Score,NUMBER,False,2.48
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.203472366
+coadread_mskresistance_2022,P-0018488,P-0018488-T07-IM7,TUMOR_PURITY,Tumor Purity,STRING,False,60
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,68
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0333
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,INSTITUTE,Institute Source,STRING,False,MSKCC
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.06
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.18818857
+coadread_mskresistance_2022,P-0032505,P-0032505-T01-IM6,TUMOR_PURITY,Tumor Purity,STRING,False,30
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,50
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4144
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,INSTITUTE,Institute Source,STRING,False,MSKCC
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,2.04
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.052886665
+coadread_mskresistance_2022,P-0038647,P-0038647-T01-IM6,TUMOR_PURITY,Tumor Purity,STRING,False,70
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,47
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1444
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,INSTITUTE,Institute Source,STRING,False,MSKCC
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,METASTATIC_SITE,Metastatic Site,STRING,False,Retroperitoneum
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,1.61
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Colon
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.203472366
+coadread_mskresistance_2022,P-0064340,P-0064340-T01-IM7,TUMOR_PURITY,Tumor Purity,STRING,False,70
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,66
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Rectal Adenocarcinoma
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2602
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,INSTITUTE,Institute Source,STRING,False,Other Institute
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,METASTATIC_SITE,Metastatic Site,STRING,False,Vulva
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,1.08
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.383125129
+coadread_mskresistance_2022,P-0070822,P-0070822-T01-IM7,TUMOR_PURITY,Tumor Purity,STRING,False,30
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.6099
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,MSI_SCORE,MSI Score,NUMBER,False,28.71
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,MUTATION_COUNT,Mutation Count,NUMBER,False,41
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,SAMPLE_CLASS,Sample Class,STRING,False,PDX
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X008_d,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,32.81388946
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.6433
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,MSI_SCORE,MSI Score,NUMBER,False,29.24
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,521
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V1_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,424.9398685
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5549
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,MSI_SCORE,MSI Score,NUMBER,False,28.37
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,891
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V2_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,728.4683461
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5636
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,MSI_SCORE,MSI Score,NUMBER,False,28.01
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,1605
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V3_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1314.196273
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.7264
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,MSI_SCORE,MSI Score,NUMBER,False,28.09
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,704
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_V4_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,573.4227184
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5385
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,MSI_SCORE,MSI Score,NUMBER,False,27.13
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,1681
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D1_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1375.722316
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.6704
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,MSI_SCORE,MSI Score,NUMBER,False,28.28
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,1146
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D2_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,937.6568914
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.6027
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,MSI_SCORE,MSI Score,NUMBER,False,29.62
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,646
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D3_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,528.3036204
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colon Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5300
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,MSI_SCORE,MSI Score,NUMBER,False,31.21
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,MUTATION_COUNT,Mutation Count,NUMBER,False,1682
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,SAMPLE_TYPE,Sample Type,STRING,False,CellLine/PDX
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_R_D4_04609AI,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1376.542663
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.7959
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,GENOME_DOUBLED,Genome Doubled,STRING,False,TRUE
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,MSI_SCORE,MSI Score,NUMBER,False,20.19
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,MUTATION_COUNT,Mutation Count,NUMBER,False,25
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,SAMPLE_CLASS,Sample Class,STRING,False,PDX
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-E2UFRP,s_C_E2UFRP_X007_d,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,20.50868091
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.6839
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,GENOME_DOUBLED,Genome Doubled,STRING,False,TRUE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,MSI_SCORE,MSI Score,NUMBER,False,24.72
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,MUTATION_COUNT,Mutation Count,NUMBER,False,39
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_parental_04609AB,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,31.99354223
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5938
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,MSI_SCORE,MSI Score,NUMBER,False,25.16
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,MUTATION_COUNT,Mutation Count,NUMBER,False,41
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-FFDWJM,s_RW7213_resistant_04609AB,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,33.6342367
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4882
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,MSI_SCORE,MSI Score,NUMBER,False,24.9
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,MUTATION_COUNT,Mutation Count,NUMBER,False,37
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-NX6F4H,s_C106_parental_04609AB,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,31.17319499
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2941
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,GENOME_DOUBLED,Genome Doubled,STRING,False,FALSE
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,MSI_SCORE,MSI Score,NUMBER,False,24.77
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,MSI_TYPE,MSI Type,STRING,False,Instable
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,MUTATION_COUNT,Mutation Count,NUMBER,False,35
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,SAMPLE_CLASS,Sample Class,STRING,False,CellLine
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,SPECIMEN_PRESERVATION_TYPE,Specimen Preservation Type,STRING,False,Frozen
+coadread_mskresistance_2022,C-NX6F4H,s_C106_resistant_04609AB,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,28.71215328
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,AGE_AT_SEQ_REPORTED_YEARS,Age at Which Sequencing was Reported (Years),NUMBER,False,60
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5859
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,INSTITUTE,Institute Source,STRING,False,MSKCC
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,1.48
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Colon
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.922083419
+coadread_mskresistance_2022,P-0063407,P-0063407-T01-IM7,TUMOR_PURITY,Tumor Purity,STRING,False,30
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4661
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,INSTITUTE,Institute Source,STRING,False,Other Institute
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,METASTATIC_SITE,Metastatic Site,STRING,False,hernia sac
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,MSI_SCORE,MSI Score,NUMBER,False,3.69
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Colon
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.383125129
+coadread_mskresistance_2022,P-0069572,P-0069572-T02-IM7,TUMOR_PURITY,Tumor Purity,STRING,False,80

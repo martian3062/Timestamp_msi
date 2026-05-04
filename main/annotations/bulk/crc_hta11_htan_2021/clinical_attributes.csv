@@ -1,0 +1,26 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Acquisition Method Type,Acquisition Method Type,STRING,False,1,ACQUISITION_METHOD,crc_hta11_htan_2021
+Advanced,Developed or Progressed State,STRING,False,5,ADVANCED,crc_hta11_htan_2021
+Age,Patient Age,NUMBER,True,5,AGE,crc_hta11_htan_2021
+Atlas Name,Atlas Name,STRING,True,6,ATLAS_NAME,crc_hta11_htan_2021
+Atypia,Atypia,STRING,False,5,ATYPIA,crc_hta11_htan_2021
+Cohort,Cohort,STRING,False,1,COHORT,crc_hta11_htan_2021
+Hyperplastic Type,Hyperplastic Type,STRING,False,5,HPTYPE,crc_hta11_htan_2021
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_hta11_htan_2021
+Percent Adenoma,Proportion of Adenoma within the polyp,STRING,False,3,PCAD,crc_hta11_htan_2021
+Percent Normal Cells,Proportion of Normal cells within the polyp,STRING,False,3,PCNORMAL,crc_hta11_htan_2021
+Percent Villous Component,Villous Component within the polyp,STRING,False,3,PCVILLOUS,crc_hta11_htan_2021
+Polyp Dimension,Polyp Dimension,NUMBER,False,3,PDIM,crc_hta11_htan_2021
+Polyps of the Colon or Rectum?,Have you ever been told by a Doctor that you have polyps of the Colon or Rectum?,STRING,True,1,POLYP_OF_COLON_OR_RECTUM,crc_hta11_htan_2021
+Polyp Subtype,Polyp Subtype,STRING,False,6,POLYP_SUBTYPE,crc_hta11_htan_2021
+Polyp Type,Polyp Type,STRING,False,6,POLYP_TYPE,crc_hta11_htan_2021
+Preservation Method,Preservation Method,STRING,False,1,PRESERVATION_METHOD,crc_hta11_htan_2021
+Polyp Shape,Polyp Shape,STRING,False,3,PSHAPE,crc_hta11_htan_2021
+Race Category,The text for reporting information about race.,STRING,True,3,RACE,crc_hta11_htan_2021
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_hta11_htan_2021
+Sample Size Invivo (cm),Sample Size Invivo (cm),NUMBER,False,3,SAMPLE_SIZEINVIVO_CM,crc_hta11_htan_2021
+Segment,Location of polyp,STRING,False,4,SEGMENT,crc_hta11_htan_2021
+Sex,Sex,STRING,True,5,SEX,crc_hta11_htan_2021
+Side,Location of polyp,STRING,False,4,SIDE,crc_hta11_htan_2021
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,crc_hta11_htan_2021
+Tumor Tissue Type,Tumor Tissue Type,STRING,False,6,TISSUE_TYPE,crc_hta11_htan_2021

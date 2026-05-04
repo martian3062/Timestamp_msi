@@ -1,0 +1,27 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,coadread_tcga_pub
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_tcga_pub
+Copy Number,Copy Number,STRING,False,1,COPY_NUMBER,coadread_tcga_pub
+Gene Expression Subtype,Gene Expression Subtype,STRING,False,1,EXPRESSION_SUBTYPE,coadread_tcga_pub
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,coadread_tcga_pub
+Tumor Other Histologic Subtype,Text to describe a tumor's histologic subtype or mixed diagnosis that is different from previously specified options.,STRING,True,1,HISTOLOGICAL_SUBTYPE,coadread_tcga_pub
+Hyper-mutated,Hyper-mutated.,STRING,False,1,HYPERMUTATED,coadread_tcga_pub
+iCluster,ICluster.,STRING,False,1,ICLUSTER,coadread_tcga_pub
+Methylation Status,Yes/No indicator for methylation data,STRING,False,1,METHYLATION_STATUS,coadread_tcga_pub
+Methylation Subtype,Methylation subtype.,STRING,False,1,METHYLATION_SUBTYPE,coadread_tcga_pub
+MLH1 Silencing,Epigenetic silencing status of MLH1.,STRING,False,1,MLH1_SILENCING,coadread_tcga_pub
+MRNA Data,MRNA data.,STRING,False,1,MRNA_DATA,coadread_tcga_pub
+MSI Status,MSI status.,STRING,False,1,MSI_STATUS,coadread_tcga_pub
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_tcga_pub
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,coadread_tcga_pub
+Overall Survival (Months),Overall survival in months since initial diagonosis.,NUMBER,True,0,OS_MONTHS,coadread_tcga_pub
+Overall Survival Status,Overall patient survival status.,STRING,True,9,OS_STATUS,coadread_tcga_pub
+Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,1,PRIMARY_SITE,coadread_tcga_pub
+Primary Tumor Pathologic Spread,Primary tumor pathologic spread.,STRING,True,1,PRIMARY_TUMOR_PATHOLOGIC_SPREAD,coadread_tcga_pub
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_tcga_pub
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,9,SAMPLE_TYPE,coadread_tcga_pub
+Sequenced,Sequenced.,STRING,False,1,SEQUENCED,coadread_tcga_pub
+Sex,Sex,STRING,True,1,SEX,coadread_tcga_pub
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,coadread_tcga_pub
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_tcga_pub
+Tumor Stage 2009,Tumor stage 2009.,STRING,False,1,TUMOR_STAGE_2009,coadread_tcga_pub

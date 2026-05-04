@@ -287,7 +287,7 @@ const defaultPatchTrainingForm: PatchTrainingForm = {
 };
 
 const tcgaSlideTriadDefaults = {
-  experiment_name: "tcga-coad-20-slide-triad",
+  experiment_name: "tcga-coad-two-approach",
   bucket_uri: "gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD",
   slide_limit: 18,
   n_folds: 3,
@@ -540,24 +540,28 @@ export function MsiWorkbench() {
     [annotations, annotationMap.fold],
   );
 
-  const latestApproach2Experiment = approach2Experiments[0];
+  const visibleApproach2Experiments = useMemo(
+    () => approach2Experiments.filter((experiment) => experimentApproachLabel(experiment) !== "MonteCarlo"),
+    [approach2Experiments],
+  );
+  const latestApproach2Experiment = visibleApproach2Experiments[0];
   const latestApproach2Metrics = latestApproach2Experiment?.metrics ?? null;
   const latestApproach2History = Array.isArray(latestApproach2Metrics?.history)
     ? latestApproach2Metrics.history
     : [];
-  const hasRunningApproach2Experiment = approach2Experiments.some(
+  const hasRunningApproach2Experiment = visibleApproach2Experiments.some(
     (experiment) => experiment.status === "running",
   );
   const approach1Analytics = dashboardAnalytics?.approach1;
   const approach2Analytics = dashboardAnalytics?.approach2;
   const monteCarloAnalytics = dashboardAnalytics?.monte_carlo;
   const approachExperimentCounts = useMemo(() => {
-    return approach2Experiments.reduce<Record<string, number>>((acc, experiment) => {
+    return visibleApproach2Experiments.reduce<Record<string, number>>((acc, experiment) => {
       const label = experimentApproachLabel(experiment);
       acc[label] = (acc[label] ?? 0) + 1;
       return acc;
     }, {});
-  }, [approach2Experiments]);
+  }, [visibleApproach2Experiments]);
   const tcgaBundleState = String(tcgaSlideBundleStatus?.state ?? "");
   const tcgaBundleMatchedSlides = numericMetric(tcgaSlideBundleStatus?.matched_slide_count);
   const tcgaBundleSelectedSlides = numericMetric(tcgaSlideBundleStatus?.selected_slide_count);
@@ -583,6 +587,36 @@ export function MsiWorkbench() {
     tcgaSlideBundleId &&
       !["", "completed", "failed", "missing", "invalid"].includes(tcgaBundleState),
   );
+  const tcgaApproachCards = ([
+    {
+      key: "Approach1",
+      title: "Approach 1",
+      subtitle: "TransMIL lead lane",
+      detail: "Uses TransMIL with pathology bags from ctranspath, DX1 diagnostic slides, Otsu QC, and repeated patient-fold evaluation.",
+      why: "Usually stronger here because TransMIL models broader slide context and captures long-range morphology across MSI tiles better.",
+    },
+    {
+      key: "Approach2",
+      title: "Approach 2",
+      subtitle: "Attention MIL lane",
+      detail: "Uses Attention MIL with the same ctranspath features, the same DX1 cohort, the same Otsu QC, and the same repeated fold protocol.",
+      why: "Often lower on this cohort because Attention MIL is a simpler bag aggregator, so it tends to lose some global tissue-context signal that TransMIL keeps.",
+    },
+  ] as const).map((item) => {
+    const payload = tcgaBundleApproachSummary[item.key] ?? {};
+    const isRunning = tcgaBundleRunningApproaches.includes(item.key);
+    const isCompleted = tcgaBundleCompletedApproaches.includes(item.key);
+    return {
+      ...item,
+      milModel: readableMetric(payload.mil_model) || (item.key === "Approach2" ? "attention_mil" : "transmil"),
+      auroc: readableMetric(payload.mean_auroc) || "Pending",
+      f1: readableMetric(payload.mean_f1_macro) || "Pending",
+      folds: readableMetric(payload.folds) || "Pending",
+      thresholdF1: readableMetric(payload.mean_f1_macro_threshold_tuned) || readableMetric(payload.mean_best_f1_macro) || readableMetric(payload.mean_f1_macro_best_threshold) || "Pending",
+      bestThreshold: readableMetric(payload.mean_best_threshold) || "Pending",
+      stateLabel: isCompleted ? "completed" : isRunning ? "running" : tcgaBundleState === "completed" ? "ready" : "waiting",
+    };
+  });
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -1067,25 +1101,19 @@ export function MsiWorkbench() {
     };
   }
 
-  function applyTriadPreset(label: "Approach1" | "Approach2" | "MonteCarlo") {
+  function applyTriadPreset(label: "Approach1" | "Approach2") {
     const presets: Record<typeof label, Partial<PatchTrainingForm>> = {
       Approach1: {
         approachLabel: "Approach1",
-        experimentName: "crc-triad-approach1",
+        experimentName: "crc-duo-approach1",
         backbone: "resnet34",
         epochs: 5,
       },
       Approach2: {
         approachLabel: "Approach2",
-        experimentName: "crc-triad-approach2",
+        experimentName: "crc-duo-approach2",
         backbone: "resnet18",
         epochs: 10,
-      },
-      MonteCarlo: {
-        approachLabel: "MonteCarlo",
-        experimentName: "crc-triad-approach3",
-        backbone: "resnet18",
-        epochs: 4,
       },
     };
     setPatchTrainingForm((current) => ({
@@ -1094,25 +1122,19 @@ export function MsiWorkbench() {
     }));
   }
 
-  async function runPresetTraining(label: "Approach1" | "Approach2" | "MonteCarlo") {
+  async function runPresetTraining(label: "Approach1" | "Approach2") {
     const presets: Record<typeof label, Partial<Record<string, unknown>>> = {
       Approach1: {
-        experiment_name: "crc-triad-approach1",
+        experiment_name: "crc-duo-approach1",
         approach_label: "Approach1",
         backbone: "resnet34",
         epochs: 5,
       },
       Approach2: {
-        experiment_name: "crc-triad-approach2",
+        experiment_name: "crc-duo-approach2",
         approach_label: "Approach2",
         backbone: "resnet18",
         epochs: 10,
-      },
-      MonteCarlo: {
-        experiment_name: "crc-triad-approach3",
-        approach_label: "MonteCarlo",
-        backbone: "resnet18",
-        epochs: 4,
       },
     };
     applyTriadPreset(label);
@@ -1154,7 +1176,7 @@ export function MsiWorkbench() {
       triad: {
         path: "/approach-2/pipeline/train-triad",
         body: buildPatchPayload({
-          experiment_name: patchTrainingForm.experimentName || "crc-complex-triad",
+          experiment_name: patchTrainingForm.experimentName || "crc-two-approach",
           ...payloadOverrides,
         }),
       },
@@ -1177,24 +1199,27 @@ export function MsiWorkbench() {
       if (action === "experiments") {
         const experiments = Array.isArray(data) ? (data as Approach2Experiment[]) : [];
         setApproach2Experiments(experiments);
-        const counts = experiments.reduce<Record<string, number>>((acc, experiment) => {
+        const visibleExperiments = experiments.filter(
+          (experiment) => experimentApproachLabel(experiment) !== "MonteCarlo",
+        );
+        const counts = visibleExperiments.reduce<Record<string, number>>((acc, experiment) => {
           const label = experimentApproachLabel(experiment);
           acc[label] = (acc[label] ?? 0) + 1;
           return acc;
         }, {});
 
-        const runningCount = experiments.filter(
+        const runningCount = visibleExperiments.filter(
           (experiment) => experiment.status === "running",
         ).length;
-        const latest = experiments[0];
+        const latest = visibleExperiments[0];
         const accuracy = readableMetric(latest?.metrics?.best_val_accuracy);
         const epochCount = Array.isArray(latest?.metrics?.history)
           ? latest.metrics.history.length
           : 0;
         setApproach2Message(
           [
-            `Loaded ${experiments.length} triad experiment records.`,
-            `Approach1=${counts.Approach1 ?? 0} | Approach2=${counts.Approach2 ?? 0} | Approach3=${counts.MonteCarlo ?? 0}`,
+            `Loaded ${visibleExperiments.length} two-approach experiment records.`,
+            `Approach1=${counts.Approach1 ?? 0} | Approach2=${counts.Approach2 ?? 0}`,
             runningCount > 0 ? `${runningCount} run(s) still training.` : "",
             latest
               ? `Latest: ${latest.name} | status=${latest.status} | accuracy=${accuracy || "pending"} | epochs=${epochCount || "pending"}`
@@ -1213,8 +1238,8 @@ export function MsiWorkbench() {
       } else if (action === "triad") {
         setApproach2Message(
           patchTrainingForm.datasetSource === "google_bucket"
-            ? `Queued full complex triad on the VM from ${patchTrainingForm.googleBucketUri}. Experiments: ${(data.experiment_ids ?? []).join(", ")}`
-            : `Queued full complex triad on the VM. Experiments: ${(data.experiment_ids ?? []).join(", ")}`,
+            ? `Queued the full two-approach runner on the VM from ${patchTrainingForm.googleBucketUri}. Experiments: ${(data.experiment_ids ?? []).join(", ")}`
+            : `Queued the full two-approach runner on the VM. Experiments: ${(data.experiment_ids ?? []).join(", ")}`,
         );
         void runApproach2Action("experiments", { silent: true });
       } else {
@@ -1472,7 +1497,7 @@ export function MsiWorkbench() {
           </div>
           <div className="flex items-center gap-2">
             <div className="hidden rounded-full border p-1 sm:flex" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
-              {(["approach-1", "approach-2", "monte-carlo", "parallel"] as ApproachMode[]).map((mode) => (
+              {(["approach-1", "approach-2"] as ApproachMode[]).map((mode) => (
                 <button
                   className="rounded-full px-3 py-1.5 text-xs font-semibold transition"
                   key={mode}
@@ -1483,7 +1508,7 @@ export function MsiWorkbench() {
                   }}
                   type="button"
                 >
-                  {mode === "approach-1" ? "Approach 1" : mode === "approach-2" ? "Approach 2" : mode === "monte-carlo" ? "Monte Carlo" : "Parallel Metrics"}
+                  {mode === "approach-1" ? "Approach 1" : "Approach 2"}
                 </button>
               ))}
             </div>
@@ -1519,30 +1544,18 @@ export function MsiWorkbench() {
                   <span className="rounded-full border px-3 py-1 text-xs" style={{ borderColor: "var(--border)", background: "var(--btn-bg)", color: "var(--muted)" }}>
                     {approachMode === "approach-1"
                       ? "local UI + VM pipeline"
-                      : approachMode === "approach-2"
-                        ? "Slideflow platform API"
-                        : approachMode === "monte-carlo"
-                          ? "VM Monte Carlo + AI providers"
-                          : "Artifact metrics"}
+                      : "Slideflow platform API"}
                   </span>
                 </div>
                 <h1 className="hover-sentence max-w-4xl text-5xl font-semibold leading-[0.94] sm:text-7xl lg:text-6xl 2xl:text-8xl" style={{ color: "var(--heading)" }}>
                   {approachMode === "approach-1"
                     ? "MSI slide intelligence, live from the VM."
-                    : approachMode === "approach-2"
-                      ? "Switchable MSI platform, from cohort to model registry."
-                      : approachMode === "monte-carlo"
-                        ? "Monte Carlo as a dedicated validation approach."
-                        : "Parallel artifact metrics, only when runs exist."}
+                    : "Two-lane MSI platform, from cohort to model registry."}
                 </h1>
                 <p className="hover-sentence mt-6 max-w-2xl text-base leading-8 sm:text-lg" style={{ color: "var(--body)" }}>
                   {approachMode === "approach-1"
                     ? "Upload cohort files, check fold balance, inspect the remote slide project, and launch Jupyter without leaving the browser."
-                    : approachMode === "approach-2"
-                      ? "Register slides, trigger preprocessing, extract features, train Attention MIL, and review Approach 2 experiments from the same control room."
-                      : approachMode === "monte-carlo"
-                        ? "Generate stochastic trial plans, prepare the VM model cache, use HF model storage, and check Groq, Firecrawl, Zerve, and Tinyfish readiness."
-                        : "Read completed Approach 1, Approach 2, and Monte Carlo artifacts, then compare only the metrics the backend actually finds."}
+                    : "Register slides, trigger preprocessing, extract features, compare TransMIL against Attention MIL, and review the two active MSI approaches from the same control room."}
                 </p>
               </div>
 
@@ -1558,18 +1571,18 @@ export function MsiWorkbench() {
 
             <div className="grid gap-3 sm:grid-cols-3">
               <MetricTile
-                label={approachMode === "approach-1" ? "Annotation rows" : approachMode === "approach-2" ? "Approach 2 runs" : "MC trials"}
-                value={approachMode === "approach-1" ? usableAnnotationRows.toLocaleString() : approachMode === "approach-2" ? approach2Experiments.length.toLocaleString() : String(mcPlan?.trial_count ?? 0)}
+                label={approachMode === "approach-1" ? "Annotation rows" : "Two-lane runs"}
+                value={approachMode === "approach-1" ? usableAnnotationRows.toLocaleString() : visibleApproach2Experiments.length.toLocaleString()}
                 tone="teal"
               />
               <MetricTile
-                label={approachMode === "approach-1" ? "Manifest rows" : approachMode === "approach-2" ? "Pipeline API" : "VM cache"}
-                value={approachMode === "approach-1" ? usableManifestRows.toLocaleString() : approachMode === "approach-2" ? (approach2Busy ? "Running" : "Ready") : mcVmPrep ? "Prepared" : "Pending"}
+                label={approachMode === "approach-1" ? "Manifest rows" : "Pipeline API"}
+                value={approachMode === "approach-1" ? usableManifestRows.toLocaleString() : (approach2Busy ? "Running" : "Ready")}
                 tone="blue"
               />
               <MetricTile
-                label={approachMode === "approach-1" ? "VM state" : approachMode === "approach-2" ? "Monte Carlo" : "AI links"}
-                value={approachMode === "approach-1" ? (vmBusy ? "Running" : readyChecks ? "Ready" : "Standby") : approachMode === "approach-2" ? (mcPlan ? `${mcPlan.trial_count} trials` : "Integrated") : `${integrations.filter((item) => item.configured).length}/${integrations.length}`}
+                label={approachMode === "approach-1" ? "VM state" : "Methods"}
+                value={approachMode === "approach-1" ? (vmBusy ? "Running" : readyChecks ? "Ready" : "Standby") : "TransMIL + Attention MIL"}
                 tone="coral"
               />
             </div>
@@ -2235,6 +2248,67 @@ export function MsiWorkbench() {
                     ))}
                   </div>
                 </div>
+                <div className="mt-5 rounded-3xl border p-4" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
+                  <div className="mb-3 flex items-center justify-between gap-3">
+                    <h3 className="text-sm font-semibold" style={{ color: "var(--heading)" }}>Approaches</h3>
+                    <span className="text-xs" style={{ color: "var(--muted)" }}>
+                      Dedicated model lanes for the TCGA bundle
+                    </span>
+                  </div>
+                  <div className="grid gap-3 xl:grid-cols-3">
+                    {tcgaApproachCards.map((approach) => (
+                      <div
+                        key={approach.key}
+                        className="rounded-3xl border p-4"
+                        style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div>
+                            <p className="text-sm font-semibold" style={{ color: "var(--heading)" }}>
+                              {approach.title}
+                            </p>
+                            <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em]" style={{ color: "var(--blue)" }}>
+                              {approach.subtitle}
+                            </p>
+                          </div>
+                          <span
+                            className="rounded-full px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em]"
+                            style={{
+                              background:
+                                approach.stateLabel === "completed"
+                                  ? "rgba(44,182,125,0.14)"
+                                  : approach.stateLabel === "running"
+                                    ? "rgba(70,102,217,0.14)"
+                                    : "rgba(148,163,184,0.14)",
+                              color:
+                                approach.stateLabel === "completed"
+                                  ? "var(--teal)"
+                                  : approach.stateLabel === "running"
+                                    ? "var(--blue)"
+                                    : "var(--muted)",
+                            }}
+                          >
+                            {approach.stateLabel}
+                          </span>
+                        </div>
+                        <p className="mt-3 text-sm leading-6" style={{ color: "var(--body)" }}>
+                          {approach.detail}
+                        </p>
+                        <div className="mt-4 grid gap-2">
+                          <KeyValue label="Model" value={approach.milModel} />
+                          <KeyValue label="AUROC" value={approach.auroc} />
+                          <KeyValue label="Macro F1" value={approach.f1} />
+                          <KeyValue label="Tuned F1" value={approach.thresholdF1} />
+                          <KeyValue label="Best threshold" value={approach.bestThreshold} />
+                          <KeyValue label="Folds" value={approach.folds} />
+                        </div>
+                        <p className="mt-4 text-xs leading-5" style={{ color: "var(--muted)" }}>
+                          Why this score looks like this: {approach.why}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className="rounded-3xl border p-4" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
                 <h3 className="text-sm font-semibold" style={{ color: "var(--heading)" }}>Dedicated live summary</h3>
@@ -2266,36 +2340,29 @@ export function MsiWorkbench() {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <SectionTitle
               icon={<Layers3 className="h-5 w-5" />}
-              title="Complex triad live runner"
+              title="Two-approach live runner"
               label={approach2Busy ? `running ${approach2Busy}` : hasRunningApproach2Experiment ? "live polling" : "mounted"}
             />
-            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[760px] xl:grid-cols-6">
+            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[640px] xl:grid-cols-5">
               <ActionButton
                 busy={approach2Busy === "train"}
                 disabled={Boolean(approach2Busy)}
                 icon={<Play className="h-4 w-4" />}
-                label="Run Approach 1"
+                label="Run A1 TransMIL"
                 onClick={() => void runPresetTraining("Approach1")}
               />
               <ActionButton
                 busy={approach2Busy === "train"}
                 disabled={Boolean(approach2Busy)}
                 icon={<Play className="h-4 w-4" />}
-                label="Run Approach 2"
+                label="Run A2 Attention"
                 onClick={() => void runPresetTraining("Approach2")}
-              />
-              <ActionButton
-                busy={approach2Busy === "train"}
-                disabled={Boolean(approach2Busy)}
-                icon={<Dice5 className="h-4 w-4" />}
-                label="Run Approach 3"
-                onClick={() => void runPresetTraining("MonteCarlo")}
               />
               <ActionButton
                 busy={approach2Busy === "triad"}
                 disabled={Boolean(approach2Busy)}
                 icon={<Layers3 className="h-4 w-4" />}
-                label="Run Full Triad"
+                label="Run Full Pair"
                 onClick={() => runApproach2Action("triad")}
               />
               <ActionButton
@@ -2473,15 +2540,15 @@ export function MsiWorkbench() {
                   Active dataset source: `{patchTrainingForm.datasetSource}` {"->"} `{patchDatasetSourceSummary(patchTrainingForm)}`.
                 </p>
                 <p className="mt-2">
-                  `Run TCGA Adaptive` uses the VM bucket `gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD`, matches it against `annotations/tcga_coad_bucket_annotations_pub.csv`, keeps an 18-slide balanced subset by default, uses 3-fold validation, and automatically shrinks slide count or folds if the matched cohort is smaller than requested.
+                  `Run TCGA Adaptive` uses the VM bucket `gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD`, matches it against `annotations/tcga_coad_bucket_annotations_pub.csv`, and now runs just two MSI lanes on the same DX1 cohort: `Approach 1 = TransMIL` and `Approach 2 = Attention MIL`.
                 </p>
                 {patchTrainingForm.datasetSource === "google_bucket" ? (
                   <p className="mt-2">
-                    Paste a bucket URI like `gs://my-bucket/msi/CRC-VAL-HE-7K`, then use `Run selected preset`, `Run patch training`, or `Run full triad`. Bucket-backed patch runs are executed on the VM and staged into `datasets/staged_&lt;experiment_id&gt;` before training starts.
+                    Paste a bucket URI like `gs://my-bucket/msi/CRC-VAL-HE-7K`, then use `Run selected preset`, `Run patch training`, or `Run Full Pair`. Bucket-backed patch runs are executed on the VM and staged into `datasets/staged_&lt;experiment_id&gt;` before training starts.
                   </p>
                 ) : (
                   <p className="mt-2">
-                    This runner defaults to the nine-folder CRC patch tree under `E:\4basecare-MSI\datasets\CRC-VAL-HE-7K`. Use `custom_path` if your patch dataset lives somewhere else on the local workstation.
+                    This runner defaults to the nine-folder CRC patch tree under `E:\4basecare-MSI\datasets\CRC-VAL-HE-7K`. It keeps two methods only so the comparison stays cleaner. Use `custom_path` if your patch dataset lives somewhere else on the local workstation.
                   </p>
                 )}
               </div>
@@ -2616,7 +2683,7 @@ export function MsiWorkbench() {
             <div className="rounded-3xl border p-4" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
               <h3 className="font-semibold" style={{ color: "var(--heading)" }}>Approach bundle output</h3>
               <div className="mt-3 grid gap-3">
-                {(["Approach1", "Approach2", "MonteCarlo"] as const).map((label) => {
+                {(["Approach1", "Approach2"] as const).map((label) => {
                   const payload = tcgaBundleApproachSummary[label] ?? {};
                   return (
                     <div key={label} className="rounded-3xl border p-3" style={{ borderColor: "var(--border)", background: "var(--btn-bg)" }}>
@@ -2668,15 +2735,15 @@ export function MsiWorkbench() {
               />
             </div>
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
-              <KeyValue label="Approach counts" value={`A1 ${approachExperimentCounts.Approach1 ?? 0} | A2 ${approachExperimentCounts.Approach2 ?? 0} | A3 ${approachExperimentCounts.MonteCarlo ?? 0}`} />
+              <KeyValue label="Approach counts" value={`A1 ${approachExperimentCounts.Approach1 ?? 0} | A2 ${approachExperimentCounts.Approach2 ?? 0}`} />
               <KeyValue label="Latest run" value={latestApproach2Experiment?.name ?? "No run yet"} />
               <KeyValue label="Status" value={latestApproach2Experiment?.status ?? "idle"} />
               <KeyValue label="Backbone" value={readableMetric(latestApproach2Metrics?.backbone) || "Pending"} />
               <KeyValue label="Train / val images" value={latestApproach2Metrics ? `${readableMetric(latestApproach2Metrics.train_images)} / ${readableMetric(latestApproach2Metrics.val_images)}` : "Pending"} />
             </div>
             <div className="mt-5 max-h-96 overflow-auto rounded-3xl border" style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}>
-              {approach2Experiments.length > 0 ? (
-                approach2Experiments.map((experiment) => (
+              {visibleApproach2Experiments.length > 0 ? (
+                visibleApproach2Experiments.map((experiment) => (
                   <div className="grid gap-2 border-b p-4 last:border-b-0 sm:grid-cols-6" style={{ borderColor: "var(--border)" }} key={experiment.experiment_id}>
                     <span className="font-mono text-xs" style={{ color: "var(--teal)" }}>{experiment.experiment_id}</span>
                     <span className="text-sm font-semibold" style={{ color: "var(--heading)" }}>{experiment.name}</span>
@@ -2688,7 +2755,7 @@ export function MsiWorkbench() {
                 ))
               ) : (
                 <p className="p-4 text-sm leading-6" style={{ color: "var(--muted)" }}>
-                  Run one preset or the full triad to create CRC comparison experiments, then this panel will auto-refresh while the VM bundle is training.
+                  Run one preset or the full pair to create CRC comparison experiments, then this panel will auto-refresh while the VM bundle is training.
                 </p>
               )}
             </div>
@@ -3394,7 +3461,7 @@ function tcgaStageMeta(
   const safeSelected = Math.max(selectedSlides ?? 0, 0);
   const safeDownloaded = Math.max(downloadedSlides ?? 0, 0);
   const downloadProgress = safeSelected > 0 ? Math.min(safeDownloaded / safeSelected, 1) : 0;
-  const trainingProgress = Math.min(completedApproaches / 3, 1);
+  const trainingProgress = Math.min(completedApproaches / 2, 1);
   const extractionProgress = safeSelected > 0 ? Math.min((tfrecordFiles ?? 0) / safeSelected, 1) : 0;
 
   switch (state) {
@@ -3438,14 +3505,14 @@ function tcgaStageMeta(
         percent: 78,
         label: "prepared",
         title: "Bundle prepared and ready to train",
-        detail: "Slides, tiles, and feature bags are ready. The VM is about to fan out the three MIL approaches in parallel.",
+        detail: "Slides, tiles, and feature bags are ready. The VM is about to fan out the two MSI MIL approaches in parallel.",
       };
     case "training_parallel":
       return {
         percent: Math.round(80 + trainingProgress * 18),
         label: "training",
-        title: "Training all MIL approaches in parallel",
-        detail: "The background runner is now executing Approach 1, Approach 2, and Monte Carlo variants in parallel on the prepared bundle.",
+        title: "Training both MSI approaches in parallel",
+        detail: "The background runner is now executing Approach 1 and Approach 2 in parallel on the prepared bundle.",
       };
     case "completed":
       return {

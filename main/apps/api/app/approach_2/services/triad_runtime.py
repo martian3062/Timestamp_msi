@@ -31,27 +31,6 @@ TRIAD_PRESETS: tuple[dict[str, Any], ...] = (
         "epochs": 10,
         "seed": 310,
     },
-    {
-        "name_suffix": "approach3-resnet18-seed42",
-        "approach_label": "MonteCarlo",
-        "backbone": "resnet18",
-        "epochs": 4,
-        "seed": 42,
-    },
-    {
-        "name_suffix": "approach3-resnet18-seed2026",
-        "approach_label": "MonteCarlo",
-        "backbone": "resnet18",
-        "epochs": 4,
-        "seed": 2026,
-    },
-    {
-        "name_suffix": "approach3-resnet34-seed777",
-        "approach_label": "MonteCarlo",
-        "backbone": "resnet34",
-        "epochs": 4,
-        "seed": 777,
-    },
 )
 
 TCGA_SLIDE_TRIAD_PRESETS: tuple[dict[str, Any], ...] = (
@@ -68,13 +47,6 @@ TCGA_SLIDE_TRIAD_PRESETS: tuple[dict[str, Any], ...] = (
         "mil_model": "attention_mil",
         "epochs": 12,
         "seed": 310,
-    },
-    {
-        "name_suffix": "approach3-attention-seed42",
-        "approach_label": "MonteCarlo",
-        "mil_model": "attention_mil",
-        "epochs": 8,
-        "seed": 42,
     },
 )
 

@@ -1,0 +1,43 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Diagnosis,Age at Diagnosis,NUMBER,True,1,AGE_AT_DIAGNOSIS,crc_msk_2017
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_msk_2017
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_msk_2017
+Chemo Exposure of sequenced specimen,Chemo Exposure of sequenced specimen,STRING,False,1,CHEMO_EXP_SEQ_SPECIMEN,crc_msk_2017
+First Site of Metastasis,First Site of Metastasis,STRING,False,1,FIRST_SITE_OF_METS,crc_msk_2017
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,crc_msk_2017
+Gene Panel,Gene panel.,STRING,False,1,GENE_PANEL,crc_msk_2017
+mCRC Type,mCRC Type,STRING,False,1,MCRC_TYPE,crc_msk_2017
+Metastasectomy,Metastasectomy,STRING,False,1,METASTASECTOMY,crc_msk_2017
+Metastasectomy Site,Metastasectomy Site,STRING,False,1,METASTASECTOMY_SITE,crc_msk_2017
+Metastases Site First: Bone,Metastases Site First: Bone,STRING,False,1,METASTASES_SITE_FIRST_BONE,crc_msk_2017
+Metastases Site First: Brain,Metastases Site First: Brain,STRING,False,1,METASTASES_SITE_FIRST_BRAIN,crc_msk_2017
+Metastases Site First: Gynecological,Metastases Site First: Gynecological,STRING,False,1,METASTASES_SITE_FIRST_GYN,crc_msk_2017
+Metastases Site First: Liver,Metastases Site First: Liver,STRING,False,1,METASTASES_SITE_FIRST_LIVER,crc_msk_2017
+Metastases Site First: Ln,Metastases Site First: Ln,STRING,False,1,METASTASES_SITE_FIRST_LN,crc_msk_2017
+Metastases Site First: Lung,Metastases Site First: Lung,STRING,False,1,METASTASES_SITE_FIRST_LUNG,crc_msk_2017
+Metastases Site First: Pelvis,Metastases Site First: Pelvis,STRING,False,1,METASTASES_SITE_FIRST_PELVIS,crc_msk_2017
+"Metastases Site First: Peritoneum, omentum, abdomen","Metastases Site First: Peritoneum, omentum, abdomen",STRING,False,1,METASTASES_SITE_FIRST_PERITONEUM_OMENTUM_ABDOMEN,crc_msk_2017
+Metastatic Biopsy Site,Metastatic Biopsy Site,STRING,False,1,METASTATIC_BIOPSY_SITE,crc_msk_2017
+Molecular Subtype,Molecular subtype.,STRING,False,1,MOLECULAR_SUBTYPE,crc_msk_2017
+MSI Score,MSI Score,NUMBER,False,1,MSI_SCORE,crc_msk_2017
+MSI Status,MSI status.,STRING,False,1,MSI_STATUS,crc_msk_2017
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_msk_2017
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,crc_msk_2017
+Overall Survival (Months),Overall survival in months since initial diagonosis.,NUMBER,True,1,OS_MONTHS,crc_msk_2017
+OS Months (Additonal Data),OS Months (Additonal Data),NUMBER,True,1,OS_MONTHS_ADDITIONAL,crc_msk_2017
+Overall Survival Status,Overall patient survival status.,STRING,True,9,OS_STATUS,crc_msk_2017
+Other Metastasis Sites,Other Metastasis Sites Description,STRING,False,1,OTHER_SITES_OF_METS,crc_msk_2017
+Patient Tumor Grade,Patient Tumor Grade,STRING,True,1,PATIENT_GRADE,crc_msk_2017
+Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,1,PRIMARY_SITE,crc_msk_2017
+Primary Tumor Location,Primary Tumor Location,STRING,False,1,PRIMARY_TUMOR_LOCATION,crc_msk_2017
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_msk_2017
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,9,SAMPLE_TYPE,crc_msk_2017
+Sex,Sex,STRING,True,1,SEX,crc_msk_2017
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,crc_msk_2017
+Specimen Type,The broad cancer phenotype and site information values for a sample to be processed.,STRING,False,1,SPECIMEN_TYPE,crc_msk_2017
+Stage At Diagnosis,Stage At Diagnosis,STRING,False,1,STAGE_AT_DIAGNOSIS,crc_msk_2017
+Time from Met Dx to Sequencing,Time from Met Dx to Sequencing,NUMBER,False,1,TIME_FROM_MET_DX_SEQUENCING,crc_msk_2017
+TIme to Metastasis Months,TIme to Metastasis Months,NUMBER,False,1,TIME_TO_METASTASIS_MONTHS,crc_msk_2017
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,crc_msk_2017
+Tumor Sample Histology,Tumor Sample Histology,STRING,False,1,TUMOR_SAMPLE_HISTOLOGY,crc_msk_2017
+Patient's Vital Status,The survival state of the person.,STRING,True,1,VITAL_STATUS,crc_msk_2017

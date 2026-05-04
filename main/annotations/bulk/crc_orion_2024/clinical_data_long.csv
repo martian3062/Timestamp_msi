@@ -1,0 +1,1005 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+crc_orion_2024,C1,C1,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,69
+crc_orion_2024,C1,C1,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C1,C1,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C1,C1,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C1,C1,MUTATION_COUNT,Mutation Count,NUMBER,False,13
+crc_orion_2024,C1,C1,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C1,C1,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C1,C1,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C1,C1,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C1,C1,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C1,C1,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C1,C1,TMB,Tumor Mutational Burden,NUMBER,False,15.73531744
+crc_orion_2024,C1,C1,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C2,C2,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,41
+crc_orion_2024,C2,C2,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C2,C2,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C2,C2,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C2,C2,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C2,C2,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C2,C2,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C2,C2,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C2,C2,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C2,C2,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C2,C2,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C2,C2,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C2,C2,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C3,C3,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,58
+crc_orion_2024,C3,C3,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C3,C3,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C3,C3,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C3,C3,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C3,C3,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C3,C3,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C3,C3,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C3,C3,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C3,C3,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C3,C3,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C3,C3,TMB,Tumor Mutational Burden,NUMBER,False,9.683272268
+crc_orion_2024,C3,C3,TUMOR_PURITY,Tumor Purity,NUMBER,False,65
+crc_orion_2024,C4,C4,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,56
+crc_orion_2024,C4,C4,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C4,C4,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C4,C4,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C4,C4,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C4,C4,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C4,C4,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C4,C4,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C4,C4,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C4,C4,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C4,C4,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C4,C4,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C4,C4,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C5,C5,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,73
+crc_orion_2024,C5,C5,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C5,C5,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C5,C5,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C5,C5,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C5,C5,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C5,C5,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C5,C5,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C5,C5,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C5,C5,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C5,C5,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C5,C5,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C5,C5,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+crc_orion_2024,C6,C6,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,58
+crc_orion_2024,C6,C6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C6,C6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C6,C6,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C6,C6,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C6,C6,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C6,C6,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C6,C6,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C6,C6,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C6,C6,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C6,C6,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C6,C6,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C6,C6,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C7,C7,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,67
+crc_orion_2024,C7,C7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C7,C7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C7,C7,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C7,C7,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C7,C7,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C7,C7,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C7,C7,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C7,C7,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C7,C7,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C7,C7,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C7,C7,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C7,C7,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C8,C8,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,59
+crc_orion_2024,C8,C8,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C8,C8,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C8,C8,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C8,C8,MUTATION_COUNT,Mutation Count,NUMBER,False,11
+crc_orion_2024,C8,C8,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C8,C8,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C8,C8,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C8,C8,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C8,C8,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C8,C8,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C8,C8,TMB,Tumor Mutational Burden,NUMBER,False,13.31449937
+crc_orion_2024,C8,C8,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C9,C9,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,62
+crc_orion_2024,C9,C9,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C9,C9,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C9,C9,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C9,C9,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C9,C9,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C9,C9,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C9,C9,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C9,C9,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C9,C9,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C9,C9,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C9,C9,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C9,C9,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C10,C10,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,26
+crc_orion_2024,C10,C10,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C10,C10,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C10,C10,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C10,C10,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C10,C10,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C10,C10,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C10,C10,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C10,C10,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C10,C10,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C10,C10,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C10,C10,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C10,C10,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C11,C11,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,70
+crc_orion_2024,C11,C11,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C11,C11,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C11,C11,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C11,C11,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_orion_2024,C11,C11,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C11,C11,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C11,C11,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C11,C11,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C11,C11,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C11,C11,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C11,C11,TMB,Tumor Mutational Burden,NUMBER,False,6.052045168
+crc_orion_2024,C11,C11,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C12,C12,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,64
+crc_orion_2024,C12,C12,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C12,C12,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C12,C12,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C12,C12,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_orion_2024,C12,C12,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C12,C12,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C12,C12,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C12,C12,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C12,C12,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C12,C12,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C12,C12,TMB,Tumor Mutational Burden,NUMBER,False,6.052045168
+crc_orion_2024,C12,C12,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C13,C13,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,40
+crc_orion_2024,C13,C13,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C13,C13,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C13,C13,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C13,C13,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C13,C13,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C13,C13,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C13,C13,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C13,C13,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C13,C13,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C13,C13,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C13,C13,TMB,Tumor Mutational Burden,NUMBER,False,9.683272268
+crc_orion_2024,C13,C13,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C14,C14,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,60
+crc_orion_2024,C14,C14,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C14,C14,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C14,C14,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C14,C14,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_orion_2024,C14,C14,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C14,C14,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C14,C14,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C14,C14,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C14,C14,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C14,C14,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C14,C14,TMB,Tumor Mutational Burden,NUMBER,False,14.5249084
+crc_orion_2024,C14,C14,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C15,C15,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,39
+crc_orion_2024,C15,C15,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C15,C15,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C15,C15,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C15,C15,MUTATION_COUNT,Mutation Count,NUMBER,False,43
+crc_orion_2024,C15,C15,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C15,C15,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C15,C15,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C15,C15,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C15,C15,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C15,C15,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C15,C15,TMB,Tumor Mutational Burden,NUMBER,False,52.04758844
+crc_orion_2024,C15,C15,TUMOR_PURITY,Tumor Purity,NUMBER,False,55
+crc_orion_2024,C16,C16,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,80
+crc_orion_2024,C16,C16,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C16,C16,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C16,C16,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C16,C16,MUTATION_COUNT,Mutation Count,NUMBER,False,38
+crc_orion_2024,C16,C16,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C16,C16,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C16,C16,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C16,C16,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C16,C16,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C16,C16,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,3
+crc_orion_2024,C16,C16,TMB,Tumor Mutational Burden,NUMBER,False,45.99554327
+crc_orion_2024,C16,C16,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C17,C17,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,57
+crc_orion_2024,C17,C17,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C17,C17,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C17,C17,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C17,C17,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C17,C17,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C17,C17,PANEL_VERSION,Panel Version,STRING,False,1
+crc_orion_2024,C17,C17,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C17,C17,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C17,C17,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C17,C17,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C17,C17,TMB,Tumor Mutational Burden,NUMBER,False,10.61945963
+crc_orion_2024,C17,C17,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C18,C18,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,72
+crc_orion_2024,C18,C18,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C18,C18,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C18,C18,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C18,C18,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_orion_2024,C18,C18,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C18,C18,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C18,C18,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C18,C18,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C18,C18,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C18,C18,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C18,C18,TMB,Tumor Mutational Burden,NUMBER,False,12.10409034
+crc_orion_2024,C18,C18,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C19,C19,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,34
+crc_orion_2024,C19,C19,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C19,C19,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C19,C19,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C19,C19,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C19,C19,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C19,C19,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C19,C19,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C19,C19,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C19,C19,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C19,C19,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C19,C19,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C19,C19,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C20,C20,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,28
+crc_orion_2024,C20,C20,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C20,C20,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C20,C20,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C20,C20,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C20,C20,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C20,C20,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C20,C20,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C20,C20,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C20,C20,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C20,C20,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C20,C20,TMB,Tumor Mutational Burden,NUMBER,False,9.683272268
+crc_orion_2024,C20,C20,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C21,C21,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,74
+crc_orion_2024,C21,C21,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C21,C21,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C21,C21,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C21,C21,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_orion_2024,C21,C21,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C21,C21,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C21,C21,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C21,C21,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C21,C21,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C21,C21,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C21,C21,TMB,Tumor Mutational Burden,NUMBER,False,6.052045168
+crc_orion_2024,C21,C21,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C22,C22,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,55
+crc_orion_2024,C22,C22,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C22,C22,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C22,C22,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C22,C22,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_orion_2024,C22,C22,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C22,C22,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C22,C22,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C22,C22,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C22,C22,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C22,C22,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C22,C22,TMB,Tumor Mutational Burden,NUMBER,False,14.5249084
+crc_orion_2024,C22,C22,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C23,C23,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,> 90
+crc_orion_2024,C23,C23,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C23,C23,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C23,C23,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C23,C23,MUTATION_COUNT,Mutation Count,NUMBER,False,37
+crc_orion_2024,C23,C23,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C23,C23,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C23,C23,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C23,C23,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C23,C23,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C23,C23,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C23,C23,TMB,Tumor Mutational Burden,NUMBER,False,44.78513424
+crc_orion_2024,C23,C23,TUMOR_PURITY,Tumor Purity,NUMBER,False,65
+crc_orion_2024,C24,C24,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,48
+crc_orion_2024,C24,C24,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C24,C24,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C24,C24,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C24,C24,MUTATION_COUNT,Mutation Count,NUMBER,False,2
+crc_orion_2024,C24,C24,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C24,C24,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C24,C24,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C24,C24,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C24,C24,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C24,C24,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C24,C24,TMB,Tumor Mutational Burden,NUMBER,False,2.420818067
+crc_orion_2024,C24,C24,TUMOR_PURITY,Tumor Purity,NUMBER,False,70
+crc_orion_2024,C25,C25,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,65
+crc_orion_2024,C25,C25,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C25,C25,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C25,C25,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C25,C25,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C25,C25,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C25,C25,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C25,C25,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C25,C25,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C25,C25,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C25,C25,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C25,C25,TMB,Tumor Mutational Burden,NUMBER,False,9.683272268
+crc_orion_2024,C25,C25,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C26,C26,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,85
+crc_orion_2024,C26,C26,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C26,C26,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C26,C26,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C26,C26,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_orion_2024,C26,C26,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C26,C26,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C26,C26,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C26,C26,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C26,C26,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C26,C26,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,3
+crc_orion_2024,C26,C26,TMB,Tumor Mutational Burden,NUMBER,False,12.10409034
+crc_orion_2024,C26,C26,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C27,C27,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,64
+crc_orion_2024,C27,C27,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C27,C27,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C27,C27,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C27,C27,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C27,C27,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C27,C27,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C27,C27,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C27,C27,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C27,C27,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C27,C27,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C27,C27,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C27,C27,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C28,C28,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,77
+crc_orion_2024,C28,C28,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C28,C28,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C28,C28,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C28,C28,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_orion_2024,C28,C28,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C28,C28,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C28,C28,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C28,C28,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C28,C28,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C28,C28,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C28,C28,TMB,Tumor Mutational Burden,NUMBER,False,6.052045168
+crc_orion_2024,C28,C28,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C29,C29,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,48
+crc_orion_2024,C29,C29,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C29,C29,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C29,C29,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C29,C29,MUTATION_COUNT,Mutation Count,NUMBER,False,14
+crc_orion_2024,C29,C29,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C29,C29,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C29,C29,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C29,C29,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C29,C29,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C29,C29,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C29,C29,TMB,Tumor Mutational Burden,NUMBER,False,16.94572647
+crc_orion_2024,C29,C29,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C30,C30,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C30,C30,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C30,C30,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C30,C30,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C30,C30,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C30,C30,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C30,C30,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C30,C30,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C30,C30,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C30,C30,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C30,C30,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C30,C30,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C30,C30,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C30,C30,TMB,Tumor Mutational Burden,NUMBER,False,6.083289356
+crc_orion_2024,C30,C30,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C30,C30,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C30,C30,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C31,C31,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C31,C31,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C31,C31,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C31,C31,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C31,C31,MUTATION_COUNT,Mutation Count,NUMBER,False,11
+crc_orion_2024,C31,C31,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C31,C31,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C31,C31,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C31,C31,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C31,C31,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C31,C31,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C31,C31,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C31,C31,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C31,C31,TMB,Tumor Mutational Burden,NUMBER,False,8.364522865
+crc_orion_2024,C31,C31,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C31,C31,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+crc_orion_2024,C31,C31,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C32,C32,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,83
+crc_orion_2024,C32,C32,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C32,C32,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C32,C32,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C32,C32,MUTATION_COUNT,Mutation Count,NUMBER,False,11
+crc_orion_2024,C32,C32,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C32,C32,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C32,C32,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C32,C32,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C32,C32,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C32,C32,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C32,C32,TMB,Tumor Mutational Burden,NUMBER,False,13.31449937
+crc_orion_2024,C32,C32,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C33,C33,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,64
+crc_orion_2024,C33,C33,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C33,C33,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C33,C33,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C33,C33,MUTATION_COUNT,Mutation Count,NUMBER,False,22
+crc_orion_2024,C33,C33,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C33,C33,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C33,C33,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C33,C33,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C33,C33,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C33,C33,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C33,C33,TMB,Tumor Mutational Burden,NUMBER,False,26.62899874
+crc_orion_2024,C33,C33,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C34,C34,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,70
+crc_orion_2024,C34,C34,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C34,C34,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C34,C34,MUCINOUS,Mucinous Feature,STRING,False,Present
+crc_orion_2024,C34,C34,MUTATION_COUNT,Mutation Count,NUMBER,False,53
+crc_orion_2024,C34,C34,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C34,C34,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C34,C34,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C34,C34,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C34,C34,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C34,C34,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C34,C34,TMB,Tumor Mutational Burden,NUMBER,False,64.15167878
+crc_orion_2024,C34,C34,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C35,C35,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,71
+crc_orion_2024,C35,C35,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C35,C35,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C35,C35,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C35,C35,MUTATION_COUNT,Mutation Count,NUMBER,False,57
+crc_orion_2024,C35,C35,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C35,C35,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C35,C35,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C35,C35,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C35,C35,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C35,C35,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C35,C35,TMB,Tumor Mutational Burden,NUMBER,False,68.99331491
+crc_orion_2024,C35,C35,TUMOR_PURITY,Tumor Purity,NUMBER,False,70
+crc_orion_2024,C36,C36,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,67
+crc_orion_2024,C36,C36,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C36,C36,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C36,C36,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C36,C36,MUTATION_COUNT,Mutation Count,NUMBER,False,39
+crc_orion_2024,C36,C36,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C36,C36,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C36,C36,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C36,C36,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C36,C36,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C36,C36,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C36,C36,TMB,Tumor Mutational Burden,NUMBER,False,59.31004264
+crc_orion_2024,C36,C36,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C37,C37,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,49
+crc_orion_2024,C37,C37,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C37,C37,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C37,C37,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C37,C37,MUTATION_COUNT,Mutation Count,NUMBER,False,40
+crc_orion_2024,C37,C37,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C37,C37,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C37,C37,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C37,C37,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C37,C37,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C37,C37,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C37,C37,TMB,Tumor Mutational Burden,NUMBER,False,48.41636134
+crc_orion_2024,C37,C37,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C38,C38,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,57
+crc_orion_2024,C38,C38,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C38,C38,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C38,C38,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C38,C38,MUTATION_COUNT,Mutation Count,NUMBER,False,45
+crc_orion_2024,C38,C38,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C38,C38,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C38,C38,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C38,C38,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C38,C38,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C38,C38,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,3
+crc_orion_2024,C38,C38,TMB,Tumor Mutational Burden,NUMBER,False,54.46840651
+crc_orion_2024,C38,C38,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C39,C39,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,67
+crc_orion_2024,C39,C39,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C39,C39,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C39,C39,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C39,C39,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C39,C39,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C39,C39,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C39,C39,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C39,C39,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C39,C39,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C39,C39,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,3
+crc_orion_2024,C39,C39,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C39,C39,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C40,C40,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,59
+crc_orion_2024,C40,C40,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C40,C40,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C40,C40,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C40,C40,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_orion_2024,C40,C40,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C40,C40,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C40,C40,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C40,C40,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C40,C40,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C40,C40,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C40,C40,TMB,Tumor Mutational Burden,NUMBER,False,3.631227101
+crc_orion_2024,C40,C40,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C41,C41,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,48
+crc_orion_2024,C41,C41,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C41,C41,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C41,C41,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C41,C41,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C41,C41,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C41,C41,PANEL_VERSION,Panel Version,STRING,False,1
+crc_orion_2024,C41,C41,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C41,C41,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C41,C41,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C41,C41,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C41,C41,TMB,Tumor Mutational Burden,NUMBER,False,9.292027175
+crc_orion_2024,C41,C41,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C42,C42,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,67
+crc_orion_2024,C42,C42,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C42,C42,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C42,C42,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C42,C42,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_orion_2024,C42,C42,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C42,C42,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C42,C42,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C42,C42,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C42,C42,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C42,C42,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C42,C42,TMB,Tumor Mutational Burden,NUMBER,False,12.10409034
+crc_orion_2024,C42,C42,TUMOR_PURITY,Tumor Purity,NUMBER,False,85
+crc_orion_2024,C43,C43,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,76
+crc_orion_2024,C43,C43,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C43,C43,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C43,C43,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C43,C43,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C43,C43,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C43,C43,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C43,C43,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C43,C43,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C43,C43,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C43,C43,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C43,C43,TMB,Tumor Mutational Burden,NUMBER,False,7.262454201
+crc_orion_2024,C43,C43,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C44,C44,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,57
+crc_orion_2024,C44,C44,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C44,C44,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C44,C44,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C44,C44,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C44,C44,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C44,C44,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C44,C44,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C44,C44,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C44,C44,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C44,C44,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C44,C44,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C44,C44,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C45,C45,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,69
+crc_orion_2024,C45,C45,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C45,C45,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C45,C45,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C45,C45,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C45,C45,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C45,C45,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C45,C45,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C45,C45,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C45,C45,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C45,C45,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C45,C45,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C45,C45,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C46,C46,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,56
+crc_orion_2024,C46,C46,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C46,C46,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C46,C46,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C46,C46,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C46,C46,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C46,C46,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C46,C46,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C46,C46,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C46,C46,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C46,C46,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C46,C46,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C46,C46,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C47,C47,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,62
+crc_orion_2024,C47,C47,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C47,C47,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C47,C47,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C47,C47,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_orion_2024,C47,C47,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C47,C47,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C47,C47,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C47,C47,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C47,C47,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C47,C47,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C47,C47,TMB,Tumor Mutational Burden,NUMBER,False,12.10409034
+crc_orion_2024,C47,C47,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C48,C48,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,65
+crc_orion_2024,C48,C48,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C48,C48,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C48,C48,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C48,C48,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C48,C48,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C48,C48,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C48,C48,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C48,C48,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C48,C48,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C48,C48,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C48,C48,TMB,Tumor Mutational Burden,NUMBER,False,9.683272268
+crc_orion_2024,C48,C48,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C49,C49,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,80
+crc_orion_2024,C49,C49,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C49,C49,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C49,C49,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C49,C49,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C49,C49,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C49,C49,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C49,C49,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C49,C49,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C49,C49,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C49,C49,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C49,C49,TMB,Tumor Mutational Burden,NUMBER,False,7.262454201
+crc_orion_2024,C49,C49,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C50,C50,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,66
+crc_orion_2024,C50,C50,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C50,C50,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C50,C50,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C50,C50,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C50,C50,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C50,C50,PANEL_VERSION,Panel Version,STRING,False,1
+crc_orion_2024,C50,C50,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C50,C50,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C50,C50,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C50,C50,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C50,C50,TMB,Tumor Mutational Burden,NUMBER,False,7.964594722
+crc_orion_2024,C50,C50,TUMOR_PURITY,Tumor Purity,NUMBER,False,25
+crc_orion_2024,C51,C51,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,66
+crc_orion_2024,C51,C51,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C51,C51,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C51,C51,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C51,C51,MUTATION_COUNT,Mutation Count,NUMBER,False,11
+crc_orion_2024,C51,C51,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C51,C51,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C51,C51,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C51,C51,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C51,C51,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C51,C51,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C51,C51,TMB,Tumor Mutational Burden,NUMBER,False,13.31449937
+crc_orion_2024,C51,C51,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C52,C52,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,30
+crc_orion_2024,C52,C52,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C52,C52,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C52,C52,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C52,C52,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C52,C52,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C52,C52,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C52,C52,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C52,C52,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C52,C52,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C52,C52,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C52,C52,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C52,C52,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C53,C53,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,60
+crc_orion_2024,C53,C53,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C53,C53,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C53,C53,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C53,C53,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C53,C53,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C53,C53,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C53,C53,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C53,C53,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C53,C53,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C53,C53,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C53,C53,TMB,Tumor Mutational Burden,NUMBER,False,7.262454201
+crc_orion_2024,C53,C53,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C54,C54,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,66
+crc_orion_2024,C54,C54,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C54,C54,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C54,C54,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C54,C54,MUTATION_COUNT,Mutation Count,NUMBER,False,13
+crc_orion_2024,C54,C54,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C54,C54,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C54,C54,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C54,C54,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C54,C54,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C54,C54,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C54,C54,TMB,Tumor Mutational Burden,NUMBER,False,15.73531744
+crc_orion_2024,C54,C54,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C55,C55,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,62
+crc_orion_2024,C55,C55,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C55,C55,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C55,C55,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C55,C55,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C55,C55,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C55,C55,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C55,C55,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C55,C55,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C55,C55,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C55,C55,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C55,C55,TMB,Tumor Mutational Burden,NUMBER,False,9.683272268
+crc_orion_2024,C55,C55,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C56,C56,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,35
+crc_orion_2024,C56,C56,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C56,C56,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C56,C56,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C56,C56,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+crc_orion_2024,C56,C56,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C56,C56,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C56,C56,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C56,C56,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C56,C56,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C56,C56,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C56,C56,TMB,Tumor Mutational Burden,NUMBER,False,3.631227101
+crc_orion_2024,C56,C56,TUMOR_PURITY,Tumor Purity,NUMBER,False,35
+crc_orion_2024,C57,C57,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,60
+crc_orion_2024,C57,C57,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C57,C57,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C57,C57,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C57,C57,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C57,C57,ONCOTREE_CODE,Oncotree Code,STRING,False,READ
+crc_orion_2024,C57,C57,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C57,C57,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C57,C57,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C57,C57,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C57,C57,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C57,C57,TMB,Tumor Mutational Burden,NUMBER,False,7.262454201
+crc_orion_2024,C57,C57,TUMOR_PURITY,Tumor Purity,NUMBER,False,80
+crc_orion_2024,C58,C58,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,53
+crc_orion_2024,C58,C58,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C58,C58,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C58,C58,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C58,C58,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+crc_orion_2024,C58,C58,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C58,C58,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C58,C58,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C58,C58,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C58,C58,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C58,C58,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C58,C58,TMB,Tumor Mutational Burden,NUMBER,False,10.8936813
+crc_orion_2024,C58,C58,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C59,C59,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,74
+crc_orion_2024,C59,C59,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C59,C59,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C59,C59,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C59,C59,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C59,C59,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C59,C59,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C59,C59,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C59,C59,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C59,C59,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C59,C59,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C59,C59,TMB,Tumor Mutational Burden,NUMBER,False,8.472863235
+crc_orion_2024,C59,C59,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C60,C60,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,48
+crc_orion_2024,C60,C60,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C60,C60,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C60,C60,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C60,C60,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+crc_orion_2024,C60,C60,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C60,C60,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C60,C60,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C60,C60,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C60,C60,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C60,C60,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C60,C60,TMB,Tumor Mutational Burden,NUMBER,False,6.052045168
+crc_orion_2024,C60,C60,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C61,C61,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,69
+crc_orion_2024,C61,C61,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C61,C61,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C61,C61,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C61,C61,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C61,C61,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C61,C61,PANEL_VERSION,Panel Version,STRING,False,2
+crc_orion_2024,C61,C61,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C61,C61,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C61,C61,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C61,C61,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C61,C61,TMB,Tumor Mutational Burden,NUMBER,False,7.262454201
+crc_orion_2024,C61,C61,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+crc_orion_2024,C62,C62,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,70
+crc_orion_2024,C62,C62,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C62,C62,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C62,C62,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C62,C62,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C62,C62,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C62,C62,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C62,C62,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C62,C62,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C62,C62,STAGE NUMBER,Stage,STRING,False,1
+crc_orion_2024,C62,C62,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C62,C62,TMB,Tumor Mutational Burden,NUMBER,False,5.322878187
+crc_orion_2024,C62,C62,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C63,C63,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,50
+crc_orion_2024,C63,C63,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C63,C63,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C63,C63,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C63,C63,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_orion_2024,C63,C63,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C63,C63,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C63,C63,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C63,C63,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C63,C63,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C63,C63,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C63,C63,TMB,Tumor Mutational Burden,NUMBER,False,7.604111695
+crc_orion_2024,C63,C63,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C64,C64,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,80
+crc_orion_2024,C64,C64,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C64,C64,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C64,C64,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C64,C64,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C64,C64,MUTATION_COUNT,Mutation Count,NUMBER,False,13
+crc_orion_2024,C64,C64,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C64,C64,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C64,C64,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C64,C64,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C64,C64,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C64,C64,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C64,C64,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C64,C64,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,2
+crc_orion_2024,C64,C64,TMB,Tumor Mutational Burden,NUMBER,False,9.885345204
+crc_orion_2024,C64,C64,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C64,C64,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C64,C64,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C65,C65,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,84
+crc_orion_2024,C65,C65,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C65,C65,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C65,C65,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C65,C65,MUTATION_COUNT,Mutation Count,NUMBER,False,12
+crc_orion_2024,C65,C65,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C65,C65,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C65,C65,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C65,C65,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C65,C65,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C65,C65,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C65,C65,TMB,Tumor Mutational Burden,NUMBER,False,9.124934034
+crc_orion_2024,C65,C65,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C66,C66,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,79
+crc_orion_2024,C66,C66,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C66,C66,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C66,C66,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C66,C66,MUTATION_COUNT,Mutation Count,NUMBER,False,110
+crc_orion_2024,C66,C66,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C66,C66,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C66,C66,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C66,C66,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C66,C66,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C66,C66,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C66,C66,TMB,Tumor Mutational Burden,NUMBER,False,83.64522865
+crc_orion_2024,C66,C66,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C67,C67,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,83
+crc_orion_2024,C67,C67,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C67,C67,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C67,C67,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C67,C67,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+crc_orion_2024,C67,C67,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+crc_orion_2024,C67,C67,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C67,C67,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C67,C67,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C67,C67,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C67,C67,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C67,C67,TMB,Tumor Mutational Burden,NUMBER,False,7.604111695
+crc_orion_2024,C67,C67,TUMOR_PURITY,Tumor Purity,NUMBER,False,90
+crc_orion_2024,C68,C68,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,61
+crc_orion_2024,C68,C68,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C68,C68,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C68,C68,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C68,C68,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C68,C68,MUTATION_COUNT,Mutation Count,NUMBER,False,14
+crc_orion_2024,C68,C68,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C68,C68,PANEL_VERSION,Panel Version,STRING,False,3
+crc_orion_2024,C68,C68,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C68,C68,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C68,C68,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C68,C68,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C68,C68,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C68,C68,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,1
+crc_orion_2024,C68,C68,TMB,Tumor Mutational Burden,NUMBER,False,10.64575637
+crc_orion_2024,C68,C68,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C68,C68,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C68,C68,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C69,C69,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,64
+crc_orion_2024,C69,C69,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C69,C69,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C69,C69,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C69,C69,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C69,C69,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C69,C69,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C69,C69,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C69,C69,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C69,C69,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C69,C69,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C69,C69,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C69,C69,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C69,C69,TIL_NUM,Tumor-Infiltrating Lymphocytes  Number,NUMBER,False,0
+crc_orion_2024,C69,C69,TMB,Tumor Mutational Burden,NUMBER,False,4.562467017
+crc_orion_2024,C69,C69,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C69,C69,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+crc_orion_2024,C69,C69,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C70,C70,APOBEC_PATH,APOBEC Signature,STRING,False,No
+crc_orion_2024,C70,C70,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C70,C70,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C70,C70,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C70,C70,MUTATION_COUNT,Mutation Count,NUMBER,False,18
+crc_orion_2024,C70,C70,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C70,C70,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C70,C70,POLE_PATH,POLE Signature,STRING,False,No
+crc_orion_2024,C70,C70,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C70,C70,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C70,C70,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C70,C70,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,No
+crc_orion_2024,C70,C70,TMB,Tumor Mutational Burden,NUMBER,False,13.68740105
+crc_orion_2024,C70,C70,TOBACCO_PATH,Tobacco Signature,STRING,False,No
+crc_orion_2024,C70,C70,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+crc_orion_2024,C70,C70,UVA_PATH,UVA Signature,STRING,False,No
+crc_orion_2024,C71,C71,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,62
+crc_orion_2024,C71,C71,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C71,C71,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C71,C71,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C71,C71,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C71,C71,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+crc_orion_2024,C71,C71,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C71,C71,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C71,C71,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C71,C71,SIDE,Tumor Side,STRING,False,Rectal
+crc_orion_2024,C71,C71,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C71,C71,STAGE NUMBER,Stage,STRING,False,2
+crc_orion_2024,C71,C71,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C71,C71,TMB,Tumor Mutational Burden,NUMBER,False,4.562467017
+crc_orion_2024,C71,C71,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C71,C71,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C71,C71,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C72,C72,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,78
+crc_orion_2024,C72,C72,APOBEC_PATH,APOBEC Signature,STRING,False,No
+crc_orion_2024,C72,C72,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C72,C72,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C72,C72,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C72,C72,MUTATION_COUNT,Mutation Count,NUMBER,False,18
+crc_orion_2024,C72,C72,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C72,C72,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C72,C72,POLE_PATH,POLE Signature,STRING,False,No
+crc_orion_2024,C72,C72,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C72,C72,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C72,C72,STAGE NUMBER,Stage,STRING,False,3
+crc_orion_2024,C72,C72,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,No
+crc_orion_2024,C72,C72,TMB,Tumor Mutational Burden,NUMBER,False,13.68740105
+crc_orion_2024,C72,C72,TOBACCO_PATH,Tobacco Signature,STRING,False,No
+crc_orion_2024,C72,C72,TUMOR_PURITY,Tumor Purity,NUMBER,False,70
+crc_orion_2024,C72,C72,UVA_PATH,UVA Signature,STRING,False,No
+crc_orion_2024,C73,C73,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,53
+crc_orion_2024,C73,C73,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C73,C73,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C73,C73,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C73,C73,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C73,C73,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+crc_orion_2024,C73,C73,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C73,C73,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C73,C73,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C73,C73,SIDE,Tumor Side,STRING,False,Right
+crc_orion_2024,C73,C73,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C73,C73,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C73,C73,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C73,C73,TMB,Tumor Mutational Burden,NUMBER,False,5.322878187
+crc_orion_2024,C73,C73,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C73,C73,TUMOR_PURITY,Tumor Purity,NUMBER,False,60
+crc_orion_2024,C73,C73,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C74,C74,AGE_AT_SEQ,Age at Sequencing,NUMBER,False,60
+crc_orion_2024,C74,C74,APOBEC_PATH,APOBEC Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C74,C74,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+crc_orion_2024,C74,C74,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+crc_orion_2024,C74,C74,MUCINOUS,Mucinous Feature,STRING,False,Absent
+crc_orion_2024,C74,C74,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+crc_orion_2024,C74,C74,ONCOTREE_CODE,Oncotree Code,STRING,False,COAD
+crc_orion_2024,C74,C74,PANEL_VERSION,Panel Version,STRING,False,3.1
+crc_orion_2024,C74,C74,POLE_PATH,POLE Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C74,C74,SIDE,Tumor Side,STRING,False,Left
+crc_orion_2024,C74,C74,SOMATIC_STATUS,Somatic Status,STRING,False,Unmatched
+crc_orion_2024,C74,C74,STAGE NUMBER,Stage,STRING,False,4
+crc_orion_2024,C74,C74,TEMOZOLOMIDE_PATH,Temozolomide Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C74,C74,TMB,Tumor Mutational Burden,NUMBER,False,6.083289356
+crc_orion_2024,C74,C74,TOBACCO_PATH,Tobacco Signature,STRING,False,Insufficient Variants
+crc_orion_2024,C74,C74,TUMOR_PURITY,Tumor Purity,NUMBER,False,70
+crc_orion_2024,C74,C74,UVA_PATH,UVA Signature,STRING,False,Insufficient Variants

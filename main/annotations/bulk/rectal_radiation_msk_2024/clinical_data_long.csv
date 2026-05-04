@@ -1,0 +1,796 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,FACETS_FGA,Facets FGA,NUMBER,False,0.092
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0222
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,GENE_PANEL,Gene Panel,STRING,False,IMPACT341
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,MSI_SCORE,MSI Score,NUMBER,False,0.08
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,688
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC005_IMPACT
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.09155301
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+rectal_radiation_msk_2024,P-0002902,P-0002902-T01-IM3,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,FACETS_FGA,Facets FGA,NUMBER,False,0.58
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3029
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,MSI_SCORE,MSI Score,NUMBER,False,0.55
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,MUTATION_COUNT,Mutation Count,NUMBER,False,7
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,1256
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC020_IMPACT
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.851037883
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+rectal_radiation_msk_2024,P-0010422,P-0010422-T01-IM5,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,FACETS_FGA,Facets FGA,NUMBER,False,0.82
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0645
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,MSI_SCORE,MSI Score,NUMBER,False,0.25
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,MUTATION_COUNT,Mutation Count,NUMBER,False,2
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,1028
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC009_IMPACT
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.957439395
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0011282,P-0011282-T01-IM5,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0209
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,GENE_PANEL,Gene Panel,STRING,False,IMPACT410
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,MSI_SCORE,MSI Score,NUMBER,False,6.96
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,186
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC001_IMPACT
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.936159093
+rectal_radiation_msk_2024,P-0013159,P-0013159-T01-IM5,TUMOR_PURITY,Tumor Purity,NUMBER,False,10
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0623
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.16
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,716
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC007_IMPACT
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.323490475
+rectal_radiation_msk_2024,P-0015276,P-0015276-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.46
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2479
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,METASTATIC_SITE,Metastatic Site,STRING,False,Lung
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,1.18
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,10
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,542
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC018_IMPACT
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Metastasis
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.64698095
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+rectal_radiation_msk_2024,P-0018949,P-0018949-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0472
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.06
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,609
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC011_IMPACT
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.323490475
+rectal_radiation_msk_2024,P-0029141,P-0029141-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,10
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.3
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1165
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,682
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC003_IMPACT
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.45879238
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+rectal_radiation_msk_2024,P-0032254,P-0032254-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.17
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0891
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.05
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,664
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC010_IMPACT
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.91758476
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0035165,P-0035165-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.8
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4485
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.82
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,615
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC013_IMPACT
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.323490475
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0037948,P-0037948-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.78
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2188
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,614
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC012_IMPACT
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.594094285
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0038170,P-0038170-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0384
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.07
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,488
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC022_IMPACT
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.782282855
+rectal_radiation_msk_2024,P-0038684,P-0038684-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.56
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2544
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0.3
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,2
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,630
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC014_IMPACT
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.72939619
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0039051,P-0039051-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.82
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0291
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,741
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC016_IMPACT
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.18818857
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,30
+rectal_radiation_msk_2024,P-0045190,P-0045190-T01-IM6,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.32
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0022
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,MSI_SCORE,MSI Score,NUMBER,False,0
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,654
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC002_IMPACT
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.45879238
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+rectal_radiation_msk_2024,P-0045906,P-0045906-T02-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,FACETS_FGA,Facets FGA,NUMBER,False,0.27
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,GENE_PANEL,Gene Panel,STRING,False,IMPACT468
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,MSI_SCORE,MSI Score,NUMBER,False,0
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,792
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC004_IMPACT
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.323490475
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+rectal_radiation_msk_2024,P-0054770,P-0054770-T01-IM6,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4651
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE INSTABILITY-INDETERMINATE. See MSI note below.
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,4.54
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,314
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC015_IMPACT
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.46104171
+rectal_radiation_msk_2024,P-0063124,P-0063124-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,0
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,6
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,532
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC006_IMPACT
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.922083419
+rectal_radiation_msk_2024,P-0063415,P-0063415-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,FACETS_FGA,Facets FGA,NUMBER,False,0.3
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1287
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE INSTABILITY-INDETERMINATE. See MSI note below.
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,5.1
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,95
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC056_IMPACT
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.101736183
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,20
+rectal_radiation_msk_2024,P-0064170,P-0064170-T01-IM7,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,FACETS_FGA,Facets FGA,NUMBER,False,0.87
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4651
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,2.22
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,9
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,477
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC017_IMPACT
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.383125129
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,10
+rectal_radiation_msk_2024,P-0065318,P-0065318-T01-IM7,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC008_IMPACT
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,FACETS_FGA,Facets FGA,NUMBER,False,0.37
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,0.6
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,8
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,681
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.562777893
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+rectal_radiation_msk_2024,P-0066749,P-0066749-T01-IM7,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,FACETS_FGA,Facets FGA,NUMBER,False,0.46
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.7902
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,2.47
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,649
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC063_IMPACT
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.101736183
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,50
+rectal_radiation_msk_2024,P-0076840,P-0076840-T01-IM7,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,MSI_COMMENT,MSI Comment,STRING,False,MICROSATELLITE STABLE (MSS). See MSI note below.
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,FACETS_FGA,Facets FGA,NUMBER,False,0.6
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.0804
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,MSI_SCORE,MSI Score,NUMBER,False,0.22
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,SAMPLE_CLASS,Sample Class,STRING,False,Tumor
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,SAMPLE_COVERAGE,Sample Coverage,NUMBER,False,452
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC058_IMPACT
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,SAMPLE_TYPE,Sample Type,STRING,False,Primary
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.46104171
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,TUMOR_PURITY,Tumor Purity,NUMBER,False,40
+rectal_radiation_msk_2024,P-0079151,P-0079151-T01-IM7,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,28.67
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2661
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,31
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC023_IMPACT
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-H35PAE,s_C_H35PAE_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.3634
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,8.34
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,232
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC048_IMPACT
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.7444
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,39.66
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,61
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC051_IMPACT
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-46D50X,s_C_46D50X_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4364
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,35.82
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,33
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC052_IMPACT
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-F2AN0K,s_C_F2AN0K_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.1723
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,1.36
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,MSI_TYPE,MSI Type,STRING,False,Stable
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,47
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC059_IMPACT
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.2522
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,9.44
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,158
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC060_IMPACT
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.5672
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,MSI_SCORE,MSI Score,NUMBER,False,28.53
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,33
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC064_IMPACT
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-M4FH1K,s_C_M4FH1K_M001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,FRACTION_GENOME_ALTERED,Fraction Genome Altered,NUMBER,False,0.4355
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IMPACT505
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,36.62
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,MSI_TYPE,MSI Type,STRING,False,Indeterminate
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,33
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC035_IMPACT
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,SAMPLE_TYPE,Sample Type,STRING,False,Resection
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,IMPACT
+rectal_radiation_msk_2024,C-EN5TM0,s_C_EN5TM0_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,0.06
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,122
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC008_WES
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.066666667
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.34
+rectal_radiation_msk_2024,P-0066749,s_C_33XALX_P002_d02,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,MSI_SCORE,MSI Score,NUMBER,False,7.43
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,MUTATION_COUNT,Mutation Count,NUMBER,False,156
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC060_WES
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.266666667
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.57
+rectal_radiation_msk_2024,C-5U25TR,s_C_5U25TR_P003_d03,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,0.13
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,85
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC014_WES
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.8
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.37
+rectal_radiation_msk_2024,P-0039051,s_C_6TKR0Y_P001_d01,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,0.34
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,103
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC016_WES
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.466666667
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.3
+rectal_radiation_msk_2024,P-0045190,s_C_7F0F22_P001_d01,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,MSI_SCORE,MSI Score,NUMBER,False,5.43
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,MUTATION_COUNT,Mutation Count,NUMBER,False,232
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC048_WES
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.733333333
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.52
+rectal_radiation_msk_2024,C-CAYX31,s_C_CAYX31_P003_d03,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,0.01
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,61
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC003_WES
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.033333333
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.37
+rectal_radiation_msk_2024,P-0032254,s_C_CR52MM_P002_d02,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,0.66
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,129
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC013_WES
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.3
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.49
+rectal_radiation_msk_2024,P-0037948,s_C_ECM8TT_P002_d02,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,0.56
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,71
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC012_WES
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.366666667
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.52
+rectal_radiation_msk_2024,P-0038170,s_C_F5MTD0_P001_d01,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,0.33
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,76
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC058_WES
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.533333333
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.39
+rectal_radiation_msk_2024,P-0079151,s_C_HR5FRW_P002_d02,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC017_WES
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,0.54
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,134
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.466666667
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.44
+rectal_radiation_msk_2024,P-0065318,s_C_JH5PMJ_P002_d02,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,0.16
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,67
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC006_WES
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.2
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.19
+rectal_radiation_msk_2024,P-0063415,s_C_JX9JHM_P001_d01,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,MSI_SCORE,MSI Score,NUMBER,False,0.55
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,201
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC020_WES
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.7
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.38
+rectal_radiation_msk_2024,P-0010422,s_C_K4CY9U_M003_d02,WGD,WGD,STRING,False,TRUE
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,0.17
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,90
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC022_WES
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.38
+rectal_radiation_msk_2024,P-0038684,s_C_K99T0C_P002_d02,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,MSI_SCORE,MSI Score,NUMBER,False,0.75
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,MUTATION_COUNT,Mutation Count,NUMBER,False,47
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,SAMPLE_CLASS,Sample Class,STRING,False,Resection
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC059_WES
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.566666667
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.26
+rectal_radiation_msk_2024,C-M90NHT,s_C_M90NHT_P004_d04,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,1.6
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,96
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC009_WES
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.2
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.3
+rectal_radiation_msk_2024,P-0011282,s_C_MNLA8T_P001_d01,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,MSI_SCORE,MSI Score,NUMBER,False,0.17
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,MUTATION_COUNT,Mutation Count,NUMBER,False,85
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC002_WES
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.866666667
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.18
+rectal_radiation_msk_2024,P-0045906,s_C_P6VVKP_P001_d01,WGD,WGD,STRING,False,FALSE
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,GENE_PANEL,Gene Panel,STRING,False,IDT_Exome_v2_FP_BAITS
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,MSI_SCORE,MSI Score,NUMBER,False,1.08
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,MUTATION_COUNT,Mutation Count,NUMBER,False,83
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,PRIMARY_SITE,Primary Tumor Site,STRING,False,Rectum
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,SAMPLE_CLASS,Sample Class,STRING,False,Biopsy
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,SAMPLE_DISPLAY_NAME,Sample Display Name,STRING,False,PSRC063_WES
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,SEQUENCING_PLATFORM,Sequencing Platform,STRING,False,WXS
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.766666667
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,TUMOR_PURITY,Tumor Purity,NUMBER,False,0.72
+rectal_radiation_msk_2024,P-0076840,s_C_P74H4L_P002_d02,WGD,WGD,STRING,False,FALSE

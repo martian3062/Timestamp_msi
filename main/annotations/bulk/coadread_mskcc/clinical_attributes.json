@@ -1,0 +1,137 @@
+[
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Follow up time months",
+    "description": "Follow up time months",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "FOLLOW_UP_TIME_MONTHS",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "The anatomic location to which the cancer has spread.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Resection timing",
+    "description": "Resection timing",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "RESECTION_TIMING",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type of sample (i.e., normal, primary, met, recurrence).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "9",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Tumor Size",
+    "description": "Tumor size.",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_SIZE",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Tumor treated",
+    "description": "Tumor treated",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_TREATED",
+    "studyId": "coadread_mskcc"
+  },
+  {
+    "displayName": "Patient's Vital Status",
+    "description": "The survival state of the person.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "VITAL_STATUS",
+    "studyId": "coadread_mskcc"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "name": "Colorectal Cancer (HTAN MSK, Nature 2025)",
+  "description": "Targeted genomic and single-cell RNA sequencing of normal colon, primary colorectal cancer, and matched metastatic samples from 29 patients.",
+  "publicStudy": true,
+  "pmid": "39478232",
+  "citation": "Moorman et al. Nature 2025",
+  "groups": "",
+  "status": 0,
+  "importDate": "2026-02-17 17:00:37",
+  "allSampleCount": 1,
+  "sequencedSampleCount": 28,
+  "cnaSampleCount": 28,
+  "mrnaRnaSeqSampleCount": 81,
+  "mrnaRnaSeqV2SampleCount": 0,
+  "mrnaMicroarraySampleCount": 0,
+  "miRnaSampleCount": 0,
+  "methylationHm27SampleCount": 0,
+  "rppaSampleCount": 0,
+  "massSpectrometrySampleCount": 0,
+  "completeSampleCount": 0,
+  "readPermission": true,
+  "treatmentCount": 0,
+  "structuralVariantCount": 3,
+  "resourceCounts": [
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "PATIENT",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 58,
+      "patientCount": 23,
+      "studyId": "crc_hta8_htan_2024"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "SAMPLE",
+      "priority": "1",
+      "openByDefault": true,
+      "sampleCount": 58,
+      "patientCount": 23,
+      "studyId": "crc_hta8_htan_2024"
+    },
+    {
+      "resourceId": "MXIF",
+      "displayName": "MxIF Image",
+      "description": "MxIF Images",
+      "resourceType": "SAMPLE",
+      "priority": "2",
+      "openByDefault": true,
+      "sampleCount": 58,
+      "patientCount": 23,
+      "studyId": "crc_hta8_htan_2024"
+    }
+  ],
+  "studyId": "crc_hta8_htan_2024",
+  "cancerTypeId": "coadread",
+  "cancerType": {
+    "name": "Colorectal Adenocarcinoma",
+    "dedicatedColor": "SaddleBrown",
+    "shortName": "COADREAD",
+    "parent": "bowel",
+    "cancerTypeId": "coadread"
+  },
+  "referenceGenome": "hg19"
+}

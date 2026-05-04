@@ -1,0 +1,299 @@
+[
+  {
+    "displayName": "Age at Metastases",
+    "description": "Age at Metastases",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_MET",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "APC Groups",
+    "description": "APC Groups",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "APC_GROUPS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Carcinomatosis",
+    "description": "Carcinomatosis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CARCINOMATOSIS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Differentiation",
+    "description": "Differentiation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "DIFFERENTIATION",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "ECOG",
+    "description": "ECOG",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ECOG",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "First line treatment at Met",
+    "description": "First line treatment at time of metastasis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "FIRST_LINE_MET_TX",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Histology",
+    "description": "Histology",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "HISTOLOGY",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "LST",
+    "description": "LST",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "LST",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Bone Metastasis",
+    "description": "Bone Metastasis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASIS_BONE",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Liver Metastasis",
+    "description": "Liver Metastasis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASIS_LIVER",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Lung Metastasis",
+    "description": "Lung Metastasis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASIS_LUNG",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Metastasis Other",
+    "description": "Metastasis Other",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASIS_OTHER",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "MSI Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "MSI Type",
+    "description": "MSI Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_TYPE",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival in months since initial diagonosis.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "9",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Progress Free Survival (Months)",
+    "description": "Progress Free Survival (Months)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PFS_MONTHS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Progression Free Status",
+    "description": "Progression Free Status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PFS_STATUS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Prior Adjuvant Chemo",
+    "description": "Prior Adjuvant Chemo",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIOR_ADJUVANT_CHEMO",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Stage At Diagnosis",
+    "description": "Stage At Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE_AT_DIAGNOSIS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Surgery Primary Tumor",
+    "description": "Surgery Primary Tumor",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SURGERY_PRIMARY_TUMOR",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Timing Mets",
+    "description": "Timing Mets",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TIMING_METS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Tumor Location",
+    "description": "Tumor Location",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_LOCATION",
+    "studyId": "crc_apc_impact_2020"
+  },
+  {
+    "displayName": "Used in Genomic Analysis",
+    "description": "Used in Genomic Analysis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "USED_IN_GENOMIC_ANALYSIS",
+    "studyId": "crc_apc_impact_2020"
+  }
+]

@@ -1,0 +1,88 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Diagnosis Age,Age at which a condition or disease was first diagnosed.,NUMBER,True,1,AGE,coadread_tcga
+American Joint Committee on Cancer Metastasis Stage Code,"Code to represent the defined absence or presence of distant spread or metastases (M) to locations via vascular channels or lymphatics beyond the regional lymph nodes, using criteria established by the American Joint Committee on Cancer (AJCC).",STRING,True,1,AJCC_METASTASIS_PATHOLOGIC_PM,coadread_tcga
+Neoplasm Disease Lymph Node Stage American Joint Committee on Cancer Code,The codes that represent the stage of cancer based on the nodes present (N stage) according to criteria based on multiple editions of the AJCC's Cancer Staging Manual.,STRING,True,1,AJCC_NODES_PATHOLOGIC_PN,coadread_tcga
+Neoplasm Disease Stage American Joint Committee on Cancer Code,"The extent of a cancer, especially whether the disease has spread from the original site to other parts of the body based on AJCC staging criteria.",STRING,True,1,AJCC_PATHOLOGIC_TUMOR_STAGE,coadread_tcga
+American Joint Committee on Cancer Publication Version Type,"The version or edition of the American Joint Committee on Cancer Cancer Staging Handbooks, a publication by the group formed for the purpose of developing a system of clinical staging for cancer that is acceptable to the American medical profession and is compatible with other accepted classifications.",STRING,True,1,AJCC_STAGING_EDITION,coadread_tcga
+American Joint Committee on Cancer Tumor Stage Code,"Code of pathological T (primary tumor) to define the size or contiguous extension of the primary tumor (T), using staging criteria from the American Joint Committee on Cancer (AJCC).",STRING,True,1,AJCC_TUMOR_PATHOLOGIC_PT,coadread_tcga
+BRAF Gene Analysis Indicator,BRAF Gene Analysis Indicator,STRING,True,1,BRAF_GENE_ANALYSIS_INDICATOR,coadread_tcga
+BRAF Gene Analysis Result,BRAF Gene Analysis Result,STRING,True,1,BRAF_GENE_ANALYSIS_RESULT,coadread_tcga
+Cancer Type,Cancer type,STRING,False,1,CANCER_TYPE,coadread_tcga
+Cancer Type Detailed,Cancer type detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_tcga
+Neoplasm American Joint Committee on Cancer Clinical Group Stage,"Stage group determined from clinical information on the tumor (T), regional node (N) and metastases (M) and by grouping cases with similar prognosis for cancer.",STRING,True,1,CLINICAL_STAGE,coadread_tcga
+Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis M Stage,Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.,STRING,True,1,CLIN_M_STAGE,coadread_tcga
+Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node N Stage,Extent of the regional lymph node involvement for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.,STRING,True,1,CLIN_N_STAGE,coadread_tcga
+Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T Stage,Extent of the primary cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.,STRING,True,1,CLIN_T_STAGE,coadread_tcga
+Days to Sample Collection.,Days to sample collection.,NUMBER,False,1,DAYS_TO_COLLECTION,coadread_tcga
+Last Alive Less Initial Pathologic Diagnosis Date Calculated Day Value,"Time interval from the last day on which a person is known to be alive to the date of initial pathologic diagnosis, represented as a calculated number of days.",NUMBER,True,1,DAYS_TO_INITIAL_PATHOLOGIC_DIAGNOSIS,coadread_tcga
+days_to_patient_progression_free,days_to_patient_progression_free,STRING,True,1,DAYS_TO_PATIENT_PROGRESSION_FREE,coadread_tcga
+Days to Sample Procurement,Days to sample procurement.,STRING,False,1,DAYS_TO_SPECIMEN_COLLECTION,coadread_tcga
+days_to_tumor_progression,days_to_tumor_progression,STRING,True,1,DAYS_TO_TUMOR_PROGRESSION,coadread_tcga
+Disease Free (Months),Disease free (months) since initial diagnosis.,NUMBER,True,1,DFS_MONTHS,coadread_tcga
+Disease Free Status,Disease free status since initial diagnosis.,STRING,True,1,DFS_STATUS,coadread_tcga
+Disease code,Disease code,STRING,True,1,DISEASE_CODE,coadread_tcga
+Ethnicity Category,The text for reporting information about ethnicity.,STRING,True,1,ETHNICITY,coadread_tcga
+Lymphomatous Extranodal Site Involvement Indicator,Indicator that identifies whether a patient with malignant lymphoma has lymphomatous involvement of an extranodal site.,STRING,True,1,EXTRANODAL_INVOLVEMENT,coadread_tcga
+Form completion date,Form completion date,STRING,True,1,FORM_COMPLETION_DATE,coadread_tcga
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,coadread_tcga
+Patient Height,Height in centimeters.,NUMBER,True,1,HEIGHT,coadread_tcga
+Neoplasm Histologic Type Name,Text term for the structural pattern of cancer cells used to define a microscopic diagnosis.,STRING,True,1,HISTOLOGICAL_DIAGNOSIS,coadread_tcga
+Neoadjuvant Therapy Type Administered Prior To Resection Text,Text term to describe the patient's history of neoadjuvant treatment and the kind of treament given prior to resection of the tumor.,STRING,True,1,HISTORY_NEOADJUVANT_TRTYN,coadread_tcga
+Prior Cancer Diagnosis Occurence,Text term to describe the patient's history of prior cancer diagnosis and the spatial location of any previous cancer occurrence.,STRING,True,1,HISTORY_OTHER_MALIGNANCY,coadread_tcga
+ICD-10 Classification,10th revision of the International Statistical Classification of Diseases and Related Health Problems.,STRING,True,1,ICD_10,coadread_tcga
+"International Classification of Diseases for Oncology, Third Edition ICD-O-3 Histology Code","The third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms._The study of the structure of the cells and their arrangement to constitute tissues and, finally, the association among these to form organs.  In pathology, the microscopic process of identifying normal and abnormal morphologic characteristics in tissues, by employing various cytochemical and immunocytochemical stains._A system of numbered categories for representation of data.",STRING,True,1,ICD_O_3_HISTOLOGY,coadread_tcga
+"International Classification of Diseases for Oncology, Third Edition ICD-O-3 Site Code","The third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms._The description of an anatomical region or of a body part._Named locations of, or within, the body._A system of numbered categories for representation of data.",STRING,True,1,ICD_O_3_SITE,coadread_tcga
+Informed consent verified,Informed consent verified,STRING,True,1,INFORMED_CONSENT_VERIFIED,coadread_tcga
+Initial pathologic diagnosis method,Initial pathologic diagnosis method,STRING,True,1,INITIAL_PATHOLOGIC_DIAGNOSIS_METHOD,coadread_tcga
+Year Cancer Initial Diagnosis,Numeric value to represent the year of an individual's initial pathologic diagnosis of cancer.,NUMBER,True,1,INITIAL_PATHOLOGIC_DX_YEAR,coadread_tcga
+Is FFPE,If the sample is from FFPE,STRING,False,1,IS_FFPE,coadread_tcga
+Kras gene analysis indicator,Kras gene analysis indicator,STRING,True,1,KRAS_GENE_ANALYSIS_INDICATOR,coadread_tcga
+KRAS Mutation,KRAS mutation is present.,STRING,True,1,KRAS_MUTATION,coadread_tcga
+Longest Dimension,Longest dimension of the sample measured in millimeters,NUMBER,False,1,LONGEST_DIMENSION,coadread_tcga
+Lymphovascular invasion indicator,Lymphovascular invasion indicator,STRING,True,1,LYMPHOVASCULAR_INVASION_INDICATOR,coadread_tcga
+Primary Lymph Node Presentation Assessment Ind-3,the yes/no/unknown indicator whether a lymph node assessment was performed at the primary presentation of disease.,STRING,True,1,LYMPH_NODES_EXAMINED,coadread_tcga
+Positive Finding Lymph Node Hematoxylin and Eosin Staining Microscopy Count,Numeric value to signify the count of positive lymph nodes identified through hematoxylin and eosin (H&E) staining light microscopy.,NUMBER,True,1,LYMPH_NODES_EXAMINED_HE_COUNT,coadread_tcga
+Positive Finding Lymph Node Keratin Immunohistochemistry Staining Method Count,"Numeric value to signify the count of positive lymph nodes identified through keratin immunohistochemistry (IHC) staining method,",NUMBER,True,1,LYMPH_NODES_EXAMINED_IHC_COUNT,coadread_tcga
+Lymph Node(s) Examined Number,The total number of lymph nodes removed and pathologically assessed for disease.,NUMBER,True,1,LYMPH_NODE_EXAMINED_COUNT,coadread_tcga
+First Pathologic Diagnosis Biospecimen Acquisition Method Type,Text name of the procedure to secure the tissue used for the original pathologic diagnosis.,STRING,False,1,METHOD_OF_SAMPLE_PROCUREMENT,coadread_tcga
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_tcga
+New Neoplasm Event Post Initial Therapy Indicator,Yes/No/Unknown indicator to identify whether a patient has had a new tumor event after initial treatment.,STRING,True,1,NEW_TUMOR_EVENT_AFTER_INITIAL_TREATMENT,coadread_tcga
+Oct embedded,Oct embedded,STRING,False,1,OCT_EMBEDDED,coadread_tcga
+Oncotree Code,Oncotree code,STRING,False,1,ONCOTREE_CODE,coadread_tcga
+Overall Survival (Months),Overall survival in months since initial diagonosis.,NUMBER,True,1,OS_MONTHS,coadread_tcga
+Overall Survival Status,Overall patient survival status.,STRING,True,1,OS_STATUS,coadread_tcga
+Specimen Collection Method,The type of procedure or method used to collect the specimen.,STRING,False,1,OTHER_METHOD_OF_SAMPLE_PROCUREMENT,coadread_tcga
+Other Patient ID,Legacy DMP patient identifier (DMPnnnn),STRING,True,1,OTHER_PATIENT_ID,coadread_tcga
+Other Sample ID,Legacy DMP sample identifier (DMPnnnn),STRING,False,1,OTHER_SAMPLE_ID,coadread_tcga
+Pathology Report File Name,Pathology Report File Name,STRING,False,1,PATHOLOGY_REPORT_FILE_NAME,coadread_tcga
+Pathology report uuid,Pathology report uuid,STRING,False,1,PATHOLOGY_REPORT_UUID,coadread_tcga
+Perineural Invasion,Perineural invasion.,STRING,True,1,PERINEURAL_INVASION,coadread_tcga
+Adjuvant Postoperative Pharmaceutical Therapy Administered Indicator,Indicator to signify whether or not whether the patient had adjuvant/post-operative pharmaceutical therapy.,STRING,True,1,PHARMACEUTICAL_TX_ADJUVANT,coadread_tcga
+Patient Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,True,1,PRIMARY_SITE_PATIENT,coadread_tcga
+Project code,Project code,STRING,True,1,PROJECT_CODE,coadread_tcga
+Tissue Prospective Collection Indicator,"Text indicator for the time frame of tissue procurement, indicating that the tissue was procured in parallel to the project.",STRING,True,1,PROSPECTIVE_COLLECTION,coadread_tcga
+Race Category,The text for reporting information about race.,STRING,True,1,RACE,coadread_tcga
+Did patient start adjuvant postoperative radiotherapy?,A yes/no indicator that asks whether the patient started adjuvant postoperative radiotherapy.,STRING,True,1,RADIATION_TREATMENT_ADJUVANT,coadread_tcga
+Surgical Margin Resection Status,Text terms to describe the status of a tissue margin following surgical resection.,STRING,True,1,RESIDUAL_TUMOR,coadread_tcga
+Tissue Retrospective Collection Indicator,"Text indicator for the time frame of tissue procurement, indicating that the tissue was obtained and stored prior to the initiation of the project.",STRING,True,1,RETROSPECTIVE_COLLECTION,coadread_tcga
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_tcga
+Sample Initial Weight,Sample Initial Weight,NUMBER,False,1,SAMPLE_INITIAL_WEIGHT,coadread_tcga
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,1,SAMPLE_TYPE,coadread_tcga
+Sample type id,Sample type id,STRING,False,1,SAMPLE_TYPE_ID,coadread_tcga
+Sex,Sex,STRING,True,1,SEX,coadread_tcga
+Shortest Dimension,Shortest Dimension,NUMBER,False,1,SHORTEST_DIMENSION,coadread_tcga
+Tumor Tissue Site,Text term that describes the anatomic site of the tumor or disease.,STRING,True,1,SITE_OF_TUMOR_TISSUE,coadread_tcga
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,coadread_tcga
+Specimen Current Weight,The weight of the specimen.,STRING,False,1,SPECIMEN_CURRENT_WEIGHT,coadread_tcga
+Specimen Freezing Means,The method used to freeze the tissue after removal from the patient.,STRING,False,1,SPECIMEN_FREEZING_METHOD,coadread_tcga
+Specimen Second Longest Dimension,The second longest dimension of the specimen.,NUMBER,False,1,SPECIMEN_SECOND_LONGEST_DIMENSION,coadread_tcga
+Stage Other,Stage Other,STRING,True,1,STAGE_OTHER,coadread_tcga
+Time between clamping and freezing,Time between clamping and freezing,STRING,False,1,TIME_BETWEEN_CLAMPING_AND_FREEZING,coadread_tcga
+Time between excision and freezing,Time between excision and freezing,STRING,False,1,TIME_BETWEEN_EXCISION_AND_FREEZING,coadread_tcga
+Tissue Source Site,"A Tissue Source Site collects samples (tissue, cell, or blood) and cliincal metadata which are then sent to tha Biospecimen Core Resource.",STRING,True,1,TISSUE_SOURCE_SITE,coadread_tcga
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_tcga
+Primary Therapy Outcome Success Type,Text term for the measure of success of outcome after primary treatment (surgery and adjuvant therapies).,STRING,True,1,TREATMENT_OUTCOME_FIRST_COURSE,coadread_tcga
+Person Neoplasm Status,The state or condition of an individual's neoplasm at a particular point in time.,STRING,True,1,TUMOR_STATUS,coadread_tcga
+Vascular invasion indicator,Vascular invasion indicator,STRING,True,1,VASCULAR_INVASION_INDICATOR,coadread_tcga
+Vial number,Vial number,STRING,False,1,VIAL_NUMBER,coadread_tcga
+Patient Weight,Weight measured in kilograms.,NUMBER,True,1,WEIGHT,coadread_tcga

@@ -1,0 +1,587 @@
+[
+  {
+    "displayName": "Diagnosis Age",
+    "description": "Age at which a condition or disease was first diagnosed.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Age at Which Sequencing was Reported (Years)",
+    "description": "Age (in years) at which sequencing was reported",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "AGE_AT_SEQ_REPORTED_YEARS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Anti-integrin (Yes/No)",
+    "description": "Anti-integrin (Yes/No)",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "ANTI_INTEGRIN",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Archer Panel",
+    "description": "Archer Panel",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "ARCHER",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Bone FSM",
+    "description": "Bone FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "BONE_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Bone Time Interval",
+    "description": "Bone Time Interval",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "BONE_TIME_INTERVAL",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Brain FSM",
+    "description": "Brain FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "BRAIN_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Classification of primary site ",
+    "description": "Classification of primary site ",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CLASSIFICATION_OF_PRIMARY_SITE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Cytotoxic Treatment",
+    "description": "Cytotoxic Treatment",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "CYTOTOXIC_TREATMENT",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Differentiation",
+    "description": "Differentiation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "DIFFERENTIATION",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Duration of IBD at diagnosis (=<10yrs, 11-20yrs, >20yrs)",
+    "description": "Duration of IBD at diagnosis (=<10yrs, 11-20yrs, >20yrs)",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DURATION_IBD_AT_DX_10_20_YEARS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Duration of IBD at diagnosis (<10yrs or >/=10yrs)",
+    "description": "Duration of IBD at diagnosis (<10yrs or >/=10yrs)",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "DURATION_IBD_AT_DX_10_YEARS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Error Percent",
+    "description": "Error percent.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ERROR_PERCENT",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Ethnicity Category",
+    "description": "The text for reporting information about ethnicity.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "ETHNICITY",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "First Site of Mets",
+    "description": "First Site of Mets",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "FIRST_SITE_OF_METS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Gene Panel",
+    "description": "Gene panel.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GENE_PANEL",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Gyn FSM",
+    "description": "Gyn FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GYN_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "IBD",
+    "description": "IBD",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "IBD",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "IBD Status At Diagnosis",
+    "description": "IBD Status At Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "IBD_STATUS_AT_DIAGNOSIS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Institute Source",
+    "description": "Institute Source",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "INSTITUTE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Interval From Last Colonoscopy to CAC Dx",
+    "description": "Interval From Last Colonoscopy to CAC Dx",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "INTERVAL_FROM_LAST_COLONOSCOPY_TO_CAC_DX",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Liver FSM",
+    "description": "Liver FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "LIVER_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Liver Time Interval",
+    "description": "Liver Time Interval",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "LIVER_TIME_INTERVAL",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "LNs FSM",
+    "description": "LNs FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "LN_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Lung FSM",
+    "description": "Lung FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "LUNG_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Lung Time Interval",
+    "description": "Lung Time Interval",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "LUNG_TIME_INTERVAL",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Median Coverage",
+    "description": "Median coverage.",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MEDIAN_COVERAGE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "The anatomic location to which the cancer has spread.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "MSI Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "MSI Type",
+    "description": "MSI Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_TYPE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival in months since date of sequencing. If patient died before sequencing overall survival in months is set to '0'. If patient is alive and last contact date is before date of sequencing, overall survival in months is set to 'NA'",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Other FSM",
+    "description": "Other FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "OTHER_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "PAO FSM",
+    "description": "PAO FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PAO_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Pathology of Normal Mucosa",
+    "description": "Pathology of Normal Mucosa",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PATHOLOGY_OF_NORMAL_MUCOSA",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Pelvis FSM",
+    "description": "Pelvis FSM",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PELVIS_FSM",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Presentation",
+    "description": "Presentation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRESENTATION",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Primary Histology",
+    "description": "Primary Histology",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_HISTOLOGY",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Race Category",
+    "description": "The text for reporting information about race.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RACE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Radiation Adjuvant Therapy",
+    "description": "Radiation Adjuvant Therapy",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RADADJUVANTRX",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Resectable",
+    "description": "Resectable",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "RESECTABLE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Relapse Free Status (Months)",
+    "description": "Relapse Free Status (Months)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RFS_MONTHS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Relapse Free Status",
+    "description": "Relapse Free Status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RFS_STATUS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Salicylates",
+    "description": "Salicylates",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SALICYLATES",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Sample coverage",
+    "description": "Sample coverage",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COVERAGE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type of sample (i.e., normal, primary, met, recurrence).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Special Histology",
+    "description": "Special Histology",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SPECIAL_HISTOLOGY",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Specimen Preservation Type",
+    "description": "The method used for preparing the tissue for examination and study.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SPECIMEN_PRESERVATION_TYPE",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Stage at Diagnosis",
+    "description": "Stage At Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE_AT_DIAGNOSIS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Steroids (Yes/No)",
+    "description": "Steroids (Yes/No)",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "STEROIDS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Tissue Sequenced",
+    "description": "Tissue Sequenced",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TISSUE_SEQUENCED",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "TNF (Yes/No)",
+    "description": "TNF (Yes/No)",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TNF",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Tumor Purity",
+    "description": "Tumor Purity",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Patient's Vital Status",
+    "description": "The survival state of the person.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "VITAL_STATUS",
+    "studyId": "bowel_colitis_msk_2022"
+  },
+  {
+    "displayName": "Vital Status Code",
+    "description": "Vital Status Code",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "VITAL_STATUS_CODE",
+    "studyId": "bowel_colitis_msk_2022"
+  }
+]

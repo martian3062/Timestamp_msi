@@ -1,0 +1,47 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Sequencing,Age at Profile Sequencing,NUMBER,False,1,AGE_AT_SEQ,crc_orion_2024
+Age at Diagnosis,Age in years of patients at diagnosis,NUMBER,True,1,AGE_DX,crc_orion_2024
+APOBEC Signature,APOBEC signature detected in this sample,STRING,False,1,APOBEC_PATH,crc_orion_2024
+Tumor Border Pattern,Morphology of the tumor border - Infiltrating or Pushing,STRING,True,1,BORDER,crc_orion_2024
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_orion_2024
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_orion_2024
+Cohort,Cohort,STRING,True,1,COHORT,crc_orion_2024
+Tumor Deposits,Are there tumor deposits as identified by pathology annotation,STRING,True,1,DEPOSITS,crc_orion_2024
+Distant Metastasis at Diagnosis,Distant mets at diagnosis,STRING,True,1,DISTANT_METS_AT_DIAGNOSIS,crc_orion_2024
+Grade,Pathological grade as Low or High,STRING,True,1,GRADE,crc_orion_2024
+Histology,Pathologist annotation of histology,STRING,True,1,HISTOLOGY,crc_orion_2024
+HTAN Participant ID,HTAN participant ID,STRING,True,1,HTAN_PARTICIPANT_ID,crc_orion_2024
+Hypermutant Status,Hypermutant status,STRING,True,1,HYPERMUTANT,crc_orion_2024
+Resection Location,Anatomical location of resection,STRING,True,1,LOCATION,crc_orion_2024
+Location of Recurrence,Anatomical location of recurrent disease,STRING,True,1,LOCATION_OF_RECURRENCE,crc_orion_2024
+Lymphovascular Invasion,Lymphovascular invasion as identified by pathology annotation,STRING,True,1,LVI,crc_orion_2024
+MMR IHC,Mismatch repair status by IHC testing,STRING,True,1,MMR_IHC,crc_orion_2024
+MMR Status,Binary describing if sample is pMMR or dMMR - proficient pMMR or deficient dMMR,STRING,True,1,MMR_STATUS,crc_orion_2024
+Mucinous Feature,Mucinous feature,STRING,False,1,MUCINOUS,crc_orion_2024
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_orion_2024
+Oncotree Code,Oncotree Primary Diagnosis Code,STRING,False,1,ONCOTREE_CODE,crc_orion_2024
+Overall Survival Status (Months),Overall survival in months defined from primary resection,NUMBER,True,1,OS_MONTHS,crc_orion_2024
+Overall Survival Status,Overall survival status defined from primary resection,STRING,True,1,OS_STATUS,crc_orion_2024
+Panel Version,Version of Oncopanel,STRING,False,1,PANEL_VERSION,crc_orion_2024
+Progression-Free Survival Status (Months),Progression-free survival in months defined from primary resection to radiographic progression on cross-sectional imaging (defined by increase in the size or number of radiographically evident tumors),NUMBER,True,1,PFS_MONTHS,crc_orion_2024
+Progression-Free Survival Status,Progression Free Survival defined from primary resection to radiographic progression,STRING,True,1,PFS_STATUS,crc_orion_2024
+Perineural Invasion,Perineural invasion as identified by pathology annotation,STRING,True,1,PNI,crc_orion_2024
+POLE Signature,POLE signature detected in this sample,STRING,False,1,POLE_PATH,crc_orion_2024
+Primary Tumor Status,If the tumor is a primary tumor (1) or metastasis or otherwise (0),STRING,True,1,PRIMARY_STATUS,crc_orion_2024
+Recurrence,Did the tumor recur,STRING,True,1,RECURRENCE,crc_orion_2024
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_orion_2024
+Sex,Sex,STRING,True,1,SEX,crc_orion_2024
+Tumor Side,Tumor side,STRING,False,1,SIDE,crc_orion_2024
+Slide ID,LSP slide ID,STRING,True,1,SLIDE_ID,crc_orion_2024
+Somatic Status,Somatic status,STRING,False,1,SOMATIC_STATUS,crc_orion_2024
+Stage,Stage Number,STRING,False,1,STAGE NUMBER,crc_orion_2024
+Stage at Diagnosis,AJCC stage at diagnosis,STRING,True,1,STAGE_AT_DIAGNOSIS,crc_orion_2024
+Temozolomide Signature,Temozolomide signature detected in this sample,STRING,False,1,TEMOZOLOMIDE_PATH,crc_orion_2024
+Tumor Infiltrating Lymphocytes,Tumor infiltrating lymphocytes identified by pathology annotation,STRING,True,1,TIL,crc_orion_2024
+Tumor-Infiltrating Lymphocytes  Number,Number of TIL's,NUMBER,False,1,TIL_NUM,crc_orion_2024
+tipMMR,T cell-infiltrated mismatch repair-proficient (tipMMR) or T cell-depleted mismatch repair-proficient (tdpMMR) tumors,STRING,True,1,TIPMMR,crc_orion_2024
+Tumor Mutational Burden,Tumor Mutational Burden,NUMBER,False,1,TMB,crc_orion_2024
+TNM Stage at Diagnosis,"Pathological TNM (Tumor, Node, Metastasis) stage at diagnosis",STRING,True,1,TNM_AT_DIAGNOSIS,crc_orion_2024
+Tobacco Signature,Tobacco signature detected in this sample,STRING,False,1,TOBACCO_PATH,crc_orion_2024
+Tumor Purity,Tumor Purity Percentage,NUMBER,False,1,TUMOR_PURITY,crc_orion_2024
+UVA Signature,UVA signature detected in this sample,STRING,False,1,UVA_PATH,crc_orion_2024

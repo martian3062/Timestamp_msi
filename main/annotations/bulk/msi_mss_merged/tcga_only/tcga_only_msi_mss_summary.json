@@ -1,0 +1,23 @@
+{
+  "studies_used": [
+    "coadread_tcga_pub",
+    "coadread_tcga_pan_can_atlas_2018"
+  ],
+  "legacy_enrichment_only": [
+    "coadread_tcga"
+  ],
+  "total_rows": 797,
+  "total_msi_h_rows": 111,
+  "total_mss_rows": 686,
+  "direct_pub_rows": 231,
+  "direct_pub_msi_h_rows": 38,
+  "direct_pub_mss_rows": 193,
+  "pancan_score_rows": 566,
+  "pancan_score_msi_h_rows": 73,
+  "pancan_score_mss_rows": 493,
+  "notes": {
+    "coadread_tcga_pub": "direct MSI_STATUS labels; MSI-L and Not Evaluable excluded",
+    "coadread_tcga_pan_can_atlas_2018": "MSI labels come from score-derived repo table using MANTIS/MSIsensor thresholds",
+    "coadread_tcga": "no direct MSI field; kept only as enrichment columns where available"
+  }
+}

@@ -1,0 +1,16 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,coadread_mskcc
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_mskcc
+Follow up time months,Follow up time months,NUMBER,True,1,FOLLOW_UP_TIME_MONTHS,coadread_mskcc
+Metastatic Site,The anatomic location to which the cancer has spread.,STRING,False,1,METASTATIC_SITE,coadread_mskcc
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_mskcc
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,coadread_mskcc
+Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,1,PRIMARY_SITE,coadread_mskcc
+Resection timing,Resection timing,STRING,False,1,RESECTION_TIMING,coadread_mskcc
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_mskcc
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,9,SAMPLE_TYPE,coadread_mskcc
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,coadread_mskcc
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_mskcc
+Tumor Size,Tumor size.,NUMBER,False,1,TUMOR_SIZE,coadread_mskcc
+Tumor treated,Tumor treated,STRING,False,1,TUMOR_TREATED,coadread_mskcc
+Patient's Vital Status,The survival state of the person.,STRING,True,1,VITAL_STATUS,coadread_mskcc

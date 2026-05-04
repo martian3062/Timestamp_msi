@@ -1,0 +1,13 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,coadread_genentech
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_genentech
+Diagnosis,Diagnosis.,STRING,True,1,DIAGNOSIS,coadread_genentech
+MSI Status,MSI status.,STRING,False,1,MSI_STATUS,coadread_genentech
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_genentech
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,coadread_genentech
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_genentech
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,coadread_genentech
+Tissue Source Site,"A Tissue Source Site collects samples (tissue, cell, or blood) and cliincal metadata which are then sent to tha Biospecimen Core Resource.",STRING,False,1,TISSUE_SOURCE_SITE,coadread_genentech
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_genentech
+tumor content,tumor content,NUMBER,False,1,TUMOR_CONTENT,coadread_genentech
+Tumor Type,Tumor Type,STRING,False,1,TUMOR_TYPE,coadread_genentech

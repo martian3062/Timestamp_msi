@@ -63,7 +63,7 @@ def trigger_crc_triad(req: schemas.TrainMilRequest, background_tasks: Background
     triad_runtime.enqueue_triad_experiments(triad_specs)
     background_tasks.add_task(triad_runtime.run_crc_triad_bundle, triad_specs)
     return schemas.TriadRunResponse(
-        message="CRC complex triad queued on the VM using the full CRC-VAL-HE-7K class tree.",
+        message="CRC two-approach runner queued on the VM using the full CRC-VAL-HE-7K class tree.",
         experiment_ids=[str(spec["experiment_id"]) for spec in triad_specs],
     )
 
@@ -77,7 +77,7 @@ def trigger_tcga_slide_triad(
     triad_runtime.enqueue_triad_experiments(triad_specs)
     background_tasks.add_task(triad_runtime.run_tcga_slide_triad_bundle, bundle_id, req.model_dump(), triad_specs)
     return schemas.TCGASlideTriadRunResponse(
-        message="TCGA COAD adaptive triad queued on the VM. Matching annotations, downloading slides, preprocessing, pathology-first feature fallback, and three-approach training will run automatically.",
+        message="TCGA COAD two-approach runner queued on the VM. Matching annotations, downloading slides, preprocessing, pathology-first feature fallback, and two-approach training will run automatically.",
         bundle_id=bundle_id,
         experiment_ids=[str(spec["experiment_id"]) for spec in triad_specs],
         remote_status_path=triad_runtime.tcga_slide_triad_status_path(bundle_id),

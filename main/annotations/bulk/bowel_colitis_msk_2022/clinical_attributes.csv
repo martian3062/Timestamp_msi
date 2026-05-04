@@ -1,0 +1,66 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Diagnosis Age,Age at which a condition or disease was first diagnosed.,NUMBER,True,1,AGE,bowel_colitis_msk_2022
+Age at Which Sequencing was Reported (Years),Age (in years) at which sequencing was reported,NUMBER,False,0,AGE_AT_SEQ_REPORTED_YEARS,bowel_colitis_msk_2022
+Anti-integrin (Yes/No),Anti-integrin (Yes/No),STRING,True,1,ANTI_INTEGRIN,bowel_colitis_msk_2022
+Archer Panel,Archer Panel,STRING,False,0,ARCHER,bowel_colitis_msk_2022
+Bone FSM,Bone FSM,STRING,False,1,BONE_FSM,bowel_colitis_msk_2022
+Bone Time Interval,Bone Time Interval,NUMBER,False,1,BONE_TIME_INTERVAL,bowel_colitis_msk_2022
+Brain FSM,Brain FSM,STRING,False,1,BRAIN_FSM,bowel_colitis_msk_2022
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,bowel_colitis_msk_2022
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,bowel_colitis_msk_2022
+Classification of primary site ,Classification of primary site ,STRING,False,1,CLASSIFICATION_OF_PRIMARY_SITE,bowel_colitis_msk_2022
+Cytotoxic Treatment,Cytotoxic Treatment,STRING,True,1,CYTOTOXIC_TREATMENT,bowel_colitis_msk_2022
+Differentiation,Differentiation,STRING,False,1,DIFFERENTIATION,bowel_colitis_msk_2022
+"Duration of IBD at diagnosis (=<10yrs, 11-20yrs, >20yrs)","Duration of IBD at diagnosis (=<10yrs, 11-20yrs, >20yrs)",STRING,True,1,DURATION_IBD_AT_DX_10_20_YEARS,bowel_colitis_msk_2022
+Duration of IBD at diagnosis (<10yrs or >/=10yrs),Duration of IBD at diagnosis (<10yrs or >/=10yrs),STRING,False,1,DURATION_IBD_AT_DX_10_YEARS,bowel_colitis_msk_2022
+Error Percent,Error percent.,STRING,False,1,ERROR_PERCENT,bowel_colitis_msk_2022
+Ethnicity Category,The text for reporting information about ethnicity.,STRING,True,1,ETHNICITY,bowel_colitis_msk_2022
+First Site of Mets,First Site of Mets,STRING,False,1,FIRST_SITE_OF_METS,bowel_colitis_msk_2022
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,bowel_colitis_msk_2022
+Gene Panel,Gene panel.,STRING,False,1,GENE_PANEL,bowel_colitis_msk_2022
+Gyn FSM,Gyn FSM,STRING,False,1,GYN_FSM,bowel_colitis_msk_2022
+IBD,IBD,STRING,True,1,IBD,bowel_colitis_msk_2022
+IBD Status At Diagnosis,IBD Status At Diagnosis,STRING,False,1,IBD_STATUS_AT_DIAGNOSIS,bowel_colitis_msk_2022
+Institute Source,Institute Source,STRING,False,1,INSTITUTE,bowel_colitis_msk_2022
+Interval From Last Colonoscopy to CAC Dx,Interval From Last Colonoscopy to CAC Dx,STRING,False,1,INTERVAL_FROM_LAST_COLONOSCOPY_TO_CAC_DX,bowel_colitis_msk_2022
+Liver FSM,Liver FSM,STRING,False,1,LIVER_FSM,bowel_colitis_msk_2022
+Liver Time Interval,Liver Time Interval,NUMBER,False,1,LIVER_TIME_INTERVAL,bowel_colitis_msk_2022
+LNs FSM,LNs FSM,STRING,False,1,LN_FSM,bowel_colitis_msk_2022
+Lung FSM,Lung FSM,STRING,False,1,LUNG_FSM,bowel_colitis_msk_2022
+Lung Time Interval,Lung Time Interval,NUMBER,False,1,LUNG_TIME_INTERVAL,bowel_colitis_msk_2022
+Median Coverage,Median coverage.,NUMBER,False,1,MEDIAN_COVERAGE,bowel_colitis_msk_2022
+Metastatic Site,The anatomic location to which the cancer has spread.,STRING,False,1,METASTATIC_SITE,bowel_colitis_msk_2022
+MSI Score,MSI Score,NUMBER,False,1,MSI_SCORE,bowel_colitis_msk_2022
+MSI Type,MSI Type,STRING,False,1,MSI_TYPE,bowel_colitis_msk_2022
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,bowel_colitis_msk_2022
+Oncotree Code,Oncotree Code,STRING,False,0,ONCOTREE_CODE,bowel_colitis_msk_2022
+Overall Survival (Months),"Overall survival in months since date of sequencing. If patient died before sequencing overall survival in months is set to '0'. If patient is alive and last contact date is before date of sequencing, overall survival in months is set to 'NA'",NUMBER,True,1,OS_MONTHS,bowel_colitis_msk_2022
+Overall Survival Status,Overall patient survival status.,STRING,True,1,OS_STATUS,bowel_colitis_msk_2022
+Other FSM,Other FSM,STRING,False,1,OTHER_FSM,bowel_colitis_msk_2022
+PAO FSM,PAO FSM,STRING,False,1,PAO_FSM,bowel_colitis_msk_2022
+Pathology of Normal Mucosa,Pathology of Normal Mucosa,STRING,False,1,PATHOLOGY_OF_NORMAL_MUCOSA,bowel_colitis_msk_2022
+Pelvis FSM,Pelvis FSM,STRING,False,1,PELVIS_FSM,bowel_colitis_msk_2022
+Presentation,Presentation,STRING,False,1,PRESENTATION,bowel_colitis_msk_2022
+Primary Histology,Primary Histology,STRING,False,1,PRIMARY_HISTOLOGY,bowel_colitis_msk_2022
+Primary Tumor Site,Text term to describe the organ sub-division in an individual with cancer.,STRING,False,1,PRIMARY_SITE,bowel_colitis_msk_2022
+Race Category,The text for reporting information about race.,STRING,True,1,RACE,bowel_colitis_msk_2022
+Radiation Adjuvant Therapy,Radiation Adjuvant Therapy,STRING,True,1,RADADJUVANTRX,bowel_colitis_msk_2022
+Resectable,Resectable,STRING,False,1,RESECTABLE,bowel_colitis_msk_2022
+Relapse Free Status (Months),Relapse Free Status (Months),NUMBER,True,1,RFS_MONTHS,bowel_colitis_msk_2022
+Relapse Free Status,Relapse Free Status,STRING,True,1,RFS_STATUS,bowel_colitis_msk_2022
+Salicylates,Salicylates,STRING,True,1,SALICYLATES,bowel_colitis_msk_2022
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,bowel_colitis_msk_2022
+Sample coverage,Sample coverage,NUMBER,False,1,SAMPLE_COVERAGE,bowel_colitis_msk_2022
+Sample Type,"The type of sample (i.e., normal, primary, met, recurrence).",STRING,False,1,SAMPLE_TYPE,bowel_colitis_msk_2022
+Sex,Sex,STRING,True,1,SEX,bowel_colitis_msk_2022
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,bowel_colitis_msk_2022
+Special Histology,Special Histology,STRING,False,1,SPECIAL_HISTOLOGY,bowel_colitis_msk_2022
+Specimen Preservation Type,The method used for preparing the tissue for examination and study.,STRING,False,1,SPECIMEN_PRESERVATION_TYPE,bowel_colitis_msk_2022
+Stage at Diagnosis,Stage At Diagnosis,STRING,True,1,STAGE_AT_DIAGNOSIS,bowel_colitis_msk_2022
+Steroids (Yes/No),Steroids (Yes/No),STRING,True,1,STEROIDS,bowel_colitis_msk_2022
+Tissue Sequenced,Tissue Sequenced,STRING,False,1,TISSUE_SEQUENCED,bowel_colitis_msk_2022
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,bowel_colitis_msk_2022
+TNF (Yes/No),TNF (Yes/No),STRING,True,1,TNF,bowel_colitis_msk_2022
+Tumor Purity,Tumor Purity,NUMBER,False,1,TUMOR_PURITY,bowel_colitis_msk_2022
+Patient's Vital Status,The survival state of the person.,STRING,True,1,VITAL_STATUS,bowel_colitis_msk_2022
+Vital Status Code,Vital Status Code,STRING,True,1,VITAL_STATUS_CODE,bowel_colitis_msk_2022

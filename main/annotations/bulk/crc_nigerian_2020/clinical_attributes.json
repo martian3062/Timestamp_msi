@@ -1,0 +1,173 @@
+[
+  {
+    "displayName": "Diagnosis Age",
+    "description": "Age at which a condition or disease was first diagnosed.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Gene Panel",
+    "description": "Gene panel.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GENE_PANEL",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Initial Stage",
+    "description": "Initial Stage",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "INITIAL_STAGE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Molecular Subtype",
+    "description": "Molecular Subtype",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MOLECULAR_SUBTYPE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "MSI Prediction Score",
+    "description": "MSI Prediction Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_PREDICTION_SCORE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Mutation Rate",
+    "description": "Mutation Rate",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MUTATION_RATE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Race Category",
+    "description": "The text for reporting information about race.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RACE",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Sample Class",
+    "description": "The sample classification (i.e., tumor, cellline, xenograph).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_CLASS",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Tumor Differentiation",
+    "description": "Tumor Differentiation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_DIFFERENTIATION",
+    "studyId": "crc_nigerian_2020"
+  },
+  {
+    "displayName": "Tumor Site",
+    "description": "Tumor Site",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_SITE",
+    "studyId": "crc_nigerian_2020"
+  }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "displayName": "Age at Sequencing",
+    "description": "Age at Profile Sequencing",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_SEQ",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Age at Diagnosis",
+    "description": "Age in years of patients at diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_DX",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "APOBEC Signature",
+    "description": "APOBEC signature detected in this sample",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "APOBEC_PATH",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor Border Pattern",
+    "description": "Morphology of the tumor border - Infiltrating or Pushing",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "BORDER",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Cohort",
+    "description": "Cohort",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "COHORT",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor Deposits",
+    "description": "Are there tumor deposits as identified by pathology annotation",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DEPOSITS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Distant Metastasis at Diagnosis",
+    "description": "Distant mets at diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "DISTANT_METS_AT_DIAGNOSIS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Grade",
+    "description": "Pathological grade as Low or High",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "GRADE",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Histology",
+    "description": "Pathologist annotation of histology",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "HISTOLOGY",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "HTAN Participant ID",
+    "description": "HTAN participant ID",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "HTAN_PARTICIPANT_ID",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Hypermutant Status",
+    "description": "Hypermutant status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "HYPERMUTANT",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Resection Location",
+    "description": "Anatomical location of resection",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "LOCATION",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Location of Recurrence",
+    "description": "Anatomical location of recurrent disease",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "LOCATION_OF_RECURRENCE",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Lymphovascular Invasion",
+    "description": "Lymphovascular invasion as identified by pathology annotation",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "LVI",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "MMR IHC",
+    "description": "Mismatch repair status by IHC testing",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "MMR_IHC",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "MMR Status",
+    "description": "Binary describing if sample is pMMR or dMMR - proficient pMMR or deficient dMMR",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "MMR_STATUS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Mucinous Feature",
+    "description": "Mucinous feature",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MUCINOUS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Primary Diagnosis Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Overall Survival Status (Months)",
+    "description": "Overall survival in months defined from primary resection",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall survival status defined from primary resection",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Panel Version",
+    "description": "Version of Oncopanel",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PANEL_VERSION",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Progression-Free Survival Status (Months)",
+    "description": "Progression-free survival in months defined from primary resection to radiographic progression on cross-sectional imaging (defined by increase in the size or number of radiographically evident tumors)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PFS_MONTHS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Progression-Free Survival Status",
+    "description": "Progression Free Survival defined from primary resection to radiographic progression",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PFS_STATUS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Perineural Invasion",
+    "description": "Perineural invasion as identified by pathology annotation",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PNI",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "POLE Signature",
+    "description": "POLE signature detected in this sample",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "POLE_PATH",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Primary Tumor Status",
+    "description": "If the tumor is a primary tumor (1) or metastasis or otherwise (0)",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_STATUS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Recurrence",
+    "description": "Did the tumor recur",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "RECURRENCE",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor Side",
+    "description": "Tumor side",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SIDE",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Slide ID",
+    "description": "LSP slide ID",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SLIDE_ID",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Stage",
+    "description": "Stage Number",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE NUMBER",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Stage at Diagnosis",
+    "description": "AJCC stage at diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE_AT_DIAGNOSIS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Temozolomide Signature",
+    "description": "Temozolomide signature detected in this sample",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TEMOZOLOMIDE_PATH",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor Infiltrating Lymphocytes",
+    "description": "Tumor infiltrating lymphocytes identified by pathology annotation",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TIL",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor-Infiltrating Lymphocytes  Number",
+    "description": "Number of TIL's",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TIL_NUM",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "tipMMR",
+    "description": "T cell-infiltrated mismatch repair-proficient (tipMMR) or T cell-depleted mismatch repair-proficient (tdpMMR) tumors",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TIPMMR",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor Mutational Burden",
+    "description": "Tumor Mutational Burden",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "TNM Stage at Diagnosis",
+    "description": "Pathological TNM (Tumor, Node, Metastasis) stage at diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TNM_AT_DIAGNOSIS",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tobacco Signature",
+    "description": "Tobacco signature detected in this sample",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TOBACCO_PATH",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "Tumor Purity",
+    "description": "Tumor Purity Percentage",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "crc_orion_2024"
+  },
+  {
+    "displayName": "UVA Signature",
+    "description": "UVA signature detected in this sample",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "UVA_PATH",
+    "studyId": "crc_orion_2024"
+  }
+]

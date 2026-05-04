@@ -1,0 +1,21 @@
+{
+  "studies_used": [
+    "coadread_tcga",
+    "coadread_tcga_pub",
+    "coadread_tcga_pan_can_atlas_2018"
+  ],
+  "rows_total": 595,
+  "unique_patients": 595,
+  "unique_samples": 595,
+  "mss_rows": 515,
+  "msi_h_rows": 80,
+  "pub_direct_rows": 231,
+  "pancan_score_rows": 566,
+  "rows_using_pub_as_final_source": 231,
+  "rows_using_pancan_as_final_source": 364,
+  "label_conflict_rows": 1,
+  "label_conflict_samples": [
+    "TCGA-AG-A008-01"
+  ],
+  "final_rule": "Use direct coadread_tcga_pub MSI_STATUS when available; otherwise use PanCancer score-derived MSI label; always enrich with coadread_tcga legacy columns when present."
+}

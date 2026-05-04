@@ -1,0 +1,84 @@
+patientId,sampleId,CANCER_TYPE,CANCER_TYPE_DETAILED,FRACTION_GENOME_ALTERED,H5AD_SAMPLE_ID,HISTOLOGY_CODE,MUTATION_COUNT,ONCOTREE_CODE,PRESERVATION_METHOD,SAMPLE_ACQUISITION_METHOD,SAMPLE_CLASS,SAMPLE_DISPLAY_NAME,SAMPLE_TYPE,STORAGE_METHOD,TIMEPOINT_LABEL
+HTA8_6001,HTA8_6001_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG11N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6001,HTA8_6001_002101,Colorectal Cancer,Colon Adenocarcinoma,0.2092,KG11P,8140/3,12,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0045362-T01-IM6,Primary,Fresh,On treatment
+HTA8_6001,HTA8_6001_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG11M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6002,HTA8_6002_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG20N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6002,HTA8_6002_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0812,KG20P,8140/3,7,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0051649-T01-IM6,Primary,Fresh,Baseline
+HTA8_6002,HTA8_6002_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG20M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6003,HTA8_6003_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG35P,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,On treatment
+HTA8_6003,HTA8_6003_002101,Colorectal Cancer,Colon Adenocarcinoma,0.3315,KG35M,8140/3,8,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0096630-T01-IM7,Metastasis,Fresh,On treatment
+HTA8_6004,HTA8_6004_001101,Colorectal Cancer,Colon Adenocarcinoma,0.3685,KG39M,8140/3,4,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0043620-T01-IM6,Metastasis,Fresh,On treatment
+HTA8_6005,HTA8_6005_001101,Colorectal Cancer,Colorectal Adenocarcinoma,0.0288,KG60P,8140/3,9,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0059584-T01-IM7,Primary,Fresh,On treatment
+HTA8_6005,HTA8_6005_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG60M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6006,HTA8_6006_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG66N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6006,HTA8_6006_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG66P,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,Baseline
+HTA8_6006,HTA8_6006_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG66M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6006,HTA8_6006_004101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG66M2,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6007,HTA8_6007_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG70N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6007,HTA8_6007_002101,Colorectal Cancer,Colon Adenocarcinoma,0.4360,KG70P,8140/3,6,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0043364-T04-IM7,Primary,Fresh,On treatment
+HTA8_6007,HTA8_6007_003101,Colorectal Cancer,Colon Adenocarcinoma,0.0981,KG70M,8140/3,3,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0043364-T02-IM6,Metastasis,Fresh,On treatment
+HTA8_6008,HTA8_6008_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG71P,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,On treatment
+HTA8_6008,HTA8_6008_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG71M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6009,HTA8_6009_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG74N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6009,HTA8_6009_002101,Colorectal Cancer,Colorectal Adenocarcinoma,0.1267,KG74P,8140/3,8,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0058766-T01-IM7,Primary,Fresh,Baseline
+HTA8_6009,HTA8_6009_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG74M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6010,HTA8_6010_001101,Colorectal Cancer,Colon Adenocarcinoma,0.5084,KG75P,8140/3,4,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0057846-T01-IM6,Primary,Fresh,On treatment
+HTA8_6010,HTA8_6010_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG75P2,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,On treatment
+HTA8_6010,HTA8_6010_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG75M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6010,HTA8_6010_004101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG75M2,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6011,HTA8_6011_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG79N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6011,HTA8_6011_002101,Colorectal Cancer,Colorectal Adenocarcinoma,0.1647,KG79P,8140/3,4,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0058976-T01-IM7,Primary,Fresh,Baseline
+HTA8_6011,HTA8_6011_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG79M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6012,HTA8_6012_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG82P,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,On treatment
+HTA8_6012,HTA8_6012_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0650,KG82M,8140/3,10,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0059362-T01-IM7,Metastasis,Fresh,On treatment
+HTA8_6012,HTA8_6012_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG82M2,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6013,HTA8_6013_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG103N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6013,HTA8_6013_002101,Colorectal Cancer,Colon Adenocarcinoma,0.4429,KG103P,8140/3,6,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0060950-T01-IM7,Primary,Fresh,Baseline
+HTA8_6013,HTA8_6013_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG103M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6014,HTA8_6014_001101,Colorectal Cancer,Colon Adenocarcinoma,0.5964,KG105P,8140/3,4,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0071086-T01-IM7,Primary,Fresh,Baseline
+HTA8_6014,HTA8_6014_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG105M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6015,HTA8_6015_001101,Colorectal Cancer,Colon Adenocarcinoma,0.0349,KG119P,8140/3,7,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0059291-T01-IM7,Primary,Fresh,On treatment
+HTA8_6015,HTA8_6015_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG119M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6016,HTA8_6016_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG136N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6016,HTA8_6016_002101,Colorectal Cancer,Colorectal Adenocarcinoma,0.2120,KG136P,8140/3,8,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0065730-T01-IM7,Primary,Fresh,Baseline
+HTA8_6016,HTA8_6016_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG136M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6017,HTA8_6017_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG146N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6017,HTA8_6017_002101,Colorectal Cancer,Rectal Adenocarcinoma,0.1860,KG146P,8140/3,7,READ,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0070615-T01-IM7,Primary,Fresh,On treatment
+HTA8_6017,HTA8_6017_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG146M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6017,HTA8_6017_004101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG146M2,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6018,HTA8_6018_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG150N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6018,HTA8_6018_002101,Colorectal Cancer,Colon Adenocarcinoma,0.1695,KG150P,8140/3,5,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0066167-T01-IM7,Primary,Fresh,Baseline
+HTA8_6018,HTA8_6018_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG150M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,Baseline
+HTA8_6019,HTA8_6019_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG151N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6019,HTA8_6019_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0215,KG151P,8140/3,9,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0066701-T01-IM7,Primary,Fresh,On treatment
+HTA8_6019,HTA8_6019_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG151M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6020,HTA8_6020_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG156N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6020,HTA8_6020_002101,Colorectal Cancer,Rectal Adenocarcinoma,0.1141,KG156P,8140/3,5,READ,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0073691-T01-IM7,Primary,Fresh,On treatment
+HTA8_6020,HTA8_6020_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG156M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6021,HTA8_6021_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG181N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6021,HTA8_6021_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0281,KG181P,8140/3,12,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0064786-T01-IM7,Primary,Fresh,On treatment
+HTA8_6022,HTA8_6022_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG182N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6022,HTA8_6022_002101,Colorectal Cancer,Colon Adenocarcinoma,0.3542,KG182P,8140/3,4,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0036450-T01-IM6,Primary,Fresh,On treatment
+HTA8_6022,HTA8_6022_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG182M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6022,HTA8_6022_004101,Colorectal Cancer,Colon Adenocarcinoma,0.4034,KG182M2,8140/3,4,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0036450-T02-IM7,Metastasis,Fresh,On treatment
+HTA8_6023,HTA8_6023_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG183N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6023,HTA8_6023_002101,Colorectal Cancer,Rectal Adenocarcinoma,0.1821,KG183P,8140/3,7,READ,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0033958-T01-IM6,Primary,Fresh,On treatment
+HTA8_6023,HTA8_6023_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG183M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6023,HTA8_6023_004101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG183M2,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6024,HTA8_6024_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG184N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6024,HTA8_6024_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0000,KG184P,8140/3,1,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0034466-T01-IM6,Primary,Fresh,On treatment
+HTA8_6024,HTA8_6024_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG184M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6025,HTA8_6025_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG188N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6025,HTA8_6025_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0709,KG188P,8140/3,14,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0027662-T01-IM6,Primary,Fresh,On treatment
+HTA8_6025,HTA8_6025_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG188M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6026,HTA8_6026_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG190N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6026,HTA8_6026_002101,Colorectal Cancer,Rectal Adenocarcinoma,0.4994,KG190P,8140/3,7,READ,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0068754-T01-IM7,Primary,Fresh,On treatment
+HTA8_6026,HTA8_6026_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG190M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6027,HTA8_6027_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG194N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6027,HTA8_6027_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG194P,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,On treatment
+HTA8_6027,HTA8_6027_003101,Colorectal Cancer,Colon Adenocarcinoma,0.2163,KG194M,8140/3,4,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0073688-T01-IM7,Metastasis,Fresh,On treatment
+HTA8_6028,HTA8_6028_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG283N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,Baseline
+HTA8_6028,HTA8_6028_002101,Colorectal Cancer,Colon Adenocarcinoma,0.0484,KG283P,8140/3,9,COAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,P-0068476-T01-IM7,Primary,Fresh,Baseline
+HTA8_6028,HTA8_6028_003101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG283M,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Metastasis,Fresh,On treatment
+HTA8_6029,HTA8_6029_001101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG203N,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Normal,,Normal,Fresh,On treatment
+HTA8_6029,HTA8_6029_002101,Colorectal Cancer,Colorectal Adenocarcinoma,,KG203P,8140/3,,COADREAD,Fresh dissociated and single cell sorted,Surgical Resection,Tumor,,Primary,Fresh,On treatment

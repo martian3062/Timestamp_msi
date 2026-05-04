@@ -1,0 +1,104 @@
+{
+  "studies_with_usable_msi_labels": 11,
+  "study_summary": [
+    {
+      "study_id": "bowel_colitis_msk_2022",
+      "label_source_field": "MSI_TYPE",
+      "rows": 105,
+      "mss_rows": 105,
+      "msi_h_rows": 0
+    },
+    {
+      "study_id": "coadread_dfci_2016",
+      "label_source_field": "MSI_STATUS",
+      "rows": 529,
+      "mss_rows": 438,
+      "msi_h_rows": 91
+    },
+    {
+      "study_id": "coadread_genentech",
+      "label_source_field": "MSI_STATUS",
+      "rows": 74,
+      "mss_rows": 59,
+      "msi_h_rows": 15
+    },
+    {
+      "study_id": "coadread_mskresistance_2022",
+      "label_source_field": "MSI_TYPE",
+      "rows": 21,
+      "mss_rows": 7,
+      "msi_h_rows": 14
+    },
+    {
+      "study_id": "coadread_tcga_pub",
+      "label_source_field": "MSI_STATUS",
+      "rows": 231,
+      "mss_rows": 193,
+      "msi_h_rows": 38
+    },
+    {
+      "study_id": "crc_apc_impact_2020",
+      "label_source_field": "MSI_TYPE",
+      "rows": 455,
+      "mss_rows": 428,
+      "msi_h_rows": 27
+    },
+    {
+      "study_id": "crc_dd_2022",
+      "label_source_field": "MSI_TYPE",
+      "rows": 47,
+      "mss_rows": 36,
+      "msi_h_rows": 11
+    },
+    {
+      "study_id": "crc_eo_2020",
+      "label_source_field": "MSI_TYPE",
+      "rows": 1457,
+      "mss_rows": 1332,
+      "msi_h_rows": 125
+    },
+    {
+      "study_id": "crc_msk_2017",
+      "label_source_field": "MSI_STATUS",
+      "rows": 806,
+      "mss_rows": 701,
+      "msi_h_rows": 105
+    },
+    {
+      "study_id": "crc_sysucc_2022",
+      "label_source_field": "MSI_STATUS",
+      "rows": 1015,
+      "mss_rows": 939,
+      "msi_h_rows": 76
+    },
+    {
+      "study_id": "rectal_radiation_msk_2024",
+      "label_source_field": "MSI_TYPE",
+      "rows": 21,
+      "mss_rows": 21,
+      "msi_h_rows": 0
+    }
+  ],
+  "total_rows": 4761,
+  "total_msi_h_rows": 502,
+  "total_mss_rows": 4259,
+  "normalization": {
+    "MSI-H": [
+      "MSI",
+      "MSI-H",
+      "MSI-high",
+      "Instable"
+    ],
+    "MSS": [
+      "MSS",
+      "Stable"
+    ],
+    "excluded": [
+      "MSI-L",
+      "Not Evaluable",
+      "Inconclusive",
+      "Indeterminate",
+      "Do not report"
+    ]
+  }
+}

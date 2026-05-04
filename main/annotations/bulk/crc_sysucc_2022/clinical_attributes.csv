@@ -1,0 +1,29 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Adjuvant Chemotherapy,Adjuvant Chemotherapy,STRING,False,1,ADJUVANT_CHEMOTHERAPY,crc_sysucc_2022
+Diagnosis Age,Age at which a condition or disease was first diagnosed.,NUMBER,True,1,AGE,crc_sysucc_2022
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_sysucc_2022
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_sysucc_2022
+Cluster,Cluster,STRING,False,1,CLUSTER,crc_sysucc_2022
+CRC Family History,Family history of CRC,STRING,False,1,CRC_FAMILY_HISTORY,crc_sysucc_2022
+Disease Free Survival (Months),Disease Free Survival (Months),NUMBER,True,1,DFS_MONTHS,crc_sysucc_2022
+Disease Free Survival Status,Disease Free Survival Status,STRING,True,1,DFS_STATUS,crc_sysucc_2022
+Family Cancer History,Family history of cancer,STRING,False,1,FAMILY_HISTORY,crc_sysucc_2022
+Hypermutation,Hypermutation,STRING,False,1,IS_HYPER,crc_sysucc_2022
+Metastasis At Diagnosis,Metastasis At Diagnosis,STRING,False,1,METASTASIS_AT_DIAGNOSIS,crc_sysucc_2022
+MMR Status,Mismatch repair status: proficient (pMMR) vs deficient (dMMR),STRING,False,1,MMR,crc_sysucc_2022
+MSI Status,Microsatellite instability SI Status,STRING,False,1,MSI_STATUS,crc_sysucc_2022
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_sysucc_2022
+Nerve Invasion,Nerve Invasion,STRING,False,1,NERVE_INVASION,crc_sysucc_2022
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,crc_sysucc_2022
+Overall Survival Status,Overall patient survival status defined from date of disease diagnosis to date of death or last available follow-up,STRING,True,9,OS_STATUS,crc_sysucc_2022
+Pathological Grade,Pathological Grade,STRING,True,1,PATHOLOGICAL_GRADE,crc_sysucc_2022
+Pathological Stage,Pathological Stage,STRING,True,1,PATHOLOGICAL_STAGE,crc_sysucc_2022
+Primary Tumor Location,Primary Tumor Location,STRING,False,1,PRIMARY_TUMOR_LOCATION,crc_sysucc_2022
+Race,Race,STRING,True,0,RACE,crc_sysucc_2022
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_sysucc_2022
+Sex,Sex,STRING,True,1,SEX,crc_sysucc_2022
+Smoking History,Smoking History,STRING,True,1,SMOKING_HISTORY,crc_sysucc_2022
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,crc_sysucc_2022
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,crc_sysucc_2022
+Detailed Tumor Site,Tumor Site,STRING,False,1,TUMOR_SITE,crc_sysucc_2022
+Vessel Invasion,Vessel Invasion,STRING,False,1,VESSEL_INVASION,crc_sysucc_2022

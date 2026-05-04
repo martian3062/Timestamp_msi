@@ -1,0 +1,1016 @@
+patientId,sampleId,ADJUVANT_CHEMOTHERAPY,CANCER_TYPE,CANCER_TYPE_DETAILED,CLUSTER,CRC_FAMILY_HISTORY,FAMILY_HISTORY,IS_HYPER,METASTASIS_AT_DIAGNOSIS,MMR,MSI_STATUS,MUTATION_COUNT,NERVE_INVASION,ONCOTREE_CODE,PRIMARY_TUMOR_LOCATION,SOMATIC_STATUS,TMB_NONSYNONYMOUS,TUMOR_SITE,VESSEL_INVASION
+CRC1001_NT,CRC1001_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,145,No,READ,Left-Sided,Matched,4.833333333,Rectum,No
+CRC1002_NT,CRC1002_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,159,Yes,COAD,Right-Sided,Matched,5.3,Ascending,Yes
+CRC1003_NT,CRC1003_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,,MSS,84,,COAD,Right-Sided,Matched,2.8,Transverse,
+CRC1004_NT,CRC1004_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,128,Yes,COAD,Left-Sided,Matched,4.3,Transverse,No
+CRC1005_NT,CRC1005_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,104,,READ,Left-Sided,Matched,3.466666667,Rectum,
+CRC1006_NT,CRC1006_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,61,Yes,COAD,Left-Sided,Matched,2.033333333,Descending,Yes
+CRC1007_NT,CRC1007_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,240,No,READ,Left-Sided,Matched,7.966666667,Rectum,Yes
+CRC100_NT,CRC100_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,24,Yes,COAD,Right-Sided,Matched,0.8,Transverse,Yes
+CRC1012_NT,CRC1012_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,4,,COAD,Left-Sided,Matched,0.133333333,Descending,
+CRC1013_NT,CRC1013_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,109,Yes,COAD,Right-Sided,Matched,3.633333333,Ascending,No
+CRC1016_NT,CRC1016_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,78,,COAD,Left-Sided,Matched,2.566666667,Descending,
+CRC1017_NT,CRC1017_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,116,,COAD,Left-Sided,Matched,3.9,Descending,Yes
+CRC1018_NT,CRC1018_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,147,,READ,Left-Sided,Matched,4.9,Rectum,
+CRC101_NT,CRC101_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,10,Yes,COAD,Left-Sided,Matched,0.333333333,Descending,No
+CRC1020_NT,CRC1020_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,147,No,COAD,Left-Sided,Matched,4.933333333,Descending,No
+CRC1021_NT,CRC1021_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,159,,COAD,Left-Sided,Matched,5.3,Descending,
+CRC1022_NT,CRC1022_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,43,No,READ,Left-Sided,Matched,1.433333333,Rectum,No
+CRC1023_NT,CRC1023_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,122,,READ,Left-Sided,Matched,4.066666667,Rectum,
+CRC1024_NT,CRC1024_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,131,,COAD,Left-Sided,Matched,4.366666667,Descending,
+CRC1025_NT,CRC1025_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,150,Yes,COAD,Right-Sided,Matched,5.033333333,Ascending,No
+CRC1026_NT,CRC1026_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,136,No,COAD,Left-Sided,Matched,4.533333333,Descending,Yes
+CRC1028_NT,CRC1028_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,75,,COAD,Left-Sided,Matched,2.5,Descending,
+CRC1029_NT,CRC1029_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,45,,READ,Left-Sided,Matched,1.5,Rectum,
+CRC1030_NT,CRC1030_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,135,,COAD,Right-Sided,Matched,4.5,Transverse,
+CRC1031_NT,CRC1031_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,129,Yes,COAD,Right-Sided,Matched,4.333333333,Ascending,Yes
+CRC1032_NT,CRC1032_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,105,Yes,COAD,Left-Sided,Matched,3.5,Transverse,Yes
+CRC1033_NT,CRC1033_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,,MSS,132,Yes,COAD,Left-Sided,Matched,4.433333333,Descending,Yes
+CRC1034_NT,CRC1034_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,Yes,Yes,No,Yes,,MSS,87,Yes,READ,Left-Sided,Matched,2.933333333,Rectum,Yes
+CRC1036_NT,CRC1036_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,Yes,,MSS,250,,COAD,Left-Sided,Matched,8.366666667,Descending,
+CRC1037_NT,CRC1037_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,70,,COAD,Right-Sided,Matched,2.333333333,Ascending,
+CRC1039_NT,CRC1039_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,195,Yes,COAD,Left-Sided,Matched,6.5,Descending,No
+CRC103_NT,CRC103_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,16,No,READ,Left-Sided,Matched,0.533333333,Rectum,No
+CRC1041_NT,CRC1041_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,83,No,READ,Left-Sided,Matched,2.833333333,Rectum,No
+CRC1042_NT,CRC1042_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,145,,READ,Left-Sided,Matched,4.866666667,Rectum,
+CRC1044_NT,CRC1044_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,65,Yes,COAD,Left-Sided,Matched,2.166666667,Descending,No
+CRC1045_NT,CRC1045_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,93,,READ,Left-Sided,Matched,3.1,Rectum,
+CRC1046_NT,CRC1046_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,82,Yes,COAD,Left-Sided,Matched,2.766666667,Descending,Yes
+CRC1047_NT,CRC1047_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,106,Yes,READ,Left-Sided,Matched,3.6,Rectum,Yes
+CRC1048_NT,CRC1048_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,99,Yes,READ,Left-Sided,Matched,3.3,Rectum,Yes
+CRC104_NT,CRC104_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,20,No,READ,Left-Sided,Matched,0.666666667,Rectum,No
+CRC1052_NT,CRC1052_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,72,,READ,Left-Sided,Matched,2.4,Rectum,
+CRC1053_NT,CRC1053_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,,MSS,98,,COAD,Right-Sided,Matched,3.266666667,Ascending,
+CRC1055_NT,CRC1055_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,Yes,pMMR,MSS,125,Yes,COAD,Left-Sided,Matched,4.166666667,Descending,Yes
+CRC1057_NT,CRC1057_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,92,,COAD,Left-Sided,Matched,3.066666667,Descending,
+CRC1058_NT,CRC1058_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,179,Yes,COAD,Right-Sided,Matched,6,Transverse,Yes
+CRC1059_NT,CRC1059_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,70,,READ,Left-Sided,Matched,2.333333333,Rectum,
+CRC105_NT,CRC105_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,35,No,COAD,Right-Sided,Matched,1.166666667,Ascending,
+CRC1060_NT,CRC1060_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,119,,READ,Left-Sided,Matched,3.966666667,Rectum,
+CRC1061_NT,CRC1061_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,980,Yes,COAD,Right-Sided,Matched,32.73333333,Transverse,No
+CRC1063_NT,CRC1063_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,80,No,COAD,Left-Sided,Matched,2.666666667,Descending,No
+CRC1065_NT,CRC1065_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,83,,COAD,Right-Sided,Matched,2.8,Ascending,
+CRC1066_NT,CRC1066_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,108,,COAD,Right-Sided,Matched,3.6,Transverse,
+CRC1067_NT,CRC1067_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,1,,COAD,Right-Sided,Matched,0.033333333,Ascending,
+CRC1068_NT,CRC1068_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,73,,COAD,Left-Sided,Matched,2.433333333,Descending,
+CRC106_NT,CRC106_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,21,No,READ,Left-Sided,Matched,0.733333333,Rectum,No
+CRC1070_NT,CRC1070_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,96,,COAD,Right-Sided,Matched,3.233333333,Ascending,
+CRC1071_NT,CRC1071_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,90,No,COAD,Right-Sided,Matched,3.066666667,Transverse,No
+CRC1072_NT,CRC1072_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,82,No,COAD,Left-Sided,Matched,2.733333333,Descending,No
+CRC1073_NT,CRC1073_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,110,,COAD,Left-Sided,Matched,3.666666667,Descending,
+CRC1074_NT,CRC1074_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,,MSS,58,,COAD,Right-Sided,Matched,1.933333333,Transverse,
+CRC1075_NT,CRC1075_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,134,,READ,Left-Sided,Matched,4.5,Rectum,
+CRC1077_NT,CRC1077_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,204,No,COAD,Left-Sided,Matched,6.8,Descending,Yes
+CRC1078_NT,CRC1078_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,59,Yes,COAD,Right-Sided,Matched,1.966666667,Ascending,Yes
+CRC1079_NT,CRC1079_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,Yes,,MSS,381,,COAD,Left-Sided,Matched,12.73333333,Descending,
+CRC107_NT,CRC107_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,28,Yes,COAD,Right-Sided,Matched,0.966666667,Ascending,Yes
+CRC1080_NT,CRC1080_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,107,,COAD,Right-Sided,Matched,3.566666667,Ascending,
+CRC1081_NT,CRC1081_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,301,No,READ,Left-Sided,Matched,10.1,Rectum,No
+CRC1082_NT,CRC1082_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,92,Yes,READ,Left-Sided,Matched,3.066666667,Rectum,Yes
+CRC1083_NT,CRC1083_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,139,No,READ,Left-Sided,Matched,4.633333333,Rectum,No
+CRC1086_NT,CRC1086_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,117,Yes,COAD,Left-Sided,Matched,3.9,Descending,No
+CRC1089_NT,CRC1089_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,95,,READ,Left-Sided,Matched,3.2,Rectum,
+CRC108_NT,CRC108_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,2,No,READ,Left-Sided,Matched,0.066666667,Rectum,No
+CRC1093_NT,CRC1093_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,155,,COAD,Right-Sided,Matched,5.166666667,Ascending,
+CRC1095_NT,CRC1095_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,152,Yes,COAD,Right-Sided,Matched,5.1,Ascending,No
+CRC1096_NT,CRC1096_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,122,,COAD,Right-Sided,Matched,4.066666667,Ascending,
+CRC1097_NT,CRC1097_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,117,,READ,Left-Sided,Matched,3.933333333,Rectum,
+CRC1099_NT,CRC1099_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,140,Yes,READ,Left-Sided,Matched,4.666666667,Rectum,Yes
+CRC109_NT,CRC109_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.6,Descending,No
+CRC10_NT,CRC10_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,19,No,COAD,Left-Sided,Matched,0.633333333,Descending,No
+CRC1100_NT,CRC1100_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,126,Yes,READ,Left-Sided,Matched,4.2,Rectum,No
+CRC1101_NT,CRC1101_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,117,No,READ,Left-Sided,Matched,3.9,Rectum,Yes
+CRC1102_NT,CRC1102_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,pMMR,MSS,807,No,COAD,Right-Sided,Matched,27,Ascending,No
+CRC1106_NT,CRC1106_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,84,No,COAD,Left-Sided,Matched,2.8,Descending,No
+CRC1107_NT,CRC1107_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,,MSS,111,,COAD,Right-Sided,Matched,3.7,Ascending,
+CRC1109_NT,CRC1109_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,79,,COAD,Right-Sided,Matched,2.666666667,Ascending,
+CRC110_NT,CRC110_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,19,No,COAD,Left-Sided,Matched,0.666666667,Descending,No
+CRC1114_NT,CRC1114_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,180,,COAD,Left-Sided,Matched,6,Rectum,Yes
+CRC1115_NT,CRC1115_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,81,No,COAD,Left-Sided,Matched,2.7,Descending,No
+CRC1118_NT,CRC1118_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,86,Yes,COAD,Right-Sided,Matched,2.9,Transverse,No
+CRC1119_NT,CRC1119_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,133,Yes,COAD,Right-Sided,Matched,4.466666667,Transverse,Yes
+CRC111_NT,CRC111_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,35,No,READ,Left-Sided,Matched,1.166666667,Rectum,No
+CRC1120_NT,CRC1120_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,105,Yes,READ,Left-Sided,Matched,3.533333333,Rectum,Yes
+CRC1122_NT,CRC1122_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,142,No,COAD,Left-Sided,Matched,4.733333333,Descending,Yes
+CRC1123_NT,CRC1123_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,81,No,COAD,Left-Sided,Matched,2.7,Descending,No
+CRC1125_NT,CRC1125_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,75,,COAD,Right-Sided,Matched,2.5,Transverse,
+CRC1127_NT,CRC1127_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,61,Yes,READ,Left-Sided,Matched,2.033333333,Rectum,Yes
+CRC1129_NT,CRC1129_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,181,Yes,READ,Left-Sided,Matched,6.033333333,Rectum,No
+CRC112_NT,CRC112_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,38,No,COAD,Right-Sided,Matched,1.266666667,Ascending,Yes
+CRC1134_NT,CRC1134_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,71,No,COAD,Right-Sided,Matched,2.366666667,Ascending,No
+CRC1135_NT,CRC1135_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,,MSI,1508,Yes,COAD,Left-Sided,Matched,50.33333333,Descending,Yes
+CRC1137_NT,CRC1137_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,65,No,READ,Left-Sided,Matched,2.166666667,Rectum,No
+CRC1139_NT,CRC1139_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,547,Yes,COAD,Right-Sided,Matched,18.26666667,Ascending,Yes
+CRC113_NT,CRC113_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,23,No,READ,Left-Sided,Matched,0.766666667,Rectum,No
+CRC1140_NT,CRC1140_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,153,No,COAD,Right-Sided,Matched,5.133333333,Transverse,No
+CRC1141_NT,CRC1141_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,22384,Yes,COAD,Right-Sided,Matched,748.7,Transverse,No
+CRC1142_NT,CRC1142_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,70,Yes,COAD,Left-Sided,Matched,2.333333333,Descending,No
+CRC1146_NT,CRC1146_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSI,135,No,COAD,Right-Sided,Matched,4.5,Ascending,Yes
+CRC1147_NT,CRC1147_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,Yes,,MSS,53,No,COAD,Right-Sided,Matched,1.766666667,Transverse,Yes
+CRC1148_NT,CRC1148_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,269,No,READ,Left-Sided,Matched,9,Rectum,Yes
+CRC114_NT,CRC114_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,14,No,READ,Left-Sided,Matched,0.466666667,Rectum,No
+CRC1153_NT,CRC1153_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,83,,READ,Left-Sided,Matched,2.8,Rectum,
+CRC1155_NT,CRC1155_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,,MSS,110,Yes,COAD,Left-Sided,Matched,3.666666667,Rectum,No
+CRC1156_NT,CRC1156_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,160,No,COAD,Left-Sided,Matched,5.366666667,Descending,No
+CRC1157_NT,CRC1157_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,128,,COAD,Left-Sided,Matched,4.266666667,Descending,
+CRC1158_NT,CRC1158_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,86,,COAD,Left-Sided,Matched,2.866666667,Descending,
+CRC115_NT,CRC115_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,26,No,COAD,Left-Sided,Matched,0.866666667,Descending,No
+CRC1160_NT,CRC1160_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,65,,COAD,Right-Sided,Matched,2.166666667,Transverse,
+CRC1163_NT,CRC1163_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,112,Yes,READ,Left-Sided,Matched,3.733333333,Rectum,Yes
+CRC1169_NT,CRC1169_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,44,,COAD,Left-Sided,Matched,1.466666667,Descending,
+CRC116_NT,CRC116_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,,No,COAD,Right-Sided,Matched,0,Ascending,No
+CRC1176_NT,CRC1176_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,169,,COAD,Right-Sided,Matched,5.633333333,Ascending,
+CRC1177_NT,CRC1177_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,44,No,COAD,Left-Sided,Matched,1.466666667,Descending,No
+CRC117_NT,CRC117_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,34,No,READ,Left-Sided,Matched,1.133333333,Rectum,No
+CRC1182_NT,CRC1182_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,167,Yes,COAD,Right-Sided,Matched,5.633333333,Ascending,Yes
+CRC1183_NT,CRC1183_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,23,No,COAD,Left-Sided,Matched,0.766666667,Descending,Yes
+CRC1185_NT,CRC1185_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,153,Yes,COAD,Right-Sided,Matched,5.1,Transverse,No
+CRC118_NT,CRC118_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,17,No,COAD,Right-Sided,Matched,0.6,Ascending,Yes
+CRC1191_NT,CRC1191_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,112,Yes,COAD,Left-Sided,Matched,3.733333333,Descending,No
+CRC1196_NT,CRC1196_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,118,,COAD,Left-Sided,Matched,4.033333333,Descending,
+CRC119_NT,CRC119_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,38,No,COAD,Left-Sided,Matched,1.333333333,Descending,No
+CRC11_NT,CRC11_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,26,No,COAD,Right-Sided,Matched,0.966666667,Ascending,No
+CRC1201_NT,CRC1201_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,100,Yes,COAD,Right-Sided,Matched,3.333333333,Unknown,Yes
+CRC1204_NT,CRC1204_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,Yes,,MSS,71,,COAD,Right-Sided,Matched,2.366666667,Transverse,
+CRC120_NT,CRC120_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,18,No,READ,Left-Sided,Matched,0.6,Rectum,No
+CRC1211_NT,CRC1211_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1209,,COAD,Right-Sided,Matched,40.36666667,Transverse,
+CRC1213_NT,CRC1213_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,55,Yes,COAD,Left-Sided,Matched,1.833333333,Descending,No
+CRC1214_NT,CRC1214_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,68,,COAD,Right-Sided,Matched,2.266666667,Ascending,
+CRC121_NT,CRC121_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,54,No,COAD,Right-Sided,Matched,1.833333333,Ascending,No
+CRC1220_NT,CRC1220_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,400,,COAD,Left-Sided,Matched,13.36666667,Transverse,
+CRC1221_NT,CRC1221_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,55,,COAD,Left-Sided,Matched,1.833333333,Descending,
+CRC1224_NT,CRC1224_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,50,,COAD,Left-Sided,Matched,1.666666667,Descending,
+CRC1225_NT,CRC1225_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,140,,COAD,Right-Sided,Matched,4.666666667,Unknown,
+CRC1227_NT,CRC1227_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,98,,COAD,Right-Sided,Matched,3.266666667,Ascending,
+CRC122_NT,CRC122_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,16,No,READ,Left-Sided,Matched,0.566666667,Rectum,No
+CRC1230_NT,CRC1230_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,,MSS,187,Yes,COAD,Left-Sided,Matched,6.266666667,Descending,Yes
+CRC1234_NT,CRC1234_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,73,,COAD,Right-Sided,Matched,2.433333333,Ascending,
+CRC1237_NT,CRC1237_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,141,,COAD,Right-Sided,Matched,4.7,Ascending,
+CRC1238_NT,CRC1238_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,85,,COAD,Left-Sided,Matched,2.833333333,Descending,
+CRC123_NT,CRC123_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,34,No,READ,Left-Sided,Matched,1.2,Rectum,No
+CRC1258_NT,CRC1258_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,89,,COAD,Right-Sided,Matched,2.966666667,Ascending,
+CRC125_NT,CRC125_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,32,No,COAD,Left-Sided,Matched,1.1,Descending,No
+CRC126_NT,CRC126_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,21,No,COAD,Left-Sided,Matched,0.7,Descending,Yes
+CRC127_NT,CRC127_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSS,843,No,COAD,Right-Sided,Matched,28.23333333,Ascending,No
+CRC1283_NT,CRC1283_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,No,,MSS,145,,READ,Left-Sided,Matched,4.833333333,Rectum,
+CRC128_NT,CRC128_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,40,No,READ,Left-Sided,Matched,1.333333333,Rectum,No
+CRC1296_NT,CRC1296_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,161,Yes,READ,Left-Sided,Matched,5.433333333,Rectum,Yes
+CRC129_NT,CRC129_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,34,No,READ,Left-Sided,Matched,1.133333333,Rectum,No
+CRC12_NT,CRC12_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,3,No,COAD,Right-Sided,Matched,0.1,Ascending,No
+CRC130_NT,CRC130_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,25,Yes,READ,Left-Sided,Matched,0.9,Rectum,Yes
+CRC1319_NT,CRC1319_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,Yes,,MSS,81,Yes,COAD,Left-Sided,Matched,2.7,Descending,No
+CRC131_NT,CRC131_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,20,No,READ,Left-Sided,Matched,0.666666667,Rectum,No
+CRC132_NT,CRC132_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,27,No,READ,Left-Sided,Matched,0.933333333,Rectum,No
+CRC133_NT,CRC133_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,28,No,COAD,Left-Sided,Matched,0.933333333,Descending,No
+CRC135_NT,CRC135_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,65,No,COAD,Left-Sided,Matched,2.166666667,Descending,No
+CRC136_NT,CRC136_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,6,No,COAD,Left-Sided,Matched,0.2,Descending,No
+CRC137_NT,CRC137_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,34,No,COAD,Right-Sided,Matched,1.133333333,Ascending,No
+CRC138_NT,CRC138_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,12,No,COAD,Left-Sided,Matched,0.433333333,Descending,No
+CRC139_NT,CRC139_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,38,No,COAD,Right-Sided,Matched,1.266666667,Transverse,No
+CRC13_NT,CRC13_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,42,No,READ,Left-Sided,Matched,1.4,Rectum,No
+CRC140_NT,CRC140_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,23,No,COAD,Right-Sided,Matched,0.8,Ascending,Yes
+CRC141_NT,CRC141_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.5,Descending,Yes
+CRC142_NT,CRC142_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,12,No,COAD,Right-Sided,Matched,0.4,Ascending,No
+CRC143_NT,CRC143_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,21,No,COAD,Right-Sided,Matched,0.733333333,Transverse,No
+CRC145_NT,CRC145_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.9,Descending,No
+CRC146_NT,CRC146_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,16,No,READ,Left-Sided,Matched,0.566666667,Rectum,No
+CRC147_NT,CRC147_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,,COAD,Right-Sided,Matched,0.833333333,Ascending,
+CRC148_NT,CRC148_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,57,No,READ,Left-Sided,Matched,1.9,Rectum,No
+CRC14_NT,CRC14_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,10,No,READ,Left-Sided,Matched,0.333333333,Rectum,No
+CRC150_NT,CRC150_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC151_NT,CRC151_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,28,Yes,COAD,Left-Sided,Matched,0.933333333,Descending,No
+CRC152_NT,CRC152_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,9,No,READ,Left-Sided,Matched,0.333333333,Rectum,No
+CRC153_NT,CRC153_NT,Unknown,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,24,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC154_NT,CRC154_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,27,No,COAD,Right-Sided,Matched,0.9,Ascending,No
+CRC155_NT,CRC155_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,37,,COAD,Left-Sided,Matched,1.266666667,Rectum,Yes
+CRC156_NT,CRC156_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,74,No,READ,Left-Sided,Matched,2.5,Rectum,No
+CRC157_NT,CRC157_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,16,No,COAD,Right-Sided,Matched,0.533333333,Ascending,No
+CRC158_NT,CRC158_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,35,No,COAD,Left-Sided,Matched,1.2,Descending,No
+CRC159_NT,CRC159_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,428,,COAD,Right-Sided,Matched,14.26666667,Ascending,
+CRC15_NT,CRC15_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,10,No,COAD,Left-Sided,Matched,0.366666667,Transverse,No
+CRC160_NT,CRC160_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,,COAD,Left-Sided,Matched,1.233333333,Descending,
+CRC161_NT,CRC161_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,20,No,READ,Left-Sided,Matched,0.7,Rectum,Yes
+CRC162_NT,CRC162_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,7,No,COAD,Right-Sided,Matched,0.266666667,Ascending,No
+CRC163_NT,CRC163_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,10,No,COAD,Left-Sided,Matched,0.333333333,Descending,No
+CRC164_NT,CRC164_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,31,,READ,Left-Sided,Matched,1.033333333,Rectum,
+CRC165_NT,CRC165_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,dMMR,MSS,606,,COAD,Right-Sided,Matched,20.3,Ascending,
+CRC167_NT,CRC167_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,33,No,READ,Left-Sided,Matched,1.133333333,Rectum,No
+CRC168_NT,CRC168_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSS,1064,No,COAD,Left-Sided,Matched,35.56666667,Descending,No
+CRC169_NT,CRC169_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,dMMR,MSS,256,No,COAD,Right-Sided,Matched,8.566666667,Ascending,No
+CRC16_NT,CRC16_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,74,No,COAD,Right-Sided,Matched,2.466666667,Ascending,No
+CRC170_NT,CRC170_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.6,Descending,No
+CRC171_NT,CRC171_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,No,READ,Left-Sided,Matched,0.866666667,Rectum,Yes
+CRC172_NT,CRC172_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,32,No,READ,Left-Sided,Matched,1.066666667,Rectum,No
+CRC173_NT,CRC173_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,2,No,COAD,Left-Sided,Matched,0.066666667,Descending,No
+CRC174_NT,CRC174_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,40,No,READ,Left-Sided,Matched,1.366666667,Rectum,
+CRC175_NT,CRC175_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,40,No,COAD,Right-Sided,Matched,1.333333333,Ascending,No
+CRC176_NT,CRC176_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,17,No,COAD,Left-Sided,Matched,0.633333333,Descending,No
+CRC177_NT,CRC177_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,30,,COAD,Right-Sided,Matched,1.066666667,Ascending,
+CRC179_NT,CRC179_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,,MSS,21,,COAD,Left-Sided,Matched,0.733333333,Descending,
+CRC180_NT,CRC180_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,276,No,COAD,Left-Sided,Matched,9.266666667,Descending,No
+CRC181_NT,CRC181_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,34,No,READ,Left-Sided,Matched,1.133333333,Rectum,No
+CRC182_NT,CRC182_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,29,No,COAD,Left-Sided,Matched,0.966666667,Descending,No
+CRC183_NT,CRC183_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,,COAD,Left-Sided,Matched,0.866666667,Descending,
+CRC184_NT,CRC184_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,23,,READ,Left-Sided,Matched,0.766666667,Rectum,
+CRC185_NT,CRC185_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,26,No,COAD,Left-Sided,Matched,0.866666667,Descending,No
+CRC187_NT,CRC187_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,34,No,READ,Left-Sided,Matched,1.133333333,Rectum,No
+CRC188_NT,CRC188_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,20,No,COAD,Left-Sided,Matched,0.7,Descending,No
+CRC18_NT,CRC18_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,22,Yes,COAD,Left-Sided,Matched,0.8,Descending,No
+CRC190_NT,CRC190_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,21,,READ,Left-Sided,Matched,0.7,Rectum,Yes
+CRC191_NT,CRC191_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,477,,COAD,Right-Sided,Matched,15.93333333,Ascending,
+CRC192_NT,CRC192_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,8,No,READ,Left-Sided,Matched,0.266666667,Rectum,No
+CRC193_NT,CRC193_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,27,No,COAD,Right-Sided,Matched,0.9,Ascending,Yes
+CRC194_NT,CRC194_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,10,No,COAD,Right-Sided,Matched,0.333333333,Ascending,No
+CRC195_NT,CRC195_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,19,No,READ,Left-Sided,Matched,0.7,Rectum,No
+CRC196_NT,CRC196_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,No,COAD,Left-Sided,Matched,1.233333333,Descending,No
+CRC197_NT,CRC197_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,28,,COAD,Right-Sided,Matched,0.933333333,Ascending,
+CRC198_NT,CRC198_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.533333333,Descending,No
+CRC199_NT,CRC199_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,13,,READ,Left-Sided,Matched,0.5,Rectum,
+CRC19_NT,CRC19_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,37,No,READ,Left-Sided,Matched,1.233333333,Rectum,No
+CRC1_NT,CRC1_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,21,No,READ,Left-Sided,Matched,0.7,Rectum,No
+CRC200_NT,CRC200_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,20,,COAD,Left-Sided,Matched,0.666666667,Descending,
+CRC201_NT,CRC201_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,32,,COAD,Left-Sided,Matched,1.066666667,Descending,
+CRC202_NT,CRC202_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,15,No,COAD,Right-Sided,Matched,0.5,Ascending,No
+CRC203_NT,CRC203_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,4,No,COAD,Right-Sided,Matched,0.133333333,Ascending,Yes
+CRC205_NT,CRC205_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,30,No,COAD,Left-Sided,Matched,1,Descending,No
+CRC206_NT,CRC206_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,READ,Left-Sided,Matched,0.533333333,Rectum,No
+CRC208_NT,CRC208_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,21,No,READ,Left-Sided,Matched,0.7,Rectum,No
+CRC209_NT,CRC209_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSI,239,,COAD,Left-Sided,Matched,8,Descending,
+CRC20_NT,CRC20_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,14,No,COAD,Left-Sided,Matched,0.466666667,Descending,No
+CRC210_NT,CRC210_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,No,READ,Left-Sided,Matched,0.866666667,Rectum,No
+CRC211_NT,CRC211_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,28,No,COAD,Left-Sided,Matched,0.933333333,Descending,Yes
+CRC212_NT,CRC212_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,38,,READ,Left-Sided,Matched,1.266666667,Rectum,
+CRC214_NT,CRC214_NT,Unknown,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,Yes,READ,Left-Sided,Matched,0.833333333,Rectum,No
+CRC215_NT,CRC215_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,322,No,COAD,Right-Sided,Matched,10.73333333,Transverse,No
+CRC216_NT,CRC216_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,10,No,READ,Left-Sided,Matched,0.4,Rectum,No
+CRC217_NT,CRC217_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,21,,COAD,Left-Sided,Matched,0.7,Descending,
+CRC218_NT,CRC218_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,62,No,COAD,Right-Sided,Matched,2.133333333,Ascending,No
+CRC219_NT,CRC219_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.6,Descending,No
+CRC21_NT,CRC21_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,28,No,COAD,Left-Sided,Matched,0.933333333,Descending,No
+CRC220_NT,CRC220_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,41,,COAD,Left-Sided,Matched,1.4,Descending,
+CRC221_NT,CRC221_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,dMMR,MSS,345,No,COAD,Left-Sided,Matched,11.53333333,Descending,No
+CRC222_NT,CRC222_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,302,No,COAD,Right-Sided,Matched,10.16666667,Ascending,No
+CRC223_NT,CRC223_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,34,,COAD,Right-Sided,Matched,1.133333333,Transverse,
+CRC224_NT,CRC224_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,27,Yes,COAD,Left-Sided,Matched,0.9,Descending,
+CRC226_NT,CRC226_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,22,No,READ,Left-Sided,Matched,0.766666667,Rectum,No
+CRC227_NT,CRC227_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,22,No,READ,Left-Sided,Matched,0.733333333,Rectum,No
+CRC229_NT,CRC229_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,16,No,COAD,Left-Sided,Matched,0.566666667,Descending,No
+CRC22_NT,CRC22_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,3864,No,COAD,Right-Sided,Matched,129,Ascending,No
+CRC230_NT,CRC230_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,29,No,COAD,Left-Sided,Matched,0.966666667,Descending,No
+CRC231_NT,CRC231_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,Yes,pMMR,MSI,291,Yes,COAD,Right-Sided,Matched,9.766666667,Transverse,No
+CRC232_NT,CRC232_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,18,No,READ,Left-Sided,Matched,0.6,Rectum,No
+CRC233_NT,CRC233_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,30,Yes,READ,Left-Sided,Matched,1,Rectum,Yes
+CRC234_NT,CRC234_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,4,,COAD,Left-Sided,Matched,0.133333333,Descending,
+CRC235_NT,CRC235_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,25,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC236_NT,CRC236_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,16,No,COAD,Left-Sided,Matched,0.566666667,Descending,No
+CRC237_NT,CRC237_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,23,No,READ,Left-Sided,Matched,0.766666667,Rectum,No
+CRC238_NT,CRC238_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,30,No,COAD,Left-Sided,Matched,1,Descending,No
+CRC239_NT,CRC239_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,43,No,COAD,Left-Sided,Matched,1.433333333,Descending,No
+CRC23_NT,CRC23_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,32,No,COAD,Right-Sided,Matched,1.133333333,Ascending,No
+CRC240_NT,CRC240_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,2451,No,COAD,Left-Sided,Matched,81.96666667,Descending,No
+CRC241_NT,CRC241_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,30,No,COAD,Right-Sided,Matched,1,Transverse,No
+CRC242_NT,CRC242_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,7,Yes,READ,Left-Sided,Matched,0.266666667,Rectum,
+CRC243_NT,CRC243_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,11,No,COAD,Left-Sided,Matched,0.4,Descending,No
+CRC244_NT,CRC244_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,18,No,READ,Left-Sided,Matched,0.6,Rectum,No
+CRC245_NT,CRC245_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,450,Yes,COAD,Left-Sided,Matched,15,Descending,No
+CRC246_NT,CRC246_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,24,No,READ,Left-Sided,Matched,0.8,Rectum,No
+CRC247_NT,CRC247_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,22,No,READ,Left-Sided,Matched,0.733333333,Rectum,No
+CRC248_NT,CRC248_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,12,Yes,COAD,Left-Sided,Matched,0.4,Descending,Yes
+CRC249_NT,CRC249_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,29,,COAD,Right-Sided,Matched,1,Ascending,
+CRC24_NT,CRC24_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,7,No,COAD,Right-Sided,Matched,0.266666667,Transverse,No
+CRC250_NT,CRC250_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,18,No,READ,Left-Sided,Matched,0.6,Rectum,Yes
+CRC251_NT,CRC251_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,20,No,READ,Left-Sided,Matched,0.666666667,Rectum,No
+CRC252_NT,CRC252_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,14,Yes,COAD,Right-Sided,Matched,0.5,Ascending,No
+CRC253_NT,CRC253_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,38,No,COAD,Left-Sided,Matched,1.333333333,Descending,No
+CRC254_NT,CRC254_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,4,Yes,COAD,Left-Sided,Matched,0.166666667,Descending,No
+CRC255_NT,CRC255_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,43,No,COAD,Left-Sided,Matched,1.466666667,Descending,No
+CRC256_NT,CRC256_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,9,No,READ,Left-Sided,Matched,0.3,Rectum,No
+CRC257_NT,CRC257_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,20,No,READ,Left-Sided,Matched,0.666666667,Rectum,No
+CRC258_NT,CRC258_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC259_NT,CRC259_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,13,No,COAD,Left-Sided,Matched,0.433333333,Descending,Yes
+CRC260_NT,CRC260_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,16,No,READ,Left-Sided,Matched,0.533333333,Rectum,No
+CRC261_NT,CRC261_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,dMMR,MSI,377,No,COAD,Right-Sided,Matched,12.56666667,Ascending,No
+CRC262_NT,CRC262_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,9,No,READ,Left-Sided,Matched,0.3,Rectum,No
+CRC263_NT,CRC263_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,40,,COAD,Left-Sided,Matched,1.333333333,Descending,
+CRC264_NT,CRC264_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,,No,READ,Left-Sided,Matched,0,Rectum,No
+CRC265_NT,CRC265_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.6,Descending,No
+CRC266_NT,CRC266_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,18,No,READ,Left-Sided,Matched,0.633333333,Rectum,Yes
+CRC267_NT,CRC267_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,27,No,READ,Left-Sided,Matched,0.9,Rectum,No
+CRC268_NT,CRC268_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,16,No,READ,Left-Sided,Matched,0.533333333,Rectum,No
+CRC269_NT,CRC269_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,39,No,READ,Left-Sided,Matched,1.4,Rectum,No
+CRC270_NT,CRC270_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,41,No,READ,Left-Sided,Matched,1.4,Rectum,No
+CRC271_NT,CRC271_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,Yes,COAD,Left-Sided,Matched,0.5,Rectum,No
+CRC272_NT,CRC272_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,21,No,COAD,Left-Sided,Matched,0.7,Descending,No
+CRC273_NT,CRC273_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,dMMR,MSI,183,No,COAD,Right-Sided,Matched,6.1,Ascending,No
+CRC274_NT,CRC274_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,18,,READ,Left-Sided,Matched,0.6,Rectum,
+CRC275_NT,CRC275_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,1,,COAD,Right-Sided,Matched,0.033333333,Ascending,
+CRC276_NT,CRC276_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,COAD,Right-Sided,Matched,0.5,Ascending,No
+CRC277_NT,CRC277_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,26,No,COAD,Right-Sided,Matched,0.866666667,Ascending,No
+CRC278_NT,CRC278_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.533333333,Descending,No
+CRC279_NT,CRC279_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,56,No,COAD,Left-Sided,Matched,1.866666667,Descending,No
+CRC27_NT,CRC27_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,8,Yes,COAD,Left-Sided,Matched,0.266666667,Rectum,No
+CRC281_NT,CRC281_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,24,No,READ,Left-Sided,Matched,0.8,Rectum,No
+CRC282_NT,CRC282_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,4082,No,COAD,Right-Sided,Matched,136.5666667,Ascending,No
+CRC283_NT,CRC283_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,Yes,COAD,Left-Sided,Matched,1.233333333,Descending,No
+CRC284_NT,CRC284_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSI,360,No,COAD,Left-Sided,Matched,12.06666667,Descending,No
+CRC285_NT,CRC285_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,READ,Left-Sided,Matched,0.5,Rectum,No
+CRC286_NT,CRC286_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSI,381,No,COAD,Right-Sided,Matched,12.83333333,Transverse,No
+CRC287_NT,CRC287_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,21,,READ,Left-Sided,Matched,0.733333333,Rectum,
+CRC288_NT,CRC288_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,37,No,COAD,Right-Sided,Matched,1.266666667,Transverse,No
+CRC289_NT,CRC289_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,28,No,COAD,Right-Sided,Matched,0.966666667,Transverse,No
+CRC28_NT,CRC28_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,510,No,COAD,Right-Sided,Matched,17.03333333,Ascending,No
+CRC290_NT,CRC290_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,1,No,COAD,Right-Sided,Matched,0.033333333,Transverse,Yes
+CRC291_NT,CRC291_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,41,,READ,Left-Sided,Matched,1.4,Rectum,No
+CRC292_NT,CRC292_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.5,Descending,No
+CRC293_NT,CRC293_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,631,No,COAD,Left-Sided,Matched,21.1,Descending,No
+CRC294_NT,CRC294_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,Yes,COAD,Left-Sided,Matched,0.866666667,Descending,Yes
+CRC295_NT,CRC295_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,22,No,COAD,Right-Sided,Matched,0.766666667,Ascending,No
+CRC296_NT,CRC296_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,,READ,Left-Sided,Matched,0.866666667,Rectum,
+CRC297_NT,CRC297_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,26,No,COAD,Left-Sided,Matched,0.866666667,Descending,Yes
+CRC298_NT,CRC298_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1213,,COAD,Right-Sided,Matched,40.5,Ascending,
+CRC299_NT,CRC299_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,32,No,COAD,Left-Sided,Matched,1.1,Descending,No
+CRC2_NT,CRC2_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,9,No,COAD,Left-Sided,Matched,0.3,Descending,No
+CRC300_NT,CRC300_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,26,No,COAD,Left-Sided,Matched,0.9,Descending,No
+CRC301_NT,CRC301_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,70,No,COAD,Left-Sided,Matched,2.333333333,Descending,No
+CRC302_NT,CRC302_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,8,No,READ,Left-Sided,Matched,0.333333333,Rectum,No
+CRC304_NT,CRC304_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,29,No,COAD,Right-Sided,Matched,1,Ascending,No
+CRC305_NT,CRC305_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,61,No,COAD,Left-Sided,Matched,2.033333333,Descending,No
+CRC306_NT,CRC306_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,33,No,READ,Left-Sided,Matched,1.1,Rectum,No
+CRC307_NT,CRC307_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,29,No,COAD,Left-Sided,Matched,0.966666667,Descending,No
+CRC308_NT,CRC308_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.5,Descending,No
+CRC309_NT,CRC309_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,17,,COAD,Left-Sided,Matched,0.633333333,Descending,
+CRC30_NT,CRC30_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,31,No,READ,Left-Sided,Matched,1.033333333,Rectum,No
+CRC310_NT,CRC310_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,696,No,COAD,Right-Sided,Matched,23.2,Transverse,No
+CRC311_NT,CRC311_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,36,No,COAD,Left-Sided,Matched,1.2,Descending,Yes
+CRC312_NT,CRC312_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,22,No,COAD,Left-Sided,Matched,0.766666667,Descending,No
+CRC313_NT,CRC313_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,23,Yes,READ,Left-Sided,Matched,0.8,Rectum,No
+CRC314_NT,CRC314_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,22,No,READ,Left-Sided,Matched,0.733333333,Rectum,No
+CRC316_NT,CRC316_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,33,No,COAD,Right-Sided,Matched,1.1,Ascending,No
+CRC317_NT,CRC317_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,41,,COAD,Right-Sided,Matched,1.4,Transverse,
+CRC318_NT,CRC318_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,32,,READ,Left-Sided,Matched,1.066666667,Rectum,
+CRC31_NT,CRC31_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,21,No,COAD,Left-Sided,Matched,0.7,Descending,No
+CRC320_NT,CRC320_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,36,Yes,COAD,Left-Sided,Matched,1.233333333,Descending,
+CRC321_NT,CRC321_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,12,No,COAD,Left-Sided,Matched,0.4,Descending,No
+CRC322_NT,CRC322_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSI,119,No,COAD,Right-Sided,Matched,3.966666667,Ascending,No
+CRC323_NT,CRC323_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,10,,COAD,Right-Sided,Matched,0.333333333,Transverse,
+CRC324_NT,CRC324_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,38,No,COAD,Left-Sided,Matched,1.266666667,Descending,Yes
+CRC325_NT,CRC325_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,18,,COAD,Left-Sided,Matched,0.633333333,Descending,
+CRC326_NT,CRC326_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,21,No,COAD,Left-Sided,Matched,0.7,Descending,No
+CRC327_NT,CRC327_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,23,No,COAD,Left-Sided,Matched,0.766666667,Descending,No
+CRC328_NT,CRC328_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,18,Yes,READ,Left-Sided,Matched,0.6,Rectum,No
+CRC329_NT,CRC329_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,60,,COAD,Right-Sided,Matched,2,Ascending,
+CRC330_NT,CRC330_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,21,,READ,Left-Sided,Matched,0.733333333,Rectum,
+CRC331_NT,CRC331_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,20,No,READ,Left-Sided,Matched,0.7,Rectum,No
+CRC332_NT,CRC332_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,dMMR,MSS,7,No,COAD,Right-Sided,Matched,0.233333333,Transverse,No
+CRC333_NT,CRC333_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,35,No,COAD,Right-Sided,Matched,1.166666667,Transverse,No
+CRC334_NT,CRC334_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,24,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC335_NT,CRC335_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,24,,COAD,Right-Sided,Matched,0.8,Transverse,
+CRC336_NT,CRC336_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,279,No,COAD,Right-Sided,Matched,9.4,Ascending,No
+CRC337_NT,CRC337_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,27,No,READ,Left-Sided,Matched,0.933333333,Rectum,No
+CRC338_NT,CRC338_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,Yes,READ,Left-Sided,Matched,0.5,Rectum,Yes
+CRC339_NT,CRC339_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,9,,READ,Left-Sided,Matched,0.3,Rectum,
+CRC33_NT,CRC33_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,8,No,READ,Left-Sided,Matched,0.266666667,Rectum,No
+CRC340_NT,CRC340_NT,Unknown,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSI,35,No,COAD,Left-Sided,Matched,1.2,Descending,No
+CRC341_NT,CRC341_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,103,No,COAD,Right-Sided,Matched,3.466666667,Ascending,No
+CRC342_NT,CRC342_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,26,No,READ,Left-Sided,Matched,0.866666667,Rectum,No
+CRC343_NT,CRC343_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,22,,COAD,Right-Sided,Matched,0.733333333,Ascending,
+CRC344_NT,CRC344_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,873,No,COAD,Right-Sided,Matched,29.23333333,Transverse,No
+CRC345_NT,CRC345_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,23,No,COAD,Left-Sided,Matched,0.766666667,Rectum,No
+CRC346_NT,CRC346_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.933333333,Descending,No
+CRC347_NT,CRC347_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,17,No,READ,Left-Sided,Matched,0.566666667,Rectum,No
+CRC348_NT,CRC348_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,17,,COAD,Left-Sided,Matched,0.566666667,Descending,
+CRC349_NT,CRC349_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,34,Yes,COAD,Left-Sided,Matched,1.133333333,Descending,
+CRC34_NT,CRC34_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,5,No,COAD,Right-Sided,Matched,0.166666667,Ascending,Yes
+CRC350_NT,CRC350_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,36,No,READ,Left-Sided,Matched,1.2,Rectum,No
+CRC351_NT,CRC351_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,27,Yes,READ,Left-Sided,Matched,0.9,Rectum,No
+CRC354_NT,CRC354_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,46,No,COAD,Left-Sided,Matched,1.533333333,Descending,No
+CRC356_NT,CRC356_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,22,,COAD,Right-Sided,Matched,0.733333333,Ascending,
+CRC357_NT,CRC357_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,24,No,READ,Left-Sided,Matched,0.8,Rectum,No
+CRC358_NT,CRC358_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,375,No,COAD,Right-Sided,Matched,12.53333333,Ascending,No
+CRC359_NT,CRC359_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,39,Yes,READ,Left-Sided,Matched,1.333333333,Rectum,No
+CRC35_NT,CRC35_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,30,Yes,COAD,Left-Sided,Matched,1,Rectum,Yes
+CRC360_NT,CRC360_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,4,No,READ,Left-Sided,Matched,0.133333333,Rectum,No
+CRC361_NT,CRC361_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,25,No,COAD,Right-Sided,Matched,0.833333333,Transverse,No
+CRC362_NT,CRC362_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,32,No,READ,Left-Sided,Matched,1.066666667,Rectum,Yes
+CRC363_NT,CRC363_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,23,No,COAD,Right-Sided,Matched,0.766666667,Transverse,No
+CRC364_NT,CRC364_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,14,No,READ,Left-Sided,Matched,0.466666667,Rectum,No
+CRC365_NT,CRC365_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,25,No,READ,Left-Sided,Matched,0.833333333,Rectum,No
+CRC366_NT,CRC366_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,38,,COAD,Left-Sided,Matched,1.3,Descending,
+CRC367_NT,CRC367_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC368_NT,CRC368_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,28,,COAD,Left-Sided,Matched,0.933333333,Descending,Yes
+CRC369_NT,CRC369_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,40,No,READ,Left-Sided,Matched,1.333333333,Rectum,No
+CRC36_NT,CRC36_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,pMMR,MSS,1580,No,COAD,Right-Sided,Matched,52.96666667,Transverse,No
+CRC370_NT,CRC370_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,24,No,COAD,Left-Sided,Matched,0.8,Descending,No
+CRC371_NT,CRC371_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,1802,No,COAD,Left-Sided,Matched,60.4,Descending,No
+CRC373_NT,CRC373_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,107,No,COAD,Right-Sided,Matched,3.566666667,Ascending,No
+CRC374_NT,CRC374_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,46,No,COAD,Right-Sided,Matched,1.566666667,Ascending,No
+CRC375_NT,CRC375_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,45,No,COAD,Left-Sided,Matched,1.5,Rectum,No
+CRC376_NT,CRC376_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,23,No,READ,Left-Sided,Matched,0.8,Rectum,No
+CRC378_NT,CRC378_NT,Unknown,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,65,,COAD,Left-Sided,Matched,2.233333333,Descending,
+CRC379_NT,CRC379_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,5,No,COAD,Right-Sided,Matched,0.166666667,Ascending,Yes
+CRC37_NT,CRC37_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,,MSS,23,No,COAD,Left-Sided,Matched,0.766666667,Rectum,No
+CRC380_NT,CRC380_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,17,No,READ,Left-Sided,Matched,0.6,Rectum,No
+CRC383_NT,CRC383_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,11,No,READ,Left-Sided,Matched,0.366666667,Rectum,No
+CRC384_NT,CRC384_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,39,No,COAD,Left-Sided,Matched,1.3,Unknown,No
+CRC385_NT,CRC385_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.5,Descending,No
+CRC386_NT,CRC386_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,18,No,READ,Left-Sided,Matched,0.6,Rectum,No
+CRC387_NT,CRC387_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,14,Yes,COAD,Left-Sided,Matched,0.466666667,Descending,Yes
+CRC388_NT,CRC388_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,13,,COAD,Right-Sided,Matched,0.433333333,Ascending,
+CRC389_NT,CRC389_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,258,No,READ,Left-Sided,Matched,8.633333333,Rectum,No
+CRC38_NT,CRC38_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,21,Yes,READ,Left-Sided,Matched,0.733333333,Rectum,No
+CRC390_NT,CRC390_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,29,No,READ,Left-Sided,Matched,0.966666667,Rectum,No
+CRC391_NT,CRC391_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,496,No,COAD,Right-Sided,Matched,16.66666667,Transverse,No
+CRC392_NT,CRC392_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,24,No,READ,Left-Sided,Matched,0.8,Rectum,No
+CRC393_NT,CRC393_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,33,,READ,Left-Sided,Matched,1.1,Rectum,
+CRC394_NT,CRC394_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,23,No,COAD,Left-Sided,Matched,0.766666667,Descending,Yes
+CRC395_NT,CRC395_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,427,No,COAD,Left-Sided,Matched,14.33333333,Descending,No
+CRC396_NT,CRC396_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,40,Yes,READ,Left-Sided,Matched,1.333333333,Rectum,No
+CRC397_NT,CRC397_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,10,No,COAD,Left-Sided,Matched,0.333333333,Descending,No
+CRC398_NT,CRC398_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,34,Yes,READ,Left-Sided,Matched,1.133333333,Rectum,
+CRC399_NT,CRC399_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,13,,COAD,Right-Sided,Matched,0.433333333,Ascending,
+CRC39_NT,CRC39_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,21,No,READ,Left-Sided,Matched,0.733333333,Rectum,No
+CRC3_NT,CRC3_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,43,No,COAD,Right-Sided,Matched,1.433333333,Ascending,No
+CRC400_NT,CRC400_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,198,No,COAD,Right-Sided,Matched,6.6,Transverse,No
+CRC401_NT,CRC401_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.9,Descending,Yes
+CRC402_NT,CRC402_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,37,No,COAD,Left-Sided,Matched,1.233333333,Descending,No
+CRC403_NT,CRC403_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,38,No,READ,Left-Sided,Matched,1.266666667,Rectum,No
+CRC404_NT,CRC404_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,42,No,READ,Left-Sided,Matched,1.4,Rectum,No
+CRC405_NT,CRC405_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,25,,COAD,Right-Sided,Matched,0.833333333,Transverse,
+CRC406_NT,CRC406_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.9,Descending,No
+CRC407_NT,CRC407_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,36,,READ,Left-Sided,Matched,1.2,Rectum,
+CRC408_NT,CRC408_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,60,Yes,COAD,Right-Sided,Matched,2,Ascending,Yes
+CRC409_NT,CRC409_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,11,Yes,COAD,Right-Sided,Matched,0.4,Ascending,Yes
+CRC40_NT,CRC40_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.6,Descending,No
+CRC410_NT,CRC410_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,67,No,COAD,Left-Sided,Matched,2.233333333,Descending,No
+CRC411_NT,CRC411_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,2,No,READ,Left-Sided,Matched,0.066666667,Rectum,No
+CRC412_NT,CRC412_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,36,No,READ,Left-Sided,Matched,1.2,Rectum,No
+CRC413_NT,CRC413_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,302,No,COAD,Right-Sided,Matched,10.06666667,Ascending,No
+CRC414_NT,CRC414_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,28,No,COAD,Left-Sided,Matched,0.933333333,Descending,Yes
+CRC415_NT,CRC415_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,dMMR,MSS,32,No,COAD,Left-Sided,Matched,1.066666667,Descending,No
+CRC416_NT,CRC416_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,dMMR,MSS,47,No,COAD,Right-Sided,Matched,1.633333333,Transverse,Yes
+CRC417_NT,CRC417_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,dMMR,MSS,35,No,READ,Left-Sided,Matched,1.166666667,Rectum,Yes
+CRC418_NT,CRC418_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,39,No,COAD,Right-Sided,Matched,1.3,Transverse,Yes
+CRC419_NT,CRC419_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,dMMR,MSS,54,No,COAD,Right-Sided,Matched,1.833333333,Transverse,No
+CRC420_NT,CRC420_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,30,No,READ,Left-Sided,Matched,1,Rectum,Yes
+CRC421_NT,CRC421_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,30,No,COAD,Left-Sided,Matched,1,Descending,No
+CRC422_NT,CRC422_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,46,No,COAD,Right-Sided,Matched,1.533333333,Ascending,No
+CRC423_NT,CRC423_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,17,No,READ,Left-Sided,Matched,0.566666667,Rectum,No
+CRC424_NT,CRC424_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,dMMR,MSS,24,No,READ,Left-Sided,Matched,0.833333333,Rectum,No
+CRC425_NT,CRC425_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,60,,COAD,Left-Sided,Matched,2.066666667,Descending,
+CRC426_NT,CRC426_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,No,COAD,Right-Sided,Matched,0.866666667,Transverse,No
+CRC427_NT,CRC427_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,59,No,READ,Left-Sided,Matched,2.033333333,Rectum,No
+CRC428_NT,CRC428_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,Yes,Yes,No,Yes,pMMR,MSS,28,No,READ,Left-Sided,Matched,0.933333333,Rectum,No
+CRC429_NT,CRC429_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,52,No,READ,Left-Sided,Matched,1.733333333,Rectum,No
+CRC42_NT,CRC42_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,28,No,COAD,Right-Sided,Matched,0.933333333,Ascending,No
+CRC430_NT,CRC430_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,dMMR,MSS,42,No,READ,Left-Sided,Matched,1.4,Rectum,No
+CRC431_NT,CRC431_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,45,,COAD,Left-Sided,Matched,1.533333333,Descending,
+CRC432_NT,CRC432_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,74,No,READ,Left-Sided,Matched,2.466666667,Rectum,No
+CRC433_NT,CRC433_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,33,,COAD,Left-Sided,Matched,1.1,Transverse,
+CRC434_NT,CRC434_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,,READ,Left-Sided,Matched,0.866666667,Rectum,
+CRC435_NT,CRC435_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,24,No,COAD,Left-Sided,Matched,0.8,Descending,No
+CRC436_NT,CRC436_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,41,No,COAD,Right-Sided,Matched,1.366666667,Ascending,No
+CRC437_NT,CRC437_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,46,No,READ,Left-Sided,Matched,1.566666667,Rectum,No
+CRC438_NT,CRC438_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,23,No,COAD,Left-Sided,Matched,0.766666667,Descending,No
+CRC439_NT,CRC439_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,399,No,COAD,Right-Sided,Matched,13.33333333,Ascending,No
+CRC441_NT,CRC441_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,32,No,READ,Left-Sided,Matched,1.066666667,Rectum,No
+CRC442_NT,CRC442_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,pMMR,MSS,2536,No,COAD,Right-Sided,Matched,84.8,Ascending,No
+CRC443_NT,CRC443_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,49,No,COAD,Left-Sided,Matched,1.633333333,Descending,No
+CRC444_NT,CRC444_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,65,No,COAD,Left-Sided,Matched,2.2,Descending,No
+CRC446_NT,CRC446_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,32,,COAD,Right-Sided,Matched,1.066666667,Transverse,
+CRC447_NT,CRC447_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,71,No,READ,Left-Sided,Matched,2.433333333,Rectum,No
+CRC448_NT,CRC448_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,No,READ,Left-Sided,Matched,0.9,Rectum,No
+CRC449_NT,CRC449_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,dMMR,MSS,43,,READ,Left-Sided,Matched,1.433333333,Rectum,
+CRC450_NT,CRC450_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,18,No,COAD,Right-Sided,Matched,0.6,Transverse,No
+CRC451_NT,CRC451_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,dMMR,MSS,9,No,COAD,Right-Sided,Matched,0.3,Ascending,No
+CRC452_NT,CRC452_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,253,,COAD,Right-Sided,Matched,8.533333333,Transverse,
+CRC453_NT,CRC453_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,22,No,COAD,Left-Sided,Matched,0.733333333,Descending,No
+CRC455_NT,CRC455_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,36,No,READ,Left-Sided,Matched,1.2,Rectum,No
+CRC456_NT,CRC456_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,17,No,COAD,Left-Sided,Matched,0.566666667,Descending,No
+CRC457_NT,CRC457_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,dMMR,MSS,29,No,COAD,Left-Sided,Matched,0.966666667,Descending,No
+CRC458_NT,CRC458_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,48,No,COAD,Right-Sided,Matched,1.633333333,Transverse,No
+CRC459_NT,CRC459_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,4,No,READ,Left-Sided,Matched,0.133333333,Rectum,No
+CRC45_NT,CRC45_NT,,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,Yes,,MSI,1073,No,COAD,Left-Sided,Matched,35.83333333,Descending,No
+CRC461_NT,CRC461_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,65,,COAD,Left-Sided,Matched,2.166666667,Descending,
+CRC462_NT,CRC462_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,2260,No,COAD,Left-Sided,Matched,75.5,Descending,No
+CRC467_NT,CRC467_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,25,,COAD,Left-Sided,Matched,0.866666667,Descending,
+CRC468_NT,CRC468_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,82,,COAD,Left-Sided,Matched,2.733333333,Rectum,
+CRC46_NT,CRC46_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.933333333,Descending,No
+CRC470_NT,CRC470_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,38,No,READ,Left-Sided,Matched,1.333333333,Rectum,No
+CRC471_NT,CRC471_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,57,,COAD,Right-Sided,Matched,1.933333333,Ascending,
+CRC472_NT,CRC472_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,68,No,READ,Left-Sided,Matched,2.266666667,Rectum,No
+CRC473_NT,CRC473_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,Yes,No,Yes,,MSS,132,,READ,Left-Sided,Matched,4.4,Rectum,
+CRC474_NT,CRC474_NT,,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,Yes,,MSI,2469,,COAD,Right-Sided,Matched,82.73333333,Ascending,Yes
+CRC475_NT,CRC475_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,dMMR,MSS,23,,READ,Left-Sided,Matched,0.8,Rectum,
+CRC476_NT,CRC476_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1262,,COAD,Right-Sided,Matched,42.2,Ascending,
+CRC478_NT,CRC478_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,,MSI,731,,COAD,Right-Sided,Matched,24.53333333,Unknown,
+CRC479_NT,CRC479_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,10,,READ,Left-Sided,Matched,0.333333333,Rectum,
+CRC47_NT,CRC47_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,5,No,COAD,Left-Sided,Matched,0.166666667,Descending,No
+CRC480_NT,CRC480_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,,MSS,21,,COAD,Left-Sided,Matched,0.7,Descending,
+CRC481_NT,CRC481_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSI,444,,COAD,Right-Sided,Matched,14.86666667,Transverse,
+CRC482_NT,CRC482_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,16,,READ,Left-Sided,Matched,0.6,Rectum,
+CRC483_NT,CRC483_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,73,No,COAD,Right-Sided,Matched,2.433333333,Ascending,No
+CRC484_NT,CRC484_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,30,,COAD,Left-Sided,Matched,1.033333333,Rectum,
+CRC485_NT,CRC485_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,24,,COAD,Right-Sided,Matched,0.833333333,Ascending,
+CRC486_NT,CRC486_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,,MSS,1846,,COAD,Right-Sided,Matched,61.76666667,Unknown,
+CRC487_NT,CRC487_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,66,,READ,Left-Sided,Matched,2.2,Rectum,Yes
+CRC488_NT,CRC488_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,25,,COAD,Left-Sided,Matched,0.833333333,Descending,
+CRC489_NT,CRC489_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,57,No,READ,Left-Sided,Matched,1.9,Rectum,No
+CRC48_NT,CRC48_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,34,No,COAD,Left-Sided,Matched,1.166666667,Descending,No
+CRC490_NT,CRC490_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,17,,READ,Left-Sided,Matched,0.566666667,Rectum,
+CRC491_NT,CRC491_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSI,517,,COAD,Right-Sided,Matched,17.26666667,Transverse,
+CRC492_NT,CRC492_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,45,,COAD,Left-Sided,Matched,1.5,Descending,
+CRC493_NT,CRC493_NT,Unknown,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,18,,READ,Left-Sided,Matched,0.6,Rectum,
+CRC494_NT,CRC494_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,Yes,,MSS,37,,READ,Left-Sided,Matched,1.233333333,Rectum,No
+CRC495_NT,CRC495_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,27,,COAD,Left-Sided,Matched,0.9,Descending,
+CRC496_NT,CRC496_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,43,No,READ,Left-Sided,Matched,1.433333333,Rectum,No
+CRC498_NT,CRC498_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,,MSS,59,No,COAD,Left-Sided,Matched,1.966666667,Rectum,No
+CRC499_NT,CRC499_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,,MSI,2293,,COAD,Right-Sided,Matched,76.66666667,Ascending,
+CRC49_NT,CRC49_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,No,COAD,Right-Sided,Matched,1.233333333,Ascending,No
+CRC4_NT,CRC4_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,10,No,READ,Left-Sided,Matched,0.333333333,Rectum,No
+CRC500_NT,CRC500_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,,MSS,15,,COAD,Left-Sided,Matched,0.533333333,Descending,
+CRC501_NT,CRC501_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,dMMR,MSS,13,,READ,Left-Sided,Matched,0.433333333,Rectum,
+CRC502_NT,CRC502_NT,,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,Yes,,MSS,4580,No,COAD,Right-Sided,Matched,153.3666667,Ascending,No
+CRC503_NT,CRC503_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,34,,COAD,Left-Sided,Matched,1.133333333,Descending,
+CRC504_NT,CRC504_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,81,,COAD,Right-Sided,Matched,2.733333333,Transverse,
+CRC505_NT,CRC505_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,60,,READ,Left-Sided,Matched,2,Rectum,
+CRC507_NT,CRC507_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,,MSI,651,,COAD,Right-Sided,Matched,21.7,Ascending,No
+CRC508_NT,CRC508_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,Yes,No,No,,MSS,31,,READ,Left-Sided,Matched,1.033333333,Rectum,
+CRC509_NT,CRC509_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,32,,COAD,Left-Sided,Matched,1.133333333,Transverse,
+CRC510_NT,CRC510_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,38,,COAD,Right-Sided,Matched,1.266666667,Ascending,
+CRC511_NT,CRC511_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,106,,COAD,Right-Sided,Matched,3.566666667,Ascending,
+CRC512_NT,CRC512_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,58,,COAD,Left-Sided,Matched,1.933333333,Descending,
+CRC513_NT,CRC513_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,23,,COAD,Left-Sided,Matched,0.766666667,Descending,
+CRC514_NT,CRC514_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,4,,COAD,Right-Sided,Matched,0.133333333,Transverse,
+CRC515_NT,CRC515_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,84,,COAD,Right-Sided,Matched,2.8,Ascending,
+CRC516_NT,CRC516_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,4,,READ,Left-Sided,Matched,0.133333333,Rectum,
+CRC517_NT,CRC517_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,24,,READ,Left-Sided,Matched,0.8,Rectum,
+CRC518_NT,CRC518_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,34,,COAD,Right-Sided,Matched,1.166666667,Ascending,
+CRC519_NT,CRC519_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,,MSS,59,,COAD,Left-Sided,Matched,1.966666667,Transverse,
+CRC51_NT,CRC51_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,21,No,COAD,Left-Sided,Matched,0.7,Descending,No
+CRC520_NT,CRC520_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,26,,COAD,Right-Sided,Matched,0.866666667,Ascending,
+CRC521_NT,CRC521_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,2,,COAD,Left-Sided,Matched,0.066666667,Descending,
+CRC522_NT,CRC522_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,20,,COAD,Left-Sided,Matched,0.666666667,Descending,
+CRC523_NT,CRC523_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,,MSS,39,,COAD,Left-Sided,Matched,1.3,Descending,
+CRC524_NT,CRC524_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,49,,COAD,Right-Sided,Matched,1.666666667,Ascending,
+CRC525_NT,CRC525_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,52,,COAD,Right-Sided,Matched,1.766666667,Transverse,
+CRC526_NT,CRC526_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,24,,READ,Left-Sided,Matched,0.8,Rectum,
+CRC528_NT,CRC528_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,42,,READ,Left-Sided,Matched,1.4,Rectum,
+CRC529_NT,CRC529_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,21,,READ,Left-Sided,Matched,0.7,Rectum,
+CRC52_NT,CRC52_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,27,No,COAD,Right-Sided,Matched,0.9,Ascending,No
+CRC530_NT,CRC530_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,34,,COAD,Right-Sided,Matched,1.133333333,Ascending,
+CRC532_NT,CRC532_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,79,,COAD,Left-Sided,Matched,2.666666667,Descending,
+CRC533_NT,CRC533_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,31,,READ,Left-Sided,Matched,1.033333333,Rectum,
+CRC534_NT,CRC534_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,,MSS,29,,COAD,Left-Sided,Matched,0.966666667,Descending,
+CRC535_NT,CRC535_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,51,,COAD,Right-Sided,Matched,1.7,Transverse,
+CRC536_NT,CRC536_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,33,,READ,Left-Sided,Matched,1.133333333,Rectum,
+CRC537_NT,CRC537_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,Yes,Yes,No,No,,MSS,40,,READ,Left-Sided,Matched,1.333333333,Rectum,
+CRC538_NT,CRC538_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,51,,READ,Left-Sided,Matched,1.733333333,Rectum,
+CRC539_NT,CRC539_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,19,,COAD,Left-Sided,Matched,0.633333333,Descending,
+CRC540_NT,CRC540_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,22,,COAD,Left-Sided,Matched,0.733333333,Descending,
+CRC541_NT,CRC541_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,Yes,Yes,No,No,,MSS,40,,READ,Left-Sided,Matched,1.333333333,Rectum,
+CRC542_NT,CRC542_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,40,,READ,Left-Sided,Matched,1.333333333,Rectum,
+CRC543_NT,CRC543_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSI,213,,COAD,Right-Sided,Matched,7.133333333,Ascending,
+CRC544_NT,CRC544_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSI,455,,COAD,Left-Sided,Matched,15.23333333,Transverse,
+CRC545_NT,CRC545_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,43,No,COAD,Right-Sided,Matched,1.466666667,Ascending,No
+CRC546_NT,CRC546_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,,MSS,25,,COAD,Left-Sided,Matched,0.833333333,Descending,
+CRC547_NT,CRC547_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,615,,COAD,Right-Sided,Matched,20.56666667,Ascending,
+CRC548_NT,CRC548_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSI,419,,COAD,Left-Sided,Matched,14.06666667,Descending,
+CRC549_NT,CRC549_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,15,,COAD,Right-Sided,Matched,0.5,Transverse,
+CRC54_NT,CRC54_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,19,No,COAD,Left-Sided,Matched,0.666666667,Descending,Yes
+CRC550_NT,CRC550_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,,MSS,34,,READ,Left-Sided,Matched,1.133333333,Rectum,
+CRC551_NT,CRC551_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,28,No,COAD,Left-Sided,Matched,0.966666667,Descending,No
+CRC552_NT,CRC552_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,12,No,COAD,Left-Sided,Matched,0.4,Descending,No
+CRC553_NT,CRC553_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,138,No,COAD,Left-Sided,Matched,4.633333333,Descending,Yes
+CRC554_NT,CRC554_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,4,No,COAD,Right-Sided,Matched,0.133333333,Ascending,No
+CRC555_NT,CRC555_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,114,No,COAD,Left-Sided,Matched,3.8,Transverse,Yes
+CRC556_NT,CRC556_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,88,No,COAD,Left-Sided,Matched,2.933333333,Rectum,No
+CRC557_NT,CRC557_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,3,Yes,COAD,Right-Sided,Matched,0.1,Ascending,Yes
+CRC558_NT,CRC558_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1887,No,COAD,Right-Sided,Matched,63.06666667,Transverse,No
+CRC559_NT,CRC559_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1859,No,COAD,Right-Sided,Matched,62.06666667,Ascending,No
+CRC55_NT,CRC55_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,738,Yes,COAD,Right-Sided,Matched,24.63333333,Transverse,No
+CRC560_NT,CRC560_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,85,Yes,READ,Left-Sided,Matched,2.833333333,Rectum,No
+CRC561_NT,CRC561_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,92,No,COAD,Right-Sided,Matched,3.1,Ascending,Yes
+CRC562_NT,CRC562_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,,,READ,Left-Sided,Matched,0,Rectum,
+CRC563_NT,CRC563_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,94,No,COAD,Right-Sided,Matched,3.166666667,Ascending,No
+CRC564_NT,CRC564_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,36,No,COAD,Left-Sided,Matched,1.2,Transverse,
+CRC566_NT,CRC566_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,8668,No,COAD,Right-Sided,Matched,289.9333333,Ascending,No
+CRC567_NT,CRC567_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,119,No,COAD,Right-Sided,Matched,3.966666667,Ascending,No
+CRC568_NT,CRC568_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,4,No,COAD,Right-Sided,Matched,0.133333333,Ascending,No
+CRC569_NT,CRC569_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,95,No,COAD,Left-Sided,Matched,3.166666667,Descending,Yes
+CRC56_NT,CRC56_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,25,No,COAD,Left-Sided,Matched,0.833333333,Rectum,No
+CRC571_NT,CRC571_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,101,No,COAD,Right-Sided,Matched,3.366666667,Transverse,No
+CRC573_NT,CRC573_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,94,No,COAD,Left-Sided,Matched,3.133333333,Descending,Yes
+CRC574_NT,CRC574_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,11,No,COAD,Left-Sided,Matched,0.4,Descending,No
+CRC575_NT,CRC575_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,98,No,COAD,Left-Sided,Matched,3.266666667,Descending,No
+CRC576_NT,CRC576_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,78,Yes,COAD,Left-Sided,Matched,2.633333333,Descending,No
+CRC577_NT,CRC577_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,74,No,COAD,Left-Sided,Matched,2.466666667,Descending,No
+CRC578_NT,CRC578_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,120,No,COAD,Right-Sided,Matched,4.033333333,Ascending,No
+CRC579_NT,CRC579_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,96,No,COAD,Right-Sided,Matched,3.2,Ascending,No
+CRC57_NT,CRC57_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,dMMR,MSI,324,No,COAD,Right-Sided,Matched,10.8,Ascending,No
+CRC580_NT,CRC580_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,56,No,COAD,Left-Sided,Matched,1.866666667,Descending,No
+CRC581_NT,CRC581_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,106,No,COAD,Right-Sided,Matched,3.533333333,Ascending,No
+CRC582_NT,CRC582_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,87,No,COAD,Left-Sided,Matched,2.9,Descending,Yes
+CRC583_NT,CRC583_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,99,Yes,COAD,Left-Sided,Matched,3.333333333,Descending,Yes
+CRC584_NT,CRC584_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,81,Yes,READ,Left-Sided,Matched,2.7,Rectum,No
+CRC585_NT,CRC585_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,60,Yes,COAD,Left-Sided,Matched,2,Transverse,No
+CRC586_NT,CRC586_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,83,No,READ,Left-Sided,Matched,2.8,Rectum,No
+CRC587_NT,CRC587_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,143,No,COAD,Left-Sided,Matched,4.766666667,Descending,No
+CRC588_NT,CRC588_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,2,No,READ,Left-Sided,Matched,0.066666667,Rectum,No
+CRC589_NT,CRC589_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,dMMR,MSS,442,No,COAD,Right-Sided,Matched,14.73333333,Ascending,No
+CRC58_NT,CRC58_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,44,No,READ,Left-Sided,Matched,1.466666667,Rectum,No
+CRC590_NT,CRC590_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,3135,No,COAD,Right-Sided,Matched,104.6333333,Ascending,No
+CRC591_NT,CRC591_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,100,No,COAD,Left-Sided,Matched,3.4,Rectum,Yes
+CRC592_NT,CRC592_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,100,No,READ,Left-Sided,Matched,3.366666667,Rectum,No
+CRC593_NT,CRC593_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,54,No,COAD,Left-Sided,Matched,1.8,Rectum,No
+CRC594_NT,CRC594_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,85,No,COAD,Left-Sided,Matched,2.833333333,Descending,No
+CRC595_NT,CRC595_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,119,No,COAD,Right-Sided,Matched,3.966666667,Transverse,No
+CRC596_NT,CRC596_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,No,COAD,Left-Sided,Matched,1.233333333,Descending,No
+CRC597_NT,CRC597_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,42,No,COAD,Left-Sided,Matched,1.4,Descending,Yes
+CRC598_NT,CRC598_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,73,No,READ,Left-Sided,Matched,2.433333333,Rectum,No
+CRC599_NT,CRC599_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,96,No,COAD,Right-Sided,Matched,3.233333333,Ascending,No
+CRC59_NT,CRC59_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,31,No,COAD,Right-Sided,Matched,1.033333333,Ascending,No
+CRC5_NT,CRC5_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,41,No,COAD,Left-Sided,Matched,1.4,Descending,Yes
+CRC600_NT,CRC600_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,107,No,READ,Left-Sided,Matched,3.566666667,Rectum,No
+CRC601_NT,CRC601_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,34,No,COAD,Left-Sided,Matched,1.133333333,Rectum,No
+CRC602_NT,CRC602_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,68,No,COAD,Right-Sided,Matched,2.266666667,Transverse,Yes
+CRC603_NT,CRC603_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,90,No,COAD,Left-Sided,Matched,3,Descending,Yes
+CRC604_NT,CRC604_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,111,No,COAD,Right-Sided,Matched,3.766666667,Ascending,No
+CRC605_NT,CRC605_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1672,No,COAD,Right-Sided,Matched,55.8,Ascending,No
+CRC606_NT,CRC606_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,,No,COAD,Right-Sided,Matched,0,Transverse,No
+CRC607_NT,CRC607_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,100,No,COAD,Left-Sided,Matched,3.366666667,Descending,No
+CRC608_NT,CRC608_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,dMMR,MSI,2110,No,COAD,Right-Sided,Matched,70.5,Ascending,Yes
+CRC609_NT,CRC609_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,5966,No,READ,Left-Sided,Matched,199.7,Rectum,No
+CRC60_NT,CRC60_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.9,Rectum,No
+CRC611_NT,CRC611_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,126,No,COAD,Right-Sided,Matched,4.233333333,Transverse,Yes
+CRC612_NT,CRC612_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,23,No,COAD,Right-Sided,Matched,0.766666667,Transverse,No
+CRC613_NT,CRC613_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,78,No,COAD,Right-Sided,Matched,2.6,Ascending,No
+CRC614_NT,CRC614_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,101,No,COAD,Right-Sided,Matched,3.366666667,Transverse,No
+CRC615_NT,CRC615_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,31,No,READ,Left-Sided,Matched,1.033333333,Rectum,No
+CRC616_NT,CRC616_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,26,No,COAD,Right-Sided,Matched,0.866666667,Ascending,No
+CRC617_NT,CRC617_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,88,No,COAD,Left-Sided,Matched,2.933333333,Descending,No
+CRC618_NT,CRC618_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1338,No,COAD,Right-Sided,Matched,44.66666667,Ascending,Yes
+CRC619_NT,CRC619_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,116,No,READ,Left-Sided,Matched,3.866666667,Rectum,No
+CRC61_NT,CRC61_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,40,Yes,COAD,Left-Sided,Matched,1.366666667,Descending,Yes
+CRC620_NT,CRC620_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,36,No,READ,Left-Sided,Matched,1.2,Rectum,No
+CRC622_NT,CRC622_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,81,Yes,COAD,Right-Sided,Matched,2.7,Ascending,No
+CRC623_NT,CRC623_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,115,No,READ,Left-Sided,Matched,3.833333333,Rectum,No
+CRC625_NT,CRC625_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,102,No,READ,Left-Sided,Matched,3.4,Rectum,No
+CRC627_NT,CRC627_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,71,No,COAD,Right-Sided,Matched,2.4,Transverse,No
+CRC628_NT,CRC628_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,49,No,COAD,Right-Sided,Matched,1.633333333,Ascending,No
+CRC629_NT,CRC629_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,947,Yes,COAD,Right-Sided,Matched,31.66666667,Transverse,No
+CRC62_NT,CRC62_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,28,No,READ,Left-Sided,Matched,0.933333333,Rectum,No
+CRC631_NT,CRC631_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,93,No,COAD,Right-Sided,Matched,3.1,Transverse,No
+CRC632_NT,CRC632_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,108,No,COAD,Left-Sided,Matched,3.6,Descending,No
+CRC633_NT,CRC633_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,46,No,COAD,Left-Sided,Matched,1.533333333,Descending,No
+CRC634_NT,CRC634_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,86,No,COAD,Left-Sided,Matched,2.9,Descending,No
+CRC635_NT,CRC635_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,48,No,COAD,Left-Sided,Matched,1.6,Descending,No
+CRC636_NT,CRC636_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,86,No,COAD,Left-Sided,Matched,2.866666667,Descending,No
+CRC638_NT,CRC638_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,50,Yes,COAD,Left-Sided,Matched,1.666666667,Descending,No
+CRC639_NT,CRC639_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,92,Yes,COAD,Right-Sided,Matched,3.066666667,Transverse,Yes
+CRC63_NT,CRC63_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,20,No,COAD,Left-Sided,Matched,0.666666667,Descending,Yes
+CRC640_NT,CRC640_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,173,Yes,COAD,Right-Sided,Matched,5.8,Ascending,No
+CRC641_NT,CRC641_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,5,Yes,COAD,Left-Sided,Matched,0.166666667,Descending,No
+CRC642_NT,CRC642_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,63,No,COAD,Left-Sided,Matched,2.1,Descending,No
+CRC643_NT,CRC643_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,979,No,COAD,Right-Sided,Matched,32.8,Transverse,No
+CRC644_NT,CRC644_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,pMMR,MSS,1145,No,COAD,Right-Sided,Matched,38.33333333,Ascending,No
+CRC645_NT,CRC645_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,11,No,COAD,Left-Sided,Matched,0.366666667,Descending,No
+CRC646_NT,CRC646_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,48,No,READ,Left-Sided,Matched,1.6,Rectum,No
+CRC647_NT,CRC647_NT,,Colorectal Cancer,Colon Adenocarcinoma,,No,No,No,Yes,pMMR,MSS,,Yes,COAD,Left-Sided,Matched,0,Descending,Yes
+CRC648_NT,CRC648_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,83,No,COAD,Right-Sided,Matched,2.766666667,Transverse,No
+CRC649_NT,CRC649_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,69,No,COAD,Left-Sided,Matched,2.3,Descending,Yes
+CRC64_NT,CRC64_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,10,No,COAD,Right-Sided,Matched,0.333333333,Unknown,No
+CRC650_NT,CRC650_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,77,No,COAD,Left-Sided,Matched,2.566666667,Descending,No
+CRC651_NT,CRC651_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,16,No,COAD,Right-Sided,Matched,0.533333333,Transverse,No
+CRC652_NT,CRC652_NT,,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,Yes,dMMR,MSI,1691,No,COAD,Right-Sided,Matched,56.5,Ascending,No
+CRC654_NT,CRC654_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,409,No,COAD,Left-Sided,Matched,13.66666667,Descending,No
+CRC655_NT,CRC655_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,92,No,COAD,Right-Sided,Matched,3.066666667,Transverse,No
+CRC656_NT,CRC656_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,91,No,COAD,Left-Sided,Matched,3.033333333,Descending,No
+CRC657_NT,CRC657_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,14,Yes,COAD,Left-Sided,Matched,0.466666667,Descending,No
+CRC658_NT,CRC658_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,6,No,COAD,Left-Sided,Matched,0.2,Descending,Yes
+CRC659_NT,CRC659_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,4621,No,COAD,Right-Sided,Matched,154.5333333,Ascending,No
+CRC65_NT,CRC65_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,Yes,pMMR,MSS,30,No,COAD,Left-Sided,Matched,1.033333333,Descending,No
+CRC660_NT,CRC660_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,9999,No,COAD,Right-Sided,Matched,334.3333333,Transverse,No
+CRC661_NT,CRC661_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,90,No,READ,Left-Sided,Matched,3.033333333,Rectum,No
+CRC662_NT,CRC662_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,80,No,READ,Left-Sided,Matched,2.666666667,Rectum,No
+CRC663_NT,CRC663_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,92,No,COAD,Left-Sided,Matched,3.066666667,Descending,No
+CRC664_NT,CRC664_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,2614,No,COAD,Right-Sided,Matched,87.43333333,Ascending,No
+CRC665_NT,CRC665_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,7,Yes,COAD,Left-Sided,Matched,0.233333333,Descending,No
+CRC666_NT,CRC666_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,64,No,COAD,Right-Sided,Matched,2.166666667,Ascending,No
+CRC667_NT,CRC667_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,113,Yes,COAD,Left-Sided,Matched,3.766666667,Descending,No
+CRC668_NT,CRC668_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,78,No,COAD,Left-Sided,Matched,2.6,Descending,No
+CRC669_NT,CRC669_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1918,Yes,COAD,Right-Sided,Matched,64.06666667,Ascending,Yes
+CRC66_NT,CRC66_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.666666667,Rectum,No
+CRC670_NT,CRC670_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,2,No,READ,Left-Sided,Matched,0.066666667,Rectum,No
+CRC671_NT,CRC671_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,,Yes,COAD,Right-Sided,Matched,0,Ascending,No
+CRC672_NT,CRC672_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,33,No,COAD,Left-Sided,Matched,1.1,Descending,No
+CRC673_NT,CRC673_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,70,No,COAD,Left-Sided,Matched,2.333333333,Descending,No
+CRC674_NT,CRC674_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,99,No,COAD,Left-Sided,Matched,3.333333333,Descending,No
+CRC675_NT,CRC675_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,63,No,COAD,Left-Sided,Matched,2.133333333,Descending,No
+CRC676_NT,CRC676_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,29,No,COAD,Left-Sided,Matched,0.966666667,Descending,No
+CRC677_NT,CRC677_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,124,No,READ,Left-Sided,Matched,4.166666667,Rectum,No
+CRC678_NT,CRC678_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,142,No,COAD,Right-Sided,Matched,4.766666667,Ascending,Yes
+CRC679_NT,CRC679_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,122,No,COAD,Left-Sided,Matched,4.133333333,Descending,No
+CRC67_NT,CRC67_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,9,No,COAD,Left-Sided,Matched,0.3,Descending,No
+CRC680_NT,CRC680_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,102,No,COAD,Left-Sided,Matched,3.4,Descending,Yes
+CRC681_NT,CRC681_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,88,No,COAD,Left-Sided,Matched,2.933333333,Descending,No
+CRC682_NT,CRC682_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,86,No,COAD,Left-Sided,Matched,2.866666667,Descending,No
+CRC683_NT,CRC683_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,153,No,COAD,Left-Sided,Matched,5.133333333,Descending,No
+CRC684_NT,CRC684_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,151,Yes,COAD,Left-Sided,Matched,5.033333333,Descending,No
+CRC685_NT,CRC685_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,41,No,READ,Left-Sided,Matched,1.366666667,Rectum,No
+CRC686_NT,CRC686_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,190,No,READ,Left-Sided,Matched,6.366666667,Rectum,No
+CRC68_NT,CRC68_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,22,No,COAD,Left-Sided,Matched,0.733333333,Descending,No
+CRC690_NT,CRC690_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,84,No,COAD,Right-Sided,Matched,2.8,Ascending,No
+CRC691_NT,CRC691_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,No,COAD,Left-Sided,Matched,1.233333333,Descending,No
+CRC692_NT,CRC692_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1945,No,COAD,Left-Sided,Matched,64.96666667,Descending,Yes
+CRC693_NT,CRC693_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,No,pMMR,MSS,86,Yes,COAD,Left-Sided,Matched,2.866666667,Descending,No
+CRC694_NT,CRC694_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,71,No,READ,Left-Sided,Matched,2.366666667,Rectum,No
+CRC695_NT,CRC695_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,,MSS,95,,COAD,Right-Sided,Matched,3.166666667,Transverse,
+CRC696_NT,CRC696_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,242,No,COAD,Left-Sided,Matched,8.1,Rectum,No
+CRC697_NT,CRC697_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,147,No,COAD,Left-Sided,Matched,4.9,Descending,No
+CRC698_NT,CRC698_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,42,No,COAD,Right-Sided,Matched,1.4,Ascending,Yes
+CRC699_NT,CRC699_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,88,Yes,COAD,Right-Sided,Matched,2.933333333,Ascending,Yes
+CRC69_NT,CRC69_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,Yes,No,Yes,dMMR,MSS,,No,READ,Left-Sided,Matched,0,Rectum,No
+CRC6_NT,CRC6_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,3,No,COAD,Left-Sided,Matched,0.1,Descending,No
+CRC700_NT,CRC700_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,140,No,READ,Left-Sided,Matched,4.666666667,Rectum,No
+CRC701_NT,CRC701_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,63,No,COAD,Left-Sided,Matched,2.1,Descending,No
+CRC702_NT,CRC702_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,103,No,COAD,Right-Sided,Matched,3.466666667,Ascending,No
+CRC703_NT,CRC703_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,6497,No,COAD,Left-Sided,Matched,217.3666667,Descending,No
+CRC704_NT,CRC704_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,60,No,COAD,Left-Sided,Matched,2,Descending,No
+CRC705_NT,CRC705_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,120,No,COAD,Right-Sided,Matched,4,Transverse,No
+CRC706_NT,CRC706_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,81,Yes,COAD,Right-Sided,Matched,2.7,Transverse,No
+CRC707_NT,CRC707_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,98,No,READ,Left-Sided,Matched,3.266666667,Rectum,No
+CRC708_NT,CRC708_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,54,No,COAD,Left-Sided,Matched,1.8,Transverse,Yes
+CRC709_NT,CRC709_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,73,Yes,READ,Left-Sided,Matched,2.433333333,Rectum,No
+CRC70_NT,CRC70_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.5,Descending,
+CRC710_NT,CRC710_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,149,No,COAD,Right-Sided,Matched,4.966666667,Ascending,No
+CRC711_NT,CRC711_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,105,Yes,COAD,Right-Sided,Matched,3.533333333,Transverse,Yes
+CRC712_NT,CRC712_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,,MSS,49,,COAD,Left-Sided,Matched,1.633333333,Descending,
+CRC714_NT,CRC714_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,83,No,READ,Left-Sided,Matched,2.766666667,Rectum,No
+CRC715_NT,CRC715_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.5,Descending,No
+CRC716_NT,CRC716_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,55,No,COAD,Left-Sided,Matched,1.833333333,Rectum,No
+CRC717_NT,CRC717_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1621,Yes,COAD,Right-Sided,Matched,54.13333333,Ascending,No
+CRC719_NT,CRC719_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,105,No,COAD,Right-Sided,Matched,3.5,Ascending,No
+CRC71_NT,CRC71_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,42,No,COAD,Right-Sided,Matched,1.433333333,Ascending,No
+CRC720_NT,CRC720_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1672,Yes,COAD,Right-Sided,Matched,55.86666667,Ascending,No
+CRC721_NT,CRC721_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,71,No,COAD,Left-Sided,Matched,2.366666667,Descending,No
+CRC722_NT,CRC722_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,66,Yes,COAD,Left-Sided,Matched,2.2,Descending,No
+CRC723_NT,CRC723_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,119,No,COAD,Right-Sided,Matched,3.966666667,Ascending,No
+CRC724_NT,CRC724_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,pMMR,MSS,5121,No,COAD,Left-Sided,Matched,171.4333333,Transverse,Yes
+CRC725_NT,CRC725_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,85,No,COAD,Left-Sided,Matched,2.866666667,Descending,No
+CRC726_NT,CRC726_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,91,No,COAD,Left-Sided,Matched,3.033333333,Descending,Yes
+CRC727_NT,CRC727_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,124,No,COAD,Right-Sided,Matched,4.133333333,Ascending,No
+CRC72_NT,CRC72_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,12,No,COAD,Left-Sided,Matched,0.4,Transverse,No
+CRC730_NT,CRC730_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,70,Yes,READ,Left-Sided,Matched,2.333333333,Rectum,Yes
+CRC732_NT,CRC732_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,47,No,READ,Left-Sided,Matched,1.566666667,Rectum,No
+CRC733_NT,CRC733_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,113,No,READ,Left-Sided,Matched,3.8,Rectum,No
+CRC734_NT,CRC734_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,163,No,COAD,Left-Sided,Matched,5.433333333,Descending,No
+CRC736_NT,CRC736_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,48,No,READ,Left-Sided,Matched,1.6,Rectum,No
+CRC739_NT,CRC739_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,67,No,COAD,Right-Sided,Matched,2.233333333,Ascending,Yes
+CRC73_NT,CRC73_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,dMMR,MSS,536,No,COAD,Left-Sided,Matched,17.9,Descending,No
+CRC740_NT,CRC740_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,80,No,COAD,Left-Sided,Matched,2.733333333,Descending,No
+CRC742_NT,CRC742_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,43,No,COAD,Left-Sided,Matched,1.466666667,Descending,No
+CRC743_NT,CRC743_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,58,No,COAD,Left-Sided,Matched,1.933333333,Descending,No
+CRC744_NT,CRC744_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,53,No,COAD,Left-Sided,Matched,1.8,Descending,No
+CRC745_NT,CRC745_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,11,No,COAD,Right-Sided,Matched,0.366666667,Transverse,No
+CRC746_NT,CRC746_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,85,No,READ,Left-Sided,Matched,2.833333333,Rectum,No
+CRC747_NT,CRC747_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,69,No,COAD,Left-Sided,Matched,2.333333333,Descending,No
+CRC749_NT,CRC749_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,68,No,COAD,Left-Sided,Matched,2.266666667,Descending,No
+CRC74_NT,CRC74_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,Yes,pMMR,MSS,30,No,COAD,Right-Sided,Matched,1,Ascending,No
+CRC751_NT,CRC751_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,34,Yes,COAD,Left-Sided,Matched,1.133333333,Descending,Yes
+CRC753_NT,CRC753_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,11,Yes,COAD,Left-Sided,Matched,0.366666667,Descending,No
+CRC754_NT,CRC754_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,37,No,READ,Left-Sided,Matched,1.233333333,Rectum,No
+CRC756_NT,CRC756_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,67,No,READ,Left-Sided,Matched,2.233333333,Rectum,No
+CRC757_NT,CRC757_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,78,No,COAD,Left-Sided,Matched,2.6,Descending,No
+CRC759_NT,CRC759_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,68,Yes,READ,Left-Sided,Matched,2.266666667,Rectum,No
+CRC75_NT,CRC75_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,30,Yes,COAD,Right-Sided,Matched,1,Transverse,No
+CRC760_NT,CRC760_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,,Yes,READ,Left-Sided,Matched,0,Rectum,No
+CRC761_NT,CRC761_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,48,No,READ,Left-Sided,Matched,1.6,Rectum,No
+CRC762_NT,CRC762_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,71,Yes,COAD,Left-Sided,Matched,2.433333333,Descending,Yes
+CRC763_NT,CRC763_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,114,No,COAD,Right-Sided,Matched,3.8,Ascending,No
+CRC764_NT,CRC764_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,70,No,COAD,Right-Sided,Matched,2.366666667,Transverse,Yes
+CRC765_NT,CRC765_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,124,No,COAD,Left-Sided,Matched,4.133333333,Descending,No
+CRC766_NT,CRC766_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1304,Yes,COAD,Right-Sided,Matched,43.46666667,Transverse,No
+CRC767_NT,CRC767_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,125,No,COAD,Right-Sided,Matched,4.166666667,Unknown,No
+CRC768_NT,CRC768_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,,MSS,72,No,READ,Left-Sided,Matched,2.4,Rectum,No
+CRC769_NT,CRC769_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1528,No,COAD,Right-Sided,Matched,50.96666667,Transverse,No
+CRC76_NT,CRC76_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,20,No,COAD,Left-Sided,Matched,0.666666667,Descending,No
+CRC770_NT,CRC770_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,82,Yes,READ,Left-Sided,Matched,2.733333333,Rectum,No
+CRC772_NT,CRC772_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,49,No,COAD,Right-Sided,Matched,1.633333333,Transverse,No
+CRC773_NT,CRC773_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,69,No,COAD,Left-Sided,Matched,2.3,Descending,Yes
+CRC774_NT,CRC774_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,75,No,COAD,Left-Sided,Matched,2.533333333,Rectum,Yes
+CRC775_NT,CRC775_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1762,No,COAD,Right-Sided,Matched,58.93333333,Ascending,No
+CRC776_NT,CRC776_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,11323,No,COAD,Right-Sided,Matched,378.5333333,Ascending,No
+CRC777_NT,CRC777_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,69,No,COAD,Right-Sided,Matched,2.333333333,Ascending,Yes
+CRC778_NT,CRC778_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,101,Yes,COAD,Left-Sided,Matched,3.366666667,Descending,No
+CRC779_NT,CRC779_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,128,No,COAD,Right-Sided,Matched,4.266666667,Transverse,Yes
+CRC77_NT,CRC77_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,10,No,READ,Left-Sided,Matched,0.366666667,Rectum,No
+CRC781_NT,CRC781_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,30,No,READ,Left-Sided,Matched,1.033333333,Rectum,No
+CRC783_NT,CRC783_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,72,No,READ,Left-Sided,Matched,2.4,Rectum,No
+CRC784_NT,CRC784_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,79,No,COAD,Left-Sided,Matched,2.666666667,Descending,No
+CRC785_NT,CRC785_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,93,Yes,READ,Left-Sided,Matched,3.1,Rectum,No
+CRC786_NT,CRC786_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,107,Yes,READ,Left-Sided,Matched,3.6,Rectum,Yes
+CRC787_NT,CRC787_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,164,Yes,READ,Left-Sided,Matched,5.466666667,Rectum,Yes
+CRC788_NT,CRC788_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,52,No,READ,Left-Sided,Matched,1.733333333,Rectum,No
+CRC789_NT,CRC789_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,97,Yes,COAD,Right-Sided,Matched,3.233333333,Transverse,Yes
+CRC78_NT,CRC78_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,Yes,pMMR,MSS,41,No,COAD,Left-Sided,Matched,1.4,Descending,No
+CRC790_NT,CRC790_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,88,Yes,COAD,Left-Sided,Matched,2.966666667,Descending,No
+CRC791_NT,CRC791_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,,MSS,94,No,COAD,Left-Sided,Matched,3.133333333,Descending,No
+CRC793_NT,CRC793_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,6799,No,COAD,Right-Sided,Matched,227.1666667,Ascending,No
+CRC794_NT,CRC794_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,72,No,COAD,Left-Sided,Matched,2.4,Descending,No
+CRC795_NT,CRC795_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,116,No,COAD,Left-Sided,Matched,3.9,Descending,No
+CRC796_NT,CRC796_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,94,No,COAD,Right-Sided,Matched,3.133333333,Ascending,Yes
+CRC797_NT,CRC797_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,87,No,READ,Left-Sided,Matched,2.966666667,Rectum,No
+CRC798_NT,CRC798_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,129,No,COAD,Left-Sided,Matched,4.333333333,Descending,No
+CRC799_NT,CRC799_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,,MSS,104,,COAD,Right-Sided,Matched,3.466666667,Ascending,
+CRC79_NT,CRC79_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,28,No,COAD,Left-Sided,Matched,0.933333333,Descending,No
+CRC7_NT,CRC7_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,27,No,COAD,Left-Sided,Matched,0.9,Rectum,No
+CRC800_NT,CRC800_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,105,No,COAD,Left-Sided,Matched,3.5,Descending,No
+CRC801_NT,CRC801_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,17,No,READ,Left-Sided,Matched,0.566666667,Rectum,No
+CRC802_NT,CRC802_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,67,No,COAD,Right-Sided,Matched,2.233333333,Ascending,No
+CRC804_NT,CRC804_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,103,No,COAD,Left-Sided,Matched,3.433333333,Descending,No
+CRC805_NT,CRC805_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,5585,No,COAD,Right-Sided,Matched,186.8333333,Transverse,No
+CRC806_NT,CRC806_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,112,Yes,READ,Left-Sided,Matched,3.766666667,Rectum,No
+CRC807_NT,CRC807_NT,,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,Yes,pMMR,MSI,2146,Yes,COAD,Left-Sided,Matched,71.63333333,Descending,No
+CRC808_NT,CRC808_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,58,No,READ,Left-Sided,Matched,1.933333333,Rectum,No
+CRC809_NT,CRC809_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,272,No,READ,Left-Sided,Matched,9.133333333,Rectum,No
+CRC80_NT,CRC80_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSS,15,No,COAD,Right-Sided,Matched,0.5,Transverse,No
+CRC810_NT,CRC810_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,78,No,READ,Left-Sided,Matched,2.633333333,Rectum,Yes
+CRC811_NT,CRC811_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,40,No,READ,Left-Sided,Matched,1.333333333,Rectum,No
+CRC812_NT,CRC812_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,2513,No,COAD,Right-Sided,Matched,83.93333333,Transverse,No
+CRC813_NT,CRC813_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,84,Yes,READ,Left-Sided,Matched,2.8,Rectum,No
+CRC814_NT,CRC814_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,84,No,COAD,Left-Sided,Matched,2.8,Descending,No
+CRC815_NT,CRC815_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,113,No,COAD,Left-Sided,Matched,3.8,Descending,Yes
+CRC817_NT,CRC817_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,56,Yes,COAD,Left-Sided,Matched,1.866666667,Descending,Yes
+CRC818_NT,CRC818_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,118,No,COAD,Right-Sided,Matched,3.933333333,Ascending,No
+CRC819_NT,CRC819_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1547,No,COAD,Right-Sided,Matched,51.8,Transverse,No
+CRC81_NT,CRC81_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,dMMR,MSI,357,No,COAD,Right-Sided,Matched,11.9,Transverse,No
+CRC820_NT,CRC820_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,93,,READ,Left-Sided,Matched,3.133333333,Rectum,Yes
+CRC821_NT,CRC821_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,105,No,COAD,Left-Sided,Matched,3.5,Descending,No
+CRC822_NT,CRC822_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,183,No,READ,Left-Sided,Matched,6.166666667,Rectum,No
+CRC823_NT,CRC823_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,9835,No,COAD,Right-Sided,Matched,328.9,Ascending,No
+CRC824_NT,CRC824_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,11,No,COAD,Left-Sided,Matched,0.366666667,Descending,No
+CRC825_NT,CRC825_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,89,No,COAD,Right-Sided,Matched,3,Transverse,Yes
+CRC826_NT,CRC826_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,107,No,COAD,Left-Sided,Matched,3.566666667,Descending,No
+CRC827_NT,CRC827_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,81,No,COAD,Right-Sided,Matched,2.7,Transverse,No
+CRC828_NT,CRC828_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,78,No,COAD,Right-Sided,Matched,2.6,Ascending,No
+CRC829_NT,CRC829_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,37,No,COAD,Left-Sided,Matched,1.266666667,Descending,Yes
+CRC82_NT,CRC82_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,25,No,COAD,Left-Sided,Matched,0.833333333,Descending,No
+CRC830_NT,CRC830_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,93,No,COAD,Left-Sided,Matched,3.1,Descending,Yes
+CRC831_NT,CRC831_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,13,No,COAD,Left-Sided,Matched,0.433333333,Descending,No
+CRC832_NT,CRC832_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,86,No,COAD,Left-Sided,Matched,2.866666667,Descending,Yes
+CRC833_NT,CRC833_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,57,Yes,COAD,Left-Sided,Matched,1.9,Descending,No
+CRC834_NT,CRC834_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,90,Yes,COAD,Right-Sided,Matched,3,Transverse,No
+CRC835_NT,CRC835_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,107,No,READ,Left-Sided,Matched,3.566666667,Rectum,No
+CRC837_NT,CRC837_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,108,Yes,READ,Left-Sided,Matched,3.6,Rectum,No
+CRC838_NT,CRC838_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,87,Yes,COAD,Left-Sided,Matched,2.9,Descending,No
+CRC83_NT,CRC83_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,18,No,COAD,Left-Sided,Matched,0.6,Descending,Yes
+CRC840_NT,CRC840_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,59,No,COAD,Right-Sided,Matched,1.966666667,Transverse,No
+CRC842_NT,CRC842_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,62,No,READ,Left-Sided,Matched,2.066666667,Rectum,No
+CRC843_NT,CRC843_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSS,3795,No,COAD,Right-Sided,Matched,126.8333333,Ascending,No
+CRC844_NT,CRC844_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,62,No,COAD,Left-Sided,Matched,2.066666667,Descending,No
+CRC846_NT,CRC846_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,101,Yes,COAD,Right-Sided,Matched,3.366666667,Ascending,No
+CRC847_NT,CRC847_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,73,No,COAD,Left-Sided,Matched,2.433333333,Descending,Yes
+CRC848_NT,CRC848_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,128,No,READ,Left-Sided,Matched,4.266666667,Rectum,No
+CRC849_NT,CRC849_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1429,No,COAD,Left-Sided,Matched,47.7,Descending,No
+CRC84_NT,CRC84_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,28,No,READ,Left-Sided,Matched,0.933333333,Rectum,No
+CRC850_NT,CRC850_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,211,No,COAD,Left-Sided,Matched,7.033333333,Descending,No
+CRC852_NT,CRC852_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,132,No,COAD,Left-Sided,Matched,4.433333333,Descending,No
+CRC853_NT,CRC853_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,80,No,COAD,Left-Sided,Matched,2.7,Descending,No
+CRC854_NT,CRC854_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,91,No,COAD,Left-Sided,Matched,3.066666667,Rectum,No
+CRC855_NT,CRC855_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,37,No,COAD,Left-Sided,Matched,1.233333333,Unknown,No
+CRC856_NT,CRC856_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,77,No,COAD,Left-Sided,Matched,2.566666667,Rectum,No
+CRC857_NT,CRC857_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,Yes,Yes,No,No,pMMR,MSS,55,Yes,COAD,Right-Sided,Matched,1.833333333,Ascending,Yes
+CRC858_NT,CRC858_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,13,Yes,COAD,Left-Sided,Matched,0.433333333,Descending,No
+CRC859_NT,CRC859_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,70,No,COAD,Left-Sided,Matched,2.333333333,Descending,No
+CRC85_NT,CRC85_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,31,No,COAD,Left-Sided,Matched,1.033333333,Descending,No
+CRC860_NT,CRC860_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,dMMR,MSI,2223,No,COAD,Left-Sided,Matched,74.26666667,Descending,No
+CRC861_NT,CRC861_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,52,Yes,COAD,Left-Sided,Matched,1.733333333,Descending,No
+CRC862_NT,CRC862_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,1,No,READ,Left-Sided,Matched,0.033333333,Rectum,No
+CRC863_NT,CRC863_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,29,No,COAD,Right-Sided,Matched,0.966666667,Transverse,No
+CRC864_NT,CRC864_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,2,No,COAD,Left-Sided,Matched,0.066666667,Descending,No
+CRC865_NT,CRC865_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,16,No,COAD,Left-Sided,Matched,0.566666667,Descending,No
+CRC866_NT,CRC866_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,80,No,COAD,Left-Sided,Matched,2.666666667,Descending,No
+CRC867_NT,CRC867_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,117,No,COAD,Right-Sided,Matched,3.9,Transverse,No
+CRC868_NT,CRC868_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,87,No,COAD,Right-Sided,Matched,2.9,Transverse,No
+CRC869_NT,CRC869_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,90,No,READ,Left-Sided,Matched,3,Rectum,No
+CRC86_NT,CRC86_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,629,No,COAD,Right-Sided,Matched,21,Transverse,No
+CRC870_NT,CRC870_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,181,Yes,COAD,Left-Sided,Matched,6.033333333,Descending,Yes
+CRC871_NT,CRC871_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,62,No,COAD,Left-Sided,Matched,2.066666667,Descending,No
+CRC872_NT,CRC872_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,111,No,COAD,Right-Sided,Matched,3.7,Transverse,No
+CRC873_NT,CRC873_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,89,No,READ,Left-Sided,Matched,3,Rectum,No
+CRC874_NT,CRC874_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,4082,No,COAD,Right-Sided,Matched,136.4,Ascending,No
+CRC875_NT,CRC875_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,105,No,READ,Left-Sided,Matched,3.5,Rectum,Yes
+CRC877_NT,CRC877_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,104,No,COAD,Left-Sided,Matched,3.533333333,Descending,Yes
+CRC878_NT,CRC878_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,101,No,READ,Left-Sided,Matched,3.366666667,Rectum,No
+CRC879_NT,CRC879_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,91,No,COAD,Left-Sided,Matched,3.033333333,Transverse,No
+CRC87_NT,CRC87_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,44,No,COAD,Left-Sided,Matched,1.466666667,Descending,No
+CRC880_NT,CRC880_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,219,Yes,COAD,Right-Sided,Matched,7.466666667,Transverse,No
+CRC881_NT,CRC881_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,99,No,READ,Left-Sided,Matched,3.3,Rectum,No
+CRC882_NT,CRC882_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,63,No,COAD,Left-Sided,Matched,2.1,Descending,No
+CRC884_NT,CRC884_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,90,Yes,READ,Left-Sided,Matched,3,Rectum,No
+CRC885_NT,CRC885_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,97,No,COAD,Right-Sided,Matched,3.233333333,Transverse,No
+CRC886_NT,CRC886_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,,No,No,No,No,pMMR,MSS,1,Yes,COAD,Right-Sided,Matched,0.033333333,Ascending,No
+CRC887_NT,CRC887_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,115,No,READ,Left-Sided,Matched,3.833333333,Rectum,Yes
+CRC888_NT,CRC888_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,50,No,COAD,Right-Sided,Matched,1.666666667,Ascending,No
+CRC889_NT,CRC889_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,96,No,COAD,Right-Sided,Matched,3.233333333,Transverse,Yes
+CRC88_NT,CRC88_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,850,No,COAD,Left-Sided,Matched,28.46666667,Transverse,No
+CRC890_NT,CRC890_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,67,No,COAD,Left-Sided,Matched,2.233333333,Descending,No
+CRC891_NT,CRC891_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,66,Yes,READ,Left-Sided,Matched,2.233333333,Rectum,Yes
+CRC893_NT,CRC893_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,128,No,COAD,Left-Sided,Matched,4.3,Descending,Yes
+CRC894_NT,CRC894_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,85,No,COAD,Right-Sided,Matched,2.833333333,Transverse,Yes
+CRC895_NT,CRC895_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,77,Yes,READ,Left-Sided,Matched,2.566666667,Rectum,Yes
+CRC897_NT,CRC897_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,81,No,COAD,Left-Sided,Matched,2.7,Descending,No
+CRC898_NT,CRC898_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,188,Yes,READ,Left-Sided,Matched,6.266666667,Rectum,No
+CRC899_NT,CRC899_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,60,Yes,COAD,Left-Sided,Matched,2,Transverse,No
+CRC89_NT,CRC89_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,41,Yes,COAD,Left-Sided,Matched,1.4,Descending,No
+CRC8_NT,CRC8_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,31,No,READ,Left-Sided,Matched,1.033333333,Rectum,Yes
+CRC901_NT,CRC901_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,148,No,COAD,Right-Sided,Matched,4.966666667,Transverse,No
+CRC903_NT,CRC903_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,,Yes,Yes,No,No,pMMR,MSI,1,No,COAD,Right-Sided,Matched,0.033333333,Ascending,No
+CRC904_NT,CRC904_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,2979,No,COAD,Right-Sided,Matched,99.63333333,Ascending,No
+CRC906_NT,CRC906_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,,MSS,130,No,READ,Left-Sided,Matched,4.333333333,Rectum,Yes
+CRC90_NT,CRC90_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,Yes,No,Yes,pMMR,MSS,20,Yes,COAD,Right-Sided,Matched,0.733333333,Ascending,No
+CRC910_NT,CRC910_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,96,No,COAD,Right-Sided,Matched,3.233333333,Ascending,No
+CRC911_NT,CRC911_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,No,pMMR,MSS,81,No,COAD,Right-Sided,Matched,2.7,Transverse,No
+CRC912_NT,CRC912_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,148,No,READ,Left-Sided,Matched,4.933333333,Rectum,No
+CRC914_NT,CRC914_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,57,No,COAD,Left-Sided,Matched,1.9,Descending,Yes
+CRC915_NT,CRC915_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,7,No,READ,Left-Sided,Matched,0.233333333,Rectum,No
+CRC916_NT,CRC916_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,99,No,COAD,Left-Sided,Matched,3.3,Descending,No
+CRC919_NT,CRC919_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,103,No,COAD,Left-Sided,Matched,3.433333333,Rectum,No
+CRC91_NT,CRC91_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,15,No,COAD,Left-Sided,Matched,0.533333333,Descending,No
+CRC920_NT,CRC920_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,109,No,COAD,Left-Sided,Matched,3.633333333,Descending,No
+CRC922_NT,CRC922_NT,,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,16,No,READ,Left-Sided,Matched,0.533333333,Rectum,No
+CRC923_NT,CRC923_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,178,No,COAD,Left-Sided,Matched,6,Descending,No
+CRC924_NT,CRC924_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,57,Yes,READ,Left-Sided,Matched,1.9,Rectum,No
+CRC925_NT,CRC925_NT,Unknown,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,69,No,COAD,Right-Sided,Matched,2.3,Ascending,No
+CRC927_NT,CRC927_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,95,No,COAD,Left-Sided,Matched,3.166666667,Descending,No
+CRC928_NT,CRC928_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,114,No,COAD,Right-Sided,Matched,3.8,Ascending,No
+CRC929_NT,CRC929_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,111,No,COAD,Left-Sided,Matched,3.733333333,Descending,Yes
+CRC930_NT,CRC930_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,70,Yes,COAD,Left-Sided,Matched,2.333333333,Descending,No
+CRC931_NT,CRC931_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,142,Yes,COAD,Right-Sided,Matched,4.733333333,Transverse,Yes
+CRC932_NT,CRC932_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,52,No,COAD,Right-Sided,Matched,1.733333333,Transverse,No
+CRC934_NT,CRC934_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,80,No,READ,Left-Sided,Matched,2.666666667,Rectum,No
+CRC935_NT,CRC935_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,55,No,READ,Left-Sided,Matched,1.833333333,Rectum,No
+CRC937_NT,CRC937_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,238,No,COAD,Right-Sided,Matched,7.933333333,Ascending,No
+CRC938_NT,CRC938_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,63,No,READ,Left-Sided,Matched,2.1,Rectum,No
+CRC939_NT,CRC939_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,75,No,READ,Left-Sided,Matched,2.5,Rectum,No
+CRC93_NT,CRC93_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,3,No,COAD,Left-Sided,Matched,0.1,Descending,No
+CRC940_NT,CRC940_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,187,No,COAD,Left-Sided,Matched,6.233333333,Descending,No
+CRC941_NT,CRC941_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,1,No,COAD,Left-Sided,Matched,0.033333333,Rectum,No
+CRC942_NT,CRC942_NT,Unknown,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,No,pMMR,MSS,69,No,READ,Left-Sided,Matched,2.3,Rectum,No
+CRC943_NT,CRC943_NT,,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,Yes,dMMR,MSI,1008,No,COAD,Right-Sided,Matched,33.7,Transverse,Yes
+CRC944_NT,CRC944_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,66,No,READ,Left-Sided,Matched,2.2,Rectum,No
+CRC945_NT,CRC945_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,Yes,pMMR,MSS,,Yes,COAD,Left-Sided,Matched,0,Descending,No
+CRC946_NT,CRC946_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,59,Yes,COAD,Left-Sided,Matched,1.966666667,Descending,Yes
+CRC947_NT,CRC947_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,108,No,COAD,Left-Sided,Matched,3.633333333,Descending,No
+CRC948_NT,CRC948_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,71,Yes,READ,Left-Sided,Matched,2.366666667,Rectum,Yes
+CRC949_NT,CRC949_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,107,No,READ,Left-Sided,Matched,3.6,Rectum,No
+CRC94_NT,CRC94_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,Yes,pMMR,MSS,45,No,COAD,Left-Sided,Matched,1.533333333,Descending,No
+CRC950_NT,CRC950_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,85,No,COAD,Left-Sided,Matched,2.833333333,Descending,Yes
+CRC951_NT,CRC951_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSI,1393,No,COAD,Right-Sided,Matched,46.46666667,Ascending,No
+CRC954_NT,CRC954_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,115,No,COAD,Left-Sided,Matched,3.866666667,Descending,No
+CRC955_NT,CRC955_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,111,No,COAD,Right-Sided,Matched,3.733333333,Ascending,No
+CRC956_NT,CRC956_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,58,No,READ,Left-Sided,Matched,1.966666667,Rectum,No
+CRC957_NT,CRC957_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,Yes,Yes,No,Yes,pMMR,MSS,65,Yes,COAD,Left-Sided,Matched,2.166666667,Descending,Yes
+CRC958_NT,CRC958_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,Yes,Yes,Yes,No,dMMR,MSI,1575,No,COAD,Right-Sided,Matched,52.63333333,Ascending,No
+CRC959_NT,CRC959_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,99,No,COAD,Right-Sided,Matched,3.3,Ascending,No
+CRC95_NT,CRC95_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,27,Yes,COAD,Left-Sided,Matched,0.9,Unknown,
+CRC961_NT,CRC961_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,84,No,READ,Left-Sided,Matched,2.8,Rectum,No
+CRC962_NT,CRC962_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,2,No,COAD,Left-Sided,Matched,0.066666667,Descending,No
+CRC963_NT,CRC963_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,81,No,COAD,Right-Sided,Matched,2.7,Transverse,No
+CRC964_NT,CRC964_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,130,No,READ,Left-Sided,Matched,4.333333333,Rectum,No
+CRC965_NT,CRC965_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,137,No,COAD,Left-Sided,Matched,4.566666667,Descending,No
+CRC966_NT,CRC966_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1297,No,COAD,Left-Sided,Matched,43.33333333,Descending,No
+CRC967_NT,CRC967_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,59,No,COAD,Left-Sided,Matched,1.966666667,Descending,Yes
+CRC968_NT,CRC968_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,Yes,pMMR,MSS,59,Yes,COAD,Left-Sided,Matched,2,Descending,Yes
+CRC969_NT,CRC969_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,dMMR,MSI,1279,No,COAD,Right-Sided,Matched,42.73333333,Transverse,No
+CRC96_NT,CRC96_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,32,No,COAD,Right-Sided,Matched,1.1,Transverse,No
+CRC970_NT,CRC970_NT,Unknown,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,108,No,COAD,Left-Sided,Matched,3.6,Descending,No
+CRC971_NT,CRC971_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,71,No,COAD,Right-Sided,Matched,2.366666667,Transverse,No
+CRC972_NT,CRC972_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,68,No,COAD,Right-Sided,Matched,2.266666667,Transverse,Yes
+CRC973_NT,CRC973_NT,No Adjuvant,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,72,Yes,READ,Left-Sided,Matched,2.4,Rectum,No
+CRC975_NT,CRC975_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,55,No,COAD,Left-Sided,Matched,1.833333333,Descending,No
+CRC977_NT,CRC977_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,115,No,COAD,Right-Sided,Matched,3.9,Ascending,No
+CRC978_NT,CRC978_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,131,No,COAD,Right-Sided,Matched,4.4,Transverse,No
+CRC979_NT,CRC979_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,195,No,COAD,Right-Sided,Matched,6.5,Transverse,No
+CRC97_NT,CRC97_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,8,Yes,COAD,Left-Sided,Matched,0.266666667,Descending,No
+CRC980_NT,CRC980_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,129,No,READ,Left-Sided,Matched,4.3,Rectum,No
+CRC981_NT,CRC981_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,38,No,COAD,Left-Sided,Matched,1.266666667,Rectum,No
+CRC982_NT,CRC982_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,GS,No,Yes,No,No,pMMR,MSS,130,No,READ,Left-Sided,Matched,4.333333333,Rectum,No
+CRC983_NT,CRC983_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,89,Yes,COAD,Left-Sided,Matched,2.966666667,Rectum,No
+CRC984_NT,CRC984_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,121,No,COAD,Right-Sided,Matched,4.1,Ascending,Yes
+CRC985_NT,CRC985_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,Yes,Yes,No,dMMR,MSI,1540,No,COAD,Right-Sided,Matched,51.4,Transverse,Yes
+CRC988_NT,CRC988_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,74,No,COAD,Left-Sided,Matched,2.466666667,Descending,No
+CRC989_NT,CRC989_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,58,No,COAD,Left-Sided,Matched,1.933333333,Descending,Yes
+CRC98_NT,CRC98_NT,No Adjuvant,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,28,No,COAD,Right-Sided,Matched,0.933333333,Ascending,No
+CRC990_NT,CRC990_NT,Chemotherapy,Colorectal Cancer,Rectal Adenocarcinoma,CIN-HR,No,No,No,No,pMMR,MSS,76,No,READ,Left-Sided,Matched,2.533333333,Rectum,No
+CRC991_NT,CRC991_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,GS,No,No,No,No,pMMR,MSS,62,Yes,COAD,Right-Sided,Matched,2.066666667,Ascending,Yes
+CRC992_NT,CRC992_NT,,Colorectal Cancer,Colon Adenocarcinoma,,No,No,No,Yes,pMMR,MSS,,No,COAD,Right-Sided,Matched,0,Ascending,No
+CRC993_NT,CRC993_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,92,No,COAD,Left-Sided,Matched,3.066666667,Descending,No
+CRC994_NT,CRC994_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,83,No,COAD,Left-Sided,Matched,2.833333333,Descending,Yes
+CRC995_NT,CRC995_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,Hypermutated,No,No,Yes,No,pMMR,MSI,1595,No,COAD,Right-Sided,Matched,53.33333333,Ascending,No
+CRC996_NT,CRC996_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,Yes,No,No,pMMR,MSS,96,No,COAD,Left-Sided,Matched,3.233333333,Descending,No
+CRC997_NT,CRC997_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,64,No,COAD,Left-Sided,Matched,2.133333333,Rectum,No
+CRC998_NT,CRC998_NT,,Colorectal Cancer,Rectal Adenocarcinoma,CIN-LR,Yes,Yes,No,Yes,pMMR,MSS,65,No,READ,Left-Sided,Matched,2.166666667,Rectum,Yes
+CRC999_NT,CRC999_NT,,Colorectal Cancer,Colon Adenocarcinoma,CIN-HR,No,No,No,Yes,pMMR,MSS,53,No,COAD,Left-Sided,Matched,1.8,Descending,Yes
+CRC99_NT,CRC99_NT,,Colorectal Cancer,Colon Adenocarcinoma,GS,No,Yes,No,Yes,pMMR,MSS,20,No,COAD,Left-Sided,Matched,0.666666667,Descending,Yes
+CRC9_NT,CRC9_NT,Chemotherapy,Colorectal Cancer,Colon Adenocarcinoma,CIN-LR,No,No,No,No,pMMR,MSS,11,No,COAD,Right-Sided,Matched,0.366666667,Transverse,No

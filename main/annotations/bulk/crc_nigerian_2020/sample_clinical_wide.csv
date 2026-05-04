@@ -1,0 +1,65 @@
+patientId,sampleId,CANCER_TYPE,CANCER_TYPE_DETAILED,FRACTION_GENOME_ALTERED,GENE_PANEL,MOLECULAR_SUBTYPE,MSI_PREDICTION_SCORE,MUTATION_COUNT,MUTATION_RATE,ONCOTREE_CODE,SAMPLE_CLASS,SOMATIC_STATUS,TMB_NONSYNONYMOUS,TUMOR_DIFFERENTIATION
+p_PK_crc_021,s_PK_crc_021_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2956,IMPACT341,MSS,1.49,6,6.741573034,COADREAD,Biopsy,Matched,6.654931804,Low
+p_PK_crc_023,s_PK_crc_023_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0046,IMPACT341,MSI,46.13,85,91.01123596,COADREAD,Resection,Matched,96.49651115,Intermediate
+p_PK_crc_024,s_PK_crc_024_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0000,IMPACT341,MSI,22.86,54,56.17977528,COADREAD,Resection,Matched,59.89438623,Intermediate
+p_PK_crc_025,s_PK_crc_025_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0018,IMPACT341,MSI,34.83,53,58.42696629,COADREAD,Resection,Matched,58.78523093,Intermediate
+p_PK_crc_026,s_PK_crc_026_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0708,IMPACT341,MSS,0.14,8,7.865168539,COADREAD,Resection,Matched,8.873242405,High
+p_PK_crc_027,s_PK_crc_027_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0000,IMPACT341,MSI,17.74,38,40.4494382,COADREAD,Resection,Matched,42.14790142,Intermediate
+p_PK_crc_028,s_PK_crc_028_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0019,IMPACT341,MSS,0,7,7.865168539,COADREAD,Biopsy,Matched,7.764087104,Intermediate
+p_PK_crc_029,s_PK_crc_029_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.3239,IMPACT341,MSS,4.92,3,3.370786517,COADREAD,Resection,Matched,3.327465902,Intermediate
+p_PK_crc_030,s_PK_crc_030_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.3013,IMPACT341,MSS,0.45,9,10.11235955,COADREAD,Resection,Matched,9.982397705,Intermediate
+p_PK_crc_075,s_PK_crc_075_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0544,IMPACT410,MSS,0.56,4,3.96039604,COADREAD,Resection,Matched,3.91487879,Intermediate
+p_PK_crc_076,s_PK_crc_076_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.3109,IMPACT410,MSS,2.27,7,6.930693069,COADREAD,Resection,Matched,6.851037883,Intermediate
+p_PK_crc_077,s_PK_crc_077_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1797,IMPACT410,MSS,0.88,5,4.95049505,COADREAD,Resection,Matched,4.893598488,High
+p_PK_crc_078,s_PK_crc_078_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1486,IMPACT410,MSS,0.62,9,8.910891089,COADREAD,Resection,Matched,8.808477279,Intermediate
+p_PK_crc_079,s_PK_crc_079_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2032,IMPACT410,MSS,1.48,7,7.920792079,COADREAD,Resection,Matched,7.829757581,Not_Reported
+p_PK_crc_080,s_PK_crc_080_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0342,IMPACT410,MSS,1.58,6,5.940594059,COADREAD,Resection,Matched,5.872318186,Unknown
+p_PK_crc_081,s_PK_crc_081_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2519,IMPACT410,MSS,1.85,6,5.940594059,COADREAD,Resection,Matched,5.872318186,Intermediate
+p_PK_crc_082,s_PK_crc_082_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1110,IMPACT410,MSS,1.73,8,6.930693069,COADREAD,Resection,Matched,7.829757581,Intermediate
+p_PK_crc_083,s_PK_crc_083_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1443,IMPACT410,MSS,1.69,10,9.900990099,COADREAD,Resection,Matched,9.787196976,Intermediate
+p_PK_crc_084,s_PK_crc_084_T,Colorectal Cancer,Colorectal Adenocarcinoma,0,IMPACT410,MSI,17.21,89,84.15841584,COADREAD,Resection,Matched,89.06349248,High
+p_PK_crc_085,s_PK_crc_085_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.3212,IMPACT410,MSS,2.08,9,8.910891089,COADREAD,Resection,Matched,9.787196976,Intermediate
+p_PK_crc_086,s_PK_crc_086_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0278,IMPACT410,MSI,39.81,171,163.3663366,COADREAD,Resection,Matched,170.2972274,Intermediate
+p_PK_crc_087,s_PK_crc_087_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2830,IMPACT410,MSS,0.75,8,7.920792079,COADREAD,Resection,Matched,7.829757581,Intermediate
+p_PK_crc_088,s_PK_crc_088_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0000,IMPACT410,MSI,15.06,59,59.40594059,COADREAD,Resection,Matched,59.70190155,Not_Reported
+p_PK_crc_089,s_PK_crc_089_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.3487,IMPACT410,MSS,2.75,3,2.97029703,COADREAD,Resection,Matched,2.936159093,Not_Reported
+p_PK_crc_090,s_PK_crc_090_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1418,IMPACT410,MSS,0.91,3,2.97029703,COADREAD,Resection,Matched,2.936159093,Intermediate
+p_PK_crc_091,s_PK_crc_091_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0373,IMPACT410,MSS,2.54,5,4.95049505,COADREAD,Resection,Matched,4.893598488,Low Grade
+p_PK_crc_092,s_PK_crc_092_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0934,IMPACT410,MSI,36.43,47,46.53465347,COADREAD,Resection,Matched,48.93598488,Intermediate
+p_PK_crc_093,s_PK_crc_093_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0729,IMPACT410,MSI,42.14,57,56.43564356,COADREAD,Resection,Matched,58.72318186,Intermediate
+p_PK_crc_095,s_PK_crc_095_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1263,IMPACT410,MSS,0.5,5,4.95049505,COADREAD,Resection,Matched,4.893598488,Intermediate
+p_PK_crc_096,s_PK_crc_096_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0895,IMPACT410,MSI,35.74,80,75.24752475,COADREAD,Resection,Matched,78.29757581,Low
+p_PK_crc_097,s_PK_crc_097_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0368,IMPACT410,MSI,36.44,86,84.15841584,COADREAD,Resection,Matched,86.12733339,Intermediate
+p_PK_crc_099,s_PK_crc_099_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0574,IMPACT410,MSS,0.34,12,11.88118812,COADREAD,Resection,Matched,11.74463637,Intermediate
+p_PK_crc_100,s_PK_crc_100_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0040,IMPACT410,MSI,37.91,113,110.8910891,COADREAD,Resection,Matched,113.5314849,Not Reported
+p_PK_crc_101,s_PK_crc_101_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2573,IMPACT410,MSS,5.34,1,0.99009901,COADREAD,Resection,Matched,0.978719698,Intermediate
+p_PK_crc_102,s_PK_crc_102_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2476,IMPACT410,MSS,0.64,5,4.95049505,COADREAD,Resection,Matched,4.893598488,Intermediate
+p_PK_crc_103,s_PK_crc_103_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2692,IMPACT410,MSI,35.18,44,43.56435644,COADREAD,Resection,Matched,46.97854549,Not Reported
+p_PK_crc_104,s_PK_crc_104_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0192,IMPACT410,MSS,0.49,7,6.930693069,COADREAD,Resection,Matched,6.851037883,Not Reported
+p_PK_crc_105,s_PK_crc_105_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0000,IMPACT410,MSI,8.5,35,34.65346535,COADREAD,Resection,Matched,35.23390911,Low
+p_PK_crc_106,s_PK_crc_106_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0002,IMPACT410,MSI,27.7,62,59.40594059,COADREAD,Resection,Matched,60.68062125,Not Reported
+p_PK_crc_107,s_PK_crc_107_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2805,IMPACT410,MSS,2.1,9,7.920792079,COADREAD,Resection,Matched,8.808477279,Not Reported
+p_PK_crc_108,s_PK_crc_108_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1207,IMPACT410,MSS,2.49,4,3.96039604,COADREAD,Resection,Matched,3.91487879,High
+p_PK_crc_111,s_PK_crc_111_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2992,IMPACT410,MSS,1.07,7,6.930693069,COADREAD,Resection,Matched,6.851037883,Low
+p_PK_crc_112,s_PK_crc_112_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0216,IMPACT410,MSI,17.99,67,62.37623762,COADREAD,Resection,Matched,65.57421974,Intermediate
+p_PK_crc_113,s_PK_crc_113_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0014,IMPACT410,MSS,1.16,1,0.99009901,COADREAD,Resection,Matched,0.978719698,Intermediate
+p_PK_crc_114,s_PK_crc_114_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0218,IMPACT410,MSS,0.79,6,5.940594059,COADREAD,Resection,Matched,5.872318186,Low
+p_PK_crc_115,s_PK_crc_115_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1143,IMPACT410,MSS,1.88,12,9.900990099,COADREAD,Resection,Matched,11.74463637,Not Reported
+p_PK_crc_116,s_PK_crc_116_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1075,IMPACT410,MSS,0.71,5,4.95049505,COADREAD,Resection,Matched,4.893598488,Intermediate
+p_PK_crc_117,s_PK_crc_117_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0000,IMPACT410,MSS,2.29,9,8.910891089,COADREAD,Resection,Matched,8.808477279,Not Reported
+p_PK_crc_119,s_PK_crc_119_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0929,IMPACT410,MSS,0.54,6,5.940594059,COADREAD,Resection,Matched,5.872318186,Low
+p_PK_crc_120,s_PK_crc_120_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1319,IMPACT410,MSS,0.83,11,10.89108911,COADREAD,Resection,Matched,10.76591667,Intermediate
+p_PK_crc_121,s_PK_crc_121_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2154,IMPACT410,MSS,2.5,4,4.95049505,COADREAD,Resection,Matched,4.893598488,Intermediate
+p_PK_crc_123,s_PK_crc_123_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2156,IMPACT410,MSS,0.51,6,5.940594059,COADREAD,Resection,Matched,5.872318186,Intermediate
+p_PK_crc_124,s_PK_crc_124_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1123,IMPACT410,MSS,0.34,3,2.97029703,COADREAD,Resection,Matched,2.936159093,Not Reported
+p_PK_crc_125,s_PK_crc_125_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2767,IMPACT410,MSS,1.24,2,1.98019802,COADREAD,Resection,Matched,1.957439395,
+p_PK_crc_126,s_PK_crc_126_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0075,IMPACT410,MSS,0.7,4,4.95049505,COADREAD,Resection,Matched,5.872318186,Intermediate
+p_PK_crc_127,s_PK_crc_127_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1082,IMPACT410,MSS,1.1,13,12.87128713,COADREAD,Resection,Matched,12.72335607,Intermediate
+p_PK_crc_128,s_PK_crc_128_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1940,IMPACT410,MSS,3.21,3,2.97029703,COADREAD,Resection,Matched,2.936159093,High
+p_PK_crc_132,s_PK_crc_132_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.3325,IMPACT410,MSS,0.57,2,1.98019802,COADREAD,Resection,Matched,1.957439395,Low
+p_PK_crc_133,s_PK_crc_133_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1659,IMPACT410,MSS,0.46,6,5.940594059,COADREAD,Resection,Matched,5.872318186,Not Reported
+p_PK_crc_134,s_PK_crc_134_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.0500,IMPACT410,MSI,16.19,39,36.63366337,COADREAD,Resection,Matched,40.1275076,High
+p_PK_crc_135,s_PK_crc_135_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1786,IMPACT410,MSI,36.78,65,61.38613861,COADREAD,Resection,Matched,65.57421974,Intermediate
+p_PK_crc_136,s_PK_crc_136_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1433,IMPACT410,MSS,1.31,4,3.96039604,COADREAD,Resection,Matched,3.91487879,Intermediate
+p_PK_crc_137,s_PK_crc_137_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.2425,IMPACT410,MSS,1.64,10,9.900990099,COADREAD,Resection,Matched,9.787196976,Low
+p_PK_crc_138,s_PK_crc_138_T,Colorectal Cancer,Colorectal Adenocarcinoma,0.1543,IMPACT410,MSS,0.59,7,6.930693069,COADREAD,Resection,Matched,6.851037883,Intermediate

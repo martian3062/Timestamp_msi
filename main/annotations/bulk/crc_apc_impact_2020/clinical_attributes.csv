@@ -1,0 +1,34 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Metastases,Age at Metastases,NUMBER,True,1,AGE_AT_MET,crc_apc_impact_2020
+APC Groups,APC Groups,STRING,False,1,APC_GROUPS,crc_apc_impact_2020
+Cancer Type,Cancer Type,STRING,False,1,CANCER_TYPE,crc_apc_impact_2020
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,crc_apc_impact_2020
+Carcinomatosis,Carcinomatosis,STRING,False,1,CARCINOMATOSIS,crc_apc_impact_2020
+Differentiation,Differentiation,STRING,False,1,DIFFERENTIATION,crc_apc_impact_2020
+ECOG,ECOG,STRING,False,1,ECOG,crc_apc_impact_2020
+First line treatment at Met,First line treatment at time of metastasis,STRING,False,1,FIRST_LINE_MET_TX,crc_apc_impact_2020
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,crc_apc_impact_2020
+Histology,Histology,STRING,True,1,HISTOLOGY,crc_apc_impact_2020
+LST,LST,NUMBER,False,1,LST,crc_apc_impact_2020
+Bone Metastasis,Bone Metastasis,STRING,True,1,METASTASIS_BONE,crc_apc_impact_2020
+Liver Metastasis,Liver Metastasis,STRING,True,1,METASTASIS_LIVER,crc_apc_impact_2020
+Lung Metastasis,Lung Metastasis,STRING,True,1,METASTASIS_LUNG,crc_apc_impact_2020
+Metastasis Other,Metastasis Other,STRING,True,1,METASTASIS_OTHER,crc_apc_impact_2020
+MSI Score,MSI Score,NUMBER,False,1,MSI_SCORE,crc_apc_impact_2020
+MSI Type,MSI Type,STRING,False,1,MSI_TYPE,crc_apc_impact_2020
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_apc_impact_2020
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,crc_apc_impact_2020
+Overall Survival (Months),Overall survival in months since initial diagonosis.,NUMBER,True,1,OS_MONTHS,crc_apc_impact_2020
+Overall Survival Status,Overall patient survival status.,STRING,True,9,OS_STATUS,crc_apc_impact_2020
+Progress Free Survival (Months),Progress Free Survival (Months),NUMBER,True,1,PFS_MONTHS,crc_apc_impact_2020
+Progression Free Status,Progression Free Status,STRING,True,1,PFS_STATUS,crc_apc_impact_2020
+Prior Adjuvant Chemo,Prior Adjuvant Chemo,STRING,False,1,PRIOR_ADJUVANT_CHEMO,crc_apc_impact_2020
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_apc_impact_2020
+Sex,Sex,STRING,True,1,SEX,crc_apc_impact_2020
+Somatic Status,Somatic Status,STRING,False,1,SOMATIC_STATUS,crc_apc_impact_2020
+Stage At Diagnosis,Stage At Diagnosis,STRING,False,1,STAGE_AT_DIAGNOSIS,crc_apc_impact_2020
+Surgery Primary Tumor,Surgery Primary Tumor,STRING,False,1,SURGERY_PRIMARY_TUMOR,crc_apc_impact_2020
+Timing Mets,Timing Mets,STRING,False,1,TIMING_METS,crc_apc_impact_2020
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,crc_apc_impact_2020
+Tumor Location,Tumor Location,STRING,False,1,TUMOR_LOCATION,crc_apc_impact_2020
+Used in Genomic Analysis,Used in Genomic Analysis,STRING,False,1,USED_IN_GENOMIC_ANALYSIS,crc_apc_impact_2020

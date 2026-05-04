@@ -1,0 +1,47 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Diagnosis (years),Age at Diagnosis (years),NUMBER,True,1,AGE_AT_DX,crc_hta8_htan_2024
+HTAN Atlas Name,HTAN Atlas Name,STRING,True,0,ATLAS_NAME,crc_hta8_htan_2024
+Site of Resection or Biopsy,Site of Resection or Biopsy,STRING,True,0,BIOPSY_SITE,crc_hta8_htan_2024
+BMI,BMI,NUMBER,True,0,BMI,crc_hta8_htan_2024
+Cancer Type,The main cancer type as defined by the Oncotree cancer classification system for precision oncology. Source: MPath,STRING,False,3000,CANCER_TYPE,crc_hta8_htan_2024
+Cancer Type Detailed,The cancer subtype as defined by the Oncotree cancer classification system for precision oncology. Source: MPath,STRING,False,2000,CANCER_TYPE_DETAILED,crc_hta8_htan_2024
+Ethnicity,Ethnicity,STRING,True,0,ETHNICITY,crc_hta8_htan_2024
+Family History Cancer,Family History Cancer,STRING,True,0,FAM_HX_CANCER,crc_hta8_htan_2024
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,crc_hta8_htan_2024
+Tumor Grade,Tumor Grade,STRING,True,0,GRADE,crc_hta8_htan_2024
+H5AD Patient ID,H5AD Patient ID,STRING,True,0,H5AD_PATIENT_ID,crc_hta8_htan_2024
+H5AD Sample ID,H5AD Sample ID,STRING,False,0,H5AD_SAMPLE_ID,crc_hta8_htan_2024
+Histologic Morphology Code,Histologic Morphology Code,STRING,False,0,HISTOLOGY_CODE,crc_hta8_htan_2024
+Met Sites at Dx,Met Sites at Dx,STRING,True,0,MET_SITES_DX,crc_hta8_htan_2024
+Met Sites Ever,Met Sites Ever,STRING,True,0,MET_SITES_EVER,crc_hta8_htan_2024
+Morphology,Morphology,STRING,True,0,MORPHOLOGY,crc_hta8_htan_2024
+Multiple Cancers Patient,Multiple Cancers Patient,STRING,True,0,MUL_CANCERS_PAT,crc_hta8_htan_2024
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,crc_hta8_htan_2024
+Nodes Removed Factor,Nodes Removed Factor,STRING,True,0,NODES_REM_FACTOR,crc_hta8_htan_2024
+Oncotree Code,The assigned Oncotree code of the sample as defined by the Oncotree cancer classification system for precision oncology.,STRING,False,0,ONCOTREE_CODE,crc_hta8_htan_2024
+Overall Survival (Months),Overall survival from date of diagnosis,NUMBER,True,0,OS_MONTHS,crc_hta8_htan_2024
+Overall Survival from Surgery (Months),Overall survival from date of Surgery,NUMBER,True,0,OS_MONTHS_SURGERY,crc_hta8_htan_2024
+Overall Survival Status,The patient's survival status; is the patient alive or deceased,STRING,True,1000,OS_STATUS,crc_hta8_htan_2024
+Patient Display Name,Patient Display Name,STRING,True,0,PATIENT_DISPLAY_NAME,crc_hta8_htan_2024
+Progress Free Survival (Months),Progress Free Survival (Months),NUMBER,True,1,PFS_MONTHS,crc_hta8_htan_2024
+Progression Free Status,Progression Free Status,STRING,True,1,PFS_STATUS,crc_hta8_htan_2024
+Preservation Method,Preservation Method,STRING,False,0,PRESERVATION_METHOD,crc_hta8_htan_2024
+Pre Op Tx,Pre Op Tx,STRING,True,0,PRE_OP_TX,crc_hta8_htan_2024
+Primary Diagnosis,Primary Diagnosis,STRING,True,0,PRIMARY_DX,crc_hta8_htan_2024
+Primary Site,Primary Site,STRING,True,0,PRIMARY_SITE_PAT,crc_hta8_htan_2024
+Primary Site Binary,Primary Site Binary,STRING,True,0,PRI_SITE_BINARY,crc_hta8_htan_2024
+Primary Tumor Budding,Primary Tumor Budding,STRING,True,0,PRI_TUM_BUDDING,crc_hta8_htan_2024
+Race,Race,STRING,True,0,RACE,crc_hta8_htan_2024
+Progression or Recurrence Type,Progression or Recurrence Type,STRING,True,0,RECURRENCE_TYPE,crc_hta8_htan_2024
+Acquisition Method Type,Acquisition Method Type,STRING,False,0,SAMPLE_ACQUISITION_METHOD,crc_hta8_htan_2024
+Sample Class,"The sample classification (i.e., tumor, cellline, xenograph).Source: MPath",STRING,False,850,SAMPLE_CLASS,crc_hta8_htan_2024
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,crc_hta8_htan_2024
+Sample Display Name,Sample Display Name,STRING,False,0,SAMPLE_DISPLAY_NAME,crc_hta8_htan_2024
+Sample Type,Sample Type,STRING,False,990,SAMPLE_TYPE,crc_hta8_htan_2024
+Sex,Sex,STRING,True,0,SEX,crc_hta8_htan_2024
+Stage_Dx,Stage_Dx,STRING,True,0,STAGE_DX,crc_hta8_htan_2024
+Storage Method,Storage Method,STRING,False,0,STORAGE_METHOD,crc_hta8_htan_2024
+Timepoint Label,Timepoint Label,STRING,False,0,TIMEPOINT_LABEL,crc_hta8_htan_2024
+Tissue or Organ of Origin,Tissue or Organ of Origin,STRING,True,0,TISSUE_OF_ORIGIN,crc_hta8_htan_2024
+Treatment Lines,Treatment Lines,STRING,True,0,TX_LINES,crc_hta8_htan_2024
+Treatment Response Category,Treatment Response Category,STRING,True,0,TX_RES_CAT,crc_hta8_htan_2024

@@ -1,0 +1,62 @@
+patientId,sampleId,ACQUISITION_METHOD,ADVANCED,ATYPIA,COHORT,HPTYPE,MUTATION_COUNT,PCAD,PCNORMAL,PCVILLOUS,PDIM,POLYP_SUBTYPE,POLYP_TYPE,PRESERVATION_METHOD,PSHAPE,SAMPLE_SIZEINVIVO_CM,SEGMENT,SIDE,SOMATIC_STATUS,TISSUE_TYPE
+HTA11_10167,HTA11_10167_2000001011,Biopsy,,,Validation,,,,,,0.5,Unknown,Unknown,Fresh,,,,,Matched,Premalignant
+HTA11_10167,HTA11_10167_2000009901,Other Acquisition Method,No,No dysplasia,Validation,Not Hyperplastic,654,100%,0%,1-25%,0.4,Sessile Serrated Lesion,SER,Frozen,Sessile,0.5,Ascending colon,Proximal,Matched,Not Otherwise Specified
+HTA11_104,HTA11_104_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,,,,,0.7,Tubular Adenoma,AD,Fresh,Not stated,0.6,Transverse colon,Proximal,Matched,Premalignant
+HTA11_10623,HTA11_10623_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,115,1-25%,>=31%,1-25%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.6,Hepatic flexure,Proximal,Matched,Premalignant
+HTA11_10711,HTA11_10711_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,488,1-25%,>=31%,0%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.7,Cecum,Proximal,Matched,Premalignant
+HTA11_11156,HTA11_11156_2000001011,Biopsy,Yes,Low-grade dysplasia,Validation,Not Hyperplastic,,76-99%,3-5%,0%,0.8,Tubular Adenoma,AD,Fresh,Sessile,1,Sigmoid colon,Distal,Matched,Premalignant
+HTA11_11156,HTA11_11156_2000001021,Biopsy,Yes,Low-grade dysplasia,Validation,Not Hyperplastic,,100%,0%,0%,0.5,Tubular Adenoma,AD,Fresh,Sessile,1,Cecum,Proximal,Matched,Premalignant
+HTA11_11167,HTA11_11167_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,,100%,0%,0%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.5,Sigmoid colon,Distal,Matched,Premalignant
+HTA11_1391,HTA11_1391_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,3416,76-99%,21-30%,0%,0.3,Tubular Adenoma,AD,Fresh,Sessile,0.5,Ascending colon,Proximal,Matched,Premalignant
+HTA11_1938,HTA11_1938_2000001011,Biopsy,Yes,High-grade dysplasia,Discovery,Not Hyperplastic,2467,76-99%,3-5%,26-50%,1.7,Tubulovillous Adenoma,AD,Fresh,Sessile,2.5,Cecum,Proximal,Matched,Premalignant
+HTA11_2112,HTA11_2112_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Not Stated,,0%,>=31%,0%,0.4,Hyperplastic Polyp,SER,Fresh,Sessile,0.8,Sigmoid colon,Distal,Matched,Atypia - hyperplasia
+HTA11_2235,HTA11_2235_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,950,76-99%,6-10%,0%,0.2,Tubular Adenoma,AD,Fresh,Sessile,0.5,Hepatic flexure,Proximal,Matched,Premalignant
+HTA11_2487,HTA11_2487_2000001011,Biopsy,Yes,No dysplasia,Discovery,Not Hyperplastic,258,Not Stated,Not stated,Not Stated,1.2,Sessile Serrated Lesion,SER,Fresh,Sessile,1.2,Ascending colon,Proximal,Matched,Premalignant
+HTA11_2951,HTA11_2951_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,,76-99%,11-20%,1-25%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.8,Ascending colon,Proximal,Matched,Premalignant
+HTA11_2992,HTA11_2992_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Microvesicular,,0%,1-2%,0%,0.4,Microvesicular Hyperplastic Polyp,SER,Fresh,Sessile,0.5,Sigmoid colon,Distal,Matched,Atypia - hyperplasia
+HTA11_3331,HTA11_3331_2000001011,Biopsy,Yes,No dysplasia,Discovery,Not Hyperplastic,129,Not Stated,Not stated,Not Stated,0.9,Sessile Serrated Lesion,SER,Fresh,Sessile,1,Cecum,Proximal,Matched,Premalignant
+HTA11_3361,HTA11_3361_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,,26-50%,>=31%,0%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.5,Ascending colon,Proximal,Matched,Premalignant
+HTA11_3410,HTA11_3410_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,,100%,0%,0%,0.2,Tubular Adenoma,AD,Fresh,Sessile,0.8,Transverse colon,Proximal,Matched,Premalignant
+HTA11_347,HTA11_347_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,5614,1-25%,>=31%,0%,0.8,Tubular Adenoma,AD,Fresh,Sessile,0.7,Descending colon,Distal,Matched,Premalignant
+HTA11_3918,HTA11_3918_2000001011,Biopsy,Not Stated,Not Stated,Validation,Not Stated,1644,Not Stated,Not stated,Not Stated,,Tubular Adenoma,AD,Fresh,Not Stated,2,Ascending colon,Proximal,Matched,Premalignant
+HTA11_392,HTA11_392_3000011011,Biopsy,No,Low-grade dysplasia,Discovery,Not Stated,,76-99%,>=31%,1-25%,0.6,Unknown,Unknown,Fresh,Sessile,0.6,Cecum,Proximal,Matched,Premalignant
+HTA11_411,HTA11_411_2000001011,Biopsy,Not Stated,Not Stated,Discovery,Not Stated,,Not Stated,Not stated,Not Stated,,Hyperplastic Polyp,SER,Fresh,Not Stated,,Rectum,Distal,Matched,Not Otherwise Specified
+HTA11_4255,HTA11_4255_2000001011,Biopsy,Yes,No dysplasia,Validation,Microvesicular,3820,0%,>=31%,0%,0.3,Microvesicular Hyperplastic Polyp,SER,Fresh,Flat,1,Transverse colon,Proximal,Matched,Atypia - hyperplasia
+HTA11_4781,HTA11_4781_2000001011,Biopsy,,,Validation,,4750,,,,,Tubular Adenoma,AD,Fresh,,0.5,,,Matched,Premalignant
+HTA11_5212,HTA11_5212_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,1554,76-99%,3-5%,0%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.6,Rectum,Distal,Matched,Premalignant
+HTA11_5216,HTA11_5216_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Goblet-cell rich,1493,0%,0%,0%,0.6,Goblet cell-rich Hyperplastic Polyp,SER,Fresh,Sessile,0.5,Sigmoid colon,Distal,Matched,Atypia - hyperplasia
+HTA11_5363,HTA11_5363_2000001011,Biopsy,No,No dysplasia,Discovery,Not Hyperplastic,234,100%,0%,0%,0.4,Sessile Serrated Lesion,SER,Fresh,Sessile,0.8,Sigmoid colon,Distal,Matched,Premalignant
+HTA11_546,HTA11_546_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,,100%,0%,0%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.6,Transverse colon,Proximal,Matched,Premalignant
+HTA11_5994,HTA11_5994_2000001011,Biopsy,Not Stated,Not Stated,Discovery,Not Stated,,Not Stated,Not stated,Not Stated,,Unknown,Unknown,Fresh,Not Stated,0.6,Ascending colon,Proximal,Matched,Not Otherwise Specified
+HTA11_6025,HTA11_6025_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,454,100%,0%,0%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.5,Ascending colon,Proximal,Matched,Premalignant
+HTA11_6134,HTA11_6134_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Goblet-cell rich,967,0%,0%,0%,0.5,Goblet cell-rich Hyperplastic Polyp,SER,Fresh,Sessile,0.5,Sigmoid colon,Distal,Matched,Atypia - hyperplasia
+HTA11_6147,HTA11_6147_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Microvesicular,123,0%,3-5%,0%,0.3,Microvesicular Hyperplastic Polyp,SER,Fresh,Sessile,0.5,Sigmoid colon,Distal,Matched,Atypia - hyperplasia
+HTA11_6182,HTA11_6182_2000001011,Biopsy,Yes,Low-grade dysplasia,Validation,Not Hyperplastic,,100%,0%,51-75%,0.4,Tubulovillous Adenoma,AD,Fresh,Not stated,1.5,Descending colon,Distal,Matched,Premalignant
+HTA11_6298,HTA11_6298_2000001011,Biopsy,Not stated,Not stated,Validation,Not stated,,Not stated,Not stated,0%,1.4,Unknown,Unknown,Fresh,Sessile,0.8,Transverse colon,Proximal,Matched,Premalignant
+HTA11_6310,HTA11_6310_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Microvesicular,1527,0%,21-30%,0%,0.7,Microvesicular Hyperplastic Polyp,SER,Fresh,Sessile,0.6,Descending colon,Distal,Matched,Premalignant
+HTA11_6801,HTA11_6801_2000001011,Biopsy,No,No dysplasia,Validation,Not Hyperplastic,85,51-75%,>=31%,0%,0.5,Sessile Serrated Lesion,SER,Fresh,Sessile,0.5,Ascending colon,Proximal,Matched,Premalignant
+HTA11_6801,HTA11_6801_2000001021,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,,,,1-25%,0.7,Tubular Adenoma,AD,Fresh,Pedunculated,0.8,Sigmoid colon,Distal,Matched,Premalignant
+HTA11_6818,HTA11_6818_2000001011,Biopsy,Yes,Low-grade dysplasia,Validation,Not Hyperplastic,,76-99%,3-5%,0%,0.6,Tubular Adenoma,AD,Fresh,Pedunculated,1,Descending colon,Distal,Matched,Premalignant
+HTA11_6818,HTA11_6818_2000001021,Biopsy,Yes,High-grade dysplasia,Validation,Not Hyperplastic,,Not stated,Not stated,Not stated,2,Tubulovillous Adenoma,AD,Fresh,Not stated,2.5,Ascending colon,Proximal,Matched,Premalignant
+HTA11_696,HTA11_696_2000001011,Biopsy,No,Low-grade dysplasia,Discovery,Not Hyperplastic,6167,26-50%,>=31%,1-25%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.8,Sigmoid colon,Distal,Matched,Premalignant
+HTA11_7029,HTA11_7029_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,,100%,0%,1-25%,0.4,Unknown,Unknown,Fresh,Sessile,0.8,Ascending colon,Proximal,Matched,Premalignant
+HTA11_7128,HTA11_7128_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,,76-99%,11-20%,1-25%,1,Tubular Adenoma,AD,Fresh,Pedunculated,0.8,Rectum,Distal,Matched,Premalignant
+HTA11_7179,HTA11_7179_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not stated,,1-25%,>=31%,1-25%,1.3,Unknown,Unknown,Fresh,Sessile,0.6,Descending colon,Distal,Matched,Premalignant
+HTA11_7469,HTA11_7469_2000001011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,,26-50%,>=31%,0%,0.2,Tubular Adenoma,AD,Fresh,Sessile,0.5,Transverse colon,Proximal,Matched,Premalignant
+HTA11_7663,HTA11_7663_2000001011,Biopsy,,,Validation,,,,,,0.6,Unknown,Unknown,Fresh,,,,,Matched,Premalignant
+HTA11_7663,HTA11_7663_2000009901,Other Acquisition Method,No,No dysplasia,Validation,Not Hyperplastic,221,51-75%,>=31%,0%,0.6,Sessile Serrated Lesion,SER,Frozen,Flat,0.6,Cecum,Proximal,Matched,Not Otherwise Specified
+HTA11_7696,HTA11_7696_3000711011,Biopsy,Yes,Low-grade dysplasia,Validation,Not Hyperplastic,102,26-50%,>=31%,1-25%,1.5,Tubular Adenoma,AD,Snap Frozen,Not stated,1.5,Cecum,Proximal,Matched,Premalignant
+HTA11_78,HTA11_78_2000001011,Biopsy,Not Stated,Not stated,Discovery,Not Hyperplastic,,1-25%,>=31%,0%,1,Tubular Adenoma,AD,Fresh,Sessile,0.4,Descending colon,Distal,Matched,Premalignant
+HTA11_7862,HTA11_7862_2000001011,Biopsy,,,Validation,,,,,,0.7,Unknown,Unknown,Fresh,,,,,Matched,Premalignant
+HTA11_7862,HTA11_7862_2000009901,Other Acquisition Method,No,Low-grade dysplasia,Validation,Not Hyperplastic,53,1-25%,>=31%,0%,0.4,Tubular Adenoma,AD,Frozen,Sessile,0.7,Sigmoid colon,Distal,Matched,Not Otherwise Specified
+HTA11_7956,HTA11_7956_2000001011,Biopsy,Not stated,Not stated,Validation,Not stated,,Not stated,Not stated,0%,0.4,Unknown,Unknown,Fresh,Sessile,0.6,Ascending colon,Proximal,Matched,Not Otherwise Specified
+HTA11_8099,HTA11_8099_2000001011,Biopsy,Not stated,Not stated,Validation,Not stated,,Not stated,Not stated,0%,0.4,Unknown,Unknown,Fresh,Sessile,0.6,Transverse colon,Proximal,Matched,Not Otherwise Specified
+HTA11_83,HTA11_83_2000001011,Biopsy,Not Stated,No dysplasia,Discovery,Microvesicular,,0%,,0%,0.4,Microvesicular Hyperplastic Polyp,SER,Fresh,Sessile,0.5,Cecum,Proximal,Matched,Atypia - hyperplasia
+HTA11_8622,HTA11_8622_2000001011,Biopsy,Yes,No dysplasia,Validation,Not Hyperplastic,294,76-99%,,0%,1.2,Sessile Serrated Lesion,SER,Fresh,Sessile,1.2,Ascending colon,Proximal,Matched,Premalignant
+HTA11_8622,HTA11_8622_2000001021,Biopsy,No,No dysplasia,Validation,Not Hyperplastic,43,76-99%,6-10%,0%,0.7,Sessile Serrated Lesion,SER,Fresh,Sessile,0.8,Hepatic flexure,Proximal,Matched,Premalignant
+HTA11_866,HTA11_866_2000001011,Biopsy,Yes,Low-grade dysplasia,Discovery,Not Hyperplastic,1055,100%,0%,51-75%,0.5,Tubulovillous Adenoma,AD,Fresh,Pedunculated,0.7,Descending colon,Distal,Matched,Premalignant
+HTA11_866,HTA11_866_3004761011,Biopsy,No,Low-grade dysplasia,Validation,Not Hyperplastic,404,100%,0%,1-25%,0.4,Tubular Adenoma,AD,Fresh,Sessile,0.8,Descending colon,Distal,Matched,Premalignant
+HTA11_8920,HTA11_8920_2000001011,Biopsy,Yes,No dysplasia,Validation,Goblet-cell rich,66,76-99%,21-30%,0%,0.3,Goblet cell-rich Hyperplastic Polyp,SER,Fresh,Sessile,8.8,Descending colon,Distal,Matched,Atypia - hyperplasia
+HTA11_9341,HTA11_9341_2000001011,Biopsy,,,Validation,,,,,,1,Unknown,Unknown,Fresh,,,,,Matched,Premalignant
+HTA11_9341,HTA11_9341_2000009901,Other Acquisition Method,Yes,No dysplasia,Validation,Not Hyperplastic,88,76-99%,6-10%,1-25%,0.8,Sessile Serrated Lesion,SER,Frozen,Flat,1,Ascending colon,Proximal,Matched,Not Otherwise Specified
+HTA11_9408,HTA11_9408_2000001011,Biopsy,Yes,Low-grade dysplasia,Validation,Not Hyperplastic,,100%,0%,0%,0.6,Tubular Adenoma,AD,Fresh,Sessile,1,Ascending colon,Proximal,Matched,Premalignant

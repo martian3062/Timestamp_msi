@@ -1,0 +1,31 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Age at Rectal Cancer Diagnosis,Age at Rectal Cancer Diagnosis,NUMBER,True,880,AGE,rectal_radiation_msk_2024
+Anterior Tumor Location,Anterior Tumor Location,STRING,True,0,ANTERIOR_TUMOR_LOCATION,rectal_radiation_msk_2024
+Cancer Type,The main cancer type as defined by the Oncotree cancer classification system for precision oncology. Source: MPath,STRING,False,3000,CANCER_TYPE,rectal_radiation_msk_2024
+Cancer Type Detailed,The cancer subtype as defined by the Oncotree cancer classification system for precision oncology. Source: MPath,STRING,False,2000,CANCER_TYPE_DETAILED,rectal_radiation_msk_2024
+cTNM Staging,cTNM Staging,STRING,True,0,C_TNM_STAGING,rectal_radiation_msk_2024
+Distal Tumor Location,Distal Tumor Location,STRING,True,0,DISTAL_TUMOR_LOCATION,rectal_radiation_msk_2024
+Ethnicity,Ethnicity,STRING,True,950,ETHNICITY,rectal_radiation_msk_2024
+Facets FGA,Facets FGA,NUMBER,False,1,FACETS_FGA,rectal_radiation_msk_2024
+Fraction Genome Altered,Fraction Genome Altered,NUMBER,False,20,FRACTION_GENOME_ALTERED,rectal_radiation_msk_2024
+Gene Panel,The gene panel or assay used used to perform targeted NGS on the sample. Source: MPath,STRING,False,900,GENE_PANEL,rectal_radiation_msk_2024
+Metastatic Site,Location of profiled metastatic site,STRING,False,0,METASTATIC_SITE,rectal_radiation_msk_2024
+MSI Comment,MSI interpretation. Source: MPath,STRING,False,0,MSI_COMMENT,rectal_radiation_msk_2024
+MSI Score,Microsatellite Instability (MSI) score. Source: MPath,NUMBER,False,0,MSI_SCORE,rectal_radiation_msk_2024
+MSI Type,"Directly related to MSI Score; Possible values include Stable, Instable, Indeterminate, or Do not report. Source: MPath",STRING,False,910,MSI_TYPE,rectal_radiation_msk_2024
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,rectal_radiation_msk_2024
+Oncotree Code,The assigned Oncotree code of the sample as defined by the Oncotree cancer classification system for precision oncology.,STRING,False,0,ONCOTREE_CODE,rectal_radiation_msk_2024
+Primary Tumor Site,The organ sub-division term assigned to the primary tumor location of the sample. Source: MPath,STRING,False,0,PRIMARY_SITE,rectal_radiation_msk_2024
+Race,Race,STRING,True,980,RACE,rectal_radiation_msk_2024
+Sample Class,"The sample classification (i.e., tumor, cellline, xenograph).Source: MPath",STRING,False,850,SAMPLE_CLASS,rectal_radiation_msk_2024
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,rectal_radiation_msk_2024
+Sample Coverage,Sequencing coverage. Source: MPath,NUMBER,False,0,SAMPLE_COVERAGE,rectal_radiation_msk_2024
+Sample Display Name,Sample Display Name,STRING,False,0,SAMPLE_DISPLAY_NAME,rectal_radiation_msk_2024
+Sample Type,"The type assigned to a sample (i.e., normal, primary, met, recurrence). Source: MPath",STRING,False,990,SAMPLE_TYPE,rectal_radiation_msk_2024
+Sequencing Platform,Sequencing Platform,STRING,False,0,SEQUENCING_PLATFORM,rectal_radiation_msk_2024
+Sex,Sex,STRING,True,970,SEX,rectal_radiation_msk_2024
+Somatic Status,Indicates if there exists a matched normal used for tumor sample analysis. Source: MPath,STRING,False,860,SOMATIC_STATUS,rectal_radiation_msk_2024
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,rectal_radiation_msk_2024
+Tumor Purity,Proportion of cancer cells in tumor sample. Source: MPath,NUMBER,False,0,TUMOR_PURITY,rectal_radiation_msk_2024
+Tumor Size <4cm,Tumor Size <4cm,STRING,True,0,TUMOR_SIZE_LESS_THAN_4CM,rectal_radiation_msk_2024
+WGD,WGD,STRING,False,0,WGD,rectal_radiation_msk_2024

@@ -1,0 +1,20 @@
+study_id,name,citation,pmid,groups,publicStudy,clinical_records_long,unique_patients,unique_samples,patient_attribute_count,sample_attribute_count,folder
+coadread_dfci_2016,"Colorectal Adenocarcinoma (DFCI, Cell Reports 2016)",Giannakis et al. Cell Reports 2016,27149842,P; U; B; L; I; C,True,6306,619,619,0,11,coadread_dfci_2016
+crc_orion_2024,"Colorectal Adenocarcinoma (DFCI/Orion, BioRxiv 2024)","Wala, Jeremiah et al. bioRxiv 2024",39386479,,True,1004,74,74,0,18,crc_orion_2024
+coadread_genentech,"Colorectal Adenocarcinoma (Genentech, Nature 2012)",Seshagiri et al. Nature 2012,22895193,P; U; B; L; I; C,True,736,74,74,0,10,coadread_genentech
+bowel_colitis_msk_2022,"Colorectal Adenocarcinoma (MSK, Nat Commun 2022)",Walid K et al. Nat Commun. 2022,36611031,P; U; B; L; I; C,True,4224,175,180,0,44,bowel_colitis_msk_2022
+coadread_tcga,"Colorectal Adenocarcinoma (TCGA, Firehose Legacy)",,,P; U; B; L; I; C,True,8627,636,640,0,20,coadread_tcga
+coadread_tcga_pub,"Colorectal Adenocarcinoma (TCGA, Nature 2012)","TCGA, Nature 2012",22810696,P; U; B; L; I; C,True,5106,276,276,0,20,coadread_tcga_pub
+coadread_tcga_pan_can_atlas_2018,"Colorectal Adenocarcinoma (TCGA, PanCancer Atlas)","TCGA, Cell 2018","29625048,29596782,29622463,29617662,29625055,29625050,29617662,30643250,32214244,29625049,29850653,36334560",P; U; B; L; I; C; ;; P; A; N; C; A; N,True,10454,594,594,0,18,coadread_tcga_pan_can_atlas_2018
+coadread_mskcc,"Colorectal Adenocarcinoma Triplets (MSK, Genome Biol 2014)",Brannon et al. Genome Biol 2014,25164765,P; U; B; L; I; C,True,1447,69,138,0,12,coadread_mskcc
+coadread_cass_2020,"Colorectal Cancer (CAS Shanghai, Cancer Cell 2020)",Li et al. Cancer Cell 2020,32888432,P; U; B; L; I; C,True,1582,146,146,0,13,coadread_cass_2020
+crc_hta8_htan_2024,"Colorectal Cancer (HTAN MSK, Nature 2025)",Moorman et al. Nature 2025,39478232,,True,997,29,83,0,14,crc_hta8_htan_2024
+coadread_mskresistance_2022,"Colorectal Cancer (MSK, Cancer Discovery 2022)",Yaeger et al. Cancer Discovery 2022,36355783,,True,316,10,22,0,19,coadread_mskresistance_2022
+crc_apc_impact_2020,"Colorectal Cancer (MSK, Gastroenterology 2020)",Mondaca et al. Gastroenterology 2020,32730818,,True,9610,471,471,0,21,crc_apc_impact_2020
+crc_dd_2022,"Colorectal Cancer (MSK, JCO Precis Oncol 2022)",Gularte-Merida et al. JCO Precis Oncol 2022,35235413,,True,1499,47,47,0,36,crc_dd_2022
+crc_eo_2020,"Colorectal Cancer (MSK, JNCI 2021)",Cercek et al. JNCI 2021,34405229,,True,32169,1516,1516,0,22,crc_eo_2020
+rectal_radiation_msk_2024,"Colorectal Cancer Radiation (MSK, 2024)",Dana M et al. JAMA Netw Open 2025,40100215,,True,795,31,48,0,21,rectal_radiation_msk_2024
+crc_sysucc_2022,"Colorectal Cancer- ChangKang Project (SYSUCC, Nat Commun 2022)",Qi et al. Nat Commun 2022,35487942,P; U; B; L; I; C,True,17477,1015,1015,0,18,crc_sysucc_2022
+crc_nigerian_2020,"Disparities in metastatic colorectal cancer between Africans and Americans (MSK, 2020)",Alatise et al. Nat Commun 2021,34819518,,True,831,64,64,0,13,crc_nigerian_2020
+crc_msk_2017,"Metastatic Colorectal Cancer (MSK, Cancer Cell 2018)",Yaeger et al. Cancer Cell 2018,29316426,,True,36265,1099,1134,0,34,crc_msk_2017
+crc_hta11_htan_2021,"Pre-cancer Colorectal Polyps (HTAN Vanderbilt, Cell 2021)",Chen et al. Cell 2021,34910928,,True,1067,52,61,0,19,crc_hta11_htan_2021

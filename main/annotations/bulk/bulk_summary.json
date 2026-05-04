@@ -1,0 +1,24 @@
+{
+  "study_count": 19,
+  "study_ids": [
+    "coadread_dfci_2016",
+    "crc_orion_2024",
+    "coadread_genentech",
+    "bowel_colitis_msk_2022",
+    "coadread_tcga",
+    "coadread_tcga_pub",
+    "coadread_tcga_pan_can_atlas_2018",
+    "coadread_mskcc",
+    "coadread_cass_2020",
+    "crc_hta8_htan_2024",
+    "coadread_mskresistance_2022",
+    "crc_apc_impact_2020",
+    "crc_dd_2022",
+    "crc_eo_2020",
+    "rectal_radiation_msk_2024",
+    "crc_sysucc_2022",
+    "crc_nigerian_2020",
+    "crc_msk_2017",
+    "crc_hta11_htan_2021"
+  ]
+}

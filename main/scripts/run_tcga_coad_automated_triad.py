@@ -42,7 +42,6 @@ DEFAULT_FEATURE_EXTRACTOR_CANDIDATES = (
 DEFAULT_MIL_FALLBACKS = {
     "Approach1": ("transmil", "attention_mil"),
     "Approach2": ("attention_mil", "transmil"),
-    "MonteCarlo": ("attention_mil", "transmil"),
 }
 
 
@@ -901,7 +900,7 @@ def launch_parallel_approaches(config: dict[str, Any]) -> list[dict[str, Any]]:
     bundle_root = Path(config["bundle_root"])
     processes: list[dict[str, Any]] = []
     python_executable = runner_python_executable()
-    for spec in config["specs"][: int(config["request"].get("max_parallel_approaches", 3))]:
+    for spec in config["specs"][: int(config["request"].get("max_parallel_approaches", 2))]:
         approach_label = str(spec["approach_label"])
         log_path = bundle_root / "approaches" / approach_label / "runner.log"
         log_path.parent.mkdir(parents=True, exist_ok=True)

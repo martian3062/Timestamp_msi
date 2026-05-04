@@ -1,0 +1,17 @@
+displayName,description,datatype,patientAttribute,priority,clinicalAttributeId,studyId
+Diagnosis Age,Age at which a condition or disease was first diagnosed.,NUMBER,True,1,AGE,coadread_dfci_2016
+Cancer Type,Disease type,STRING,False,1,CANCER_TYPE,coadread_dfci_2016
+Cancer Type Detailed,Cancer Type Detailed,STRING,False,1,CANCER_TYPE_DETAILED,coadread_dfci_2016
+CIMP Category,CIMP category.,STRING,False,1,CIMP_CATEGORY,coadread_dfci_2016
+MSI Status,MSI status.,STRING,False,1,MSI_STATUS,coadread_dfci_2016
+Mutation Count,Mutation Count,NUMBER,False,30,MUTATION_COUNT,coadread_dfci_2016
+Oncotree Code,Oncotree Code,STRING,False,1,ONCOTREE_CODE,coadread_dfci_2016
+Percent Necrosis,Percent necrosis.,NUMBER,True,1,PERCENTAGE_NECROSIS,coadread_dfci_2016
+Tumor Grade,"Histologic grading criteria for adenoid cystic carcinoma (Szanto, et. al, 1984)",STRING,False,1,PRIMARY_TUMOR_GRADE,coadread_dfci_2016
+Number of Samples Per Patient,Number of Samples Per Patient,STRING,True,1,SAMPLE_COUNT,coadread_dfci_2016
+Sex,Sex,STRING,True,1,SEX,coadread_dfci_2016
+Somatic Status,Somatic Status.,STRING,False,1,SOMATIC_STATUS,coadread_dfci_2016
+TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,False,1,TMB_NONSYNONYMOUS,coadread_dfci_2016
+tumor purity,tumor purity,STRING,False,1,TUMOR_PURITY,coadread_dfci_2016
+Tumor Site,Tumor Site,STRING,True,1,TUMOR_SITE,coadread_dfci_2016
+Tumor Stage,Tumor stage.,STRING,False,1,TUMOR_STAGE,coadread_dfci_2016

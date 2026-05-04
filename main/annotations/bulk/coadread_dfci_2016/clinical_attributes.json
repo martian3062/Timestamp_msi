@@ -1,0 +1,146 @@
+[
+  {
+    "displayName": "Diagnosis Age",
+    "description": "Age at which a condition or disease was first diagnosed.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Disease type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "CIMP Category",
+    "description": "CIMP category.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CIMP_CATEGORY",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "MSI Status",
+    "description": "MSI status.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_STATUS",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Percent Necrosis",
+    "description": "Percent necrosis.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PERCENTAGE_NECROSIS",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Tumor Grade",
+    "description": "Histologic grading criteria for adenoid cystic carcinoma (Szanto, et. al, 1984)",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_TUMOR_GRADE",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "tumor purity",
+    "description": "tumor purity",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Tumor Site",
+    "description": "Tumor Site",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_SITE",
+    "studyId": "coadread_dfci_2016"
+  },
+  {
+    "displayName": "Tumor Stage",
+    "description": "Tumor stage.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_STAGE",
+    "studyId": "coadread_dfci_2016"
+  }
+]

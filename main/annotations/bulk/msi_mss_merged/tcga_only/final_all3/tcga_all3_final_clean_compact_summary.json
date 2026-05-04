@@ -1,0 +1,33 @@
+{
+  "rows_total": 595,
+  "mss_rows": 515,
+  "msi_h_rows": 80,
+  "columns": [
+    "patient_id",
+    "sample_id",
+    "msi_status_final",
+    "final_label_source_study",
+    "final_label_source_method",
+    "label_conflict",
+    "pub_direct_label",
+    "pancan_score_label",
+    "pub_original_msi_status",
+    "msi_score_mantis",
+    "msi_sensor_score",
+    "sample_type",
+    "cancer_type",
+    "cancer_type_detailed",
+    "oncotree_code",
+    "primary_site",
+    "tumor_stage_2009",
+    "fraction_genome_altered",
+    "tmb_nonsynonymous",
+    "mutation_count",
+    "hypermutated",
+    "methylation_status",
+    "methylation_subtype",
+    "mlh1_silencing",
+    "somatic_status"
+  ],
+  "conflict_rows": 1
+}

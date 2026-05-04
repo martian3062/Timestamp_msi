@@ -1,0 +1,12 @@
+{
+  "rows": 2655,
+  "mss_rows": 2330,
+  "msi_h_rows": 325,
+  "studies": [
+    "coadread_dfci_2016",
+    "coadread_genentech",
+    "coadread_tcga_pub",
+    "crc_msk_2017",
+    "crc_sysucc_2022"
+  ]
+}

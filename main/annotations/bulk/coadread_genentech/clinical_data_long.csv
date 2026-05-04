@@ -1,0 +1,737 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+coadread_genentech,12912,587220,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,12912,587220,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,12912,587220,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,12912,587220,MUTATION_COUNT,Mutation Count,NUMBER,False,1274
+coadread_genentech,12912,587220,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,12912,587220,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,12912,587220,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,12912,587220,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,42.4666666667
+coadread_genentech,12912,587220,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,12912,587220,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,12914,587222,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,12914,587222,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,12914,587222,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,12914,587222,MUTATION_COUNT,Mutation Count,NUMBER,False,2318
+coadread_genentech,12914,587222,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,12914,587222,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,12914,587222,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,12914,587222,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,76.9666666667
+coadread_genentech,12914,587222,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,12914,587222,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,12915,587224,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,12915,587224,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,12915,587224,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,12915,587224,MUTATION_COUNT,Mutation Count,NUMBER,False,1339
+coadread_genentech,12915,587224,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,12915,587224,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,12915,587224,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,12915,587224,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,44.5666666667
+coadread_genentech,12915,587224,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,12915,587224,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,12919,587226,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,12919,587226,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,12919,587226,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,12919,587226,MUTATION_COUNT,Mutation Count,NUMBER,False,810
+coadread_genentech,12919,587226,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,12919,587226,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,12919,587226,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,12919,587226,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,26.8333333333
+coadread_genentech,12919,587226,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,12919,587226,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,12926,587228,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,12926,587228,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,12926,587228,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,12926,587228,MUTATION_COUNT,Mutation Count,NUMBER,False,1301
+coadread_genentech,12926,587228,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,12926,587228,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,12926,587228,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,12926,587228,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,43.1666666667
+coadread_genentech,12926,587228,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,12926,587228,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14954,587230,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14954,587230,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14954,587230,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,14954,587230,MUTATION_COUNT,Mutation Count,NUMBER,False,57
+coadread_genentech,14954,587230,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14954,587230,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14954,587230,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14954,587230,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.9
+coadread_genentech,14954,587230,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,14954,587230,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14955,587232,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14955,587232,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14955,587232,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,14955,587232,MUTATION_COUNT,Mutation Count,NUMBER,False,100
+coadread_genentech,14955,587232,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14955,587232,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14955,587232,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14955,587232,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.16666666667
+coadread_genentech,14955,587232,TUMOR_CONTENT,tumor content,NUMBER,False,70
+coadread_genentech,14955,587232,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14961,587234,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14961,587234,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14961,587234,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,14961,587234,MUTATION_COUNT,Mutation Count,NUMBER,False,1049
+coadread_genentech,14961,587234,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14961,587234,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14961,587234,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14961,587234,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,34.9
+coadread_genentech,14961,587234,TUMOR_CONTENT,tumor content,NUMBER,False,85
+coadread_genentech,14961,587234,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14963,587238,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14963,587238,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14963,587238,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,14963,587238,MUTATION_COUNT,Mutation Count,NUMBER,False,951
+coadread_genentech,14963,587238,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14963,587238,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14963,587238,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14963,587238,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,31.7333333333
+coadread_genentech,14963,587238,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,14963,587238,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14966,587242,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14966,587242,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14966,587242,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,14966,587242,MUTATION_COUNT,Mutation Count,NUMBER,False,49
+coadread_genentech,14966,587242,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14966,587242,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14966,587242,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14966,587242,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.63333333333
+coadread_genentech,14966,587242,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,14966,587242,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14973,587244,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14973,587244,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14973,587244,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,14973,587244,MUTATION_COUNT,Mutation Count,NUMBER,False,47
+coadread_genentech,14973,587244,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14973,587244,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14973,587244,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14973,587244,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.56666666667
+coadread_genentech,14973,587244,TUMOR_CONTENT,tumor content,NUMBER,False,75
+coadread_genentech,14973,587244,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14980,587246,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14980,587246,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14980,587246,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,14980,587246,MUTATION_COUNT,Mutation Count,NUMBER,False,128
+coadread_genentech,14980,587246,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14980,587246,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14980,587246,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14980,587246,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.23333333333
+coadread_genentech,14980,587246,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,14980,587246,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,31814,587248,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,31814,587248,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,31814,587248,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,31814,587248,MUTATION_COUNT,Mutation Count,NUMBER,False,70
+coadread_genentech,31814,587248,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,31814,587248,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,31814,587248,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,31814,587248,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.33333333333
+coadread_genentech,31814,587248,TUMOR_CONTENT,tumor content,NUMBER,False,70
+coadread_genentech,31814,587248,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32098,587254,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32098,587254,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32098,587254,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32098,587254,MUTATION_COUNT,Mutation Count,NUMBER,False,31
+coadread_genentech,32098,587254,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32098,587254,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32098,587254,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32098,587254,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.03333333333
+coadread_genentech,32098,587254,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32098,587254,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32109,587256,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32109,587256,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32109,587256,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32109,587256,MUTATION_COUNT,Mutation Count,NUMBER,False,938
+coadread_genentech,32109,587256,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32109,587256,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32109,587256,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32109,587256,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,31.1333333333
+coadread_genentech,32109,587256,TUMOR_CONTENT,tumor content,NUMBER,False,85
+coadread_genentech,32109,587256,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32116,587260,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32116,587260,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32116,587260,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32116,587260,MUTATION_COUNT,Mutation Count,NUMBER,False,102
+coadread_genentech,32116,587260,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32116,587260,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32116,587260,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32116,587260,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.4
+coadread_genentech,32116,587260,TUMOR_CONTENT,tumor content,NUMBER,False,85
+coadread_genentech,32116,587260,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32123,587262,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32123,587262,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32123,587262,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32123,587262,MUTATION_COUNT,Mutation Count,NUMBER,False,139
+coadread_genentech,32123,587262,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32123,587262,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32123,587262,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32123,587262,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.63333333333
+coadread_genentech,32123,587262,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32123,587262,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32170,587264,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32170,587264,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32170,587264,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32170,587264,MUTATION_COUNT,Mutation Count,NUMBER,False,64
+coadread_genentech,32170,587264,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32170,587264,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32170,587264,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32170,587264,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.13333333333
+coadread_genentech,32170,587264,TUMOR_CONTENT,tumor content,NUMBER,False,95
+coadread_genentech,32170,587264,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32191,587268,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32191,587268,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32191,587268,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32191,587268,MUTATION_COUNT,Mutation Count,NUMBER,False,82
+coadread_genentech,32191,587268,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32191,587268,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32191,587268,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32191,587268,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.73333333333
+coadread_genentech,32191,587268,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,32191,587268,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32192,587270,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32192,587270,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32192,587270,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32192,587270,MUTATION_COUNT,Mutation Count,NUMBER,False,94
+coadread_genentech,32192,587270,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32192,587270,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32192,587270,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32192,587270,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.1
+coadread_genentech,32192,587270,TUMOR_CONTENT,tumor content,NUMBER,False,55
+coadread_genentech,32192,587270,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32203,587276,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32203,587276,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32203,587276,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32203,587276,MUTATION_COUNT,Mutation Count,NUMBER,False,61
+coadread_genentech,32203,587276,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32203,587276,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32203,587276,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32203,587276,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.03333333333
+coadread_genentech,32203,587276,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32203,587276,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32210,587278,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32210,587278,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32210,587278,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32210,587278,MUTATION_COUNT,Mutation Count,NUMBER,False,1587
+coadread_genentech,32210,587278,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32210,587278,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32210,587278,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32210,587278,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,52.7333333333
+coadread_genentech,32210,587278,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32210,587278,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32359,587282,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32359,587282,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32359,587282,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32359,587282,MUTATION_COUNT,Mutation Count,NUMBER,False,90
+coadread_genentech,32359,587282,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32359,587282,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32359,587282,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32359,587282,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.0
+coadread_genentech,32359,587282,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32359,587282,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32360,587284,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32360,587284,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32360,587284,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32360,587284,MUTATION_COUNT,Mutation Count,NUMBER,False,2244
+coadread_genentech,32360,587284,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32360,587284,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32360,587284,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32360,587284,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,74.5666666667
+coadread_genentech,32360,587284,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32360,587284,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32364,587286,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32364,587286,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32364,587286,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32364,587286,MUTATION_COUNT,Mutation Count,NUMBER,False,152
+coadread_genentech,32364,587286,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32364,587286,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32364,587286,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32364,587286,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.0
+coadread_genentech,32364,587286,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32364,587286,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32365,587288,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32365,587288,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32365,587288,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32365,587288,MUTATION_COUNT,Mutation Count,NUMBER,False,101
+coadread_genentech,32365,587288,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32365,587288,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32365,587288,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32365,587288,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.36666666667
+coadread_genentech,32365,587288,TUMOR_CONTENT,tumor content,NUMBER,False,85
+coadread_genentech,32365,587288,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32367,587290,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32367,587290,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32367,587290,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32367,587290,MUTATION_COUNT,Mutation Count,NUMBER,False,138
+coadread_genentech,32367,587290,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32367,587290,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32367,587290,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32367,587290,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.53333333333
+coadread_genentech,32367,587290,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32367,587290,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32369,587292,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32369,587292,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32369,587292,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32369,587292,MUTATION_COUNT,Mutation Count,NUMBER,False,85
+coadread_genentech,32369,587292,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32369,587292,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32369,587292,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32369,587292,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.86666666667
+coadread_genentech,32369,587292,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32369,587292,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32374,587294,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32374,587294,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32374,587294,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32374,587294,MUTATION_COUNT,Mutation Count,NUMBER,False,71
+coadread_genentech,32374,587294,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32374,587294,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32374,587294,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32374,587294,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.36666666667
+coadread_genentech,32374,587294,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32374,587294,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32381,587298,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32381,587298,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32381,587298,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32381,587298,MUTATION_COUNT,Mutation Count,NUMBER,False,101
+coadread_genentech,32381,587298,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32381,587298,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32381,587298,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32381,587298,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.36666666667
+coadread_genentech,32381,587298,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32381,587298,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32383,587300,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32383,587300,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32383,587300,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32383,587300,MUTATION_COUNT,Mutation Count,NUMBER,False,89
+coadread_genentech,32383,587300,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32383,587300,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32383,587300,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32383,587300,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.93333333333
+coadread_genentech,32383,587300,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32383,587300,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32385,587302,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32385,587302,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32385,587302,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32385,587302,MUTATION_COUNT,Mutation Count,NUMBER,False,120
+coadread_genentech,32385,587302,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32385,587302,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32385,587302,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32385,587302,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.0
+coadread_genentech,32385,587302,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,32385,587302,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32387,587304,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32387,587304,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32387,587304,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32387,587304,MUTATION_COUNT,Mutation Count,NUMBER,False,104
+coadread_genentech,32387,587304,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32387,587304,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32387,587304,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32387,587304,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.46666666667
+coadread_genentech,32387,587304,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32387,587304,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32389,587306,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32389,587306,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32389,587306,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32389,587306,MUTATION_COUNT,Mutation Count,NUMBER,False,93
+coadread_genentech,32389,587306,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32389,587306,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32389,587306,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32389,587306,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.06666666667
+coadread_genentech,32389,587306,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,32389,587306,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32722,587316,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32722,587316,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32722,587316,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32722,587316,MUTATION_COUNT,Mutation Count,NUMBER,False,1030
+coadread_genentech,32722,587316,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32722,587316,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32722,587316,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32722,587316,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,34.0333333333
+coadread_genentech,32722,587316,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32722,587316,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32732,587318,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32732,587318,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32732,587318,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32732,587318,MUTATION_COUNT,Mutation Count,NUMBER,False,38
+coadread_genentech,32732,587318,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32732,587318,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32732,587318,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32732,587318,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.26666666667
+coadread_genentech,32732,587318,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32732,587318,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32738,587322,TUMOR_CONTENT,tumor content,NUMBER,False,70
+coadread_genentech,32738,587322,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32738,587322,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32738,587322,MUTATION_COUNT,Mutation Count,NUMBER,False,64
+coadread_genentech,32738,587322,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32738,587322,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32738,587322,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32738,587322,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.1
+coadread_genentech,32738,587322,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32738,587322,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32770,587328,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32770,587328,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32770,587328,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32770,587328,MUTATION_COUNT,Mutation Count,NUMBER,False,93
+coadread_genentech,32770,587328,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32770,587328,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32770,587328,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32770,587328,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.16666666667
+coadread_genentech,32770,587328,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32770,587328,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32772,587330,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32772,587330,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32772,587330,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32772,587330,MUTATION_COUNT,Mutation Count,NUMBER,False,39
+coadread_genentech,32772,587330,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32772,587330,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32772,587330,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32772,587330,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.3
+coadread_genentech,32772,587330,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32772,587330,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32774,587332,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32774,587332,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32774,587332,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32774,587332,MUTATION_COUNT,Mutation Count,NUMBER,False,1465
+coadread_genentech,32774,587332,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32774,587332,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32774,587332,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32774,587332,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,48.5666666667
+coadread_genentech,32774,587332,TUMOR_CONTENT,tumor content,NUMBER,False,60
+coadread_genentech,32774,587332,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32782,587334,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32782,587334,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32782,587334,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32782,587334,MUTATION_COUNT,Mutation Count,NUMBER,False,97
+coadread_genentech,32782,587334,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32782,587334,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32782,587334,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32782,587334,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.2
+coadread_genentech,32782,587334,TUMOR_CONTENT,tumor content,NUMBER,False,70
+coadread_genentech,32782,587334,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32788,587336,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32788,587336,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32788,587336,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32788,587336,MUTATION_COUNT,Mutation Count,NUMBER,False,764
+coadread_genentech,32788,587336,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32788,587336,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32788,587336,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32788,587336,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,25.4
+coadread_genentech,32788,587336,TUMOR_CONTENT,tumor content,NUMBER,False,50
+coadread_genentech,32788,587336,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32798,587338,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32798,587338,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32798,587338,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32798,587338,MUTATION_COUNT,Mutation Count,NUMBER,False,1065
+coadread_genentech,32798,587338,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32798,587338,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32798,587338,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32798,587338,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,35.5
+coadread_genentech,32798,587338,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32798,587338,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32800,587340,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32800,587340,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32800,587340,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32800,587340,MUTATION_COUNT,Mutation Count,NUMBER,False,53
+coadread_genentech,32800,587340,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32800,587340,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32800,587340,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32800,587340,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.76666666667
+coadread_genentech,32800,587340,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32800,587340,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32804,587342,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32804,587342,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32804,587342,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32804,587342,MUTATION_COUNT,Mutation Count,NUMBER,False,3252
+coadread_genentech,32804,587342,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32804,587342,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32804,587342,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32804,587342,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,108.066666667
+coadread_genentech,32804,587342,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32804,587342,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32808,587344,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32808,587344,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32808,587344,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32808,587344,MUTATION_COUNT,Mutation Count,NUMBER,False,60
+coadread_genentech,32808,587344,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32808,587344,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32808,587344,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32808,587344,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.0
+coadread_genentech,32808,587344,TUMOR_CONTENT,tumor content,NUMBER,False,70
+coadread_genentech,32808,587344,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32816,587346,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32816,587346,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32816,587346,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32816,587346,MUTATION_COUNT,Mutation Count,NUMBER,False,63
+coadread_genentech,32816,587346,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32816,587346,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32816,587346,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32816,587346,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.1
+coadread_genentech,32816,587346,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32816,587346,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32824,587348,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32824,587348,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32824,587348,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32824,587348,MUTATION_COUNT,Mutation Count,NUMBER,False,41
+coadread_genentech,32824,587348,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32824,587348,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32824,587348,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32824,587348,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.36666666667
+coadread_genentech,32824,587348,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32824,587348,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32832,587350,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32832,587350,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32832,587350,MSI_STATUS,MSI Status,STRING,False,MSI
+coadread_genentech,32832,587350,MUTATION_COUNT,Mutation Count,NUMBER,False,861
+coadread_genentech,32832,587350,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32832,587350,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32832,587350,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32832,587350,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,28.7333333333
+coadread_genentech,32832,587350,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32832,587350,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32838,587352,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32838,587352,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32838,587352,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32838,587352,MUTATION_COUNT,Mutation Count,NUMBER,False,81
+coadread_genentech,32838,587352,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32838,587352,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32838,587352,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32838,587352,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.7
+coadread_genentech,32838,587352,TUMOR_CONTENT,tumor content,NUMBER,False,75
+coadread_genentech,32838,587352,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32854,587354,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32854,587354,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32854,587354,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32854,587354,MUTATION_COUNT,Mutation Count,NUMBER,False,56
+coadread_genentech,32854,587354,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32854,587354,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32854,587354,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32854,587354,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.86666666667
+coadread_genentech,32854,587354,TUMOR_CONTENT,tumor content,NUMBER,False,95
+coadread_genentech,32854,587354,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32860,587356,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32860,587356,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32860,587356,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32860,587356,MUTATION_COUNT,Mutation Count,NUMBER,False,69
+coadread_genentech,32860,587356,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32860,587356,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32860,587356,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32860,587356,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.23333333333
+coadread_genentech,32860,587356,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32860,587356,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32868,587358,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32868,587358,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32868,587358,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32868,587358,MUTATION_COUNT,Mutation Count,NUMBER,False,62
+coadread_genentech,32868,587358,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32868,587358,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32868,587358,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32868,587358,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.06666666667
+coadread_genentech,32868,587358,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32868,587358,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32874,587360,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32874,587360,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32874,587360,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32874,587360,MUTATION_COUNT,Mutation Count,NUMBER,False,39
+coadread_genentech,32874,587360,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32874,587360,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32874,587360,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32874,587360,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.3
+coadread_genentech,32874,587360,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32874,587360,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32876,587362,TUMOR_CONTENT,tumor content,NUMBER,False,75
+coadread_genentech,32876,587362,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32876,587362,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32876,587362,MUTATION_COUNT,Mutation Count,NUMBER,False,63
+coadread_genentech,32876,587362,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32876,587362,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32876,587362,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32876,587362,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.06666666667
+coadread_genentech,32876,587362,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32876,587362,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32882,587364,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32882,587364,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32882,587364,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32882,587364,MUTATION_COUNT,Mutation Count,NUMBER,False,87
+coadread_genentech,32882,587364,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32882,587364,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32882,587364,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32882,587364,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.96666666667
+coadread_genentech,32882,587364,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32882,587364,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32900,587368,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32900,587368,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32900,587368,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32900,587368,MUTATION_COUNT,Mutation Count,NUMBER,False,58
+coadread_genentech,32900,587368,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32900,587368,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32900,587368,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32900,587368,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.93333333333
+coadread_genentech,32900,587368,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32900,587368,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32902,587370,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32902,587370,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32902,587370,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32902,587370,MUTATION_COUNT,Mutation Count,NUMBER,False,53
+coadread_genentech,32902,587370,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32902,587370,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32902,587370,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32902,587370,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.76666666667
+coadread_genentech,32902,587370,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32902,587370,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32904,587372,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32904,587372,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32904,587372,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32904,587372,MUTATION_COUNT,Mutation Count,NUMBER,False,35
+coadread_genentech,32904,587372,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32904,587372,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32904,587372,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32904,587372,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.16666666667
+coadread_genentech,32904,587372,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32904,587372,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32906,587374,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32906,587374,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32906,587374,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32906,587374,MUTATION_COUNT,Mutation Count,NUMBER,False,94
+coadread_genentech,32906,587374,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32906,587374,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32906,587374,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32906,587374,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.1
+coadread_genentech,32906,587374,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32906,587374,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32908,587376,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32908,587376,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32908,587376,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32908,587376,MUTATION_COUNT,Mutation Count,NUMBER,False,9399
+coadread_genentech,32908,587376,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32908,587376,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32908,587376,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32908,587376,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,312.033333333
+coadread_genentech,32908,587376,TUMOR_CONTENT,tumor content,NUMBER,False,65
+coadread_genentech,32908,587376,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32916,587378,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32916,587378,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32916,587378,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32916,587378,MUTATION_COUNT,Mutation Count,NUMBER,False,63
+coadread_genentech,32916,587378,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32916,587378,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32916,587378,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32916,587378,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.1
+coadread_genentech,32916,587378,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,32916,587378,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,33299,587380,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,33299,587380,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,33299,587380,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,33299,587380,MUTATION_COUNT,Mutation Count,NUMBER,False,88
+coadread_genentech,33299,587380,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,33299,587380,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,33299,587380,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,33299,587380,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.9
+coadread_genentech,33299,587380,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,33299,587380,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,33310,587382,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,33310,587382,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,33310,587382,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,33310,587382,MUTATION_COUNT,Mutation Count,NUMBER,False,79
+coadread_genentech,33310,587382,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,33310,587382,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,33310,587382,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,33310,587382,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.63333333333
+coadread_genentech,33310,587382,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,33310,587382,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,33313,587384,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,33313,587384,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,33313,587384,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,33313,587384,MUTATION_COUNT,Mutation Count,NUMBER,False,66
+coadread_genentech,33313,587384,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,33313,587384,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,33313,587384,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,33313,587384,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.16666666667
+coadread_genentech,33313,587384,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,33313,587384,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,34988,587386,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,34988,587386,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,34988,587386,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,34988,587386,MUTATION_COUNT,Mutation Count,NUMBER,False,115
+coadread_genentech,34988,587386,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,34988,587386,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,34988,587386,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,34988,587386,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.8
+coadread_genentech,34988,587386,TUMOR_CONTENT,tumor content,NUMBER,False,90
+coadread_genentech,34988,587386,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,34989,587388,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,34989,587388,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,34989,587388,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,34989,587388,MUTATION_COUNT,Mutation Count,NUMBER,False,82
+coadread_genentech,34989,587388,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,34989,587388,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,34989,587388,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,34989,587388,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.76666666667
+coadread_genentech,34989,587388,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,34989,587388,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,34990,587390,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,34990,587390,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,34990,587390,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,34990,587390,MUTATION_COUNT,Mutation Count,NUMBER,False,66
+coadread_genentech,34990,587390,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,34990,587390,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,34990,587390,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,34990,587390,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.16666666667
+coadread_genentech,34990,587390,TUMOR_CONTENT,tumor content,NUMBER,False,50
+coadread_genentech,34990,587390,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,34991,587392,MUTATION_COUNT,Mutation Count,NUMBER,False,91
+coadread_genentech,34991,587392,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,34991,587392,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,34991,587392,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,34991,587392,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,34991,587392,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,34991,587392,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,34991,587392,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.96666666667
+coadread_genentech,34991,587392,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,34991,587392,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,34994,587394,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,34994,587394,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,34994,587394,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,34994,587394,MUTATION_COUNT,Mutation Count,NUMBER,False,46
+coadread_genentech,34994,587394,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,34994,587394,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,34994,587394,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,34994,587394,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.46666666667
+coadread_genentech,34994,587394,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,34994,587394,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,34997,587398,TUMOR_CONTENT,tumor content,NUMBER,False,40
+coadread_genentech,34997,587398,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,34997,587398,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,34997,587398,MUTATION_COUNT,Mutation Count,NUMBER,False,70
+coadread_genentech,34997,587398,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,34997,587398,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,34997,587398,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,34997,587398,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.33333333333
+coadread_genentech,34997,587398,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,34997,587398,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,35001,587400,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,35001,587400,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,35001,587400,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,35001,587400,MUTATION_COUNT,Mutation Count,NUMBER,False,68
+coadread_genentech,35001,587400,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,35001,587400,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,35001,587400,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,35001,587400,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.26666666667
+coadread_genentech,35001,587400,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,35001,587400,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,14962,587236,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,14962,587236,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,14962,587236,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,14962,587236,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,14962,587236,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,14962,587236,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,14962,587236,TUMOR_CONTENT,tumor content,NUMBER,False,30
+coadread_genentech,14962,587236,TUMOR_TYPE,Tumor Type,STRING,False,colon
+coadread_genentech,32758,587326,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_genentech,32758,587326,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_genentech,32758,587326,MSI_STATUS,MSI Status,STRING,False,MSS
+coadread_genentech,32758,587326,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_genentech,32758,587326,SOMATIC_STATUS,Somatic Status,STRING,False,Matched
+coadread_genentech,32758,587326,TISSUE_SOURCE_SITE,Tissue Source Site,STRING,False,Tumor
+coadread_genentech,32758,587326,TUMOR_CONTENT,tumor content,NUMBER,False,80
+coadread_genentech,32758,587326,TUMOR_TYPE,Tumor Type,STRING,False,colon

@@ -1,0 +1,389 @@
+[
+  {
+    "displayName": "Age at Diagnosis",
+    "description": "Age at Diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_DIAGNOSIS",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Impact TMB Score",
+    "description": "Calculated TMB score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CVR_TMB_SCORE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 Allelic Imbalance",
+    "description": "Driver1 Allelic Imbalance",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_AI",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 CCF",
+    "description": "Driver1 CCF",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_CCF",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 Cellular Fraction",
+    "description": "Driver1 Cellular Fraction",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_CELLULAR_FRACTION",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 Clonal Call",
+    "description": "Driver1 Clonal Call",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_CLONAL_CALL",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 Expected Mutant Copies",
+    "description": "Driver1 Expected Mutant Copies",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_EXPECTED_MUTANT_COPIES",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 Facets Ploidy Call",
+    "description": "Driver1 Facets Ploidy Call",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_FACETS_PLOIDY_CALL",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 LCN",
+    "description": "Driver1 LCN",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_LCN",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 Mutation",
+    "description": "Driver1 Mutation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_MUTATION",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver1 TCN",
+    "description": "Driver1 TCN",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER1_TCN",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 Allelic Imbalance",
+    "description": "Driver2 Allelic Imbalance",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_AI",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 CCF",
+    "description": "Driver2 CCF",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_CCF",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 Cellular Fraction",
+    "description": "Driver2 Cellular Fraction",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_CELLULAR_FRACTION",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 Clonal Call",
+    "description": "Driver2 Clonal Call",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_CLONAL_CALL",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 Expected Mutant Copies",
+    "description": "Driver2 Expected Mutant Copies",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_EXPECTED_MUTANT_COPIES",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 Facets Ploidy Call",
+    "description": "Driver2 Facets Ploidy Call",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_FACETS_PLOIDY_CALL",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 LCN",
+    "description": "Driver2 LCN",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_LCN",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 Mutation",
+    "description": "Driver2 Mutation",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_MUTATION",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Driver2 TCN",
+    "description": "Driver2 TCN",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "DRIVER2_TCN",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Genomic QC",
+    "description": "Genomic QC",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "GENOMIC_QC",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Group",
+    "description": "Group",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GROUP",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Highest Level OncoKB",
+    "description": "Highest Level OncoKB",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "HIGHEST_LEVEL_ONCOKB",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Metastatic Status",
+    "description": "Indicates whether the patient had metastatic cancer or not",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Metastasis at Diagnosis",
+    "description": "Indicates whether the patient had metastatic cancer when first diagnosed",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_AT_DX",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Metastatic Site",
+    "description": "The anatomic location to which the cancer has spread.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_SITE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "MSI Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "MSI Type",
+    "description": "MSI Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_TYPE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Sample coverage",
+    "description": "Sample coverage",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "0",
+    "clinicalAttributeId": "SAMPLE_COVERAGE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type of sample (i.e., normal, primary, met, recurrence).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Stage at Diagnosis",
+    "description": "Stage at Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE_AT_DIAGNOSIS",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Survival Status",
+    "description": "Survival Status",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SURVIVAL_STATUS",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Tumor Location (Proximal vs. Distal)",
+    "description": "Tumor Location (Proximal vs. Distal)",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_LOCATION",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "Tumor Purity",
+    "description": "Tumor Purity",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_PURITY",
+    "studyId": "crc_dd_2022"
+  },
+  {
+    "displayName": "WGD",
+    "description": "WGD",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "WGD",
+    "studyId": "crc_dd_2022"
+  }
+]

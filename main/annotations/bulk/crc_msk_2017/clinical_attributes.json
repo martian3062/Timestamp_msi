@@ -1,0 +1,380 @@
+[
+  {
+    "displayName": "Age at Diagnosis",
+    "description": "Age at Diagnosis",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "AGE_AT_DIAGNOSIS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Cancer Type",
+    "description": "Cancer Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Cancer Type Detailed",
+    "description": "Cancer Type Detailed",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CANCER_TYPE_DETAILED",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Chemo Exposure of sequenced specimen",
+    "description": "Chemo Exposure of sequenced specimen",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "CHEMO_EXP_SEQ_SPECIMEN",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "First Site of Metastasis",
+    "description": "First Site of Metastasis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "FIRST_SITE_OF_METS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Fraction Genome Altered",
+    "description": "Fraction Genome Altered",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "20",
+    "clinicalAttributeId": "FRACTION_GENOME_ALTERED",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Gene Panel",
+    "description": "Gene panel.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "GENE_PANEL",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "mCRC Type",
+    "description": "mCRC Type",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MCRC_TYPE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastasectomy",
+    "description": "Metastasectomy",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASECTOMY",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastasectomy Site",
+    "description": "Metastasectomy Site",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASECTOMY_SITE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Bone",
+    "description": "Metastases Site First: Bone",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_BONE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Brain",
+    "description": "Metastases Site First: Brain",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_BRAIN",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Gynecological",
+    "description": "Metastases Site First: Gynecological",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_GYN",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Liver",
+    "description": "Metastases Site First: Liver",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_LIVER",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Ln",
+    "description": "Metastases Site First: Ln",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_LN",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Lung",
+    "description": "Metastases Site First: Lung",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_LUNG",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Pelvis",
+    "description": "Metastases Site First: Pelvis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_PELVIS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastases Site First: Peritoneum, omentum, abdomen",
+    "description": "Metastases Site First: Peritoneum, omentum, abdomen",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTASES_SITE_FIRST_PERITONEUM_OMENTUM_ABDOMEN",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Metastatic Biopsy Site",
+    "description": "Metastatic Biopsy Site",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "METASTATIC_BIOPSY_SITE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Molecular Subtype",
+    "description": "Molecular subtype.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MOLECULAR_SUBTYPE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "MSI Score",
+    "description": "MSI Score",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_SCORE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "MSI Status",
+    "description": "MSI status.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "MSI_STATUS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Mutation Count",
+    "description": "Mutation Count",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "30",
+    "clinicalAttributeId": "MUTATION_COUNT",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Oncotree Code",
+    "description": "Oncotree Code",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "ONCOTREE_CODE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Overall Survival (Months)",
+    "description": "Overall survival in months since initial diagonosis.",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "OS Months (Additonal Data)",
+    "description": "OS Months (Additonal Data)",
+    "datatype": "NUMBER",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "OS_MONTHS_ADDITIONAL",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Overall Survival Status",
+    "description": "Overall patient survival status.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "9",
+    "clinicalAttributeId": "OS_STATUS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Other Metastasis Sites",
+    "description": "Other Metastasis Sites Description",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "OTHER_SITES_OF_METS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Patient Tumor Grade",
+    "description": "Patient Tumor Grade",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "PATIENT_GRADE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Primary Tumor Site",
+    "description": "Text term to describe the organ sub-division in an individual with cancer.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_SITE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Primary Tumor Location",
+    "description": "Primary Tumor Location",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "PRIMARY_TUMOR_LOCATION",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Number of Samples Per Patient",
+    "description": "Number of Samples Per Patient",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SAMPLE_COUNT",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Sample Type",
+    "description": "The type of sample (i.e., normal, primary, met, recurrence).",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "9",
+    "clinicalAttributeId": "SAMPLE_TYPE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Sex",
+    "description": "Sex",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "SEX",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Somatic Status",
+    "description": "Somatic Status",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SOMATIC_STATUS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Specimen Type",
+    "description": "The broad cancer phenotype and site information values for a sample to be processed.",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "SPECIMEN_TYPE",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Stage At Diagnosis",
+    "description": "Stage At Diagnosis",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "STAGE_AT_DIAGNOSIS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Time from Met Dx to Sequencing",
+    "description": "Time from Met Dx to Sequencing",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TIME_FROM_MET_DX_SEQUENCING",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "TIme to Metastasis Months",
+    "description": "TIme to Metastasis Months",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TIME_TO_METASTASIS_MONTHS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "TMB (nonsynonymous)",
+    "description": "TMB (nonsynonymous)",
+    "datatype": "NUMBER",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TMB_NONSYNONYMOUS",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Tumor Sample Histology",
+    "description": "Tumor Sample Histology",
+    "datatype": "STRING",
+    "patientAttribute": false,
+    "priority": "1",
+    "clinicalAttributeId": "TUMOR_SAMPLE_HISTOLOGY",
+    "studyId": "crc_msk_2017"
+  },
+  {
+    "displayName": "Patient's Vital Status",
+    "description": "The survival state of the person.",
+    "datatype": "STRING",
+    "patientAttribute": true,
+    "priority": "1",
+    "clinicalAttributeId": "VITAL_STATUS",
+    "studyId": "crc_msk_2017"
+  }
+]

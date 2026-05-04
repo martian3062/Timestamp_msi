@@ -1,0 +1,1583 @@
+studyId,patientId,sampleId,clinicalAttributeId,displayName,datatype,patientAttribute,value
+coadread_cass_2020,CCRC-0001,CCRC-0001,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0001,CCRC-0001,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0001,CCRC-0001,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0001,CCRC-0001,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0001,CCRC-0001,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0001,CCRC-0001,MUTATION_COUNT,Mutation Count,NUMBER,False,93
+coadread_cass_2020,CCRC-0001,CCRC-0001,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0001,CCRC-0001,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0001,CCRC-0001,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0001,CCRC-0001,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0001,CCRC-0001,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.13333333333
+coadread_cass_2020,CCRC-0002,CCRC-0002,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0002,CCRC-0002,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0002,CCRC-0002,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0002,CCRC-0002,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0002,CCRC-0002,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0002,CCRC-0002,MUTATION_COUNT,Mutation Count,NUMBER,False,80
+coadread_cass_2020,CCRC-0002,CCRC-0002,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0002,CCRC-0002,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0002,CCRC-0002,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0002,CCRC-0002,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0002,CCRC-0002,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.66666666667
+coadread_cass_2020,CCRC-0005,CCRC-0005,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0005,CCRC-0005,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0005,CCRC-0005,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0005,CCRC-0005,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0005,CCRC-0005,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0005,CCRC-0005,MUTATION_COUNT,Mutation Count,NUMBER,False,74
+coadread_cass_2020,CCRC-0005,CCRC-0005,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0005,CCRC-0005,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0005,CCRC-0005,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0005,CCRC-0005,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0005,CCRC-0005,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.46666666667
+coadread_cass_2020,CCRC-0006,CCRC-0006,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0006,CCRC-0006,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0006,CCRC-0006,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0006,CCRC-0006,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0006,CCRC-0006,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0006,CCRC-0006,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0006,CCRC-0006,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0006,CCRC-0006,MUTATION_COUNT,Mutation Count,NUMBER,False,103
+coadread_cass_2020,CCRC-0006,CCRC-0006,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0006,CCRC-0006,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0006,CCRC-0006,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0006,CCRC-0006,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0006,CCRC-0006,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.43333333333
+coadread_cass_2020,CCRC-0007,CCRC-0007,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0007,CCRC-0007,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0007,CCRC-0007,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0007,CCRC-0007,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0007,CCRC-0007,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0007,CCRC-0007,MUTATION_COUNT,Mutation Count,NUMBER,False,35
+coadread_cass_2020,CCRC-0007,CCRC-0007,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0007,CCRC-0007,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0007,CCRC-0007,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0007,CCRC-0007,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0007,CCRC-0007,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.16666666667
+coadread_cass_2020,CCRC-0008,CCRC-0008,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0008,CCRC-0008,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0008,CCRC-0008,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0008,CCRC-0008,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0008,CCRC-0008,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,40
+coadread_cass_2020,CCRC-0008,CCRC-0008,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0008,CCRC-0008,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0008,CCRC-0008,MUTATION_COUNT,Mutation Count,NUMBER,False,90
+coadread_cass_2020,CCRC-0008,CCRC-0008,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0008,CCRC-0008,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0008,CCRC-0008,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0008,CCRC-0008,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0008,CCRC-0008,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.0
+coadread_cass_2020,CCRC-0010,CCRC-0010,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0010,CCRC-0010,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0010,CCRC-0010,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0010,CCRC-0010,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0010,CCRC-0010,MUTATION_COUNT,Mutation Count,NUMBER,False,485
+coadread_cass_2020,CCRC-0010,CCRC-0010,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0010,CCRC-0010,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0010,CCRC-0010,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0010,CCRC-0010,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0010,CCRC-0010,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,16.2666666667
+coadread_cass_2020,CCRC-0013,CCRC-0013,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0013,CCRC-0013,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0013,CCRC-0013,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0013,CCRC-0013,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0013,CCRC-0013,MUTATION_COUNT,Mutation Count,NUMBER,False,179
+coadread_cass_2020,CCRC-0013,CCRC-0013,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0013,CCRC-0013,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0013,CCRC-0013,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0013,CCRC-0013,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0013,CCRC-0013,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.03333333333
+coadread_cass_2020,CCRC-0014,CCRC-0014,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0014,CCRC-0014,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0014,CCRC-0014,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0014,CCRC-0014,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0014,CCRC-0014,MUTATION_COUNT,Mutation Count,NUMBER,False,95
+coadread_cass_2020,CCRC-0014,CCRC-0014,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0014,CCRC-0014,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0014,CCRC-0014,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0014,CCRC-0014,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0014,CCRC-0014,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.16666666667
+coadread_cass_2020,CCRC-0015,CCRC-0015,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0015,CCRC-0015,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0015,CCRC-0015,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0015,CCRC-0015,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0015,CCRC-0015,MUTATION_COUNT,Mutation Count,NUMBER,False,417
+coadread_cass_2020,CCRC-0015,CCRC-0015,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0015,CCRC-0015,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0015,CCRC-0015,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0015,CCRC-0015,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0015,CCRC-0015,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.0
+coadread_cass_2020,CCRC-0016,CCRC-0016,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0016,CCRC-0016,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0016,CCRC-0016,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0016,CCRC-0016,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0016,CCRC-0016,MUTATION_COUNT,Mutation Count,NUMBER,False,146
+coadread_cass_2020,CCRC-0016,CCRC-0016,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0016,CCRC-0016,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0016,CCRC-0016,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0016,CCRC-0016,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0016,CCRC-0016,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.9
+coadread_cass_2020,CCRC-0018,CCRC-0018,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0018,CCRC-0018,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0018,CCRC-0018,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0018,CCRC-0018,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0018,CCRC-0018,MUTATION_COUNT,Mutation Count,NUMBER,False,237
+coadread_cass_2020,CCRC-0018,CCRC-0018,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0018,CCRC-0018,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0018,CCRC-0018,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0018,CCRC-0018,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0018,CCRC-0018,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.83333333333
+coadread_cass_2020,CCRC-0019,CCRC-0019,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0019,CCRC-0019,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0019,CCRC-0019,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0019,CCRC-0019,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0019,CCRC-0019,MUTATION_COUNT,Mutation Count,NUMBER,False,83
+coadread_cass_2020,CCRC-0019,CCRC-0019,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0019,CCRC-0019,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0019,CCRC-0019,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0019,CCRC-0019,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0019,CCRC-0019,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.76666666667
+coadread_cass_2020,CCRC-0020,CCRC-0020,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0020,CCRC-0020,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0020,CCRC-0020,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0020,CCRC-0020,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0020,CCRC-0020,MUTATION_COUNT,Mutation Count,NUMBER,False,1336
+coadread_cass_2020,CCRC-0020,CCRC-0020,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0020,CCRC-0020,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0020,CCRC-0020,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0020,CCRC-0020,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0020,CCRC-0020,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,44.6
+coadread_cass_2020,CCRC-0021,CCRC-0021,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0021,CCRC-0021,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0021,CCRC-0021,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0021,CCRC-0021,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0021,CCRC-0021,MUTATION_COUNT,Mutation Count,NUMBER,False,417
+coadread_cass_2020,CCRC-0021,CCRC-0021,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0021,CCRC-0021,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0021,CCRC-0021,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0021,CCRC-0021,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0021,CCRC-0021,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.0333333333
+coadread_cass_2020,CCRC-0022,CCRC-0022,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0022,CCRC-0022,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0022,CCRC-0022,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0022,CCRC-0022,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0022,CCRC-0022,MUTATION_COUNT,Mutation Count,NUMBER,False,336
+coadread_cass_2020,CCRC-0022,CCRC-0022,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0022,CCRC-0022,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0022,CCRC-0022,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0022,CCRC-0022,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0022,CCRC-0022,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.2
+coadread_cass_2020,CCRC-0023,CCRC-0023,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0023,CCRC-0023,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0023,CCRC-0023,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0023,CCRC-0023,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0023,CCRC-0023,MUTATION_COUNT,Mutation Count,NUMBER,False,363
+coadread_cass_2020,CCRC-0023,CCRC-0023,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0023,CCRC-0023,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0023,CCRC-0023,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0023,CCRC-0023,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0023,CCRC-0023,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,12.1
+coadread_cass_2020,CCRC-0024,CCRC-0024,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0024,CCRC-0024,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0024,CCRC-0024,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0024,CCRC-0024,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0024,CCRC-0024,MUTATION_COUNT,Mutation Count,NUMBER,False,355
+coadread_cass_2020,CCRC-0024,CCRC-0024,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0024,CCRC-0024,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0024,CCRC-0024,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0024,CCRC-0024,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0024,CCRC-0024,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.9
+coadread_cass_2020,CCRC-0025,CCRC-0025,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0025,CCRC-0025,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0025,CCRC-0025,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0025,CCRC-0025,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0025,CCRC-0025,MUTATION_COUNT,Mutation Count,NUMBER,False,141
+coadread_cass_2020,CCRC-0025,CCRC-0025,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0025,CCRC-0025,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0025,CCRC-0025,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0025,CCRC-0025,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0025,CCRC-0025,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.73333333333
+coadread_cass_2020,CCRC-0026,CCRC-0026,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0026,CCRC-0026,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0026,CCRC-0026,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0026,CCRC-0026,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0026,CCRC-0026,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0026,CCRC-0026,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0026,CCRC-0026,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0026,CCRC-0026,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0026,CCRC-0026,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0
+coadread_cass_2020,CCRC-0028,CCRC-0028,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0028,CCRC-0028,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0028,CCRC-0028,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0028,CCRC-0028,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0028,CCRC-0028,MUTATION_COUNT,Mutation Count,NUMBER,False,101
+coadread_cass_2020,CCRC-0028,CCRC-0028,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0028,CCRC-0028,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0028,CCRC-0028,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0028,CCRC-0028,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0028,CCRC-0028,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.36666666667
+coadread_cass_2020,CCRC-0030,CCRC-0030,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0030,CCRC-0030,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0030,CCRC-0030,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0030,CCRC-0030,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0030,CCRC-0030,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0030,CCRC-0030,MUTATION_COUNT,Mutation Count,NUMBER,False,321
+coadread_cass_2020,CCRC-0030,CCRC-0030,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0030,CCRC-0030,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0030,CCRC-0030,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0030,CCRC-0030,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0030,CCRC-0030,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,10.7666666667
+coadread_cass_2020,CCRC-0033,CCRC-0033,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0033,CCRC-0033,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0033,CCRC-0033,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0033,CCRC-0033,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0033,CCRC-0033,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0033,CCRC-0033,MUTATION_COUNT,Mutation Count,NUMBER,False,366
+coadread_cass_2020,CCRC-0033,CCRC-0033,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0033,CCRC-0033,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0033,CCRC-0033,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0033,CCRC-0033,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0033,CCRC-0033,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,12.3
+coadread_cass_2020,CCRC-0034,CCRC-0034,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0034,CCRC-0034,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0034,CCRC-0034,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0034,CCRC-0034,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0034,CCRC-0034,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0034,CCRC-0034,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+coadread_cass_2020,CCRC-0034,CCRC-0034,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0034,CCRC-0034,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0034,CCRC-0034,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0034,CCRC-0034,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0034,CCRC-0034,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.0333333333333
+coadread_cass_2020,CCRC-0035,CCRC-0035,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0035,CCRC-0035,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0035,CCRC-0035,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0035,CCRC-0035,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0035,CCRC-0035,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0035,CCRC-0035,MUTATION_COUNT,Mutation Count,NUMBER,False,85
+coadread_cass_2020,CCRC-0035,CCRC-0035,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0035,CCRC-0035,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0035,CCRC-0035,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0035,CCRC-0035,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0035,CCRC-0035,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.86666666667
+coadread_cass_2020,CCRC-0038,CCRC-0038,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0038,CCRC-0038,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0038,CCRC-0038,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0038,CCRC-0038,METASTATIC_SITE,Metastatic Site,STRING,False,"Liver, Peritoneum, Mesentery"
+coadread_cass_2020,CCRC-0038,CCRC-0038,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0038,CCRC-0038,MUTATION_COUNT,Mutation Count,NUMBER,False,94
+coadread_cass_2020,CCRC-0038,CCRC-0038,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0038,CCRC-0038,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0038,CCRC-0038,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0038,CCRC-0038,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0038,CCRC-0038,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.16666666667
+coadread_cass_2020,CCRC-0039,CCRC-0039,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0039,CCRC-0039,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0039,CCRC-0039,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0039,CCRC-0039,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0039,CCRC-0039,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0039,CCRC-0039,MUTATION_COUNT,Mutation Count,NUMBER,False,50
+coadread_cass_2020,CCRC-0039,CCRC-0039,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0039,CCRC-0039,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0039,CCRC-0039,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0039,CCRC-0039,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0039,CCRC-0039,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.66666666667
+coadread_cass_2020,CCRC-0040,CCRC-0040,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0040,CCRC-0040,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0040,CCRC-0040,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0040,CCRC-0040,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0040,CCRC-0040,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0040,CCRC-0040,MUTATION_COUNT,Mutation Count,NUMBER,False,441
+coadread_cass_2020,CCRC-0040,CCRC-0040,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0040,CCRC-0040,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0040,CCRC-0040,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0040,CCRC-0040,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0040,CCRC-0040,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.8
+coadread_cass_2020,CCRC-0041,CCRC-0041,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0041,CCRC-0041,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0041,CCRC-0041,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0041,CCRC-0041,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0041,CCRC-0041,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,40
+coadread_cass_2020,CCRC-0041,CCRC-0041,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0041,CCRC-0041,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0041,CCRC-0041,MUTATION_COUNT,Mutation Count,NUMBER,False,154
+coadread_cass_2020,CCRC-0041,CCRC-0041,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0041,CCRC-0041,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0041,CCRC-0041,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0041,CCRC-0041,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0041,CCRC-0041,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.16666666667
+coadread_cass_2020,CCRC-0043,CCRC-0043,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0043,CCRC-0043,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0043,CCRC-0043,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0043,CCRC-0043,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0043,CCRC-0043,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0043,CCRC-0043,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0043,CCRC-0043,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0043,CCRC-0043,MUTATION_COUNT,Mutation Count,NUMBER,False,72
+coadread_cass_2020,CCRC-0043,CCRC-0043,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0043,CCRC-0043,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0043,CCRC-0043,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0043,CCRC-0043,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0043,CCRC-0043,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.43333333333
+coadread_cass_2020,CCRC-0044,CCRC-0044,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0044,CCRC-0044,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0044,CCRC-0044,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0044,CCRC-0044,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0044,CCRC-0044,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0044,CCRC-0044,MUTATION_COUNT,Mutation Count,NUMBER,False,106
+coadread_cass_2020,CCRC-0044,CCRC-0044,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0044,CCRC-0044,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0044,CCRC-0044,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0044,CCRC-0044,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0044,CCRC-0044,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.53333333333
+coadread_cass_2020,CCRC-0045,CCRC-0045,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0045,CCRC-0045,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0045,CCRC-0045,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0045,CCRC-0045,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0045,CCRC-0045,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0045,CCRC-0045,MUTATION_COUNT,Mutation Count,NUMBER,False,375
+coadread_cass_2020,CCRC-0045,CCRC-0045,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0045,CCRC-0045,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0045,CCRC-0045,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0045,CCRC-0045,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0045,CCRC-0045,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,12.5666666667
+coadread_cass_2020,CCRC-0046,CCRC-0046,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0046,CCRC-0046,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0046,CCRC-0046,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0046,CCRC-0046,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0046,CCRC-0046,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0046,CCRC-0046,MUTATION_COUNT,Mutation Count,NUMBER,False,87
+coadread_cass_2020,CCRC-0046,CCRC-0046,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0046,CCRC-0046,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0046,CCRC-0046,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0046,CCRC-0046,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0046,CCRC-0046,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.9
+coadread_cass_2020,CCRC-0048,CCRC-0048,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0048,CCRC-0048,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0048,CCRC-0048,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0048,CCRC-0048,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0048,CCRC-0048,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+coadread_cass_2020,CCRC-0048,CCRC-0048,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0048,CCRC-0048,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0048,CCRC-0048,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0048,CCRC-0048,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0048,CCRC-0048,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.1
+coadread_cass_2020,CCRC-0049,CCRC-0049,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0049,CCRC-0049,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0049,CCRC-0049,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0049,CCRC-0049,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0049,CCRC-0049,MUTATION_COUNT,Mutation Count,NUMBER,False,1863
+coadread_cass_2020,CCRC-0049,CCRC-0049,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0049,CCRC-0049,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0049,CCRC-0049,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0049,CCRC-0049,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0049,CCRC-0049,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,62.2666666667
+coadread_cass_2020,CCRC-0050,CCRC-0050,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0050,CCRC-0050,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0050,CCRC-0050,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0050,CCRC-0050,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0050,CCRC-0050,MUTATION_COUNT,Mutation Count,NUMBER,False,3
+coadread_cass_2020,CCRC-0050,CCRC-0050,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0050,CCRC-0050,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0050,CCRC-0050,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0050,CCRC-0050,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0050,CCRC-0050,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.133333333333
+coadread_cass_2020,CCRC-0053,CCRC-0053,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0053,CCRC-0053,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0053,CCRC-0053,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0053,CCRC-0053,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0053,CCRC-0053,MUTATION_COUNT,Mutation Count,NUMBER,False,118
+coadread_cass_2020,CCRC-0053,CCRC-0053,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0053,CCRC-0053,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0053,CCRC-0053,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0053,CCRC-0053,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0053,CCRC-0053,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.93333333333
+coadread_cass_2020,CCRC-0055,CCRC-0055,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0055,CCRC-0055,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0055,CCRC-0055,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0055,CCRC-0055,METASTATIC_SITE,Metastatic Site,STRING,False,Bladder
+coadread_cass_2020,CCRC-0055,CCRC-0055,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0055,CCRC-0055,MUTATION_COUNT,Mutation Count,NUMBER,False,156
+coadread_cass_2020,CCRC-0055,CCRC-0055,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0055,CCRC-0055,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0055,CCRC-0055,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0055,CCRC-0055,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0055,CCRC-0055,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.2
+coadread_cass_2020,CCRC-0057,CCRC-0057,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0057,CCRC-0057,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0057,CCRC-0057,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0057,CCRC-0057,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0057,CCRC-0057,MUTATION_COUNT,Mutation Count,NUMBER,False,99
+coadread_cass_2020,CCRC-0057,CCRC-0057,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0057,CCRC-0057,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0057,CCRC-0057,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0057,CCRC-0057,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0057,CCRC-0057,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.3
+coadread_cass_2020,CCRC-0058,CCRC-0058,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0058,CCRC-0058,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0058,CCRC-0058,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0058,CCRC-0058,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0058,CCRC-0058,MUTATION_COUNT,Mutation Count,NUMBER,False,150
+coadread_cass_2020,CCRC-0058,CCRC-0058,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0058,CCRC-0058,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0058,CCRC-0058,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0058,CCRC-0058,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0058,CCRC-0058,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.0
+coadread_cass_2020,CCRC-0059,CCRC-0059,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0059,CCRC-0059,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0059,CCRC-0059,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0059,CCRC-0059,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0059,CCRC-0059,MUTATION_COUNT,Mutation Count,NUMBER,False,103
+coadread_cass_2020,CCRC-0059,CCRC-0059,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0059,CCRC-0059,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0059,CCRC-0059,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0059,CCRC-0059,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0059,CCRC-0059,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.4
+coadread_cass_2020,CCRC-0061,CCRC-0061,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0061,CCRC-0061,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0061,CCRC-0061,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0061,CCRC-0061,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0061,CCRC-0061,MUTATION_COUNT,Mutation Count,NUMBER,False,61
+coadread_cass_2020,CCRC-0061,CCRC-0061,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0061,CCRC-0061,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0061,CCRC-0061,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0061,CCRC-0061,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0061,CCRC-0061,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.0
+coadread_cass_2020,CCRC-0063,CCRC-0063,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0063,CCRC-0063,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0063,CCRC-0063,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0063,CCRC-0063,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0063,CCRC-0063,MUTATION_COUNT,Mutation Count,NUMBER,False,110
+coadread_cass_2020,CCRC-0063,CCRC-0063,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0063,CCRC-0063,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0063,CCRC-0063,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0063,CCRC-0063,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0063,CCRC-0063,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.63333333333
+coadread_cass_2020,CCRC-0064,CCRC-0064,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0064,CCRC-0064,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0064,CCRC-0064,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0064,CCRC-0064,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0064,CCRC-0064,MUTATION_COUNT,Mutation Count,NUMBER,False,93
+coadread_cass_2020,CCRC-0064,CCRC-0064,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0064,CCRC-0064,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0064,CCRC-0064,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0064,CCRC-0064,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0064,CCRC-0064,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.1
+coadread_cass_2020,CCRC-0065,CCRC-0065,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0065,CCRC-0065,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0065,CCRC-0065,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0065,CCRC-0065,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0065,CCRC-0065,MUTATION_COUNT,Mutation Count,NUMBER,False,128
+coadread_cass_2020,CCRC-0065,CCRC-0065,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0065,CCRC-0065,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0065,CCRC-0065,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0065,CCRC-0065,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0065,CCRC-0065,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.26666666667
+coadread_cass_2020,CCRC-0066,CCRC-0066,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0066,CCRC-0066,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0066,CCRC-0066,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0066,CCRC-0066,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0066,CCRC-0066,MUTATION_COUNT,Mutation Count,NUMBER,False,135
+coadread_cass_2020,CCRC-0066,CCRC-0066,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0066,CCRC-0066,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0066,CCRC-0066,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0066,CCRC-0066,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0066,CCRC-0066,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.56666666667
+coadread_cass_2020,CCRC-0067,CCRC-0067,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0067,CCRC-0067,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0067,CCRC-0067,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0067,CCRC-0067,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0067,CCRC-0067,MUTATION_COUNT,Mutation Count,NUMBER,False,132
+coadread_cass_2020,CCRC-0067,CCRC-0067,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0067,CCRC-0067,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0067,CCRC-0067,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0067,CCRC-0067,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0067,CCRC-0067,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.4
+coadread_cass_2020,CCRC-0068,CCRC-0068,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0068,CCRC-0068,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0068,CCRC-0068,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0068,CCRC-0068,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0068,CCRC-0068,MUTATION_COUNT,Mutation Count,NUMBER,False,65
+coadread_cass_2020,CCRC-0068,CCRC-0068,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0068,CCRC-0068,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0068,CCRC-0068,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0068,CCRC-0068,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0068,CCRC-0068,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.16666666667
+coadread_cass_2020,CCRC-0069,CCRC-0069,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0069,CCRC-0069,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0069,CCRC-0069,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0069,CCRC-0069,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0069,CCRC-0069,MUTATION_COUNT,Mutation Count,NUMBER,False,426
+coadread_cass_2020,CCRC-0069,CCRC-0069,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0069,CCRC-0069,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0069,CCRC-0069,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0069,CCRC-0069,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0069,CCRC-0069,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.3333333333
+coadread_cass_2020,CCRC-0070,CCRC-0070,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0070,CCRC-0070,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0070,CCRC-0070,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0070,CCRC-0070,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0070,CCRC-0070,MUTATION_COUNT,Mutation Count,NUMBER,False,257
+coadread_cass_2020,CCRC-0070,CCRC-0070,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0070,CCRC-0070,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0070,CCRC-0070,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0070,CCRC-0070,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0070,CCRC-0070,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.56666666667
+coadread_cass_2020,CCRC-0071,CCRC-0071,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0071,CCRC-0071,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0071,CCRC-0071,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0071,CCRC-0071,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0071,CCRC-0071,MUTATION_COUNT,Mutation Count,NUMBER,False,227
+coadread_cass_2020,CCRC-0071,CCRC-0071,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0071,CCRC-0071,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0071,CCRC-0071,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0071,CCRC-0071,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0071,CCRC-0071,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.6
+coadread_cass_2020,CCRC-0072,CCRC-0072,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0072,CCRC-0072,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0072,CCRC-0072,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0072,CCRC-0072,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0072,CCRC-0072,MUTATION_COUNT,Mutation Count,NUMBER,False,202
+coadread_cass_2020,CCRC-0072,CCRC-0072,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0072,CCRC-0072,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0072,CCRC-0072,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0072,CCRC-0072,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0072,CCRC-0072,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.7
+coadread_cass_2020,CCRC-0076,CCRC-0076,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0076,CCRC-0076,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0076,CCRC-0076,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0076,CCRC-0076,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0076,CCRC-0076,MUTATION_COUNT,Mutation Count,NUMBER,False,80
+coadread_cass_2020,CCRC-0076,CCRC-0076,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0076,CCRC-0076,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0076,CCRC-0076,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0076,CCRC-0076,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0076,CCRC-0076,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.7
+coadread_cass_2020,CCRC-0079,CCRC-0079,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0079,CCRC-0079,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0079,CCRC-0079,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0079,CCRC-0079,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0079,CCRC-0079,MUTATION_COUNT,Mutation Count,NUMBER,False,150
+coadread_cass_2020,CCRC-0079,CCRC-0079,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0079,CCRC-0079,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0079,CCRC-0079,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0079,CCRC-0079,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0079,CCRC-0079,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.0
+coadread_cass_2020,CCRC-0082,CCRC-0082,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0082,CCRC-0082,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0082,CCRC-0082,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0082,CCRC-0082,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0082,CCRC-0082,MUTATION_COUNT,Mutation Count,NUMBER,False,505
+coadread_cass_2020,CCRC-0082,CCRC-0082,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0082,CCRC-0082,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0082,CCRC-0082,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0082,CCRC-0082,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0082,CCRC-0082,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,16.9666666667
+coadread_cass_2020,CCRC-0083,CCRC-0083,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0083,CCRC-0083,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0083,CCRC-0083,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0083,CCRC-0083,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0083,CCRC-0083,MUTATION_COUNT,Mutation Count,NUMBER,False,244
+coadread_cass_2020,CCRC-0083,CCRC-0083,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0083,CCRC-0083,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0083,CCRC-0083,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0083,CCRC-0083,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0083,CCRC-0083,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,8.13333333333
+coadread_cass_2020,CCRC-0084,CCRC-0084,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0084,CCRC-0084,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0084,CCRC-0084,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0084,CCRC-0084,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0084,CCRC-0084,MUTATION_COUNT,Mutation Count,NUMBER,False,382
+coadread_cass_2020,CCRC-0084,CCRC-0084,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0084,CCRC-0084,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0084,CCRC-0084,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0084,CCRC-0084,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0084,CCRC-0084,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,12.7666666667
+coadread_cass_2020,CCRC-0089,CCRC-0089,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0089,CCRC-0089,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0089,CCRC-0089,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0089,CCRC-0089,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0089,CCRC-0089,MUTATION_COUNT,Mutation Count,NUMBER,False,112
+coadread_cass_2020,CCRC-0089,CCRC-0089,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0089,CCRC-0089,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0089,CCRC-0089,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0089,CCRC-0089,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0089,CCRC-0089,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.73333333333
+coadread_cass_2020,CCRC-0090,CCRC-0090,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0090,CCRC-0090,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0090,CCRC-0090,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0090,CCRC-0090,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0090,CCRC-0090,MUTATION_COUNT,Mutation Count,NUMBER,False,160
+coadread_cass_2020,CCRC-0090,CCRC-0090,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0090,CCRC-0090,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0090,CCRC-0090,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0090,CCRC-0090,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0090,CCRC-0090,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.36666666667
+coadread_cass_2020,CCRC-0092,CCRC-0092,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0092,CCRC-0092,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0092,CCRC-0092,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0092,CCRC-0092,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0092,CCRC-0092,MUTATION_COUNT,Mutation Count,NUMBER,False,213
+coadread_cass_2020,CCRC-0092,CCRC-0092,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0092,CCRC-0092,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0092,CCRC-0092,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0092,CCRC-0092,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0092,CCRC-0092,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,7.06666666667
+coadread_cass_2020,CCRC-0093,CCRC-0093,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0093,CCRC-0093,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0093,CCRC-0093,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0093,CCRC-0093,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0093,CCRC-0093,MUTATION_COUNT,Mutation Count,NUMBER,False,20
+coadread_cass_2020,CCRC-0093,CCRC-0093,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0093,CCRC-0093,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0093,CCRC-0093,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0093,CCRC-0093,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0093,CCRC-0093,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.666666666667
+coadread_cass_2020,CCRC-0094,CCRC-0094,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0094,CCRC-0094,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0094,CCRC-0094,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0094,CCRC-0094,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0094,CCRC-0094,MUTATION_COUNT,Mutation Count,NUMBER,False,419
+coadread_cass_2020,CCRC-0094,CCRC-0094,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0094,CCRC-0094,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0094,CCRC-0094,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0094,CCRC-0094,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0094,CCRC-0094,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.0333333333
+coadread_cass_2020,CCRC-0095,CCRC-0095,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0095,CCRC-0095,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0095,CCRC-0095,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0095,CCRC-0095,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0095,CCRC-0095,MUTATION_COUNT,Mutation Count,NUMBER,False,51
+coadread_cass_2020,CCRC-0095,CCRC-0095,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0095,CCRC-0095,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0095,CCRC-0095,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0095,CCRC-0095,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0095,CCRC-0095,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.73333333333
+coadread_cass_2020,CCRC-0096,CCRC-0096,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0096,CCRC-0096,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0096,CCRC-0096,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0096,CCRC-0096,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0096,CCRC-0096,MUTATION_COUNT,Mutation Count,NUMBER,False,4
+coadread_cass_2020,CCRC-0096,CCRC-0096,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0096,CCRC-0096,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0096,CCRC-0096,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0096,CCRC-0096,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0096,CCRC-0096,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.133333333333
+coadread_cass_2020,CCRC-0098,CCRC-0098,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0098,CCRC-0098,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0098,CCRC-0098,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0098,CCRC-0098,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0098,CCRC-0098,MUTATION_COUNT,Mutation Count,NUMBER,False,68
+coadread_cass_2020,CCRC-0098,CCRC-0098,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0098,CCRC-0098,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0098,CCRC-0098,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0098,CCRC-0098,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0098,CCRC-0098,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.26666666667
+coadread_cass_2020,CCRC-0108,CCRC-0108,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0108,CCRC-0108,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0108,CCRC-0108,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0108,CCRC-0108,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0108,CCRC-0108,MUTATION_COUNT,Mutation Count,NUMBER,False,108
+coadread_cass_2020,CCRC-0108,CCRC-0108,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0108,CCRC-0108,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0108,CCRC-0108,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0108,CCRC-0108,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0108,CCRC-0108,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.6
+coadread_cass_2020,CCRC-0109,CCRC-0109,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0109,CCRC-0109,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0109,CCRC-0109,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0109,CCRC-0109,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0109,CCRC-0109,MUTATION_COUNT,Mutation Count,NUMBER,False,88
+coadread_cass_2020,CCRC-0109,CCRC-0109,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0109,CCRC-0109,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0109,CCRC-0109,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0109,CCRC-0109,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0109,CCRC-0109,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.96666666667
+coadread_cass_2020,CCRC-0112,CCRC-0112,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0112,CCRC-0112,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0112,CCRC-0112,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0112,CCRC-0112,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0112,CCRC-0112,MUTATION_COUNT,Mutation Count,NUMBER,False,103
+coadread_cass_2020,CCRC-0112,CCRC-0112,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0112,CCRC-0112,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0112,CCRC-0112,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0112,CCRC-0112,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0112,CCRC-0112,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.46666666667
+coadread_cass_2020,CCRC-0113,CCRC-0113,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0113,CCRC-0113,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0113,CCRC-0113,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0113,CCRC-0113,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0113,CCRC-0113,MUTATION_COUNT,Mutation Count,NUMBER,False,49
+coadread_cass_2020,CCRC-0113,CCRC-0113,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0113,CCRC-0113,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0113,CCRC-0113,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0113,CCRC-0113,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0113,CCRC-0113,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.6
+coadread_cass_2020,CCRC-0114,CCRC-0114,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0114,CCRC-0114,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0114,CCRC-0114,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0114,CCRC-0114,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0114,CCRC-0114,MUTATION_COUNT,Mutation Count,NUMBER,False,1234
+coadread_cass_2020,CCRC-0114,CCRC-0114,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0114,CCRC-0114,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0114,CCRC-0114,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0114,CCRC-0114,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0114,CCRC-0114,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,41.1333333333
+coadread_cass_2020,CCRC-0115,CCRC-0115,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0115,CCRC-0115,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0115,CCRC-0115,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0115,CCRC-0115,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0115,CCRC-0115,MUTATION_COUNT,Mutation Count,NUMBER,False,69
+coadread_cass_2020,CCRC-0115,CCRC-0115,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0115,CCRC-0115,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0115,CCRC-0115,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0115,CCRC-0115,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0115,CCRC-0115,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.33333333333
+coadread_cass_2020,CCRC-0116,CCRC-0116,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0116,CCRC-0116,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0116,CCRC-0116,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0116,CCRC-0116,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0116,CCRC-0116,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0116,CCRC-0116,MUTATION_COUNT,Mutation Count,NUMBER,False,75
+coadread_cass_2020,CCRC-0116,CCRC-0116,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0116,CCRC-0116,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0116,CCRC-0116,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0116,CCRC-0116,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0116,CCRC-0116,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.53333333333
+coadread_cass_2020,CCRC-0117,CCRC-0117,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0117,CCRC-0117,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0117,CCRC-0117,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0117,CCRC-0117,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0117,CCRC-0117,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0117,CCRC-0117,MUTATION_COUNT,Mutation Count,NUMBER,False,95
+coadread_cass_2020,CCRC-0117,CCRC-0117,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0117,CCRC-0117,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0117,CCRC-0117,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0117,CCRC-0117,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0117,CCRC-0117,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.16666666667
+coadread_cass_2020,CCRC-0118,CCRC-0118,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0118,CCRC-0118,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0118,CCRC-0118,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0118,CCRC-0118,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,35
+coadread_cass_2020,CCRC-0118,CCRC-0118,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0118,CCRC-0118,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0118,CCRC-0118,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0118,CCRC-0118,MUTATION_COUNT,Mutation Count,NUMBER,False,92
+coadread_cass_2020,CCRC-0118,CCRC-0118,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0118,CCRC-0118,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0118,CCRC-0118,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0118,CCRC-0118,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0118,CCRC-0118,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.06666666667
+coadread_cass_2020,CCRC-0119,CCRC-0119,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0119,CCRC-0119,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0119,CCRC-0119,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0119,CCRC-0119,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0119,CCRC-0119,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0119,CCRC-0119,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0119,CCRC-0119,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0119,CCRC-0119,MUTATION_COUNT,Mutation Count,NUMBER,False,72
+coadread_cass_2020,CCRC-0119,CCRC-0119,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0119,CCRC-0119,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0119,CCRC-0119,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0119,CCRC-0119,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0119,CCRC-0119,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.4
+coadread_cass_2020,CCRC-0120,CCRC-0120,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0120,CCRC-0120,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0120,CCRC-0120,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0120,CCRC-0120,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0120,CCRC-0120,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0120,CCRC-0120,MUTATION_COUNT,Mutation Count,NUMBER,False,270
+coadread_cass_2020,CCRC-0120,CCRC-0120,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0120,CCRC-0120,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0120,CCRC-0120,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0120,CCRC-0120,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0120,CCRC-0120,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,9.03333333333
+coadread_cass_2020,CCRC-0121,CCRC-0121,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0121,CCRC-0121,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0121,CCRC-0121,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0121,CCRC-0121,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0121,CCRC-0121,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0121,CCRC-0121,MUTATION_COUNT,Mutation Count,NUMBER,False,334
+coadread_cass_2020,CCRC-0121,CCRC-0121,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0121,CCRC-0121,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0121,CCRC-0121,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0121,CCRC-0121,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0121,CCRC-0121,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.1333333333
+coadread_cass_2020,CCRC-0122,CCRC-0122,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0122,CCRC-0122,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0122,CCRC-0122,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0122,CCRC-0122,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0122,CCRC-0122,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0122,CCRC-0122,MUTATION_COUNT,Mutation Count,NUMBER,False,478
+coadread_cass_2020,CCRC-0122,CCRC-0122,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0122,CCRC-0122,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0122,CCRC-0122,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0122,CCRC-0122,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0122,CCRC-0122,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,15.9333333333
+coadread_cass_2020,CCRC-0123,CCRC-0123,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0123,CCRC-0123,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0123,CCRC-0123,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0123,CCRC-0123,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0123,CCRC-0123,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0123,CCRC-0123,MUTATION_COUNT,Mutation Count,NUMBER,False,115
+coadread_cass_2020,CCRC-0123,CCRC-0123,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0123,CCRC-0123,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0123,CCRC-0123,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0123,CCRC-0123,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0123,CCRC-0123,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.83333333333
+coadread_cass_2020,CCRC-0125,CCRC-0125,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0125,CCRC-0125,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0125,CCRC-0125,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0125,CCRC-0125,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0125,CCRC-0125,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0125,CCRC-0125,MUTATION_COUNT,Mutation Count,NUMBER,False,185
+coadread_cass_2020,CCRC-0125,CCRC-0125,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0125,CCRC-0125,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0125,CCRC-0125,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0125,CCRC-0125,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0125,CCRC-0125,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.16666666667
+coadread_cass_2020,CCRC-0126,CCRC-0126,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0126,CCRC-0126,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0126,CCRC-0126,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0126,CCRC-0126,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0126,CCRC-0126,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0126,CCRC-0126,MUTATION_COUNT,Mutation Count,NUMBER,False,105
+coadread_cass_2020,CCRC-0126,CCRC-0126,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0126,CCRC-0126,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0126,CCRC-0126,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0126,CCRC-0126,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0126,CCRC-0126,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.5
+coadread_cass_2020,CCRC-0127,CCRC-0127,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0127,CCRC-0127,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0127,CCRC-0127,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0127,CCRC-0127,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0127,CCRC-0127,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0127,CCRC-0127,MUTATION_COUNT,Mutation Count,NUMBER,False,68
+coadread_cass_2020,CCRC-0127,CCRC-0127,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0127,CCRC-0127,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0127,CCRC-0127,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0127,CCRC-0127,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0127,CCRC-0127,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.26666666667
+coadread_cass_2020,CCRC-0128,CCRC-0128,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0128,CCRC-0128,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0128,CCRC-0128,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0128,CCRC-0128,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0128,CCRC-0128,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0128,CCRC-0128,MUTATION_COUNT,Mutation Count,NUMBER,False,97
+coadread_cass_2020,CCRC-0128,CCRC-0128,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0128,CCRC-0128,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0128,CCRC-0128,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0128,CCRC-0128,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0128,CCRC-0128,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.2
+coadread_cass_2020,CCRC-0129,CCRC-0129,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0129,CCRC-0129,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0129,CCRC-0129,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0129,CCRC-0129,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0129,CCRC-0129,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0129,CCRC-0129,MUTATION_COUNT,Mutation Count,NUMBER,False,201
+coadread_cass_2020,CCRC-0129,CCRC-0129,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0129,CCRC-0129,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0129,CCRC-0129,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0129,CCRC-0129,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0129,CCRC-0129,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,6.73333333333
+coadread_cass_2020,CCRC-0130,CCRC-0130,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0130,CCRC-0130,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0130,CCRC-0130,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0130,CCRC-0130,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0130,CCRC-0130,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0130,CCRC-0130,MUTATION_COUNT,Mutation Count,NUMBER,False,14
+coadread_cass_2020,CCRC-0130,CCRC-0130,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0130,CCRC-0130,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0130,CCRC-0130,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0130,CCRC-0130,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0130,CCRC-0130,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.466666666667
+coadread_cass_2020,CCRC-0131,CCRC-0131,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0131,CCRC-0131,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0131,CCRC-0131,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0131,CCRC-0131,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0131,CCRC-0131,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0131,CCRC-0131,MUTATION_COUNT,Mutation Count,NUMBER,False,99
+coadread_cass_2020,CCRC-0131,CCRC-0131,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0131,CCRC-0131,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0131,CCRC-0131,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0131,CCRC-0131,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0131,CCRC-0131,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.26666666667
+coadread_cass_2020,CCRC-0132,CCRC-0132,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0132,CCRC-0132,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0132,CCRC-0132,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0132,CCRC-0132,METASTATIC_SITE,Metastatic Site,STRING,False,"Liver, Lung"
+coadread_cass_2020,CCRC-0132,CCRC-0132,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0132,CCRC-0132,MUTATION_COUNT,Mutation Count,NUMBER,False,75
+coadread_cass_2020,CCRC-0132,CCRC-0132,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0132,CCRC-0132,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0132,CCRC-0132,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0132,CCRC-0132,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0132,CCRC-0132,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.5
+coadread_cass_2020,CCRC-0133,CCRC-0133,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0133,CCRC-0133,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0133,CCRC-0133,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0133,CCRC-0133,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0133,CCRC-0133,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,40
+coadread_cass_2020,CCRC-0133,CCRC-0133,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0133,CCRC-0133,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0133,CCRC-0133,MUTATION_COUNT,Mutation Count,NUMBER,False,67
+coadread_cass_2020,CCRC-0133,CCRC-0133,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0133,CCRC-0133,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0133,CCRC-0133,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0133,CCRC-0133,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0133,CCRC-0133,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.23333333333
+coadread_cass_2020,CCRC-0135,CCRC-0135,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0135,CCRC-0135,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0135,CCRC-0135,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0135,CCRC-0135,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0135,CCRC-0135,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0135,CCRC-0135,MUTATION_COUNT,Mutation Count,NUMBER,False,5
+coadread_cass_2020,CCRC-0135,CCRC-0135,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0135,CCRC-0135,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0135,CCRC-0135,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0135,CCRC-0135,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0135,CCRC-0135,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.166666666667
+coadread_cass_2020,CCRC-0136,CCRC-0136,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0136,CCRC-0136,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0136,CCRC-0136,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0136,CCRC-0136,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0136,CCRC-0136,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0136,CCRC-0136,MUTATION_COUNT,Mutation Count,NUMBER,False,68
+coadread_cass_2020,CCRC-0136,CCRC-0136,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0136,CCRC-0136,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0136,CCRC-0136,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0136,CCRC-0136,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0136,CCRC-0136,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.26666666667
+coadread_cass_2020,CCRC-0139,CCRC-0139,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0139,CCRC-0139,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0139,CCRC-0139,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0139,CCRC-0139,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0139,CCRC-0139,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0139,CCRC-0139,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0139,CCRC-0139,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0139,CCRC-0139,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0139,CCRC-0139,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0139,CCRC-0139,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0139,CCRC-0139,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0139,CCRC-0139,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0
+coadread_cass_2020,CCRC-0141,CCRC-0141,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0141,CCRC-0141,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0141,CCRC-0141,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0141,CCRC-0141,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0141,CCRC-0141,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0141,CCRC-0141,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0141,CCRC-0141,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0141,CCRC-0141,MUTATION_COUNT,Mutation Count,NUMBER,False,144
+coadread_cass_2020,CCRC-0141,CCRC-0141,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0141,CCRC-0141,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0141,CCRC-0141,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0141,CCRC-0141,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0141,CCRC-0141,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.8
+coadread_cass_2020,CCRC-0142,CCRC-0142,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0142,CCRC-0142,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0142,CCRC-0142,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0142,CCRC-0142,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,1
+coadread_cass_2020,CCRC-0142,CCRC-0142,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0142,CCRC-0142,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0142,CCRC-0142,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0142,CCRC-0142,MUTATION_COUNT,Mutation Count,NUMBER,False,67
+coadread_cass_2020,CCRC-0142,CCRC-0142,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0142,CCRC-0142,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0142,CCRC-0142,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,2
+coadread_cass_2020,CCRC-0142,CCRC-0142,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0142,CCRC-0142,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.23333333333
+coadread_cass_2020,CCRC-0145,CCRC-0145,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0145,CCRC-0145,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0145,CCRC-0145,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0145,CCRC-0145,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0145,CCRC-0145,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0145,CCRC-0145,MUTATION_COUNT,Mutation Count,NUMBER,False,100
+coadread_cass_2020,CCRC-0145,CCRC-0145,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0145,CCRC-0145,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0145,CCRC-0145,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0145,CCRC-0145,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0145,CCRC-0145,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.4
+coadread_cass_2020,CCRC-0146,CCRC-0146,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0146,CCRC-0146,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0146,CCRC-0146,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0146,CCRC-0146,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0146,CCRC-0146,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0146,CCRC-0146,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0146,CCRC-0146,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0146,CCRC-0146,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0146,CCRC-0146,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0146,CCRC-0146,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0146,CCRC-0146,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0146,CCRC-0146,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0
+coadread_cass_2020,CCRC-0147,CCRC-0147,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0147,CCRC-0147,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0147,CCRC-0147,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0147,CCRC-0147,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0147,CCRC-0147,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0147,CCRC-0147,MUTATION_COUNT,Mutation Count,NUMBER,False,52
+coadread_cass_2020,CCRC-0147,CCRC-0147,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0147,CCRC-0147,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0147,CCRC-0147,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0147,CCRC-0147,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0147,CCRC-0147,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.76666666667
+coadread_cass_2020,CCRC-0150,CCRC-0150,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0150,CCRC-0150,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0150,CCRC-0150,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0150,CCRC-0150,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0150,CCRC-0150,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0150,CCRC-0150,MUTATION_COUNT,Mutation Count,NUMBER,False,120
+coadread_cass_2020,CCRC-0150,CCRC-0150,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0150,CCRC-0150,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0150,CCRC-0150,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0150,CCRC-0150,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,65
+coadread_cass_2020,CCRC-0150,CCRC-0150,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.06666666667
+coadread_cass_2020,CCRC-0151,CCRC-0151,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0151,CCRC-0151,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0151,CCRC-0151,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0151,CCRC-0151,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0151,CCRC-0151,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0151,CCRC-0151,MUTATION_COUNT,Mutation Count,NUMBER,False,82
+coadread_cass_2020,CCRC-0151,CCRC-0151,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0151,CCRC-0151,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0151,CCRC-0151,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0151,CCRC-0151,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0151,CCRC-0151,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.8
+coadread_cass_2020,CCRC-0204,CCRC-0204,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0204,CCRC-0204,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0204,CCRC-0204,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0204,CCRC-0204,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0204,CCRC-0204,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,45
+coadread_cass_2020,CCRC-0204,CCRC-0204,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0204,CCRC-0204,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0204,CCRC-0204,MUTATION_COUNT,Mutation Count,NUMBER,False,140
+coadread_cass_2020,CCRC-0204,CCRC-0204,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0204,CCRC-0204,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0204,CCRC-0204,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0204,CCRC-0204,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0204,CCRC-0204,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.7
+coadread_cass_2020,CCRC-0205,CCRC-0205,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0205,CCRC-0205,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0205,CCRC-0205,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0205,CCRC-0205,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0205,CCRC-0205,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0205,CCRC-0205,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0205,CCRC-0205,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0205,CCRC-0205,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+coadread_cass_2020,CCRC-0205,CCRC-0205,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0205,CCRC-0205,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0205,CCRC-0205,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0205,CCRC-0205,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0205,CCRC-0205,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.0333333333333
+coadread_cass_2020,CCRC-0207,CCRC-0207,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0207,CCRC-0207,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0207,CCRC-0207,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0207,CCRC-0207,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0207,CCRC-0207,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0207,CCRC-0207,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0207,CCRC-0207,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0207,CCRC-0207,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0207,CCRC-0207,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0207,CCRC-0207,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0207,CCRC-0207,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0207,CCRC-0207,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0
+coadread_cass_2020,CCRC-0208,CCRC-0208,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0208,CCRC-0208,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0208,CCRC-0208,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0208,CCRC-0208,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0208,CCRC-0208,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0208,CCRC-0208,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0208,CCRC-0208,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0208,CCRC-0208,MUTATION_COUNT,Mutation Count,NUMBER,False,354
+coadread_cass_2020,CCRC-0208,CCRC-0208,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0208,CCRC-0208,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0208,CCRC-0208,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0208,CCRC-0208,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0208,CCRC-0208,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.8666666667
+coadread_cass_2020,CCRC-0211,CCRC-0211,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0211,CCRC-0211,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0211,CCRC-0211,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0211,CCRC-0211,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0211,CCRC-0211,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0211,CCRC-0211,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0211,CCRC-0211,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0211,CCRC-0211,MUTATION_COUNT,Mutation Count,NUMBER,False,98
+coadread_cass_2020,CCRC-0211,CCRC-0211,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0211,CCRC-0211,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0211,CCRC-0211,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0211,CCRC-0211,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,65
+coadread_cass_2020,CCRC-0211,CCRC-0211,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.26666666667
+coadread_cass_2020,CCRC-0212,CCRC-0212,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0212,CCRC-0212,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0212,CCRC-0212,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0212,CCRC-0212,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0212,CCRC-0212,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0212,CCRC-0212,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0212,CCRC-0212,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0212,CCRC-0212,MUTATION_COUNT,Mutation Count,NUMBER,False,1555
+coadread_cass_2020,CCRC-0212,CCRC-0212,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0212,CCRC-0212,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0212,CCRC-0212,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0212,CCRC-0212,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0212,CCRC-0212,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,51.9
+coadread_cass_2020,CCRC-0213,CCRC-0213,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0213,CCRC-0213,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0213,CCRC-0213,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0213,CCRC-0213,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0213,CCRC-0213,MUTATION_COUNT,Mutation Count,NUMBER,False,91
+coadread_cass_2020,CCRC-0213,CCRC-0213,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0213,CCRC-0213,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0213,CCRC-0213,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0213,CCRC-0213,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0213,CCRC-0213,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.03333333333
+coadread_cass_2020,CCRC-0214,CCRC-0214,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0214,CCRC-0214,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0214,CCRC-0214,HISTOPATHOLOGY,Histopathological Type,STRING,False,Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0214,CCRC-0214,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0214,CCRC-0214,MUTATION_COUNT,Mutation Count,NUMBER,False,3816
+coadread_cass_2020,CCRC-0214,CCRC-0214,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0214,CCRC-0214,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0214,CCRC-0214,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0214,CCRC-0214,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0214,CCRC-0214,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,127.466666667
+coadread_cass_2020,CCRC-0215,CCRC-0215,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0215,CCRC-0215,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0215,CCRC-0215,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0215,CCRC-0215,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0215,CCRC-0215,MUTATION_COUNT,Mutation Count,NUMBER,False,3731
+coadread_cass_2020,CCRC-0215,CCRC-0215,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0215,CCRC-0215,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0215,CCRC-0215,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0215,CCRC-0215,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,65
+coadread_cass_2020,CCRC-0215,CCRC-0215,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,124.566666667
+coadread_cass_2020,CCRC-0217,CCRC-0217,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0217,CCRC-0217,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0217,CCRC-0217,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0217,CCRC-0217,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0217,CCRC-0217,MUTATION_COUNT,Mutation Count,NUMBER,False,2555
+coadread_cass_2020,CCRC-0217,CCRC-0217,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0217,CCRC-0217,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0217,CCRC-0217,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0217,CCRC-0217,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0217,CCRC-0217,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,85.2666666667
+coadread_cass_2020,CCRC-0218,CCRC-0218,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0218,CCRC-0218,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0218,CCRC-0218,HISTOPATHOLOGY,Histopathological Type,STRING,False,"High-grade intraepithelial neoplasia, carcinoma in situ, partial adenocarcinoma"
+coadread_cass_2020,CCRC-0218,CCRC-0218,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0218,CCRC-0218,MUTATION_COUNT,Mutation Count,NUMBER,False,3977
+coadread_cass_2020,CCRC-0218,CCRC-0218,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0218,CCRC-0218,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0218,CCRC-0218,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0218,CCRC-0218,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0218,CCRC-0218,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,132.9
+coadread_cass_2020,CCRC-0219,CCRC-0219,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0219,CCRC-0219,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0219,CCRC-0219,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0219,CCRC-0219,METASTATIC_SITE,Metastatic Site,STRING,False,Lung
+coadread_cass_2020,CCRC-0219,CCRC-0219,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0219,CCRC-0219,MUTATION_COUNT,Mutation Count,NUMBER,False,133
+coadread_cass_2020,CCRC-0219,CCRC-0219,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0219,CCRC-0219,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0219,CCRC-0219,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0219,CCRC-0219,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0219,CCRC-0219,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.46666666667
+coadread_cass_2020,CCRC-0220,CCRC-0220,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0220,CCRC-0220,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0220,CCRC-0220,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0220,CCRC-0220,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0220,CCRC-0220,MUTATION_COUNT,Mutation Count,NUMBER,False,135
+coadread_cass_2020,CCRC-0220,CCRC-0220,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0220,CCRC-0220,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0220,CCRC-0220,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0220,CCRC-0220,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,65
+coadread_cass_2020,CCRC-0220,CCRC-0220,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.56666666667
+coadread_cass_2020,CCRC-0221,CCRC-0221,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0221,CCRC-0221,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0221,CCRC-0221,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0221,CCRC-0221,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0221,CCRC-0221,MUTATION_COUNT,Mutation Count,NUMBER,False,121
+coadread_cass_2020,CCRC-0221,CCRC-0221,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0221,CCRC-0221,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0221,CCRC-0221,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0221,CCRC-0221,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0221,CCRC-0221,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.06666666667
+coadread_cass_2020,CCRC-0222,CCRC-0222,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0222,CCRC-0222,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0222,CCRC-0222,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0222,CCRC-0222,METASTATIC_SITE,Metastatic Site,STRING,False,Lung
+coadread_cass_2020,CCRC-0222,CCRC-0222,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0222,CCRC-0222,MUTATION_COUNT,Mutation Count,NUMBER,False,441
+coadread_cass_2020,CCRC-0222,CCRC-0222,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0222,CCRC-0222,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0222,CCRC-0222,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0222,CCRC-0222,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0222,CCRC-0222,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.8333333333
+coadread_cass_2020,CCRC-0223,CCRC-0223,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0223,CCRC-0223,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0223,CCRC-0223,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0223,CCRC-0223,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0223,CCRC-0223,MUTATION_COUNT,Mutation Count,NUMBER,False,49
+coadread_cass_2020,CCRC-0223,CCRC-0223,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0223,CCRC-0223,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0223,CCRC-0223,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0223,CCRC-0223,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0223,CCRC-0223,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.63333333333
+coadread_cass_2020,CCRC-0225,CCRC-0225,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0225,CCRC-0225,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0225,CCRC-0225,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0225,CCRC-0225,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0225,CCRC-0225,MUTATION_COUNT,Mutation Count,NUMBER,False,77
+coadread_cass_2020,CCRC-0225,CCRC-0225,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0225,CCRC-0225,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0225,CCRC-0225,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0225,CCRC-0225,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0225,CCRC-0225,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.63333333333
+coadread_cass_2020,CCRC-0226,CCRC-0226,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0226,CCRC-0226,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0226,CCRC-0226,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0226,CCRC-0226,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0226,CCRC-0226,MUTATION_COUNT,Mutation Count,NUMBER,False,442
+coadread_cass_2020,CCRC-0226,CCRC-0226,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0226,CCRC-0226,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0226,CCRC-0226,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0226,CCRC-0226,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0226,CCRC-0226,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,14.9
+coadread_cass_2020,CCRC-0228,CCRC-0228,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0228,CCRC-0228,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0228,CCRC-0228,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0228,CCRC-0228,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0228,CCRC-0228,MUTATION_COUNT,Mutation Count,NUMBER,False,93
+coadread_cass_2020,CCRC-0228,CCRC-0228,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0228,CCRC-0228,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0228,CCRC-0228,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0228,CCRC-0228,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0228,CCRC-0228,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.13333333333
+coadread_cass_2020,CCRC-0230,CCRC-0230,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0230,CCRC-0230,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0230,CCRC-0230,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0230,CCRC-0230,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0230,CCRC-0230,MUTATION_COUNT,Mutation Count,NUMBER,False,115
+coadread_cass_2020,CCRC-0230,CCRC-0230,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0230,CCRC-0230,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0230,CCRC-0230,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0230,CCRC-0230,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,65
+coadread_cass_2020,CCRC-0230,CCRC-0230,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.86666666667
+coadread_cass_2020,CCRC-0232,CCRC-0232,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0232,CCRC-0232,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0232,CCRC-0232,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0232,CCRC-0232,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0232,CCRC-0232,MUTATION_COUNT,Mutation Count,NUMBER,False,32
+coadread_cass_2020,CCRC-0232,CCRC-0232,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0232,CCRC-0232,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0232,CCRC-0232,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0232,CCRC-0232,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0232,CCRC-0232,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,1.1
+coadread_cass_2020,CCRC-0233,CCRC-0233,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0233,CCRC-0233,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0233,CCRC-0233,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0233,CCRC-0233,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0233,CCRC-0233,MUTATION_COUNT,Mutation Count,NUMBER,False,22
+coadread_cass_2020,CCRC-0233,CCRC-0233,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0233,CCRC-0233,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0233,CCRC-0233,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0233,CCRC-0233,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0233,CCRC-0233,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.733333333333
+coadread_cass_2020,CCRC-0235,CCRC-0235,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0235,CCRC-0235,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0235,CCRC-0235,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0235,CCRC-0235,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0235,CCRC-0235,MUTATION_COUNT,Mutation Count,NUMBER,False,137
+coadread_cass_2020,CCRC-0235,CCRC-0235,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0235,CCRC-0235,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0235,CCRC-0235,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0235,CCRC-0235,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0235,CCRC-0235,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.63333333333
+coadread_cass_2020,CCRC-0237,CCRC-0237,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0237,CCRC-0237,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0237,CCRC-0237,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly-moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0237,CCRC-0237,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0237,CCRC-0237,MUTATION_COUNT,Mutation Count,NUMBER,False,497
+coadread_cass_2020,CCRC-0237,CCRC-0237,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0237,CCRC-0237,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0237,CCRC-0237,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0237,CCRC-0237,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0237,CCRC-0237,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,16.7333333333
+coadread_cass_2020,CCRC-0238,CCRC-0238,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0238,CCRC-0238,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0238,CCRC-0238,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly-moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0238,CCRC-0238,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0238,CCRC-0238,MUTATION_COUNT,Mutation Count,NUMBER,False,7006
+coadread_cass_2020,CCRC-0238,CCRC-0238,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0238,CCRC-0238,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0238,CCRC-0238,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0238,CCRC-0238,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0238,CCRC-0238,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,234.2
+coadread_cass_2020,CCRC-0239,CCRC-0239,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0239,CCRC-0239,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0239,CCRC-0239,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0239,CCRC-0239,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0239,CCRC-0239,MUTATION_COUNT,Mutation Count,NUMBER,False,105
+coadread_cass_2020,CCRC-0239,CCRC-0239,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0239,CCRC-0239,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0239,CCRC-0239,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0239,CCRC-0239,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0239,CCRC-0239,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.5
+coadread_cass_2020,CCRC-0240,CCRC-0240,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0240,CCRC-0240,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0240,CCRC-0240,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0240,CCRC-0240,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0240,CCRC-0240,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+coadread_cass_2020,CCRC-0240,CCRC-0240,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0240,CCRC-0240,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0240,CCRC-0240,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0240,CCRC-0240,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0240,CCRC-0240,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.0333333333333
+coadread_cass_2020,CCRC-0242,CCRC-0242,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0242,CCRC-0242,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0242,CCRC-0242,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly-moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0242,CCRC-0242,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0242,CCRC-0242,MUTATION_COUNT,Mutation Count,NUMBER,False,732
+coadread_cass_2020,CCRC-0242,CCRC-0242,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0242,CCRC-0242,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0242,CCRC-0242,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0242,CCRC-0242,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,55
+coadread_cass_2020,CCRC-0242,CCRC-0242,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,24.5333333333
+coadread_cass_2020,CCRC-0243,CCRC-0243,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0243,CCRC-0243,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0243,CCRC-0243,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly-moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0243,CCRC-0243,METASTATIC_SITE,Metastatic Site,STRING,False,Enterocoelia
+coadread_cass_2020,CCRC-0243,CCRC-0243,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0243,CCRC-0243,MUTATION_COUNT,Mutation Count,NUMBER,False,63
+coadread_cass_2020,CCRC-0243,CCRC-0243,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0243,CCRC-0243,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0243,CCRC-0243,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0243,CCRC-0243,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0243,CCRC-0243,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.13333333333
+coadread_cass_2020,CCRC-0244,CCRC-0244,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0244,CCRC-0244,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0244,CCRC-0244,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0244,CCRC-0244,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0244,CCRC-0244,MUTATION_COUNT,Mutation Count,NUMBER,False,117
+coadread_cass_2020,CCRC-0244,CCRC-0244,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0244,CCRC-0244,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0244,CCRC-0244,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,5
+coadread_cass_2020,CCRC-0244,CCRC-0244,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,90
+coadread_cass_2020,CCRC-0244,CCRC-0244,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.9
+coadread_cass_2020,CCRC-0246,CCRC-0246,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0246,CCRC-0246,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0246,CCRC-0246,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0246,CCRC-0246,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0246,CCRC-0246,MUTATION_COUNT,Mutation Count,NUMBER,False,837
+coadread_cass_2020,CCRC-0246,CCRC-0246,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0246,CCRC-0246,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0246,CCRC-0246,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0246,CCRC-0246,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0246,CCRC-0246,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,27.8333333333
+coadread_cass_2020,CCRC-0247,CCRC-0247,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0247,CCRC-0247,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0247,CCRC-0247,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0247,CCRC-0247,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0247,CCRC-0247,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0247,CCRC-0247,MUTATION_COUNT,Mutation Count,NUMBER,False,73
+coadread_cass_2020,CCRC-0247,CCRC-0247,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0247,CCRC-0247,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0247,CCRC-0247,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0247,CCRC-0247,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0247,CCRC-0247,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.46666666667
+coadread_cass_2020,CCRC-0248,CCRC-0248,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0248,CCRC-0248,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0248,CCRC-0248,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0248,CCRC-0248,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0248,CCRC-0248,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0248,CCRC-0248,MUTATION_COUNT,Mutation Count,NUMBER,False,80
+coadread_cass_2020,CCRC-0248,CCRC-0248,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0248,CCRC-0248,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0248,CCRC-0248,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0248,CCRC-0248,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0248,CCRC-0248,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.66666666667
+coadread_cass_2020,CCRC-0249,CCRC-0249,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0249,CCRC-0249,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0249,CCRC-0249,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0249,CCRC-0249,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0249,CCRC-0249,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0249,CCRC-0249,MUTATION_COUNT,Mutation Count,NUMBER,False,66
+coadread_cass_2020,CCRC-0249,CCRC-0249,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0249,CCRC-0249,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0249,CCRC-0249,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0249,CCRC-0249,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0249,CCRC-0249,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.2
+coadread_cass_2020,CCRC-0250,CCRC-0250,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0250,CCRC-0250,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0250,CCRC-0250,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0250,CCRC-0250,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0250,CCRC-0250,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0250,CCRC-0250,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0250,CCRC-0250,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0250,CCRC-0250,MUTATION_COUNT,Mutation Count,NUMBER,False,137
+coadread_cass_2020,CCRC-0250,CCRC-0250,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0250,CCRC-0250,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0250,CCRC-0250,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0250,CCRC-0250,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0250,CCRC-0250,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.56666666667
+coadread_cass_2020,CCRC-0251,CCRC-0251,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0251,CCRC-0251,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0251,CCRC-0251,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0251,CCRC-0251,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0251,CCRC-0251,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0251,CCRC-0251,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0251,CCRC-0251,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0251,CCRC-0251,MUTATION_COUNT,Mutation Count,NUMBER,False,339
+coadread_cass_2020,CCRC-0251,CCRC-0251,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0251,CCRC-0251,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0251,CCRC-0251,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0251,CCRC-0251,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0251,CCRC-0251,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,11.3666666667
+coadread_cass_2020,CCRC-0252,CCRC-0252,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0252,CCRC-0252,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0252,CCRC-0252,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0252,CCRC-0252,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic
+coadread_cass_2020,CCRC-0252,CCRC-0252,MUTATION_COUNT,Mutation Count,NUMBER,False,85
+coadread_cass_2020,CCRC-0252,CCRC-0252,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0252,CCRC-0252,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0252,CCRC-0252,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0252,CCRC-0252,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0252,CCRC-0252,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.86666666667
+coadread_cass_2020,CCRC-0253,CCRC-0253,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0253,CCRC-0253,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0253,CCRC-0253,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0253,CCRC-0253,METASTATIC_STATUS,Metastatic Status,STRING,False,Non-Metastatic (Preoperative Treatment)
+coadread_cass_2020,CCRC-0253,CCRC-0253,MUTATION_COUNT,Mutation Count,NUMBER,False,1
+coadread_cass_2020,CCRC-0253,CCRC-0253,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0253,CCRC-0253,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0253,CCRC-0253,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0253,CCRC-0253,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0253,CCRC-0253,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.0333333333333
+coadread_cass_2020,CCRC-0255,CCRC-0255,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0255,CCRC-0255,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0255,CCRC-0255,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0255,CCRC-0255,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0255,CCRC-0255,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,65
+coadread_cass_2020,CCRC-0255,CCRC-0255,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0255,CCRC-0255,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0255,CCRC-0255,MUTATION_COUNT,Mutation Count,NUMBER,False,458
+coadread_cass_2020,CCRC-0255,CCRC-0255,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0255,CCRC-0255,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0255,CCRC-0255,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0255,CCRC-0255,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0255,CCRC-0255,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,15.3333333333
+coadread_cass_2020,CCRC-0256,CCRC-0256,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0256,CCRC-0256,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0256,CCRC-0256,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0256,CCRC-0256,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0256,CCRC-0256,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0256,CCRC-0256,MUTATION_COUNT,Mutation Count,NUMBER,False,157
+coadread_cass_2020,CCRC-0256,CCRC-0256,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0256,CCRC-0256,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0256,CCRC-0256,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0256,CCRC-0256,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,85
+coadread_cass_2020,CCRC-0256,CCRC-0256,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,5.23333333333
+coadread_cass_2020,CCRC-0257,CCRC-0257,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0257,CCRC-0257,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0257,CCRC-0257,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0257,CCRC-0257,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0257,CCRC-0257,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,25
+coadread_cass_2020,CCRC-0257,CCRC-0257,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0257,CCRC-0257,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0257,CCRC-0257,MUTATION_COUNT,Mutation Count,NUMBER,False,456
+coadread_cass_2020,CCRC-0257,CCRC-0257,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0257,CCRC-0257,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0257,CCRC-0257,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0257,CCRC-0257,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0257,CCRC-0257,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,15.2333333333
+coadread_cass_2020,CCRC-0259,CCRC-0259,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0259,CCRC-0259,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0259,CCRC-0259,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0259,CCRC-0259,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,40
+coadread_cass_2020,CCRC-0259,CCRC-0259,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0259,CCRC-0259,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0259,CCRC-0259,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0259,CCRC-0259,MUTATION_COUNT,Mutation Count,NUMBER,False,69
+coadread_cass_2020,CCRC-0259,CCRC-0259,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0259,CCRC-0259,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0259,CCRC-0259,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0259,CCRC-0259,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0259,CCRC-0259,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.33333333333
+coadread_cass_2020,CCRC-0265,CCRC-0265,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0265,CCRC-0265,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0265,CCRC-0265,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0265,CCRC-0265,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0265,CCRC-0265,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0265,CCRC-0265,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0265,CCRC-0265,METASTATIC_STATUS,Metastatic Status,STRING,False,Metastatic
+coadread_cass_2020,CCRC-0265,CCRC-0265,MUTATION_COUNT,Mutation Count,NUMBER,False,103
+coadread_cass_2020,CCRC-0265,CCRC-0265,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0265,CCRC-0265,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0265,CCRC-0265,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0265,CCRC-0265,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,75
+coadread_cass_2020,CCRC-0265,CCRC-0265,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,3.4
+coadread_cass_2020,CCRC-0323,CCRC-0323,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0323,CCRC-0323,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0323,CCRC-0323,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0323,CCRC-0323,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0323,CCRC-0323,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0323,CCRC-0323,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0323,CCRC-0323,METASTATIC_STATUS,Metastatic Status,STRING,False,"Metastatic, mini PDX done"
+coadread_cass_2020,CCRC-0323,CCRC-0323,MUTATION_COUNT,Mutation Count,NUMBER,False,790
+coadread_cass_2020,CCRC-0323,CCRC-0323,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0323,CCRC-0323,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0323,CCRC-0323,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0323,CCRC-0323,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,70
+coadread_cass_2020,CCRC-0323,CCRC-0323,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,26.5
+coadread_cass_2020,CCRC-0381,CCRC-0381,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0381,CCRC-0381,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0381,CCRC-0381,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0381,CCRC-0381,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0381,CCRC-0381,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,20
+coadread_cass_2020,CCRC-0381,CCRC-0381,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0381,CCRC-0381,METASTATIC_STATUS,Metastatic Status,STRING,False,"Metastatic (Preoperative Treatment), mini PDX done"
+coadread_cass_2020,CCRC-0381,CCRC-0381,MUTATION_COUNT,Mutation Count,NUMBER,False,19
+coadread_cass_2020,CCRC-0381,CCRC-0381,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0381,CCRC-0381,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and remote normal tissues
+coadread_cass_2020,CCRC-0381,CCRC-0381,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0381,CCRC-0381,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0381,CCRC-0381,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,0.633333333333
+coadread_cass_2020,CCRC-0382,CCRC-0382,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0382,CCRC-0382,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0382,CCRC-0382,HISTOPATHOLOGY,Histopathological Type,STRING,False,Moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0382,CCRC-0382,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0382,CCRC-0382,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0382,CCRC-0382,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0382,CCRC-0382,METASTATIC_STATUS,Metastatic Status,STRING,False,"Metastatic (Preoperative Treatment), mini PDX done"
+coadread_cass_2020,CCRC-0382,CCRC-0382,MUTATION_COUNT,Mutation Count,NUMBER,False,127
+coadread_cass_2020,CCRC-0382,CCRC-0382,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0382,CCRC-0382,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0382,CCRC-0382,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,15
+coadread_cass_2020,CCRC-0382,CCRC-0382,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0382,CCRC-0382,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,4.3
+coadread_cass_2020,CCRC-0397,CCRC-0397,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0397,CCRC-0397,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0397,CCRC-0397,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly-moderately differentiated adenocarcinoma
+coadread_cass_2020,CCRC-0397,CCRC-0397,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,60
+coadread_cass_2020,CCRC-0397,CCRC-0397,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,30
+coadread_cass_2020,CCRC-0397,CCRC-0397,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0397,CCRC-0397,METASTATIC_STATUS,Metastatic Status,STRING,False,"Metastatic, mini PDX done"
+coadread_cass_2020,CCRC-0397,CCRC-0397,MUTATION_COUNT,Mutation Count,NUMBER,False,60
+coadread_cass_2020,CCRC-0397,CCRC-0397,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0397,CCRC-0397,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0397,CCRC-0397,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,10
+coadread_cass_2020,CCRC-0397,CCRC-0397,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,80
+coadread_cass_2020,CCRC-0397,CCRC-0397,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.0
+coadread_cass_2020,CCRC-0398,CCRC-0398,CANCER_TYPE,Cancer Type,STRING,False,Colorectal Cancer
+coadread_cass_2020,CCRC-0398,CCRC-0398,CANCER_TYPE_DETAILED,Cancer Type Detailed,STRING,False,Colorectal Adenocarcinoma
+coadread_cass_2020,CCRC-0398,CCRC-0398,HISTOPATHOLOGY,Histopathological Type,STRING,False,Poorly-moderately differentiated adenocarcinoma; Mucinous adenocarcinoma
+coadread_cass_2020,CCRC-0398,CCRC-0398,METASTATIC_NECROSIS,Metastatic Tumor Necrosis (%),NUMBER,False,45
+coadread_cass_2020,CCRC-0398,CCRC-0398,METASTATIC_PURITY,Metastatic Tumor Purity (%),NUMBER,False,40
+coadread_cass_2020,CCRC-0398,CCRC-0398,METASTATIC_SITE,Metastatic Site,STRING,False,Liver
+coadread_cass_2020,CCRC-0398,CCRC-0398,METASTATIC_STATUS,Metastatic Status,STRING,False,"Metastatic, mini PDX done"
+coadread_cass_2020,CCRC-0398,CCRC-0398,MUTATION_COUNT,Mutation Count,NUMBER,False,89
+coadread_cass_2020,CCRC-0398,CCRC-0398,ONCOTREE_CODE,Oncotree Code,STRING,False,COADREAD
+coadread_cass_2020,CCRC-0398,CCRC-0398,PAIRED_STATUS,Primary Tumor Paired Status,STRING,False,Paired primary tumor and peripheral blood cell samples
+coadread_cass_2020,CCRC-0398,CCRC-0398,PRIMARY_NECROSIS,Primary Tumor Necrosis (%),NUMBER,False,40
+coadread_cass_2020,CCRC-0398,CCRC-0398,PRIMARY_PURITY,Primary Tumor Purity (%),NUMBER,False,50
+coadread_cass_2020,CCRC-0398,CCRC-0398,TMB_NONSYNONYMOUS,TMB (nonsynonymous),NUMBER,False,2.96666666667
