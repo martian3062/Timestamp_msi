@@ -94,6 +94,15 @@ def get_latest_tcga_slide_triad_status() -> schemas.LatestTCGASlideTriadStatusRe
     )
 
 
+@router.get("/tcga-batch-archive-latest", response_model=schemas.LatestTCGABatchArchiveResponse)
+def get_latest_tcga_batch_archive_summary() -> schemas.LatestTCGABatchArchiveResponse:
+    payload = triad_runtime.read_latest_tcga_batch_archive_summary()
+    return schemas.LatestTCGABatchArchiveResponse(
+        archive_root=str(payload.get("archive_root") or ""),
+        summary=payload.get("summary") if isinstance(payload.get("summary"), dict) else {},
+    )
+
+
 @router.get("/train-tcga-slide-triad/{bundle_id}", response_model=schemas.TCGASlideTriadStatusResponse)
 def get_tcga_slide_triad_status(bundle_id: str) -> schemas.TCGASlideTriadStatusResponse:
     return schemas.TCGASlideTriadStatusResponse(

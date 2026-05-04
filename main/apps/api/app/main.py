@@ -4,13 +4,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.api.routes import analytics, cohort, data_batches, experiments, integrations, monte_carlo, vm, parallel_pipeline
-from app.approach_2.api import (
-    experiments as approach_2_experiments,
-    pipeline as approach_2_pipeline,
-    slides as approach_2_slides,
-    webhook as approach_2_webhook,
-)
+from app.api.routes import vm
+from app.approach_2.api import pipeline as approach_2_pipeline
 from app.approach_2.database.setup import Base as Approach2Base
 from app.approach_2.database.setup import engine as approach_2_engine
 from app.core.config import get_settings
@@ -21,8 +16,8 @@ ARTIFACT_DIR = Path(__file__).resolve().parents[2] / "storage"
 ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(
-    title="Timestamp_msi API",
-    description="Backend for TCGA CRC MSI cohort validation and VM orchestration.",
+    title="4basecare MSI TCGA API",
+    description="Lean backend for the single Next.js plus Python TCGA DX1 MSI training and visualization system.",
     version="0.1.0",
 )
 
@@ -39,21 +34,11 @@ app.add_middleware(
 def health() -> dict[str, str]:
     return {
         "ok": "true",
-        "service": "timestamp-msi-api",
+        "service": "4basecare-msi-tcga-api",
         "environment": settings.environment,
     }
 
 
-app.include_router(cohort.router, prefix="/cohort", tags=["cohort"])
 app.include_router(vm.router, prefix="/vm", tags=["vm"])
-app.include_router(experiments.router, prefix="/experiments", tags=["experiments"])
-app.include_router(monte_carlo.router, prefix="/experiments", tags=["monte-carlo"])
-app.include_router(integrations.router, prefix="/integrations", tags=["integrations"])
-app.include_router(analytics.router, prefix="/analytics", tags=["analytics"])
-app.include_router(data_batches.router, prefix="/data-batches", tags=["data-batches"])
-app.include_router(approach_2_slides.router, prefix="/approach-2/slides", tags=["approach-2-slides"])
 app.include_router(approach_2_pipeline.router, prefix="/approach-2/pipeline", tags=["approach-2-pipeline"])
-app.include_router(approach_2_experiments.router, prefix="/approach-2/experiments", tags=["approach-2-experiments"])
-app.include_router(approach_2_webhook.router, prefix="/approach-2/webhook", tags=["approach-2-webhook"])
-app.include_router(parallel_pipeline.router, prefix="/parallel-pipeline", tags=["parallel-pipeline"])
 app.mount("/approach-2/artifacts", StaticFiles(directory=str(ARTIFACT_DIR)), name="approach-2-artifacts")

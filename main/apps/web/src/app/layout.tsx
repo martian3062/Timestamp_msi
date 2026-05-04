@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "4basecare MSI Workbench",
+  title: "4basecare MSI TCGA DX1 System",
   description:
-    "Local workstation for validating TCGA CRC MSI annotations and GDC slide manifests.",
+    "Single Next.js and Python system for TCGA COAD DX1 MSI training, live bundle monitoring, and advanced results visualization.",
 };
 
 export default function RootLayout({

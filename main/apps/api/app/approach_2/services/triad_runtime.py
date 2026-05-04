@@ -315,6 +315,141 @@ PY"""
     }
 
 
+def read_latest_tcga_batch_archive_summary() -> dict[str, Any]:
+    vm = VmService()
+    root = Path(vm.settings.vm_project_root) / "automation"
+    candidates = sorted(
+        root.glob("tcga_batch_archives*/orchestration_status.json"),
+        key=lambda path: path.stat().st_mtime,
+        reverse=True,
+    )
+    if not candidates:
+        return {
+            "archive_root": "",
+            "summary": {"state": "missing", "error": "No TCGA batch archive summary was found on the VM."},
+        }
+
+    status_path = candidates[0]
+    try:
+        payload = json.loads(status_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {
+            "archive_root": str(status_path.parent),
+            "summary": {"state": "invalid", "error": "Batch archive summary is not valid JSON."},
+        }
+
+    results = payload.get("results") if isinstance(payload, dict) else []
+    if not isinstance(results, list):
+        results = []
+
+    aggregate_labels: dict[str, int] = {}
+    aggregate_approaches: dict[str, dict[str, Any]] = {}
+    best_batch_by_auroc: dict[str, dict[str, Any]] = {}
+    feature_extractors: list[str] = []
+    batches: list[dict[str, Any]] = []
+
+    for result in results:
+        if not isinstance(result, dict):
+            continue
+        final_summary = result.get("final_summary") if isinstance(result.get("final_summary"), dict) else {}
+        label_counts = final_summary.get("label_counts") if isinstance(final_summary.get("label_counts"), dict) else {}
+        for key, value in label_counts.items():
+            if isinstance(value, int):
+                aggregate_labels[str(key)] = aggregate_labels.get(str(key), 0) + value
+
+        extractor = final_summary.get("feature_extractor_used")
+        if isinstance(extractor, str) and extractor and extractor not in feature_extractors:
+            feature_extractors.append(extractor)
+
+        approaches = final_summary.get("approaches") if isinstance(final_summary.get("approaches"), dict) else {}
+        batch_row: dict[str, Any] = {
+            "bundle_id": result.get("bundle_id"),
+            "slide_count": result.get("slide_count"),
+            "label_counts": label_counts,
+            "feature_extractor_used": extractor,
+            "approaches": {},
+        }
+
+        for approach_name, approach_payload in approaches.items():
+            if not isinstance(approach_payload, dict):
+                continue
+            batch_row["approaches"][approach_name] = {
+                "mean_auroc": approach_payload.get("mean_auroc"),
+                "mean_f1_macro": approach_payload.get("mean_f1_macro"),
+                "mean_f1_macro_default_threshold": approach_payload.get("mean_f1_macro_default_threshold"),
+                "mil_model": approach_payload.get("mil_model"),
+                "epochs": approach_payload.get("epochs"),
+            }
+
+            target = aggregate_approaches.setdefault(
+                str(approach_name),
+                {
+                    "mean_aurocs": [],
+                    "mean_f1_macros": [],
+                    "mean_f1_defaults": [],
+                    "mil_models": [],
+                    "epochs": [],
+                    "completed_batches": 0,
+                },
+            )
+            auroc = approach_payload.get("mean_auroc")
+            f1_macro = approach_payload.get("mean_f1_macro")
+            f1_default = approach_payload.get("mean_f1_macro_default_threshold")
+            epochs = approach_payload.get("epochs")
+            mil_model = approach_payload.get("mil_model")
+
+            if isinstance(auroc, (int, float)):
+                target["mean_aurocs"].append(float(auroc))
+                best = best_batch_by_auroc.get(str(approach_name))
+                if best is None or float(auroc) > float(best["mean_auroc"]):
+                    best_batch_by_auroc[str(approach_name)] = {
+                        "bundle_id": result.get("bundle_id"),
+                        "mean_auroc": float(auroc),
+                        "mean_f1_macro": float(f1_macro) if isinstance(f1_macro, (int, float)) else None,
+                        "mil_model": mil_model,
+                    }
+            if isinstance(f1_macro, (int, float)):
+                target["mean_f1_macros"].append(float(f1_macro))
+            if isinstance(f1_default, (int, float)):
+                target["mean_f1_defaults"].append(float(f1_default))
+            if isinstance(epochs, int):
+                target["epochs"].append(epochs)
+            if isinstance(mil_model, str) and mil_model and mil_model not in target["mil_models"]:
+                target["mil_models"].append(mil_model)
+            target["completed_batches"] += 1
+
+        batches.append(batch_row)
+
+    for approach_name, aggregate in list(aggregate_approaches.items()):
+        aurocs = aggregate.pop("mean_aurocs", [])
+        f1s = aggregate.pop("mean_f1_macros", [])
+        defaults = aggregate.pop("mean_f1_defaults", [])
+        epochs = aggregate.pop("epochs", [])
+        aggregate["mean_auroc"] = round(sum(aurocs) / len(aurocs), 4) if aurocs else None
+        aggregate["mean_f1_macro"] = round(sum(f1s) / len(f1s), 4) if f1s else None
+        aggregate["mean_f1_macro_default_threshold"] = round(sum(defaults) / len(defaults), 4) if defaults else None
+        aggregate["mean_epochs"] = round(sum(epochs) / len(epochs), 2) if epochs else None
+
+    return {
+        "archive_root": str(status_path.parent),
+        "summary": {
+            "state": "completed" if payload.get("finished_at_epoch") else "running",
+            "started_at_epoch": payload.get("started_at_epoch"),
+            "finished_at_epoch": payload.get("finished_at_epoch"),
+            "bucket_uri": payload.get("bucket_uri"),
+            "source_annotations": payload.get("source_annotations"),
+            "batch_count": payload.get("batch_count"),
+            "batch_size": payload.get("batch_size"),
+            "results_count": len(batches),
+            "aggregate_label_counts": aggregate_labels,
+            "feature_extractors": feature_extractors,
+            "aggregate_approaches": aggregate_approaches,
+            "best_batch_by_auroc": best_batch_by_auroc,
+            "batches": batches,
+        },
+    }
+
+
 def _augment_tcga_slide_triad_status(
     vm: VmService,
     bundle_id: str,

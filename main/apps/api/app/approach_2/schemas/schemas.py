@@ -32,7 +32,7 @@ class PipelineFeaturesRequest(BaseModel):
 class TrainMilRequest(BaseModel):
     experiment_name: str
     training_mode: Literal["mil", "patch_classification"] = "mil"
-    approach_label: Literal["Approach1", "Approach2", "MonteCarlo"] = "Approach2"
+    approach_label: Literal["Approach1", "Approach2"] = "Approach2"
     dataset_source: Literal["workspace_root", "custom_path", "google_bucket"] = "workspace_root"
     workspace_root: Optional[str] = r"E:\4basecare-MSI"
     google_bucket_uri: Optional[str] = None
@@ -73,17 +73,17 @@ class TriadRunResponse(BaseModel):
 
 
 class TCGASlideTriadRequest(BaseModel):
-    experiment_name: str = "tcga-coad-20-slide-triad"
+    experiment_name: str = "tcga-coad-dx1-single-system"
     bucket_uri: str = "gs://wsi_aiml_repo/TCGA/TCGA_COAD/TCGA_COAD"
-    slide_limit: int = 18
-    n_folds: int = 3
+    slide_limit: int = 110
+    n_folds: int = 2
     preferred_slide_pattern: str = "DX"
     preferred_exact_suffix: str = "DX1"
-    annotations_csv: Optional[str] = "annotations/tcga_coad_bucket_annotations_pub.csv"
-    feature_extractor: str = "virchow,uni_v2,uni,phikon,ctranspath,resnet50_imagenet"
+    annotations_csv: Optional[str] = "annotations/tcga_coad_bucket_annotations_final_all3_live_dx1.csv"
+    feature_extractor: str = "ctranspath"
     tile_px: int = 256
     tile_um: int = 128
-    max_parallel_approaches: int = 3
+    max_parallel_approaches: int = 2
 
 
 class TCGASlideTriadRunResponse(BaseModel):
@@ -106,6 +106,12 @@ class LatestTCGASlideTriadStatusResponse(BaseModel):
     bundle_id: str
     remote_status_path: str
     status: Dict[str, Any]
+
+
+class LatestTCGABatchArchiveResponse(BaseModel):
+    ok: bool = True
+    archive_root: str
+    summary: Dict[str, Any]
 
 
 class UploadPredictResponse(BaseModel):

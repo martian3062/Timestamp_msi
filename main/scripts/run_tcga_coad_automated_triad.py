@@ -439,6 +439,8 @@ def download_subset_slides(config: dict[str, Any], selected_slide_uris: list[str
 
 
 def import_slideflow():
+    if not os.environ.get("CONDA_PREFIX"):
+        os.environ["CONDA_PREFIX"] = str(Path(sys.executable).resolve().parents[1])
     os.environ["SF_BACKEND"] = "torch"
     os.environ["SF_SLIDE_BACKEND"] = "cucim"
     import slideflow as sf
