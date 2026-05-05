@@ -1,135 +1,77 @@
-# 4basecare MSI Workbench
+# 4basecare MSI Web
 
-Browser-side workstation for the TCGA colorectal MSI project. The app now has
-workflow modes for Approach 1, Approach 2, Monte Carlo, and Parallel Metrics so
-the user can move between manual VM orchestration, the imported platform
-backend, stochastic validation, and artifact comparison without leaving the main
-screen.
+This frontend is now a single dashboard, not the older four-mode workstation.
+The active UI is the `TCGA DX1 MSI Runner` rendered from:
 
-For the full project-level guide and backend API details, see the root
-`README.md`.
+- `src/app/page.tsx`
+- `src/components/msi-workbench.tsx`
 
-## What It Does
+## What The Current UI Does
 
-- Upload an MSI annotation CSV and detect patient, slide, label, and fold fields.
-- Upload a GDC manifest CSV/TSV and detect file id plus filename fields.
-- Compute label mix and fold balance directly from the uploaded files.
-- Check the pathology VM over SSH from the local Next API.
-- Browse the VM project folder, upload selected annotation/manifest files to it,
-  start the GDC downloader, start Jupyter, and open the local tunnel.
-- Use Approach 2 controls for preprocessing, feature extraction, MIL training,
-  prediction, and experiment syncing through the FastAPI backend.
-- Use Monte Carlo controls to prepare VM model-cache folders, generate random
-  trial plans, bootstrap runners, rank stable-best models, and fetch uncertainty
-  outputs.
-- Fetch parallel metric snapshots from completed Approach 1, Approach 2, and
-  Monte Carlo artifacts through the FastAPI backend.
-- Show Hugging Face, Groq AI, Zerve AI, Firecrawl, and Tinyfish configured
-  state without printing secret values.
-- Keep VM/Jupyter commands visible and editable for the remote Slideflow flow.
+- checks backend health
+- launches a TCGA DX1 bundle
+- refreshes live bundle status every 15 seconds
+- reads the latest archive summary
+- shows label balance with D3
+- shows approach metrics with Recharts
+- keeps the latest `bundle_id` in local storage
 
-The frontend does not invent model scores. It only reports values parsed from
-loaded browser files, backend responses, or completed VM/platform artifacts.
+The current page talks only to the FastAPI backend. It does not expose the old
+multi-surface workstation behavior described in earlier docs.
 
-## Getting Started
+## Backend Endpoints Used By The UI
 
-Run the development server:
-
-```bash
-npm.cmd run dev
+```text
+GET  /health
+POST /approach-2/pipeline/train-tcga-slide-triad
+GET  /approach-2/pipeline/train-tcga-slide-triad-latest
+GET  /approach-2/pipeline/tcga-batch-archive-latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+The API base defaults to:
 
-The frontend expects the FastAPI backend at:
+```text
+http://127.0.0.1:8001
+```
 
-```bash
+Override with:
+
+```text
 NEXT_PUBLIC_MSI_API_URL=http://127.0.0.1:8001
 ```
 
-If the variable is not set, the workstation defaults to
-`http://127.0.0.1:8001`.
+## Run
 
-## VM Control
-
-The frontend calls `src/app/api/vm/route.ts`, which runs SSH from the local
-Next server. Your private key is used on the server side only, not inside
-browser JavaScript.
-
-Default connection:
-
-```bash
-ssh -i "%USERPROFILE%\.ssh\evolet_rsa" pardeep@34.59.145.240
+```powershell
+cd <repo-root>\main\apps\web
+npm.cmd install
+npm.cmd run dev -- --hostname 127.0.0.1 --port 3000
 ```
 
-Optional overrides:
+Open:
 
-```bash
-MSI_VM_USER=pardeep
-MSI_VM_HOST=34.59.145.240
-MSI_VM_KEY=C:\Users\<you>\.ssh\evolet_rsa
-MSI_VM_PROJECT_ROOT=/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc
+```text
+http://127.0.0.1:3000
 ```
 
-GUI actions:
+## Current UX Notes
 
-- `Check VM` shows GPU, disk, slide counts, and running processes.
-- `Browse project` lists allowed VM project folders.
-- `Upload annotations` writes to `annotations/tcga_crc_msi_annotations.csv`.
-- `Upload manifest` writes to `annotations/gdc_manifest_tcga_crc_msi.tsv`.
-- `Start downloader` runs the GDC manifest downloader on the VM.
-- `Start Jupyter` starts Jupyter on VM port `8888`.
-- `Open tunnel` forwards local `http://127.0.0.1:8888` to the VM Jupyter port.
-- `Prep VM cache` in the Monte Carlo approach creates Hugging Face and Monte
-  Carlo model folders on the VM through the backend route
-  `/vm/monte-carlo/workspace`.
+- the page uses the `snow-theme`
+- the active visual system is light, clinical, and single-purpose
+- the hero copy and metrics cards are specific to the DX1 TCGA pipeline
+- older VM-control copy in previous docs is no longer the main UI contract
 
-## Approach Modes
+## Important Files
 
-- `Approach 1`: cohort/manifest validation, VM browsing, file upload,
-  downloader, Jupyter, tunnel, experiment result, and tech surface.
-- `Approach 2`: mounted platform workflow using `/approach-2/pipeline/*` and
-  `/approach-2/experiments/*`.
-- `Monte Carlo`: dedicated random-search and uncertainty workflow using
-  `/experiments/monte-carlo-plan`, `/experiments/best-stable`, and VM model
-  cache preparation.
-- `Parallel Metrics`: D3/Recharts comparison from `/parallel-pipeline/*`; charts
-  stay empty until real completed metrics exist.
+- `src/components/msi-workbench.tsx`: current dashboard logic and visuals
+- `src/app/page.tsx`: page shell
+- `src/app/globals.css`: theme and shared styling
+- `public/assets/4basecare-mars.png`: hero image
 
-## Expected Files
+## Validation
 
-Annotation file:
-
-- patient or case id column
-- slide or filename column
-- MSI label column, such as MSI-H or MSS
-- fold or split column
-
-Manifest file:
-
-- GDC file id / UUID column
-- diagnostic slide filename column
-
-## Scripts
-
-```bash
+```powershell
+cd <repo-root>\main\apps\web
 npm.cmd run lint
 npm.cmd run build
 ```
-
-## Project Shape
-
-- `src/app/page.tsx` renders the workstation.
-- `src/app/api/vm/route.ts` contains the local SSH bridge for VM actions.
-- `src/components/msi-workbench.tsx` contains the upload parser, field mapping,
-  validation, distributions, workflow switch, VM controls, Approach 2 controls,
-  Monte Carlo controls, parallel metric snapshot controls, and command block.
-- `src/components/parallel-results.tsx` renders real artifact metrics with D3
-  and Recharts when the backend finds them.
-- `src/app/globals.css` keeps the global theme small and app-focused.
-
-## Safety Note
-
-The VM bridge is designed for local development. It uses your local SSH key from
-the server-side route and should not be deployed publicly without adding
-authentication and secret management.

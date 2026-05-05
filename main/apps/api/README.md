@@ -1,38 +1,76 @@
 # Timestamp_msi API
 
-FastAPI backend for the Timestamp_msi MSI-H vs MSS workstation.
+This FastAPI app is now the lean backend for the single DX1 TCGA MSI system.
 
-This service gives the project a proper backend surface for:
+The current entrypoint is `app/main.py`, and it mounts only:
 
-- health checks
-- annotation and GDC manifest validation
-- label and fold distribution summaries
-- VM status checks through SSH
-- restricted VM project browsing
-- uploading annotation and manifest files into the VM project
-- starting the GDC downloader
-- starting Jupyter on the VM
-- opening the local Jupyter SSH tunnel
-- preparing VM-side Hugging Face and Monte Carlo model-cache folders
-- expanding n8n model/hyperparameter grids
-- starting Slideflow experiment trials on the VM
-- reading real trial status, logs, and completed metrics
-- checking optional integration secrets without exposing values
-- bootstrapping and running small GDC `.svs` batches on the VM
-- serving the integrated Approach 2 platform routes under `/approach-2/*`
-- comparing completed Approach 1, Approach 2, and Monte Carlo metric artifacts
-  without generating demo scores
+- `/health`
+- `/vm/*`
+- `/approach-2/pipeline/*`
+- `/approach-2/artifacts`
 
-The current Next.js frontend still has its own local route at
-`apps/web/src/app/api/vm/route.ts`, but this backend is the cleaner long-term
-API boundary. The frontend can later point to this service instead of keeping VM
-logic inside the web app.
+Older route modules still exist in the repo, but they are not mounted by the
+current backend entrypoint unless you wire them back in manually.
+
+## Mounted Endpoints
+
+```text
+GET  /health
+
+GET  /vm/status
+GET  /vm/files
+POST /vm/upload
+POST /vm/downloader/start
+POST /vm/jupyter/start
+POST /vm/tunnel/start
+POST /vm/monte-carlo/workspace
+
+POST /approach-2/pipeline/preprocess
+POST /approach-2/pipeline/extract_features
+POST /approach-2/pipeline/train
+POST /approach-2/pipeline/train-triad
+POST /approach-2/pipeline/train-tcga-slide-triad
+GET  /approach-2/pipeline/train-tcga-slide-triad-latest
+GET  /approach-2/pipeline/tcga-batch-archive-latest
+GET  /approach-2/pipeline/train-tcga-slide-triad/{bundle_id}
+POST /approach-2/pipeline/predict
+POST /approach-2/pipeline/predict-upload
+```
+
+## Main Responsibilities
+
+- expose a clean health check for the Next.js dashboard
+- manage VM utility actions through allowlisted SSH calls
+- queue the TCGA DX1 bundle runner
+- read the latest remote TCGA bundle status
+- read the latest local/archived TCGA batch summary
+- keep Approach 2 experiment metadata in the local SQLAlchemy database
+- support the older CRC patch-classification training/prediction path
+
+## Important Files
+
+- `app/main.py`: actual mounted app surface
+- `app/api/routes/vm.py`: VM utility endpoints
+- `app/services/vm.py`: SSH action implementation
+- `app/approach_2/api/pipeline.py`: active Approach 2 pipeline routes
+- `app/approach_2/services/triad_runtime.py`: TCGA bundle and CRC patch runtime
+- `app/approach_2/schemas/schemas.py`: request/response models
+- `app/approach_2/database/models.py`: experiment registry model
+- `app/approach_2/database/setup.py`: database setup
+
+## VM Defaults
+
+```powershell
+$env:MSI_VM_USER = "<vm-user>"
+$env:MSI_VM_HOST = "<vm-host>"
+$env:MSI_VM_KEY = "<path-to-ssh-key>"
+$env:MSI_VM_PROJECT_ROOT = "/path/to/project/root"
+```
 
 ## Install
 
-From `apps/api`:
-
 ```powershell
+cd <repo-root>\main\apps\api
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -e ".[dev]"
@@ -41,7 +79,8 @@ python -m pip install -e ".[dev]"
 ## Run
 
 ```powershell
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
+cd <repo-root>\main\apps\api
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8001
 ```
 
 Open:
@@ -50,100 +89,16 @@ Open:
 http://127.0.0.1:8001/docs
 ```
 
-## VM Configuration
-
-Defaults match the local workstation flow:
+## Validation
 
 ```powershell
-$env:MSI_VM_USER = "pardeep"
-$env:MSI_VM_HOST = "34.59.145.240"
-$env:MSI_VM_KEY = "$env:USERPROFILE\.ssh\evolet_rsa"
-$env:MSI_VM_PROJECT_ROOT = "/home/pardeep/pathology310_projects/single_slide_morphology/project_1_slideflow_msi_tcga_crc"
+cd <repo-root>\main\apps\api
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m compileall app
 ```
-
-The private key is never returned by the API. It is used server-side only.
-
-Optional integration keys are read from local `.env` values:
-
-```powershell
-MSI_HF_TOKEN=<your-hugging-face-token>
-MSI_GROQ_API_KEY=<your-groq-key>
-MSI_ZERVE_API_KEY=<your-zerve-key>
-MSI_FIRECRAWL_API_KEY=<your-firecrawl-key>
-MSI_TINYFISH_API_KEY=<your-tinyfish-key>
-```
-
-Use `apps/api/.env.example` as the template. Never commit real tokens.
-
-## Endpoints
-
-```text
-GET  /health
-POST /cohort/validate
-GET  /vm/status
-GET  /vm/files?path=<allowed-vm-path>
-POST /vm/upload
-POST /vm/downloader/start
-POST /vm/jupyter/start
-POST /vm/tunnel/start
-POST /vm/monte-carlo/workspace
-POST /experiments/bootstrap
-POST /experiments/plan
-POST /experiments/start
-GET  /experiments/status/{trial_id}
-GET  /experiments/best
-POST /experiments/monte-carlo-plan
-POST /experiments/mc-bootstrap
-POST /experiments/uncertainty/start
-GET  /experiments/uncertainty/{trial_id}
-POST /experiments/bootstrap-ci/start
-GET  /experiments/bootstrap-ci/{trial_id}
-POST /experiments/seed-stability
-GET  /experiments/best-stable
-GET  /integrations/status
-POST /parallel-pipeline/start
-GET  /parallel-pipeline/metrics/{execution_id}
-POST /data-batches/gdc/bootstrap
-POST /data-batches/gdc/start
-GET  /data-batches/gdc/status
-POST /data-batches/gdc/cleanup
-POST /approach-2/slides/register
-GET  /approach-2/slides/
-POST /approach-2/slides/upload_csv
-POST /approach-2/pipeline/preprocess
-POST /approach-2/pipeline/extract_features
-POST /approach-2/pipeline/train
-POST /approach-2/pipeline/predict
-GET  /approach-2/experiments/
-GET  /approach-2/experiments/{experiment_id}
-POST /approach-2/webhook/start-automation
-POST /approach-2/webhook/optuna/trial
-```
-
-## Current Integration Surface
-
-- Approach 1 routes handle cohort validation, VM actions, GDC batches, and n8n
-  training orchestration.
-- Approach 2 routes are served from the integrated `app/approach_2` package
-  and mounted under `/approach-2/*`.
-- Monte Carlo is a distinct workflow exposed through `/experiments/*` plus
-  `/vm/monte-carlo/workspace` for VM-side model cache setup.
-- Parallel metrics are exposed through `/parallel-pipeline/*`; they report only
-  completed VM and database artifacts.
-- Integration status checks Hugging Face, Groq AI, Zerve AI, Firecrawl, and
-  Tinyfish without returning secret values.
 
 ## Safety
 
-The backend does not expose arbitrary shell execution. VM operations are
-allowlisted, path browsing is restricted to the configured project folders, and
-experiment endpoints only write known project files or run fixed VM runners
-such as `scripts/run_n8n_msi_trial.py` and `scripts/run_gdc_svs_batch.py`. Run
-this service locally unless you add authentication, authorization, audit
-logging, and proper secret management.
-
-## Test
-
-```powershell
-.\.venv\Scripts\python.exe -m pytest
-```
+This service is intended for local use. VM actions are allowlisted and tied to
+known project paths, but the API should still not be exposed publicly without
+auth, audit logging, and secret management.
